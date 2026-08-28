@@ -1,0 +1,1020 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Battery State of Health & Warranty Lifespan Optimization | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-battery-charging me-1"></i> Electrification & EV</span>
+                        <span class="badge-id">Project 02</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $38.0M Reserve</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">EV Battery State of Health & Warranty Lifespan Optimization</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Forecasts electric vehicle battery lifespan and charging health to prevent unexpected pack failures and safely optimize company warranty replacement reserves.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Electrochemical Regression, Thermal Load Modeling</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Average Battery Health</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-battery-charging fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">91.8%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-shield-check"></i> Safely Above 80% Floor
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Remaining Driving Lifespan</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-clock-history fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">1,840 Cycles</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-speedometer"></i> ~320,000 km of Travel
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Module Temperature Spread</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-thermometer-high fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">3.8 °C</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-activity"></i> Within Safe Limits
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Prediction Accuracy</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-graph-up-arrow fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">98.4%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-check2-circle"></i> Accurate Warranty Sizing
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Battery Capacity Loss Over 2,200 Charge Cycles
+                            </h5>
+                            <small class="text-slate-600">Compares standard long-range batteries vs durable LFP batteries across ~320,000 km</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Lifespan Curve</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="1eb828bc-49aa-4bb8-b156-cbad7af765a1" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("1eb828bc-49aa-4bb8-b156-cbad7af765a1")) {                    Plotly.newPlot(                        "1eb828bc-49aa-4bb8-b156-cbad7af765a1",                        [{"line":{"color":"#0284c7","width":2.5},"name":"Nickel-Rich Battery (Actual)","x":{"dtype":"i2","bdata":"AQACAAQABQAHAAgACgALAA0ADgAQABEAEwAUABYAFwAYABoAGwAdAB4AIAAhACMAJAAmACcAKQAqACwALQAuADAAMQAzADQANgA3ADkAOgA8AD0APwBAAEIAQwBEAEYARwBJAEoATABNAE8AUABSAFMAVQBWAFgAWQBaAFwAXQBfAGAAYgBjAGUAZgBoAGkAawBsAG4AbwBwAHIAcwB1AHYAeAB5AHsAfAB+AH8AgQCCAIQAhQCGAIgAiQCLAIwAjgCPAJEAkgCUAJUAlwCYAJoAmwCcAJ4AnwChAKIApAClAKcAqACqAKsArQCuALAAsQCzALQAtQC3ALgAugC7AL0AvgDAAMEAwwDEAMYAxwDJAMoAywDNAM4A0ADRANMA1ADWANcA2QDaANwA3QDfAOAA4QDjAOQA5gDnAOkA6gDsAO0A7wDwAPIA8wD1APYA9wD5APoA\u002fAD9AP8AAAECAQMBBQEGAQgBCQELAQwBDQEPARABEgETARUBFgEYARkBGwEcAR4BHwEhASIBIwElASYBKAEpASsBLAEuAS8BMQEyATQBNQE3ATgBOQE7ATwBPgE\u002fAUEBQgFEAUUBRwFIAUoBSwFNAU4BTwFRAVIBVAFVAVcBWAFaAVsBXQFeAWABYQFjAWQBZQFnAWgBagFrAW0BbgFwAXEBcwF0AXYBdwF5AXoBewF9AX4BgAGBAYMBhAGGAYcBiQGKAYwBjQGPAZABkQGTAZQBlgGXAZkBmgGcAZ0BnwGgAaIBowGlAaYBpwGpAaoBrAGtAa8BsAGyAbMBtQG2AbgBuQG7AbwBvQG\u002fAcABwgHDAcUBxgHIAckBywHMAc4BzwHRAdIB0wHVAdYB2AHZAdsB3AHeAd8B4QHiAeQB5QHnAegB6gHrAewB7gHvAfEB8gH0AfUB9wH4AfoB+wH9Af4BAAIBAgICBAIFAgcCCAIKAgsCDQIOAhACEQITAhQCFgIXAhgCGgIbAh0CHgIgAiECIwIkAiYCJwIpAioCLAItAi4CMAIxAjMCNAI2AjcCOQI6AjwCPQI\u002fAkACQgJDAkQCRgJHAkkCSgJMAk0CTwJQAlICUwJVAlYCWAJZAloCXAJdAl8CYAJiAmMCZQJmAmgCaQJrAmwCbgJvAnACcgJzAnUCdgJ4AnkCewJ8An4CfwKBAoIChAKFAoYCiAKJAosCjAKOAo8CkQKSApQClQKXApgCmgKbApwCngKfAqECogKkAqUCpwKoAqoCqwKtAq4CsAKxArICtAK1ArcCuAK6ArsCvQK+AsACwQLDAsQCxgLHAsgCygLLAs0CzgLQAtEC0wLUAtYC1wLZAtoC3ALdAt4C4ALhAuMC5ALmAucC6QLqAuwC7QLvAvAC8gLzAvQC9gL3AvkC+gL8Av0C\u002fwIAAwIDAwMFAwYDCAMJAwoDDAMNAw8DEAMSAxMDFQMWAxgDGQMbAxwDHgMfAyEDIgMjAyUDJgMoAykDKwMsAy4DLwMxAzIDNAM1AzcDOAM5AzsDPAM+Az8DQQNCA0QDRQNHA0gDSgNLA00DTgNPA1EDUgNUA1UDVwNYA1oDWwNdA14DYANhA2MDZANlA2cDaANqA2sDbQNuA3ADcQNzA3QDdgN3A3kDegN7A30DfgOAA4EDgwOEA4YDhwOJA4oDjAONA48DkAORA5MDlAOWA5cDmQOaA5wDnQOfA6ADogOjA6UDpgOnA6kDqgOsA60DrwOwA7IDswO1A7YDuAO5A7sDvAO9A78DwAPCA8MDxQPGA8gDyQPLA8wDzgPPA9ED0gPTA9UD1gPYA9kD2wPcA94D3wPhA+ID5APlA+cD6APpA+sD7APuA+8D8QPyA\u002fQD9QP3A\u002fgD+gP7A\u002f0D\u002fgP\u002fAwEEAgQEBAUEBwQIBAoECwQNBA4EEAQRBBMEFAQVBBcEGAQaBBsEHQQeBCAEIQQjBCQEJgQnBCkEKgQrBC0ELgQwBDEEMwQ0BDYENwQ5BDoEPAQ9BD8EQARBBEMERARGBEcESQRKBEwETQRPBFAEUgRTBFUEVgRYBFkEWgRcBF0EXwRgBGIEYwRlBGYEaARpBGsEbARuBG8EcARyBHMEdQR2BHgEeQR7BHwEfgR\u002fBIEEggSEBIUEhgSIBIkEiwSMBI4EjwSRBJIElASVBJcEmASaBJsEnASeBJ8EoQSiBKQEpQSnBKgEqgSrBK0ErgSwBLEEsgS0BLUEtwS4BLoEuwS9BL4EwATBBMMExATGBMcEyATKBMsEzQTOBNAE0QTTBNQE1gTXBNkE2gTcBN0E3gTgBOEE4wTkBOYE5wTpBOoE7ATtBO8E8ATyBPME9AT2BPcE+QT6BPwE\u002fQT\u002fBAAFAgUDBQUFBgUIBQkFCgUMBQ0FDwUQBRIFEwUVBRYFGAUZBRsFHAUeBR8FIAUiBSMFJQUmBSgFKQUrBSwFLgUvBTEFMgU0BTUFNgU4BTkFOwU8BT4FPwVBBUIFRAVFBUcFSAVKBUsFTAVOBU8FUQVSBVQFVQVXBVgFWgVbBV0FXgVgBWEFYgVkBWUFZwVoBWoFawVtBW4FcAVxBXMFdAV2BXcFeAV6BXsFfQV+BYAFgQWDBYQFhgWHBYkFigWMBY0FjwWQBZEFkwWUBZYFlwWZBZoFnAWdBZ8FoAWiBaMFpQWmBacFqQWqBawFrQWvBbAFsgWzBbUFtgW4BbkFuwW8Bb0FvwXABcIFwwXFBcYFyAXJBcsFzAXOBc8F0QXSBdMF1QXWBdgF2QXbBdwF3gXfBeEF4gXkBeUF5wXoBekF6wXsBe4F7wXxBfIF9AX1BfcF+AX6BfsF\u002fQX+Bf8FAQYCBgQGBQYHBggGCgYLBg0GDgYQBhEGEwYUBhUGFwYYBhoGGwYdBh4GIAYhBiMGJAYmBicGKQYqBisGLQYuBjAGMQYzBjQGNgY3BjkGOgY8Bj0GPwZABkEGQwZEBkYGRwZJBkoGTAZNBk8GUAZSBlMGVQZWBlcGWQZaBlwGXQZfBmAGYgZjBmUGZgZoBmkGawZsBm0GbwZwBnIGcwZ1BnYGeAZ5BnsGfAZ+Bn8GgQaCBoMGhQaGBogGiQaLBowGjgaPBpEGkgaUBpUGlwaYBpkGmwacBp4GnwahBqIGpAalBqcGqAaqBqsGrQauBq8GsQayBrQGtQa3BrgGuga7Br0GvgbABsEGwwbEBsYGxwbIBsoGywbNBs4G0AbRBtMG1AbWBtcG2QbaBtwG3QbeBuAG4QbjBuQG5gbnBukG6gbsBu0G7wbwBvIG8wb0BvYG9wb5BvoG\u002fAb9Bv8GAAcCBwMHBQcGBwgHCQcKBwwHDQcPBxAHEgcTBxUHFgcYBxkHGwccBx4HHwcgByIHIwclByYHKAcpBysHLAcuBy8HMQcyBzQHNQc2BzgHOQc7BzwHPgc\u002fB0EHQgdEB0UHRwdIB0oHSwdMB04HTwdRB1IHVAdVB1cHWAdaB1sHXQdeB2AHYQdiB2QHZQdnB2gHagdrB20HbgdwB3EHcwd0B3YHdwd4B3oHewd9B34HgAeBB4MHhAeGB4cHiQeKB4wHjQeOB5AHkQeTB5QHlgeXB5kHmgecB50HnwegB6IHowekB6YHpwepB6oHrAetB68HsAeyB7MHtQe2B7gHuQe6B7wHvQe\u002fB8AHwgfDB8UHxgfIB8kHywfMB84HzwfQB9IH0wfVB9YH2AfZB9sH3AfeB98H4QfiB+QH5QfmB+gH6QfrB+wH7gfvB\u002fEH8gf0B\u002fUH9wf4B\u002foH+wf9B\u002f4H\u002fwcBCAIIBAgFCAcICAgKCAsIDQgOCBAIEQgTCBQIFQgXCBgIGggbCB0IHgggCCEIIwgkCCYIJwgpCCoIKwgtCC4IMAgxCDMINAg2CDcIOQg6CDwIPQg\u002fCEAIQQhDCEQIRghHCEkISghMCE0ITwhQCFIIUwhVCFYIVwhZCFoIXAhdCF8IYAhiCGMIZQhmCGgIaQhrCGwIbQhvCHAIcghzCHUIdgh4CHkIewh8CH4IfwiBCIIIgwiFCIYIiAiJCIsIjAiOCI8IkQiSCJQIlQiXCJgI"},"y":{"dtype":"f8","bdata":"KVyPwvUoG8BxPQrXo7BOQLgehetRGEpA7FG4HoVbUEDsUbgehUtOQJqZmZmZGVdAH4XrUbhuW0CkcD0K1wNPQHsUrkfhgmJAzczMzMzMTEDhehSuRyFQQHsUrkfhSllAmpmZmZnpUkA9CtejcK1aQHsUrkfhGlxAXI\u002fC9Sg8SUDhehSuR+FSQFyPwvUo3DBAw\u002fUoXI\u002fCDcApXI\u002fC9ahNQMP1KFyP8lFAZmZmZmYmOkDNzMzMzDRhQM3MzMzM7F1A9ihcj8KFVUD2KFyPwjVRQArXo3A9ClNAFK5H4XrkUkCuR+F6FI5LQM3MzMzMzFNAj8L1KFxPTkAAAAAAALBRQGZmZmZmdlhAcT0K16OQWkA9CtejcB1cQGZmZmZmZlBApHA9CtdTVUDXo3A9ChczQClcj8L1aFJAZmZmZmbmL0AAAAAAAIBcQM3MzMzMvFJAexSuR+GqXUDXo3A9CldUQHsUrkfh2kdAH4XrUbieVUBI4XoUrpdUQAAAAAAAAE5APQrXo3A9JUAzMzMzM1NZQMP1KFyPglpASOF6FK4nV0AK16NwPRpTQM3MzMzMPFhAcT0K16NwT0AK16NwPcpHQMP1KFyP4ltAj8L1KFwPNECF61G4HpVdQM3MzMzMjE5AzczMzMwcUUB7FK5H4XopQOxRuB6FW1dAcT0K16NgUkCamZmZmVlNQArXo3A9ikdAw\u002fUoXI+CVEAfhetRuF4xQM3MzMzMfFxAMzMzMzNTWkCkcD0K17NSQK5H4XoUPlpAUrgeheuRX0CkcD0K1yNAQM3MzMzMrEhAMzMzMzPjYkBmZmZmZiZIQD0K16Nw3URACtejcD3KXEAzMzMzMzNDQPYoXI\u002fCHWBAH4XrUbg+WED2KFyPwoVVQKRwPQrXM1BAZmZmZmb2UEDNzMzMzFxSQI\u002fC9ShcL1tAmpmZmZkZPkBI4XoUrmdNQDMzMzMzk1hAUrgehevRWECamZmZmTlBQIXrUbgexU1A4XoUrkeRW0ApXI\u002fC9VhXQClcj8L1aEdAj8L1KFwnYkDNzMzMzDxbQK5H4XoUbkxAZmZmZmYmXkDD9Shcj8I7QMP1KFyPQl1ASOF6FK53X0BSuB6F6wFfQMP1KFyPwlNA16NwPQp3V0B7FK5H4WpaQB+F61G4LlNAH4XrUbiuWkAAAAAAAABSQOF6FK5HgU1AcT0K16MgUUA9CtejcO1cQDMzMzMzU0lA7FG4HoW7UkBSuB6F63FKQJqZmZmZGUhAexSuR+E6V0Bcj8L1KDxLQJqZmZmZ2VlAcT0K16NwTkCamZmZmalgQHE9Ctej8ExAH4XrUbjOU0DsUbgeheNgQGZmZmZmRlFAAAAAAABgWECamZmZmRklQOF6FK5HYVJAw\u002fUoXI\u002fCEUBmZmZmZgZMQHE9CtejEFtACtejcD16UUBcj8L1KPxRQGZmZmZmxklAw\u002fUoXI9iYEC4HoXrUQhWQKRwPQrXs1hApHA9CtcDUkAfhetRuE5SQMP1KFyPQlFAFK5H4XrUTECuR+F6FF5VQBSuR+F6FEtAMzMzMzMTV0ApXI\u002fC9UhXQOxRuB6FG1FAj8L1KFxPUkCamZmZmflbQM3MzMzMzBlAj8L1KFzfW0DhehSuRzFgQBSuR+F6NEVAAAAAAAAgT0CamZmZmalQQK5H4XoUDllAKVyPwvVYX0DNzMzMzKxVQI\u002fC9ShcP1RAFK5H4XrEU0ApXI\u002fC9RhTQB+F61G4XkNA7FG4HoXbXEBI4XoUrr9hQNejcD0K91ZAcT0K16PAYEBcj8L1KCRlQGZmZmZmZj1AH4XrUbheUkDXo3A9CvdYQNejcD0KB1dAFK5H4XoUNkC4HoXrURhFQIXrUbge5UhA16NwPQoXUUAUrkfheoRcQMP1KFyP0lRA7FG4HoWLW0ApXI\u002fC9SgpQM3MzMzMXFxArkfhehR+XkCF61G4HpVgQMP1KFyPYkpAuB6F61G4YEApXI\u002fC9YhNQLgehetRaFFAcT0K16NwVUB7FK5H4XoGwHsUrkfhOlhAFK5H4XpUT0CuR+F6FN5dQNejcD0KR1pA9ihcj8IVS0A9CtejcA1aQAAAAAAAAFRAw\u002fUoXI8iTEAK16NwPQpTQFyPwvUoHFdAw\u002fUoXI9CU0CF61G4HoViQOxRuB6F+1VAUrgehevxRUCF61G4HkU1QDMzMzMz80tACtejcD1qUkDsUbgehUtSQFK4HoXr8VlACtejcD2KR0DhehSuR4FIQAAAAAAAEFhAPQrXo3AtYEAzMzMzMxNQQD0K16NwnUJAH4XrUbhOV0DD9Shcj3JRQK5H4XoUPlBASOF6FK4HR0CPwvUoXM9OQJqZmZmZOVtAFK5H4XpUSUA9CtejcA1WQFyPwvUoXFNAXI\u002fC9SicSECuR+F6FFZhQMP1KFyPAklAKVyPwvVoXEBmZmZmZlZYQFK4HoXrUUNArkfhehRuQ0B7FK5H4UpaQHE9CtejAFxASOF6FK4HYEAAAAAAAJBaQB+F61G4njlA9ihcj8IFUkBxPQrXo7BbQD0K16NwnVRACtejcD16XkBSuB6F60FUQPYoXI\u002fClUtAUrgehesRX0A9CtejcL1IQIXrUbgeBTpAw\u002fUoXI\u002fCR0CkcD0K1wNYQArXo3A9ikdAzczMzMx8W0DD9ShcjyJcQJqZmZmZmRtArkfhehTeXUCuR+F6FA5aQOxRuB6Fi1VAuB6F61G4UkA9CtejcD1BQMP1KFyP4klAmpmZmZmZQEB7FK5H4TpKQNejcD0KB1FAKVyPwvXYXkApXI\u002fC9ThSQClcj8L1aFlApHA9CtdTWUBSuB6F68FVQK5H4XoULiJAexSuR+FaRkCkcD0K1+NFQKRwPQrXQ1xAZmZmZmZmU0BSuB6F6zFVQM3MzMzM\u002fFBA9ihcj8IVSUBI4XoUrodUQPYoXI\u002fCZVJAUrgehevRS0D2KFyPwgVQQJqZmZmZeUlA9ihcj8LlZECuR+F6FG5bQB+F61G4nlRA16NwPQqnW0DhehSuR0FcQFK4HoXrMWRAUrgehevRS0CuR+F6FA5WQI\u002fC9Shc71pAexSuR+H6NEBI4XoUridXQMP1KFyPgkhACtejcD1qUUAzMzMzM3NMQAAAAAAAEGJASOF6FK6nVEBxPQrXo\u002fBWQI\u002fC9ShcT0tAexSuR+F6LMBcj8L1KBw7QAAAAAAAYEFAw\u002fUoXI9iX0AAAAAAAIBRQJqZmZmZOVVAZmZmZmbmXkDsUbgehZtQQPYoXI\u002fC9UVAuB6F61GIUEA9CtejcF1HQDMzMzMzU0BAUrgehetRVkD2KFyPwnUpQAAAAAAAQFpASOF6FK4HVUAAAAAAAKBTQM3MzMzMzFZAcT0K16OAX0BmZmZmZgZFQM3MzMzMzC9AAAAAAAAgTkDNzMzMzDxSQFK4HoXrMVZArkfhehTOTkCamZmZmblMQGZmZmZmplRAmpmZmZkZWEDD9ShcjwpkQLgehetRaFNAKVyPwvVoPkAzMzMzM6NSQEjhehSux19AXI\u002fC9SjcWUCuR+F6FB5gQMP1KFyPCmJArkfhehTuOkA9CtejcK1RQFyPwvUonE5AcT0K16OYYkCkcD0K10NNQHsUrkfhukpAAAAAAACgQUA9CtejcK1bQPYoXI\u002fClV1AFK5H4Xo0QUCuR+F6FI5LQOF6FK5HgVVAmpmZmZm5SUDNzMzMzIwyQLgehetRiFBAZmZmZmZmTUAK16NwPapGQPYoXI\u002fC1UlAcT0K16MwVEAzMzMzM1NSQFyPwvUoPGFA7FG4HoXLXUAK16NwPYoiwLgehetRCFhAcT0K16OIYEC4HoXrUbg\u002fQHsUrkfh+jBAUrgehevBXUD2KFyPwrVSQJqZmZmZyVRAUrgeheuBVUBxPQrXo+BZQLgehetRyFlApHA9CtcDV0CamZmZmdlMQBSuR+F6hFRAzczMzMwMUUDsUbgehatRQOxRuB6Fi1RAuB6F61FIWEDXo3A9CvdZQD0K16Nw\u002fVVAPQrXo3ANU0DsUbgehateQOxRuB6FW1lAmpmZmZm5RUAK16NwPZpZQPYoXI\u002fC5VFAuB6F61GYXkBcj8L1KBxBQDMzMzMzMz9A9ihcj8LFUEBI4XoUrtdRQJqZmZmZGU5A7FG4HoX7U0BxPQrXo7BYQK5H4XoUjkdAAAAAAADQWEB7FK5H4dpOQI\u002fC9Shcz0BAMzMzMzOjXEDXo3A9CgdUQLgehetRuFJA4XoUrkdBYkDhehSuR+FWQArXo3A9OlJA16NwPQpnXUAzMzMzMzNFQLgehetReDRAZmZmZmamOkAfhetRuB4bQB+F61G4LlVAKVyPwvUIQkCamZmZmflPQIXrUbge5VxAZmZmZmaGWkCuR+F6FA5WQIXrUbgerWBA4XoUrkfxUkAfhetRuH5SQD0K16NwvTPArkfhehQ+UEB7FK5H4Xo9QM3MzMzMTExA7FG4HoVbWEDNzMzMzKxaQOxRuB6Fa1dAZmZmZmZ2VUDsUbgehUtCQGZmZmZm5kBAexSuR+HqVUAK16NwPbpUQK5H4XoUPllAPQrXo3A9VECamZmZmWlQQEjhehSuN1dAw\u002fUoXI+CUUC4HoXrUehXQNejcD0KVz5A16NwPQrHUEC4HoXrUVhXQOxRuB6F6ztAw\u002fUoXI+CYEDXo3A9CrdTQOxRuB6FqzdAw\u002fUoXI\u002fiQEAK16NwPQpIQM3MzMzM7FJAmpmZmZk5RECPwvUoXA9JQI\u002fC9ShcL0NApHA9CtcDW0DD9Shcj6JCQAAAAAAAIFpAPQrXo3AtXUApXI\u002fC9ahSQFyPwvUoLFNAKVyPwvXoP0AUrkfhelRUQK5H4XoUzk9AXI\u002fC9SjsWkDhehSuR8FcQI\u002fC9Shcj1VAj8L1KFxvS0AAAAAAAIAnwIXrUbgeRVtA9ihcj8J1LEAzMzMzM+NUQClcj8L1KDtA16NwPQq3XkApXI\u002fC9VhQQFK4HoXrMVFASOF6FK43VkAUrkfhesRUQOF6FK5HgVJAzczMzMxsUUBSuB6F6xFhQB+F61G43lxAuB6F61HIWUAfhetRuKZkQPYoXI\u002fC1V1AMzMzMzOzSEBcj8L1KNxPQHE9CtejIFpA16NwPQp3RUCkcD0K14NSQOF6FK5HMVpAexSuR+GaSkDNzMzMzMw9QArXo3A9WlVAXI\u002fC9Si8SEAUrkfhegRQQFyPwvUofE9AAAAAAADAXECuR+F6FK5dQM3MzMzMnFtASOF6FK6nT0CkcD0K1\u002fNSQB+F61G47lNAzczMzMwMP0CamZmZmRk3QFyPwvUo9GBASOF6FK7\u002fYUBxPQrXozBWQB+F61G4fk1ArkfhehQuS0DhehSuR5FUQK5H4XoU7mFAmpmZmZmZJkAfhetRuA5YQClcj8L1yE5ASOF6FK4nUkDsUbgehQtVQIXrUbgeRUJA16NwPQqXP0DD9Shcj5JdQOF6FK5HwWNACtejcD26V0BxPQrXo\u002fBOQHE9CtejAFBAj8L1KFyvTkAUrkfhevRBQJqZmZmZuUNA9ihcj8LlVUAAAAAAALBdQB+F61G4jlhAKVyPwvXoQEDNzMzMzBxYQAAAAAAAwEFAmpmZmZlZSUAfhetRuB75P1K4HoXrUVJACtejcD2yYkBxPQrXo3AaQOF6FK5H8VFAzczMzMw8U0DhehSuR6E5QOF6FK5HEVVAj8L1KFz\u002fWkDXo3A9ChdVQJqZmZmZ2UpAKVyPwvVoVUCkcD0K16MpQJqZmZmZKVpAuB6F61GYWEDhehSuR4FdQFK4HoXrUSNAzczMzMxML0AzMzMzM6NUQKRwPQrXc1lApHA9CtdrYECamZmZmdk4QNejcD0K90lAKVyPwvWoSUBcj8L1KDxVQHE9CtejUEBAmpmZmZnpUUApXI\u002fC9fhbQOF6FK5HoVlA4XoUrkfhT0A9CtejcG1dQMP1KFyPgktAw\u002fUoXI\u002fyWUA9CtejcA1WQJqZmZmZiVZAw\u002fUoXI\u002fSVEAUrkfhepRLQOF6FK5HEV1AZmZmZmamV0DhehSuR5FdQBSuR+F6ZFZAUrgehetxWkApXI\u002fC9fhQQM3MzMzMzExAPQrXo3A9IUCPwvUoXA9WQHE9CtejMDxAPQrXo3CdVkCPwvUoXK9XQArXo3A9yklAexSuR+FaQ0D2KFyPwhVCQLgehetRmEtAzczMzMzMUEA9CtejcL0rQIXrUbgeBVZAFK5H4XoUWUCamZmZmUlXQHE9CtejsFxAXI\u002fC9SicV0Bcj8L1KJwzQOF6FK5HYV9AAAAAAACALEC4HoXrUcheQLgehetRWEJAhetRuB5FZEAzMzMzM7MsQD0K16NwrVdAmpmZmZlZUECPwvUoXJ9SQLgehetRyFRA16NwPQrXNEB7FK5H4TpCQBSuR+F6ZFJACtejcD0KTEDNzMzMzCxEQKRwPQrXY1RAPQrXo3CdRUDsUbgehUtCQLgehetRyFZA4XoUrkdhW0CF61G4HiVOQBSuR+F6NFlA16NwPQqXTECkcD0K1yNUQEjhehSuB0NAAAAAAACgRED2KFyPwvX8P5qZmZmZ2T1AMzMzMzPTSkCF61G4HtVWQHsUrkfhKlpA16NwPQrXSkDXo3A9Cpc7QKRwPQrX40RACtejcD3aUkB7FK5H4VpWQClcj8L1aEBAhetRuB5FT0CPwvUoXDdgQOF6FK5HITRAmpmZmZkBYkD2KFyPwiVYQPYoXI\u002fCFVVAPQrXo3B9SUA9CtejcC1WQHsUrkfhaldA7FG4HoX7UUBSuB6F65FAQBSuR+F6dFRAexSuR+F69D8UrkfhevROQArXo3A9ylVAhetRuB41VUAK16NwPSpXQOxRuB6Fa0hAj8L1KFwPVEAUrkfhegRTQOF6FK5H4VZAw\u002fUoXI\u002fCJUCkcD0K16tgQI\u002fC9Shcb1RAzczMzMzsTEBI4XoUrgdOQI\u002fC9ShcT1FAexSuR+HaRkA9CtejcB1PQGZmZmZmRlNASOF6FK4nWkBxPQrXo7BNQJqZmZmZmVpAAAAAAAAgYUB7FK5H4VpDQLgehetRyFNAPQrXo3CdVUD2KFyPwjVTQArXo3A9ulJAKVyPwvU4VEAK16NwPRpTQOxRuB6FK09AZmZmZmamUkDhehSuR2FKQLgehetRuCfAexSuR+G6QkAK16NwPSpLQMP1KFyPolBAH4XrUbi+TEDNzMzMzMxFQAAAAAAAgEtArkfhehTuPkDsUbgehQtBQFK4HoXrEVNAMzMzMzNTVUDhehSuR8FKQEjhehSuRy1Aw\u002fUoXI9SWkDXo3A9CndLQDMzMzMz41FAPQrXo3CtUkAUrkfhekRTQBSuR+F6VDJACtejcD0qQUAzMzMzMyNQQM3MzMzMnFVAXI\u002fC9SicQ0DsUbgehetMQB+F61G47lRA9ihcj8LFVEAzMzMzM3NOQFK4HoXrAV9AH4XrUbieUkDhehSuR7FTQLgehetRCFZACtejcD1KR0CPwvUoXJ9XQOF6FK5H4U5AUrgeheuRVEAK16NwPZpUQGZmZmZmZlVAKVyPwvVoOMCamZmZmYlQQHE9CtejMFhAzczMzMyMXkCPwvUoXH9dQGZmZmZmdllAUrgehetRVUAfhetRuP5SQK5H4XoUbkFAmpmZmZlJVUAfhetRuH5MQIXrUbgelVFAMzMzMzOzSEDXo3A9CldKQAAAAAAAEFFA9ihcj8IlUkC4HoXrUbgSQArXo3A9alBAPQrXo3CtWkAzMzMzMxNWQPYoXI\u002fCBV9AexSuR+GaVkD2KFyPwlVdQNejcD0Kt0FA9ihcj8L1EcA9CtejcP1NQClcj8L1iFdAcT0K16NgV0DhehSuR8FbQAAAAAAAsFxAAAAAAABQU0CF61G4HsVBQKRwPQrXg1RA7FG4HoXLX0CamZmZmZnhvx+F61G4ZmBACtejcD1qSEDXo3A9CtcXQOF6FK5HYT1AKVyPwvVoRUAUrkfherRgQFK4HoXr8URAexSuR+EKV0BI4XoUrldRQOxRuB6FC11APQrXo3BtW0BSuB6F64FZQOF6FK5H4RZAhetRuB6VWEAfhetRuH5cQD0K16NwdWJAH4XrUbieIUApXI\u002fC9ShHQMP1KFyPklVApHA9CtebYkCamZmZmflZQAAAAAAAoFdASOF6FK5H9T9mZmZmZmZYQMP1KFyPYkdAPQrXo3A9X0AAAAAAAABUQMP1KFyPYkFAw\u002fUoXI8yVkD2KFyPwsVcQPYoXI\u002fCtUVAj8L1KFxvSEDXo3A9CjdNQD0K16NwPT9AzczMzMzsVEDD9Shcj+JLQIXrUbgeRVpApHA9CtczU0CamZmZmXlQQNejcD0Kb2FASOF6FK73VUAzMzMzM3NGQM3MzMzMHF5APQrXo3DdVkBcj8L1KBxQQOF6FK5HoT\u002fAhetRuB7lQUC4HoXrUXhVQAAAAAAA4F1Aj8L1KFzvU0D2KFyPwrVQQB+F61G43j9AMzMzMzNTVUA9CtejcB1EQDMzMzMzcz9AKVyPwvXoUkCuR+F6FA5FQKRwPQrX81NA9ihcj8K1UED2KFyPwmVdQFyPwvUojFBAexSuR+G6Q0BI4XoUrkdIQIXrUbge5VJAXI\u002fC9Sg8QUCPwvUoXL9VQArXo3A9ylJAZmZmZmYWXEC4HoXrUZhGQOxRuB6Fa1RASOF6FK7nTUAzMzMzM5NOQLgehetR6FBACtejcD2qTEAK16NwPWpFQOF6FK5HkVFAuB6F61GYSEAzMzMzM9NOQHsUrkfhGkhAZmZmZmbWUkD2KFyPwpVAQBSuR+F6VEdAzczMzMy8V0D2KFyPwiVSQOF6FK5H8VZAPQrXo3B9X0AK16NwPYpSQM3MzMzMjDdAAAAAAABgRkBcj8L1KNxQQKRwPQrXg0pAcT0K16OwRkAzMzMzM\u002fM6QLgehetRuENAXI\u002fC9ShcB8AAAAAAAAA9QMP1KFyPAl9A7FG4HoVLT0DNzMzMzGxAQOF6FK5HYVJAZmZmZmaGXUBxPQrXo1BQQFyPwvUovFVAmpmZmZmBYUA9CtejcL1RQM3MzMzMTD9A7FG4HoWrRUAK16NwPcpFQK5H4XoUjk5A9ihcj8JlWUBxPQrXozA6QDMzMzMzg1JAw\u002fUoXI+iVUBI4XoUrkdOQM3MzMzMTCNASOF6FK7nSEAzMzMzM3NLQKRwPQrXE1hAPQrXo3A9AkDhehSuR2FCQKRwPQrXIylAH4XrUbgeF0DXo3A9CldaQMP1KFyPgkJAXI\u002fC9SgcREAAAAAAAHBfQJqZmZmZOUtAcT0K16NQVECF61G4HnVgQHE9CtejEERAw\u002fUoXI8yUkA9CtejcA1RQI\u002fC9Shcr0RACtejcD3KT0CamZmZmblJQK5H4XoUzlpAexSuR+EaREBSuB6F64FTQMP1KFyP8lhAw\u002fUoXI+CU0BSuB6F67FEQBSuR+F6hFxAMzMzMzPTRUAUrkfheqRTQEjhehSuRxJAcT0K16MQRUAfhetRuJ5LQK5H4XoUjkNA9ihcj8LFVECkcD0K1yNJQDMzMzMzE1JAuB6F61EIVUC4HoXrUbhMQD0K16NwfVFAuB6F61F4NUBmZmZmZsZLQOF6FK5HQUtA9ihcj8LVUUDhehSuR2E3QHE9CtejwF9AXI\u002fC9SisX0CF61G4HiVaQIXrUbgeRVBAmpmZmZlZYEAzMzMzMyNZQBSuR+F6lEVAw\u002fUoXI8CSECF61G4HnVcQClcj8L1SEVA9ihcj8J1LUCkcD0K16MUwFyPwvUo3E1AhetRuB7lS0BSuB6F6zFRQLgehetROCNAKVyPwvUISEBSuB6F6xFYQHE9Ctej0EJAUrgehethVUCkcD0K1+NGQB+F61G4zlpAFK5H4XpEUUDXo3A9CtctwKRwPQrXI1pAXI\u002fC9Si8TEDhehSuR+E6QClcj8L1OFJA9ihcj8K1PUBxPQrXo9BIQFK4HoXrUVVAFK5H4XrEVkCamZmZmTlNQHsUrkfh+l5AexSuR+HKWkDsUbgehUtNQEjhehSuR1pAw\u002fUoXI9SUkCuR+F6FD5aQClcj8L16DdAcT0K16OwQUBSuB6F6xFJQLgehetRWE1AH4XrUbieVEAfhetRuL5ZQMP1KFyPwhPASOF6FK5HRkB7FK5H4YpRQPYoXI\u002fCFUlApHA9CtejQEBxPQrXo7A1QKRwPQrXoyJAzczMzMwsREAAAAAAAPBWQKRwPQrXA09AXI\u002fC9Sj8R0CF61G4HtVQQOxRuB6F605A16NwPQrHZEA9CtejcL0iQPYoXI\u002fCdVFAmpmZmZmZH0CPwvUoXK9AQHsUrkfheklAXI\u002fC9ShcBcBxPQrXo9BVQKRwPQrXozrApHA9CtejTkAzMzMzM2NfQD0K16Nw7VVAcT0K16MwTkA9CtejcB1fQOxRuB6FO1FAFK5H4XrkU0CamZmZmflVQFyPwvUorFRAmpmZmZmZVkCPwvUoXM9MQJqZmZmZeUtAPQrXo3AtUUApXI\u002fC9QhPQIXrUbgeBUtAXI\u002fC9Si8RkAUrkfhelRMQM3MzMzMzARApHA9CtejHkAAAAAAAKBYQAAAAAAAwFhAj8L1KFx\u002fWECF61G4HkVDQM3MzMzM7FRAcT0K16PwOECamZmZmZlXQFyPwvUozFtA16NwPQo3XkAK16NwPapdQGZmZmZmZlNA4XoUrkfhDMBSuB6F6xFEQHE9Ctej0E1Aw\u002fUoXI\u002fSVUDXo3A9CrdSQBSuR+F6ZFZAj8L1KFw\u002fU0B7FK5H4ZpMQOF6FK5HQUVAUrgehevhUkCF61G4HiVFQGZmZmZmhlBAj8L1KFwPU0AAAAAAAKBIQFK4HoXrEVRACtejcD1qTkA9CtejcA1QQFyPwvUoHD1ASOF6FK6HUEBI4XoUrudJQPYoXI\u002fCRVhAKVyPwvW4UUDhehSuR6E0QNejcD0K1zJAexSuR+F6REAzMzMzM0NUQI\u002fC9Shcb1ZA16NwPQqXVkA9CtejcF1UQLgehetRmElAFK5H4Xq0VUCuR+F6FD5YQGZmZmZmhllAhetRuB7FVUAzMzMzM2tgQD0K16NwLVxAMzMzMzPTV0C4HoXrUZhSQB+F61G4niNAuB6F61G4QkDhehSuRwFMQOxRuB6F21xA4XoUrkcBVEDsUbgehQtFQFK4HoXrETVAAAAAAABwYUCkcD0K1yMyQM3MzMzMLFFAzczMzMxsQEDNzMzMzGxUQKRwPQrXM1BAAAAAAACgWUAzMzMzM\u002fNNQArXo3A9CihA7FG4HoWrM0CF61G4HsVBQAAAAAAAUFZAPQrXo3CtUUBSuB6F64FUQHE9CtejsElA4XoUrkdhPkCPwvUoXF9ZQAAAAAAAEFRACtejcD0KQECamZmZmVk6QGZmZmZmlllAmpmZmZlJUEAfhetRuN41QFK4HoXrETZAMzMzMzOjUkCF61G4HgU7QEjhehSuJ0lAexSuR+F6V0C4HoXrUbgbQLgehetR+FJAUrgeheuRUEBSuB6F65FcQHsUrkfhqlNAMzMzMzNzVUDNzMzMzCxeQOF6FK5HAUhAj8L1KFxvVUCamZmZmdk\u002fQDMzMzMzA1JAH4XrUbgeOUBxPQrXozBOQNejcD0KF1FAPQrXo3AtUUDsUbgehXtWQHsUrkfhmlNASOF6FK6HQUDNzMzMzKxBQEjhehSul1BAXI\u002fC9Sg8UEAK16NwPbpaQFK4HoXrkVNAzczMzMzcU0CuR+F6FF5aQMP1KFyPwjZApHA9CtcjUUDNzMzMzHxQQK5H4XoULkJAMzMzMzMDV0C4HoXrUbhDQDMzMzMzA2FAPQrXo3AtVECPwvUoXO9fQMP1KFyPQjVA16NwPQq3QkCPwvUoXK9UQAAAAAAAwE5ASOF6FK5nVkCuR+F6FA5IQOF6FK5HIUJAKVyPwvVoVED2KFyPwnVIQNejcD0KZ1ZApHA9CtcTUkApXI\u002fC9ShLQDMzMzMzM0JAZmZmZmbGVEAAAAAAAEBQQK5H4XoUTkdAj8L1KFwPQkC4HoXrUbguQI\u002fC9Shcr1BAAAAAAAAAAMBI4XoUrtdVQI\u002fC9Shcr0BAhetRuB4FIUB7FK5H4Xq0P9ejcD0KJ1BAhetRuB7lV0BxPQrXo8BbQDMzMzMzw1JArkfhehROXkDhehSuR7FVQEjhehSuJ15A16NwPQr3SEAzMzMzM3M4QGZmZmZmhlBAhetRuB4FKkDD9ShcjwJSQBSuR+F69ENAKVyPwvUIV0CuR+F6FI5KQMP1KFyPAkFAj8L1KFyPSEB7FK5H4To6QOF6FK5HoUtAAAAAAADATEAfhetRuF5LQEjhehSuhzRA16NwPQq3R0CamZmZmXlGQD0K16NwvUpAuB6F61F4NUAAAAAAADBhQAAAAAAAQFRAj8L1KFxPTUApXI\u002fC9ehLQDMzMzMzQ1tArkfhehQuIkDD9ShcjyJLQJqZmZmZiVNAKVyPwvUoLEDNzMzMzMw8QHsUrkfhOltAzczMzMyMYEDNzMzMzDxWQK5H4XoUrj9A7FG4HoVrQECPwvUoXG9IQArXo3A9akBAMzMzMzOjUEDXo3A9Cpc0QI\u002fC9Shczz9A16NwPQqHVkBI4XoUrgdPQBSuR+F6tExAFK5H4XrUP0BSuB6F69FWQI\u002fC9ShcL09ASOF6FK6HREBmZmZmZgZTQEjhehSuRz1ArkfhehQuQUAfhetRuK5TQFyPwvUoXE5ArkfhehSOSkB7FK5H4VpOQOxRuB6Fy1dAj8L1KFxPVUCkcD0K16P4P6RwPQrXg1JAcT0K16MQRUCamZmZmSlTQLgehetRCF9AMzMzMzMzIMCPwvUoXN9VQFK4HoXrcUxAUrgehesRVkCF61G4HnVSQHE9CtejsE9A9ihcj8LVUkDsUbgehUtGQFyPwvUoXA1AXI\u002fC9SjMUUDsUbgehSszQDMzMzMzM1RAUrgehesRR0CkcD0K19NTQIXrUbgehU5AcT0K16PQTkA9CtejcD0xQI\u002fC9Shcb0JAXI\u002fC9SjcRUBSuB6F60FRQFyPwvUoXD5AFK5H4XqUPUA9CtejcH1KQEjhehSuV1NApHA9CteDSUBSuB6F60FaQD0K16NwPThAmpmZmZnpXkCuR+F6FC40QFK4HoXrMVZAmpmZmZkpVEAK16NwPXpSQHE9CtejUEJAXI\u002fC9SjsUkCamZmZmRk+QEjhehSuxzZApHA9CtfjOkAK16NwPdpWQFK4HoXrUTBAFK5H4XpkU0CamZmZmZknwKRwPQrXQ1JAw\u002fUoXI+KYEDsUbgehes4QPYoXI\u002fClVBApHA9CtfDV0DsUbgehRtXQNejcD0K1w1ACtejcD1KUEC4HoXrUbhRQB+F61G4XkpASOF6FK6HRUBcj8L1KGxYQB+F61G4PklAXI\u002fC9SjcVEA9CtejcL1NQK5H4XoUzktAw\u002fUoXI9CSMBxPQrXo\u002fAwQLgehetRWELA16NwPQr3UECamZmZmdk5QAAAAAAAQElAw\u002fUoXI9CIEBxPQrXo3BfQM3MzMzMzFlAZmZmZmbGXEAUrkfhepQ9QHsUrkfhelVAj8L1KFzPR0CPwvUoXK9HQDMzMzMz01BAFK5H4XrUO0DXo3A9CldQQAAAAAAAADlAMzMzMzPzU0Bcj8L1KFxFQI\u002fC9ShcT0JA16NwPQpnW0CuR+F6FK5KQClcj8L1OFFAKVyPwvX4VECamZmZmdk2wClcj8L16DxAj8L1KFxPNUBmZmZmZmYIwMP1KFyPgkFAXI\u002fC9SgMU0CuR+F6FK4jQKRwPQrXg1ZAzczMzMx8WECF61G4HiVHQHsUrkfhmkFArkfhehQuVECPwvUoXA9SQBSuR+F6dFRAcT0K16NQRUDsUbgehUtNQOF6FK5H8VFAexSuR+F6TkCPwvUoXM82QHsUrkfhek5Aw\u002fUoXI9CT0DD9ShcjzJRQOxRuB6F6xtAcT0K16PQQ0AAAAAAAAAyQAAAAAAAoEdAexSuR+EqW0AAAAAAAMBRQAAAAAAAAEpArkfhehQuMUDXo3A9Cv9gQHE9CtejkEFA9ihcj8K1M0CF61G4HrVWQLgehetRqFpA4XoUrkehRsBxPQrXozBNQMP1KFyPMlRAKVyPwvWISkCuR+F6FO44QBSuR+F6ZFRAMzMzMzOzKEBcj8L1KOxbQArXo3A9qk5AmpmZmZkZTEApXI\u002fC9aghQOxRuB6F605AzczMzMyMTkAfhetRuP5QQIXrUbgeHWFAMzMzMzODUkBxPQrXo3AwwHE9CtejME9ApHA9CtcDQECuR+F6FO5QQOxRuB6Fi0hAFK5H4XqEUEDD9ShcjwJVQAAAAAAAgEVAXI\u002fC9SicVECF61G4HoU4QBSuR+F6VEFAZmZmZma2VEA9CtejcG1UQBSuR+F6lDBAPQrXo3B9NUBcj8L1KExRQJqZmZmZWU9AexSuR+G6UEA9CtejcD0nQB+F61G4Hj5AcT0K16NwREC4HoXrUahVQJqZmZmZ2VZA9ihcj8L1OUDXo3A9Ctf\u002fP65H4XoURmJAUrgehetRW0BI4XoUrudBQJqZmZmZKVBAexSuR+HqVUBxPQrXozBBQD0K16NwDVlAMzMzMzPzOkDsUbgehbtRQOxRuB6F6wFAH4XrUbieT0AUrkfhepQ4QHsUrkfh2lFA16NwPQonVkD2KFyPwgVTQLgehetROEtA4XoUrkexWkAUrkfhehQ0QClcj8L1qExArkfhehSeYECF61G4HkVaQHE9CtejcFdACtejcD06V0ApXI\u002fC9QhJQD0K16NwXU9ASOF6FK6nRUCF61G4HvVTQFK4HoXrkThACtejcD3KU0CuR+F6FL5UQLgehetReERAexSuR+FaVkB7FK5H4fo5QJqZmZmZmRlAUrgeheuROEBcj8L1KPxUQOxRuB6FO1JAUrgehetxQkBSuB6F61FPQHE9CtejcCVAH4XrUbgeJECF61G4HsUyQEjhehSuRwdAmpmZmZnJVEB7FK5H4QpTQIXrUbgeZUJAhetRuB6FC8Bcj8L1KFxVQK5H4XoUjk9Aj8L1KFyvQ0DXo3A9CndNQPYoXI\u002fC5V9ASOF6FK53UkAUrkfheqRRQGZmZmZm9lBA9ihcj8IlVkDhehSuR+FPQPYoXI\u002fCdV9AzczMzMxsVUDhehSuR3FSQKRwPQrXw0xAZmZmZmZmPkBmZmZmZtZSQOxRuB6Fa0NAXI\u002fC9ShsUEDhehSuRwFZQEjhehSuR0lAZmZmZmamRECuR+F6FC4gQKRwPQrX40xACtejcD2KRkApXI\u002fC9SgyQHE9CtejsEhAKVyPwvWoWkBxPQrXozBTQHE9CtejcD9APQrXo3D9TEAUrkfherRDQB+F61G4HjJAUrgehesxR0C4HoXrUbhIQHsUrkfhek1AcT0K16PwRkAfhetRuD5NQOF6FK5HgUJAuB6F61HYTkAAAAAAAMBKQBSuR+F6VF5ASOF6FK4nTUCkcD0K17NUQK5H4XoU\u002flJAUrgehetxT0BxPQrXo7BPQDMzMzMzczdAw\u002fUoXI8CRUDhehSuRwFOQMP1KFyPUlVAFK5H4XoUX0BSuB6F6\u002fFKQDMzMzMzMxrAj8L1KFzfV0CF61G4HgU0QLgehetRaFFAPQrXo3CdU0DD9Shcj8IUQDMzMzMzMz5AhetRuB51UkC4HoXrUVhEQHsUrkfh+lRAcT0K16OwNECPwvUoXI8IQOF6FK5H8VNAzczMzMzMGkBcj8L1KLxPQB+F61G4fkdAPQrXo3D9NkB7FK5H4XpEQDMzMzMzw1hACtejcD3qT0CamZmZmflQQLgehetROEZAKVyPwvXoPkBxPQrXo\u002fAgwD0K16NwPSpACtejcD0aUEC4HoXrURhKQDMzMzMzMy5Aw\u002fUoXI9CTkCuR+F6FA5eQM3MzMzMDFFAH4XrUbiuUUAAAAAAAKBIQD0K16NwnVNAZmZmZmZGVUAzMzMzM7NRQIXrUbge1VZASOF6FK5HD0DhehSuR+E+QClcj8L1KFxAAAAAAABATUApXI\u002fC9SgwQOxRuB6FC0BArkfhehROR0B7FK5H4VpLQEjhehSuV1NAH4XrUbieV0AfhetRuH5JQBSuR+F6VEZAFK5H4XpUQECPwvUoXE87QEjhehSuB0BA16NwPQrnWkD2KFyPwgVZQIXrUbgehTZA"},"type":"scatter"},{"line":{"color":"#4f46e5","dash":"dash","width":2},"name":"AI Capacity Prediction","x":{"dtype":"i2","bdata":"AQACAAQABQAHAAgACgALAA0ADgAQABEAEwAUABYAFwAYABoAGwAdAB4AIAAhACMAJAAmACcAKQAqACwALQAuADAAMQAzADQANgA3ADkAOgA8AD0APwBAAEIAQwBEAEYARwBJAEoATABNAE8AUABSAFMAVQBWAFgAWQBaAFwAXQBfAGAAYgBjAGUAZgBoAGkAawBsAG4AbwBwAHIAcwB1AHYAeAB5AHsAfAB+AH8AgQCCAIQAhQCGAIgAiQCLAIwAjgCPAJEAkgCUAJUAlwCYAJoAmwCcAJ4AnwChAKIApAClAKcAqACqAKsArQCuALAAsQCzALQAtQC3ALgAugC7AL0AvgDAAMEAwwDEAMYAxwDJAMoAywDNAM4A0ADRANMA1ADWANcA2QDaANwA3QDfAOAA4QDjAOQA5gDnAOkA6gDsAO0A7wDwAPIA8wD1APYA9wD5APoA\u002fAD9AP8AAAECAQMBBQEGAQgBCQELAQwBDQEPARABEgETARUBFgEYARkBGwEcAR4BHwEhASIBIwElASYBKAEpASsBLAEuAS8BMQEyATQBNQE3ATgBOQE7ATwBPgE\u002fAUEBQgFEAUUBRwFIAUoBSwFNAU4BTwFRAVIBVAFVAVcBWAFaAVsBXQFeAWABYQFjAWQBZQFnAWgBagFrAW0BbgFwAXEBcwF0AXYBdwF5AXoBewF9AX4BgAGBAYMBhAGGAYcBiQGKAYwBjQGPAZABkQGTAZQBlgGXAZkBmgGcAZ0BnwGgAaIBowGlAaYBpwGpAaoBrAGtAa8BsAGyAbMBtQG2AbgBuQG7AbwBvQG\u002fAcABwgHDAcUBxgHIAckBywHMAc4BzwHRAdIB0wHVAdYB2AHZAdsB3AHeAd8B4QHiAeQB5QHnAegB6gHrAewB7gHvAfEB8gH0AfUB9wH4AfoB+wH9Af4BAAIBAgICBAIFAgcCCAIKAgsCDQIOAhACEQITAhQCFgIXAhgCGgIbAh0CHgIgAiECIwIkAiYCJwIpAioCLAItAi4CMAIxAjMCNAI2AjcCOQI6AjwCPQI\u002fAkACQgJDAkQCRgJHAkkCSgJMAk0CTwJQAlICUwJVAlYCWAJZAloCXAJdAl8CYAJiAmMCZQJmAmgCaQJrAmwCbgJvAnACcgJzAnUCdgJ4AnkCewJ8An4CfwKBAoIChAKFAoYCiAKJAosCjAKOAo8CkQKSApQClQKXApgCmgKbApwCngKfAqECogKkAqUCpwKoAqoCqwKtAq4CsAKxArICtAK1ArcCuAK6ArsCvQK+AsACwQLDAsQCxgLHAsgCygLLAs0CzgLQAtEC0wLUAtYC1wLZAtoC3ALdAt4C4ALhAuMC5ALmAucC6QLqAuwC7QLvAvAC8gLzAvQC9gL3AvkC+gL8Av0C\u002fwIAAwIDAwMFAwYDCAMJAwoDDAMNAw8DEAMSAxMDFQMWAxgDGQMbAxwDHgMfAyEDIgMjAyUDJgMoAykDKwMsAy4DLwMxAzIDNAM1AzcDOAM5AzsDPAM+Az8DQQNCA0QDRQNHA0gDSgNLA00DTgNPA1EDUgNUA1UDVwNYA1oDWwNdA14DYANhA2MDZANlA2cDaANqA2sDbQNuA3ADcQNzA3QDdgN3A3kDegN7A30DfgOAA4EDgwOEA4YDhwOJA4oDjAONA48DkAORA5MDlAOWA5cDmQOaA5wDnQOfA6ADogOjA6UDpgOnA6kDqgOsA60DrwOwA7IDswO1A7YDuAO5A7sDvAO9A78DwAPCA8MDxQPGA8gDyQPLA8wDzgPPA9ED0gPTA9UD1gPYA9kD2wPcA94D3wPhA+ID5APlA+cD6APpA+sD7APuA+8D8QPyA\u002fQD9QP3A\u002fgD+gP7A\u002f0D\u002fgP\u002fAwEEAgQEBAUEBwQIBAoECwQNBA4EEAQRBBMEFAQVBBcEGAQaBBsEHQQeBCAEIQQjBCQEJgQnBCkEKgQrBC0ELgQwBDEEMwQ0BDYENwQ5BDoEPAQ9BD8EQARBBEMERARGBEcESQRKBEwETQRPBFAEUgRTBFUEVgRYBFkEWgRcBF0EXwRgBGIEYwRlBGYEaARpBGsEbARuBG8EcARyBHMEdQR2BHgEeQR7BHwEfgR\u002fBIEEggSEBIUEhgSIBIkEiwSMBI4EjwSRBJIElASVBJcEmASaBJsEnASeBJ8EoQSiBKQEpQSnBKgEqgSrBK0ErgSwBLEEsgS0BLUEtwS4BLoEuwS9BL4EwATBBMMExATGBMcEyATKBMsEzQTOBNAE0QTTBNQE1gTXBNkE2gTcBN0E3gTgBOEE4wTkBOYE5wTpBOoE7ATtBO8E8ATyBPME9AT2BPcE+QT6BPwE\u002fQT\u002fBAAFAgUDBQUFBgUIBQkFCgUMBQ0FDwUQBRIFEwUVBRYFGAUZBRsFHAUeBR8FIAUiBSMFJQUmBSgFKQUrBSwFLgUvBTEFMgU0BTUFNgU4BTkFOwU8BT4FPwVBBUIFRAVFBUcFSAVKBUsFTAVOBU8FUQVSBVQFVQVXBVgFWgVbBV0FXgVgBWEFYgVkBWUFZwVoBWoFawVtBW4FcAVxBXMFdAV2BXcFeAV6BXsFfQV+BYAFgQWDBYQFhgWHBYkFigWMBY0FjwWQBZEFkwWUBZYFlwWZBZoFnAWdBZ8FoAWiBaMFpQWmBacFqQWqBawFrQWvBbAFsgWzBbUFtgW4BbkFuwW8Bb0FvwXABcIFwwXFBcYFyAXJBcsFzAXOBc8F0QXSBdMF1QXWBdgF2QXbBdwF3gXfBeEF4gXkBeUF5wXoBekF6wXsBe4F7wXxBfIF9AX1BfcF+AX6BfsF\u002fQX+Bf8FAQYCBgQGBQYHBggGCgYLBg0GDgYQBhEGEwYUBhUGFwYYBhoGGwYdBh4GIAYhBiMGJAYmBicGKQYqBisGLQYuBjAGMQYzBjQGNgY3BjkGOgY8Bj0GPwZABkEGQwZEBkYGRwZJBkoGTAZNBk8GUAZSBlMGVQZWBlcGWQZaBlwGXQZfBmAGYgZjBmUGZgZoBmkGawZsBm0GbwZwBnIGcwZ1BnYGeAZ5BnsGfAZ+Bn8GgQaCBoMGhQaGBogGiQaLBowGjgaPBpEGkgaUBpUGlwaYBpkGmwacBp4GnwahBqIGpAalBqcGqAaqBqsGrQauBq8GsQayBrQGtQa3BrgGuga7Br0GvgbABsEGwwbEBsYGxwbIBsoGywbNBs4G0AbRBtMG1AbWBtcG2QbaBtwG3QbeBuAG4QbjBuQG5gbnBukG6gbsBu0G7wbwBvIG8wb0BvYG9wb5BvoG\u002fAb9Bv8GAAcCBwMHBQcGBwgHCQcKBwwHDQcPBxAHEgcTBxUHFgcYBxkHGwccBx4HHwcgByIHIwclByYHKAcpBysHLAcuBy8HMQcyBzQHNQc2BzgHOQc7BzwHPgc\u002fB0EHQgdEB0UHRwdIB0oHSwdMB04HTwdRB1IHVAdVB1cHWAdaB1sHXQdeB2AHYQdiB2QHZQdnB2gHagdrB20HbgdwB3EHcwd0B3YHdwd4B3oHewd9B34HgAeBB4MHhAeGB4cHiQeKB4wHjQeOB5AHkQeTB5QHlgeXB5kHmgecB50HnwegB6IHowekB6YHpwepB6oHrAetB68HsAeyB7MHtQe2B7gHuQe6B7wHvQe\u002fB8AHwgfDB8UHxgfIB8kHywfMB84HzwfQB9IH0wfVB9YH2AfZB9sH3AfeB98H4QfiB+QH5QfmB+gH6QfrB+wH7gfvB\u002fEH8gf0B\u002fUH9wf4B\u002foH+wf9B\u002f4H\u002fwcBCAIIBAgFCAcICAgKCAsIDQgOCBAIEQgTCBQIFQgXCBgIGggbCB0IHgggCCEIIwgkCCYIJwgpCCoIKwgtCC4IMAgxCDMINAg2CDcIOQg6CDwIPQg\u002fCEAIQQhDCEQIRghHCEkISghMCE0ITwhQCFIIUwhVCFYIVwhZCFoIXAhdCF8IYAhiCGMIZQhmCGgIaQhrCGwIbQhvCHAIcghzCHUIdgh4CHkIewh8CH4IfwiBCIIIgwiFCIYIiAiJCIsIjAiOCI8IkQiSCJQIlQiXCJgI"},"y":{"dtype":"f8","bdata":"aGSuopQSVECoJRY973xUQFBc2b+EfVRAyDx3PaxbVEAAgSwbi0pUQIi2ri98YVRAWBmV5nlGVECAtau6tWFUQMibY2uVy1RA8N1rjjT6U0CodL46Ex5UQKB+obL2L1RA8MOGv2xOVEBABuxceCRUQAD58wd2dVRAgIX0D\u002f5FVECoCCcGiGJUQBBhvYcnSFRASCBL1WnxU0Cg86HADwBUQLA9vn5wW1RA8Ab5oxJaVEAoXW6I6CJUQKDsgwTmGFRAkOk9zhBVVEBQNikwdPlTQFBjZ1\u002fTSFRAeLKKVPsVVECYSVcLhThUQBClg8vDEVRAqLdMdXoxVEAo1h+N\u002fiBUQPjSGNBvblRA+Omcg4buU0AortTq9QlUQIhETomiYFRA4Pzc9NwqVECQLeY43eVTQJhW2J54KFRAgBuuQ2shVEAA6xMqdTRUQDBSHmGKLVRACMl0x0kpVEAgUhJWDk5UQJj7bv8id1RAGOuG8fAZVECAgDc5iZBUQIgpys8oi1RA8EUr7BwVVEDgphpx9GxUQAgtFsYjGFRAwClt6FY2VECYv1kediJUQPifMLn9UFRA6EtVcJQVVEDgpKbO4iNUQBiLsI3CUFRAKCOR4hA\u002fVEA4k8smue9TQFDSkT1FRVRAABe26MPwU0CQBTUllRlUQKhlkdaECVRASPLZqW8eVEBAx+s5aCxUQKCuzv\u002fqvVNAKKCyuRgsVECobrwwOgRUQMDzYNLdIVRA+JQ2WUcVVEDg5BXMsQpUQOhNZWkg3VNA+GVYlWTNU0AQ2SUHkwFUQDDPBK3y3FNA6CPZmvbXU0AwOTJhhN9TQBC496\u002frM1RAQAAuUgnJU0AQCbaCBitUQEjNs2qmA1RAqIYya3e3U0AgnQYk\u002futTQKhqiyudoVNAmM2V8BXTU0CAQGNuSfRTQKi5BKQrFlRA4IKgBn4sVED4soMLLvNTQMgkn4aM2FNA6ELdvFXwU0CoZxq18CZUQJi4v7sgFFRAsLsOrEXfU0BQohmy1MJTQNi3fMNd1FNAuBBQRymaU0A4COpBeuRTQPA40BYPtVNAyIAphecbVEDIhAPgPOJTQMh2a6d3KFRAMPZWga3xU0DAVtPe99FTQHgpn0pu1FNACNWe25GlU0BQloELm8hTQBB9IqyXMVRACEaNQ\u002fDzU0CIqWXssKZTQHCl7w77sVNAUPeLZpOeU0CA9EKTsd5TQNhK4s9B11NAUDWEuKqTU0B4\u002fZr28OtTQJhods7TDVRAKHea6wr5U0Boizg0E8pTQCj6ul\u002fx4VNAmKarn0nIU0AIlXAM93FTQCA\u002fH7fv2FNAUM24JL9tU0CIK+iUoGJTQCAzqCjJrlNAsAyvWELQU0Bov7ZwC+FTQAgM7TrexVNAOFt0Ro+AU0BYd3Az5YVTQEAAVSXWeVNAELOLq2aiU0DAxMkJE6pTQCgw7fy5oFNA+ARLZs\u002fHU0AIcqH6351TQIhjelxRClRAiGBKSYelU0BIu9qVsrJTQCDLjoFEy1NAyE3ceI94U0BgE5IR+LpTQMDkbWqPuVNA2C4qCMq3U0DALcmOVIFTQPhqvbcRnlNAmMWfoP+YU0AISYdkkchTQJD7Cjtgo1NAQJZcDDMXVEAIOEuMTZ5TQFB+8HKQmVNAqMT+T5ypU0CIZikjasFTQNClEpW3dlNAQODksANyU0B4LICz57ZTQJD2kBsbv1NAQC0118pyU0DYgTT\u002fY25TQGjDAZGzg1NA6DCWjpvSU0CQFq6sNrJTQICoL1FXvlNAwF70xHVkU0D4d0055cRTQHBYAG\u002fDv1NAeFqNxN1WU0B4XbD3qn5TQIC0zfiChFNAEAbn637MU0CYwE6NDFBTQGAV0iozYlNAUNDQVM\u002fXU0CYmswJhFlTQGBD7ILSglNA8EWi8MyJU0DQa8KzEFtTQEC3zklHU1NA8PfAEdiRU0CQWunb0FBTQFhE7RBRoVNAwOUwa2udU0CADeGPcklTQCCZB\u002fv6ZFNAGITB1+eWU0AY3sPw0pVTQADHIF7jZ1NAwAC9wmmyU0DIZTxAaJtTQMDByf1kQVNAYBlPKOOJU0Cw9ML1m2VTQNhmnOq1b1NAiMLx8QpxU0AobRG0Z3BTQAi6wjGbMFNA0HOeO6uTU0BQX55M4q5TQKg07MLRaFNAWEEotGgoU0DoOPWeDz1TQFhNppOMa1NAUNgHSwecU0AQkNzBNJFTQBihstwDr1NAUNjpuXJlU0BA44ju9EJTQNhf\u002ftIWGFNAoA3Mt6grU0CYdKuXSpdTQGBKoYDwXFNAaNUXPuwxU0BoTMT8VjFTQBD5sPG0qFNAeDM1K9VsU0Coe2BkrBJTQKiuWj55XlNAWMWVqLdhU0DoG8d2\u002fUpTQMjYpT9cnFNAGPMXw0RsU0B4o2riVvRSQPgebDVlTVNAmCyl7hBhU0BwhCzwjoRTQOiKeNp+TlNAMNetvAldU0AAt1QzMQtTQACb3HuiHlNA+JG1iId5U0Bo2ZVxCDVTQEi1LzjXRlNAIJDbPCw6U0CAJC9UuDhTQIgk\u002fIeIUVNA0K8GIC5tU0A410t\u002fSV1TQOizPK1qJVNAMD9yXScrU0CQgmqNGEFTQFCboXUBDVNACKBfv2tTU0Cw6iI\u002fKEBTQDi9hz8hMlNAQDM3JTpaU0DYwcQuBg5TQIDX+dj9KlNA6FmvT+r7UkDgW05BERNTQNDrdfju6VJAIE7L9ixfU0CYzkZEy5hTQKhDmlO3cVNAEApVSBM1U0BAsaenSF9TQGD+4lUfQVNAwMGZVcA6U0CoGEKKiB1TQIjMvJiYLVNAgEF+KfALU0BQ448X8fhSQKCHreBea1NAWHGofQm7UkDIlYht9C5TQDh6PKvLQVNAYJTc4G4AU0DQee2iKD9TQIAQMWuACFNAaJ1AI6LVUkBIDAsjkOtSQPhJ52GxE1NAaFeLgXMWU0B4JkB1FiNTQOgDQ\u002f34BVNA2Cvj4dDnUkBwCPzFqT9TQCClPPEW9lJAyKj3g8P8UkAwCBt1nCtTQGBskewL3lJAuFiHloHfUkAAGp3wzENTQLj+EKunFlNAyMkpCkrrUkBoLVli9DxTQIiMlHQ1OlNAqMmSxlguU0A48JjIbhxTQHhRfai681JAkD+Bz7DWUkCICve14S9TQBg5AuzrHVNAYH0K7KfQUkAobfE1U9RSQOjB2mPE6lJAiMtH9rrYUkDIzhtNvMdSQCASDjrh01JAiCKsutCkUkDAZXjr7dZSQAD6xZtPUlNA+I87wmneUkAgZg+99OVSQEhAlech8FJAoGtV1hPcUkBoCihNsqhSQKh7Kar4C1NAIFAjrFwyU0DIYZj7cftSQOAe6NSd3FJAIFoAxQu2UkAg\u002fM0bpN9SQPDtvn7zNFNA+MlyObXMUkBACid1ijFTQOipC63hwlJAsLBOUpjlUkCwtWUp7YJSQLj0g2+2ylJAgJFC\u002fVzIUkAwq\u002fRZvhBTQOAIAApJvlJAiAyS0VgYU0AwcWsvl4tSQBjD8J8tqVJA6L3c+7L7UkBY1+daJrdSQPALv+jYAlNAILts+wa1UkBgxFcasAtTQHDKpi3Y81JAkAisYYMuU0C4nrkpu+tSQOiJXikK81JA+B9V7KApU0Bo\u002fhl9m5tSQPBKlILrxVJAOF6GQWK4UkAIMV76S9pSQFCmIhJ1eVJAOIzmyqTcUkBwOFCdcPNSQLATAtoGHFNAWOpmunGaUkAgk83daNNSQHiMx\u002fb87FJAAFgx4qWsUkCYoUFEH6xSQJC0yRV\u002fY1JAIJK4xjbMUkAgohEZmL5SQHiwPsgVvlJAgGRD9N+PUkBwicg3t9VSQJj++H1V5FJAoPUat32JUkCIvIuJEadSQFj6N+tU51JAkNImOaK+UkB49mH3Z9FSQLDbzjIE61JAMKeAIjXjUkDor1EDSX5SQPCSz5MNblJAWOsn6BOxUkBYhR\u002fN2qZSQHjt8SJ8m1JAMPokquxNUkCwE5uUY15SQGhaAcvRXFJAeJInBH+SUkDgh2GgoX1SQMgMupYJtFJA0G82QdDSUkDQH2ZXYKZSQBBhN0Jb9FJAoKpzXKeWUkBg7R75TIVSQFDOo4scZFJAEC5mACfGUkCg31A7MM5SQECdJq\u002fGk1JASFi1ykyNUkAYv0Dzy3xSQCAftXUwl1JAyOu7XS3uUkDga0qDy0dSQKhq2qJUXlJAGI8c5214UkAo8QkpxNdSQHBMgwE5X1JA8HNsOFyZUkBAgS4Dz7RSQAjylpWafVJAwD\u002fznsOuUkBQj+9Y2MFSQDDM\u002fTVUelJA0OzVQoZzUkDQvVapI6tSQICLfIVTIVJAeBxlfSRtUkCAUWlzNphSQCipXBE3hlJAKIcn243VUkAQZRoX75ZSQEA3CxgBkFJAiM0XxUWbUkBwI2QSpKtSQJAXQ93KdVJAGB580EF6UkBoO2yugIdSQCDwpezPUFJAeEzj40zJUkCgv8eKR1RSQFhEpfJOGVJAkPH5BhctUkDwyqcsIFBSQFDVG3MEZVJAuFQvyQVHUkAQQDw1jmlSQKibZmrOqFJAWKMmIlVuUkAId14g2ZtSQPA2gNyXk1JAUM97bRFTUkBoFtEGGStSQDgrCJRpNVJAyJ+E5S1IUkDIbX2BkipSQLifVt4\u002fXlJA6Jr7HqI+UkAoObbBcWVSQCjk5TQkbFJA+KTW7+tYUkDwiNeJBgtSQOgLVq1LXlJAQNhjNL0uUkC48m0cg5VSQJBRPZvoKVJACPbCyDeEUkDI5DX88TBSQOhOiGuXbFJAwG2OeXA\u002fUkDorzro76VSQNCfhbf4dFJAYEjCo6doUkAgzjfxLlpSQAghT1hPTlJA8BvPfxtvUkAI+adLV0FSQCipjdsN\u002fFFAEJgQqiOWUkDIBWwVFoxSQPi02bCZVVJAOJF3q9IUUkDAsR8vSkRSQCBVBYQU\u002flFAkBlN8Pw+UkAomz8J8ldSQOCV4PpwYVJAmF9D2SRrUkCgQcb8bzpSQJCqvQnuMlJAwPrcgtUYUkCYGbucYTtSQMDI3iMAZ1JAMM8Ifzb7UUBYKZduiUlSQDjrWleMQlJAqOfdi3ZMUkCwKO6aUgtSQNBIig3UQlJAoGlCOC09UkAgl1A93yVSQOiiu3hrP1JAyOMXLC9GUkAYqMNLCRpSQGB5YHr4JFJAYPX9EoAqUkAI28RxaUNSQFi4vxQwElJA0A9Dc6dAUkBoJOHBripSQAAUp8nvV1JAuFZM\u002fx1ZUkBQFyWGJitSQOiEpSY\u002folFAeFNFAx4vUkCwNNpMT0FSQJhXByieKVJAqACMIwwFUkAQUsmNkPRRQOh1O4g1LVJAiATT+YvFUUCgyUprmc9RQOis0+K0MlJASNdQ2O7GUUCg8ExY3zdSQAhFwM2DMVJAgA3nxcxKUkC4VABum\u002fxRQJBiOotNC1JAmESDerr7UUBgQs5WQt5RQLDvwGkr1FFAcCp43AEWUkA4MgaZ6S5SQKCnCcow1FFA+CczEOX7UUAYECN0xglSQADvOeL51VFA6HqoM15fUkDAWRQtphhSQKA4piVXRlJAwFz\u002fWuATUkCog65sXf1RQCgOW6VuOFJA6LAS\u002fMPUUUDAAVwCHBNSQLi36am4BVJA8DTPzWnyUUAY0dvKfuFRQDhJJUxRAVJAiAMr88y9UUAQt6JOCPZRQFiwEUCxH1JAwMIoPfkEUkBg3ROCN5hRQAgplnCktVFACDOsq4X0UUA4is0QQOJRQGhPa0fK6VFAGPLferzOUUBQ5McbTdVRQMBZ\u002fyxpzFFAwN+xiCGLUUAAaNI2XeZRQDiroecv0FFAYCVIvWUmUkBwFVQKLsBRQJhjflwU6FFAeDHkQ3j0UUCoWEtWbaVRQKicUX7U9lFAoLPrWfrlUUA4F+02sMpRQFBRFcL\u002f9FFAwJxobMSeUUDgMhMZ\u002fiFSQPhbS6uFwlFAuFBXFP6+UUCY5nsJdhlSQPDbSJKh3lFAuLjw1UT3UUAgjhCd0fVRQLBAZUT9xVFAILMPL2ErUkAgyjnQNfFRQNi0q9dLolFAMH+SRcrBUUDAnL4MWK5RQBgGqc3421FAIJjMk6ydUUDYTTrFZfNRQLjv\u002faCK2FFAIDWGyr6KUUCgVX9F8IRRQFgxnnwJn1FAqK99dQi9UUB481LKmIZRQBjETUSMLlJAcGx2THZ2UUCIZQH7OcRRQMCeC4u2llFAIHIBudLCUUCYoHnDr8lRQJApR0abhVFAKM2L30H4UUDopQPQLdRRQMC39q7UgVFAaASoyThRUUAoxXChPXtRQGiaLmi\u002f8VFAMGi4nPSVUUBgmsZ6vbBRQGDPSbobilFAEJw68lJzUUDIqgH5e5RRQADCw\u002f7ghlFAUKI4QINpUUDw+ObDaa1RQNBJGqKyfFFAyOvYNc6hUUCYOgPBhZhRQGiNfofBa1FAYEMoGhOiUUDAOPrsK5pRQJBLRL4B8lFAkHgn6UCNUUDI5xp3+aFRQEirdiADplFAGJ3N4UBSUUBwCzYFyWtRQPBgT2RiYlFAmOpuFDVzUUCYYey83ohRQGAuiNjVYlFA4KTJI1y7UUCwrj4cZXhRQMi7bR+2x1FAYAdeRBiGUUB4KDdEI4JRQPgedSINv1FAUKEBGttjUUDYp9RIdINRQAAkWEucTVFAEGbLj6aZUUCAxKXEIZxRQGj1R\u002fnYhVFA0GxW+VaNUUDAFwCYuJBRQGh2rEzAfVFAWGV3XCPrUUAQtjB6dvVRQGgH3Ct6c1FA6LpbpS5KUUDAiIpOHChRQCCXhN2TjFFAIDLMG5x3UUCwoe1mDpRRQBh1e+fufFFA8JY+qvFQUUAYj38SyHhRQLjTShl5SVFAwGHM7SgiUUAYa0ibNFZRQKheRmcnjFFACDu5amR7UUAgjxiaO1tRQNDpT4q3vlFAAIwZA356UUAoqPU+yEFRQPDbAZd8i1FAMFcMy7hwUUDAN0qfrmxRQMDNDg+gyFFAGH+ykAeEUUAA0QVjgmJRQMghdV4Hb1FAqEyo5k9jUUBo0h5qQzBRQLD6YmdjclFAkOKrYGaIUUCAPwP21E1RQPDSwTqmbFFAoD+btpNhUUAQgq5pSlhRQODfxgsZslFAmNSVYiNUUUCwxMlUGZBRQKAMiP6UaFFAsB0GYnCVUUCo6jGKF4dRQIgTP\u002frbalFA8DfqmR47UUB429Da8lhRQNA9mWL48VBAUIKrgjuEUUBwtEnF\u002f41RQAjbUuO\u002fGFFAwCjU16xTUUBYR62KOxFRQIiRrr5MllFAyP5CoPQ4UUBYp4wT+EpRQAgnldquP1FAWBT3lgs3UUDgGfIdUUdRQPhVRH1SQVFAcJ+Y+XbGUECQFPrzCiNRQEDRzfCLKlFAAK4r5l0uUUDAdSscpXRRQHDU2c\u002fMQ1FASH3PP21HUUCgWDJhEypRQJj83fIlQlFA2INXe6cuUUCYKcnk4TlRQNAB634ALVFAWPRr8VkVUUCY9Y2gcOVQQDAJrhkAUlFAsFci9Z4OUUAQFYjLYSRRQDgq4uZJVFFA2BVTZR7XUEDY9sMWT\u002f9QQCCvHDYpK1FAMDstEmQbUUCYgseDBxVRQCi\u002feJVgD1FAkJW\u002f0gS8UEAQHzHyQR1RQPgEm96hGlFAWNLVNoQ9UUCQFciAeSFRQJAJjtvjyFBAmFrplSYUUUDQZZlsTQZRQEgBuHiyHlFAOHvzcjYlUUBApCIekSBRQFiWJl1O\u002flBAeD2fIE0+UUBADcpWU8lQQNBCbY+U\u002f1BAeIjirfLLUECAsNK+P8FQQNi+npcZJ1FAoIGK9LbfUEBoxAZqEfdQQOCKZo3rNVFA0IrKJqYhUUAwTo2s3y5RQCB0GLiNJFFAiAfcK4biUEBwoX4Jh9lQQAjkkKTrq1BAcAU9kC4rUUBgNUa6g\u002fpQQGBtKu1XM1FAaCqTmYTPUEBI7jENnC5RQCDgzOpo01BAyG5xbSn7UEBwazH8D71QQCBlns3MnFBAeGb1lIMMUUB4HzdScyJRQHA68X\u002fyzlBAMLGoYO\u002fmUECAEYoAcvlQQIBkUcrv4VBAMKA+NhnZUEB41PIkLxJRQIAyHBMg8FBAiMYDWpDrUEAQIFyr6tVQQHhrOvofF1FAEP7wwU8IUUCYEP2l\u002f\u002fhQQGh\u002fXQoc11BAMLO3uubmUEBAUfYETQ9RQMjfZWfdzVBAWNGzepjJUEA4nkz\u002fQ9JQQAiPC8rEzlBASOALSSHkUEDIf2RFeO5QQHhv5S+mrlBAIDvx8GOjUED4mpNwrKZQQCBuIOEkslBAgJ5NH6d8UEBI9mAMjABRQJCaMGtP01BA+Az5FibVUECoakjrl65QQFDQHgg+vFBAEOtMvbTdUEAoiNLT3qtQQDCxFJkIylBAWEGuk0boUEDoinzFL9tQQPCU8+FF4FBAMMUnddqsUEBAjAIHZuVQQFhwBrRF5FBAECB53oycUEDQKdC59NVQQED10IKZ01BAkL+n1iS9UEDAuQ2fCHJQQEjddKrGbVBAWI7wzAa\u002fUEDgBs4+RalQQMj\u002f586KnVBAIFEmS9CEUEB4PZ5IqsdQQIjTdev\u002f\u002fFBAkKQQGo2jUEDYqpYPeNJQQHAHYX1hrVBASBQu4yOjUEAAimhqh21QQJBPQEqLtFBACNuTtKSlUEBA3gy4nmhQQEDscffbnVBAAD8Rc2+fUECohXj+N8ZQQFBU+SRuiVBAGAYef1ZfUECIlHg34cpQQMhsKtkq1VBAMMgQPMOTUECgQTJ3\u002foxQQNgHwnsr11BAcFLLPRW1UECQbShVhpdQQHCecq4jrVBA4PsVTvCQUECYmZQAVc9QQNjq8Qnh9lBAgAhkW22bUEBAvFN6mr9QQIhKVoJ\u002fgVBAyNLFk3zpUECYUsVnOeJQQLBOpT+yXlBAuNPJDDhSUEDgiXne4G5QQGCZ1ZwTsFBAgMAYf8ajUEBAJuETXIhQQGh6rKCXfVBAeB9IF+95UEB4\u002fOuxOF9QQNAnA2Q1\u002fU9AOIl90RuOUEAoZ62fSXVQQOgK\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\u002fS\u002fKrk5A8DX8e2olTkAgyQsqel1PQCAExW5Mak5AUFTr5TQ8TkCwznZYqpZOQFBAPWD+aE5AkEaBL83HTkDAxTv9hSRPQFDkukpsJE5AENyJQxGTTkAww4Iz\u002fK1OQBDyvFHmU05AAOEXL4hhTkAARjSPpJ1OQHA6iSOdcU5AUGJgJu1XTkAg\u002fL9oQZZOQICYdEXFZU5AYCBaEurITUCgLGXt3ElOQACIgPOe2U5AUBHzozR7TkDgCwpC35dOQHCkMdWonU5AcNNyuySdTkCAv0GQ7VlOQED\u002f7cVJkk1AQDFom4tETkCgUW7QWLpNQEDiUNzYTU5AgHTwGEJqTkDQgT7a\u002f9JNQEAGFqFvrU5AcNMuQe22TkCAnhLg0O5OQACP2ijVGE9AsAW3PvixTkDgH06Q+oRNQJA2K7k2s05A8J45GazcTkDAKTdT5w5OQPB7j+9NfU5AAFrFBYAETkAQBKpm8FBOQNC7111APU5A4BrxmHE9TkBQADsFemFOQDAzRC4nak5AkAlKZ1g7TkDAJwxS4IlOQDCjdwpsiU1A8P7eBdQ4TkBgszd3MjdNQIAYMGukYk5AcFaiM5ROTkCwod2YD\u002fBNQOCwqRHizE1AMAU19\u002fqeTUCw\u002f2QR955OQCBtEnwosU1AECGSlvb+TUAwhTPsR8pNQMBms2H6Z05A0LgCQ8VLTkCQPtbEq0ROQDBfFY9Nj01AYPmFDuZATkDAuI6ZvXBOQBAx\u002fCqi5U5AwAoBaDSYTUAwVsGBHk9NQCBNXepXEE5A8GLo4ob0TUAwG\u002f4p2vhNQGCrp9G6DE5AIFVumEnXTUCw2IBJafJNQIC3Rb3BhU5AABOGhwGfTkCgAS3BRzFOQPD5uhLR5E1AYCRfrHwQTkAwJo2dLsFNQPCmEZkXFU5AoLO4L5xmTUAQW3xRnAJOQEBfTBUxLE5AcOPpfqVHTkBQ7tXlbKJNQJCHZKBQWk5AgJLrErcdTUAg2caxEMhNQKCrUwc8901AgDL0eJHyTUBQuYqad6dNQPBy5G1lOU1AwD3pd5R5TUAgNKGEAOZNQGCddN2xjE1A4OX4WycqTkCwMYIT9iZOQDC7zVUMhE1AgCaNKtJZTUAgHVOn96pNQIBBWbgSBE5AEKzYrvCXTUBgZUdpy\u002f5MQHBubEj5VU1AkDex\u002fPC5TUBQAHB4AadNQLBhveeEFE1AQE\u002fB13jHTECgV1i3+fBMQIA5b2ceJ01AsEJ6OKNBTUAwnIlw29dNQJAsN5yUPE1AcCPxELf+TUAQ\u002fFPedy9NQEDfbNDPFE5AMKnDcG9nTUAgg3ErxapNQOBwBYzvj01AANpR+Qk7TUAAUo7CTI9NQOBmUKh63E1A4A5wZrX4TUBQLaqm1G1OQJBLOrugDU5A4ERLc4jxTEDQoqu07g5NQACUxW8AX0xAID0b1MkATUCQuS6D4xJNQHANG+CSG01AsM6YwyF1TUDw8ZbapwxNQJAPg6EyIU1AoDZueFMGTUCg4JNMA3RNQAAK9vtOSE1AABIO8WlMTUDQZfxP1NNNQNBH4LeiaU5AEPGFjacaTUBghkjI++hMQBDI4A+cgk1AMP3XB+ATTUDAATzTdiFNQMA2Lbhm40xAgPR8G2EjTUAgOCeb8JtNQICC4lLT5ExAQH1DRJyATUAw5dJV0GdNQOCWNaMcD01AgDqJXYp2TUBwY7YaAhNNQIBA5vUX+U1AICSp2o9HTUDw25lJh0pNQID1R2tTYE1A4HTpoMVXTUCALdPgksdMQJB\u002fS+VN8ExA4B1+V4\u002fvTEBgAFMyHC5NQGD7gGR9Qk1AoBlp6jqrTEAQvwvY7HFMQJD3JVbSGk1AAP4D917jTEDQTdJJXQFNQEA8YrLiV01A4Mq1pqmlTEBQXTx7hpVNQMDkVS9NoU1AoIVErQ9xTEAQ52INbQ1NQLDTLbEYhUxAsOenXjJ0TECwLBHNUUBNQADhPJfnqExAIKA\u002f702lTEDAFPXOWldNQGBSSI3Y2ExAwD9hYg9UTUAA\u002fciXgIJMQKC1yhkLQU1AoHxwZ27CTEAQ6VkaFl5MQBBY6m1Xk0xAsPNoUk8wTUCQqYJjw9pMQABUVLYFDk1AQJknu20BTUCA5i5opzlNQCDsfKnjCE1AQA\u002fdXQUNTUDQdIQD6t5MQKBpJ22fokxAsHrJN0AMTUCAJqhZwutMQMCS4UQ69UtAgMxKxrHkTECgdp1Rl+VMQEAxXNrJoUxAkL+AuzwNTUDAQU8RqoVMQBDThhQpnUxAEPT68vVjTEDwST7Sb+lMQNBk\u002fi9NP0xAsDy3wVW9TECAmy5LatZMQIAQj5obiU1AgAsOFTrpTEAAC7n47ZBNQGC738RArUxAcGdUWp0nTEBAznJxCWRMQIC5bamARExAwLBouNbCTECQ5JTCZtBMQFDXNIt4DU1AUHk1PwoCTEDgb6zP58FMQEDdrRe7TUxAUCUDTA5fTEAQLXtucZ1MQPA1tXlcLUxA4KLhzLrpTEDwEDGdkLpMQOAMz1JiikxA4MpAGPLoS0Dg0Gtz6X5MQKDVEMZavExAIG04derRTEBQNsFWKbFMQNB2eqTOcExAwES2EpOJTEAA4phWHJJMQADxg9FNT0xA4LNdE0c\u002fTEDgeqFcd39MQGD56Ygy4ktAAEoOn46ATEDw1TMEfBNMQLCsuNKSP0xAQB9GlKvnS0CAMmBDeXZMQIBa+fxd+ktAoHc+BKmGTEDQimmTXYhLQPBKjgJwZ0xA4OTyfdqATEDAxbzM9BBMQLCpR5uiB0xAgG7Badz1S0DAYYFe6ldMQFC\u002f2HcbUExAAPy97NZfTEDQZaK1QmpMQBDbYb1qTUxAEFSFpj\u002fnS0CAr3xPNXdMQOBthrDpRUxAgG\u002fWHlEmTEDgXs9iFaxMQFDnDhs8oUtAgNZ6uBuKTEDAGlftljlMQDDv6MZPjUxAcPF6AeLhS0BwcCPCIthLQCAlwGIzlUxAUC7c8eGyS0DwU+cvutRLQIC\u002fMPJRBUxAEN9b+DeZS0BQkZrk2EhMQIDPzsc470tA0DOjCWthS0CgzR0iQlxMQAC+CDU2QUxAIMHPjqXAS0CQtPSKbUZMQJBe9D3Y+ktA8JNUKHB9S0BQFwySVcNLQKAeBlztnktA8Br++RfbS0CwsOoyQpBLQGC+PTHeuUtAAJFaP5biS0Ag2fW4yt1LQNDXnXtclEtAYA1f7ATiS0AwSbeGYVZMQKC4NilPcUtAsMS4AKFbTEAAGqotVrFLQGBIIHlzDUxA4G+JhQn4S0Bglfvdbq1LQPBlj9UBwUtAEM+ujOXxS0Agj6RkNFtLQPAZ7cNPBUxAwD0GipMwTEAAV7KS0L9LQLDnKEoU90tAgNt00WfjS0DAJf+DnsdLQNDNfLaxfktAwKHEFVi4S0BA2n+flKNLQJA2iwV14ktAgJO5fHhjS0CwN4EeLSVMQOCCtVc7UEtAoBdYMXP8S0AAt\u002fHUPtpLQCDyy0RJiUxAUBm5h\u002fW6S0CQEjzrG1NLQKAmYj8cHUxAgDdm6+bUS0CwyMyTboVLQNAzi1iU50tAkCgUJ+pvS0CgI95hfj5LQDDcd+6uiEtAEPmKXNh9S0Cg62iyJmhLQEA6fVMwiktAAJNVesNGTEDAZS9HModLQFDix5ceuUtA4IklNBgTTEAAL+MY0oRLQDAJH8iIcktAIPG5FFyvSkCAbNs1GIxLQIDZ8XRF6kpA0PfNHTZnS0DgECOYWxdLQBAlsvAJRktAoJIjITy6S0BAuY\u002fFU0hLQODhxh6QkUtAwBqOJntJS0CAQDS5ih1LQMBK+SuhN0tAUEMuEfBsS0AAe3PZdJNLQIDq3E8llUtA0Cp49xPkSkDgSSQ\u002fFnlLQNCKtfeQv0tAUCawNW8eS0BwrEnhROlLQMAZ1vg0zUpAgMlw6jgCS0BQEi4g2rhLQAAyWW4WFEtAgBHL2k7sSkAQt+8BqUxLQEANnxixF0pAsJUzZEb9SkCAE\u002fYcwtFLQKBVHyyQv0tA0Mud6B2RS0DwLK\u002fUeUNLQOB\u002fCg17NUtA4GnedD0xS0AAEelHNCRLQBAklxUPWEtAcLbn0I+dS0Cw9hGEajhKQGAwPo8wHEtAQLIUOFAUS0DAw+mLOIpLQEBbVMOL+EpAoIq\u002fuYS8SkDgOpENsFtLQEBT0\u002fZSj0tAUJjhOU+QS0Cgpzo3r8VKQJAN7vNdJUtA4Fi73eGBSkBAAGE31GhKQODDZZq85kpAUN5XhQoMS0AQYTSCbz9LQEBvPO7qcEtA"},"type":"scatter"},{"line":{"color":"#059669","width":2.5},"name":"LFP Blade Battery","x":{"dtype":"i2","bdata":"AQACAAQABQAHAAgACgALAA0ADgAQABEAEwAUABYAFwAYABoAGwAdAB4AIAAhACMAJAAmACcAKQAqACwALQAuADAAMQAzADQANgA3ADkAOgA8AD0APwBAAEIAQwBEAEYARwBJAEoATABNAE8AUABSAFMAVQBWAFgAWQBaAFwAXQBfAGAAYgBjAGUAZgBoAGkAawBsAG4AbwBwAHIAcwB1AHYAeAB5AHsAfAB+AH8AgQCCAIQAhQCGAIgAiQCLAIwAjgCPAJEAkgCUAJUAlwCYAJoAmwCcAJ4AnwChAKIApAClAKcAqACqAKsArQCuALAAsQCzALQAtQC3ALgAugC7AL0AvgDAAMEAwwDEAMYAxwDJAMoAywDNAM4A0ADRANMA1ADWANcA2QDaANwA3QDfAOAA4QDjAOQA5gDnAOkA6gDsAO0A7wDwAPIA8wD1APYA9wD5APoA\u002fAD9AP8AAAECAQMBBQEGAQgBCQELAQwBDQEPARABEgETARUBFgEYARkBGwEcAR4BHwEhASIBIwElASYBKAEpASsBLAEuAS8BMQEyATQBNQE3ATgBOQE7ATwBPgE\u002fAUEBQgFEAUUBRwFIAUoBSwFNAU4BTwFRAVIBVAFVAVcBWAFaAVsBXQFeAWABYQFjAWQBZQFnAWgBagFrAW0BbgFwAXEBcwF0AXYBdwF5AXoBewF9AX4BgAGBAYMBhAGGAYcBiQGKAYwBjQGPAZABkQGTAZQBlgGXAZkBmgGcAZ0BnwGgAaIBowGlAaYBpwGpAaoBrAGtAa8BsAGyAbMBtQG2AbgBuQG7AbwBvQG\u002fAcABwgHDAcUBxgHIAckBywHMAc4BzwHRAdIB0wHVAdYB2AHZAdsB3AHeAd8B4QHiAeQB5QHnAegB6gHrAewB7gHvAfEB8gH0AfUB9wH4AfoB+wH9Af4BAAIBAgICBAIFAgcCCAIKAgsCDQIOAhACEQITAhQCFgIXAhgCGgIbAh0CHgIgAiECIwIkAiYCJwIpAioCLAItAi4CMAIxAjMCNAI2AjcCOQI6AjwCPQI\u002fAkACQgJDAkQCRgJHAkkCSgJMAk0CTwJQAlICUwJVAlYCWAJZAloCXAJdAl8CYAJiAmMCZQJmAmgCaQJrAmwCbgJvAnACcgJzAnUCdgJ4AnkCewJ8An4CfwKBAoIChAKFAoYCiAKJAosCjAKOAo8CkQKSApQClQKXApgCmgKbApwCngKfAqECogKkAqUCpwKoAqoCqwKtAq4CsAKxArICtAK1ArcCuAK6ArsCvQK+AsACwQLDAsQCxgLHAsgCygLLAs0CzgLQAtEC0wLUAtYC1wLZAtoC3ALdAt4C4ALhAuMC5ALmAucC6QLqAuwC7QLvAvAC8gLzAvQC9gL3AvkC+gL8Av0C\u002fwIAAwIDAwMFAwYDCAMJAwoDDAMNAw8DEAMSAxMDFQMWAxgDGQMbAxwDHgMfAyEDIgMjAyUDJgMoAykDKwMsAy4DLwMxAzIDNAM1AzcDOAM5AzsDPAM+Az8DQQNCA0QDRQNHA0gDSgNLA00DTgNPA1EDUgNUA1UDVwNYA1oDWwNdA14DYANhA2MDZANlA2cDaANqA2sDbQNuA3ADcQNzA3QDdgN3A3kDegN7A30DfgOAA4EDgwOEA4YDhwOJA4oDjAONA48DkAORA5MDlAOWA5cDmQOaA5wDnQOfA6ADogOjA6UDpgOnA6kDqgOsA60DrwOwA7IDswO1A7YDuAO5A7sDvAO9A78DwAPCA8MDxQPGA8gDyQPLA8wDzgPPA9ED0gPTA9UD1gPYA9kD2wPcA94D3wPhA+ID5APlA+cD6APpA+sD7APuA+8D8QPyA\u002fQD9QP3A\u002fgD+gP7A\u002f0D\u002fgP\u002fAwEEAgQEBAUEBwQIBAoECwQNBA4EEAQRBBMEFAQVBBcEGAQaBBsEHQQeBCAEIQQjBCQEJgQnBCkEKgQrBC0ELgQwBDEEMwQ0BDYENwQ5BDoEPAQ9BD8EQARBBEMERARGBEcESQRKBEwETQRPBFAEUgRTBFUEVgRYBFkEWgRcBF0EXwRgBGIEYwRlBGYEaARpBGsEbARuBG8EcARyBHMEdQR2BHgEeQR7BHwEfgR\u002fBIEEggSEBIUEhgSIBIkEiwSMBI4EjwSRBJIElASVBJcEmASaBJsEnASeBJ8EoQSiBKQEpQSnBKgEqgSrBK0ErgSwBLEEsgS0BLUEtwS4BLoEuwS9BL4EwATBBMMExATGBMcEyATKBMsEzQTOBNAE0QTTBNQE1gTXBNkE2gTcBN0E3gTgBOEE4wTkBOYE5wTpBOoE7ATtBO8E8ATyBPME9AT2BPcE+QT6BPwE\u002fQT\u002fBAAFAgUDBQUFBgUIBQkFCgUMBQ0FDwUQBRIFEwUVBRYFGAUZBRsFHAUeBR8FIAUiBSMFJQUmBSgFKQUrBSwFLgUvBTEFMgU0BTUFNgU4BTkFOwU8BT4FPwVBBUIFRAVFBUcFSAVKBUsFTAVOBU8FUQVSBVQFVQVXBVgFWgVbBV0FXgVgBWEFYgVkBWUFZwVoBWoFawVtBW4FcAVxBXMFdAV2BXcFeAV6BXsFfQV+BYAFgQWDBYQFhgWHBYkFigWMBY0FjwWQBZEFkwWUBZYFlwWZBZoFnAWdBZ8FoAWiBaMFpQWmBacFqQWqBawFrQWvBbAFsgWzBbUFtgW4BbkFuwW8Bb0FvwXABcIFwwXFBcYFyAXJBcsFzAXOBc8F0QXSBdMF1QXWBdgF2QXbBdwF3gXfBeEF4gXkBeUF5wXoBekF6wXsBe4F7wXxBfIF9AX1BfcF+AX6BfsF\u002fQX+Bf8FAQYCBgQGBQYHBggGCgYLBg0GDgYQBhEGEwYUBhUGFwYYBhoGGwYdBh4GIAYhBiMGJAYmBicGKQYqBisGLQYuBjAGMQYzBjQGNgY3BjkGOgY8Bj0GPwZABkEGQwZEBkYGRwZJBkoGTAZNBk8GUAZSBlMGVQZWBlcGWQZaBlwGXQZfBmAGYgZjBmUGZgZoBmkGawZsBm0GbwZwBnIGcwZ1BnYGeAZ5BnsGfAZ+Bn8GgQaCBoMGhQaGBogGiQaLBowGjgaPBpEGkgaUBpUGlwaYBpkGmwacBp4GnwahBqIGpAalBqcGqAaqBqsGrQauBq8GsQayBrQGtQa3BrgGuga7Br0GvgbABsEGwwbEBsYGxwbIBsoGywbNBs4G0AbRBtMG1AbWBtcG2QbaBtwG3QbeBuAG4QbjBuQG5gbnBukG6gbsBu0G7wbwBvIG8wb0BvYG9wb5BvoG\u002fAb9Bv8GAAcCBwMHBQcGBwgHCQcKBwwHDQcPBxAHEgcTBxUHFgcYBxkHGwccBx4HHwcgByIHIwclByYHKAcpBysHLAcuBy8HMQcyBzQHNQc2BzgHOQc7BzwHPgc\u002fB0EHQgdEB0UHRwdIB0oHSwdMB04HTwdRB1IHVAdVB1cHWAdaB1sHXQdeB2AHYQdiB2QHZQdnB2gHagdrB20HbgdwB3EHcwd0B3YHdwd4B3oHewd9B34HgAeBB4MHhAeGB4cHiQeKB4wHjQeOB5AHkQeTB5QHlgeXB5kHmgecB50HnwegB6IHowekB6YHpwepB6oHrAetB68HsAeyB7MHtQe2B7gHuQe6B7wHvQe\u002fB8AHwgfDB8UHxgfIB8kHywfMB84HzwfQB9IH0wfVB9YH2AfZB9sH3AfeB98H4QfiB+QH5QfmB+gH6QfrB+wH7gfvB\u002fEH8gf0B\u002fUH9wf4B\u002foH+wf9B\u002f4H\u002fwcBCAIIBAgFCAcICAgKCAsIDQgOCBAIEQgTCBQIFQgXCBgIGggbCB0IHgggCCEIIwgkCCYIJwgpCCoIKwgtCC4IMAgxCDMINAg2CDcIOQg6CDwIPQg\u002fCEAIQQhDCEQIRghHCEkISghMCE0ITwhQCFIIUwhVCFYIVwhZCFoIXAhdCF8IYAhiCGMIZQhmCGgIaQhrCGwIbQhvCHAIcghzCHUIdgh4CHkIewh8CH4IfwiBCIIIgwiFCIYIiAiJCIsIjAiOCI8IkQiSCJQIlQiXCJgI"},"y":{"dtype":"f8","bdata":"zczMzMysTUDsUbgehZtZQOxRuB6Fm1lAj8L1KFzPU0DXo3A9CoddQGZmZmZm5lhA16NwPQpnUUDXo3A9CodWQPYoXI\u002fCBVFASOF6FK5nXEDsUbgehatOQFK4HoXrUUBA4XoUrkfRWEBcj8L1KCxQQK5H4XoU\u002fltAFK5H4Xo0WkDNzMzMzBxQQM3MzMzMvFRASOF6FK43WEBSuB6F65FTQOxRuB6Fy1xApHA9CtfDVEAUrkfhenRIQHE9CtejcE9AFK5H4Xq0TkApXI\u002fC9YhSQNejcD0Kl0VAw\u002fUoXI\u002fyXUAUrkfhenRaQM3MzMzMDE5AH4XrUbg+QkDsUbgehTtQQHE9CtejoFhA9ihcj8JVVUA9CtejcP1TQPYoXI\u002fCdUFAmpmZmZnZQ0CuR+F6FG5JQClcj8L1yElAhetRuB7VX0CF61G4HpVbQFK4HoXrYVRAMzMzMzNjVUCuR+F6FE5GQPYoXI\u002fCdU1AAAAAAADQUUAfhetRuP5QQBSuR+F6pFRAXI\u002fC9SjcVEAK16NwPbpXQClcj8L1uFNAUrgeheuRW0BxPQrXo3BLQEjhehSuB1ZAMzMzMzMjVEDXo3A9CrdYQLgehetRaFxArkfhehSeVUDD9Shcj\u002fJUQPYoXI\u002fCBVZAPQrXo3DdRUCF61G4HnVVQHE9CtejoFhAPQrXo3AdUECF61G4HuVTQLgehetRGEBAcT0K16NQU0CuR+F6FA5YQKRwPQrX41BAcT0K16PwUEBI4XoUrqdiQKRwPQrXw1FA4XoUrkfRW0CuR+F6FF5TQOF6FK5HMVJA7FG4HoWbUEAAAAAAACBZQKRwPQrXI0JAAAAAAAAQWkAK16NwPfpgQLgehetR2FBAZmZmZmaGWUBxPQrXo9BbQOxRuB6FS09ArkfhehQOWkBcj8L1KOxRQBSuR+F6tFVAZmZmZmZ2WkBcj8L1KCxeQPYoXI\u002fCfWFAuB6F61GYQ0AzMzMzM7NLQHE9CtejcFJAH4XrUbhOUkCamZmZmblQQOxRuB6Fm1JACtejcD0KS0D2KFyPwtVUQBSuR+F6dE1A9ihcj8IVXkA9CtejcM1ZQFK4HoXrkVVA7FG4HoULS0AzMzMzM9NMQK5H4XoUTllAAAAAAAAgV0DNzMzMzKxYQOxRuB6FW1ZAZmZmZmaGU0AUrkfhesRSQD0K16NwTVRAcT0K16MwQkDhehSuRwFYQLgehetR2EFAKVyPwvVIWkAUrkfhetRYQArXo3A9KlNAPQrXo3A9J0D2KFyPwnVWQFyPwvUoTFNAuB6F61HAY0BmZmZmZvZSQFyPwvUovFZAj8L1KFw\u002fUEA9CtejcL1HQMP1KFyPklhACtejcD1qXUBcj8L1KDxBQDMzMzMzg1ZAZmZmZmb2UkAUrkfhesRYQM3MzMzMnFVAexSuR+EqWkB7FK5H4dpSQGZmZmZmNlVApHA9CtfDSUC4HoXrUahdQB+F61G4LlFAUrgehevBWECamZmZmXlWQK5H4XoUzldAZmZmZmZmP0B7FK5H4fpOQDMzMzMz009AXI\u002fC9ShcS0CuR+F6FF5VQAAAAAAAEFlAXI\u002fC9ShMVUBmZmZmZuZYQNejcD0K51VA7FG4HoWrUEAAAAAAAIBCQGZmZmZmRlFAZmZmZmZGSUCkcD0K12NKQJqZmZmZ2U5AzczMzMwsUEBI4XoUrpdfQPYoXI\u002fClVRAj8L1KFzPV0C4HoXrUfhCQOxRuB6Fa1VAexSuR+E6QkAK16NwPQpgQKRwPQrXY05A9ihcj8LVTUAfhetRuB5TQOxRuB6Fm1VA4XoUrkfhT0ApXI\u002fC9YhDQKRwPQrXU1ZA16NwPQpHVUAfhetRuJ5SQI\u002fC9Shcv1ZACtejcD3KS0Bcj8L1KNxGQJqZmZmZ2U5Aw\u002fUoXI8yUkBI4XoUrhdRQB+F61G4vl9A7FG4HoWLWUAfhetRuG5eQGZmZmZmRkpApHA9CtfDW0CamZmZmflSQD0K16NwPUNAKVyPwvWITUBxPQrXo2BTQFK4HoXrgVhAH4XrUbgOWEA9CtejcJ1SQB+F61G4nlFAKVyPwvUYVUBI4XoUrmdaQOF6FK5HMV5AexSuR+FKVkA9CtejcF1YQI\u002fC9Shc70hAZmZmZmYGRkBxPQrXozBgQMP1KFyPIlNAAAAAAAAAMUDNzMzMzGxGQPYoXI\u002fChVZAUrgehevRS0AUrkfhegRTQDMzMzMzg1JAuB6F61E4QkA9CtejcD1ZQHsUrkfhGkpAmpmZmZlpWEBSuB6F6+FQQIXrUbgetVRASOF6FK6nU0A9CtejcP0xQIXrUbgehVhACtejcD2qQ0ApXI\u002fC9ZhYQKRwPQrX41NAuB6F61F4SEBxPQrXo6BTQK5H4XoUTlJAexSuR+FaVEAzMzMzMwNUQK5H4XoUDk1AFK5H4Xo0T0D2KFyPwiVYQFyPwvUonE5AMzMzMzOjUUAfhetRuL5NQJqZmZmZ+U9ACtejcD0qUEBmZmZmZhZXQIXrUbgelVhAj8L1KFzvTkC4HoXrUYhSQFyPwvUo3EhAw\u002fUoXI\u002fCS0CamZmZmTlEQIXrUbgepVVAzczMzMx8VUDD9Shcj2JTQPYoXI\u002fC9VhAcT0K16OwTkCPwvUoXE85QHE9Ctej0E1ArkfhehQuR0A9CtejcF1XQB+F61G4XkxAXI\u002fC9SjcUUBcj8L1KOxcQArXo3A9mlRAw\u002fUoXI9iWEDNzMzMzAxFQIXrUbgeBWFAZmZmZmaGV0AK16NwPcpSQArXo3A9allA7FG4HoVrR0CuR+F6FG5JQArXo3A9ClFAMzMzMzPjVkAzMzMzM8NZQPYoXI\u002fClVFAcT0K16OwUEDXo3A9CrdRQM3MzMzMjFRAmpmZmZkZUUCkcD0K11NWQI\u002fC9ShcT1FA9ihcj8KlUUAK16NwPdpUQI\u002fC9Shcj1lAexSuR+FaV0CPwvUoXP9QQEjhehSup1BA4XoUrkcBTEB7FK5H4YpUQHE9CtejgFhASOF6FK5nW0CamZmZmRlTQFK4HoXrkTVApHA9CtdzWEDhehSuRyFSQPYoXI\u002fClVhAcT0K16NwSEAzMzMzM1NUQKRwPQrX4z5AexSuR+EqUkCamZmZmUlVQOF6FK5H0VRAj8L1KFz\u002fX0BSuB6F61FUQOxRuB6FS01ApHA9CtejVkBSuB6F6\u002fFSQPYoXI\u002fCtVhAAAAAAABAVEAfhetRuJ5XQAAAAAAAQEtAPQrXo3CdWUBSuB6F69FUQOxRuB6F68G\u002fmpmZmZm5UUDsUbgehQtUQOxRuB6Fy1dAexSuR+FqVUBcj8L1KMxUQPYoXI\u002fCVUZAPQrXo3CdR0C4HoXrUdhDQOF6FK5HYVxAKVyPwvUIVUD2KFyPwlVeQNejcD0K1xhAcT0K16MAUUDhehSuR3FZQGZmZmZmJldAXI\u002fC9Si8SUCkcD0K1\u002ftlQHE9Ctej8FpA4XoUrkfxWEDNzMzMzAxgQOxRuB6F601AKVyPwvV4WUA9CtejcP1VQK5H4XoUDk1A9ihcj8JFUkAK16NwPapJQD0K16NwPTxAPQrXo3ANUkBxPQrXo2BTQArXo3A9qkZAKVyPwvWoYUDsUbgehRtYQLgehetRGFNAFK5H4XoUX0BSuB6F68FQQB+F61G4vkhAZmZmZmamVkAfhetRuL5bQLgehetRCFVAKVyPwvUoVEBxPQrXo9BbQFK4HoXrQWBArkfhehQOW0AK16NwPXJgQHE9CtejkFdAw\u002fUoXI\u002fSUEC4HoXrUThKQEjhehSuB0NAH4XrUbiuV0BSuB6F68FbQArXo3A92lNA9ihcj8K1YECkcD0K1yNZQM3MzMzM7E5AUrgehesBXEDXo3A9CndaQB+F61G4zldApHA9CtezVkBcj8L1KNwsQEjhehSuZ1dAXI\u002fC9SiMUkDhehSuRzFTQFyPwvUoDFZApHA9CtdDVkD2KFyPwhVOQM3MzMzMXFBAAAAAAABgVUAK16NwPWpGQFyPwvUovFFAAAAAAADgVkC4HoXrURhPQAAAAAAAoExAmpmZmZl5WUD2KFyPwlVTQHsUrkfhWlRApHA9CtejLkDXo3A9ChdOQOF6FK5HIVZAhetRuB4lUUCkcD0K12M8QNejcD0KF1tAuB6F61G4TEAUrkfherRKQPYoXI\u002fCBVZAZmZmZmbmSUApXI\u002fC9ahVQFK4HoXrQVFAj8L1KFwvTUCPwvUoXA9WQM3MzMzMTFRAMzMzMzMTTEC4HoXrUQhWQHsUrkfhul1A4XoUrkeBW0BSuB6F6xFFQGZmZmZmRlNA16NwPQr3TEAzMzMzMwNWQBSuR+F6bGBAw\u002fUoXI9iV0B7FK5H4RpbQLgehetReFNAUrgehevxSkAfhetRuD5UQMP1KFyPMl1AexSuR+GKVkCamZmZmXlSQB+F61G4XlNAzczMzMzMVkAAAAAAABBVQM3MzMzMzEpAXI\u002fC9SisUUAfhetRuO5aQLgehetRmFtAj8L1KFxvUEDD9ShcjwJNQNejcD0K10dAAAAAAACAUUB7FK5H4dpQQDMzMzMzw1FAZmZmZmZmVUBSuB6F6wFbQHE9Ctej8ExAUrgehetxVkDD9ShcjwJJQK5H4XoUzlVAmpmZmZkZWkAK16NwPSpRQNejcD0KV1RA9ihcj8JVWkBmZmZmZqZeQHsUrkfh2lBAAAAAAAAAV0C4HoXrUVhRQK5H4XoU3lFA4XoUrkehT0CuR+F6FG5UQKRwPQrX41FAMzMzMzMjWECamZmZmVlFQMP1KFyPIlZAXI\u002fC9Sj8R0AK16NwPVpSQI\u002fC9Shcb01AKVyPwvUoQ0Bcj8L1KLxXQI\u002fC9Shcz0pAzczMzMw8VkDsUbgehctQQClcj8L1uFRASOF6FK6nUUAK16NwPbpaQClcj8L16E5ApHA9CteTWED2KFyPwqVQQGZmZmZm1lJAPQrXo3CtVED2KFyPwlVLQEjhehSuZ0dAFK5H4XpUQ0ApXI\u002fC9QhiQPYoXI\u002fCFUhAw\u002fUoXI9CUkDsUbgehYtTQClcj8L1qDxA7FG4HoWrQkAAAAAAAMBBQM3MzMzMzFVAKVyPwvWISkAzMzMzMyNfQLgehetRqFhArkfhehSOVUDsUbgehWtUQNejcD0KJ1lAw\u002fUoXI8CQkD2KFyPwkVTQOxRuB6Fy1lA9ihcj8J1WkBI4XoUrudRQOF6FK5HAVVA9ihcj8K1T0CPwvUoXG9WQOxRuB6F605AZmZmZmamR0CamZmZmdlXQArXo3A9qkxAmpmZmZlJUUAAAAAAAKBQQFyPwvUorFpA4XoUrkeBSECF61G4HiVHQOF6FK5H4VxAmpmZmZk5TUBcj8L1KNw6wEjhehSuN1NA4XoUrkchR0CPwvUoXC9SQB+F61G4zlxAmpmZmZmZSEDD9Shcj8JLQFK4HoXr4VNAUrgehevBVEBmZmZmZsZeQK5H4XoUjkJA4XoUrkfhN0CPwvUoXK9VQOF6FK5HwVBAzczMzMwMYEA9CtejcM1VQOF6FK5HEVBA9ihcj8I1V0ApXI\u002fC9RhXQJqZmZmZaVdAuB6F61G4UkAfhetRuF44QB+F61G4XkpA16NwPQoHVkBI4XoUrsdPQM3MzMzMjEBAexSuR+EKVUCPwvUoXP9UQAAAAAAA4EpArkfhehQ+U0BmZmZmZmZPQAAAAAAA8FJA7FG4HoV7VEC4HoXrUbgEQLgehetRmFhApHA9CteTVUC4HoXrURhPQIXrUbgeBUxAj8L1KFy\u002fU0D2KFyPwhVVQArXo3A9GlNAw\u002fUoXI9CVUDhehSuR+FPQClcj8L1CFtA9ihcj8JFVUCamZmZmXlQQI\u002fC9Shcz05AzczMzMyMU0BmZmZmZgZNQGZmZmZm7mBAhetRuB51U0ApXI\u002fC9QhYQJqZmZmZGU9A4XoUrkcxUEDXo3A9CjdBQI\u002fC9Shcj1hAMzMzMzNjXkBSuB6F63FFQHE9CtejIFNApHA9CteDVUApXI\u002fC9QhNQB+F61G4\u002fl5AAAAAAAAQV0D2KFyPwgVTQOxRuB6Fq1NA16NwPQp3UkAUrkfhelRNQHE9Ctej8FJAcT0K16PwV0AK16NwPYpXQK5H4XoUvlBAKVyPwvUIRkCPwvUoXG9UQOF6FK5HIUBAXI\u002fC9SjMVUBxPQrXo9BVQAAAAAAAIFNAexSuR+F6NEDNzMzMzDxXQAAAAAAAoFhA4XoUrkeBSUCkcD0K1yNPQD0K16NwbVlAmpmZmZl5UEBxPQrXo9BKQFK4HoXrAVNAw\u002fUoXI+iT0DsUbgehbtRQArXo3A9elRAMzMzMzNjV0AfhetRuC5RQI\u002fC9Shcf1JAXI\u002fC9ShsV0AzMzMzM9NPQIXrUbgeRVZA4XoUrkehUUBI4XoUrsc+QDMzMzMzM1lAMzMzMzODVECuR+F6FE5RQArXo3A9ilVAH4XrUbjeTUAzMzMzM8NXQKRwPQrXg11APQrXo3D9WUA9CtejcF1WQPYoXI\u002fCVUVAZmZmZmY2UEB7FK5H4epdQBSuR+F6xFpASOF6FK63UkDD9ShcjyJMQOxRuB6FO1lAuB6F61EoUUCuR+F6FO5WQKRwPQrXI1NAUrgehevhU0C4HoXrURhCQArXo3A9uldAAAAAAAAwVkB7FK5H4ZpGQDMzMzMzM1VAuB6F61F4S0DhehSuR2FaQIXrUbge9VlAUrgeheuxUECamZmZmQlTQLgehetRaFtAuB6F61FIU0BI4XoUridFQArXo3A9Sk1AuB6F61FYS0CPwvUoXM9XQNejcD0KB1FA16NwPQq3TUCkcD0K16NXQMP1KFyPQlBAzczMzMx8WkCkcD0K14NRQHsUrkfhulVA16NwPQoXPEDD9Shcj9JVQHE9CtejIFNAZmZmZmamWEAUrkfhenRFQBSuR+F6lFtAexSuR+FaVkBxPQrXo0BeQM3MzMzMHFtASOF6FK7HTUCkcD0K1zNQQHsUrkfh2ktAZmZmZmZGTEAK16NwPcpQQClcj8L1SFJArkfhehRGYUCamZmZmSlTQOF6FK5H0VdA4XoUrkeBT0CkcD0K12NOQJqZmZmZmVVAAAAAAAAQWEBxPQrXozBJQMP1KFyPklNArkfhehSuV0DD9Shcj4JKQGZmZmZmNlBAXI\u002fC9SjcRUCPwvUoXB9WQFK4HoXrkVBA16NwPQoXUEB7FK5H4dpNQPYoXI\u002fCRV9Aj8L1KFxfWkBSuB6F6xFKQK5H4XoUTkRAMzMzMzNTU0DhehSuRyFTQGZmZmZmJkVAj8L1KFxPU0BxPQrXo0BQQKRwPQrXg1lAXI\u002fC9SjcWEAAAAAAAPBXQLgehetR2E1A7FG4HoVLUEDsUbgehas8QOF6FK5HAVRAH4XrUbh+V0AfhetRuL5QQNejcD0Kd0hAUrgeheshYEDhehSuRyFEQAAAAAAAcFdApHA9CtfjVUCF61G4HhVUQD0K16NwvVVA4XoUrkexVkAfhetRuA5ZQBSuR+F6tEdA4XoUrkcRUkBSuB6F61FRQD0K16NwrVJAzczMzMwMWkCamZmZmVlGQFyPwvUofFJA4XoUrkehU0A9CtejcK1YQLgehetRSFBAexSuR+EKUEB7FK5H4YpdQPYoXI\u002fCdUdApHA9CtcjTEDhehSuRyFIQI\u002fC9Shc71BAFK5H4XqkWUB7FK5H4VpSQHE9CtejME5A4XoUrkdBUkA9CtejcE1QQHsUrkfhmlNAXI\u002fC9Si8U0BxPQrXo5BDQD0K16NwfTdAuB6F61FIVkB7FK5H4fpYQB+F61G4niVAPQrXo3DtUUAUrkfhenRVQDMzMzMzc11AmpmZmZmZLUDD9ShcjxJSQMP1KFyPYkxAmpmZmZl5SEDNzMzMzHxRQK5H4XoUzk9AhetRuB6FR0BSuB6F6yFVQMP1KFyPMlJAAAAAAAAALUCPwvUoXM9UQM3MzMzM7FhASOF6FK43U0AfhetRuN5GQBSuR+F69FxA4XoUrkfBTEBI4XoUrsdZQAAAAAAAAFBAexSuR+HaVkAAAAAAABBcQKRwPQrXE1RAH4XrUbhuWEDXo3A9CkdYQPYoXI\u002fC5VBAUrgeheuxTUApXI\u002fC9QhSQK5H4XoU7jRAFK5H4Xp0U0AAAAAAACBZQHE9CtejkF1AFK5H4Xp0U0CuR+F6FE5HQNejcD0KZ1BAZmZmZmaWWUB7FK5H4XpTQIXrUbgeBVlAKVyPwvXIUkDNzMzMzLxQQLgehetReEdA7FG4HoWbVUBI4XoUrhdUQM3MzMzMvFJAAAAAAABgVEApXI\u002fC9fhZQGZmZmZmNlZAw\u002fUoXI9SYEB7FK5H4cpaQClcj8L1aFdA9ihcj8IVUkC4HoXrUXhgQM3MzMzMfFhAH4XrUbhOWUCPwvUoXA8lQBSuR+F6dE9AuB6F61EIUEDXo3A9CndJQI\u002fC9Shcb1dAMzMzMzNzSUAfhetRuP5QQMP1KFyP0lFAuB6F61G4TEA9CtejcF1GQBSuR+F6ZF5A7FG4HoU7U0AK16NwPQoSQClcj8L1KEVA4XoUrkcBUUCuR+F6FE5WQOF6FK5H0VZAw\u002fUoXI9CO0AUrkfhetRPQAAAAAAAcFhAexSuR+EaTEDhehSuR7FVQB+F61G4fldAcT0K16OQVUBSuB6F69FXQOF6FK5HwVxApHA9CtfjTEC4HoXrUZhSQBSuR+F6tF9ApHA9CtdDY0C4HoXrUXhOQMP1KFyPgkNAKVyPwvWoJkDD9Shcj8JTQB+F61G4XlFAKVyPwvXYWUAUrkfheuRdQB+F61G4vlFAexSuR+HaVkDhehSuR5FRQB+F61G4XlBArkfhehSuW0D2KFyPwlVIQLgehetRuE1AAAAAAAAgQEBxPQrXoxBLQHE9CtejIFdAZmZmZmYGVkAAAAAAADBTQLgehetRCFpAw\u002fUoXI9CTED2KFyPwtVRQClcj8L1aDhAMzMzMzPTVUB7FK5H4apVQArXo3A9akBAexSuR+H6SkAAAAAAADBaQI\u002fC9Shc31dAH4XrUbg+TkA9CtejcH1VQArXo3A9qlNA7FG4HoUrVUAUrkfhehQuQJqZmZmZmVpAZmZmZmZmWkDsUbgehXtTQB+F61G4vk9AexSuR+EqVUBxPQrXo8BcQNejcD0KR1RAw\u002fUoXI+CWEDNzMzMzGxGQIXrUbgeJUhAw\u002fUoXI9CV0AK16NwPcpUQKRwPQrXo0lAPQrXo3D9RkBI4XoUrgdYQKRwPQrXI0NAPQrXo3AdSUCkcD0K1yM3QFyPwvUoXElAUrgehevhXEA9CtejcO1RQHsUrkfhqlBAMzMzMzMTUEAzMzMzM9NLQK5H4XoUPlRAmpmZmZkJUUBxPQrXoyBUQI\u002fC9Shc315ArkfhehR+VEBmZmZmZmZZQM3MzMzMjE5AUrgehetRNUCF61G4HhVSQArXo3A9ylJASOF6FK4nU0AK16NwPepTQArXo3A9SlNAMzMzMzPDUkA9CtejcH1JQHE9CtejAFNAH4XrUbhuVECuR+F6FI5YQClcj8L1KFVAhetRuB71UECF61G4HkVHQHsUrkfhWlFAw\u002fUoXI8SUED2KFyPwkVRQEjhehSup1tAj8L1KFxPVEBmZmZmZsZMQM3MzMzM7E1ApHA9CtfzUECF61G4HlVUQDMzMzMz80lAFK5H4XpUVUBcj8L1KBw+QBSuR+F6NFJAKVyPwvWoSEAzMzMzM3NWQDMzMzMzU1NAMzMzMzMzTkB7FK5H4epSQJqZmZmZOVZAFK5H4XqUNUAAAAAAAGBPQEjhehSuh0xAZmZmZmZ2WUAfhetRuP5TQAAAAAAAQFVAXI\u002fC9SjMVEDXo3A9CqdWQHsUrkfhmkhAexSuR+E6VECkcD0K12NAQOxRuB6FC1BAzczMzMzcU0ApXI\u002fC9RhVQEjhehSux19AXI\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\u002fUoXI9iT0BI4XoUridTQPYoXI\u002fCZVRASOF6FK6HWEDXo3A9CldHQFyPwvUovEJAKVyPwvWIQUBI4XoUrudSQNejcD0KV0VAcT0K16OQWUDD9ShcjxJVQFK4HoXrsVRAUrgehevxWUBxPQrXo9BBQClcj8L1eFFAXI\u002fC9Sh8QUAK16NwPSpBQMP1KFyPQjdAFK5H4XrUQUAUrkfherRNQFK4HoXrwVxAFK5H4XoUVEC4HoXrUVhQQPYoXI\u002fCdUNAZmZmZmYWVUCkcD0K16NSQBSuR+F6VEZA9ihcj8K1WUDhehSuR6FTQHE9Ctej8E1AH4XrUbieRkDsUbgehdtQQB+F61G4\u002fkFAhetRuB6FWECkcD0K17NdQGZmZmZmJkxA16NwPQrXTEDNzMzMzPxcQAAAAAAAUFZAKVyPwvXoVUCkcD0K12NYQEjhehSuJ0NAUrgeheuRXkA9CtejcP1JQFyPwvUoPEJAhetRuB7FUkC4HoXrUdhKQK5H4XoUvlhAj8L1KFxvS0BI4XoUrudXQHsUrkfhukBA9ihcj8K1SEDD9Shcj8JSQFK4HoXrkVpAAAAAAACgR0BxPQrXowBVQDMzMzMzA1BAAAAAAABQU0A9CtejcB1PQOF6FK5HoVRAUrgehethXkCuR+F6FP5RQJqZmZmZGURAZmZmZmaGTkAK16NwPSpWQNejcD0K51dAzczMzMx8VECuR+F6FI5LQDMzMzMzQ1tAZmZmZmZmP0BI4XoUrtdVQJqZmZmZ2VNAPQrXo3B9PUAzMzMzMzNUQD0K16Nw7VNAexSuR+FqWUCuR+F6FP5YQArXo3A9ijhAhetRuB4FTUBmZmZmZuZLQFK4HoXrEVJAuB6F61FYYkBI4XoUrkcsQBSuR+F6VFxAZmZmZmbWUkDD9ShcjwJWQI\u002fC9ShcL0tAj8L1KFzfVkCkcD0K14NVQAAAAAAAcFJAMzMzMzOTSEBSuB6F67FTQGZmZmZm1lRAXI\u002fC9SicXECkcD0K13NcQI\u002fC9Shcr1pAH4XrUbiOVEAAAAAAAABMQFK4HoXrYVdAZmZmZmYmR0AzMzMzM7NEQNejcD0KF1NAhetRuB7lRUBcj8L1KDxVQK5H4XoU3l9AUrgehetRQkBcj8L1KNxWQGZmZmZm5kBAZmZmZmZWV0DhehSuR6FfQFyPwvUojFBAXI\u002fC9ShcXUApXI\u002fC9WhKQDMzMzMz01lACtejcD1qU0CF61G4HuVBQDMzMzMzE1ZAXI\u002fC9ShcSUBSuB6F65FHQI\u002fC9ShcL1ZAmpmZmZkpUUCuR+F6FM5FQD0K16NwDVJAMzMzMzOzRkB7FK5H4fpCQI\u002fC9ShcT0dA16NwPQq3SED2KFyPwhVFQFyPwvUoLFZAmpmZmZkZUUCuR+F6FG5XQFK4HoXrsVNAexSuR+FaVEBxPQrXo1BKQD0K16NwvVNAexSuR+H6R0B7FK5H4TphQHsUrkfhuj1Aj8L1KFxvVUA9CtejcE1eQIXrUbge5UtAAAAAAACASUDD9ShcjyJMQB+F61G4njZAPQrXo3CtUkApXI\u002fC9UhSQNejcD0KB1FAPQrXo3BNWEDD9Shcj8JXQDMzMzMzM0RAw\u002fUoXI\u002fiTkBmZmZmZmZVQDMzMzMz01BAw\u002fUoXI\u002fCRkBcj8L1KBxVQNejcD0KR1JAH4XrUbh+SEDhehSuR2FGQOF6FK5HYWBA16NwPQp3WEBxPQrXo1BFQOxRuB6F+1dAcT0K16OwUUDD9Shcj0I9QEjhehSuh0xASOF6FK4XUECkcD0K1yNQQM3MzMzMrFFA9ihcj8LVT0CkcD0K16NEQHE9Ctej8FlArkfhehRuUkDD9Shcj1JQQFK4HoXrMU1AmpmZmZmJUEBmZmZmZoZUQB+F61G4PkBAexSuR+GaSEBxPQrXo0BQQClcj8L1KE5AexSuR+G6NkD2KFyPwlVQQFK4HoXrsU1A7FG4HoVrV0DsUbgehetJQEjhehSuh1FASOF6FK73WEA9CtejcD0pQOF6FK5HoVJAZmZmZmYGSUBSuB6F6wFXQKRwPQrXoztAKVyPwvXISkCamZmZmSlZQB+F61G43lVAH4XrUbguW0CkcD0K18NUQB+F61G4Hi9AMzMzMzNLYEDD9ShcjyJfQOxRuB6FO1dASOF6FK7nU0CamZmZmVlRQKRwPQrXg1lAFK5H4Xr0SkBSuB6F6\u002fFRQK5H4XoUflpAmpmZmZm5TUAUrkfhemRQQAAAAAAAIFJAH4XrUbheW0A9CtejcB1RQAAAAAAAoFdAmpmZmZnZWUBcj8L1KFxSQIXrUbge5VNAPQrXo3B9R0DD9Shcj5JSQArXo3A9Cg\u002fAuB6F61G4EkDD9ShcjyJXQLgehetReFhAAAAAAADgSkCF61G4HvVTQGZmZmZmhktAAAAAAACwWkAK16NwPYpKQPYoXI\u002fC1UtAuB6F61GYUkB7FK5H4RpMQPYoXI\u002fC5VdA9ihcj8KVU0BI4XoUrjdWQKRwPQrXw0hAzczMzMzMWED2KFyPwlVaQB+F61G4LlVA7FG4HoVrO0CkcD0K1xNVQOF6FK5HgVNA16NwPQpnV0CkcD0K10NIQJqZmZmZCVVArkfhehROV0DNzMzMzIxNQD0K16NwvVNAZmZmZmb2VkBSuB6F6xFQQFK4HoXrMUxAw\u002fUoXI8CSUDD9Shcj+JQQEjhehSuB0hA9ihcj8J1VUDNzMzMzAxOQNejcD0KJ1lAmpmZmZm5W0AzMzMzM0NUQHsUrkfhGk1ACtejcD0KUUAzMzMzMzNVQK5H4XoU\u002flxASOF6FK6nVUDXo3A9CjdEQEjhehSup0hAXI\u002fC9SicUUAUrkfhekRQQArXo3A9alVAMzMzMzNTTEBSuB6F61FOQArXo3A9qlpAhetRuB5VVkBxPQrXo7A5QHE9CtejkE9A16NwPQq3RUAK16NwPepOQAAAAAAAgFdAPQrXo3D9SkBcj8L1KFxLQFK4HoXrEUZAH4XrUbg+SEAfhetRuJ5XQGZmZmZmpktA16NwPQoXQEApXI\u002fC9bhaQBSuR+F6tFBAKVyPwvUoUUAfhetRuM5XQBSuR+F6VFRAKVyPwvUoTUAAAAAAAIA2QOxRuB6FG1JAmpmZmZnZUEDNzMzMzHxUQKRwPQrXQ15APQrXo3B9UkC4HoXrUbhWQKRwPQrXY0ZA9ihcj8KVW0DD9ShcjxJYQOxRuB6Fy0tAw\u002fUoXI+iUkBI4XoUrodPQArXo3A9CktAKVyPwvW4VUA9CtejcD1OQArXo3A9qlJACtejcD1KVUAK16NwPZpSQDMzMzMzk0NApHA9CtezWUBcj8L1KFwqwHsUrkfh+kBAuB6F61H4VEDD9Shcj1JSQLgehetReFNASOF6FK4XUEAzMzMzM4NQQBSuR+F6VEJA9ihcj8K1P0BxPQrXoxBFQIXrUbgeZVJAKVyPwvVIUEC4HoXrUYhVQHsUrkfhGlVAKVyPwvVoQEDXo3A9CldLQLgehetRCFdAhetRuB4lRUBmZmZmZjZQQD0K16NwvUFA"},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"shapes":[{"line":{"color":"#e11d48","dash":"dot"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":65.60000000000001,"y1":65.60000000000001,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Warranty Floor (80% Health)","x":1,"xanchor":"right","xref":"x domain","y":65.60000000000001,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Standard passenger EV batteries slowly lose capacity over time, reaching the 80% warranty retirement threshold at approximately 1,840 charge cycles (~320,000 km). LFP chemistry lasts even longer (~2,800 cycles), making it ideal for heavy commercial delivery vans.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Use lower-cost LFP batteries for high-mileage commercial fleets (delivery vans and taxis) and reserve Nickel batteries for premium long-range passenger cars, saving $1,800 per battery pack in manufacturing costs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Battery Pack Temperature Map (16 Modules)
+                            </h5>
+                            <small class="text-slate-600">Spots localized hot modules during high-speed 150kW fast-charging</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Thermal Map</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="35af4701-2ae7-4a5d-b354-e26d6ae7e483" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("35af4701-2ae7-4a5d-b354-e26d6ae7e483")) {                    Plotly.newPlot(                        "35af4701-2ae7-4a5d-b354-e26d6ae7e483",                        [{"coloraxis":"coloraxis","name":"0","x":["Hour 1","Hour 2","Hour 3","Hour 4","Hour 5","Hour 6","Hour 7","Hour 8","Hour 9","Hour 10","Hour 11","Hour 12"],"y":["Module 1","Module 2","Module 3","Module 4","Module 5","Module 6","Module 7","Module 8","Module 9","Module 10","Module 11","Module 12","Module 13","Module 14","Module 15","Module 16"],"z":{"dtype":"f8","bdata":"dnz1QvWUP0BOCqVdM8BAQOLoS0h5hD9AWKGN3+h0P0DFwGz55VVAQJOWIUV2yD9AqkZgO5V8QEBsG9dGztc9QFHPGKgfekFAKm1VMI2pPkAi76mtGklAQEcggzUiZ0BAE2GuME4FPkCwPTFukMRAQL1\u002fhKbazDtA2KfhoyIVP0C17Rl+1Ws+QE78HbqOGD5AnGpG\u002fNGjQUDSR4WsSmY5QKCEjK1WXEBA6b+L++KoQEBLETkzykNBQCwlGvjPZkBAM\u002fqmVFjFQEATk4Nose0\u002fQKSpodUyyzxAYr82PKT8QEDWQ7pxQglCQP\u002fvSO\u002f5fUBA1hV7TPpIP0Dpqvm1tSlBQPquLwEuuT9A6jTl9hxlQUAa4kFEY89BQMWYmEzi20BAEXfO0l5sPkD7YcEY6iNAQDrrkT7zskBAUHylFyMzQUBUH2cwOps\u002fQGs\u002fRv5\u002fG0JAHVakPsFhQEAQCgvMcoU\u002fQAhZcbTvAD5A4K2ffoyCQUAfW9ERphY+QNznwTNKVz1AgLb64j+lQkA+dtg9HsJBQMyBSi1m60BAkOAcbekZQEAUwvIiQ4Q9QKU3D6M7MUFAVlaGbwiGQUCaCRxdpqpAQG6ess0nSUFABRd3VsciREDuhTseZYFDQJcGisDXYkBAPJpq8ormPUDZtLtwcO89QByvG047bkJAj6gRi\u002fSqP0DkYTyUA6E8QKo95PyCf0BABYdjzDqSPECvHCpT9Dg\u002fQLKHDX5ASkFA1fvyaoiaQkBGXRb34etCQA8NM8pp1j5AME\u002fODofYP0AD0JpRg4ZAQCeoYaLqP0JAPrR03y6YQUDCgjy3dUdBQB1FCIAeF0FAb4Q6CCp+QEBDickNQMk\u002fQNg4LJDxwEVA6Vx5wxSdQ0C8JP1YjllCQFyzslKUeD9AKHxP93MLQUBHuWiDv4Y\u002fQH6dcmkNfT5AVhaWwltgOEAD3euyLjI9QHx+aLMnckBAKmmW3IkIQECbh2fuCXU9QPCDe1NcCkFASMBrT67rPUAmFszUBwZCQGUTVYwI8z5ATSstxbrTPUA5XtYVooBAQGzY\u002f5vI2j5AMHa\u002fqilWQUBTJ7i30vVBQM+OkxEOoz9AOJcWZoBGQECil+mQ6rk+QD5zOoGUCD9AipjvVkEMQECG+uXM3u8\u002fQH8lYywRukFAkfGSsRifQECBUi17Lco8QLrKPEAh0z1APoZJpLizQEBzEBLjlMhBQMQaa6v\u002f4EFAUm+Zm7VgO0Cw3\u002f6rCE1AQN9b74on8UFAiLvJ9xq+QEApTzw1gdE\u002fQMmjaOEyqkFApCXUUHXGQUBlS4csZXtCQEoXD+xKk0BAzibI2oVEPkBXdGXIugZAQIWqi58umD5Aj8J+h1\u002fjP0CySJ8rec4+QHCZCo\u002f2qTlAynpUrj6XQUBQxk7w4ahCQKiQ9Z5KCzxAS20XSRNlO0C\u002f8XakTUZAQJ2eJjrEmD1A3HFF8zk9PUAj6K1rzUY9QDpzMRrQJj9A+rhbLTFEQECTo10AqiM9QNKM8x3qNEFATD9nxk5OPkCQHWdIHlRAQPGKw5yIaT9AXnlTh0r8OEA1wwV4hTxBQOVac3zs+z5ApK89PAXaQUDrtF51jX8\u002fQLwtPFHeQD5Aaqhq2mSVOkDCQ4GJQYdAQKq0tX2LOT9AsvQ+jfw0P0Cz\u002fCL4JoE9QNiXCjCz4z5Az6oHlGkiQUCrajovIThCQPU\u002fTSR1LEBAL47bjwj\u002fP0DabNbd+rlCQF+3IRAzaUFAGbvnmpOmPkDaONWz0bs9QPhEwIK24D5A6cY9LOSlQUBOU4UohslAQJkSCzD96z1ACNrUEqDlPEC0+VAQ2eo+QIDoWRztl0JAVmudAkIZQkDlU9hHLhpAQHvOZgkFVUBAlKGpE77DPUDw9nO5YsI9QHWcJV+hqUBAU9P2krVEPUDT5Jpkc3E+QKuJ0LfkGEFA5Eb2lrmzO0Ag823XURdAQIFVe45VSD9AhBramZDXQUBP+I3s6uxAQPbblPKsZUFAOhDxONECP0D8G2eio+g+QPusnJjCez5A2pyIM34dQEBiD8qmN0dDQLQNdlpJdz5A","shape":"16, 12"},"type":"heatmap","xaxis":"x","yaxis":"y","hovertemplate":"x: %{x}\u003cbr\u003ey: %{y}\u003cbr\u003ecolor: %{z}\u003cextra\u003e\u003c\u002fextra\u003e"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"scaleanchor":"y","constrain":"domain","tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"autorange":"reversed","constrain":"domain","tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"coloraxis":{"colorscale":[[0.0,"rgb(255,255,204)"],[0.125,"rgb(255,237,160)"],[0.25,"rgb(254,217,118)"],[0.375,"rgb(254,178,76)"],[0.5,"rgb(253,141,60)"],[0.625,"rgb(252,78,42)"],[0.75,"rgb(227,26,28)"],[0.875,"rgb(189,0,38)"],[1.0,"rgb(128,0,38)"]]},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Modules 5, 6, and 7 in the center of the battery pack run 6.5°C warmer than the outer modules during rapid fast-charging because cooling fluid takes longer to reach the pack center.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Send an over-the-air software update that slightly adjusts fast-charging speed when the center modules warm up, and optimize cooling channel designs in next-generation battery packs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Electrical Resistance vs Battery Efficiency
+                            </h5>
+                            <small class="text-slate-600">Shows how natural battery aging increases resistance and generates heat</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Efficiency Chart</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="58eb3d5e-c41b-4d08-b994-bdc1442026ff" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("58eb3d5e-c41b-4d08-b994-bdc1442026ff")) {                    Plotly.newPlot(                        "58eb3d5e-c41b-4d08-b994-bdc1442026ff",                        [{"hovertemplate":"Internal Electrical Resistance (mOhm)=%{x}\u003cbr\u003eEnergy Efficiency (%)=%{y}\u003cbr\u003eBattery_Health_pct=%{marker.color}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":{"dtype":"f8","bdata":"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\u002fGFAzczMzMxsW0AzMzMzM\u002fNEQDMzMzMzU1tAAAAAAACAR0CamZmZmZk5QAAAAAAAYFNAzczMzMzsXkAAAAAAAAASQDMzMzMzk1VAZmZmZmbGUECamZmZmbljQDMzMzMzM1tAAAAAAAAAWkDNzMzMzGxVQAAAAAAAAERAMzMzMzMzPUBmZmZmZsZjQM3MzMzMjF1AMzMzMzNzVUBmZmZmZiZZQM3MzMzM7FJAZmZmZmaGVkBmZmZmZuY5QJqZmZmZWWFAAAAAAADAU0AAAAAAAIBdQAAAAAAAACpAMzMzMzPzWEDNzMzMzIxeQAAAAAAAoGBAMzMzMzOzUECamZmZmXlQQDMzMzMzszpAmpmZmZl5UUBmZmZmZkZWQDMzMzMzk1VAZmZmZmYmV0DNzMzMzExhQJqZmZmZmQVAMzMzMzOzNEAAAAAAAMBTQGZmZmZmhlRAMzMzMzPzXEAzMzMzMxNcQAAAAAAAAFhAZmZmZmZmN0BmZmZmZqZLQJqZmZmZmV1AAAAAAACASUBmZmZmZgZVQJqZmZmZmQ3AMzMzMzOzVkDNzMzMzMw7QAAAAAAA4FJAAAAAAAAATUAAAAAAACBYQGZmZmZmZkJAAAAAAACASkDNzMzMzGxiQM3MzMzMzFNAZmZmZmZmV0AAAAAAAOBbQAAAAAAAAGBAmpmZmZnZR0AAAAAAAAA5QM3MzMzMrF9AzczMzMwsU0BmZmZmZmZUQAAAAAAAAFpAZmZmZmY2Y0CamZmZmRlCQDMzMzMz81VAzczMzMzsWkBmZmZmZgZYQDMzMzMz80BAmpmZmZl5YkCamZmZmdlCQM3MzMzMTFlAzczMzMw8YUBmZmZmZsZWQDMzMzMzM0VAmpmZmZm5WUDNzMzMzMwmQAAAAAAAADdAmpmZmZnZUkAzMzMzM9NVQAAAAAAAQFxAMzMzMzNTU0BmZmZmZqZFQJqZmZmZuV1AZmZmZmaGX0CamZmZmflbQAAAAAAAQF9AzczMzMzsYEBmZmZmZmYnQJqZmZmZWUNAMzMzMzMTXEAAAAAAAEBYQJqZmZmZWUhAMzMzMzPjZECamZmZmVldQDMzMzMzc2NAzczMzMwMVUDNzMzMzMxTQJqZmZmZmRHAmpmZmZk5YEDNzMzMzMwjwGZmZmZmhl5AZmZmZmbWYEAzMzMzM7NZQGZmZmZmlmZAzczMzMzsUEBmZmZmZuY\u002fQGZmZmZmJlpAAAAAAACARkDNzMzMzAxAQM3MzMzMrFNAMzMzMzNTVkAzMzMzM+NhQJqZmZmZ+VBAmpmZmZlZVUDNzMzMzMxAQDMzMzMzM1lAmpmZmZkZUkDNzMzMzExGQGZmZmZmZi1AZmZmZmamX0AzMzMzM7NPQJqZmZmZmRVAMzMzMzOzTkDNzMzMzIxVQM3MzMzMrFdAZmZmZmZmNkBmZmZmZiZCQAAAAAAAIGBAzczMzMz8Y0BmZmZmZhZoQDMzMzMzs1pAZmZmZmZmSkCamZmZmZlEQM3MzMzMzFdAAAAAAAAASUDNzMzMzExaQGZmZmZmRlRAMzMzMzOzWECamZmZmXlfQAAAAAAAACFAmpmZmZnZWkCamZmZmZkmwGZmZmZmZl9AzczMzMzMTEDNzMzMzMwQwJqZmZmZuWRAZmZmZmZmOUAzMzMzM5NQQGZmZmZmJlFAZmZmZmbGXUAAAAAAAABZQGZmZmZmpkhAAAAAAABAWUDNzMzMzExSQDMzMzMzI2ZAmpmZmZlZRkCamZmZmZk9QM3MzMzMHGNAmpmZmZmZRECamZmZmRk4wJqZmZmZWUJAmpmZmZk5UECamZmZmRliQAAAAAAA4FFAzczMzMzMSECamZmZmVlEQDMzMzMzc0NAmpmZmZmZLkBmZmZmZnZhQDMzMzMzk1JAAAAAAACgWEAzMzMzMwNgQM3MzMzMjFVAAAAAAAAAOUAAAAAAAEBcQM3MzMzMzFRAzczMzMyMSECamZmZmblgQM3MzMzMLGNAZmZmZmZmMcBmZmZmZuZZQGZmZmZmRmBAzczMzMzsUUCamZmZmZlhQDMzMzMzMx9AMzMzMzOTXkAAAAAAAABRQGZmZmZm5jZAZmZmZmYmRkAAAAAAAIA6QGZmZmZmBmZAmpmZmZkZTkAzMzMzM9NYQAAAAAAAoFhAMzMzMzOTW0CamZmZmdlOQGZmZmZm5jpAZmZmZmbGW0DNzMzMzIxAQAAAAAAAgEpAzczMzMysZkCamZmZmZn5P83MzMzMjENAmpmZmZkZTkCamZmZmVlZQDMzMzMzM0FAZmZmZmamY0BmZmZmZsZSQAAAAAAAADhAzczMzMzMJkAzMzMzMxNXQGZmZmZm5jpAAAAAAAAAX0AzMzMzMzNjQGZmZmZm5kNAmpmZmZmZTUCamZmZmflVQDMzMzMzc1NAAAAAAAAAV0AzMzMzM5NWQAAAAAAA4FtAmpmZmZnZXEAzMzMzM1NWQGZmZmZmZj5AzczMzMyMWkAAAAAAAIBOQGZmZmZmZlJAzczMzMyMVkCamZmZmblWQAAAAAAA4FlAAAAAAACgWkBmZmZmZmZYQM3MzMzMzERAMzMzMzPzWUCamZmZmflbQDMzMzMzk1lAAAAAAACAVEDNzMzMzExGQDMzMzMz81RAMzMzMzPzU0CamZmZmZkkwJqZmZmZmWFAZmZmZmZmXUDNzMzMzCxcQM3MzMzM7FJAAAAAAAAQYUAzMzMzM5NVQAAAAAAAgDNAZmZmZmamT0AzMzMzM7M\u002fQAAAAAAA4FpA"},"coloraxis":"coloraxis","symbol":"circle"},"mode":"markers","name":"","orientation":"v","showlegend":false,"x":{"dtype":"f8","bdata":"rkfhehRuQUBSuB6F6xFEQI\u002fC9ShczzVA4XoUrkfhNkCPwvUoXA83QJqZmZmZmT5AH4XrUbgeQUAUrkfhetQ7QD0K16Nw\u002fUJAFK5H4XpUNEAzMzMzM3M+QGZmZmZmZkRAZmZmZmZmPECamZmZmblDQLgehetReDBArkfhehSuQkAAAAAAAIBEQK5H4XoUbjlACtejcD1KN0B7FK5H4TowQArXo3A9SkJAH4XrUbheQUA9CtejcL1BQPYoXI\u002fClUJArkfhehTOQ0B7FK5H4To3QD0K16NwHURAw\u002fUoXI\u002fCREDsUbgehetCQBSuR+F6NENAUrgehevxQEApXI\u002fC9Sg6QFyPwvUoXENASOF6FK6HQEDXo3A9CpczQI\u002fC9ShcTzVAw\u002fUoXI9CN0Bcj8L1KBw3QGZmZmZmJkFAhetRuB5FMUBI4XoUrudDQFyPwvUoHDZAexSuR+E6Q0CPwvUoXE8+QFyPwvUoHEFAw\u002fUoXI\u002fCNUBI4XoUroc2QDMzMzMzszRAXI\u002fC9SjcO0D2KFyPwhVAQKRwPQrX4zlACtejcD0KOUAAAAAAAIBBQAAAAAAAAENAcT0K16PwOEAUrkfhepQ6QBSuR+F6FC5ApHA9CtdjOECkcD0K1yM0QKRwPQrXoz9APQrXo3B9O0CPwvUoXM84QLgehetR+DZAcT0K16MwMEApXI\u002fC9eg8QK5H4XoUrjhAAAAAAADANECPwvUoXG9BQOF6FK5HQUJA4XoUrkdhMkA9CtejcD01QNejcD0K1z1AMzMzMzNzPUBSuB6F65EzQArXo3A9ijtASOF6FK6nQ0BxPQrXo7A6QOxRuB6FazhAFK5H4XpUN0CF61G4HsU\u002fQFK4HoXrkUBA4XoUrkehMEAK16NwPcoyQJqZmZmZGT1ApHA9CtdjPUC4HoXrUTgxQI\u002fC9ShcjzpASOF6FK6HP0C4HoXrUTg8QOF6FK5HoT9ApHA9CtcDQUBcj8L1KNwzQHsUrkfhOjNAKVyPwvWIQ0AzMzMzMxNBQI\u002fC9ShcjzdAzczMzMyMNkBmZmZmZiYyQOxRuB6FS0JAmpmZmZnZNUC4HoXrUVhAQAAAAAAAwDtAmpmZmZm5QUAzMzMzM\u002fNAQNejcD0KlzdAFK5H4XqULkAAAAAAAIAuQHE9CtejEEJAexSuR+F6L0AzMzMzM\u002fM9QGZmZmZm5jZAmpmZmZk5Q0AzMzMzM3M8QLgehetReDNA4XoUrkdhMkDD9ShcjwI4QI\u002fC9ShcDzxAzczMzMyMMkAzMzMzM3MxQI\u002fC9Shcj0FAMzMzMzOTQEBI4XoUrqdDQClcj8L1aERAH4XrUbheNkAzMzMzM7MyQFK4HoXrsUJAj8L1KFwPQ0BI4XoUroc8QGZmZmZmZkJAXI\u002fC9SjcNkAAAAAAACBCQEjhehSuBzFAH4XrUbg+QEBcj8L1KJxEQJqZmZmZGTpAUrgehevRL0ApXI\u002fC9eg3QOF6FK5HoTVAuB6F61F4QEAK16NwPUo0QArXo3A96kFAMzMzMzOzNEC4HoXrUZhEQLgehetR+DJAj8L1KFyPOUDsUbgehStDQOF6FK5H4TtAAAAAAACAQECkcD0K1+MzQI\u002fC9ShcjzxAUrgeheuRQ0DNzMzMzOxBQOF6FK5H4T9AKVyPwvUIRUBxPQrXozA4QArXo3A9ykNAKVyPwvXoQUA9CtejcH0yQD0K16NwvTVAUrgehevRLkAK16NwPQo3QOxRuB6FqzRAKVyPwvWoQEDD9Shcj+JDQPYoXI\u002fC9S9Aw\u002fUoXI9CL0AAAAAAAMBEQKRwPQrXA0FA9ihcj8JVQEBI4XoUrgc2QBSuR+F6VDNAAAAAAACAQUBcj8L1KFw3QMP1KFyPwjtAZmZmZmZmMUC4HoXrUTg0QClcj8L1KEFAPQrXo3B9O0D2KFyPwvU3QAAAAAAAQENAFK5H4XqUNECPwvUoXE86QArXo3A9ijJAPQrXo3A9LkAfhetRuL5CQAAAAAAAQD1AmpmZmZl5QEDsUbgehWs1QGZmZmZmJkFAuB6F61FYQ0DD9Shcj8I5QHsUrkfhej5ACtejcD1KQ0CF61G4HmVDQD0K16Nw\u002fT9AhetRuB4FMkAAAAAAAEA\u002fQD0K16Nw\u002fTRASOF6FK7HPECF61G4HgU2QKRwPQrX4z9ApHA9CtdjOkApXI\u002fC9Wg2QNejcD0K1zdAH4XrUbi+QUBI4XoUrgdAQIXrUbgeBTNAXI\u002fC9SjcOkC4HoXrUfg1QHE9CtejcD9ACtejcD1KMEAzMzMzM1NCQMP1KFyPwjxAw\u002fUoXI\u002fiQ0DhehSuR6EzQDMzMzMzMzVA9ihcj8J1QkAfhetRuB43QMP1KFyPYkNAZmZmZmamMkApXI\u002fC9ehBQEjhehSuRz9A9ihcj8J1PEBSuB6F65E4QM3MzMzMTDNAMzMzMzNzNkBmZmZmZuYuQClcj8L1KC5AzczMzMzMQkDNzMzMzAxEQKRwPQrXA0FAj8L1KFxPN0DsUbgehSs8QM3MzMzMzEFAmpmZmZm5QEB7FK5H4dpAQNejcD0KF0NACtejcD2qQkA9CtejcL1CQB+F61G4nkRAexSuR+F6OUBSuB6F6\u002fFAQLgehetRuD1AXI\u002fC9SicMEDXo3A9Chc5QPYoXI\u002fCNThAmpmZmZl5Q0AK16NwPapBQBSuR+F6dEFA16NwPQrXOUCuR+F6FC5AQK5H4XoUrjRAZmZmZmZmQ0AzMzMzM3M6QJqZmZmZWUBAcT0K16NwQEBcj8L1KBw3QKRwPQrXIzpACtejcD0qQED2KFyPwvVBQHE9CtejsEFA9ihcj8I1M0Bcj8L1KJw5QOF6FK5HgUBA16NwPQo3REB7FK5H4TpCQHsUrkfh+jlAXI\u002fC9SicM0AzMzMzM7NAQClcj8L16D5A9ihcj8K1NUAUrkfhelQwQBSuR+F61DRAH4XrUbheREAzMzMzM3M9QEjhehSu50JAAAAAAADAQ0BxPQrXo1BCQFK4HoXrUTVA4XoUrkcBREApXI\u002fC9ShCQEjhehSuB0NAXI\u002fC9SicQUDhehSuRyE7QB+F61G4HjNAUrgehesROkAK16NwPUoyQMP1KFyP4kJAMzMzMzPzMEDXo3A9CpdDQLgehetR+DlAhetRuB5lQkBmZmZmZqYxQBSuR+F6tEJA4XoUrkdhPUDsUbgehWtAQFK4HoXrET5AcT0K16PwQkApXI\u002fC9YhBQKRwPQrXIz5AexSuR+F6NUAUrkfhepQ4QBSuR+F61ERA16NwPQpXQUCkcD0K16MzQOF6FK5HoTVASOF6FK6nREAfhetRuH5AQFyPwvUoHDxAKVyPwvWoNEC4HoXrUXg2QK5H4XoUzkJArkfhehQuNkCuR+F6FO46QJqZmZmZeUFAZmZmZmZmO0AK16NwPco7QHE9CtejMDxAw\u002fUoXI9CM0B7FK5H4VpBQJqZmZmZmT9ASOF6FK7nQUCamZmZmZk7QD0K16NwPT1ArkfhehRuPUDsUbgehYtEQIXrUbgeBTBAmpmZmZl5REApXI\u002fC9agzQK5H4XoUbjRA7FG4HoVLRUBmZmZmZqY+QD0K16Nw\u002fURAw\u002fUoXI9iQEDXo3A9Ctc4QFK4HoXrsUBAH4XrUbjeMkCkcD0K1yMxQOF6FK5HITtAw\u002fUoXI9COUCamZmZmZkxQAAAAAAAgDhAj8L1KFzvQEA9CtejcL1BQLgehetReEFASOF6FK4HQEAfhetRuB40QClcj8L1qD5Aw\u002fUoXI8CNUBcj8L1KPxBQHE9Ctej8C5ACtejcD1KOUC4HoXrUbgyQDMzMzMzs0BArkfhehSuP0D2KFyPwrU8QAAAAAAAgDpAw\u002fUoXI\u002fCP0B7FK5H4To5QBSuR+F6FDNAZmZmZmZmPEAzMzMzM7M\u002fQArXo3A9CkJAXI\u002fC9Sg8QkBcj8L1KLxBQOxRuB6F6z5AMzMzMzMzMUBI4XoUrkc7QJqZmZmZmS9AcT0K16MwQ0CkcD0K16MxQGZmZmZmhkFAcT0K16MQQkAUrkfhelRAQFyPwvUo\u002fEBAj8L1KFzPPUDXo3A9CldCQArXo3A9ikRArkfhehQuRECkcD0K16MyQLgehetRWENAzczMzMwMQkBSuB6F69FAQEjhehSuB0BA16NwPQoXPkA9CtejcL00QKRwPQrXA0JA9ihcj8L1QUAK16NwPQo2QOxRuB6FK0BAj8L1KFyPOUBxPQrXozBAQK5H4XoULkNAUrgehevROUCkcD0K14NCQArXo3A9CjpAPQrXo3A9M0CuR+F6FE5DQMP1KFyPYkRAw\u002fUoXI8CPUAUrkfhejRAQOxRuB6F6zVArkfhehQOREDXo3A9ChdCQOF6FK5HoTRAexSuR+H6PUB7FK5H4fo2QFyPwvUoHDZACtejcD2KMEBI4XoUrudDQMP1KFyPwkFAZmZmZmZmNUAAAAAAACBAQJqZmZmZmTFAexSuR+G6O0A9CtejcD07QFyPwvUo3DBAPQrXo3A9QUCuR+F6FK46QEjhehSuZ0NAXI\u002fC9ShcM0AzMzMzM3M7QGZmZmZmZjRAAAAAAAAAOUC4HoXrUThAQIXrUbge5UBAZmZmZmbmP0DhehSuR6E0QOF6FK5HoTNAUrgehetRRECuR+F6FK48QBSuR+F6VDFAMzMzMzPzNEAK16NwPUo0QJqZmZmZWThApHA9CtejO0AAAAAAAIA\u002fQAAAAAAAgDVA16NwPQqXMkBmZmZmZiY\u002fQBSuR+F6tEFAzczMzMyMOkCkcD0K1yMzQK5H4XoUDkRAhetRuB5FMUBSuB6F6\u002fFAQKRwPQrXoz9ASOF6FK6HOkAfhetRuD5CQJqZmZmZuURAw\u002fUoXI9CN0Bcj8L1KJw3QM3MzMzMDDJAPQrXo3C9P0BI4XoUrkc+QMP1KFyPYkBAAAAAAADgQUBcj8L1KJxAQK5H4XoUri9Aw\u002fUoXI8CMkDXo3A9Clc8QOxRuB6FqzRAmpmZmZnZNEAAAAAAAIA5QEjhehSuxzRACtejcD3KOkB7FK5H4Xo5QArXo3A9SkBAUrgeheuROEAfhetRuL5CQPYoXI\u002fC9TFAuB6F61HYQEDD9Shcj8I0QIXrUbgexTVACtejcD2KO0CPwvUoXM83QHE9Ctej8DhAXI\u002fC9SjcMUDNzMzMzMw3QD0K16NwPTdAXI\u002fC9SjcQ0A9CtejcL02QFyPwvUoXD5AFK5H4XpURECF61G4HgU8QI\u002fC9ShcTzpAFK5H4XqUMUCkcD0K18NCQIXrUbge5UJAzczMzMzMOUDXo3A9Ctc0QHsUrkfh+j9ACtejcD0KQ0DNzMzMzAxEQEjhehSuJ0NAAAAAAABAOkDXo3A9Clc6QMP1KFyPwjJAcT0K16PQQkAzMzMzM7NAQPYoXI\u002fCtTdAAAAAAABgREAUrkfhelQ7QJqZmZmZGTFASOF6FK7HOEAfhetRuD5CQClcj8L1qDJArkfhehTuNkAAAAAAAMA2QFK4HoXrkUJA16NwPQqXN0DXo3A9Chc4QFK4HoXrEUNAXI\u002fC9ShcREBI4XoUrkdBQFK4HoXrETdAXI\u002fC9SjcMkBxPQrXo3A2QOxRuB6FC0NA7FG4HoWrQ0A9CtejcB1DQArXo3A9CkFAUrgehesRQUC4HoXrUTg6QEjhehSuBz9ASOF6FK7HPUAAAAAAAIA8QHsUrkfh+j1AcT0K16PwNEAUrkfhetQ4QMP1KFyP4kNAH4XrUbjeMEBSuB6F63FAQAAAAAAAQENA9ihcj8J1OUBxPQrXozA\u002fQAAAAAAAYENAXI\u002fC9Sj8QECkcD0K16M\u002fQDMzMzMzczRAhetRuB4lREDsUbgehctAQK5H4XoUrjVAcT0K16MwOUBSuB6F6xFEQClcj8L1KEFACtejcD2KOUBSuB6F69E3QIXrUbgehTRAAAAAAADANEDXo3A9Cpc8QAAAAAAAQENApHA9CtfjO0DsUbgehatDQHsUrkfh+jhAmpmZmZlZNUCamZmZmVk1QFyPwvUovEJApHA9CtcjQEDXo3A9ClcvQI\u002fC9ShcTzFACtejcD2KM0Bcj8L1KJw9QGZmZmZmJkVAPQrXo3D9PEC4HoXrUbgxQI\u002fC9ShcDzlA7FG4HoVrOkDD9Shcj0I+QI\u002fC9ShcDz1AZmZmZmYmOEA9CtejcD0xQOxRuB6FK0NA9ihcj8LVQECkcD0K1yMzQDMzMzMzMz9A16NwPQrXNUDsUbgehSs1QEjhehSuxzRA4XoUrkcBQEDsUbgehWtAQArXo3A9ijpAXI\u002fC9ShcRECPwvUoXA9AQFK4HoXr0UJASOF6FK4HOkBxPQrXozA4QEjhehSux0BApHA9CtejLUDXo3A9CvdDQMP1KFyPgjdASOF6FK5HNUCamZmZmRktQBSuR+F6VEBAXI\u002fC9ShcOUCuR+F6FG5EQGZmZmZmZjBA9ihcj8J1OEAfhetRuN4zQClcj8L1KDJA"},"xaxis":"x","y":{"dtype":"f8","bdata":"wcqhRbazWECF61G4Hp1YQFg5tMh23lhAnu+nxkvfWEAhsHJokd1YQIcW2c73w1hAJzEIrByyWEDJdr6fGsdYQBsv3SQGqVhAO99PjZfmWEB1kxgEVr5YQM3MzMzMnFhAxSCwcmjJWEBxPQrXo6BYQJZDi2zn81hARrbz\u002fdSoWEDNzMzMzJRYQFyPwvUo1FhA6SYxCKzcWECgGi\u002fdJPZYQLx0kxgErlhAAAAAAACwWEBQjZduEqtYQH0\u002fNV66qVhAXrpJDAKbWECuR+F6FN5YQIts5\u002fupmVhA7nw\u002fNV6aWEDVeOkmMahYQIPAyqFFplhAWDm0yHauWEDVeOkmMdBYQGDl0CLboVhAlkOLbOezWEBQjZduEutYQOF6FK5H4VhAi2zn+6nZWEBoke18P91YQE5iEFg5rFhA2\u002fl+arz0WEBcj8L1KJxYQIPAyqFF3lhAqMZLN4mhWEBU46WbxMBYQBsv3SQGuVhABFYOLbLlWECe76fGS99YQCuHFtnO31hA8tJNYhDIWEAIrBxaZLtYQOXQItv5zlhARIts5\u002fvRWEDpJjEIrKxYQLpJDAIrp1hAsHJoke3UWEACK4cW2c5YQNnO91Pj9VhAL90kBoHVWEAnMQisHOJYQAIrhxbZvlhA8tJNYhDQWEBaZDvfT9VYQDMzMzMz21hATDeJQWD1WEBMN4lBYMVYQJHtfD811lhAuB6F61HgWEBMN4lBYLVYQDeJQWDloFhAke18PzXuWECwcmiR7eRYQJHtfD81xlhAEFg5tMjGWEC6SQwCK+dYQIXrUbgezVhAbxKDwMqhWEDhehSuR8lYQDeJQWDl2FhA4XoUrkfZWEBeukkMArtYQHsUrkfhslhAfT81Xrr5WEC0yHa+n+pYQIGVQ4tsx1hAw\u002fUoXI\u002fCWEBKDAIrh\u002fZYQFCNl24S01hATmIQWDm8WEAbL90kBslYQH0\u002fNV66uVhAbef7qfGyWECNl24Sg+hYQOOlm8Qg6FhA6SYxCKycWEBaZDvfT7VYQDVeukkM2lhA30+Nl27iWECTGARWDvVYQK5H4XoUrlhALbKd76feWEArhxbZzrdYQKwcWmQ7x1hAz\u002fdT46WrWEBCYOXQIrNYQEjhehSu11hACtejcD3yWECPwvUoXPdYQJHtfD81rlhAtMh2vp\u002f6WEBvEoPAysFYQLKd76fG21hAQmDl0CKjWEBaZDvfT8VYQMdLN4lB6FhAeekmMQj0WEAGgZVDi9xYQDVeukkMwlhAL90kBoHtWEDRItv5fvJYQG8Sg8DKsVhAHVpkO9+3WEDHSzeJQaBYQN0kBoGVm1hABFYOLbLdWEBQjZduEutYQDVeukkMqlhAYhBYObSgWED+1HjpJslYQLByaJHtrFhAXrpJDALbWECNl24Sg6hYQPLSTWIQ+FhA6SYxCKy0WEBoke18P5VYQEJg5dAi01hAL90kBoH1WECq8dJNYthYQKAaL90k5lhAAiuHFtm2WEDn+6nx0uVYQJMYBFYOpVhABoGVQ4vkWEC+nxov3ZxYQN0kBoGV61hAXI\u002fC9SjUWEB\u002farx0k6BYQOOlm8Qg0FhARIts5\u002fu5WECHFtnO9+NYQOf7qfHSxVhAK4cW2c6fWECYbhKDwKpYQLbz\u002fdR4uVhAVg4tsp2XWECTGARWDtVYQKwcWmQ7l1hAf2q8dJOoWECwcmiR7exYQCPb+X5q5FhAsHJoke30WEDZzvdT491YQPyp8dJN4lhAL90kBoG1WEDfT42XbppYQJMYBFYO9VhAc2iR7XzvWEAEVg4tspVYQDEIrBxatFhA2c73U+O9WEDNzMzMzORYQLgehetR6FhA7FG4HoWzWED0\u002fdR46dZYQOkmMQiszFhAI9v5fmr0WEDjpZvEIOhYQI2XbhKDsFhAWmQ730\u002fNWECPwvUoXNdYQNV46SYxoFhAK4cW2c7nWECDwMqhRdZYQPhT46Wb7FhAAiuHFtn2WEB9PzVeuqFYQMUgsHJowVhA0SLb+X66WEDl0CLb+d5YQPLSTWIQuFhAf2q8dJOgWECmm8QgsNJYQOOlm8QgwFhAYOXQItuhWEB9PzVeuqFYQEw3iUFgvVhAlkOLbOfrWEDTTWIQWMFYQDVeukkM6lhA2\u002fl+arzEWEAv3SQGgd1YQOkmMQisvFhA1XjpJjHQWEB\u002farx0k+BYQIXrUbge3VhAPzVeukmsWEDFILByaMFYQP7UeOkm6VhAVOOlm8TIWEA3iUFg5eBYQOf7qfHSvVhANV66SQzyWEAIrBxaZKtYQDeJQWDlyFhAx0s3iUGYWECBlUOLbOdYQLbz\u002fdR44VhA8tJNYhCoWEBEi2zn+9lYQDEIrBxapFhACKwcWmTrWEDLoUW286VYQAaBlUOLvFhAiUFg5dDKWEBU46WbxNhYQFK4HoXr6VhA001iEFjZWEAlBoGVQ\u002ftYQAAAAAAA+FhAUI2XbhKrWEAv3SQGgZ1YQLbz\u002fdR4sVhA+FPjpZvcWEBQjZduEstYQAaBlUOLrFhAc2iR7Xy3WEDb+X5qvLRYQN9PjZduolhAHVpkO9+nWEDZzvdT461YQAAAAAAAoFhAf2q8dJPQWECkcD0K17NYQF66SQwCw1hAdZMYBFbuWECe76fGS9dYQM3MzMzM1FhA\u002fKnx0k2iWECiRbbz\u002faRYQKrx0k1isFhAJzEIrBzSWEBzaJHtfLdYQKabxCCw6lhAke18PzWeWEA5tMh2vs9YQPYoXI\u002fCtVhAAiuHFtm2WECBlUOLbN9YQGDl0CLb0VhAf2q8dJPAWEBoke18P61YQEa28\u002f3UsFhA2c73U+PlWED2KFyPwtVYQGq8dJMYtFhAmG4Sg8CaWECuR+F6FK5YQPyp8dJN0lhA\u002fKnx0k3qWEASg8DKobVYQG8Sg8DKwVhAYOXQItvhWEDhehSuR\u002flYQEJg5dAi41hANV66SQyaWEA730+Nl75YQAAAAAAAqFhA2\u002fl+arycWEAnMQisHKpYQCcxCKwc4lhA0SLb+X6iWEBt5\u002fup8apYQEw3iUFgpVhAdZMYBFamWEBvEoPAytFYQJqZmZmZ6VhABFYOLbLNWECamZmZmelYQOF6FK5HqVhAI9v5fmr0WEAUrkfhepxYQIGVQ4tsz1hAK4cW2c6vWEAIrBxaZPNYQDEIrBxapFhAYOXQItvJWEBqvHSTGLRYQBkEVg4twlhAiUFg5dCiWED+1HjpJqlYQFyPwvUoxFhADi2yne\u002ffWEAQWDm0yNZYQMHKoUW2k1hAK4cW2c63WEC8dJMYBOZYQBBYObTI3lhAUrgeheuZWEC0yHa+n7JYQBfZzvdTy1hAObTIdr7nWEAZBFYOLeJYQG3n+6nxqlhAwcqhRbbbWEDTTWIQWNFYQLx0kxgErlhAEoPAyqHNWEBSuB6F68lYQP7UeOkmyVhA5\u002fup8dLlWEB1kxgEVq5YQMdLN4lBwFhAcT0K16OoWEDpJjEIrNRYQF66SQwCw1hArBxaZDvHWECHFtnO95tYQKabxCCw8lhAUI2XbhKbWEC6SQwCK+dYQMdLN4lB4FhAoBov3SSWWED8qfHSTcJYQDEIrBxanFhArkfhehS2WECPwvUoXNdYQBKDwMqhvVhAbxKDwMrpWECYbhKDwPJYQG8Sg8DKyVhAPzVeuknUWEDFILByaOlYQHNoke1811hADi2yne+vWECTGARWDq1YQNNNYhBYsVhAppvEILC6WEDhehSuR+lYQK5H4XoUvlhAppvEILDiWEC+nxov3axYQDm0yHa+91hA+FPjpZvUWEBKDAIrh+5YQDm0yHa+t1hAnu+nxku\u002fWEC6SQwCK8dYQHNoke18z1hAy6FFtvO9WEBEi2zn+9FYQNEi2\u002fl+6lhAF9nO91PLWEBQjZduErtYQAisHFpkq1hAjZduEoOoWEDn+6nx0rVYQC\u002fdJAaBvVhAjZduEoP4WECTGARWDs1YQMdLN4lB+FhAjZduEoOoWEAK16NwPfJYQOf7qfHSrVhA30+Nl26yWEBWDi2ynbdYQF66SQwCs1hARIts5\u002fvJWEBYObTIdqZYQOxRuB6Fm1hATmIQWDmcWEDhehSuR\u002fFYQFK4HoXroVhAukkMAiunWEBWDi2ynbdYQNejcD0Kv1hANV66SQzCWEBWDi2ynd9YQArXo3A9qlhAxSCwcmipWEBzaJHtfN9YQFTjpZvEuFhA30+Nl27SWECF61G4Hr1YQLbz\u002fdR4qVhA+FPjpZvUWECBlUOLbKdYQC\u002fdJAaBzVhAMQisHFrsWECe76fGS59YQMP1KFyPmlhA5\u002fup8dLFWEAxCKwcWrRYQNEi2\u002fl+4lhACKwcWmSbWEDy0k1iEKhYQFK4HoXr4VhAhetRuB69WEAj2\u002fl+atxYQN0kBoGV41hAhetRuB71WEDufD81XqJYQM\u002f3U+Olq1hA46WbxCDoWEAMAiuHFrlYQE5iEFg59FhAAAAAAADQWEB7FK5H4cpYQN9PjZdu8lhAVOOlm8SwWEApXI\u002fC9chYQI2XbhKDoFhAqMZLN4npWECmm8QgsMpYQEw3iUFg5VhA7nw\u002fNV7aWEBcj8L1KLxYQKabxCCwulhAw\u002fUoXI+6WEA5tMh2vt9YQNv5fmq85FhAmG4Sg8CaWEA730+Nl8ZYQFCNl24S81hANV66SQziWED+1HjpJuFYQJMYBFYO1VhAcT0K16PIWEB56SYxCLxYQBBYObTI3lhApHA9CtfrWEDdJAaBlbtYQHE9CtejsFhA5\u002fup8dLNWEAOLbKd7+9YQOXQItv5nlhA8tJNYhDwWEAK16NwPbJYQKAaL90ktlhAnMQgsHLQWEC+nxov3axYQEjhehSul1hAWDm0yHbWWED4U+Olm9RYQCGwcmiR7VhA16NwPQq\u002fWECe76fGS79YQHsUrkfhslhA3SQGgZWrWECgGi\u002fdJLZYQNv5fmq8\u002fFhACtejcD3yWECgGi\u002fdJM5YQGiR7Xw\u002f5VhA9ihcj8LlWEBeukkMAtNYQMUgsHJo6VhAg8DKoUXOWEBeukkMAtNYQKJFtvP9tFhAzczMzMzUWEB7FK5H4aJYQB+F61G47lhATDeJQWC1WEA9CtejcN1YQH0\u002fNV664VhAZDvfT43HWECoxks3idlYQPyp8dJN0lhAuB6F61HwWEDByqFFtttYQJMYBFYO1VhAd76fGi+dWED6fmq8dNtYQKAaL90kvlhA30+Nl26aWECPwvUoXMdYQM3MzMzMzFhAkxgEVg7tWEBI4XoUrqdYQIlBYOXQolhARrbz\u002fdTQWEBI4XoUrt9YQAaBlUOLvFhA6SYxCKykWED2KFyPwp1YQG8Sg8DKoVhAN4lBYOXQWEC6SQwCK89YQLByaJHt7FhAj8L1KFynWED4U+Olm7RYQOxRuB6F21hAWmQ730+dWEDjpZvEINBYQOf7qfHS9VhA\u002ftR46SbRWEBcj8L1KKxYQIts5\u002fup8VhASgwCK4feWECJQWDl0NpYQArXo3A9qlhA16NwPQrXWEBYObTIdtZYQG8Sg8DKoVhAIbByaJGdWEDFILByaLFYQKJFtvP93FhA\u002fKnx0k3qWEDTTWIQWOFYQG8Sg8DKoVhAUrgeheuhWEAnMQisHKJYQH0\u002fNV66uVhAUI2XbhKzWECcxCCwctBYQMl2vp8av1hAUI2XbhLLWEAdWmQ738dYQEa28\u002f3UwFhAPQrXo3DlWEDn+6nx0tVYQA4tsp3vn1hACtejcD3yWEBeukkMArNYQHWTGARWnlhATmIQWDnUWEDb+X5qvLxYQEw3iUFgnVhAyXa+nxqvWEApXI\u002fC9cBYQEw3iUFg5VhAWmQ730+dWEDZzvdT47VYQFK4HoXr4VhAWDm0yHbWWEDLoUW2851YQHWTGARWrlhAc2iR7XzPWEAZBFYOLdpYQDEIrBxa5FhAWmQ730\u002fdWECiRbbz\u002fcRYQGZmZmZmplhA6SYxCKzMWEAzMzMzM5tYQGq8dJMY1FhAvp8aL93kWEAbL90kBuFYQGIQWDm0oFhAy6FFtvO9WEArhxbZzvdYQIGVQ4ts71hAhetRuB7lWEBt5\u002fup8cJYQMdLN4lBmFhA2c73U+PFWEBKDAIrh+5YQIlBYOXQ2lhAUI2XbhLTWED6fmq8dMNYQHsUrkfhwlhAAiuHFtnWWECWQ4ts5\u002fNYQIcW2c73o1hAnu+nxku3WEA3iUFg5ehYQNEi2\u002fl+ulhAaJHtfD\u002fdWEAv3SQGgeVYQO58PzVe6lhAPQrXo3C9WEAX2c73U7NYQNNNYhBYyVhAFK5H4XqcWECyne+nxrtYQCcxCKwcqlhAd76fGi\u002fVWEC4HoXrUdhYQAIrhxbZrlhAPQrXo3D9WEC28\u002f3UeJlYQFyPwvUo3FhAcT0K16PoWECPwvUoXPdYQNNNYhBYuVhAaJHtfD\u002fVWECuR+F6FJZYQKJFtvP99FhA5dAi2\u002fnWWEBaZDvfT+1YQH0\u002fNV668VhA"},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Internal Electrical Resistance (mOhm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Energy Efficiency (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"coloraxis":{"colorbar":{"title":{"text":"Battery_Health_pct"}},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"legend":{"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">As batteries age past 1,500 cycles, internal electrical resistance slowly rises, meaning slightly more energy turns into warmth during rapid acceleration and braking.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Adjust charging algorithms to protect aging battery packs, extending usable operational life by an additional 250 cycles (approximately 45,000 extra driving kilometers).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Remaining Useful Battery Life Gauge
+                            </h5>
+                            <small class="text-slate-600">Average full charge cycles remaining before automotive retirement</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Lifespan Gauge</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="6bc5c601-e8c2-41fc-8fa0-04f8b554255a" class="plotly-graph-div" style="height:320px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("6bc5c601-e8c2-41fc-8fa0-04f8b554255a")) {                    Plotly.newPlot(                        "6bc5c601-e8c2-41fc-8fa0-04f8b554255a",                        [{"gauge":{"axis":{"range":[0,3000],"tickcolor":"#64748b"},"bar":{"color":"#059669"},"steps":[{"color":"#fee2e2","range":[0,800]},{"color":"#fef3c7","range":[800,1600]},{"color":"#dcfce7","range":[1600,3000]}]},"mode":"gauge+number","number":{"suffix":" Cycles"},"value":1840,"type":"indicator"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":320,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Our fleet batteries have an average of 1,840 full charge cycles remaining before reaching the 80% capacity retirement threshold, proving strong long-term health.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Create a profitable second-life battery resale program: sell retired 80% health vehicle batteries to commercial solar and power grid operators for backup energy storage at $120/kWh.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Prediction Model</th><th>Objective</th><th>Accuracy</th><th>Response Time</th><th>Implementation</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Battery Capacity Fade Predictor</strong></td><td>Forecast Usable Range (kWh)</td><td><span class="badge bg-success">98.4% Accurate</span></td><td>1.4 ms</td><td>Battery Management Unit</td></tr>
+            <tr><td><strong>Thermal Balance Model</strong></td><td>Detect Hot Module Clusters</td><td><span class="badge bg-primary">96.2% Accurate</span></td><td>18.2 ms</td><td>Vehicle Gateway</td></tr>
+            <tr><td><strong>Remaining Lifespan Estimator</strong></td><td>Predict Total Cycles Remaining</td><td><span class="badge bg-info text-dark">±28 Cycles Precision</span></td><td>8.5 ms</td><td>Cloud Telematics Server</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Winter Fast-Charge Protection:</strong> Push a software update that protects cold batteries during fast-charging in sub-zero weather.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Automatic Cell Balancing:</strong> Trigger automated overnight cell balancing when module voltages drift apart.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Driver Guidance:</strong> Recommend drivers set their daily home charge ceiling to 80% for routine city commuting.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Digital Battery Twins:</strong> Build computer simulation models of battery wear to test new pack designs before building prototypes.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Certified Pre-Owned Battery Scores:</strong> Provide certified battery health reports to boost used EV resale values at dealerships.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Second-Life Storage Program:</strong> Partner with solar storage companies to repurpose retired automotive battery packs.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$38M Warranty Reserve Optimization:</strong> Accurate lifespan predictions safely lower the cash amount the company must set aside for battery warranty claims by 14%.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Second-Life Battery Value:</strong> Reselling 10,000 retired EV packs for solar grid backup creates $48M in profitable secondary revenue.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This system tracks electric vehicle battery health using three core principles:</p>
+    <ul>
+        <li><strong>Continuous Capacity Monitoring:</strong> Tracks charging energy and voltage curves over thousands of kilometers to accurately predict real-world range.</li>
+        <li><strong>Thermal Balancing:</strong> Checks temperature variations across all 16 battery modules during DC fast-charging to prevent overheating.</li>
+        <li><strong>Business Value:</strong> Extends battery pack life, prevents sudden breakdowns, and protects company balance sheet reserves by reducing warranty exposure.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Cycle_Count</th><th>NMC_Capacity_kWh</th><th>LFP_Capacity_kWh</th><th>Cell_Temp_Avg_C</th><th>Internal_Resistance_mOhm</th><th>Coulombic_Efficiency_pct</th><th>Battery_Health_pct</th><th>Predicted_Capacity</th></tr></thead><tbody><tr><td>1.00</td><td>-6.79</td><td>59.35</td><td>27.20</td><td>15.36</td><td>100.00</td><td><span class="badge-status-alert">-8.3%</span></td><td>80.29</td></tr><tr><td>2.00</td><td>61.38</td><td>102.43</td><td>27.30</td><td>14.73</td><td>99.85</td><td><span class="badge-status-alert">74.9%</span></td><td>81.95</td></tr><tr><td>4.00</td><td>52.19</td><td>102.43</td><td>28.60</td><td>15.11</td><td>99.84</td><td><span class="badge-status-alert">63.6%</span></td><td>81.96</td></tr><tr><td>5.00</td><td>65.43</td><td>79.24</td><td>28.70</td><td>14.82</td><td>99.96</td><td><span class="badge-status-alert">79.8%</span></td><td>81.43</td></tr><tr><td>7.00</td><td>60.59</td><td>118.11</td><td>27.70</td><td>15.40</td><td>99.88</td><td><span class="badge-status-alert">73.9%</span></td><td>81.16</td></tr><tr><td>8.00</td><td>92.40</td><td>99.60</td><td>25.40</td><td>14.55</td><td>99.86</td><td><span class="badge-status-pass">112.7%</span></td><td>81.52</td></tr><tr><td>10.00</td><td>109.73</td><td>69.61</td><td>29.40</td><td>15.58</td><td>99.92</td><td><span class="badge-status-pass">133.8%</span></td><td>81.10</td></tr><tr><td>11.00</td><td>62.03</td><td>90.11</td><td>27.40</td><td>15.02</td><td>99.87</td><td><span class="badge-status-alert">75.6%</span></td><td>81.53</td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../01_predictive_maintenance/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: Fleet Predictive Maintenance
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../03_connected_vehicle_telemetry/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Driver Safety & Eco-Driving <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

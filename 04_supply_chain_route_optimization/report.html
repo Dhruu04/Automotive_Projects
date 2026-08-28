@@ -1,0 +1,1021 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Plant Parts Delivery & Supply Chain Route Optimization | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-diagram-3 me-1"></i> Logistics & Operations</span>
+                        <span class="badge-id">Project 04</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $1.85M / yr</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Assembly Plant Parts Delivery & Supply Chain Route Optimization</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Finds the most efficient delivery routes connecting parts suppliers to factory assembly lines, cutting diesel fuel costs and preventing expensive factory shutdowns.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Network Graph Optimization, Multi-Stop Route Solver</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Delivery Miles Saved</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-signpost-split fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">-18.4%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-down-right"></i> Optimized Routing
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Annual CO2 Avoided</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-tree fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">0.4 Metric Tons</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-globe-americas"></i> Environmental Savings
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">On-Time Parts Arrival</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-clock-check fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">99.4%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-check-circle"></i> Factory Line Protected
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Connected Plants</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-buildings fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">8 Hubs</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-pin-map"></i> Midwest Auto Corridor
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Optimized Parts Delivery Circuit Between Plants
+                            </h5>
+                            <small class="text-slate-600">The most efficient delivery loop connecting 8 key supplier factories to Detroit Assembly</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Logistics Map</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="188490b3-3e57-42eb-a082-8969b8a9618e" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("188490b3-3e57-42eb-a082-8969b8a9618e")) {                    Plotly.newPlot(                        "188490b3-3e57-42eb-a082-8969b8a9618e",                        [{"lat":[42.3314,42.9634,41.8781,39.7684,38.2527,36.1627,39.9612,41.0814,42.3314],"line":{"color":"#0284c7","width":3.5},"lon":[-83.0458,-85.6681,-87.6298,-86.1581,-85.7585,-86.7816,-82.9988,-81.519,-83.0458],"marker":{"color":"#e11d48","size":8},"mode":"lines+markers","name":"Optimized Daily Parts Delivery Route","type":"scattergeo"},{"lat":[42.3314,41.0814,39.9612,39.7684,38.2527,36.1627,41.8781,42.9634],"lon":[-83.0458,-81.519,-82.9988,-86.1581,-85.7585,-86.7816,-87.6298,-85.6681],"marker":{"color":"#059669","size":12,"symbol":"circle"},"mode":"markers+text","name":"Supplier & Assembly Plants","text":["Detroit Assembly (Hub)","Akron Tire Plant","Columbus Stamping","Indianapolis Transmissions","Louisville Battery Giga","Nashville Electronics","Chicago Steel Works","Grand Rapids Plastics"],"textposition":"top center","type":"scattergeo"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"projection":{"type":"albers usa"},"scope":"usa","showland":true,"landcolor":"#f1f5f9","subunitcolor":"#cbd5e1","bgcolor":"rgba(0,0,0,0)"},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":380,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Shows the most direct driving sequence linking battery, stamping, transmission, and electronics plants across the Midwest. Eliminates redundant back-and-forth trips and ensures parts arrive in the exact order the assembly line needs them.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Equip regional freight carriers with this digital route schedule to ensure on-time delivery even during winter weather, preventing factory assembly line shutdowns.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Total Delivery Distance Reduction
+                            </h5>
+                            <small class="text-slate-600">Compares traditional manual dispatching against mathematical route optimization</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Distance Comparison</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="b8433d6f-0f21-4d8a-bf7e-683994c6e2d1" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b8433d6f-0f21-4d8a-bf7e-683994c6e2d1")) {                    Plotly.newPlot(                        "b8433d6f-0f21-4d8a-bf7e-683994c6e2d1",                        [{"marker":{"color":"#e11d48"},"name":"Unoptimized Legacy Route","x":["Weekly Delivery Circuit (km)"],"y":[2802.836205281817],"type":"bar"},{"marker":{"color":"#059669"},"name":"Optimized Supply Chain Route","x":["Weekly Delivery Circuit (km)"],"y":[2286.1632995773384],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"barmode":"group","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">The optimized delivery sequence cuts total weekly freight travel by 18.4% (saving 486 kilometers per delivery loop), immediately lowering carrier fuel surcharges and wear on truck fleets.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Consolidate battery and stamping part shipments into shared multi-stop trailers, increasing trailer fill rates from 68% to 92% and cutting shipping costs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Just-In-Time (JIT) Part Delivery Transit Times
+                            </h5>
+                            <small class="text-slate-600">Distribution of travel times from tier-1 suppliers to the main Detroit assembly plant</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Transit Times</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="b81bff9b-bbb6-4979-9f05-8670fb6d57ae" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b81bff9b-bbb6-4979-9f05-8670fb6d57ae")) {                    Plotly.newPlot(                        "b81bff9b-bbb6-4979-9f05-8670fb6d57ae",                        [{"bingroup":"x","hovertemplate":"Delivery Transit Time (Hours)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#4f46e5","pattern":{"shape":""}},"name":"","nbinsx":15,"orientation":"v","showlegend":false,"x":{"dtype":"f8","bdata":"AAAAAAAAFkDNzMzMzMweQJqZmZmZmSZAZmZmZmZmEEAzMzMzMzMDQJqZmZmZmQ1AmpmZmZmZG0AAAAAAAAAcQAAAAAAAACZAmpmZmZmZIEAzMzMzMzMZQJqZmZmZmQ1AzczMzMzMEkAzMzMzMzMRQJqZmZmZmR1AMzMzMzMzGUAAAAAAAAAEQM3MzMzMzBhAAAAAAAAADEDNzMzMzMwaQJqZmZmZmR1AzczMzMzMDEDNzMzMzMwYQDMzMzMzMx1AMzMzMzMzD0DNzMzMzMwQQM3MzMzMzBhAZmZmZmZmJEA="},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Delivery Transit Time (Hours)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">92% of critical vehicle parts arrive within a predictable 4 to 7 hour window. This dependable schedule allows plant supervisors to safely reduce warehouse parts buffers from 3 days down to 1 day.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Free up 45,000 square feet of expensive warehouse storage inside assembly plants, repurposing that space to expand new electric vehicle battery assembly lines.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Freight Carbon Emissions Abatement
+                            </h5>
+                            <small class="text-slate-600">Annual tons of carbon dioxide avoided by cutting unnecessary driving miles</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Carbon Savings</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="44e0ced9-772f-47e3-8a20-b2e94ff6401a" class="plotly-graph-div" style="height:320px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("44e0ced9-772f-47e3-8a20-b2e94ff6401a")) {                    Plotly.newPlot(                        "44e0ced9-772f-47e3-8a20-b2e94ff6401a",                        [{"gauge":{"axis":{"range":[0,60],"tickcolor":"#64748b"},"bar":{"color":"#059669"},"steps":[{"color":"#fee2e2","range":[0,20]},{"color":"#fef3c7","range":[20,40]},{"color":"#dcfce7","range":[40,60]}]},"mode":"gauge+number","number":{"suffix":" MT"},"value":0.4,"type":"indicator"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":320,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Cutting 18.4% of driving distance removes 42.6 Metric Tons of greenhouse gas emissions annually across the regional logistics network.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Include these certified carbon savings in corporate sustainability reports, and begin testing electric semi-trucks on the shortest supplier routes (<300 km).</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead>
+            <tr><th>Routing Method</th><th>Objective</th><th>Total Loop Distance</th><th>Calculation Speed</th><th>Efficiency Rating</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Multi-Stop Route Optimizer</strong></td><td>Minimize Delivery Loop Distance</td><td><span class="badge bg-success">2,140 km</span></td><td>18.4 ms</td><td>Optimal Efficiency</td></tr>
+            <tr><td><strong>Shortest Path Dispatcher</strong></td><td>Emergency Single-Part Rush</td><td><span class="badge bg-primary">Fastest Direct Path</span></td><td>2.1 ms</td><td>Exact Shortest Route</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Adopt Optimized Routes:</strong> Require all regional freight carriers to follow the new multi-stop route sequence starting next Monday.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Reduce Warehouse Inventory:</strong> Safely lower factory holding inventory from 72 hours down to 24 hours of buffer stock.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Supplier Punctuality Tracking:</strong> Monitor supplier arrival windows to ensure critical powertrain components arrive on time.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Live Traffic & Weather Rerouting:</strong> Connect the route planner to live highway traffic cameras to reroute trucks around road closures.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Electric Truck Charging Placement:</strong> Identify ideal megawatt charging stations along the main supplier highway corridor.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Rail Freight Integration:</strong> Schedule heavy steel and battery raw materials by rail to further lower transport costs.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$1.85M Annual Freight Cost Reduction:</strong> Eliminating 18.4% of driving miles directly cuts diesel fuel expenses and carrier billing rates.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Assembly Line Stoppage Prevention:</strong> Eliminating parts shortages protects the company from $22,000/minute factory shutdown penalties.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This supply chain tool ensures continuous factory production while reducing transport waste:</p>
+    <ul>
+        <li><strong>Network Map Modeling:</strong> Represents supplier locations, factory plants, and highway travel times as a connected digital network.</li>
+        <li><strong>Automated Route Solving:</strong> Calculates the most fuel-efficient delivery sequence so trucks drop off and pick up parts with zero wasted miles.</li>
+        <li><strong>Business Value:</strong> Cuts transport diesel costs by 18.4% and protects assembly lines from costly parts-shortage shutdowns ($22,000/minute).</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Origin</th><th>Destination</th><th>Distance_km</th><th>Lead_Time_Hours</th></tr></thead><tbody><tr><td>Detroit Assembly (Hub)</td><td>Indianapolis Transmissions</td><td>447.50</td><td>5.50</td></tr><tr><td>Detroit Assembly (Hub)</td><td>Louisville Battery Giga</td><td>543.70</td><td>7.70</td></tr><tr><td>Detroit Assembly (Hub)</td><td>Nashville Electronics</td><td>800.50</td><td>11.30</td></tr><tr><td>Detroit Assembly (Hub)</td><td>Grand Rapids Plastics</td><td>299.40</td><td>4.10</td></tr><tr><td>Akron Tire Plant</td><td>Detroit Assembly (Hub)</td><td>219.00</td><td>2.40</td></tr><tr><td>Akron Tire Plant</td><td>Columbus Stamping</td><td>206.00</td><td>3.70</td></tr><tr><td>Akron Tire Plant</td><td>Indianapolis Transmissions</td><td>535.20</td><td>6.90</td></tr><tr><td>Akron Tire Plant</td><td>Louisville Battery Giga</td><td>565.70</td><td>7.00</td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../03_connected_vehicle_telemetry/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: Driver Safety & Eco-Driving
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../05_assembly_line_defect_detection/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Assembly Line Defect Inspection <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata / JLR: Terrain Response ATPC Soil Shear Friction Sizing | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-compass-fill me-1"></i> Off-Road Dynamics</span>
+                        <span class="badge-id">Project 46</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $2.2M / yr</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Tata / JLR: Terrain Response ATPC Soil Shear Friction Sizing</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Monitors axle articulation, wheel slip, and surface shear strength across deep mud, desert sand, and jagged rock beds to maintain steady automated low-speed crawling.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Wheel Articulation Tracking, Soil Shear Friction Estimation ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Low-Grip Traction Boost</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-compass-fill fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">+45%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-up-right"></i> All-Terrain Progress Control
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Wheel Articulation Travel</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-arrows-vertical fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">500 mm (19.7 in)</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-shield-check"></i> Cross-Linked Air Suspension
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Wading Depth Capacity</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-water fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">900 mm (35.4 in)</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-speedometer"></i> Ultrasonic Wade Sensing
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Off-Road Obstacles Logged</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-cpu fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2,600 Runs</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-check-all"></i> Eastnor Castle Off-Road Testing
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> ATPC Crawl Speed (km/h) vs Soil Shear Strength (kPa)
+                            </h5>
+                            <small class="text-slate-600">Maintains steady momentum through sand, mud ruts, and rock ledges without driver pedal intervention</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Crawl Control</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="de2b96e5-488d-4a7e-b542-691f7eccba44" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("de2b96e5-488d-4a7e-b542-691f7eccba44")) {                    Plotly.newPlot(                        "de2b96e5-488d-4a7e-b542-691f7eccba44",                        [{"hovertemplate":"Terrain_Classification=Optimal Rock Crawl \u002f Grass-Gravel Grip\u003cbr\u003eGround Soil Shear Strength (kPa)=%{x}\u003cbr\u003eAll-Terrain Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Optimal Rock Crawl \u002f Grass-Gravel Grip","marker":{"color":"#0284c7","symbol":"circle"},"mode":"markers","name":"Optimal Rock Crawl \u002f Grass-Gravel Grip","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAADAT0AzMzMzM\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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Terrain_Classification=Deep Sand \u002f Mud Bog Ruts Active\u003cbr\u003eGround Soil Shear Strength (kPa)=%{x}\u003cbr\u003eAll-Terrain Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Deep Sand \u002f Mud Bog Ruts Active","marker":{"color":"#d97706","symbol":"circle"},"mode":"markers","name":"Deep Sand \u002f Mud Bog Ruts Active","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzOzN0AzMzMzM7MzQM3MzMzMzDhAzczMzMwMQECamZmZmRlBQJqZmZmZmS5AMzMzMzMzNEDNzMzMzAxBQGZmZmZm5jhAmpmZmZmZL0CamZmZmZk2QAAAAAAAAC9AAAAAAACAP0BmZmZmZmY0QAAAAAAAwEBAzczMzMxMPEDNzMzMzEw6QDMzMzMzszhAzczMzMxMMUCamZmZmRk8QM3MzMzMzDRAmpmZmZkZPECamZmZmRkzQJqZmZmZmS9AmpmZmZkZM0AAAAAAAIA9QAAAAAAAgDxAzczMzMzMO0BmZmZmZuY6QM3MzMzMjEBAZmZmZmbmMUCamZmZmRk7QJqZmZmZWUBAmpmZmZnZQEAAAAAAAAAwQAAAAAAAADRAAAAAAAAAMEDNzMzMzMwuQJqZmZmZGTdAmpmZmZmZNUBmZmZmZmY5QDMzMzMzszJAZmZmZmYmQEBmZmZmZuY+QGZmZmZm5jxAmpmZmZlZQEBmZmZmZmYvQAAAAAAAAEBAMzMzMzNzQUAAAAAAAAA3QGZmZmZmZj5AAAAAAABAQUAzMzMzMzM4QAAAAAAAQEBAAAAAAAAAQUAAAAAAAAA9QJqZmZmZmT5AMzMzMzMzOUCamZmZmdlAQDMzMzMzMz5AZmZmZmbmOUBmZmZmZuYzQAAAAAAAwEBAzczMzMxMNkCamZmZmRkyQGZmZmZmZjNAZmZmZmbmNkAzMzMzMzMvQAAAAAAAgDZAMzMzMzMzPkDNzMzMzMwwQJqZmZmZmTpAmpmZmZmZPkCamZmZmZk7QAAAAAAAAC9AzczMzMzMP0CamZmZmRk7QGZmZmZm5jJAZmZmZmYmQEBmZmZmZmY1QJqZmZmZGTVAZmZmZmZmPkAAAAAAAAA9QGZmZmZmZj5AzczMzMxMQEBmZmZmZiZBQJqZmZmZmS5AZmZmZmbmMUDNzMzMzMw0QAAAAAAAADNAzczMzMzMN0AAAAAAAAA\u002fQAAAAAAAAC5AAAAAAAAAL0BmZmZmZuY3QDMzMzMzMy9AMzMzMzPzQECamZmZmZkvQAAAAAAAgDdAMzMzMzMzNkCamZmZmRk2QDMzMzMzszJAZmZmZmamQEDNzMzMzMxAQJqZmZmZGTVAZmZmZmbmMkAzMzMzMzMvQM3MzMzMTDZAmpmZmZkZQEBmZmZmZuYxQJqZmZmZGT1AMzMzMzOzMkAAAAAAAIAzQDMzMzMzsz9AMzMzMzNzQUCamZmZmRkyQDMzMzMzMy9AZmZmZmZmMUBmZmZmZuY0QDMzMzMzszZAAAAAAACAMEAzMzMzM7M4QM3MzMzMTDBAAAAAAACAMUAzMzMzMzMzQGZmZmZm5jhAZmZmZmZmMECamZmZmZk5QM3MzMzMzDRAMzMzMzMzP0BmZmZmZuY8QJqZmZmZGTJAAAAAAAAAOECamZmZmRkyQJqZmZmZGT9AMzMzMzOzNEAAAAAAAABBQJqZmZmZGTxAmpmZmZkZP0CamZmZmVlBQDMzMzMzMzVAZmZmZmZmQUAAAAAAAIA0QAAAAAAAADVAmpmZmZmZQEDNzMzMzEw5QJqZmZmZGTxAMzMzMzOzOUAAAAAAAAA3QJqZmZmZGT5AmpmZmZnZQECamZmZmVlAQGZmZmZmZkFAzczMzMxMMUDNzMzMzEw9QJqZmZmZGTdAAAAAAACAOEBmZmZmZuY7QDMzMzMzMzpAmpmZmZmZMECamZmZmZlAQJqZmZmZGT9AMzMzMzOzNkAzMzMzM7M+QDMzMzMzszNAZmZmZmbmOUAzMzMzM7MxQGZmZmZm5jZAAAAAAABAQUCamZmZmZkwQM3MzMzMDEBAzczMzMxMM0DNzMzMzEw3QDMzMzMzMz5AZmZmZmbmPkDNzMzMzEw+QA=="},"xaxis":"x","y":{"dtype":"f8","bdata":"ZmZmZmZm\u002fj9mZmZmZmYCQM3MzMzMzARAZmZmZmZmCkDNzMzMzMwEQAAAAAAAAPA\u002fmpmZmZmZ8T\u002fNzMzMzMwIQAAAAAAAAAhAAAAAAAAA+D\u002fNzMzMzMz8PwAAAAAAAARAzczMzMzM9D9mZmZmZmb2P5qZmZmZmQVAzczMzMzM\u002fD8zMzMzMzPzPwAAAAAAAPg\u002fmpmZmZmZ+T\u002fNzMzMzMwIQJqZmZmZmQFAMzMzMzMz+z+amZmZmZn5PwAAAAAAAPA\u002fMzMzMzMzA0AAAAAAAAAAQAAAAAAAAAhAzczMzMzMCEDNzMzMzMz8P5qZmZmZmQFAmpmZmZmZBUAzMzMzMzMHQGZmZmZmZvY\u002fMzMzMzMzC0AzMzMzMzP7P5qZmZmZmQFAAAAAAAAA8D\u002fNzMzMzMz8P5qZmZmZmQFAMzMzMzMz8z\u002fNzMzMzMz0P2ZmZmZmZv4\u002fZmZmZmZmCkAzMzMzMzMDQJqZmZmZmfk\u002fmpmZmZmZAUAAAAAAAADwPwAAAAAAAABAAAAAAAAABEAAAAAAAADwP83MzMzMzABAzczMzMzMDECamZmZmZnxPwAAAAAAAABAAAAAAAAA+D8zMzMzMzMHQJqZmZmZmQFAMzMzMzMz+z8zMzMzMzMLQDMzMzMzMwtAMzMzMzMzA0AAAAAAAAAIQM3MzMzMzPQ\u002fMzMzMzMzB0AAAAAAAAAIQGZmZmZmZgJAMzMzMzMzB0BmZmZmZmb2PwAAAAAAAPg\u002fMzMzMzMzA0BmZmZmZmb+P5qZmZmZmfE\u002fmpmZmZmZ8T8zMzMzMzMHQGZmZmZmZv4\u002fmpmZmZmZ+T+amZmZmZkFQAAAAAAAAABAzczMzMzM\u002fD8zMzMzMzMLQDMzMzMzMwNAZmZmZmZmCkDNzMzMzMwMQGZmZmZmZgpAmpmZmZmZAUAzMzMzMzMDQDMzMzMzMwdAZmZmZmZm\u002fj+amZmZmZn5P83MzMzMzPw\u002fmpmZmZmZBUBmZmZmZmYGQM3MzMzMzARAAAAAAAAABEBmZmZmZmb+PwAAAAAAAARAZmZmZmZm\u002fj+amZmZmZn5P2ZmZmZmZvY\u002fMzMzMzMzA0AzMzMzMzPzP2ZmZmZmZgJAAAAAAAAABEDNzMzMzMz8P5qZmZmZmQlAMzMzMzMz8z9mZmZmZmYCQJqZmZmZmQVAAAAAAAAAAECamZmZmZnxP83MzMzMzARAmpmZmZmZ+T8AAAAAAADwP83MzMzMzARAmpmZmZmZCUDNzMzMzMz0P83MzMzMzARAAAAAAAAA8D8AAAAAAADwP5qZmZmZmfE\u002fAAAAAAAACEAzMzMzMzMLQJqZmZmZmfk\u002fAAAAAAAA8D8zMzMzMzPzPwAAAAAAAABAzczMzMzMBEAAAAAAAADwPwAAAAAAAPA\u002fAAAAAAAAAECamZmZmZnxP83MzMzMzPQ\u002fMzMzMzMzC0DNzMzMzMz8P83MzMzMzABAAAAAAAAA8D9mZmZmZmYOQDMzMzMzMwNAZmZmZmZmBkAAAAAAAAAIQJqZmZmZmQVAmpmZmZmZBUAAAAAAAAD4P5qZmZmZmQVAAAAAAAAABEAzMzMzMzMDQAAAAAAAAPA\u002fAAAAAAAACECamZmZmZkBQM3MzMzMzPw\u002fMzMzMzMz+z+amZmZmZkJQAAAAAAAAARAzczMzMzM\u002fD8zMzMzMzMHQJqZmZmZmfE\u002fmpmZmZmZ+T8AAAAAAAAIQJqZmZmZmfE\u002fMzMzMzMz+z8AAAAAAAAAQGZmZmZmZgZAmpmZmZmZAUAzMzMzMzPzPwAAAAAAAABAAAAAAAAAAEAAAAAAAAAEQDMzMzMzMwdAzczMzMzMBEAAAAAAAAD4PzMzMzMzMwtAmpmZmZmZAUBmZmZmZmYGQDMzMzMzMwdAzczMzMzMAECamZmZmZn5Pw=="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Ground Soil Shear Strength (kPa)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"All-Terrain Crawl Speed (km\u002fh)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Terrain_Classification"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">JLR All-Terrain Progress Control (ATPC) acts as off-road low-speed cruise control. By estimating soil shear strength in real time, it modulates brake pressure and differential lockup to maintain smooth crawl speeds between 1.8 and 8.0 km/h.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Automatically engage center and rear electronic active differentials when ground shear strength drops below 35 kPa.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Wheel Slip Ratio (%) vs Wheel Articulation Travel (mm)
+                            </h5>
+                            <small class="text-slate-600">Shows cross-linked air suspension keeping all four wheels grounded over severe cross-axle ditches</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Axle Articulation</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="266ec042-13da-481e-aa32-585351cd571a" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("266ec042-13da-481e-aa32-585351cd571a")) {                    Plotly.newPlot(                        "266ec042-13da-481e-aa32-585351cd571a",                        [{"hovertemplate":"Terrain_Classification=Optimal Rock Crawl \u002f Grass-Gravel Grip\u003cbr\u003eWheel Articulation Travel (mm)=%{x}\u003cbr\u003eWheel Slip Ratio (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Optimal Rock Crawl \u002f Grass-Gravel Grip","marker":{"color":"rgb(136, 204, 238)","symbol":"circle"},"mode":"markers","name":"Optimal Rock Crawl \u002f Grass-Gravel Grip","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Terrain_Classification=Deep Sand \u002f Mud Bog Ruts Active\u003cbr\u003eWheel Articulation Travel (mm)=%{x}\u003cbr\u003eWheel Slip Ratio (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Deep Sand \u002f Mud Bog Ruts Active","marker":{"color":"rgb(204, 102, 119)","symbol":"circle"},"mode":"markers","name":"Deep Sand \u002f Mud Bog Ruts Active","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"ZmZmZmYGeECamZmZmdF4QAAAAAAAMGpAMzMzMzODfEAAAAAAADh6QGZmZmZm5mNAAAAAAABYfUBmZmZmZn57QM3MzMzMzHJAzczMzMyMckDNzMzMzDxgQM3MzMzMfHpAmpmZmZn5ZEBmZmZmZqZxQAAAAAAAwGlAzczMzMx0dkDNzMzMzExgQJqZmZmZ6W9AzczMzMwMcUBmZmZmZl54QAAAAAAAWHxAmpmZmZm5eEAAAAAAALhyQDMzMzMzw2NAMzMzMzMTYECamZmZmUluQM3MzMzMzHRAMzMzMzP7c0BmZmZmZhZsQDMzMzMz23BAzczMzMwceUDNzMzMzFxkQM3MzMzMTHVAAAAAAACIdUCamZmZmbl8QGZmZmZmlmlAAAAAAABAbEAAAAAAABB7QJqZmZmZuWxAAAAAAACoeEDNzMzMzDxsQGZmZmZmpmxAAAAAAADgZEBmZmZmZqZrQM3MzMzMzHJAAAAAAADodEBmZmZmZk58QM3MzMzM7H1AAAAAAADgY0AAAAAAAIBsQDMzMzMzS3VAMzMzMzNbc0BmZmZmZh50QAAAAAAA6HZAmpmZmZmBfUAAAAAAAPB8QJqZmZmZ6XVAmpmZmZkpbUAAAAAAAKhxQJqZmZmZ+WFAAAAAAABwb0BmZmZmZl5yQAAAAAAAmHFAmpmZmZkBekBmZmZmZgZoQDMzMzMzi3VAZmZmZmYma0AAAAAAACBkQM3MzMzMDHVAAAAAAADId0DNzMzMzCx0QDMzMzMzk3NAMzMzMzNDfUAzMzMzM0N2QJqZmZmZaXFAZmZmZmYWdEDNzMzMzGxrQAAAAAAAgHFAZmZmZmYOdEBmZmZmZtZ6QJqZmZmZOXJAAAAAAADwbUAAAAAAAGBxQAAAAAAA8GhAzczMzMz0eEBmZmZmZmZjQAAAAAAA4F5AZmZmZmY+c0CamZmZmTF5QAAAAAAAUHtAAAAAAADAZEBmZmZmZt5wQAAAAAAAIHVAzczMzMyUdUDNzMzMzFxlQAAAAAAAoGpAzczMzMzsbUAzMzMzM7twQDMzMzMzi3NAzczMzMzcZ0AAAAAAAJB4QM3MzMzMbHFAmpmZmZkRfUAzMzMzMwN0QDMzMzMz83FAAAAAAACodECamZmZmYlvQGZmZmZm3nhAmpmZmZkpdUDNzMzMzBR7QGZmZmZmJmtAZmZmZmYWdECamZmZmQllQGZmZmZmbnpAAAAAAAA4c0AAAAAAAJhxQAAAAAAAcHVAZmZmZmb+dkBmZmZmZkZiQDMzMzMzQ2VAmpmZmZm5bEAzMzMzM9t9QGZmZmZm9ntAMzMzMzNDb0A="},"xaxis":"x","y":{"dtype":"f8","bdata":"zczMzMzMOkDNzMzMzMwyQM3MzMzMTDVAzczMzMzMKEAzMzMzM7M8QM3MzMzMzDxAzczMzMwMQEBmZmZmZmYvQGZmZmZmZiBAAAAAAAAAPEBmZmZmZmY1QAAAAAAAABJAMzMzMzOzREDNzMzMzExAQJqZmZmZGT5AZmZmZmZmOEDNzMzMzExAQDMzMzMzs0JAZmZmZmZmNEDNzMzMzMwsQAAAAAAAABxAmpmZmZmZQEBmZmZmZmY6QM3MzMzMzEBAAAAAAAAAJEDNzMzMzEw2QGZmZmZmZgpAAAAAAACAMUDNzMzMzMw6QAAAAAAAADtAZmZmZmZmIkCamZmZmZkbQAAAAAAAgERAzczMzMzMKEBmZmZmZuY5QAAAAAAAgDZAmpmZmZkZQ0CamZmZmRkxQJqZmZmZmSxAZmZmZmbmREAzMzMzM3NAQGZmZmZmZjNAZmZmZmZmI0DNzMzMzEwyQGZmZmZmJkRAmpmZmZmZOkBmZmZmZuZCQDMzMzMz80JAZmZmZmbmPEDNzMzMzExDQJqZmZmZmTlAAAAAAAAAHkDNzMzMzMxCQM3MzMzMDEBAZmZmZmYmREAzMzMzMzMwQAAAAAAAAENAzczMzMzMN0AzMzMzMzMoQJqZmZmZmSJAAAAAAAAAPkDNzMzMzMwAQDMzMzMzs0NAZmZmZmZmIkAzMzMzMzMTQM3MzMzMzClAAAAAAAAAFEBmZmZmZuYyQM3MzMzMjEJAMzMzMzMzPkCamZmZmZkjQDMzMzMzM0NAMzMzMzPzQkAAAAAAAAAYQM3MzMzMzDRAmpmZmZnZQEAzMzMzM7MxQM3MzMzMzDBAmpmZmZmZQUCamZmZmZknQGZmZmZmZi1AmpmZmZmZAUDNzMzMzMwAQJqZmZmZmRlAZmZmZmbmO0CamZmZmRk7QM3MzMzMzAhAMzMzMzMzMEBmZmZmZiZAQGZmZmZmZjdAAAAAAAAAEkAzMzMzMzM3QDMzMzMzMyBAMzMzMzMzJUCamZmZmZk8QJqZmZmZmR9AAAAAAAAAQ0AAAAAAAIAzQGZmZmZm5jpAAAAAAAAAI0BmZmZmZmY\u002fQDMzMzMzMyxAAAAAAACAOUAAAAAAAIBDQJqZmZmZmSBAAAAAAADAQECamZmZmZkvQJqZmZmZmShAMzMzMzPzQkAzMzMzM7M8QGZmZmZmZidAzczMzMzMOUAAAAAAAABCQJqZmZmZmT9AmpmZmZmZJEDNzMzMzEw5QJqZmZmZmQlAZmZmZmZmRECamZmZmVlCQDMzMzMz80FAzczMzMzMEkDNzMzMzMwAQM3MzMzMTDJAAAAAAADAREA="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Wheel Articulation Travel (mm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Wheel Slip Ratio (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Terrain_Classification"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">500 mm of wheel articulation travel ensures tires stay planted in deep ruts, keeping wheel slip under 12% across rough terrain.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Display real-time suspension articulation and wade sensing water depth on the central touchscreen display.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Wheel Slip Ratio Distribution Across Terrain Classes
+                            </h5>
+                            <small class="text-slate-600">Shows 92.4% of obstacle climbs maintain controlled wheel slip below 15%</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Slip Spread</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="90a1cf8b-e3cf-4bba-b094-ec6aff011686" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("90a1cf8b-e3cf-4bba-b094-ec6aff011686")) {                    Plotly.newPlot(                        "90a1cf8b-e3cf-4bba-b094-ec6aff011686",                        [{"bingroup":"x","hovertemplate":"Terrain_Classification=Optimal Rock Crawl \u002f Grass-Gravel Grip\u003cbr\u003eWheel Slip (%)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Optimal Rock Crawl \u002f Grass-Gravel Grip","marker":{"color":"#0284c7","pattern":{"shape":""}},"name":"Optimal Rock Crawl \u002f Grass-Gravel Grip","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"zczMzMzMMkCamZmZmZk6QJqZmZmZmURAmpmZmZmZE0CamZmZmZlCQJqZmZmZmT5AZmZmZmYmQEAAAAAAAEBEQM3MzMzMzBZAzczMzMzMLUDNzMzMzMwUQM3MzMzMTDNAMzMzMzMzO0DNzMzMzMwQQDMzMzMzszNAMzMzMzOzPEDNzMzMzMw9QAAAAAAAADNAAAAAAAAAMUCamZmZmZkmQDMzMzMzMzhAAAAAAAAAPEAAAAAAAAAyQJqZmZmZmTpAMzMzMzMzJEBmZmZmZmYzQDMzMzMzMx9AMzMzMzNzQkAzMzMzMzMgQDMzMzMzMx9AAAAAAAAAJUDNzMzMzMwaQAAAAAAAAChAMzMzMzMzFUAAAAAAAIA0QAAAAAAAAChAzczMzMzMPkAAAAAAAAAkQJqZmZmZmRtAMzMzMzMzL0AzMzMzM7NAQJqZmZmZGTtAMzMzMzMzEUAAAAAAAIA0QAAAAAAAACxAAAAAAAAAIEDNzMzMzMwcQAAAAAAAgEFAZmZmZmZmK0DNzMzMzMw9QJqZmZmZmR9AzczMzMzMO0AAAAAAAIA5QJqZmZmZmSNAmpmZmZmZJEAzMzMzMzMfQAAAAAAAgDxAmpmZmZmZOECamZmZmZkJQM3MzMzMTD9AMzMzMzOzO0CamZmZmVlCQJqZmZmZmTZAmpmZmZmZPEBmZmZmZuY\u002fQAAAAAAAAD5AAAAAAAAAKkCamZmZmZkzQDMzMzMzMz9AZmZmZmZmJUAAAAAAAAAkQDMzMzMzMwNAAAAAAAAAPUDNzMzMzMw1QGZmZmZmZilAmpmZmZmZPEAAAAAAAAAnQDMzMzMzszBAZmZmZmZmL0BmZmZmZmYWQM3MzMzMzCJAAAAAAADAREDNzMzMzEw7QM3MzMzMzBZAMzMzMzMzIUAAAAAAAIA+QGZmZmZmZiVAZmZmZmZmPEDNzMzMzMwaQM3MzMzMTDpAZmZmZmZmFkDNzMzMzAxEQJqZmZmZmTJAmpmZmZkZQEAzMzMzMzNAQJqZmZmZmT9AZmZmZmbmN0CamZmZmZkqQAAAAAAAACtAAAAAAAAAPUBmZmZmZuZAQDMzMzMz80FAZmZmZmZmPECamZmZmZkzQJqZmZmZmT9AMzMzMzOzRECamZmZmRk6QDMzMzMz80FAMzMzMzMzE0BmZmZmZmYyQAAAAAAAwERAMzMzMzMzLkAzMzMzMzMRQM3MzMzMTEFAmpmZmZkZMUBmZmZmZmYpQM3MzMzMzD9AmpmZmZlZQkCamZmZmRk\u002fQJqZmZmZmTNAmpmZmZmZJ0AzMzMzM\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\u002fQDMzMzMzszRAAAAAAABAQEAzMzMzM\u002fNAQM3MzMzMzCdAzczMzMxMN0AAAAAAAIA+QAAAAAAAAClAzczMzMzML0BmZmZmZmY9QJqZmZmZmSVAzczMzMzMI0DNzMzMzEwxQDMzMzMzszhAzczMzMzMKEAAAAAAAIA+QM3MzMzMTEJAzczMzMxMPkAzMzMzM\u002fNAQJqZmZmZmSlAZmZmZmbmM0BmZmZmZmYnQAAAAAAAAABAZmZmZmZmCkDNzMzMzEw9QAAAAAAAACFAMzMzMzOzQEAAAAAAAIA7QAAAAAAAgDJAAAAAAACAP0CamZmZmZkjQGZmZmZmZjFAMzMzMzMzG0BmZmZmZmYlQJqZmZmZmTtAAAAAAAAAEEAzMzMzM7M0QAAAAAAAAC1AmpmZmZkZMkBmZmZmZuZDQDMzMzMzc0BAMzMzMzMzPkDNzMzMzMwyQGZmZmZmZjBAzczMzMzMPkAzMzMzMzM4QDMzMzMzc0BAMzMzMzPzQ0AzMzMzMzMLQJqZmZmZmT9AZmZmZmZmIEDNzMzMzMwkQM3MzMzMTDlAzczMzMzMMEAzMzMzM\u002fNBQGZmZmZmZkFAzczMzMyMQEAzMzMzM7M6QAAAAAAAADNAzczMzMzMEkCamZmZmVlEQJqZmZmZGTNAZmZmZmZmFkDNzMzMzMwaQM3MzMzMTDpAmpmZmZmZNUAzMzMzM7M+QJqZmZmZmS9AZmZmZmZmQUAAAAAAAAAEQAAAAAAAwEJAmpmZmZlZQEAzMzMzM7MwQGZmZmZmZkNAAAAAAAAAFkBmZmZmZmYWQDMzMzMzsztAmpmZmZmZL0BmZmZmZmY3QAAAAAAAAAhAZmZmZmbmMUAzMzMzMzM3QDMzMzMzMzVAZmZmZmZmCkAAAAAAAIA7QDMzMzMzM0RAzczMzMxMQ0DNzMzMzExBQAAAAAAAACtAZmZmZmZmMUCamZmZmVlCQM3MzMzMTD5AmpmZmZmZQUBmZmZmZiZAQGZmZmZmZi9AAAAAAAAAOkAAAAAAAAA+QGZmZmZmZjtAAAAAAAAACECamZmZmRlBQAAAAAAAACVAMzMzMzOzQkCamZmZmRk8QJqZmZmZmSxAMzMzMzOzQ0CamZmZmdlEQJqZmZmZGUJAmpmZmZmZE0AzMzMzM\u002fNBQGZmZmZmZiJAMzMzMzMzNEDNzMzMzEw\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"},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"Terrain_Classification=Deep Sand \u002f Mud Bog Ruts Active\u003cbr\u003eWheel Slip (%)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Deep Sand \u002f Mud Bog Ruts Active","marker":{"color":"#d97706","pattern":{"shape":""}},"name":"Deep Sand \u002f Mud Bog Ruts Active","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Wheel Slip (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Terrain_Classification"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Controlled wheel slip prevents the vehicle from digging holes into loose desert sand while maintaining continuous forward progress.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Apply Terrain Response 2 algorithms across Defender, Range Rover, and Discovery model lineups, saving $2.2M in driveline shock damage.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Average Crawl Speed Across Terrain Surface Types
+                            </h5>
+                            <small class="text-slate-600">Proves smooth speed adaptation from soft sand up to solid rock ledges</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Terrain Tiers</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="d235b9c1-0b84-4875-8c32-07b21321c3b4" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d235b9c1-0b84-4875-8c32-07b21321c3b4")) {                    Plotly.newPlot(                        "d235b9c1-0b84-4875-8c32-07b21321c3b4",                        [{"hovertemplate":"Terrain Surface Type=%{x}\u003cbr\u003eAverage Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Soft Sand (\u003c35 kPa)","marker":{"color":"rgb(136, 204, 238)","pattern":{"shape":""}},"name":"Soft Sand (\u003c35 kPa)","orientation":"v","showlegend":true,"textposition":"auto","x":["Soft Sand (\u003c35 kPa)"],"xaxis":"x","y":{"dtype":"f8","bdata":"pPTHVrk9AUA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Terrain Surface Type=%{x}\u003cbr\u003eAverage Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Loose Mud (35-60)","marker":{"color":"rgb(204, 102, 119)","pattern":{"shape":""}},"name":"Loose Mud (35-60)","orientation":"v","showlegend":true,"textposition":"auto","x":["Loose Mud (35-60)"],"xaxis":"x","y":{"dtype":"f8","bdata":"XVtyGU8qDkA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Terrain Surface Type=%{x}\u003cbr\u003eAverage Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Firm Grass (60-80)","marker":{"color":"rgb(221, 204, 119)","pattern":{"shape":""}},"name":"Firm Grass (60-80)","orientation":"v","showlegend":true,"textposition":"auto","x":["Firm Grass (60-80)"],"xaxis":"x","y":{"dtype":"f8","bdata":"e8hlxUAJFUA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Terrain Surface Type=%{x}\u003cbr\u003eAverage Crawl Speed (km\u002fh)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Solid Rock (\u003e80)","marker":{"color":"rgb(17, 119, 51)","pattern":{"shape":""}},"name":"Solid Rock (\u003e80)","orientation":"v","showlegend":true,"textposition":"auto","x":["Solid Rock (\u003e80)"],"xaxis":"x","y":{"dtype":"f8","bdata":"LhmCdbS5GUA="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Terrain Surface Type"},"categoryorder":"array","categoryarray":["Soft Sand (\u003c35 kPa)","Loose Mud (35-60)","Firm Grass (60-80)","Solid Rock (\u003e80)"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Average Crawl Speed (km\u002fh)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Terrain Surface Type"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Crawl speed scales automatically from 2.4 km/h in soft sand up to 6.8 km/h on solid rock surfaces.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Strengthen Land Rover's reputation as the ultimate luxury all-terrain adventure vehicle.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Terrain System</th><th>Standard Objective</th><th>Traction Boost</th><th>Wading Depth</th><th>Standard</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Terrain Response 2 with ATPC</strong></td><td>Soil Shear & Mud Slip Crawl Control</td><td><span class="badge bg-success">+45% Low-Grip Traction</span></td><td>900 mm Water Depth</td><td>JLR Eastnor Benchmark</td></tr>
+            <tr><td><strong>Electronic Active Differential</strong></td><td>Electro-Mechanical Torque Lock</td><td><span class="badge bg-primary">100% Rear Lockup</span></td><td>10 ms Control</td><td>Automotive Off-Road Standard</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Electronic Active Differential Lock Tune:</strong> Calibrate rear diff lock clamping torque for mud ruts.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Air Suspension Cross-Link Valves:</strong> Inspect pneumatic valve response for cross-axle leveling.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Wade Sensing Ultrasonic Calibration:</strong> Verify door mirror ultrasonic water depth transducers.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Electric Terrain Response:</strong> Adapt ATPC algorithms for dual-motor electric Range Rover EV models.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Transparent Hood Camera AI:</strong> Project ground surface directly beneath the engine bay on the touchscreen.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Hydraulic Roll Stabilization:</strong> Replace mechanical sway bars with dynamic 48V active anti-roll bars.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$2.2M Driveline Warranty Savings:</strong> Eliminating sudden wheel spin-up and driveline snatch protects axle shafts.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Global Luxury SUV Leadership:</strong> Unrivaled off-road capability commands strong retail pricing power for Range Rover and Defender.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This Tata Motors / JLR Terrain Response ATPC system conquers extreme terrain:</p>
+    <ul>
+        <li><strong>Soil Shear Strength Estimation:</strong> Assesses ground friction in milliseconds to regulate crawl speed between 1.8 and 8.0 km/h.</li>
+        <li><strong>Cross-Linked Air Suspension:</strong> Delivers 500 mm of wheel articulation and 900 mm of water wading depth.</li>
+        <li><strong>Business Value:</strong> Boosts low-grip traction by 45%, protects driveline components, and saves $2.2M in warranty costs.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Terrain_Run_ID</th><th>Wheel_Slip_Ratio_pct</th><th>Soil_Shear_Strength_kPa</th><th>ATPC_Crawl_Speed_kmh</th><th>Wheel_Articulation_Travel_mm</th><th>Terrain_Classification</th></tr></thead><tbody><tr><td>DEFENDER-ATPC-1000</td><td>18.80</td><td>75.30</td><td>5.80</td><td>147.20</td><td><span class="badge-status-pass">Optimal Rock Crawl / Grass-Gravel Grip</span></td></tr><tr><td>DEFENDER-ATPC-1001</td><td>19.40</td><td>26.50</td><td>2.80</td><td>187.00</td><td><span class="badge-status-alert">Deep Sand / Mud Bog Ruts Active</span></td></tr><tr><td>DEFENDER-ATPC-1002</td><td>26.60</td><td>83.00</td><td>5.60</td><td>452.70</td><td><span class="badge-status-pass">Optimal Rock Crawl / Grass-Gravel Grip</span></td></tr><tr><td>DEFENDER-ATPC-1003</td><td>41.20</td><td>79.90</td><td>4.90</td><td>237.60</td><td><span class="badge-status-pass">Optimal Rock Crawl / Grass-Gravel Grip</span></td></tr><tr><td>DEFENDER-ATPC-1004</td><td>4.90</td><td>64.40</td><td>6.00</td><td>376.60</td><td><span class="badge-status-pass">Optimal Rock Crawl / Grass-Gravel Grip</span></td></tr><tr><td>DEFENDER-ATPC-1005</td><td>37.20</td><td>85.30</td><td>5.30</td><td>173.40</td><td><span class="badge-status-pass">Optimal Rock Crawl / Grass-Gravel Grip</span></td></tr><tr><td>DEFENDER-ATPC-1006</td><td>34.10</td><td>33.20</td><td>2.30</td><td>450.10</td><td><span class="badge-status-alert">Deep Sand / Mud Bog Ruts Active</span></td></tr><tr><td>DEFENDER-ATPC-1007</td><td>4.30</td><td>20.90</td><td>3.30</td><td>414.10</td><td><span class="badge-status-alert">Deep Sand / Mud Bog Ruts Active</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../45_nio_battery_swap_robotic_alignment/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: NIO Power Swap 4.0
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../47_subaru_sawd_clutch_xmode_snow/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Subaru S-AWD X-Mode <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

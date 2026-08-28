@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellantis: Light Commercial Fleet Euro 7 Real Driving Emissions | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-cloud-slash me-1"></i> Powertrain & Emissions</span>
+                        <span class="badge-id">Project 19</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $4.4M Penalty Avoid</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Stellantis: Light Commercial Fleet Euro 7 Real Driving Emissions</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Monitors exhaust gas temperatures and catalytic converter chemistry during stop-and-go city delivery routes to ensure strict Euro 7 clean air compliance.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Real Driving Emissions (RDE) Telemetry, Catalytic Efficiency</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">NOx Emissions Reduction</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-cloud-slash fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">-24.5%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-down-right"></i> Below Euro 7 Ceiling
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">SCR Catalyst Efficiency</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-check-circle fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">94.2%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-shield-check"></i> Optimal Urea Reaction
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Fleet Compliance Rate</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-award fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">91.8%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-check2-circle"></i> Real Driving Emissions
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">RDE Test Trips Logged</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-truck fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2,600 Trips</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-pin-map"></i> City Delivery Vans
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Real Driving NOx Emissions vs Exhaust Temperature
+                            </h5>
+                            <small class="text-slate-600">Shows how exhaust temperature below 180°C creates temporary cold-start emissions</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">RDE Emissions</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="e5e9e13c-ad42-425b-8366-ad28690618d3" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e5e9e13c-ad42-425b-8366-ad28690618d3")) {                    Plotly.newPlot(                        "e5e9e13c-ad42-425b-8366-ad28690618d3",                        [{"hovertemplate":"Euro7_Status=Euro 7 Compliant (\u003c60mg\u002fkm)\u003cbr\u003eExhaust Gas Temperature (\u00b0C)=%{x}\u003cbr\u003eTailpipe NOx Emissions (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Euro 7 Compliant (\u003c60mg\u002fkm)","marker":{"color":"#059669","symbol":"circle"},"mode":"markers","name":"Euro 7 Compliant (\u003c60mg\u002fkm)","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Euro7_Status=Emissions Exceedance Flag\u003cbr\u003eExhaust Gas Temperature (\u00b0C)=%{x}\u003cbr\u003eTailpipe NOx Emissions (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Emissions Exceedance Flag","marker":{"color":"#e11d48","symbol":"circle"},"mode":"markers","name":"Emissions Exceedance Flag","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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"},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Exhaust Gas Temperature (\u00b0C)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Tailpipe NOx Emissions (mg\u002fkm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Euro7_Status"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"shapes":[{"line":{"color":"#e11d48","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":60.0,"y1":60.0,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Euro 7 Limit (60 mg\u002fkm)","x":1,"xanchor":"right","xref":"x domain","y":60.0,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">When the exhaust catalyst operates above 220°C, catalytic efficiency exceeds 95%, keeping tailpipe NOx well below the 60 mg/km Euro 7 limit. Cold starts in stop-and-go city traffic cause brief emissions spikes.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Install 48V electric exhaust heaters that warm the catalytic converter to 200°C within 15 seconds of engine start, eliminating cold-start urban emissions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> AdBlue Urea Dosing vs Catalytic Cleaning Efficiency
+                            </h5>
+                            <small class="text-slate-600">Optimizes urea injection to maximize NOx reduction without chemical ammonia slip</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Urea Dosing</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="5f11f0df-62e3-4037-a1e5-fc4cbcabe896" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5f11f0df-62e3-4037-a1e5-fc4cbcabe896")) {                    Plotly.newPlot(                        "5f11f0df-62e3-4037-a1e5-fc4cbcabe896",                        [{"hovertemplate":"AdBlue Urea Injection Rate (mg\u002fs)=%{x}\u003cbr\u003eCatalytic Cleaning Efficiency (%)=%{marker.color}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":{"dtype":"f8","bdata":"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\u002fNQQJqZmZmZGTFA"},"coloraxis":"coloraxis","symbol":"circle"},"mode":"markers","name":"","orientation":"v","showlegend":false,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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\u002fNQQJqZmZmZGTFA"},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"AdBlue Urea Injection Rate (mg\u002fs)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Catalytic Cleaning Efficiency (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"coloraxis":{"colorbar":{"title":{"text":"Catalytic Cleaning Efficiency (%)"}},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"legend":{"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Injecting 45-60 mg/s of AdBlue delivers maximum 96% NOx conversion. Over-dosing beyond 75 mg/s creates unreacted ammonia smell without improving emissions.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Deploy smart neural dosing controllers that inject the exact chemical stoichiometric amount of AdBlue based on live NOx sensor readings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Tailpipe NOx Emissions Spread (mg/km)
+                            </h5>
+                            <small class="text-slate-600">Shows fleet compliance alignment with the strict Euro 7 60 mg/km ceiling</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Compliance Spread</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="a98c7b71-68a8-40b1-aceb-8698ec42179e" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a98c7b71-68a8-40b1-aceb-8698ec42179e")) {                    Plotly.newPlot(                        "a98c7b71-68a8-40b1-aceb-8698ec42179e",                        [{"bingroup":"x","hovertemplate":"Euro7_Status=Emissions Exceedance Flag\u003cbr\u003eTailpipe NOx (mg\u002fkm)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Emissions Exceedance Flag","marker":{"color":"#e11d48","pattern":{"shape":""}},"name":"Emissions Exceedance Flag","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"Euro7_Status=Euro 7 Compliant (\u003c60mg\u002fkm)\u003cbr\u003eTailpipe NOx (mg\u002fkm)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Euro 7 Compliant (\u003c60mg\u002fkm)","marker":{"color":"#059669","pattern":{"shape":""}},"name":"Euro 7 Compliant (\u003c60mg\u002fkm)","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzMzQ0BmZmZmZqZLQJqZmZmZ2UxAMzMzMzNzQ0AAAAAAAAAtQGZmZmZm5kFAAAAAAAAAKECamZmZmZkqQGZmZmZmZkBAAAAAAAAAKEAzMzMzM7M\u002fQM3MzMzMzD5AAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAzczMzMzMSEAAAAAAAEBAQDMzMzMzsz1AzczMzMzMK0AAAAAAAAAoQM3MzMzMDEpAzczMzMyMRkBmZmZmZmZDQGZmZmZmJkFAMzMzMzMzMkAAAAAAAAAoQJqZmZmZmShAzczMzMzMOUBmZmZmZqZAQAAAAAAAAChAAAAAAAAAK0BmZmZmZmY\u002fQAAAAAAAAChAAAAAAAAAKEDNzMzMzEw1QJqZmZmZmUJAZmZmZmZmOUAAAAAAAMBKQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQM3MzMzMjERAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQJqZmZmZGTlAAAAAAAAAKEBmZmZmZiZEQAAAAAAAAChAAAAAAACAOUAAAAAAAAAoQM3MzMzMjEZAMzMzMzOzMUAAAAAAAAAoQM3MzMzMzEdAZmZmZmbmMUCamZmZmVlLQDMzMzMzc0ZAAAAAAAAAK0AAAAAAAAAoQGZmZmZmZjBAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAADAS0CamZmZmZlFQGZmZmZm5k1AmpmZmZmZMEAAAAAAAAAoQAAAAAAAAChAAAAAAACANEAzMzMzM7NMQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQDMzMzMzMzlAAAAAAAAAKEDNzMzMzExHQGZmZmZmZkFAMzMzMzPzREAAAAAAAAAoQJqZmZmZGTZAMzMzMzMzNUAAAAAAAAAoQAAAAAAAAChAAAAAAACAO0AAAAAAAAAoQDMzMzMzM01AMzMzMzOzNEAAAAAAAAAoQJqZmZmZ2UNAAAAAAACAOUBmZmZmZmY6QAAAAAAAAChAMzMzMzMzR0AAAAAAAAAoQM3MzMzMzDNAMzMzMzOzQkDNzMzMzMxBQGZmZmZm5jFAAAAAAAAAKEAAAAAAAAAoQGZmZmZm5jBAmpmZmZmZOUAAAAAAAIBMQJqZmZmZGTVAzczMzMzMLkAAAAAAAAA0QM3MzMzMzDVAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAmpmZmZkZREDNzMzMzExMQJqZmZmZGTNAAAAAAAAAKEAzMzMzM3NFQAAAAAAAAChAAAAAAAAAKEBmZmZmZiZFQJqZmZmZGUxAMzMzMzNzR0BmZmZmZmY4QGZmZmZm5jtAAAAAAAAAKEAAAAAAAAAoQDMzMzMzMyxAzczMzMzMOEDNzMzMzIxJQAAAAAAAAChAMzMzMzMzREAAAAAAAAAoQAAAAAAAAE5AAAAAAAAAKEAAAAAAAABHQDMzMzMzc0RAAAAAAACAMUAAAAAAAAAoQM3MzMzMzDdAAAAAAAAAKEAAAAAAAAAoQAAAAAAAgDhAAAAAAAAAKEAAAAAAAABEQDMzMzMzs0VAAAAAAACARkAAAAAAAMBJQJqZmZmZWURAAAAAAAAAKEBmZmZmZmZJQDMzMzMzszRAAAAAAAAAKEDNzMzMzAxMQGZmZmZm5kdAzczMzMyMQEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAP0CamZmZmZkyQAAAAAAAQENAAAAAAADARUCamZmZmZlEQDMzMzMzM0RAZmZmZmamQkAAAAAAAAAoQAAAAAAAgDdAzczMzMzMSUAAAAAAAAAoQAAAAAAAAC9AAAAAAAAAKEAAAAAAAIAzQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQM3MzMzMDEVAAAAAAAAAKEAAAAAAAAAoQGZmZmZmZjVAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAzczMzMxMR0BmZmZmZmY3QAAAAAAAAChAAAAAAAAAKECamZmZmZkxQM3MzMzMzC9AMzMzMzMzPUAAAAAAAAAoQAAAAAAAADdAAAAAAAAAKEAAAAAAAAAzQGZmZmZmpkJAmpmZmZnZTUAzMzMzMzNKQGZmZmZmZjBAmpmZmZmZRUCamZmZmVlEQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAMzMzMzNzSEAzMzMzM\u002fNMQGZmZmZm5jBAAAAAAAAAKEAAAAAAAAAoQDMzMzMzs01AAAAAAAAAQEAAAAAAAIBNQAAAAAAAwEJAzczMzMyMR0CamZmZmdlGQAAAAAAAAChAAAAAAAAARkAAAAAAAAAoQAAAAAAAAChAZmZmZmZmMEAzMzMzM7MyQM3MzMzMzDZAAAAAAAAAKEAzMzMzM\u002fNFQAAAAAAAgDBAmpmZmZmZLUAAAAAAAAAoQGZmZmZmZilAAAAAAACARUCamZmZmVlJQAAAAAAAAChAMzMzMzMzTEAAAAAAAAAoQAAAAAAAAChAmpmZmZmZKkCamZmZmZlNQGZmZmZmJkFAZmZmZmamTUDNzMzMzMw8QDMzMzMz80lAmpmZmZnZRECamZmZmRlDQAAAAAAAAChAAAAAAAAAKEDNzMzMzExMQJqZmZmZmTBAZmZmZmbmMkAAAAAAAAAoQAAAAAAAAChAZmZmZmZmSUAAAAAAAMBHQAAAAAAAAChAMzMzMzNzRUAAAAAAAAA2QGZmZmZmZkNAmpmZmZlZRkAAAAAAAAAoQAAAAAAAAChAZmZmZmZmN0DNzMzMzMwzQJqZmZmZmUZAZmZmZmYmQkAzMzMzM7M4QAAAAAAAAChAAAAAAAAAKECamZmZmZlBQGZmZmZmJkFAAAAAAAAAKECamZmZmRk1QAAAAAAAAChAzczMzMxMPECamZmZmdlIQDMzMzMzc0dAmpmZmZmZOkAzMzMzMzM4QDMzMzMzs0BAAAAAAAAAKEAAAAAAAAAoQDMzMzMzMz5AZmZmZmbmMUAAAAAAAAAoQGZmZmZmZjdAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQGZmZmZmZkJAAAAAAAAAKEAAAAAAAAAoQJqZmZmZmTFAAAAAAAAAKECamZmZmZkuQAAAAAAAAEdAzczMzMzMPEAAAAAAAAAoQAAAAAAAADhAmpmZmZkZOUBmZmZmZmZKQAAAAAAAAChAZmZmZmZmMEAzMzMzMzM8QDMzMzMzMyxAAAAAAAAARkAzMzMzMzMwQJqZmZmZGTxAzczMzMzMLkAAAAAAAIBDQGZmZmZmZjdAAAAAAAAAOkCamZmZmRkyQAAAAAAAAChAAAAAAAAAKECamZmZmZkwQAAAAAAAAChAMzMzMzOzN0AAAAAAAAAoQDMzMzMzMyhAAAAAAAAAKEAAAAAAAEBEQAAAAAAAAChAzczMzMzMOkAAAAAAAAAoQAAAAAAAwEZAZmZmZmbmQUBmZmZmZmYxQJqZmZmZGTpAmpmZmZkZOEBmZmZmZmYzQAAAAAAAAChAzczMzMwMREBmZmZmZuZAQAAAAAAAAChAZmZmZmYmSEBmZmZmZuZJQM3MzMzMzD9AAAAAAAAAPkCamZmZmRk\u002fQAAAAAAAAChAMzMzMzNzQUAAAAAAAABLQDMzMzMz80ZAAAAAAAAAKEBmZmZmZqZCQAAAAAAAAChAAAAAAAAAKEAAAAAAAABBQAAAAAAAAChAMzMzMzPzQUAAAAAAAAAoQJqZmZmZGUlAZmZmZmZmRECamZmZmZk9QAAAAAAAAExAmpmZmZmZRkAAAAAAAAAoQAAAAAAAAChAMzMzMzOzP0BmZmZmZmZJQJqZmZmZmUpAmpmZmZmZMEAzMzMzMzMrQAAAAAAAADFAMzMzMzOzPECamZmZmdlHQAAAAAAAACtAmpmZmZlZR0AAAAAAAAAoQM3MzMzMzEtAMzMzMzOzN0AAAAAAAAAoQAAAAAAAAChAZmZmZmbmN0DNzMzMzMwuQGZmZmZmZj5AmpmZmZmZN0AzMzMzM\u002fNIQDMzMzMzM0RAAAAAAACANUAAAAAAAAAoQAAAAAAAQEdAAAAAAAAAKEDNzMzMzAxAQDMzMzMzM0hAAAAAAAAARkDNzMzMzEw3QDMzMzMzszJAzczMzMwMQUAAAAAAAAAoQAAAAAAAAChAzczMzMxMPEDNzMzMzMxIQM3MzMzMTDJAAAAAAAAAKECamZmZmRk3QAAAAAAAADFAAAAAAAAAKEAzMzMzM7MxQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQM3MzMzMjE1AmpmZmZmZLEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEDNzMzMzMw4QAAAAAAAAChAAAAAAABAS0AAAAAAAAAoQAAAAAAAAChAzczMzMzMMkAAAAAAAAAoQAAAAAAAAChAMzMzMzMzSEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKUCamZmZmVlMQAAAAAAAAChAMzMzMzOzOUDNzMzMzMw\u002fQDMzMzMzM0JAZmZmZmZmOEAAAAAAAAAoQGZmZmZm5j5AAAAAAAAAKEAAAAAAAAAoQGZmZmZmZipAAAAAAAAAKECamZmZmRkyQAAAAAAAAChAZmZmZmbmQUCamZmZmRlKQAAAAAAAQEVAAAAAAAAAKEBmZmZmZuZFQGZmZmZmpkBAAAAAAAAAKkAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKECamZmZmRkyQM3MzMzMzDVAAAAAAAAAKEAAAAAAAIA2QM3MzMzMzE1AmpmZmZnZTUAAAAAAAAAoQAAAAAAAACxAmpmZmZkZQEAzMzMzM7NNQGZmZmZmZjpAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEDNzMzMzEwwQGZmZmZmZjBAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAZmZmZmbmPkAAAAAAAAAoQGZmZmZmpkxAAAAAAAAAKEAAAAAAAAAoQM3MzMzMTDtAMzMzMzMzKUDNzMzMzIxHQAAAAAAAAChAZmZmZmZmOkAAAAAAAAA1QAAAAAAAQEdAmpmZmZmZNUAAAAAAAAAoQM3MzMzMTDZAMzMzMzNzQEAzMzMzMzM+QAAAAAAAAChAAAAAAAAAKECamZmZmZlMQAAAAAAAAChAAAAAAAAAMkBmZmZmZiZGQAAAAAAAAChAmpmZmZlZS0AAAAAAAAAoQDMzMzMzszRAAAAAAACASkAzMzMzMzNDQJqZmZmZ2UtAzczMzMxMQUAAAAAAAABHQAAAAAAAAChAAAAAAAAAL0CamZmZmVlHQGZmZmZm5jdAZmZmZmbmQUBmZmZmZiZGQJqZmZmZmThAmpmZmZkZRUAAAAAAAAAoQDMzMzMzMytAAAAAAAAAKEBmZmZmZqZCQGZmZmZmZjBAMzMzMzMzQEAAAAAAAAAoQAAAAAAAAChAMzMzMzOzS0AAAAAAAAAoQM3MzMzMzDpAMzMzMzMzMEAAAAAAAAAoQM3MzMzMzChAAAAAAAAAKEAAAAAAAAAoQAAAAAAAACpAAAAAAAAAKEDNzMzMzEwzQAAAAAAAAChAMzMzMzMzPUAAAAAAAAAoQAAAAAAAAChAmpmZmZmZMUBmZmZmZmY+QJqZmZmZmUVAzczMzMzMLEAAAAAAAAAoQGZmZmZmpkVAzczMzMxMS0AAAAAAAAApQM3MzMzMzDFAmpmZmZlZQ0AAAAAAAAAoQAAAAAAAAChAMzMzMzMzO0DNzMzMzEwyQM3MzMzMzDNAAAAAAAAAKECamZmZmZk5QJqZmZmZGUBAAAAAAAAAKEBmZmZmZuY4QAAAAAAAAChAmpmZmZnZRUCamZmZmVlNQDMzMzMzc0FAAAAAAAAAKEBmZmZmZuY1QAAAAAAAAChAmpmZmZnZSkCamZmZmRkyQGZmZmZmZkZAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAzczMzMyMQkCamZmZmZkqQAAAAAAAAChAZmZmZmZmKUAzMzMzMzM8QM3MzMzMzEFAZmZmZmZmM0BmZmZmZqZCQJqZmZmZGTxAAAAAAAAAKECamZmZmZlMQAAAAAAAAChAAAAAAAAAKECamZmZmRlDQDMzMzMzM0dAAAAAAAAAKEAAAAAAAIA1QAAAAAAAADFAmpmZmZkZQ0BmZmZmZqZNQJqZmZmZWUFAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAACATUAzMzMzM7M8QGZmZmZmZkxAzczMzMzMR0DNzMzMzEw2QJqZmZmZmTpAAAAAAAAAKECamZmZmZk9QAAAAAAAAChAmpmZmZnZQUAzMzMzM3NIQAAAAAAAAChAAAAAAAAAKECamZmZmZk7QGZmZmZm5jFAZmZmZmZmPEAAAAAAAAAoQAAAAAAAAChAAAAAAACAQ0BmZmZmZmYyQAAAAAAAAChAmpmZmZmZKkAAAAAAAAAoQGZmZmZmZi5AzczMzMzMP0AzMzMzMzMrQAAAAAAAgDlAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAZmZmZmYmQECamZmZmdlMQAAAAAAAAChAAAAAAAAARUAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAzczMzMzMOkAAAAAAAIA1QM3MzMzMTEJAmpmZmZlZSEAAAAAAAMBLQJqZmZmZWUtAAAAAAAAAKEBmZmZmZuYxQJqZmZmZmUpAAAAAAAAAKEAAAAAAAAArQAAAAAAAADlAAAAAAAAAKEAzMzMzMzM9QM3MzMzMTDtAAAAAAACASUAAAAAAAABCQDMzMzMzM0VAMzMzMzMzOkBmZmZmZuY6QAAAAAAAAChAAAAAAAAAKECamZmZmZkpQGZmZmZmZj5AMzMzMzMzOEAAAAAAAAAoQAAAAAAAACtAzczMzMxMNUAAAAAAAAAoQGZmZmZm5jZAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAZmZmZmYmS0AAAAAAAAAvQAAAAAAAgDpAAAAAAACAMkAAAAAAAAAoQM3MzMzMzC1AmpmZmZmZNEBmZmZmZmYsQGZmZmZmZitAzczMzMyMQkAAAAAAAAAoQAAAAAAAAChAMzMzMzMzNkDNzMzMzEw0QDMzMzMzs0NAAAAAAAAAKEAAAAAAAIBDQAAAAAAAAChAmpmZmZmZP0AAAAAAAAAoQAAAAAAAAChAmpmZmZkZOECamZmZmZlHQJqZmZmZ2UFAmpmZmZnZQEBmZmZmZqZJQAAAAAAAAChAAAAAAAAAKEBmZmZmZqZEQDMzMzMzMyhAAAAAAACAP0DNzMzMzAxCQAAAAAAAAChAZmZmZmamTEAzMzMzMzMtQAAAAAAAACxAAAAAAAAAKEAAAAAAAAAoQM3MzMzMzC1AZmZmZmbmMEDNzMzMzIxJQAAAAAAAAChAMzMzMzOzPEDNzMzMzEw5QJqZmZmZ2UhAMzMzMzNzTEAzMzMzMzNNQAAAAAAAAChAAAAAAAAAKEAzMzMzM7M5QM3MzMzMzD9AAAAAAAAAKEAAAAAAAIBMQAAAAAAAADxAmpmZmZnZTEDNzMzMzExBQJqZmZmZGU1AMzMzMzMzTECamZmZmZkwQJqZmZmZmSlAAAAAAAAAKEAAAAAAAAA7QM3MzMzMjEhAZmZmZmZmOkBmZmZmZmZMQM3MzMzMTExAAAAAAAAATECamZmZmRkwQM3MzMzMzDBAAAAAAAAAKECamZmZmVlAQAAAAAAAgElAAAAAAAAAKEAzMzMzM7M2QDMzMzMzs0RAAAAAAAAARECamZmZmZk4QM3MzMzMzDNAMzMzMzOzRkAAAAAAAAApQAAAAAAAAChAzczMzMzMM0AAAAAAAAAoQDMzMzMzMy5AAAAAAAAAKEBmZmZmZmY5QJqZmZmZGU1AAAAAAACAQ0AAAAAAAAAoQAAAAAAAgDlAZmZmZmZmPkAAAAAAAIA6QAAAAAAAQEZAAAAAAAAAKEAAAAAAAAAoQM3MzMzMTEdAAAAAAACASkCamZmZmZk2QAAAAAAAAChAZmZmZmbmRUDNzMzMzMw8QGZmZmZmZkJAmpmZmZmZLkAAAAAAAAAoQDMzMzMzM0FAAAAAAAAAKEAAAAAAAABCQAAAAAAAAChAAAAAAAAATUAAAAAAAMBNQAAAAAAAADBAZmZmZmZmQ0AAAAAAAABFQAAAAAAAAChAmpmZmZlZR0AAAAAAAAA5QAAAAAAAAChAAAAAAAAAKEBmZmZmZmYrQJqZmZmZmUVAzczMzMzMNUBmZmZmZmY\u002fQAAAAAAAAChAAAAAAAAAK0AAAAAAAAAoQM3MzMzMzDhAMzMzMzOzP0AAAAAAAAAoQAAAAAAAAChAMzMzMzOzQkDNzMzMzMw3QGZmZmZm5jxAAAAAAAAAKEAAAAAAAMBDQAAAAAAAADpAzczMzMwMTECamZmZmZkuQAAAAAAAAChAAAAAAAAAKEAAAAAAAAA4QM3MzMzMzCpAAAAAAAAAKEAAAAAAAAAoQDMzMzMzc0JAMzMzMzMzP0AAAAAAAAAoQDMzMzMz80RAAAAAAACAM0DNzMzMzMw0QM3MzMzMTDFAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKECamZmZmZlFQAAAAAAAAChAMzMzMzOzMkDNzMzMzMw\u002fQAAAAAAAgDBAmpmZmZmZR0DNzMzMzIxJQGZmZmZmZkhAAAAAAACANkAAAAAAAAAoQAAAAAAAAC9AAAAAAAAAKEBmZmZmZmYzQM3MzMzMDERAmpmZmZlZQkDNzMzMzMw+QAAAAAAAAChAZmZmZmZmLEDNzMzMzMw\u002fQAAAAAAAAChAZmZmZmbmMUAAAAAAAAA6QDMzMzMzMy9AAAAAAAAAKECamZmZmRkxQAAAAAAAAChAAAAAAAAAKEAAAAAAAMBDQAAAAAAAAChAZmZmZmbmQkAzMzMzMzMzQGZmZmZm5j5AAAAAAAAAKEAAAAAAAIBHQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAyQAAAAAAAAChAMzMzMzOzR0AAAAAAAAAoQJqZmZmZmTBAAAAAAAAAKECamZmZmRk4QAAAAAAAAD9AZmZmZmbmRUAAAAAAAAAoQJqZmZmZmSpAMzMzMzMzP0CamZmZmRlFQAAAAAAAAC9AZmZmZmZmPECamZmZmZlCQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAyQAAAAAAAADRAMzMzMzMzPUCamZmZmRk8QAAAAAAAAChAAAAAAAAAKEDNzMzMzEwzQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAwQJqZmZmZmS9AmpmZmZlZTUAAAAAAAEBIQDMzMzMz801AAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEDNzMzMzMwoQAAAAAAAAChAzczMzMzMQUAAAAAAAAAoQAAAAAAAADpAZmZmZmZmNEAzMzMzMzM7QDMzMzMz80NAAAAAAAAAKECamZmZmRkzQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQM3MzMzMDEFAAAAAAAAAKEBmZmZmZmY2QGZmZmZmZkNAZmZmZmYmRkAzMzMzM\u002fNJQAAAAAAAAChAzczMzMzMNECamZmZmZlDQDMzMzMzMzJAAAAAAAAAKEAAAAAAAAAoQM3MzMzMTEhAMzMzMzOzMEAAAAAAAAAoQJqZmZmZGUBAAAAAAAAAKEDNzMzMzMw2QDMzMzMzMzJAMzMzMzNzRUAzMzMzMzMuQJqZmZmZGTlAMzMzMzPzRkBmZmZmZmYoQJqZmZmZmTdAMzMzMzPzR0AAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEAAAAAAAABBQAAAAAAAAChAAAAAAADAQUCamZmZmZlDQAAAAAAAAChAAAAAAADAQUCamZmZmZk\u002fQAAAAAAAAD1AMzMzMzMzMUAzMzMzM7NJQGZmZmZm5jBAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAMzMzMzOzRUAAAAAAAAAoQM3MzMzMTDFAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAACAQUAAAAAAAIA0QGZmZmZm5kVAAAAAAACAMkAzMzMzM7M3QAAAAAAAAChAZmZmZmbmRkDNzMzMzIxLQAAAAAAAAChAAAAAAAAAKECamZmZmZk+QDMzMzMzMztAZmZmZmZmPUAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEAAAAAAAAAoQAAAAAAAAChAAAAAAAAAKEDNzMzMzIxHQM3MzMzMzDpAMzMzMzMzM0AAAAAAAAAoQAAAAAAAAChAzczMzMxMNEAAAAAAAAAoQM3MzMzMzEBAAAAAAAAAKECamZmZmVlGQAAAAAAAAChAAAAAAAAAKECamZmZmZk2QJqZmZmZmT5AAAAAAAAAKEAAAAAAAAAoQDMzMzMzc0VAAAAAAACAOEAAAAAAAAAoQM3MzMzMDEZAAAAAAAAAKEAAAAAAAAAoQM3MzMzMTD5AAAAAAACAN0AAAAAAAAAoQDMzMzMzMz9AmpmZmZmZOUAAAAAAAIBKQAAAAAAAgE1AAAAAAAAALEAAAAAAAIBKQAAAAAAAAChAAAAAAAAAKEBmZmZmZuY9QJqZmZmZWUdAAAAAAAAAKEAAAAAAAAAoQM3MzMzMzDVAAAAAAAAAKEAAAAAAAAAoQM3MzMzMDEdAzczMzMzMLkCamZmZmVlEQM3MzMzMzEpAzczMzMwMTUCamZmZmZkxQAAAAAAAAChAzczMzMzMKUDNzMzMzAxDQAAAAAAAgD5AZmZmZmYmQUCamZmZmZlFQAAAAAAAAChAAAAAAAAAKECamZmZmRkwQAAAAAAAAChAAAAAAAAAKEAAAAAAAABHQAAAAAAAwERAAAAAAAAAKEAAAAAAAAAoQM3MzMzMDEhAMzMzMzMzREAzMzMzM\u002fNEQJqZmZmZmUxAzczMzMzMSECamZmZmRk\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"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Tailpipe NOx (mg\u002fkm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Euro7_Status"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">91.8% of all commercial van delivery trips operate comfortably below the 60 mg/km regulatory limit with an average fleet score of 42.5 mg/km.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Incorporate automated cloud emissions reporting to verify fleet compliance and avoid European regulatory non-compliance fines.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Average NOx Emissions Across Exhaust Thermal Zones
+                            </h5>
+                            <small class="text-slate-600">Demonstrates the dramatic reduction in emissions once the engine reaches operating temperature</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Thermal Zones</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="fd27b6cc-eee0-4930-a587-24121e23c5fd" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fd27b6cc-eee0-4930-a587-24121e23c5fd")) {                    Plotly.newPlot(                        "fd27b6cc-eee0-4930-a587-24121e23c5fd",                        [{"hovertemplate":"Exhaust Thermal Zone=%{x}\u003cbr\u003eAverage Tailpipe NOx (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Cold (\u003c180\u00b0C)","marker":{"color":"rgb(136, 204, 238)","pattern":{"shape":""}},"name":"Cold (\u003c180\u00b0C)","orientation":"v","showlegend":true,"textposition":"auto","x":["Cold (\u003c180\u00b0C)"],"xaxis":"x","y":{"dtype":"f8","bdata":"UK82XHi9WUA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Exhaust Thermal Zone=%{x}\u003cbr\u003eAverage Tailpipe NOx (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Warm (180-260\u00b0C)","marker":{"color":"rgb(204, 102, 119)","pattern":{"shape":""}},"name":"Warm (180-260\u00b0C)","orientation":"v","showlegend":true,"textposition":"auto","x":["Warm (180-260\u00b0C)"],"xaxis":"x","y":{"dtype":"f8","bdata":"gj3UkeIdS0A="},"yaxis":"y","type":"bar"},{"hovertemplate":"Exhaust Thermal Zone=%{x}\u003cbr\u003eAverage Tailpipe NOx (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Optimal (260-360\u00b0C)","marker":{"color":"rgb(221, 204, 119)","pattern":{"shape":""}},"name":"Optimal (260-360\u00b0C)","orientation":"v","showlegend":true,"textposition":"auto","x":["Optimal (260-360\u00b0C)"],"xaxis":"x","y":{"dtype":"f8","bdata":"Dv\u002fuzXqiMkA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Exhaust Thermal Zone=%{x}\u003cbr\u003eAverage Tailpipe NOx (mg\u002fkm)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"High Load (\u003e360\u00b0C)","marker":{"color":"rgb(17, 119, 51)","pattern":{"shape":""}},"name":"High Load (\u003e360\u00b0C)","orientation":"v","showlegend":true,"textposition":"auto","x":["High Load (\u003e360\u00b0C)"],"xaxis":"x","y":{"dtype":"f8","bdata":"E6d+zy0BKEA="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Exhaust Thermal Zone"},"categoryorder":"array","categoryarray":["Cold (\u003c180\u00b0C)","Warm (180-260\u00b0C)","Optimal (260-360\u00b0C)","High Load (\u003e360\u00b0C)"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Average Tailpipe NOx (mg\u002fkm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Exhaust Thermal Zone"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Emissions drop from 112 mg/km during cold idling down to 28.4 mg/km during optimal 260-360°C operating conditions.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Schedule city delivery routes to minimize cold idling, keeping delivery van catalytic converters warm and clean.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Emissions Model</th><th>Target Standard</th><th>Compliance Metric</th><th>Response Speed</th><th>Regulation</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Real Driving Emissions (RDE) Model</strong></td><td>Euro 7 NOx Threshold</td><td><span class="badge bg-success">42.5 mg/km Average</span></td><td>100 ms (10 Hz)</td><td>EU Euro 7 Standard</td></tr>
+            <tr><td><strong>SCR Urea Dosing Controller</strong></td><td>NOx Conversion Efficiency</td><td><span class="badge bg-primary">94.2% Efficiency</span></td><td>20 ms</td><td>Automotive Engine ECU</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Electric Catalyst Heating:</strong> Enable 48V fast pre-heating logic during morning cold starts.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>AdBlue Dosing Tune:</strong> Calibrate urea dosing maps to eliminate ammonia odor during high-speed highway driving.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Delivery Van Idle Reduction:</strong> Set automatic 3-minute engine shutdown limits during package delivery stops.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Plug-In Hybrid Geofencing:</strong> Automatically switch delivery vans to pure electric mode in zero-emission city centers.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Synthetic E-Fuels Feasibility:</strong> Test carbon-neutral synthetic diesel fuels to achieve net-zero transport.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>On-Board NOx Diagnostics (OBD-3):</strong> Stream continuous emissions compliance data to municipal environmental portals.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$4.4M European Regulatory Fine Avoidance:</strong> Strict Euro 7 compliance avoids heavy European environmental penalty fees.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Commercial Fleet Contract Wins:</strong> Delivering verified low-emission vans wins municipal delivery fleet supply contracts.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This Stellantis / Renault emissions system ensures clean urban commercial transport:</p>
+    <ul>
+        <li><strong>Real Driving Emissions (RDE) Ingestion:</strong> Evaluates exhaust temperatures and NOx emissions under real-world European city delivery routes.</li>
+        <li><strong>Adaptive Urea Dosing:</strong> Optimizes AdBlue catalytic reaction rates to clean 94.2% of harmful exhaust gases without chemical waste.</li>
+        <li><strong>Business Value:</strong> Guarantees Euro 7 compliance, cuts emissions by 24.5%, and avoids $4.4M in potential regulatory penalty fees.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>RDE_Trip_ID</th><th>Exhaust_Gas_Temp_C</th><th>AdBlue_Dosing_mg_s</th><th>SCR_Catalyst_Efficiency_pct</th><th>Tailpipe_NOx_mg_km</th><th>Euro7_Status</th></tr></thead><tbody><tr><td>STLA-RDE-4000</td><td>144.40</td><td>71.90</td><td>10.00</td><td>173.90</td><td><span class="badge-status-alert">Emissions Exceedance Flag</span></td></tr><tr><td>STLA-RDE-4001</td><td>240.80</td><td>54.30</td><td>78.30</td><td>38.40</td><td><span class="badge-status-pass">Euro 7 Compliant (<60mg/km)</span></td></tr><tr><td>STLA-RDE-4002</td><td>181.50</td><td>37.70</td><td>66.70</td><td>55.30</td><td><span class="badge-status-pass">Euro 7 Compliant (<60mg/km)</span></td></tr><tr><td>STLA-RDE-4003</td><td>153.80</td><td>57.60</td><td>26.60</td><td>131.30</td><td><span class="badge-status-alert">Emissions Exceedance Flag</span></td></tr><tr><td>STLA-RDE-4004</td><td>193.50</td><td>49.30</td><td>63.00</td><td>74.60</td><td><span class="badge-status-alert">Emissions Exceedance Flag</span></td></tr><tr><td>STLA-RDE-4005</td><td>147.50</td><td>18.70</td><td>74.10</td><td>57.70</td><td><span class="badge-status-pass">Euro 7 Compliant (<60mg/km)</span></td></tr><tr><td>STLA-RDE-4006</td><td>265.00</td><td>58.20</td><td>83.20</td><td>38.90</td><td><span class="badge-status-pass">Euro 7 Compliant (<60mg/km)</span></td></tr><tr><td>STLA-RDE-4007</td><td>309.50</td><td>47.80</td><td>92.40</td><td>14.50</td><td><span class="badge-status-pass">Euro 7 Compliant (<60mg/km)</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../18_zf_transmission_clutch_wear/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: ZF Transmission Diagnostics
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../20_scania_heavy_truck_platooning/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Scania Truck Platooning <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

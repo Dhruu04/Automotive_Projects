@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducati: MotoGP 6-Axis IMU Lean Angle Telemetry & Slide Control | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-activity me-1"></i> Motorcycle Dynamics</span>
+                        <span class="badge-id">Project 36</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $920k / season</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Ducati: MotoGP 6-Axis IMU Lean Angle Telemetry & Slide Control</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Analyzes 60-degree motorcycle lean angles, gyroscopic pitch, and rear wheel slip to modulate engine ignition torque and prevent dangerous highside crashes.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">6-Axis Inertial IMU Telemetry, Anti-Wheelie & Slide Control ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Max Corner Lean Angle</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-activity fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">64.0 Degrees</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-shield-check"></i> Elbow-on-Ground Apex
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Highside Crash Reduction</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-slash-circle fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">-12%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-down-right"></i> Ducati Slide Control (DSC)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">6-Axis IMU Latency</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-lightning-charge fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2.0 ms</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-speedometer2"></i> 500 Hz High-Speed Gyro
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">MotoGP Laps Logged</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-trophy fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2,800 Corners</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-check-all"></i> Mugello & Misano Dyno
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Rear Wheel Slip Ratio (%) vs Lean Angle (Degrees)
+                            </h5>
+                            <small class="text-slate-600">Controls controlled power slides at 60° lean angles while eliminating violent highside crashes</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Slide Control</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="e0b2a945-d5c8-40cc-91c1-0321be2b9447" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e0b2a945-d5c8-40cc-91c1-0321be2b9447")) {                    Plotly.newPlot(                        "e0b2a945-d5c8-40cc-91c1-0321be2b9447",                        [{"hovertemplate":"Slide_Control_State=Ducati Slide Control (DSC) Optimal Drift\u003cbr\u003eMotorcycle Lean Angle (Degrees)=%{x}\u003cbr\u003eRear Wheel Slip Ratio (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Ducati Slide Control (DSC) Optimal Drift","marker":{"color":"#0284c7","symbol":"circle"},"mode":"markers","name":"Ducati Slide Control (DSC) Optimal Drift","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzOzOUAAAAAAAMBGQGZmZmZmJk5AZmZmZmZmPUCamZmZmVlJQAAAAAAAQENAAAAAAACAREAzMzMzM3NDQJqZmZmZ2UxAmpmZmZmZQ0AAAAAAAIBBQGZmZmZm5jFAAAAAAACAT0AAAAAAAEBGQDMzMzMzs0xAmpmZmZnZRkBmZmZmZuZKQAAAAAAAAE5AMzMzMzOzQkAzMzMzM7NKQGZmZmZm5k1AmpmZmZlZQEAAAAAAAIA9QGZmZmZmpk9AMzMzMzPzQEDNzMzMzIxOQDMzMzMzszxAzczMzMzMRkBmZmZmZiZCQDMzMzMzM0FAmpmZmZlZTEAAAAAAAMBPQJqZmZmZGUlAZmZmZmbmMkBmZmZmZmY1QDMzMzMzMzlAZmZmZmbmNUDNzMzMzAxNQAAAAAAAQE5AMzMzMzOzNEBmZmZmZiZPQAAAAAAAADFAmpmZmZmZTEBmZmZmZuY9QGZmZmZmpkZAzczMzMxMTUAzMzMzM\u002fNMQJqZmZmZWUtAMzMzMzOzSEDNzMzMzIxFQGZmZmZmZklAzczMzMzMS0CamZmZmZlBQDMzMzMzM0dAzczMzMwMQkAAAAAAAAA5QM3MzMzMTDJAzczMzMzMM0BmZmZmZiZBQGZmZmZm5j9AzczMzMzMPkCamZmZmRlCQM3MzMzMzDRAmpmZmZkZN0AAAAAAAAA1QGZmZmZmZjNAmpmZmZnZSECamZmZmRlAQGZmZmZmZkVAAAAAAACAPUAAAAAAAMBMQJqZmZmZmUVAzczMzMzMNEBmZmZmZqZBQM3MzMzMzDNAzczMzMxMN0BmZmZmZmY0QM3MzMzMzDhAmpmZmZkZNkBmZmZmZmZEQM3MzMzMzDpAZmZmZmZmQ0DNzMzMzMxKQDMzMzMzc05AMzMzMzPzQUDNzMzMzIxHQJqZmZmZGUpAMzMzMzNzT0DNzMzMzMwvQGZmZmZmZjpAMzMzMzPzTEAAAAAAAMBDQGZmZmZm5klAMzMzMzPzR0DNzMzMzMxCQM3MzMzMTEdAAAAAAAAAS0AzMzMzM\u002fNKQJqZmZmZ2UtAzczMzMxMPkAzMzMzM\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\u002fNFQM3MzMzMDEdAMzMzMzOzPUAzMzMzM\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"},"xaxis":"x","y":{"dtype":"f8","bdata":"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"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Slide_Control_State=Highside Risk \u002f Instant Torque Cut\u003cbr\u003eMotorcycle Lean Angle (Degrees)=%{x}\u003cbr\u003eRear Wheel Slip Ratio (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Highside Risk \u002f Instant Torque Cut","marker":{"color":"#e11d48","symbol":"circle"},"mode":"markers","name":"Highside Risk \u002f Instant Torque Cut","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAAAATEDNzMzMzExPQAAAAAAAAE1AmpmZmZmZTUBmZmZmZiZPQDMzMzMzM01AZmZmZmbmTkAzMzMzM\u002fNMQM3MzMzMTE1AZmZmZmbmTUAzMzMzM\u002fNMQM3MzMzMzEtAzczMzMzMTUDNzMzMzExOQM3MzMzMTExAmpmZmZlZTkCamZmZmZlOQDMzMzMz805AzczMzMzMS0CamZmZmdlLQGZmZmZmJk9AzczMzMyMTUBmZmZmZuZPQGZmZmZmJk9AmpmZmZlZT0AzMzMzM3NPQM3MzMzMzE9AAAAAAAAAUEA="},"xaxis":"x","y":{"dtype":"f8","bdata":"MzMzMzMzLkBmZmZmZmYxQJqZmZmZmS9AZmZmZmZmMEDNzMzMzMwsQDMzMzMzMy5AmpmZmZmZMEAzMzMzMzMwQAAAAAAAADBAAAAAAACAMECamZmZmRkwQDMzMzMzszFAzczMzMzMLkAzMzMzMzMxQGZmZmZmZjBAAAAAAAAAL0AAAAAAAIAxQJqZmZmZmS9AmpmZmZmZLECamZmZmZktQGZmZmZmZi1AMzMzMzMzLUBmZmZmZmYtQGZmZmZm5jBAAAAAAACAMEDNzMzMzMwxQM3MzMzMzC5AZmZmZmZmL0A="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Motorcycle Lean Angle (Degrees)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Rear Wheel Slip Ratio (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Slide_Control_State"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"shapes":[{"line":{"color":"#e11d48","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":14.0,"y1":14.0,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Slide Cut Threshold (14%)","x":1,"xanchor":"right","xref":"x domain","y":14.0,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Ducati Slide Control (DSC) allows riders to safely drift the rear tire at a controlled 8% to 12% slip ratio. When slip exceeds 14% at extreme 60° lean angles, the engine cuts ignition spark in 2 milliseconds to prevent catastrophic highside crashes.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Fine-tune individual cylinder ignition cut patterns during apex exit to maintain smooth motorcycle forward drive without upsetting chassis stability.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Front Wheel Pitch Angle (Wheelie) vs Throttle Opening (%)
+                            </h5>
+                            <small class="text-slate-600">Demonstrates Ducati Wheelie Control (DWC) maintaining the front tire 5° above asphalt for maximum acceleration</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Anti-Wheelie</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="fd877947-017d-4fc6-b4c8-fa1cd60a1849" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fd877947-017d-4fc6-b4c8-fa1cd60a1849")) {                    Plotly.newPlot(                        "fd877947-017d-4fc6-b4c8-fa1cd60a1849",                        [{"hovertemplate":"Slide_Control_State=Ducati Slide Control (DSC) Optimal Drift\u003cbr\u003eRider Throttle Opening (%)=%{x}\u003cbr\u003eFront Wheel Pitch \u002f Wheelie Angle (\u00b0)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Ducati Slide Control (DSC) Optimal Drift","marker":{"color":"rgb(136, 204, 238)","symbol":"circle"},"mode":"markers","name":"Ducati Slide Control (DSC) Optimal Drift","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAABASkCamZmZmXlUQJqZmZmZmTtAMzMzMzNzV0BmZmZmZuZTQM3MzMzMzEdAMzMzMzNzS0CamZmZmdlUQDMzMzMzk1FAzczMzMwMR0AAAAAAAMBQQDMzMzMzM09AMzMzMzOzSUAzMzMzMzNAQDMzMzMz80BAzczMzMyMSEAAAAAAAIA9QGZmZmZm5k1AmpmZmZmZO0DNzMzMzExTQDMzMzMzszZAzczMzMwMSkDNzMzMzIxQQGZmZmZmZkBAmpmZmZk5UUCamZmZmVlRQJqZmZmZmURAmpmZmZlZREBmZmZmZmZYQJqZmZmZWU5AMzMzMzNzQkDNzMzMzExKQM3MzMzMDFdAZmZmZmYGWEDNzMzMzEw+QAAAAAAAAE1AZmZmZmamQEAAAAAAAGBXQDMzMzMz80hAmpmZmZnZU0AAAAAAAEBOQAAAAAAAAENAZmZmZmamSUBmZmZmZsZVQJqZmZmZmTZAAAAAAAAgUUAAAAAAAABEQGZmZmZmhlZAAAAAAABAVEAzMzMzM7NLQM3MzMzMzDRAMzMzMzMzPkBmZmZmZmZUQM3MzMzMjFFAAAAAAACAUUDNzMzMzMw1QJqZmZmZmTVAmpmZmZmZWECamZmZmdlXQAAAAAAAoFRAAAAAAACAREBmZmZmZuZRQDMzMzMzc0tAzczMzMxMTECamZmZmRlAQM3MzMzMzEdAZmZmZmZmQkAzMzMzM3NMQDMzMzMzk1JAZmZmZmZmV0AAAAAAAIBCQGZmZmZmxlJAzczMzMwMU0CamZmZmRk2QAAAAAAAgFRAMzMzMzNTUkDNzMzMzKxQQGZmZmZmpkNAzczMzMxsWEBmZmZmZmZLQAAAAAAAgE9AZmZmZmbmQ0CamZmZmZlBQDMzMzMzMz1AMzMzMzPzS0DNzMzMzMxIQGZmZmZmxlZAMzMzMzOTU0AzMzMzM\u002fNKQGZmZmZmZj5AZmZmZmamQECamZmZmdlAQGZmZmZm5jRAMzMzMzOzQEAzMzMzMzNHQGZmZmZmJk5AMzMzMzNzVUAzMzMzM3NIQJqZmZmZ2UxAmpmZmZnZQUCamZmZmZk4QM3MzMzMDFdAAAAAAADATEAzMzMzM\u002fNSQJqZmZmZmU5AAAAAAAAAVkAAAAAAAMBYQAAAAAAAwFBAzczMzMyMVkDNzMzMzIxVQGZmZmZmZlZAZmZmZmZmNEAzMzMzM\u002fNUQGZmZmZmJlZAMzMzMzMzSkAzMzMzM\u002fNMQDMzMzMzU1BAzczMzMxsU0DNzMzMzCxUQDMzMzMzsz5AzczMzMwMU0BmZmZmZuZEQM3MzMzMTD5AMzMzMzPzUUDNzMzMzIxHQDMzMzMzc1RAzczMzMwMVkDNzMzMzEw1QDMzMzMz80VAAAAAAABAVEBmZmZmZuZYQM3MzMzMLFBAmpmZmZkZU0BmZmZmZiZEQJqZmZmZ+VNAzczMzMwsVEAzMzMzM7M3QAAAAAAAwEtAmpmZmZmZT0CamZmZmZlBQDMzMzMzszpAmpmZmZkZNkBmZmZmZmY6QJqZmZmZuVNAmpmZmZmZVkBmZmZmZqZTQM3MzMzMzFJAMzMzMzMzRkAAAAAAAAA0QGZmZmZmZklAzczMzMyMUkBmZmZmZmY8QM3MzMzMbFdAzczMzMzMVEBmZmZmZqZQQGZmZmZmZlRAzczMzMxMSUAAAAAAAIA5QJqZmZmZWVJAAAAAAABAUkDNzMzMzKxYQM3MzMzM7FhAmpmZmZlZQEAzMzMzM1NTQJqZmZmZ2UBAAAAAAACAOkAAAAAAAEBWQDMzMzMzszVAZmZmZmbmP0AzMzMzM7NPQDMzMzMzU1NAZmZmZmYGVUAzMzMzM7NPQAAAAAAAgEVAmpmZmZkZNUAzMzMzM\u002fNKQDMzMzMzM0tAAAAAAABAQkAzMzMzM\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"},"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAAAAEEBmZmZmZmYOQDMzMzMzMwvAmpmZmZmZ+T+amZmZmZn5PwAAAAAAAAhAZmZmZmZmDkCamZmZmZkBQAAAAAAAAACAmpmZmZmZCUBmZmZmZmYYQJqZmZmZmRFAmpmZmZmZBUCamZmZmZm5P2ZmZmZmZgJAmpmZmZmZ+T+amZmZmZnxP2ZmZmZmZhJAmpmZmZmZDUAzMzMzMzP7vzMzMzMzMxNAZmZmZmZmEEAAAAAAAAASQGZmZmZmZuY\u002fZmZmZmZmCkDNzMzMzMwaQAAAAAAAAAxAZmZmZmZmEkDNzMzMzMwAQDMzMzMzM\u002fM\u002fzczMzMzM9D8zMzMzMzMPQGZmZmZmZvY\u002fzczMzMzMFEAzMzMzMzP7PzMzMzMzMwtAAAAAAAAAAECamZmZmZkbQM3MzMzMzARAAAAAAAAAFkAAAAAAAADgP83MzMzMzBBAZmZmZmZm\u002fj9mZmZmZmbmv83MzMzMzARAZmZmZmZmDkCamZmZmZnJP5qZmZmZmQVAMzMzMzMzC0DNzMzMzMwIQJqZmZmZmfk\u002fAAAAAAAABEAzMzMzMzMLQM3MzMzMzPw\u002fZmZmZmZmEEDNzMzMzMwEQM3MzMzMzAxAZmZmZmZmCkDNzMzMzMz8PzMzMzMzMxdAAAAAAAAACECamZmZmZnZP5qZmZmZmRFAZmZmZmZm9j\u002fNzMzMzMzsPwAAAAAAAAhAMzMzMzMzC0AzMzMzMzMPQM3MzMzMzBBAAAAAAAAAAEAAAAAAAAAAgAAAAAAAABBAAAAAAAAABEDNzMzMzMwAQAAAAAAAAARAMzMzMzMzB0DNzMzMzMz0v5qZmZmZmQlAAAAAAAAACEAAAAAAAAAQQGZmZmZmZhBAAAAAAAAACEAAAAAAAADwPwAAAAAAAABAzczMzMzMEECamZmZmZnJv5qZmZmZmQVAmpmZmZmZ6T+amZmZmZnZP83MzMzMzBRAmpmZmZmZ8T8AAAAAAAAUQAAAAAAAAOA\u002fZmZmZmZm5j8zMzMzMzMVQM3MzMzMzAxAZmZmZmZm\u002fj+amZmZmZnJvzMzMzMzM\u002fM\u002fzczMzMzMFkBmZmZmZmYGQJqZmZmZmQVAZmZmZmZmCkAAAAAAAADwv2ZmZmZmZgZAMzMzMzMzC0BmZmZmZmbmPwAAAAAAABhAmpmZmZmZuT8AAAAAAADgP83MzMzMzPw\u002fzczMzMzMAEDNzMzMzMwIQM3MzMzMzAhAZmZmZmZm5j8AAAAAAAAMQDMzMzMzMwtAmpmZmZmZ2T8zMzMzMzP7P5qZmZmZmQlAzczMzMzMDEAAAAAAAAD4P2ZmZmZmZv4\u002fMzMzMzMz078AAAAAAAAEQM3MzMzMzARAmpmZmZmZyT\u002fNzMzMzMz8P5qZmZmZmfE\u002fMzMzMzMzGUAzMzMzMzMHQM3MzMzMzARAAAAAAAAAFEDNzMzMzMwEQJqZmZmZmfk\u002fzczMzMzM9D8zMzMzMzPTPzMzMzMzMw9AmpmZmZmZEUCamZmZmZkFQDMzMzMzMw9AAAAAAAAAEkCamZmZmZnxP2ZmZmZmZvY\u002fAAAAAAAAAEAzMzMzMzPjP2ZmZmZmZgpAAAAAAAAADECamZmZmZkJQJqZmZmZmdk\u002fzczMzMzMAEAAAAAAAAD4PwAAAAAAABBAAAAAAAAA+D8AAAAAAAAAgAAAAAAAABJAZmZmZmZm\u002fj8zMzMzMzPTP83MzMzMzPw\u002fzczMzMzM9D+amZmZmZkNQGZmZmZmZg5AmpmZmZmZBUBmZmZmZmYSQDMzMzMzMwtAzczMzMzMIEDNzMzMzMz0PwAAAAAAAABAAAAAAAAA8D8AAAAAAAAAQDMzMzMzM\u002fs\u002fZmZmZmZmCkAzMzMzMzPzPzMzMzMzM9M\u002fmpmZmZmZCUAzMzMzMzPjP2ZmZmZmZuY\u002fAAAAAAAADEAAAAAAAAAWQAAAAAAAABJAMzMzMzMzD0CamZmZmZnxPwAAAAAAAPg\u002fAAAAAAAAAEAzMzMzMzMLQJqZmZmZmek\u002fzczMzMzM9D8AAAAAAAAMQJqZmZmZmQlAzczMzMzMBEAAAAAAAAASQGZmZmZmZv4\u002fmpmZmZmZyb8zMzMzMzPzP2ZmZmZmZuY\u002fMzMzMzMzE0BmZmZmZmYQQDMzMzMzMwtAMzMzMzMzA0AAAAAAAAD4P5qZmZmZmQFAAAAAAAAAEEAzMzMzMzMLQM3MzMzMzPQ\u002fAAAAAAAA+D8zMzMzMzPjP83MzMzMzARAMzMzMzMzB0BmZmZmZmb2PzMzMzMzMxVAAAAAAAAAEEAzMzMzMzP7PwAAAAAAAABAmpmZmZmZ6T9mZmZmZmb+P5qZmZmZmfE\u002fAAAAAAAADEAAAAAAAAAIQM3MzMzMzARAmpmZmZmZyb\u002fNzMzMzMwIQM3MzMzMzBBAmpmZmZmZEUDNzMzMzMwIQM3MzMzMzBBAZmZmZmZmAkAzMzMzMzMLQGZmZmZmZhRAzczMzMzMDEAAAAAAAAASQAAAAAAAAPg\u002fZmZmZmZm5r\u002fNzMzMzMwIQJqZmZmZmQVAmpmZmZmZDUAAAAAAAADgP83MzMzMzPy\u002fZmZmZmZmBsAAAAAAAADgvwAAAAAAAPg\u002fzczMzMzM\u002fD9mZmZmZmYaQJqZmZmZmQlAmpmZmZmZ6b9mZmZmZmbmPwAAAAAAAAxAMzMzMzMz+z+amZmZmZkBQJqZmZmZmfk\u002fzczMzMzM9D9mZmZmZmb+P5qZmZmZmQ1AMzMzMzMzA0DNzMzMzMwAQM3MzMzMzAxAMzMzMzMzFUCamZmZmZkJQM3MzMzMzBRAAAAAAAAADEAzMzMzMzP7PzMzMzMzM\u002fM\u002fmpmZmZmZ+T8zMzMzMzP7P83MzMzMzOw\u002fmpmZmZmZ+T+amZmZmZkNQM3MzMzMzAxAmpmZmZmZ2T\u002fNzMzMzMwWQAAAAAAAAAAAMzMzMzMzC0CamZmZmZnJvwAAAAAAABJAZmZmZmZm9j\u002fNzMzMzMwMQGZmZmZmZhpAAAAAAAAADEAzMzMzMzMDQAAAAAAAAAxAzczMzMzM7D+amZmZmZnZPzMzMzMzM9O\u002fAAAAAAAA8D8zMzMzMzPjPzMzMzMzM+O\u002fMzMzMzMzB0BmZmZmZmYUQM3MzMzMzAhAzczMzMzMBECamZmZmZkVQJqZmZmZmck\u002fMzMzMzMzEUAAAAAAAAD4P83MzMzMzABAZmZmZmZmBkDNzMzMzMwUQGZmZmZmZhpAZmZmZmZmBkCamZmZmZkNQAAAAAAAAABAzczMzMzM9D9mZmZmZmYWQDMzMzMzMwNAAAAAAAAABEDNzMzMzMwUQDMzMzMzMwtAMzMzMzMzE0BmZmZmZmb+PzMzMzMzM\u002fO\u002fZmZmZmZm5j\u002fNzMzMzMwEQDMzMzMzMxFAAAAAAAAAAEDNzMzMzMwWQAAAAAAAAOA\u002fAAAAAAAABEAAAAAAAAD4vwAAAAAAABBAAAAAAAAABECamZmZmZkRQJqZmZmZmek\u002fzczMzMzMEEDNzMzMzMzsPwAAAAAAAAxAmpmZmZmZBUBmZmZmZmYCQAAAAAAAABJAZmZmZmZmEkAAAAAAAAAEQJqZmZmZmfE\u002fAAAAAAAADEBmZmZmZmYSQAAAAAAAAABAAAAAAAAABEAAAAAAAADgP5qZmZmZmQlAAAAAAAAAEEAzMzMzMzMHQJqZmZmZmQVAZmZmZmZmBkAAAAAAAAAMQDMzMzMzMw9AmpmZmZmZE0CamZmZmZkVQJqZmZmZmfG\u002fmpmZmZmZ2b\u002fNzMzMzMwEQAAAAAAAABBAmpmZmZmZEUCamZmZmZn5P5qZmZmZmQ1AzczMzMzMCEAAAAAAAADwPwAAAAAAAAhAzczMzMzMCECamZmZmZkNQAAAAAAAAACAmpmZmZmZ+b\u002fNzMzMzMwIQM3MzMzMzPw\u002fmpmZmZmZBUAAAAAAAAAAQAAAAAAAABBAZmZmZmZmGkAAAAAAAAAMQDMzMzMzMw9AzczMzMzMDEBmZmZmZmYGQAAAAAAAAAxAZmZmZmZmCkAzMzMzMzMHQM3MzMzMzBRAmpmZmZmZBUBmZmZmZmYQQAAAAAAAAPA\u002fzczMzMzMEEAAAAAAAAAAQGZmZmZmZv6\u002fzczMzMzMEEAAAAAAAAAAgAAAAAAAAAxAmpmZmZmZCUDNzMzMzMwIQGZmZmZmZvY\u002fMzMzMzMz0z+amZmZmZkFQDMzMzMzM9O\u002fZmZmZmZmCkBmZmZmZmb2PwAAAAAAAAhAAAAAAAAAFkCamZmZmZkRQDMzMzMzMwtAZmZmZmZmDkAAAAAAAADwv83MzMzMzOy\u002fMzMzMzMzEUAAAAAAAAD4PwAAAAAAAAxAmpmZmZmZ6T8AAAAAAAAQQAAAAAAAAABAMzMzMzMz0z+amZmZmZnZP5qZmZmZmek\u002fAAAAAAAA8D\u002fNzMzMzMwIQDMzMzMzM9O\u002fAAAAAAAA4L9mZmZmZmb+P83MzMzMzAxAzczMzMzMGEAzMzMzMzPjv5qZmZmZmfk\u002fAAAAAAAAFkAAAAAAAAAEQM3MzMzMzBZAAAAAAAAABECamZmZmZkBQDMzMzMzM9M\u002fAAAAAAAADEAAAAAAAAASQDMzMzMzM\u002fM\u002fmpmZmZmZub+amZmZmZnJv2ZmZmZmZvY\u002fzczMzMzMAEAAAAAAAAAEQJqZmZmZmfk\u002fMzMzMzMzC0DNzMzMzMwEQAAAAAAAABBAZmZmZmZmFEAzMzMzMzMLQAAAAAAAAOA\u002fzczMzMzMEEBmZmZmZmYWQAAAAAAAABBAMzMzMzMz+z8AAAAAAAD4PwAAAAAAABJAMzMzMzMzC0BmZmZmZmYCQAAAAAAAAAxAMzMzMzMz+z\u002fNzMzMzMwEQDMzMzMzM9M\u002fmpmZmZmZDUAAAAAAAADwP2ZmZmZmZgZAmpmZmZmZuT+amZmZmZkBQAAAAAAAABhAzczMzMzMBEAAAAAAAAAYQDMzMzMzM\u002fs\u002fzczMzMzM9L9mZmZmZmbmP83MzMzMzARAmpmZmZmZ2b+amZmZmZkTQAAAAAAAAPg\u002fZmZmZmZm5j8AAAAAAAAEQGZmZmZmZuY\u002fzczMzMzMGEAzMzMzMzMXQJqZmZmZmdm\u002fMzMzMzMzEUDNzMzMzMwWQAAAAAAAAARAzczMzMzM7D+amZmZmZkJQJqZmZmZmQlAmpmZmZmZ8T+amZmZmZkBQM3MzMzMzARAMzMzMzMz4z8AAAAAAAAQQGZmZmZmZgpAzczMzMzM\u002fD8zMzMzMzMLQGZmZmZmZhJAMzMzMzMzC0BmZmZmZmYQQGZmZmZmZua\u002fAAAAAAAAEkCamZmZmZnZv5qZmZmZmRFAAAAAAAAAAIDNzMzMzMwSQM3MzMzMzPQ\u002fZmZmZmZmAkAAAAAAAAAAQM3MzMzMzBJAmpmZmZmZ+T8zMzMzMzMPQJqZmZmZmR9AZmZmZmZmBkBmZmZmZmYWQAAAAAAAABRAAAAAAAAAAEAzMzMzMzMHQAAAAAAAAAxAZmZmZmZmAkBmZmZmZmbmv5qZmZmZmQ1AMzMzMzMz0z9mZmZmZmb+PzMzMzMzMwtAZmZmZmZmCkDNzMzMzMwMQGZmZmZmZuY\u002fMzMzMzMz+z8zMzMzMzP7P83MzMzMzAxAMzMzMzMz8z8AAAAAAADwP83MzMzMzBRAAAAAAAAABEAAAAAAAAAAQGZmZmZmZgJAmpmZmZmZDUCamZmZmZkBQJqZmZmZmQVAzczMzMzMBEAAAAAAAAAMQDMzMzMzMxFAmpmZmZmZDUAzMzMzMzMHQDMzMzMzMwdAZmZmZmZmAkBmZmZmZmYGQDMzMzMzMxFAAAAAAAAACEAAAAAAAAAAQJqZmZmZmek\u002fMzMzMzMz8z9mZmZmZmYOQJqZmZmZmfk\u002fmpmZmZmZBUAAAAAAAAAWQM3MzMzMzOw\u002fAAAAAAAAAEDNzMzMzMz8P2ZmZmZmZg5AMzMzMzMz8z8zMzMzMzMDQAAAAAAAAABAmpmZmZmZ2b9mZmZmZmb+vzMzMzMzMwtAzczMzMzM9D8AAAAAAAASQJqZmZmZmRVAAAAAAAAA4L9mZmZmZmYKQM3MzMzMzBJAzczMzMzMEkAzMzMzMzMDQAAAAAAAAPg\u002fmpmZmZmZ+T+amZmZmZm5PzMzMzMzM+M\u002fZmZmZmZm\u002fj8AAAAAAAAIQDMzMzMzM\u002fs\u002fMzMzMzMzA0AAAAAAAAAQQJqZmZmZmQ1AAAAAAAAA4D8AAAAAAAAAwAAAAAAAABJAMzMzMzMzB0BmZmZmZmYOQDMzMzMzMwdA"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Slide_Control_State=Highside Risk \u002f Instant Torque Cut\u003cbr\u003eRider Throttle Opening (%)=%{x}\u003cbr\u003eFront Wheel Pitch \u002f Wheelie Angle (\u00b0)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Highside Risk \u002f Instant Torque Cut","marker":{"color":"rgb(204, 102, 119)","symbol":"circle"},"mode":"markers","name":"Highside Risk \u002f Instant Torque Cut","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAACgV0BmZmZmZkZYQDMzMzMzc1hAzczMzMysV0AzMzMzMzNXQM3MzMzMbFVAZmZmZmbGV0AzMzMzM\u002fNXQM3MzMzMrFhAmpmZmZlZV0DNzMzMzAxUQJqZmZmZmVhAmpmZmZnZWEAzMzMzM1NYQJqZmZmZ2VhAzczMzMxsVkAAAAAAAOBWQM3MzMzMLFVAAAAAAAAAVEBmZmZmZgZYQAAAAAAAAFZAmpmZmZk5VEBmZmZmZkZWQM3MzMzMLFhA"},"xaxis":"x","y":{"dtype":"f8","bdata":"MzMzMzMzD0AAAAAAAAAEQDMzMzMzM9O\u002fmpmZmZmZ8T8AAAAAAAAMQAAAAAAAAAhAMzMzMzMzFUDNzMzMzMzsP5qZmZmZmQFAAAAAAAAADEAAAAAAAAAIQJqZmZmZmek\u002fZmZmZmZmAkBmZmZmZmb+P2ZmZmZmZgpAzczMzMzMGkAAAAAAAAASQDMzMzMzM\u002fM\u002fZmZmZmZm\u002fj\u002fNzMzMzMwAQJqZmZmZmfk\u002fZmZmZmZmAkBmZmZmZmbmv2ZmZmZmZgpA"},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Rider Throttle Opening (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Front Wheel Pitch \u002f Wheelie Angle (\u00b0)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Slide_Control_State"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"shapes":[{"line":{"color":"#d97706","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":5.0,"y1":5.0,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Anti-Wheelie Target (5.0\u00b0)","x":1,"xanchor":"right","xref":"x domain","y":5.0,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Ducati Wheelie Control (DWC) keeps the front tire floating 5 degrees above the track during full 100% throttle acceleration, maximizing rear tire weight transfer and forward acceleration.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Integrate front aerodynamic downforce winglets with DWC throttle maps to reduce unwanted wheelies at 300 km/h.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Rear Wheel Slip Ratio Distribution
+                            </h5>
+                            <small class="text-slate-600">Shows 93.8% of corner exits maintain optimal racing drift between 6% and 12% slip</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Slip Distribution</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="b875b75f-dcfd-4ca5-80a3-3377d870b4dd" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b875b75f-dcfd-4ca5-80a3-3377d870b4dd")) {                    Plotly.newPlot(                        "b875b75f-dcfd-4ca5-80a3-3377d870b4dd",                        [{"bingroup":"x","hovertemplate":"Slide_Control_State=Ducati Slide Control (DSC) Optimal Drift\u003cbr\u003eRear Wheel Slip Ratio (%)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Ducati Slide Control (DSC) Optimal Drift","marker":{"color":"#0284c7","pattern":{"shape":""}},"name":"Ducati Slide Control (DSC) Optimal Drift","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"Slide_Control_State=Highside Risk \u002f Instant Torque Cut\u003cbr\u003eRear Wheel Slip Ratio (%)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Highside Risk \u002f Instant Torque Cut","marker":{"color":"#e11d48","pattern":{"shape":""}},"name":"Highside Risk \u002f Instant Torque Cut","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"ZmZmZmZmL0BmZmZmZmYtQAAAAAAAgDBAZmZmZmZmL0BmZmZmZmYvQGZmZmZmZjBAmpmZmZmZLEAzMzMzM7MxQGZmZmZmZi5AZmZmZmbmMEAAAAAAAAAvQJqZmZmZGTFAZmZmZmZmLEAAAAAAAIAwQGZmZmZmZi5AZmZmZmZmMUAzMzMzM7MwQGZmZmZmZixAAAAAAAAAL0AzMzMzMzMwQGZmZmZmZixAzczMzMxMMEDNzMzMzMwuQAAAAAAAAC5AMzMzMzOzMUBmZmZmZmYwQAAAAAAAACxAMzMzMzMzMUCamZmZmZkwQM3MzMzMzCxAMzMzMzMzLkBmZmZmZmYtQM3MzMzMzCxAZmZmZmbmMEDNzMzMzMwwQAAAAAAAACxAmpmZmZmZLUBmZmZmZmYtQJqZmZmZmSxAAAAAAAAAMEDNzMzMzMwxQJqZmZmZmTBAzczMzMzML0DNzMzMzMwsQAAAAAAAADFAMzMzMzMzMEBmZmZmZmYtQM3MzMzMTDBAzczMzMzMLEAzMzMzMzMuQDMzMzMzMy9AAAAAAAAAL0DNzMzMzEwxQM3MzMzMzC9AmpmZmZmZLUCamZmZmRkwQM3MzMzMTDBAAAAAAAAAL0AzMzMzMzMtQJqZmZmZmS9AzczMzMxMMUCamZmZmZkwQM3MzMzMzC9AMzMzMzOzMUDNzMzMzMwuQJqZmZmZmSxAAAAAAAAALUAAAAAAAIAxQJqZmZmZGTBAmpmZmZmZL0AzMzMzMzMvQJqZmZmZmS1AMzMzMzMzLUCamZmZmZkvQGZmZmZmZjFAmpmZmZmZLECamZmZmZkvQJqZmZmZmSxAzczMzMzMLECamZmZmZksQM3MzMzMzCxAZmZmZmZmMUDNzMzMzMwvQM3MzMzMTDBA"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Rear Wheel Slip Ratio (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Slide_Control_State"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">93.8% of corner exits maintain optimal controlled wheelspin, maximizing drive grip out of tight chicane corners.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Apply MotoGP electronics algorithms to the production Panigale V4 S superbike lineup, driving premium motorcycle sales.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Average Rear Slip Ratio Across Lean Angle Zones
+                            </h5>
+                            <small class="text-slate-600">Shows progressive slip scaling from upright straights to extreme 64° elbow-down apexes</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Lean Zones</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="eff3ecc9-2720-46dd-9bea-6ff47afed461" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("eff3ecc9-2720-46dd-9bea-6ff47afed461")) {                    Plotly.newPlot(                        "eff3ecc9-2720-46dd-9bea-6ff47afed461",                        [{"hovertemplate":"Lean Angle Zone=%{x}\u003cbr\u003eAverage Rear Slip (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"15-30\u00b0 (Mild)","marker":{"color":"rgb(136, 204, 238)","pattern":{"shape":""}},"name":"15-30\u00b0 (Mild)","orientation":"v","showlegend":true,"textposition":"auto","x":["15-30\u00b0 (Mild)"],"xaxis":"x","y":{"dtype":"f8","bdata":"NCSXof9ND0A="},"yaxis":"y","type":"bar"},{"hovertemplate":"Lean Angle Zone=%{x}\u003cbr\u003eAverage Rear Slip (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"30-45\u00b0 (Medium)","marker":{"color":"rgb(204, 102, 119)","pattern":{"shape":""}},"name":"30-45\u00b0 (Medium)","orientation":"v","showlegend":true,"textposition":"auto","x":["30-45\u00b0 (Medium)"],"xaxis":"x","y":{"dtype":"f8","bdata":"7L2TuwdOGUA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Lean Angle Zone=%{x}\u003cbr\u003eAverage Rear Slip (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"45-55\u00b0 (Deep Apex)","marker":{"color":"rgb(221, 204, 119)","pattern":{"shape":""}},"name":"45-55\u00b0 (Deep Apex)","orientation":"v","showlegend":true,"textposition":"auto","x":["45-55\u00b0 (Deep Apex)"],"xaxis":"x","y":{"dtype":"f8","bdata":"5Y4NXLR3IEA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Lean Angle Zone=%{x}\u003cbr\u003eAverage Rear Slip (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"55-64\u00b0 (Extreme Elbow Down)","marker":{"color":"rgb(17, 119, 51)","pattern":{"shape":""}},"name":"55-64\u00b0 (Extreme Elbow Down)","orientation":"v","showlegend":true,"textposition":"auto","x":["55-64\u00b0 (Extreme Elbow Down)"],"xaxis":"x","y":{"dtype":"f8","bdata":"ClifTzx3I0A="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Lean Angle Zone"},"categoryorder":"array","categoryarray":["15-30\u00b0 (Mild)","30-45\u00b0 (Medium)","45-55\u00b0 (Deep Apex)","55-64\u00b0 (Extreme Elbow Down)"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Average Rear Slip (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Lean Angle Zone"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Slip ratio increases smoothly from 3.8% at mild 20° angles to 12.4% at extreme 60° angles, giving riders complete throttle confidence.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Lead the MotoGP and WorldSBK World Championships, saving $920k per season in crash damage repairs.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Motorcycle System</th><th>Objective</th><th>Stability Metric</th><th>Sampling Speed</th><th>Standard</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Ducati Slide Control (DSC)</strong></td><td>Highside Crash Elimination</td><td><span class="badge bg-danger">64° Lean Stability</span></td><td>2.0 ms (500 Hz)</td><td>Ducati Corse MotoGP Standard</td></tr>
+            <tr><td><strong>Ducati Wheelie Control (DWC)</strong></td><td>Front Wheel Pitch Modulation</td><td><span class="badge bg-primary">5.0° Target Pitch</span></td><td>4.0 ms</td><td>FIM World Championship</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>6-Axis IMU Calibration:</strong> Calibrate gyroscopic roll and yaw sensor drift before each race session.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Ignition Cut Softness:</strong> Soften ignition cut transitions to prevent rear suspension pogo oscillations.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Engine Brake Control (EBC):</strong> Adjust slipper clutch throttle opening for stable corner entry deceleration.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Predictive GPS Track Cornering:</strong> Automatically adjust anti-wheelie levels 50 meters before known track humps.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Active Ride Height Holeshot Device:</strong> Automate rear suspension lowering at launch for explosive starts.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Consumer Panigale Safety Tech:</strong> Transfer race-proven Slide Control algorithms to street motorcycles.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$920k Crash Damage Savings:</strong> Eliminating highside crashes saves expensive carbon-fiber and titanium race machinery.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>MotoGP Championship Dominance:</strong> Winning the MotoGP World Championship drives global record sales for Ducati street motorcycles.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This Ducati MotoGP telemetry system controls motorcycle dynamics at 350 km/h:</p>
+    <ul>
+        <li><strong>6-Axis Inertial IMU Telemetry:</strong> Measures roll, pitch, and yaw 500 times per second to track 64° cornering lean angles.</li>
+        <li><strong>Ducati Slide Control (DSC):</strong> Allows controlled power drifts while cutting ignition torque in 2 ms to prevent violent highside crashes.</li>
+        <li><strong>Business Value:</strong> Cuts highside crash risk by 12%, wins MotoGP World Championships, and saves $920k in racing damage.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>IMU_Sample_ID</th><th>Motorcycle_Lean_Angle_deg</th><th>Throttle_Opening_pct</th><th>IMU_Pitch_Wheelie_deg</th><th>Rear_Wheel_Slip_Ratio_pct</th><th>Slide_Control_State</th></tr></thead><tbody><tr><td>DUCATI-GP-1000</td><td>20.10</td><td>69.90</td><td>2.50</td><td>2.60</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1001</td><td>36.10</td><td>59.00</td><td>0.20</td><td>7.70</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1002</td><td>47.00</td><td>74.90</td><td>1.90</td><td>9.40</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1003</td><td>57.90</td><td>93.00</td><td>3.70</td><td>13.80</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1004</td><td>59.40</td><td>57.70</td><td>4.10</td><td>9.90</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1005</td><td>62.30</td><td>66.80</td><td>1.20</td><td>11.20</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1006</td><td>42.70</td><td>46.60</td><td>6.90</td><td>4.80</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr><tr><td>DUCATI-GP-1007</td><td>22.50</td><td>88.50</td><td>1.00</td><td>4.30</td><td><span class="badge-status-pass">Ducati Slide Control (DSC) Optimal Drift</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../35_pirelli_cyber_tyre_grip_sensing/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: Pirelli Cyber Tyre
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Alfa Romeo Drivetrain <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

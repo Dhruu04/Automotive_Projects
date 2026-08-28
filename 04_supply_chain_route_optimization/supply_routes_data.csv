@@ -1,0 +1,29 @@
+Origin,Destination,Distance_km,Lead_Time_Hours
+Detroit Assembly (Hub),Indianapolis Transmissions,447.5,5.5
+Detroit Assembly (Hub),Louisville Battery Giga,543.7,7.7
+Detroit Assembly (Hub),Nashville Electronics,800.5,11.3
+Detroit Assembly (Hub),Grand Rapids Plastics,299.4,4.1
+Akron Tire Plant,Detroit Assembly (Hub),219.0,2.4
+Akron Tire Plant,Columbus Stamping,206.0,3.7
+Akron Tire Plant,Indianapolis Transmissions,535.2,6.9
+Akron Tire Plant,Louisville Battery Giga,565.7,7.0
+Akron Tire Plant,Nashville Electronics,799.6,11.0
+Akron Tire Plant,Chicago Steel Works,684.0,8.3
+Akron Tire Plant,Grand Rapids Plastics,505.7,6.3
+Columbus Stamping,Detroit Assembly (Hub),263.1,3.7
+Columbus Stamping,Indianapolis Transmissions,351.3,4.7
+Columbus Stamping,Louisville Battery Giga,360.3,4.3
+Columbus Stamping,Nashville Electronics,595.0,7.4
+Columbus Stamping,Grand Rapids Plastics,445.9,6.3
+Indianapolis Transmissions,Louisville Battery Giga,174.0,2.5
+Indianapolis Transmissions,Nashville Electronics,406.2,6.2
+Louisville Battery Giga,Nashville Electronics,258.3,3.5
+Chicago Steel Works,Detroit Assembly (Hub),511.3,6.7
+Chicago Steel Works,Columbus Stamping,556.3,7.4
+Chicago Steel Works,Indianapolis Transmissions,285.5,3.6
+Chicago Steel Works,Louisville Battery Giga,452.9,6.2
+Chicago Steel Works,Nashville Electronics,641.4,7.3
+Chicago Steel Works,Grand Rapids Plastics,248.9,3.9
+Grand Rapids Plastics,Indianapolis Transmissions,358.8,4.2
+Grand Rapids Plastics,Louisville Battery Giga,523.0,6.2
+Grand Rapids Plastics,Nashville Electronics,764.9,10.2

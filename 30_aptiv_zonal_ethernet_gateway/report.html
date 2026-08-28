@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptiv / Rivian: Centralized Zonal Vehicle Ethernet Gateway Congestion | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-diagram-3 me-1"></i> E/E Architecture & Software</span>
+                        <span class="badge-id">Project 30</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $5.4M / yr</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Aptiv / Rivian: Centralized Zonal Vehicle Ethernet Gateway Congestion</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Profiles microsecond data packet bursts across high-speed 10Gbps vehicle Ethernet zonal gateways to guarantee zero packet loss for safety-critical autonomous camera and radar streams.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Time-Sensitive Networking (TSN) Latency Sizing, Buffer Overflow ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Critical Stream Latency</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-lightning-charge fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">0.42 ms</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-shield-check"></i> Deterministic TSN Speed
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Autonomous Frame Drops</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-camera-video fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">Zero Drops</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-check2-all"></i> 100% Video Delivery
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Zonal Gateway Throughput</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-diagram-3 fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">10 Gbps</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-speedometer2"></i> High-Speed Backbone
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Traffic Streams Analyzed</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-cpu fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">3,000 Streams</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-check-all"></i> Zonal E/E Architecture
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Ethernet Packet Latency (µs) vs Bandwidth Throughput (Mbps)
+                            </h5>
+                            <small class="text-slate-600">Guarantees sub-500 microsecond deterministic delivery for camera and radar safety streams</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Deterministic TSN</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="ae4a528e-99d1-4ae1-b1ec-8076be5334dc" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ae4a528e-99d1-4ae1-b1ec-8076be5334dc")) {                    Plotly.newPlot(                        "ae4a528e-99d1-4ae1-b1ec-8076be5334dc",                        [{"hovertemplate":"Network_QoS_Status=Time-Sensitive Network (TSN) Compliant\u003cbr\u003eZonal Ethernet Throughput (Mbps)=%{x}\u003cbr\u003ePacket Latency (Microseconds, \u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Time-Sensitive Network (TSN) Compliant","marker":{"color":"#0284c7","symbol":"circle"},"mode":"markers","name":"Time-Sensitive Network (TSN) Compliant","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"zczMzMzjqkAzMzMzM5OdQGZmZmZmvJ1AZmZmZmbjqUAAAAAAAGCuQDMzMzOz5LBAZmZmZmb+jUAzMzMzM822QJqZmZmZ57NAAAAAAADzqUBmZmZmZjyZQM3MzMzMuIxAMzMzMzM3p0CamZmZmQF5QM3MzMzMDHpAAAAAAABhokAAAAAAACCcQM3MzMzMNaxAmpmZmZkNqECamZmZmQWxQJqZmZmZ8YZAzczMzMwWsEDNzMzMzB+0QAAAAAAASqdAzczMzMxArUAzMzMzM5O6QGZmZmZmhKVAAAAAAID3ukAAAAAAAKSZQAAAAAAAXJVAAAAAAAAdtUAzMzMzM\u002fS4QAAAAACA57ZAmpmZmRkDtEDNzMzMzF+nQJqZmZmZYXtAMzMzMzNfnkDNzMzMTLe2QJqZmZmZH7ZAMzMzM7MvvECamZmZGUiwQJqZmZmZZ6hAZmZmZmZCukAzMzMzs9qyQAAAAAAA\u002fpNAMzMzM\u002fMEwEDNzMzMzM+vQGZmZmZmoK9AAAAAAACghUCamZmZmVmsQAAAAAAAsa5AmpmZmZnsrkBmZmZmZg6XQJqZmZmZiaxAAAAAAABNtUAAAAAAABuiQJqZmZmZJ7ZAMzMzMzPDrkAAAAAAADyqQAAAAAAARqtAAAAAAABqtkAzMzMzswqxQDMzMzMzPL9AmpmZmRnOvEAzMzMzswu4QDMzMzMzaZxAAAAAAIDduUBmZmZmZu2yQGZmZmZmAo5AZmZmZub4uEDNzMzMTH23QGZmZmZmpKlAZmZmZmYlrEBmZmZmZgCoQGZmZmZm26NAMzMzM7PPuEDNzMzMzOOwQGZmZmZmkJdAzczMzMwapEAzMzMzM3uxQDMzMzMzz6NAAAAAAAD0lUAAAAAAANa6QJqZmZmZ77BAAAAAAACem0AAAAAAgFeyQGZmZmZmXbBAMzMzMzP1pkAzMzMzM\u002f22QDMzMzMzY6lAZmZmZmY4nEDNzMzMzJO3QJqZmZmZPKpAMzMzMzN\u002fqUAzMzMzswiwQJqZmZmZtqdAAAAAAABnsECamZmZmQG6QJqZmZmZTaRAzczMzMwimUCamZmZGcC5QDMzMzMzK4pAZmZmZmbArUDNzMzMzHSGQAAAAAAAl7JAZmZmZmaOsEAAAAAAAM2nQJqZmZmZWZ9AmpmZmZkprUDNzMzMTIK1QAAAAACAMrZAAAAAAADppUAAAAAAgNiyQAAAAACAcLxAAAAAAAA9rEBmZmZmZtW4QJqZmZkZc7dAZmZmZmYHq0CamZmZmQ6iQJqZmZkZVrBAAAAAAACfvUDNzMzMzDGpQAAAAAAAzqlAzczMzMyhv0DNzMzMTDO0QJqZmZmZF75AZmZmZmY2m0AzMzMzs7m3QJqZmZmZ7KpAmpmZmRm1u0DNzMzMzPO1QJqZmZkZErFAMzMzM7Njs0AzMzMzs1a6QGZmZmbmSbBAAAAAAAAIjUDNzMzMzK+gQDMzMzMzq7FAmpmZmZl9lEDNzMzMzKKbQAAAAAAAIHxAZmZmZmbFvkAzMzMzM2inQAAAAAAAHLJAZmZmZmaOq0AAAAAAABisQGZmZmZm2JlAZmZmZmYLoUCamZmZmeOfQGZmZmZmJJxAAAAAAABIvUAzMzMzM2WlQM3MzMzM1bBAzczMzMwhp0DNzMzMzFu9QDMzMzMzUKhAZmZmZuYWukBmZmZmZr6RQJqZmZmZuqpAMzMzMzO3jkBmZmZmZq6yQM3MzMzMJL1AZmZmZubsuUAAAAAAALh8QM3MzMzMIIxAZmZmZuYutUBmZmZmZuWjQM3MzMwM98BAmpmZmRkauUAAAAAAAHSJQDMzMzMzeK1AMzMzMzM5mUDNzMzMzLqlQM3MzMzMb65AzczMzMzhtEAzMzMzM4OPQJqZmZmZaYBAMzMzMzMKvkDNzMzMzGO6QDMzMzOzjrBAAAAAAADzt0DNzMzMTJq6QAAAAAAAuaBAzczMzMzUfkDNzMzMzBCZQGZmZmZmlJ5AAAAAAIB0s0AAAAAAAI6ZQDMzMzMzwZlAZmZmZmbylUBmZmZmZlG+QDMzMzMzh5tAzczMzEytsUAAAAAAABKfQGZmZmZmvLFAMzMzMzM+skCamZmZGWS5QAAAAAAAjKtAzczMzMzfs0CamZmZmQmbQGZmZmZmvKtAAAAAAABmvkAzMzMzs5S9QJqZmZkZNrRAmpmZmZktmkBmZmZmZtqpQAAAAAAADa9AZmZmZmY2jkCamZmZmZeaQDMzMzMzAqpAZmZmZmaIt0CamZmZmUWPQDMzMzNzG8BAmpmZmRkBwECamZmZmZ2YQDMzMzMzC6JAzczMzExAsUDNzMzMzPKtQDMzMzMzeqdAZmZmZuYAuEDNzMzMzB6\u002fQAAAAAAAr6xAZmZmZmb1wEAzMzMzM1GSQJqZmZkZsrFAzczMzMz2oUAzMzMzM4a5QGZmZmZmlpFAzczMzMzPsUBmZmZm5uewQDMzMzMzC5ZAmpmZmZkRgEDNzMzMTCiyQAAAAAAAEqpAzczMzEw3ukCamZmZmZ+3QAAAAAAAI7NAmpmZmRlHtkDNzMzMzIaWQJqZmZmZtYFAMzMzMzPpsUAAAAAAAA+sQDMzMzOzfrxAAAAAAABKlECamZmZGa68QGZmZmZmQJ9AAAAAAAATv0AAAAAAACO0QJqZmZmZD5hAAAAAAADLvUBmZmZmZiaEQDMzMzMzpaJAZmZmZmZym0DNzMzMzEW5QDMzMzOz07RAmpmZmZkjlUCamZmZGc+5QAAAAAAA6phAmpmZmRlZu0AzMzMzMxirQDMzMzOzqrlAzczMzMyyuUAzMzMzM8OpQGZmZmZmia9AMzMzMzOLoUAzMzMzM\u002femQJqZmZmZR5dAzczMzMyMsECamZmZmX6zQJqZmZmZZLtAmpmZmZmgwEBmZmZmZiirQGZmZmZmmpFAzczMzMweqkBmZmZmZryvQM3MzMzM\u002fbZAMzMzMzPnvUBmZmZmZvWmQAAAAAAADbJAMzMzMzMFskAAAAAAAKCyQJqZmZmZCaJAZmZmZmZwm0AAAAAAAE68QM3MzMzMPpFAmpmZmZldnUAAAAAAAGC3QJqZmZmZmXtAMzMzM7OxtUBmZmZmZs6nQGZmZmbmcrlAmpmZmZkBuEDNzMzMTIm1QGZmZmbmx7ZAzczMzMw2mUDNzMzMzOmyQDMzMzMzgZJAzczMzMy4iUCamZmZGXm0QM3MzMzM7JNAMzMzMzMXk0AzMzMzM+C3QAAAAACAtL5AMzMzMzMvl0DNzMzMzFacQAAAAAAA9qBAZmZmZmZGgEDNzMzMzJypQDMzMzMz1atAmpmZmZmss0BmZmZmZv2xQAAAAAAABLJAmpmZmRlusEAAAAAAAF2jQGZmZmZmpn5AAAAAAADer0CamZmZmY+yQAAAAADAxcBAMzMzM7M8sECamZmZmfisQDMzMzMzAq1AMzMzMzO0tEDNzMzMzN+sQAAAAAAAwqhAzczMzEyvs0AAAAAAAESJQAAAAACAkr1AMzMzMzMbmUAAAAAAAL+jQJqZmZmZ3ahAZmZmZuYqtkCamZmZmWC0QGZmZmZmRrpAAAAAAIDLsUAzMzMzM6mWQDMzMzOzebNAAAAAAICVs0AAAAAAAKurQJqZmZmZU5JAAAAAAACwlkAzMzMzMwt\u002fQM3MzMzM+LFAAAAAAADunEBmZmZm5viwQDMzMzMzDLJAmpmZmRlUtEDNzMzMzKKlQM3MzMzMWJVAzczMzMxAiUAAAAAAAH6hQJqZmZmZaLpAMzMzM7M1sUAzMzMzM\u002fq2QGZmZmbmZ7NAzczMzMz1pkBmZmZmZgetQDMzMzMz8KZAzczMzEyDuEDNzMzMzHyaQAAAAAAArbBAMzMzM7O6u0AAAAAAgHixQGZmZmZmxpJAAAAAAIC0u0AzMzMzMxORQJqZmZmZbY1AmpmZmZmCqkBmZmZmZn+kQAAAAACA87BAzczMzMwqr0AAAAAAAEqaQGZmZmZmEKlAzczMzEyWwEAAAAAAAKOxQGZmZmZm0q9AZmZmZmYdrUAzMzMzM9mgQM3MzMxMRrpAAAAAAABojEDNzMzMzBiVQM3MzMzMfpFAAAAAAIC9tEBmZmZmZunAQJqZmZmZU5pAzczMzMxMgkAzMzMzM9OeQJqZmZmZsL1AmpmZmZmet0AAAAAAANiFQM3MzMzMXJRAmpmZmRl4vUBmZmZm5mGxQJqZmZmZdK5AAAAAAACosEBmZmZmZoSWQJqZmZmZE59AZmZmZuZWvUDNzMzMzO6qQDMzMzMz9Z9AzczMzMwAqUCamZmZGXywQJqZmZmZsYhAMzMzM7ORukCamZmZmQW4QGZmZmZmIrZAmpmZmZllukAAAAAAAJB6QJqZmZkZYLdAzczMzMxgrkDNzMzMzASTQJqZmZmZH7lAZmZmZmZcpUBmZmZmZiG4QJqZmZmZ5KhAmpmZmZnMrUAzMzMzM4WcQDMzMzMzYLVAzczMzMzfp0DNzMzMzOetQGZmZmZm\u002f6VAzczMzMyYsUDNzMzMzFCLQM3MzMzMfalAZmZmZmZzqEAAAAAAACKsQJqZmZmZJbJAzczMzEy1sEDNzMzMzDx6QJqZmZkZQrNAmpmZmZntp0CamZmZmWq9QAAAAAAA\u002fb1AZmZmZmYJokDNzMzMzPCWQM3MzMxMuLFAmpmZmRm6sECamZmZmYOlQM3MzMzMzr1AAAAAAIDSs0CamZmZma+QQDMzMzMzba1AZmZmZmZ+h0CamZmZmUyoQAAAAAAAI7tAZmZmZmbxp0AAAAAAAOCiQAAAAAAAeINAMzMzMzPDpEBmZmZm5q6wQM3MzMxMOLFAmpmZmZmRnECamZmZmWl6QGZmZmZm2KVAzczMzMzGnUAAAAAAAAutQDMzMzMzm35AMzMzMzOirUAAAAAAAJmoQGZmZmZmsrpAMzMzMzN4uEAAAAAAAOKtQM3MzMzMBKdAzczMzMz1rUAAAAAAAPG5QDMzMzMzkqpAmpmZmZkZp0DNzMzMzLK7QDMzMzMzP6dAAAAAAIAjs0AAAAAAAGK2QDMzMzOzwLpAzczMzMwsf0AAAAAAgMu1QAAAAAAAD7BAZmZmZmaImkAAAAAAAJKZQDMzMzMz+ZRAAAAAAABHs0AAAAAAgCW\u002fQDMzMzOz\u002fMBAAAAAAABIokDNzMzMzKiPQAAAAAAACqZAZmZmZmahqUAAAAAAAAO8QJqZmZmZVqRAZmZmZmZajUBmZmZm5mSwQJqZmZkZmLhAMzMzMzNSpEDNzMzMzH2lQJqZmZmZPbxAzczMzEwpsEAAAAAAACW1QDMzMzOzwLVAzczMzMxgmEAAAAAAAFCYQM3MzMzMLbhAZmZmZmY6hUDNzMzMzP6nQGZmZmamEMFAzczMzEyiuUAzMzMzMxeoQM3MzMzM46NAmpmZmZmtoUDNzMzMzNCNQGZmZmbmlLRAAAAAAAAgpECamZmZmWe0QM3MzMzMJqRAzczMzMxIl0CamZmZmUemQM3MzMzMubRAAAAAAICbskBmZmZmZjiiQJqZmZmZ+5hAmpmZmZllgkAzMzMzM86vQM3MzMzM6pBAZmZmZuZ7skAAAAAAAJ62QM3MzMzMGadAmpmZmRlxtUCamZmZmVl6QJqZmZmZnYtAMzMzMzNZukCamZmZmWmFQJqZmZmZnYxAZmZmZmY8o0BmZmZmZnCwQJqZmZmZhYlAZmZmZmbpoEBmZmZmZsatQGZmZmbmb7VAzczMzMyBu0DNzMzMzJR7QDMzMzOzZrJAMzMzM7NksUCamZmZmS6yQDMzMzMz7ZVAzczMzMx8m0DNzMzMzDm0QDMzMzMzdq5AAAAAAEDNwEDNzMzMzO+xQGZmZmZmwpdAmpmZmZnOvkBmZmZmZliaQDMzMzMz\u002f5BAAAAAAAB+nkAAAAAAgI2xQGZmZmZmDoRAmpmZmRlBtEAAAAAAAA2uQAAAAAAAM7BAAAAAAACQp0CamZmZmdGXQAAAAAAAfJ9AZmZmZma4kEAAAAAAAIh\u002fQGZmZmZmnodAzczMzMx\u002fo0BmZmZmZn6BQJqZmZmZMaxAZmZmZmaWnkAzMzMzM+ytQAAAAAAAJIdAzczMzMylo0AAAAAAAF+jQM3MzMzM1LBAMzMzM3MFwUBmZmZmZpyhQDMzMzOzA75AMzMzMzP5q0DNzMzMzD21QM3MzMzMHqRAAAAAAIDrtEAzMzMzM1esQM3MzMxMH7lAZmZmZmYvqUAAAAAAAG6wQM3MzMzM4rBAAAAAAIBHukBmZmZmZuKwQM3MzMzMKr1AMzMzMzMMrkCamZmZmfe1QDMzMzMzKrFAzczMzMypt0AzMzMzM8u0QGZmZmZmor5AZmZmZmbqj0AzMzMzM7WSQDMzMzMz4rBAMzMzMzMNt0AAAAAAAIusQGZmZmZmyb1AAAAAAADZqECamZmZmTORQDMzMzMzm4FAmpmZmZn2o0DNzMzMzLukQDMzMzMzq5pAAAAAAAB3vUDNzMzMzN6kQM3MzMzMA69AzczMzMy0fECamZmZmXWnQGZmZmbmIbNAMzMzMzPktUBmZmZmZjSWQDMzMzMzX6tAMzMzMzNvn0CamZmZmai5QM3MzMwMnsBAmpmZmZlNkECamZmZmQmvQDMzMzMzf4JAZmZmZmYOwEAAAAAAAFu6QAAAAAAAY6hAAAAAAAAIu0AzMzMzM3C3QJqZmZmZgbFAZmZmZmbkrUAzMzMzM4uLQAAAAACAlrRA"},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZmZdkDNzMzMzKx\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"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Network_QoS_Status=Micro-Burst Buffer Congestion Alert\u003cbr\u003eZonal Ethernet Throughput (Mbps)=%{x}\u003cbr\u003ePacket Latency (Microseconds, \u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Micro-Burst Buffer Congestion Alert","marker":{"color":"#e11d48","symbol":"circle"},"mode":"markers","name":"Micro-Burst Buffer Congestion Alert","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzPSwEAzMzMz8ynBQJqZmZmZZbpAZmZmZuYFvEAzMzMzs3+9QDMzMzOzTLhAmpmZmZnQu0AAAAAAgNO3QDMzMzMzSrJAzczMzMwawUCamZmZmWG3QGZmZmZmcLZAAAAAAACruECamZmZmVHAQJqZmZmZ+cBAmpmZmRnOv0AAAAAAAOe+QDMzMzOz+LpAMzMzM7OBwEDNzMzMzHy9QJqZmZmZB7xAZmZmZmZiv0BmZmZm5i69QDMzMzMzW71AAAAAAIDivkDNzMzMzEC3QDMzMzOzpb5AmpmZmZmSwEAAAAAAAK64QGZmZmZmkLtAMzMzM3MbwUAAAAAAAM3AQGZmZmam+sBAZmZmZua3wEAAAAAAgLPAQGZmZmYmgMBAmpmZmZnJuUDNzMzMTIW7QM3MzMwME8FAMzMzM3P5wEAAAAAAAHvAQDMzMzMzfL5AmpmZmZkTwEBmZmZm5izAQJqZmZkZ17NAZmZmZma5uEAzMzMzs266QGZmZmZm1rpAmpmZmZkLuUCamZmZWYzAQDMzMzMzIr5AAAAAAIBAu0BmZmZmZo66QAAAAACAYL9AmpmZmdkLwUCamZmZmb61QGZmZmZmibZAAAAAAICit0CamZmZmQS\u002fQGZmZmZmB7tAAAAAAIC7uUAAAAAAANfAQM3MzMzMT7hAmpmZmZn3ukCamZmZmT3AQAAAAACAQ79AZmZmZuYKukAAAAAAgE7AQAAAAACAlbpAZmZmZma3vEBmZmZmZla\u002fQDMzMzOzSb1AzczMzMyzvEDNzMzMTLe8QJqZmZkZg7ZAAAAAAIBwvUAAAAAAAJXAQAAAAABABsBAMzMzM7NCsUDNzMzMDNnAQJqZmZkZUrtAmpmZmRmVvUBmZmZmZti5QGZmZmbmgsBAMzMzM7ODv0DNzMzMTFS7QM3MzMzM7rFAmpmZmRlawEAAAAAAAOK+QDMzMzOzhr1AZmZmZuZ\u002fv0DNzMzMTEC7QDMzMzNzIsBAZmZmZuZWvEAzMzMzs1+9QM3MzMxMZbNAmpmZmRnAwEAAAAAAwNfAQAAAAAAAHbxAmpmZmRmru0AzMzMzM0i7QM3MzMzMN7hAzczMzEy+v0AAAAAAgH69QGZmZmbm\u002fLxAZmZmZmZOu0CamZmZGTK5QDMzMzOzqL1AZmZmZuYKvEAAAAAAQBfBQAAAAAAAXr9AAAAAAIBKu0DNzMzMTNq5QAAAAAAA7rhAMzMzMzP3t0DNzMzMTIi\u002fQDMzMzOz\u002fbtAZmZmZuZZskAzMzMzM3i+QAAAAAAAXb1AzczMzMxhvUAAAAAAgHzAQAAAAAAA\u002fbtAmpmZmdkHwEDNzMzMzI69QGZmZmZmabdAAAAAAADhv0AzMzMzs+\u002fAQJqZmZmZAL9AMzMzM7P3vEAAAAAAAGm\u002fQGZmZmZmx7xAmpmZmRlMwEAzMzMzM9C3QDMzMzOzlrlAMzMzM3NIwEBmZmZm5tDAQJqZmZmZ2blAZmZmZiaCwEAzMzMzM7y9QJqZmZkZw7ZAZmZmZmbFtkBmZmZm5ry\u002fQAAAAAAArrVAAAAAAID6vkAzMzMzM\u002fq9QAAAAAAAebtAmpmZmVmNwEAzMzMzM2fAQJqZmZmZIcFAMzMzM7M5v0AAAAAAwNDAQM3MzMzM\u002fbNAMzMzM7PFvEDNzMzMTIu+QJqZmZkZesBAMzMzMzOkt0AzMzMzM6a7QGZmZmZm47tAAAAAAID9uEDNzMzMzHS2QDMzMzMz+71AmpmZmRnXuEBmZmZmZoK7QGZmZmZmdb5AmpmZmZn7t0CamZmZWYPAQDMzMzMzGLRAZmZmZuZQwEBmZmZmZky9QDMzMzNzL8BAMzMzM3OnwEAzMzMzM1O5QA=="},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZnZhECamZmZmSmCQM3MzMzMhIJAzczMzMyggkCamZmZmWGBQGZmZmZmAoJAMzMzMzN3gkAAAAAAAAyCQM3MzMzMqIFAAAAAAABYg0DNzMzMzPyBQM3MzMzMOIFAzczMzMz0gkBmZmZmZsKBQDMzMzMzH4RAmpmZmZlNgUCamZmZmYGEQDMzMzMz34JAZmZmZmYahkBmZmZmZmaBQM3MzMzMdINAZmZmZmamgUDNzMzMzAyEQGZmZmZmaoRAzczMzMxQhEAzMzMzM++BQDMzMzMzS4RAmpmZmZmdg0BmZmZmZpqDQM3MzMzMRIJAMzMzMzODhkCamZmZmemAQGZmZmZmkoJAAAAAAACEg0AAAAAAAJSBQGZmZmZmCoRAmpmZmZk9g0AAAAAAAOSDQDMzMzMzF4RAAAAAAACMgkAAAAAAAKSBQAAAAAAANIZAMzMzMzN\u002fhUAAAAAAAICFQDMzMzMz34FAMzMzMzOTgkDNzMzMzMCBQDMzMzMza4NAMzMzMzNjgkDNzMzMzGyFQJqZmZmZ6YRAZmZmZmbagUCamZmZmUWCQGZmZmZmSoRAmpmZmZldhEAzMzMzM4eCQAAAAAAAlIRAMzMzMzN7gkAAAAAAAASDQAAAAAAARIRAMzMzMzNTgUAzMzMzM9OBQM3MzMzMkIFAAAAAAAAkg0AAAAAAAESDQDMzMzMzt4NAmpmZmZkNg0DNzMzMzAiCQAAAAAAAsIJAzczMzMz0gkCamZmZmbWBQM3MzMzMpIRAZmZmZmZGhEDNzMzMzKyDQAAAAAAAhIJAAAAAAAC0gkAzMzMzM\u002fOCQGZmZmZmkoJAAAAAAAAMgkBmZmZmZvqDQDMzMzMzo4FAmpmZmZl5gkBmZmZmZuKBQM3MzMzMUINAZmZmZmZOgkAzMzMzM2OCQDMzMzMzg4FAAAAAAABkhEBmZmZmZvaDQAAAAAAAgINAmpmZmZmBgkDNzMzMzNyDQM3MzMzMHIRAZmZmZmb2g0AAAAAAACiDQM3MzMzMcIFAzczMzMzUgkAzMzMzM6eCQGZmZmZm8oNAZmZmZmYigkCamZmZmRGCQAAAAAAAQIJAzczMzMzohEDNzMzMzASCQGZmZmZmsoRAZmZmZmbmg0CamZmZmY2DQGZmZmZmLoRAAAAAAADAgkAzMzMzM3OGQM3MzMzMBINAZmZmZmYig0CamZmZmZGBQM3MzMzMjIJAmpmZmZnFgUBmZmZmZqaCQJqZmZmZgYNAAAAAAAC8gUCamZmZmS2DQGZmZmZmboJAMzMzMzMTgkBmZmZmZiqEQJqZmZmZWYNAMzMzMzNXhUAAAAAAAHCCQGZmZmZmXoFAAAAAAACggUAzMzMzM6eEQGZmZmZm+oNAmpmZmZnpg0AzMzMzM\u002f+CQM3MzMzM7IJAZmZmZmaygkAzMzMzM6+BQDMzMzMzK4JAZmZmZmZqgkDNzMzMzNiEQGZmZmZmgoNAzczMzMyQg0DNzMzMzKSDQDMzMzMzq4FAZmZmZmZ2gUCamZmZmXGCQGZmZmZmDoNAZmZmZmaChEDNzMzMzDyCQDMzMzMzW4RAmpmZmZk5gkAzMzMzM0eEQDMzMzMzu4dAzczMzMxQgUAAAAAAADSCQGZmZmZm+oFAzczMzMyYg0BmZmZmZt6BQDMzMzMzo4NAzczMzMxUgUBmZmZmZqqCQM3MzMzMLINAZmZmZmaygUCamZmZmbGCQJqZmZmZHYVAAAAAAABog0DNzMzMzGCBQM3MzMzMbIFAMzMzMzO3gUDNzMzMzJCBQM3MzMzMaIFAmpmZmZmlhECamZmZmfmCQAAAAAAAGIJAmpmZmZn9gkBmZmZmZn6CQA=="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Zonal Ethernet Throughput (Mbps)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Packet Latency (Microseconds, \u00b5s)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Network_QoS_Status"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"shapes":[{"line":{"color":"#e11d48","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":550.0,"y1":550.0,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Safety Latency Ceiling (550\u00b5s)","x":1,"xanchor":"right","xref":"x domain","y":550.0,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">High-priority autonomous driving sensor streams deliver across the centralized zonal gateway in an ultra-low 120 to 420 microseconds. Buffer saturation occurs only when unprioritized infotainment streams burst simultaneously.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Apply IEEE 802.1Qbv Time-Aware Shaper (TAS) schedules to guarantee dedicated hardware time-slots for safety camera feeds, eliminating network jitter.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Switch Buffer Memory Utilization vs Latency (µs)
+                            </h5>
+                            <small class="text-slate-600">Identifies queue buildup in switch buffer memory during sudden sensor burst transmissions</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Buffer Queue</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="3372f5b3-e42b-4198-90aa-3be38ffd7eed" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3372f5b3-e42b-4198-90aa-3be38ffd7eed")) {                    Plotly.newPlot(                        "3372f5b3-e42b-4198-90aa-3be38ffd7eed",                        [{"hovertemplate":"Network_QoS_Status=Time-Sensitive Network (TSN) Compliant\u003cbr\u003eSwitch Buffer Memory Utilization (%)=%{x}\u003cbr\u003ePacket Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Time-Sensitive Network (TSN) Compliant","marker":{"color":"#0284c7","symbol":"circle"},"mode":"markers","name":"Time-Sensitive Network (TSN) Compliant","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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\u002fQJqZmZmZmVNAzczMzMzMP0AzMzMzMzM\u002fQDMzMzMzMyRAmpmZmZmZOUCamZmZmVlGQJqZmZmZGUdAzczMzMxMQUAAAAAAAAApQDMzMzMzMzpAMzMzMzMzO0AAAAAAAMBHQAAAAAAAACVAMzMzMzOzQUAzMzMzM\u002fNBQM3MzMzMrFFAzczMzMwMUUDNzMzMzAxFQGZmZmZmJkNAmpmZmZkZSkAzMzMzM3NPQA=="},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZmZdkDNzMzMzKx\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\u002fQA=="},"yaxis":"y","type":"scatter"},{"hovertemplate":"Network_QoS_Status=Micro-Burst Buffer Congestion Alert\u003cbr\u003eSwitch Buffer Memory Utilization (%)=%{x}\u003cbr\u003ePacket Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Micro-Burst Buffer Congestion Alert","marker":{"color":"#e11d48","symbol":"circle"},"mode":"markers","name":"Micro-Burst Buffer Congestion Alert","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAADAWEAzMzMzMzNXQDMzMzMzc1JAMzMzMzPTU0DNzMzMzOxSQM3MzMzM7FFAMzMzMzNTU0AzMzMzM7NTQM3MzMzMDE1AMzMzMzOTVkAzMzMzM5NRQDMzMzMz01BAMzMzMzMTUkAzMzMzM3NWQJqZmZmZWVhAAAAAAABAVEAAAAAAAEBWQAAAAAAAwFNAAAAAAABAV0BmZmZmZiZVQM3MzMzMDFNAZmZmZmamVEAzMzMzM9NWQJqZmZmZGVRAzczMzMwsVUCamZmZmTlTQJqZmZmZuVZAZmZmZmZGVkBmZmZmZmZSQDMzMzMzE1VAAAAAAADAWEAzMzMzM3NWQAAAAAAAoFVAAAAAAADAVkCamZmZmXlVQDMzMzMzM1ZAAAAAAADAUkDNzMzMzIxTQM3MzMzM7FZAzczMzMxsVkBmZmZmZiZWQM3MzMzMTFZAZmZmZmbmVkAAAAAAAMBWQGZmZmZmJk5AzczMzMzsUkDNzMzMzOxRQM3MzMzM7FNAMzMzMzPTUUDNzMzMzAxYQJqZmZmZ+VRAAAAAAADAUkBmZmZmZgZSQM3MzMzM7FRAMzMzMzNzVkAAAAAAAIBQQM3MzMzMjFFAzczMzMyMT0AAAAAAAGBWQDMzMzMzM1NAAAAAAACAUUCamZmZmVlVQJqZmZmZ+VJAMzMzMzMTU0DNzMzMzGxVQM3MzMzMTFVAAAAAAADgUkDNzMzMzCxUQDMzMzMzE1NAAAAAAADgVECamZmZmRlWQAAAAAAA4FNAmpmZmZm5VEBmZmZmZkZVQDMzMzMz81BAZmZmZmYGVUAzMzMzM\u002fNVQDMzMzMzU1RAAAAAAACATECamZmZmblVQM3MzMzMbFNAmpmZmZl5VECamZmZmRlSQGZmZmZmJlZAZmZmZmbmVEBmZmZmZoZTQDMzMzMzM09AAAAAAACgVkDNzMzMzMxUQAAAAAAA4FRAZmZmZmYmVEBmZmZmZsZSQAAAAAAAgFZAAAAAAABAVEAzMzMzMxNXQM3MzMzMTE1AAAAAAAAgVkCamZmZmRlWQJqZmZmZ2VNAzczMzMwsU0AzMzMzM7NTQAAAAAAAQFFAMzMzMzOzVkCamZmZmflTQM3MzMzM7FVAMzMzMzOTU0AzMzMzMzNTQDMzMzMzk1RAAAAAAAAgUkCamZmZmblXQAAAAAAAQFRAZmZmZmYGVUAAAAAAAOBRQJqZmZmZGVNAZmZmZmbGUkDNzMzMzCxTQM3MzMzMTFNAZmZmZmYmTUAAAAAAACBTQGZmZmZmBlRAmpmZmZmZVEBmZmZmZgZWQAAAAAAAYFVAAAAAAACAVkDNzMzMzExUQAAAAAAAAFJAmpmZmZn5U0AAAAAAAMBYQM3MzMzMTFZAMzMzMzMzVEDNzMzMzExTQM3MzMzMzFNAAAAAAACAV0AzMzMzM1NSQDMzMzMzE1NAAAAAAAAAVkA="},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZnZhECamZmZmSmCQM3MzMzMhIJAzczMzMyggkCamZmZmWGBQGZmZmZmAoJAMzMzMzN3gkAAAAAAAAyCQM3MzMzMqIFAAAAAAABYg0DNzMzMzPyBQM3MzMzMOIFAzczMzMz0gkBmZmZmZsKBQDMzMzMzH4RAmpmZmZlNgUCamZmZmYGEQDMzMzMz34JAZmZmZmYahkBmZmZmZmaBQM3MzMzMdINAZmZmZmamgUDNzMzMzAyEQGZmZmZmaoRAzczMzMxQhEAzMzMzM++BQDMzMzMzS4RAmpmZmZmdg0BmZmZmZpqDQM3MzMzMRIJAMzMzMzODhkCamZmZmemAQGZmZmZmkoJAAAAAAACEg0AAAAAAAJSBQGZmZmZmCoRAmpmZmZk9g0AAAAAAAOSDQDMzMzMzF4RAAAAAAACMgkAAAAAAAKSBQAAAAAAANIZAMzMzMzN\u002fhUAAAAAAAICFQDMzMzMz34FAMzMzMzOTgkDNzMzMzMCBQDMzMzMza4NAMzMzMzNjgkDNzMzMzGyFQJqZmZmZ6YRAZmZmZmbagUCamZmZmUWCQGZmZmZmSoRAmpmZmZldhEAzMzMzM4eCQAAAAAAAlIRAMzMzMzN7gkAAAAAAAASDQAAAAAAARIRAMzMzMzNTgUAzMzMzM9OBQM3MzMzMkIFAAAAAAAAkg0AAAAAAAESDQDMzMzMzt4NAmpmZmZkNg0DNzMzMzAiCQAAAAAAAsIJAzczMzMz0gkCamZmZmbWBQM3MzMzMpIRAZmZmZmZGhEDNzMzMzKyDQAAAAAAAhIJAAAAAAAC0gkAzMzMzM\u002fOCQGZmZmZmkoJAAAAAAAAMgkBmZmZmZvqDQDMzMzMzo4FAmpmZmZl5gkBmZmZmZuKBQM3MzMzMUINAZmZmZmZOgkAzMzMzM2OCQDMzMzMzg4FAAAAAAABkhEBmZmZmZvaDQAAAAAAAgINAmpmZmZmBgkDNzMzMzNyDQM3MzMzMHIRAZmZmZmb2g0AAAAAAACiDQM3MzMzMcIFAzczMzMzUgkAzMzMzM6eCQGZmZmZm8oNAZmZmZmYigkCamZmZmRGCQAAAAAAAQIJAzczMzMzohEDNzMzMzASCQGZmZmZmsoRAZmZmZmbmg0CamZmZmY2DQGZmZmZmLoRAAAAAAADAgkAzMzMzM3OGQM3MzMzMBINAZmZmZmYig0CamZmZmZGBQM3MzMzMjIJAmpmZmZnFgUBmZmZmZqaCQJqZmZmZgYNAAAAAAAC8gUCamZmZmS2DQGZmZmZmboJAMzMzMzMTgkBmZmZmZiqEQJqZmZmZWYNAMzMzMzNXhUAAAAAAAHCCQGZmZmZmXoFAAAAAAACggUAzMzMzM6eEQGZmZmZm+oNAmpmZmZnpg0AzMzMzM\u002f+CQM3MzMzM7IJAZmZmZmaygkAzMzMzM6+BQDMzMzMzK4JAZmZmZmZqgkA="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Switch Buffer Memory Utilization (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Packet Latency (\u00b5s)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Network_QoS_Status"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Buffer memory utilization remains safely under 75% during standard vehicle operation, preventing packet buffer overflows and lost radar packets.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Allocate isolated static buffer partitions for ISO 26262 ASIL-D safety messages to prevent infotainment memory starvation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Distribution of Zonal Packet Latency (Microseconds)
+                            </h5>
+                            <small class="text-slate-600">Shows 94.6% of packets arrive in under 450 microseconds across vehicle zones</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Latency Spread</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="204e2497-c921-493c-98aa-3433f3666cbb" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("204e2497-c921-493c-98aa-3433f3666cbb")) {                    Plotly.newPlot(                        "204e2497-c921-493c-98aa-3433f3666cbb",                        [{"bingroup":"x","hovertemplate":"Network_QoS_Status=Time-Sensitive Network (TSN) Compliant\u003cbr\u003ePacket Latency (Microseconds)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Time-Sensitive Network (TSN) Compliant","marker":{"color":"#0284c7","pattern":{"shape":""}},"name":"Time-Sensitive Network (TSN) Compliant","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzPzdEAAAAAAAIhxQDMzMzMzA25AzczMzMxkd0CamZmZmblqQAAAAAAAMHlAAAAAAAAAZEAAAAAAAHB\u002fQDMzMzMzg3xAzczMzMz8fUDNzMzMzKiAQDMzMzMzA31AAAAAAADgakDNzMzMzDxvQAAAAAAAsHlAZmZmZmaGd0AAAAAAAAB3QM3MzMzMBHVAzczMzMw8eUAAAAAAAPBxQDMzMzMzI3ZAmpmZmZmhe0AzMzMzM\u002ft3QDMzMzMzM3ZAmpmZmZk5fkAAAAAAAABxQGZmZmZmvnpAzczMzMwkeUBmZmZmZs58QAAAAAAASH9AAAAAAADIgEBmZmZmZu54QJqZmZmZgXpAZmZmZmYefEDNzMzMzOxzQDMzMzMza3dAAAAAAAAYe0DNzMzMzCx1QGZmZmZmpnhAAAAAAAAQe0BmZmZmZu58QAAAAAAAsH9AZmZmZmZ2e0BmZmZmZq59QDMzMzMzi3pAMzMzMzObfEBmZmZmZm5\u002fQDMzMzMze35AAAAAAADQfEAzMzMzM5t9QDMzMzMzk3tAAAAAAABAfkCamZmZmbF3QJqZmZmZ6XxAmpmZmZmJcUDNzMzMzNx\u002fQGZmZmZmZn5AzczMzMy8c0DNzMzMzFR2QM3MzMzMZHRAMzMzMzPbe0CamZmZmQlkQM3MzMzMrH1AmpmZmZlBfUCamZmZmRl8QAAAAAAAkG1AZmZmZmZmaUDNzMzMzOx5QDMzMzMzQ3NAZmZmZmbagECamZmZmclqQDMzMzMzG3ZAMzMzMzNbgEAAAAAAAPB8QDMzMzMzI3pAmpmZmZlxeECamZmZmWl6QJqZmZmZoXBAMzMzMzNbd0AAAAAAAHBuQGZmZmZmTnxAZmZmZmY2fUAAAAAAAJh2QJqZmZmZiXxAAAAAAAD4dUDNzMzMzJR+QAAAAAAAaHZAmpmZmZmpaEAzMzMzM5t+QAAAAAAAmH9AZmZmZmaefEAzMzMzMweBQDMzMzMzA3tAmpmZmZnZYUDNzMzMzJRzQGZmZmZmpm9AzczMzMykeUAzMzMzMzNzQDMzMzMzM35AMzMzMzMzekDNzMzMzKR7QGZmZmZmVnZAAAAAAACYeUCamZmZmUl7QAAAAAAAoHZAMzMzMzOjdkBmZmZmZk51QM3MzMzMdIBAAAAAAAAYd0BmZmZmZvZsQJqZmZmZIXtAMzMzMzOLckAAAAAAAHhzQM3MzMzMXHhAzczMzMwEgUCamZmZmbF3QJqZmZmZbYBAzczMzMwEfUDNzMzMzIx3QDMzMzMzI3pAMzMzMzPTfUBmZmZmZjZ+QJqZmZmZyWxAmpmZmZnheUDNzMzMzDR6QM3MzMzMNHxAMzMzMzPLckAAAAAAABB6QM3MzMzMxHlAzczMzMzcbUCamZmZmY2AQDMzMzMz23NAMzMzMzN7gEDNzMzMzAx0QM3MzMzMBH9AAAAAAAC4f0AAAAAAAFhzQDMzMzMz43hAMzMzMzPbc0AAAAAAADB9QM3MzMzMpHZAZmZmZmbWdkDNzMzMzDR+QGZmZmZmRmZAZmZmZmZeckBmZmZmZnZ9QM3MzMzMNH1AMzMzMzOzf0BmZmZmZh59QDMzMzMz02tAAAAAAAB4fUDNzMzMzKxzQJqZmZmZqXBAzczMzMwsfEBmZmZmZjZ+QM3MzMzM5HZAZmZmZmaud0AzMzMzM0N+QJqZmZmZCXBAZmZmZmZOc0AAAAAAABh2QM3MzMzM7F1AZmZmZmZWfkCamZmZmVlrQDMzMzMzw4BAMzMzMzPjfkAAAAAAANh2QM3MzMzMnHdAmpmZmZnBekAAAAAAAIhzQDMzMzMzg31AZmZmZmb2dEAzMzMzM2N6QGZmZmZmjnBAZmZmZmbOfUAAAAAAAFh5QAAAAAAACHBAMzMzMzPzekAAAAAAAISAQJqZmZmZIXtAZmZmZmbmekDNzMzMzBx5QGZmZmZm3nFAzczMzMy8d0AAAAAAAGh1QGZmZmZm5npAMzMzMzOrfUCamZmZmXF8QM3MzMzMbG9AAAAAAADgekAzMzMzM9t0QAAAAAAADIFAmpmZmZnJdUDNzMzMzJx+QM3MzMzMCIBAZmZmZmbOdUAAAAAAABBsQM3MzMzMpH1AzczMzMxcdEAAAAAAABh5QJqZmZmZeWNAZmZmZmYWb0BmZmZmZkZzQDMzMzMzk2pAZmZmZmYWdkAzMzMzM7t+QDMzMzMzQ2xAZmZmZmamcEDNzMzMzEyAQDMzMzMz23xAmpmZmZl5eEDNzMzMzJx6QM3MzMzMoIBAAAAAAABweUBmZmZmZhZ8QGZmZmZmRnZAAAAAAACIdEAAAAAAAISAQDMzMzMz74BAAAAAAAAsgEAAAAAAALh9QAAAAAAA2HdAzczMzMyUe0DNzMzMzHR\u002fQAAAAAAAAGpAzczMzMzsckAAAAAAAKh5QM3MzMzMhHxAMzMzMzP7eUBmZmZmZo51QJqZmZmZGW5AzczMzMxUdUBmZmZmZlZwQGZmZmZmln9AMzMzMzMLdUBmZmZmZo59QM3MzMzMzHtAZmZmZmYygEAAAAAAAMBnQGZmZmZmJn9AAAAAAACUgECamZmZmblyQJqZmZmZyXxAZmZmZmYWc0CamZmZmQF3QAAAAAAAMG9AMzMzMzNLfkCamZmZmXF6QJqZmZmZUXdAmpmZmZmBf0AzMzMzMwNoQAAAAAAA6HBAmpmZmZmRdkCamZmZmS2AQM3MzMzMJH1AZmZmZmYOcEAAAAAAAOB7QGZmZmZmpnZAZmZmZmbugEAzMzMzM+N5QDMzMzMz63dAMzMzMzNTb0AzMzMzMyN8QGZmZmZmVnpAMzMzMzN7e0AzMzMzMwt4QJqZmZmZQYBAAAAAAACQb0BmZmZmZh5+QAAAAAAA+HVAmpmZmZmJe0AAAAAAAFh\u002fQAAAAAAA2H5AzczMzMxEekCamZmZmXl3QAAAAAAAYIBAMzMzMzOLcEDNzMzMzNx1QGZmZmZm7nVAzczMzMxsdEAzMzMzMxuBQDMzMzMz23xAZmZmZmYOckAzMzMzM8NxQAAAAAAAiHlAmpmZmZlxgECamZmZmSl4QGZmZmZm3oBAAAAAAAA4dkBmZmZmZvqAQAAAAAAAUGhAZmZmZma+fUCamZmZmUF4QJqZmZmZ+XlAAAAAAABIe0DNzMzMzJx2QM3MzMzMjH9AmpmZmZmxfkBmZmZmZh6AQM3MzMzMLH9AzczMzMycbEAAAAAAACh8QAAAAAAAeHtAMzMzMzPbdEAAAAAAAOBpQDMzMzMzO3NAzczMzMzseUAAAAAAAJh3QM3MzMzM+IBAMzMzMzODekAzMzMzM5t5QGZmZmZmlnJAzczMzMwkcEBmZmZmZhZtQDMzMzMzM3FAzczMzMw0dEAzMzMzMwt4QAAAAAAAUHRAAAAAAAB4eECamZmZmfl0QM3MzMzMrHBAmpmZmZkBd0AAAAAAAAh8QDMzMzMzq3FAmpmZmZlBc0AAAAAAAGBxQDMzMzMzY31AzczMzMyMgECamZmZmeF2QM3MzMzMXG1AMzMzMzMLd0CamZmZmeF4QGZmZmZmdoBAAAAAAABQY0AAAAAAAGBtQJqZmZmZuXRAZmZmZmYedUBmZmZmZsZ4QDMzMzMz03pAAAAAAACYd0CamZmZmf2AQGZmZmZmbn9AMzMzMzNDfEAzMzMzM7tzQDMzMzMzc3lAmpmZmZnxeEAAAAAAABB4QJqZmZmZmXJAMzMzMzNDfUBmZmZmZnZ0QAAAAAAAkGhAzczMzMxseEAAAAAAABhxQM3MzMzMPHZAZmZmZmb+fkAAAAAAANhxQDMzMzMze39AAAAAAAAwbUAAAAAAABB5QDMzMzMzW3VAzczMzMzMfkCamZmZmTl3QDMzMzMzO35AZmZmZmZ2eEBmZmZmZmZmQGZmZmZm7nFAzczMzMy0eECamZmZmdF4QJqZmZmZaXNAZmZmZmYufEBmZmZmZhKBQM3MzMzMlHxAmpmZmZkJY0DNzMzMzLx6QGZmZmZmtn1AZmZmZmb2eECamZmZmTF3QAAAAAAAoHJAzczMzMxscUAAAAAAAJh9QAAAAAAAeHZAzczMzMwseEAAAAAAALh7QM3MzMzMBH1AMzMzMzOreUAAAAAAAFBvQAAAAAAA8HZAZmZmZmYeeUDNzMzMzCR0QAAAAAAAOHtAzczMzMzcf0CamZmZmSliQGZmZmZmPnJAZmZmZma2ckAzMzMzMzNzQGZmZmZm3nxAMzMzMzNTakCamZmZmal3QDMzMzMzg2VAzczMzMxMbkCamZmZmVl8QGZmZmZmxnFAZmZmZmaGgEAAAAAAAHhyQJqZmZmZCXdAAAAAAAAQeUDNzMzMzDxyQM3MzMzMxHtAmpmZmZkRdUDNzMzMzNR+QJqZmZmZ+XpAMzMzMzNbfkDNzMzMzAR+QGZmZmZmUoBAzczMzMz8gEAAAAAAABB3QJqZmZmZcXtAzczMzMycb0AzMzMzM7t8QDMzMzMzQ3VAzczMzMx0eECamZmZmcl9QAAAAAAA+H1AzczMzMw0dUDNzMzMzPx7QAAAAAAAoHRAAAAAAABUgEBmZmZmZl58QDMzMzMzm35AAAAAAABgfkAzMzMzM5N5QDMzMzMz02tAMzMzMzPTc0BmZmZmZoKAQJqZmZmZaXNAMzMzMzP7eUCamZmZmbF1QAAAAAAAMHdAzczMzMzggEAzMzMzM0t\u002fQM3MzMzMfHZAZmZmZmZmbUDNzMzMzFxmQJqZmZmZ4XpAMzMzMzNPgEBmZmZmZmZtQJqZmZmZAXpAAAAAAAA0gEAAAAAAAChzQDMzMzMz63xAAAAAAAAQekCamZmZmTF5QJqZmZmZcXxAZmZmZmZGfUBmZmZmZo59QDMzMzMz24BAmpmZmZkZb0CamZmZmYF5QDMzMzMzG3dAAAAAAADQdUAAAAAAANhyQGZmZmZmxn9AzczMzMxcdkAzMzMzMxOBQJqZmZmZIXRAAAAAAADQgEBmZmZmZt56QJqZmZmZeX9AMzMzMzN7fkDNzMzMzAx7QAAAAAAAIG1AAAAAAAAof0CamZmZmW2AQJqZmZmZIXxAMzMzMzOHgEDNzMzMzCx4QDMzMzMzE2JAmpmZmZnpbkAAAAAAACh+QJqZmZmZIXxAMzMzMzPjdECamZmZmbl6QDMzMzMzI29AZmZmZmbGfEAAAAAAAMh5QM3MzMzM3HtAzczMzMz8e0CamZmZmXF3QDMzMzMzc3FAmpmZmZmxeUDNzMzMzJxtQDMzMzMzB4BAMzMzMzPTfkCamZmZmeF6QGZmZmZmRnBAAAAAAACIdUBmZmZmZs53QJqZmZmZGXJAmpmZmZk5dkDNzMzMzCx8QDMzMzMz+39AZmZmZmZeeEAAAAAAAMBvQAAAAAAA0HtAMzMzMzMzfUBmZmZmZm50QAAAAAAAOH5AAAAAAAAocEAzMzMzMyNqQGZmZmZmbn1AmpmZmZmRf0BmZmZmZk58QJqZmZmZWXpAMzMzMzMjaUCamZmZmXF4QJqZmZmZcX9AzczMzMy8dEAzMzMzM3t6QAAAAAAACHZAMzMzMzMLeUBmZmZmZh50QJqZmZmZuXlAzczMzMzkfEDNzMzMzMiAQJqZmZmZaXVAZmZmZmZGf0CamZmZmeF\u002fQM3MzMzMlHRAmpmZmZkRc0DNzMzMzLiAQAAAAAAAsH1AAAAAAAC4dkAAAAAAAJhwQAAAAAAASIBAmpmZmZn5Z0BmZmZmZgZ4QJqZmZmZRYBAMzMzMzNTfkAAAAAAAFB0QGZmZmZmHn9AzczMzMzcdEDNzMzMzFx0QJqZmZmZaX1AZmZmZmZ2ckAzMzMzM8t7QAAAAAAA2HxAAAAAAACodECamZmZmdFxQJqZmZmZMXxAZmZmZmYma0CamZmZmQF3QAAAAAAAoG5AAAAAAACYeUAAAAAAAPBsQJqZmZmZkXVAzczMzMw8ekCamZmZmZGAQJqZmZmZiXxAMzMzMzPzbUAAAAAAAFB6QAAAAAAAYHlAAAAAAADYcEAzMzMzM4NzQM3MzMzMBHFAmpmZmZnZeECamZmZmfF7QJqZmZmZ8XhAzczMzMwsc0DNzMzMzIx3QJqZmZmZSX9AzczMzMyMbUBmZmZmZuZ3QAAAAAAAyHhAAAAAAABwbUCamZmZmdl5QDMzMzMzG3VAmpmZmZl5bECamZmZmcl6QDMzMzMzW3NAMzMzMzOzdkAAAAAAAAhxQAAAAAAAAIBAMzMzMzMjdUAAAAAAAEh2QGZmZmZmjnVAZmZmZmbmfUAzMzMzM2NyQM3MzMzMTGtAAAAAAADQfkAzMzMzMyN8QJqZmZmZsXRAAAAAAADwdkBmZmZmZkZ2QM3MzMzM3HxAAAAAAACwf0DNzMzMzPxrQGZmZmZmZnJAAAAAAACwdUCamZmZmWF\u002fQAAAAAAA2HJAAAAAAACId0BmZmZmZjqAQJqZmZmZQXdAMzMzMzPLf0AzMzMzM2txQDMzMzMzA31AmpmZmZl5dEAzMzMzM4OAQAAAAAAAaHdAzczMzMzsdUCamZmZmRl2QDMzMzMzD4BAmpmZmZnJdkBmZmZmZn58QGZmZmZm3nRAMzMzMzP\u002fgEAAAAAAAFB5QGZmZmZmznJAMzMzMzPre0DNzMzMzBx7QDMzMzMzD4BAMzMzMzOrcEAAAAAAAAB+QDMzMzMzQ29AAAAAAAB4cUCamZmZmUl+QM3MzMzMBIFAAAAAAAC4dECamZmZmZF6QDMzMzMzg25AMzMzMzPjd0AzMzMzMzt\u002fQDMzMzMzq3VAzczMzMyEfkCamZmZmZl9QAAAAAAAsH1AAAAAAABIdUDNzMzMzCxyQGZmZmZmPnpAAAAAAACIfEAzMzMzM3t6QJqZmZmZ2XNAAAAAAABYekAzMzMzM+NxQGZmZmZmVn9AAAAAAACQdUBmZmZmZr57QAAAAAAAMIBAAAAAAADwaEAzMzMzM7t7QGZmZmZmBnVAMzMzMzM7eECamZmZmWl\u002fQJqZmZmZmXxAMzMzMzN7dkBmZmZmZh57QAAAAAAAUHVAMzMzMzOLeEBmZmZmZg52QJqZmZmZKXVAmpmZmZnpdUAAAAAAADBpQJqZmZmZGWtAAAAAAAAQa0DNzMzMzBx3QAAAAAAAcHZAZmZmZmaygEBmZmZmZgqAQM3MzMzMFHBAmpmZmZlxd0DNzMzMzOx3QM3MzMzM9HtAmpmZmZmxfECamZmZmZF7QDMzMzMzo2hAMzMzMzNreECamZmZmYl+QAAAAAAAwHpAMzMzMzNDc0DNzMzMzBxzQAAAAAAAgH1AMzMzMzPDf0CamZmZmfl9QGZmZmZmNn9AAAAAAADwfkAzMzMzM3NvQDMzMzMzH4BAMzMzMzMzckDNzMzMzGR9QDMzMzMzk3hAMzMzMzNbdEAAAAAAAPh0QM3MzMzMnHVAAAAAAAC4c0AAAAAAANhyQGZmZmZmjndAAAAAAAAQdEAAAAAAAJBnQDMzMzMzs3VAMzMzMzMbdUDNzMzMzJR\u002fQGZmZmZmVn5AAAAAAAB4c0CamZmZmXl\u002fQAAAAAAAYG9AzczMzMykgEAAAAAAAEBgQJqZmZmZcXNAAAAAAACIdEBmZmZmZgZ6QM3MzMzMrGNAAAAAAABwf0AzMzMzM+NxQJqZmZmZiXJAAAAAAACwfECamZmZmRl7QJqZmZmZwXBAmpmZmZlBd0AAAAAAALh8QGZmZmZmPnJAmpmZmZnhcECamZmZmWF2QDMzMzMzW3dAZmZmZmbOd0DNzMzMzMx\u002fQGZmZmZmFmxAAAAAAABwekAzMzMzMwNxQJqZmZmZHYFAmpmZmZkZf0AzMzMzM\u002ft2QDMzMzMzN4BAAAAAAACQakDNzMzMzGx9QM3MzMzMjIBAZmZmZmZGeUAzMzMzM\u002ft6QDMzMzMzM3lAmpmZmZkRd0CamZmZmbl7QAAAAAAAuHtAzczMzMwUf0AzMzMzM9N+QDMzMzMz03RAAAAAAACIdUDNzMzMzBR\u002fQGZmZmZmrn9AZmZmZmYOfEDNzMzMzPR\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\u002fnpAAAAAAABQc0AAAAAAAKh\u002fQGZmZmZm3nZAZmZmZmaSgECamZmZmfF8QDMzMzMzo3lAAAAAAACAdkCamZmZmaF7QM3MzMzMLG5AAAAAAACYc0AAAAAAAFBuQAAAAAAAQHdAmpmZmZkRfkCamZmZmVF2QDMzMzMzY3hAzczMzMxEdkCamZmZmYFyQAAAAAAA4HFAMzMzMzMTckAAAAAAABB2QAAAAAAAQHFAzczMzMzEfUAAAAAAAEB2QDMzMzMza3VAZmZmZmYef0AzMzMzM+N0QAAAAAAANIBAAAAAAADQf0CamZmZmQWBQGZmZmZm3nVAMzMzMzOLeEBmZmZmZsZ1QGZmZmZm\u002fnpAZmZmZmaGd0AzMzMzMyN9QGZmZmZmJnZAzczMzMz0dEBmZmZmZjZ8QJqZmZmZIXJAMzMzMzMreECamZmZmXF8QM3MzMzM7GhAMzMzMzN7dkBmZmZmZo59QM3MzMzMJH9AMzMzMzNbdkDNzMzMzCR\u002fQM3MzMzMsIBAzczMzMz8e0CamZmZmXl\u002fQAAAAAAACHhAzczMzMzUgECamZmZmTFxQJqZmZmZAYFAmpmZmZkZekAAAAAAAIBzQM3MzMzMVHZAAAAAAAB4fEAAAAAAAPh4QDMzMzMzo25AmpmZmZlZcUAzMzMzM9eAQDMzMzMzG4BAMzMzMzN\u002fgEAzMzMzM9NxQM3MzMzMFH1AMzMzMzM7cEDNzMzMzNxvQAAAAAAAuHNAzczMzMzMc0AAAAAAAMB+QM3MzMzM9HxAzczMzMw0eUAzMzMzM+N5QM3MzMzMhH1AzczMzMz8Y0BmZmZmZlKAQAAAAAAA8H1AZmZmZmb2dUDNzMzMzFxwQGZmZmZmvnBAMzMzMzMTeUDNzMzMzDx3QM3MzMzMBIFAMzMzMzNbgEDNzMzMzHxvQAAAAAAAuIBAAAAAAAAQeEAzMzMzM9N+QGZmZmZmSoBAAAAAAACIcEBmZmZmZmZkQGZmZmZmZndAMzMzMzPDfUCamZmZmalzQGZmZmZmTnZAZmZmZmbufkAAAAAAAOh7QJqZmZmZ4XNAAAAAAADYdUAAAAAAALh1QAAAAAAA4HZAZmZmZmYugUAAAAAAAAB2QAAAAAAAWHFAAAAAAADAeUAAAAAAAAh7QDMzMzMz03hAAAAAAAAQa0AAAAAAANCAQGZmZmZmDn9AMzMzMzNzdkBmZmZmZtZ1QDMzMzMz04BAMzMzMzMza0DNzMzMzDxyQM3MzMzMPHVAmpmZmZlJfUAAAAAAAFCAQGZmZmZmFoFAAAAAAABwe0AzMzMzM2NnQGZmZmZmlnxAAAAAAAA4dEAzMzMzM6+AQM3MzMzM9HhAZmZmZmb+eEAAAAAAAPSAQAAAAAAA2HRAmpmZmZnZcUAzMzMzMzOAQDMzMzMzM3tAzczMzMw0gEDNzMzMzJiAQM3MzMzMfHNAZmZmZmZ+eECamZmZmQlxQAAAAAAAkHNAZmZmZmbagEAAAAAAAIBsQM3MzMzMJIBAzczMzMwseUDNzMzMzAR9QGZmZmZmZn1AAAAAAABgdUDNzMzMzPR2QDMzMzMz+35AmpmZmZmBdEAAAAAAADiAQAAAAAAA6H9AMzMzMzNDc0AAAAAAABhzQGZmZmZm1mZAzczMzMw8eEBmZmZmZoZvQM3MzMzMRHdAZmZmZmbSgECamZmZmfF6QAAAAAAAIHpAzczMzMwEekDNzMzMzLxuQGZmZmZmBnxAAAAAAACIckBmZmZmZmZ8QJqZmZmZEXxAmpmZmZkZaUAAAAAAAAh7QDMzMzMzA3ZAAAAAAABwfECamZmZmSFxQM3MzMzMTGJAAAAAAABAekAzMzMzMyNzQJqZmZmZIYFAzczMzMyUeUBmZmZmZiZ7QGZmZmZmJmtAzczMzMxcgEAAAAAAACh4QJqZmZmZuXFAmpmZmZlpdkAzMzMzMzuAQDMzMzMzM2xAzczMzMwMekAzMzMzM9N7QAAAAAAAuHBAMzMzMzPfgEAAAAAAAMB4QDMzMzMzL4BAZmZmZmaWcEDNzMzMzJRzQDMzMzMzC35AMzMzMzMDe0AzMzMzM8t4QM3MzMzMRHRAmpmZmZmJekDNzMzMzCSAQGZmZmZmrnlAzczMzMzse0AzMzMzM+N4QGZmZmZm9nBAAAAAAABQfUAAAAAAAHBpQJqZmZmZuXZAMzMzMzMTfkBmZmZmZkZzQGZmZmZmznZAMzMzMzMzc0DNzMzMzAx2QJqZmZmZ0X1AzczMzMyUcEDNzMzMzKx2QAAAAAAAMH5AmpmZmZnxdkCamZmZmRl1QDMzMzMzm3tAzczMzMwkeEDNzMzMzFR0QDMzMzMz82tAmpmZmZkBfEAzMzMzM9N3QJqZmZmZQXxAzczMzMxEeUAzMzMzM5t6QAAAAAAAIG5AmpmZmZl5fUDNzMzMzNiAQJqZmZmZ0X1AzczMzMxkf0CamZmZmTF6QJqZmZmZGXlAZmZmZmYOekAAAAAAAAhyQGZmZmZmnn1AMzMzMzNTeUAAAAAAAMh5QAAAAAAA0G5AMzMzMzOjdEAzMzMzMwuAQGZmZmZmFm5AMzMzMzObf0AAAAAAAMB0QDMzMzMzS3JAMzMzMzOXgEBmZmZmZiZ4QDMzMzMzY39AMzMzMzPjckAAAAAAAIBrQAAAAAAAEHlAMzMzMzPTckCamZmZmVlrQAAAAAAA4HJAZmZmZmbueEAzMzMzM+t0QDMzMzMz+4BAzczMzMxEc0AzMzMzM7NmQAAAAAAAMGtAMzMzMzPjbUDNzMzMzHxyQDMzMzMzk3pAmpmZmZlpfECamZmZmfF7QGZmZmZmxn5AMzMzMzMTdkCamZmZmTlxQJqZmZmZEXlAMzMzMzMTckAAAAAAAJhxQDMzMzMzg3lAmpmZmZkdgEAzMzMzM6t7QGZmZmZmbn9AMzMzMzODeUDNzMzMzNR4QJqZmZmZSW9AAAAAAAAYcUAAAAAAAKB0QM3MzMzMVHNAmpmZmZlhd0CamZmZmcF+QGZmZmZmtnVAzczMzMxEcEAAAAAAAJh9QM3MzMzMvHVAMzMzMzNDf0BmZmZmZq5yQGZmZmZmfnRAZmZmZmZee0AAAAAAABhzQAAAAAAAmHxAmpmZmZlxeEAAAAAAAEh9QM3MzMzMNHhAZmZmZmaOfEAzMzMzM+t5QGZmZmZmBnhAMzMzMzMbe0AzMzMzMzuAQAAAAAAAmHZAAAAAAACgaEDNzMzMzFx7QM3MzMzMHHhAZmZmZmbGe0CamZmZmZl9QDMzMzMz03JAmpmZmZkZekAAAAAAAFB7QGZmZmZmtm5AZmZmZmYmZUCamZmZmUGAQAAAAAAA6HVAZmZmZmbOeECamZmZmWFxQDMzMzMzO3dAMzMzMzO7fUAzMzMzM\u002fNmQGZmZmZmvnVAzczMzMzcfkCamZmZmSFzQGZmZmZmPnlAMzMzMzPrcEBmZmZmZqZ1QM3MzMzMfHFAZmZmZmbGe0DNzMzMzFR7QDMzMzMzU35AAAAAAADgdkAAAAAAACh6QGZmZmZmRntAmpmZmZk5cUAAAAAAAFh1QJqZmZmZ4XhAAAAAAAAgeUBmZmZmZh55QM3MzMzMQIBAZmZmZmYOdUDNzMzMzAiAQAAAAAAACIFAMzMzMzMbeEAAAAAAADh\u002fQM3MzMzM1HdAZmZmZmY2fkDNzMzMzFx6QDMzMzMzI3dAzczMzMyMdUBmZmZmZiqAQM3MzMzMRHtAmpmZmZlZekDNzMzMzCCAQGZmZmZmZnJAZmZmZmaufkAAAAAAAEh8QAAAAAAAKHVAMzMzMzPngEDNzMzMzDx\u002fQDMzMzMzy35AMzMzMzNLekAzMzMzMxeBQDMzMzMzK35AAAAAAACAfUDNzMzMzIx3QJqZmZmZSWxAmpmZmZnBckCamZmZmQF5QGZmZmZm3nZAZmZmZmZWb0CamZmZmfF+QM3MzMzM\u002fHFAzczMzMxcgECamZmZmfl6QAAAAAAAGHFAZmZmZmbGeEBmZmZmZs6AQAAAAAAA5IBAMzMzMzOTekAzMzMzM7N\u002fQDMzMzMzU3tAmpmZmZlZf0DNzMzMzJx1QJqZmZmZiXJAMzMzMzOze0AzMzMzM2N6QAAAAAAAWHBAmpmZmZkBfkDNzMzMzCR8QM3MzMzMJIFAAAAAAABAc0CamZmZmRF1QAAAAAAAAH1AmpmZmZkhdUDNzMzMzPxoQJqZmZmZCXtAZmZmZmb2YkBmZmZmZtZ9QJqZmZmZmXVAMzMzMzOLeEAzMzMzM5t0QDMzMzMzu3pAZmZmZmbuc0AzMzMzM\u002fN+QM3MzMzM7GtAAAAAAABcgECamZmZmflyQDMzMzMzC3dAAAAAAACAgEAzMzMzM0N2QM3MzMzMRH9AmpmZmZlBe0CamZmZmXF\u002fQM3MzMzMhHdAZmZmZmaud0AzMzMzMzN9QGZmZmZmPntAZmZmZmbGdECamZmZmZl2QAAAAAAAnIBAAAAAAACgeUBmZmZmZlZyQM3MzMzMRHJAZmZmZmaOf0AAAAAAAIB1QDMzMzMzA35AAAAAAADgZkAzMzMzM+N3QGZmZmZm5ndAzczMzMx0dkAzMzMzMyt9QM3MzMzM1HdAAAAAAADoc0AAAAAAAOB7QJqZmZmZwX5AzczMzMwscUBmZmZmZrZ\u002fQDMzMzMzS35AMzMzMzM7eECamZmZmcF4QM3MzMzMxHdAzczMzMyEckDNzMzMzJx0QJqZmZmZCW1AzczMzMx8b0CamZmZmel+QDMzMzMzI3pAzczMzMx0fUBmZmZmZuZtQM3MzMzMTHtAZmZmZmbefUAzMzMzM4t4QAAAAAAAgGdAMzMzMzOzbkAzMzMzM9N4QJqZmZmZZYBAmpmZmZm9gEAzMzMzM6t3QDMzMzMze3xAAAAAAABgfEAAAAAAAKBjQJqZmZmZAYFAmpmZmZnpc0CamZmZmel2QDMzMzMzA2xAzczMzMzMdkAAAAAAAEh2QAAAAAAAIHhAmpmZmZl5f0AzMzMzM0OAQM3MzMzMxHZAMzMzMzMrekAAAAAAAMSAQGZmZmZm7n1AZmZmZmb+d0AAAAAAAAB3QGZmZmZmxn1AAAAAAADgdkAAAAAAAAh5QGZmZmZmjoBAAAAAAABQc0AzMzMzM3N2QJqZmZmZYXtAZmZmZmZucEDNzMzMzPR+QGZmZmZm1npAmpmZmZkFgEBmZmZmZrqAQAAAAAAAmHhAAAAAAABYfkBmZmZmZm5zQGZmZmZmHntAAAAAAAC8gECamZmZmalgQGZmZmZmHnhAZmZmZmY+fEAzMzMzMxNyQDMzMzMzo35AmpmZmZlBe0AzMzMzMwt4QGZmZmZmpmxAZmZmZmY2b0AAAAAAAMB9QDMzMzMzM3VAmpmZmZlZdkAzMzMzM5twQGZmZmZmHnlAZmZmZmYedkAAAAAAAEB6QAAAAAAAmHhAmpmZmZmxcUCamZmZmbF0QDMzMzMz43tAmpmZmZkhcEAzMzMzM2NxQJqZmZmZsXpAMzMzMzNDaUDNzMzMzCx0QAAAAAAA8HdAzczMzMy0fkCamZmZmaGAQJqZmZmZfYBAAAAAAACId0DNzMzMzPxzQJqZmZmZQX5AmpmZmZlJaUDNzMzMzPx6QM3MzMzMxHBAmpmZmZlJd0DNzMzMzPx1QGZmZmZmnnpAAAAAAAAgekDNzMzMzJx3QDMzMzMzQ35AzczMzMwsgUDNzMzMzKx+QM3MzMzM7HZAzczMzMwkfUDNzMzMzAR4QDMzMzMz+3VAMzMzMzNLc0CamZmZmUF2QGZmZmZmVndAZmZmZmZueUCamZmZmQmAQAAAAAAAYH9AMzMzMzPzd0BmZmZmZiZtQM3MzMzMjHxAMzMzMzOzbEBmZmZmZqZxQDMzMzMzp4BAmpmZmZkxe0DNzMzMzOxwQDMzMzMzU3ZAMzMzMzP7c0DNzMzMzPR4QM3MzMzMpH9AMzMzMzO7dUAAAAAAAICAQAAAAAAAUGZAzczMzMwMgUDNzMzMzCx\u002fQAAAAAAA0HJAMzMzMzMzdUBmZmZmZj59QDMzMzMzu3xAmpmZmZkhekCamZmZmdlzQDMzMzMzA3VAmpmZmZnJekAzMzMzM5N0QM3MzMzMtHNAmpmZmZnxdEAzMzMzMw+AQJqZmZmZnYBAzczMzMwcgEAAAAAAAGhwQM3MzMzM9HxAmpmZmZkRekCamZmZmSlnQM3MzMzMjHNAmpmZmZnhc0BmZmZmZoZ7QJqZmZmZSYBAAAAAAAAYc0AzMzMzM7OAQAAAAAAAyH1AmpmZmZkZfUDNzMzMzJxxQM3MzMzMlHNAzczMzMwEf0DNzMzMzNyAQDMzMzMz43VAAAAAAABQckAzMzMzM2NoQM3MzMzM1HRAAAAAAACcgEDNzMzMzDR4QAAAAAAAaIBAAAAAAACQckAzMzMzM4t7QGZmZmZmtn9AmpmZmZkJcEBmZmZmZpZ1QJqZmZmZEXNAMzMzMzNrd0AzMzMzMxt4QM3MzMzM7H1AAAAAAABAfUAAAAAAANhyQM3MzMzMBHJAmpmZmZkBeECamZmZmUFyQM3MzMzM7IBAZmZmZmY+dkAzMzMzMwt2QDMzMzMzM39AZmZmZmZGcUDNzMzMzKCAQM3MzMzMTHlAZmZmZmY+c0AAAAAAAAh4QJqZmZmZSWFAAAAAAABofUBmZmZmZjZ4QDMzMzMzs3lAmpmZmZmZckDNzMzMzCRzQDMzMzMzm3hAMzMzMzNjeUAAAAAAAEh0QM3MzMzMoIBAmpmZmZkZbUCamZmZmdl+QDMzMzMzC3tAAAAAAABwfEAAAAAAAFBuQDMzMzMzg4BAMzMzMzNzf0BmZmZmZjZ7QGZmZmZmhnRAmpmZmZnheUAzMzMzM5t1QDMzMzMzW39AmpmZmZkpdUAzMzMzM0N3QJqZmZmZaWxAzczMzMyEfUDNzMzMzBx2QJqZmZmZQXVAzczMzMysdkBmZmZmZuZ3QAAAAAAAoHlAMzMzMzODeUCamZmZmQF3QGZmZmZmKoBAMzMzMzPDakDNzMzMzCR1QGZmZmZmhoBAZmZmZmZOgEBmZmZmZiZ4QDMzMzMz63ZAmpmZmZlxeEAzMzMzM7t9QDMzMzMz825AzczMzMxMf0BmZmZmZoZuQM3MzMzMvHNAmpmZmZlhfUAzMzMzMxOAQDMzMzMzo2ZAzczMzMxcbkAAAAAAABB2QDMzMzMza3hAzczMzMz8ekAAAAAAAGB+QGZmZmZmCoFAAAAAAAAAgEAzMzMzM2eAQAAAAAAAQHFAZmZmZmZeeEDNzMzMzKx+QDMzMzMzU2hAMzMzMzMLeUBmZmZmZi6AQM3MzMzMnHlAzczMzMzMeEAzMzMzM+t8QAAAAAAAoHJAMzMzMzO7e0BmZmZmZr56QAAAAAAAsHxAZmZmZmauckAAAAAAAOh3QM3MzMzMXHBAMzMzMzMjf0DNzMzMzHRxQJqZmZmZSX1AmpmZmZmhd0AzMzMzM+t1QAAAAAAAKHpAzczMzMx0dUBmZmZmZkZ\u002fQJqZmZmZKYBAmpmZmZlJfEBmZmZmZlZ8QAAAAAAA0HhAAAAAAABgb0BmZmZmZu55QM3MzMzMvGlAzczMzMxkeUAAAAAAAGBzQM3MzMzMpHVAZmZmZmZmeEAzMzMzM0N4QJqZmZmZsX1AZmZmZma+fUAzMzMzM6N8QGZmZmZm7nFAMzMzMzOTf0AAAAAAAOB7QJqZmZmZUX5AAAAAAADIdkBmZmZmZlZsQM3MzMzMAIBAzczMzMy8eEBmZmZmZl51QM3MzMzMlIBAMzMzMzMrfkAzMzMzM\u002ft\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"},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"Network_QoS_Status=Micro-Burst Buffer Congestion Alert\u003cbr\u003ePacket Latency (Microseconds)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Micro-Burst Buffer Congestion Alert","marker":{"color":"#e11d48","pattern":{"shape":""}},"name":"Micro-Burst Buffer Congestion Alert","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Packet Latency (Microseconds)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Network_QoS_Status"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">The vehicle network maintains a lightning-fast median latency of 340 microseconds (0.34 ms), providing instantaneous communication between front, rear, and central compute zones.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Consolidate up to 80 distributed ECUs into 4 zonal controllers, cutting vehicle wiring weight by 35 kg and saving $5.4M in manufacturing costs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Average Latency Across Network Bandwidth Brackets
+                            </h5>
+                            <small class="text-slate-600">Demonstrates consistent microsecond latency even as throughput climbs to 9 Gbps</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Bandwidth Tiers</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="08f297c0-066f-4eac-9654-e3289f540094" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("08f297c0-066f-4eac-9654-e3289f540094")) {                    Plotly.newPlot(                        "08f297c0-066f-4eac-9654-e3289f540094",                        [{"hovertemplate":"Bandwidth Bracket=%{x}\u003cbr\u003eAverage Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"\u003c2 Gbps","marker":{"color":"rgb(136, 204, 238)","pattern":{"shape":""}},"name":"\u003c2 Gbps","orientation":"v","showlegend":true,"textposition":"auto","x":["\u003c2 Gbps"],"xaxis":"x","y":{"dtype":"f8","bdata":"uM2CkfEMckA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Bandwidth Bracket=%{x}\u003cbr\u003eAverage Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"2-4 Gbps","marker":{"color":"rgb(204, 102, 119)","pattern":{"shape":""}},"name":"2-4 Gbps","orientation":"v","showlegend":true,"textposition":"auto","x":["2-4 Gbps"],"xaxis":"x","y":{"dtype":"f8","bdata":"DUqFifcPd0A="},"yaxis":"y","type":"bar"},{"hovertemplate":"Bandwidth Bracket=%{x}\u003cbr\u003eAverage Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"4-6 Gbps","marker":{"color":"rgb(221, 204, 119)","pattern":{"shape":""}},"name":"4-6 Gbps","orientation":"v","showlegend":true,"textposition":"auto","x":["4-6 Gbps"],"xaxis":"x","y":{"dtype":"f8","bdata":"Bn1BX9BafEA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Bandwidth Bracket=%{x}\u003cbr\u003eAverage Latency (\u00b5s)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"6-9 Gbps","marker":{"color":"rgb(17, 119, 51)","pattern":{"shape":""}},"name":"6-9 Gbps","orientation":"v","showlegend":true,"textposition":"auto","x":["6-9 Gbps"],"xaxis":"x","y":{"dtype":"f8","bdata":"SLFdbfprgUA="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Bandwidth Bracket"},"categoryorder":"array","categoryarray":["\u003c2 Gbps","2-4 Gbps","4-6 Gbps","6-9 Gbps"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Average Latency (\u00b5s)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Bandwidth Bracket"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Latency scales gracefully from 180 µs under light loads to 490 µs under full 9 Gbps multi-camera video streaming loads, confirming strong network headroom.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Standardize Aptiv centralized zonal architectures for software-defined electric vehicles.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Networking System</th><th>Target Focus</th><th>Max Latency</th><th>Throughput Capacity</th><th>Standard</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Zonal Ethernet Gateway (TSN)</strong></td><td>Critical ADAS Video & Radar</td><td><span class="badge bg-success">0.42 ms Deterministic</span></td><td>10 Gbps High-Speed</td><td>IEEE 802.1 TSN Standard</td></tr>
+            <tr><td><strong>Buffer Memory Arbitrator</strong></td><td>Micro-Burst Congestion Control</td><td><span class="badge bg-primary">Zero Packet Loss</span></td><td>Real-time Hardware</td><td>ISO 26262 ASIL-D</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Time-Aware Shaper (TAS) Configuration:</strong> Enforce IEEE 802.1Qbv priority time-slots for ADAS video streams.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Buffer Queue Partitioning:</strong> Dedicate 2MB isolated static memory for safety-critical CAN-to-Ethernet frames.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Infotainment Rate Limiting:</strong> Cap non-critical background software download burst speeds to 500 Mbps.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>25Gbps Optical Automotive Backbone:</strong> Test multi-gigabit optical fiber lines for next-generation lidar processing.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Software-Defined Vehicle (SDV) OS:</strong> Deploy centralized containerized microservices across zonal compute nodes.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Over-The-Air (OTA) Dual Bank Flashing:</strong> Flash complete vehicle software updates in under 10 minutes via high-speed Ethernet.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$5.4M Harness Weight & Assembly Savings:</strong> Zonal architecture eliminates 2,000 meters of copper wiring and cuts 35 kg of vehicle weight.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Accelerated Software Feature Releases:</strong> Centralized compute enables rapid over-the-air feature rollouts and new subscription revenues.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This Aptiv / Rivian centralized zonal networking system guarantees deterministic in-vehicle data communication:</p>
+    <ul>
+        <li><strong>Time-Sensitive Networking (TSN):</strong> Uses IEEE 802.1Qbv time-aware scheduling to deliver sensor video in under 450 microseconds.</li>
+        <li><strong>Buffer Congestion Prevention:</strong> Isolates static memory pools to guarantee zero dropped packets during sudden sensor data bursts.</li>
+        <li><strong>Business Value:</strong> Eliminates 35 kg of copper wiring, cuts manufacturing costs by $5.4M, and enables the software-defined vehicle era.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Packet_Stream_ID</th><th>Link_Bandwidth_Mbps</th><th>Micro_Burst_Size_kB</th><th>Packet_Latency_Microseconds</th><th>Gateway_Buffer_Util_pct</th><th>Network_QoS_Status</th></tr></thead><tbody><tr><td>APTIV-ZONAL-1000</td><td>4189.40</td><td>15.90</td><td>335.20</td><td>41.70</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr><tr><td>APTIV-ZONAL-1001</td><td>2256.60</td><td>54.60</td><td>280.50</td><td>21.30</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr><tr><td>APTIV-ZONAL-1002</td><td>3500.30</td><td>38.40</td><td>240.10</td><td>36.10</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr><tr><td>APTIV-ZONAL-1003</td><td>2842.50</td><td>137.20</td><td>374.30</td><td>41.60</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr><tr><td>APTIV-ZONAL-1004</td><td>2425.10</td><td>24.10</td><td>213.80</td><td>29.70</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr><tr><td>APTIV-ZONAL-1005</td><td>6969.20</td><td>140.00</td><td>640.10</td><td>74.60</td><td><span class="badge-status-alert">Micro-Burst Buffer Congestion Alert</span></td></tr><tr><td>APTIV-ZONAL-1006</td><td>7213.20</td><td>141.50</td><td>589.60</td><td>83.50</td><td><span class="badge-status-alert">Micro-Burst Buffer Congestion Alert</span></td></tr><tr><td>APTIV-ZONAL-1007</td><td>3766.60</td><td>63.20</td><td>403.00</td><td>40.10</td><td><span class="badge-status-pass">Time-Sensitive Network (TSN) Compliant</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../29_magna_smart_eaxle_vectoring/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: Magna Smart eAxle
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../31_ferrari_mguk_hybrid_deployment/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Ferrari Hybrid MGU-K <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

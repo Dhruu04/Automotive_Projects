@@ -1,0 +1,3001 @@
+Test_Run_ID,Vehicle_Speed_kmh,Engine_Speed_RPM,Cabin_Noise_dB,Engine_Mount_Vibe_G,Harshness_Status
+BMW-NVH-1000,121.8,2816,67.2,0.175,Luxury Quiet Standard
+BMW-NVH-1001,55.4,1280,61.4,0.143,Luxury Quiet Standard
+BMW-NVH-1002,95.4,2291,65.7,0.187,Luxury Quiet Standard
+BMW-NVH-1003,145.4,3512,78.5,0.265,Unwanted Boom / Hum
+BMW-NVH-1004,74.3,1856,63.1,0.147,Luxury Quiet Standard
+BMW-NVH-1005,52.4,1210,60.8,0.128,Luxury Quiet Standard
+BMW-NVH-1006,33.4,861,54.7,0.133,Luxury Quiet Standard
+BMW-NVH-1007,93.0,2124,63.4,0.188,Luxury Quiet Standard
+BMW-NVH-1008,65.8,1555,62.3,0.176,Luxury Quiet Standard
+BMW-NVH-1009,80.6,1876,62.0,0.149,Luxury Quiet Standard
+BMW-NVH-1010,178.6,4183,82.7,0.256,Unwanted Boom / Hum
+BMW-NVH-1011,65.7,1572,60.9,0.129,Luxury Quiet Standard
+BMW-NVH-1012,42.2,956,58.2,0.117,Luxury Quiet Standard
+BMW-NVH-1013,130.4,3131,71.7,0.214,Luxury Quiet Standard
+BMW-NVH-1014,123.2,3063,72.6,0.224,Luxury Quiet Standard
+BMW-NVH-1015,71.1,1555,63.4,0.083,Luxury Quiet Standard
+BMW-NVH-1016,99.9,2410,64.2,0.15,Luxury Quiet Standard
+BMW-NVH-1017,47.8,1161,59.3,0.111,Luxury Quiet Standard
+BMW-NVH-1018,41.1,915,60.0,0.066,Luxury Quiet Standard
+BMW-NVH-1019,165.1,3809,80.0,0.237,Unwanted Boom / Hum
+BMW-NVH-1020,149.1,3603,73.7,0.153,Luxury Quiet Standard
+BMW-NVH-1021,156.1,3829,80.6,0.236,Unwanted Boom / Hum
+BMW-NVH-1022,152.3,3595,74.7,0.193,Luxury Quiet Standard
+BMW-NVH-1023,178.6,4334,80.4,0.219,Luxury Quiet Standard
+BMW-NVH-1024,116.6,3012,68.6,0.197,Luxury Quiet Standard
+BMW-NVH-1025,152.1,3730,73.2,0.205,Luxury Quiet Standard
+BMW-NVH-1026,93.2,2235,65.8,0.242,Luxury Quiet Standard
+BMW-NVH-1027,34.1,814,61.1,0.099,Luxury Quiet Standard
+BMW-NVH-1028,98.1,2410,65.1,0.168,Luxury Quiet Standard
+BMW-NVH-1029,45.8,1107,58.4,0.133,Luxury Quiet Standard
+BMW-NVH-1030,152.6,3563,76.3,0.203,Luxury Quiet Standard
+BMW-NVH-1031,134.7,3227,69.8,0.203,Luxury Quiet Standard
+BMW-NVH-1032,114.8,2724,66.5,0.156,Luxury Quiet Standard
+BMW-NVH-1033,71.1,1703,59.1,0.178,Luxury Quiet Standard
+BMW-NVH-1034,179.8,4316,80.4,0.271,Unwanted Boom / Hum
+BMW-NVH-1035,50.7,1202,60.0,0.191,Luxury Quiet Standard
+BMW-NVH-1036,122.3,3060,71.0,0.202,Luxury Quiet Standard
+BMW-NVH-1037,102.8,2434,65.9,0.153,Luxury Quiet Standard
+BMW-NVH-1038,90.8,2192,62.4,0.211,Luxury Quiet Standard
+BMW-NVH-1039,139.2,3370,74.5,0.199,Luxury Quiet Standard
+BMW-NVH-1040,78.4,1868,64.0,0.107,Luxury Quiet Standard
+BMW-NVH-1041,90.1,2177,65.9,0.142,Luxury Quiet Standard
+BMW-NVH-1042,77.8,1831,64.7,0.167,Luxury Quiet Standard
+BMW-NVH-1043,172.1,4029,77.2,0.209,Luxury Quiet Standard
+BMW-NVH-1044,167.8,3829,76.0,0.199,Luxury Quiet Standard
+BMW-NVH-1045,152.1,3718,71.2,0.199,Luxury Quiet Standard
+BMW-NVH-1046,35.1,931,56.0,0.159,Luxury Quiet Standard
+BMW-NVH-1047,171.5,4125,76.2,0.192,Luxury Quiet Standard
+BMW-NVH-1048,172.6,4143,77.0,0.22,Luxury Quiet Standard
+BMW-NVH-1049,151.0,3569,76.0,0.253,Unwanted Boom / Hum
+BMW-NVH-1050,102.2,2233,68.5,0.174,Luxury Quiet Standard
+BMW-NVH-1051,175.0,4338,77.7,0.194,Luxury Quiet Standard
+BMW-NVH-1052,92.5,2137,66.4,0.156,Luxury Quiet Standard
+BMW-NVH-1053,77.8,1846,64.9,0.124,Luxury Quiet Standard
+BMW-NVH-1054,32.5,825,56.3,0.125,Luxury Quiet Standard
+BMW-NVH-1055,35.7,835,54.7,0.103,Luxury Quiet Standard
+BMW-NVH-1056,38.0,802,57.7,0.164,Luxury Quiet Standard
+BMW-NVH-1057,49.2,1208,56.0,0.111,Luxury Quiet Standard
+BMW-NVH-1058,35.0,1014,58.6,0.074,Luxury Quiet Standard
+BMW-NVH-1059,64.0,1516,60.2,0.139,Luxury Quiet Standard
+BMW-NVH-1060,111.6,2434,68.7,0.181,Luxury Quiet Standard
+BMW-NVH-1061,56.8,1402,61.3,0.17,Luxury Quiet Standard
+BMW-NVH-1062,56.9,1392,57.8,0.114,Luxury Quiet Standard
+BMW-NVH-1063,52.4,1152,58.2,0.151,Luxury Quiet Standard
+BMW-NVH-1064,132.5,3144,70.8,0.187,Luxury Quiet Standard
+BMW-NVH-1065,100.4,2360,64.2,0.118,Luxury Quiet Standard
+BMW-NVH-1066,145.2,3443,82.6,0.228,Unwanted Boom / Hum
+BMW-NVH-1067,130.3,3183,68.2,0.192,Luxury Quiet Standard
+BMW-NVH-1068,96.2,2446,66.8,0.175,Luxury Quiet Standard
+BMW-NVH-1069,119.3,2838,67.4,0.218,Luxury Quiet Standard
+BMW-NVH-1070,99.2,2368,64.0,0.195,Luxury Quiet Standard
+BMW-NVH-1071,174.5,4118,80.2,0.254,Unwanted Boom / Hum
+BMW-NVH-1072,52.2,1256,63.8,0.15,Luxury Quiet Standard
+BMW-NVH-1073,166.0,3924,83.2,0.257,Unwanted Boom / Hum
+BMW-NVH-1074,104.7,2516,67.9,0.197,Luxury Quiet Standard
+BMW-NVH-1075,118.9,2772,70.1,0.184,Luxury Quiet Standard
+BMW-NVH-1076,132.7,3184,68.8,0.178,Luxury Quiet Standard
+BMW-NVH-1077,56.6,1369,64.4,0.125,Luxury Quiet Standard
+BMW-NVH-1078,159.7,3801,75.8,0.21,Luxury Quiet Standard
+BMW-NVH-1079,102.3,2542,68.1,0.129,Luxury Quiet Standard
+BMW-NVH-1080,40.4,1016,58.5,0.097,Luxury Quiet Standard
+BMW-NVH-1081,84.7,2031,58.2,0.198,Luxury Quiet Standard
+BMW-NVH-1082,84.2,2113,66.8,0.189,Luxury Quiet Standard
+BMW-NVH-1083,100.8,2589,64.6,0.181,Luxury Quiet Standard
+BMW-NVH-1084,56.9,1288,60.3,0.149,Luxury Quiet Standard
+BMW-NVH-1085,56.3,1370,58.3,0.104,Luxury Quiet Standard
+BMW-NVH-1086,172.4,4055,74.9,0.205,Luxury Quiet Standard
+BMW-NVH-1087,128.4,3172,71.4,0.228,Luxury Quiet Standard
+BMW-NVH-1088,50.2,1172,58.7,0.101,Luxury Quiet Standard
+BMW-NVH-1089,169.2,3999,74.8,0.22,Luxury Quiet Standard
+BMW-NVH-1090,156.3,3814,79.8,0.236,Unwanted Boom / Hum
+BMW-NVH-1091,37.9,905,58.0,0.098,Luxury Quiet Standard
+BMW-NVH-1092,60.6,1500,59.6,0.147,Luxury Quiet Standard
+BMW-NVH-1093,160.9,3845,81.2,0.254,Unwanted Boom / Hum
+BMW-NVH-1094,131.1,3037,70.5,0.178,Luxury Quiet Standard
+BMW-NVH-1095,74.6,1763,63.8,0.107,Luxury Quiet Standard
+BMW-NVH-1096,140.2,3292,76.0,0.233,Unwanted Boom / Hum
+BMW-NVH-1097,122.8,3010,69.6,0.214,Luxury Quiet Standard
+BMW-NVH-1098,61.6,1550,58.6,0.147,Luxury Quiet Standard
+BMW-NVH-1099,150.3,3546,77.8,0.236,Unwanted Boom / Hum
+BMW-NVH-1100,38.9,1087,59.0,0.126,Luxury Quiet Standard
+BMW-NVH-1101,76.2,1801,59.1,0.129,Luxury Quiet Standard
+BMW-NVH-1102,61.1,1434,60.2,0.141,Luxury Quiet Standard
+BMW-NVH-1103,175.8,4282,75.4,0.182,Luxury Quiet Standard
+BMW-NVH-1104,166.4,3922,73.3,0.185,Luxury Quiet Standard
+BMW-NVH-1105,131.5,3136,69.6,0.199,Luxury Quiet Standard
+BMW-NVH-1106,47.3,1191,55.4,0.08,Luxury Quiet Standard
+BMW-NVH-1107,173.7,4216,76.9,0.196,Luxury Quiet Standard
+BMW-NVH-1108,43.8,986,61.1,0.121,Luxury Quiet Standard
+BMW-NVH-1109,124.5,2854,69.0,0.234,Luxury Quiet Standard
+BMW-NVH-1110,165.4,3955,78.4,0.227,Unwanted Boom / Hum
+BMW-NVH-1111,81.0,1875,64.1,0.176,Luxury Quiet Standard
+BMW-NVH-1112,127.9,2914,71.9,0.22,Luxury Quiet Standard
+BMW-NVH-1113,168.8,4049,80.8,0.224,Unwanted Boom / Hum
+BMW-NVH-1114,86.1,1952,60.9,0.123,Luxury Quiet Standard
+BMW-NVH-1115,145.7,3564,77.5,0.235,Unwanted Boom / Hum
+BMW-NVH-1116,164.4,3914,78.9,0.236,Unwanted Boom / Hum
+BMW-NVH-1117,123.0,2964,68.1,0.182,Luxury Quiet Standard
+BMW-NVH-1118,52.7,1201,55.5,0.134,Luxury Quiet Standard
+BMW-NVH-1119,86.2,2004,64.4,0.163,Luxury Quiet Standard
+BMW-NVH-1120,125.4,3007,70.0,0.229,Luxury Quiet Standard
+BMW-NVH-1121,98.9,2400,63.2,0.163,Luxury Quiet Standard
+BMW-NVH-1122,109.8,2620,67.3,0.22,Luxury Quiet Standard
+BMW-NVH-1123,82.8,2023,61.9,0.179,Luxury Quiet Standard
+BMW-NVH-1124,129.0,3085,71.4,0.214,Luxury Quiet Standard
+BMW-NVH-1125,101.5,2495,65.4,0.21,Luxury Quiet Standard
+BMW-NVH-1126,98.2,2393,66.4,0.139,Luxury Quiet Standard
+BMW-NVH-1127,48.7,1121,53.6,0.109,Luxury Quiet Standard
+BMW-NVH-1128,91.9,2204,66.4,0.144,Luxury Quiet Standard
+BMW-NVH-1129,71.0,1630,61.4,0.119,Luxury Quiet Standard
+BMW-NVH-1130,82.0,2040,64.6,0.111,Luxury Quiet Standard
+BMW-NVH-1131,176.2,4239,81.8,0.238,Unwanted Boom / Hum
+BMW-NVH-1132,62.3,1590,61.0,0.12,Luxury Quiet Standard
+BMW-NVH-1133,132.4,3253,69.3,0.155,Luxury Quiet Standard
+BMW-NVH-1134,34.8,864,56.8,0.098,Luxury Quiet Standard
+BMW-NVH-1135,155.3,3713,83.9,0.248,Unwanted Boom / Hum
+BMW-NVH-1136,135.2,3281,68.6,0.161,Luxury Quiet Standard
+BMW-NVH-1137,174.9,4178,75.2,0.219,Luxury Quiet Standard
+BMW-NVH-1138,118.8,2826,68.9,0.203,Luxury Quiet Standard
+BMW-NVH-1139,62.6,1477,61.0,0.152,Luxury Quiet Standard
+BMW-NVH-1140,137.9,3283,70.7,0.173,Luxury Quiet Standard
+BMW-NVH-1141,34.6,781,57.4,0.131,Luxury Quiet Standard
+BMW-NVH-1142,92.8,2228,65.3,0.166,Luxury Quiet Standard
+BMW-NVH-1143,72.2,1702,62.3,0.137,Luxury Quiet Standard
+BMW-NVH-1144,45.9,1109,57.8,0.085,Luxury Quiet Standard
+BMW-NVH-1145,94.0,2271,64.8,0.151,Luxury Quiet Standard
+BMW-NVH-1146,156.1,3659,74.7,0.183,Luxury Quiet Standard
+BMW-NVH-1147,46.6,932,55.9,0.077,Luxury Quiet Standard
+BMW-NVH-1148,178.0,4257,83.0,0.235,Unwanted Boom / Hum
+BMW-NVH-1149,65.0,1557,62.6,0.126,Luxury Quiet Standard
+BMW-NVH-1150,138.2,3367,78.9,0.242,Unwanted Boom / Hum
+BMW-NVH-1151,129.1,3188,70.3,0.2,Luxury Quiet Standard
+BMW-NVH-1152,41.7,1032,58.0,0.113,Luxury Quiet Standard
+BMW-NVH-1153,134.6,3320,76.5,0.221,Unwanted Boom / Hum
+BMW-NVH-1154,69.8,1782,59.7,0.105,Luxury Quiet Standard
+BMW-NVH-1155,165.3,3956,79.8,0.263,Unwanted Boom / Hum
+BMW-NVH-1156,152.7,3691,79.1,0.262,Unwanted Boom / Hum
+BMW-NVH-1157,89.9,2138,65.7,0.174,Luxury Quiet Standard
+BMW-NVH-1158,153.0,3666,72.2,0.187,Luxury Quiet Standard
+BMW-NVH-1159,59.7,1594,59.8,0.089,Luxury Quiet Standard
+BMW-NVH-1160,108.4,2499,70.5,0.161,Luxury Quiet Standard
+BMW-NVH-1161,91.9,2172,67.8,0.185,Luxury Quiet Standard
+BMW-NVH-1162,168.9,4107,77.6,0.185,Luxury Quiet Standard
+BMW-NVH-1163,153.8,3575,74.4,0.152,Luxury Quiet Standard
+BMW-NVH-1164,105.2,2375,69.4,0.178,Luxury Quiet Standard
+BMW-NVH-1165,47.5,1082,59.7,0.154,Luxury Quiet Standard
+BMW-NVH-1166,31.7,774,57.4,0.094,Luxury Quiet Standard
+BMW-NVH-1167,167.0,3926,76.8,0.195,Luxury Quiet Standard
+BMW-NVH-1168,106.9,2490,66.1,0.221,Luxury Quiet Standard
+BMW-NVH-1169,156.5,3840,79.5,0.234,Unwanted Boom / Hum
+BMW-NVH-1170,44.2,952,58.8,0.107,Luxury Quiet Standard
+BMW-NVH-1171,150.5,3556,73.1,0.187,Luxury Quiet Standard
+BMW-NVH-1172,39.3,1049,57.4,0.142,Luxury Quiet Standard
+BMW-NVH-1173,125.3,2935,73.3,0.162,Luxury Quiet Standard
+BMW-NVH-1174,175.3,4145,78.9,0.216,Luxury Quiet Standard
+BMW-NVH-1175,89.6,2113,66.9,0.142,Luxury Quiet Standard
+BMW-NVH-1176,128.9,3184,71.9,0.182,Luxury Quiet Standard
+BMW-NVH-1177,62.2,1508,61.5,0.148,Luxury Quiet Standard
+BMW-NVH-1178,163.5,3936,83.7,0.274,Unwanted Boom / Hum
+BMW-NVH-1179,178.0,4361,84.0,0.26,Unwanted Boom / Hum
+BMW-NVH-1180,140.8,3375,70.9,0.183,Luxury Quiet Standard
+BMW-NVH-1181,126.2,2994,72.4,0.177,Luxury Quiet Standard
+BMW-NVH-1182,67.8,1564,60.4,0.124,Luxury Quiet Standard
+BMW-NVH-1183,101.4,2541,69.0,0.134,Luxury Quiet Standard
+BMW-NVH-1184,70.2,1737,64.0,0.122,Luxury Quiet Standard
+BMW-NVH-1185,160.2,3777,73.1,0.157,Luxury Quiet Standard
+BMW-NVH-1186,70.0,1663,60.9,0.151,Luxury Quiet Standard
+BMW-NVH-1187,176.0,4117,80.9,0.222,Unwanted Boom / Hum
+BMW-NVH-1188,62.0,1421,61.3,0.17,Luxury Quiet Standard
+BMW-NVH-1189,74.7,1775,59.6,0.118,Luxury Quiet Standard
+BMW-NVH-1190,140.5,3389,77.7,0.236,Unwanted Boom / Hum
+BMW-NVH-1191,31.9,638,57.8,0.113,Luxury Quiet Standard
+BMW-NVH-1192,34.5,939,57.5,0.115,Luxury Quiet Standard
+BMW-NVH-1193,140.1,3372,71.2,0.14,Luxury Quiet Standard
+BMW-NVH-1194,104.7,2484,68.2,0.127,Luxury Quiet Standard
+BMW-NVH-1195,62.7,1569,61.6,0.169,Luxury Quiet Standard
+BMW-NVH-1196,31.3,764,55.5,0.083,Luxury Quiet Standard
+BMW-NVH-1197,157.6,3757,79.8,0.227,Unwanted Boom / Hum
+BMW-NVH-1198,110.5,2665,65.9,0.181,Luxury Quiet Standard
+BMW-NVH-1199,138.5,3351,71.4,0.203,Luxury Quiet Standard
+BMW-NVH-1200,129.2,3148,70.5,0.191,Luxury Quiet Standard
+BMW-NVH-1201,155.8,3650,77.3,0.182,Luxury Quiet Standard
+BMW-NVH-1202,88.2,2224,69.7,0.192,Luxury Quiet Standard
+BMW-NVH-1203,93.9,2322,65.1,0.153,Luxury Quiet Standard
+BMW-NVH-1204,154.2,3491,70.2,0.176,Luxury Quiet Standard
+BMW-NVH-1205,100.4,2395,67.7,0.15,Luxury Quiet Standard
+BMW-NVH-1206,153.0,3646,78.7,0.249,Unwanted Boom / Hum
+BMW-NVH-1207,32.1,820,56.5,0.112,Luxury Quiet Standard
+BMW-NVH-1208,89.5,2024,68.5,0.137,Luxury Quiet Standard
+BMW-NVH-1209,49.3,1162,60.0,0.176,Luxury Quiet Standard
+BMW-NVH-1210,47.7,1043,56.4,0.136,Luxury Quiet Standard
+BMW-NVH-1211,60.9,1433,60.0,0.189,Luxury Quiet Standard
+BMW-NVH-1212,142.1,3414,74.6,0.196,Luxury Quiet Standard
+BMW-NVH-1213,169.5,4091,85.1,0.261,Unwanted Boom / Hum
+BMW-NVH-1214,87.1,2122,63.3,0.163,Luxury Quiet Standard
+BMW-NVH-1215,99.1,2454,65.9,0.191,Luxury Quiet Standard
+BMW-NVH-1216,161.0,3754,80.4,0.234,Unwanted Boom / Hum
+BMW-NVH-1217,152.2,3617,70.9,0.209,Luxury Quiet Standard
+BMW-NVH-1218,33.7,770,55.0,0.104,Luxury Quiet Standard
+BMW-NVH-1219,161.0,3806,78.9,0.235,Unwanted Boom / Hum
+BMW-NVH-1220,120.7,2766,69.4,0.188,Luxury Quiet Standard
+BMW-NVH-1221,107.5,2523,69.8,0.193,Luxury Quiet Standard
+BMW-NVH-1222,118.4,2841,69.9,0.195,Luxury Quiet Standard
+BMW-NVH-1223,150.0,3571,76.8,0.226,Unwanted Boom / Hum
+BMW-NVH-1224,56.0,1442,56.9,0.122,Luxury Quiet Standard
+BMW-NVH-1225,58.0,1326,61.8,0.134,Luxury Quiet Standard
+BMW-NVH-1226,68.7,1707,63.4,0.111,Luxury Quiet Standard
+BMW-NVH-1227,37.7,1082,62.4,0.095,Luxury Quiet Standard
+BMW-NVH-1228,112.9,2622,69.2,0.148,Luxury Quiet Standard
+BMW-NVH-1229,82.8,2029,65.0,0.15,Luxury Quiet Standard
+BMW-NVH-1230,167.5,4165,75.9,0.211,Luxury Quiet Standard
+BMW-NVH-1231,101.5,2339,66.3,0.187,Luxury Quiet Standard
+BMW-NVH-1232,45.7,966,62.0,0.134,Luxury Quiet Standard
+BMW-NVH-1233,52.9,1346,59.9,0.139,Luxury Quiet Standard
+BMW-NVH-1234,71.0,1736,62.8,0.109,Luxury Quiet Standard
+BMW-NVH-1235,147.2,3555,76.3,0.21,Luxury Quiet Standard
+BMW-NVH-1236,89.0,2097,65.5,0.154,Luxury Quiet Standard
+BMW-NVH-1237,149.8,3470,78.0,0.22,Unwanted Boom / Hum
+BMW-NVH-1238,95.0,2123,66.6,0.163,Luxury Quiet Standard
+BMW-NVH-1239,42.2,930,60.6,0.104,Luxury Quiet Standard
+BMW-NVH-1240,31.6,866,55.3,0.134,Luxury Quiet Standard
+BMW-NVH-1241,94.6,2265,64.9,0.202,Luxury Quiet Standard
+BMW-NVH-1242,129.4,3048,70.6,0.206,Luxury Quiet Standard
+BMW-NVH-1243,107.3,2506,66.2,0.18,Luxury Quiet Standard
+BMW-NVH-1244,117.0,2772,69.9,0.189,Luxury Quiet Standard
+BMW-NVH-1245,104.0,2460,66.6,0.192,Luxury Quiet Standard
+BMW-NVH-1246,141.1,3177,71.6,0.153,Luxury Quiet Standard
+BMW-NVH-1247,148.4,3517,70.3,0.189,Luxury Quiet Standard
+BMW-NVH-1248,147.2,3664,73.9,0.234,Unwanted Boom / Hum
+BMW-NVH-1249,49.1,1036,56.1,0.105,Luxury Quiet Standard
+BMW-NVH-1250,171.0,4124,82.1,0.277,Unwanted Boom / Hum
+BMW-NVH-1251,161.7,3872,80.7,0.273,Unwanted Boom / Hum
+BMW-NVH-1252,134.9,3269,71.6,0.147,Luxury Quiet Standard
+BMW-NVH-1253,170.5,4179,74.4,0.218,Luxury Quiet Standard
+BMW-NVH-1254,131.1,3166,70.1,0.22,Luxury Quiet Standard
+BMW-NVH-1255,119.2,2886,69.0,0.142,Luxury Quiet Standard
+BMW-NVH-1256,81.8,1889,62.7,0.163,Luxury Quiet Standard
+BMW-NVH-1257,42.5,1013,57.1,0.124,Luxury Quiet Standard
+BMW-NVH-1258,116.9,2845,66.9,0.156,Luxury Quiet Standard
+BMW-NVH-1259,32.6,842,58.7,0.12,Luxury Quiet Standard
+BMW-NVH-1260,112.9,2693,66.1,0.139,Luxury Quiet Standard
+BMW-NVH-1261,124.9,3027,74.4,0.177,Luxury Quiet Standard
+BMW-NVH-1262,131.8,3237,71.6,0.182,Luxury Quiet Standard
+BMW-NVH-1263,55.6,1315,61.4,0.104,Luxury Quiet Standard
+BMW-NVH-1264,116.6,2822,68.5,0.233,Luxury Quiet Standard
+BMW-NVH-1265,60.9,1619,59.6,0.202,Luxury Quiet Standard
+BMW-NVH-1266,67.7,1689,65.9,0.105,Luxury Quiet Standard
+BMW-NVH-1267,175.4,4104,81.3,0.253,Unwanted Boom / Hum
+BMW-NVH-1268,164.5,3960,81.9,0.239,Unwanted Boom / Hum
+BMW-NVH-1269,48.4,1115,61.7,0.113,Luxury Quiet Standard
+BMW-NVH-1270,162.2,3876,76.0,0.204,Luxury Quiet Standard
+BMW-NVH-1271,172.2,4208,83.9,0.267,Unwanted Boom / Hum
+BMW-NVH-1272,99.0,2387,65.5,0.158,Luxury Quiet Standard
+BMW-NVH-1273,91.9,2150,67.6,0.138,Luxury Quiet Standard
+BMW-NVH-1274,116.6,2959,65.6,0.161,Luxury Quiet Standard
+BMW-NVH-1275,87.5,2057,62.9,0.129,Luxury Quiet Standard
+BMW-NVH-1276,54.6,1281,59.8,0.18,Luxury Quiet Standard
+BMW-NVH-1277,127.3,2966,71.1,0.223,Luxury Quiet Standard
+BMW-NVH-1278,67.4,1687,61.0,0.118,Luxury Quiet Standard
+BMW-NVH-1279,128.8,3165,70.4,0.178,Luxury Quiet Standard
+BMW-NVH-1280,165.1,3947,78.7,0.254,Unwanted Boom / Hum
+BMW-NVH-1281,166.1,3917,78.0,0.185,Luxury Quiet Standard
+BMW-NVH-1282,139.4,3428,68.8,0.192,Luxury Quiet Standard
+BMW-NVH-1283,56.2,1127,56.5,0.13,Luxury Quiet Standard
+BMW-NVH-1284,92.6,2168,64.0,0.163,Luxury Quiet Standard
+BMW-NVH-1285,68.1,1659,59.8,0.157,Luxury Quiet Standard
+BMW-NVH-1286,140.6,3442,74.0,0.239,Unwanted Boom / Hum
+BMW-NVH-1287,85.7,1993,62.6,0.144,Luxury Quiet Standard
+BMW-NVH-1288,97.4,2360,66.1,0.166,Luxury Quiet Standard
+BMW-NVH-1289,170.5,3964,83.7,0.236,Unwanted Boom / Hum
+BMW-NVH-1290,152.0,3710,72.0,0.183,Luxury Quiet Standard
+BMW-NVH-1291,34.5,694,56.9,0.135,Luxury Quiet Standard
+BMW-NVH-1292,68.5,1611,61.2,0.131,Luxury Quiet Standard
+BMW-NVH-1293,116.9,2831,70.6,0.169,Luxury Quiet Standard
+BMW-NVH-1294,87.5,2029,62.6,0.139,Luxury Quiet Standard
+BMW-NVH-1295,146.7,3579,70.3,0.186,Luxury Quiet Standard
+BMW-NVH-1296,109.4,2664,67.4,0.161,Luxury Quiet Standard
+BMW-NVH-1297,47.4,1031,56.0,0.094,Luxury Quiet Standard
+BMW-NVH-1298,144.7,3549,74.8,0.159,Luxury Quiet Standard
+BMW-NVH-1299,58.8,1400,56.9,0.138,Luxury Quiet Standard
+BMW-NVH-1300,86.4,2130,65.1,0.156,Luxury Quiet Standard
+BMW-NVH-1301,30.0,735,57.8,0.143,Luxury Quiet Standard
+BMW-NVH-1302,172.0,4059,82.6,0.226,Unwanted Boom / Hum
+BMW-NVH-1303,134.8,3157,70.3,0.168,Luxury Quiet Standard
+BMW-NVH-1304,44.0,995,56.7,0.113,Luxury Quiet Standard
+BMW-NVH-1305,170.9,4154,76.3,0.2,Luxury Quiet Standard
+BMW-NVH-1306,77.2,1857,64.8,0.117,Luxury Quiet Standard
+BMW-NVH-1307,68.9,1657,64.4,0.088,Luxury Quiet Standard
+BMW-NVH-1308,69.7,1656,62.2,0.144,Luxury Quiet Standard
+BMW-NVH-1309,140.3,3406,76.4,0.24,Unwanted Boom / Hum
+BMW-NVH-1310,159.4,3742,81.5,0.224,Unwanted Boom / Hum
+BMW-NVH-1311,38.3,792,58.0,0.076,Luxury Quiet Standard
+BMW-NVH-1312,31.7,745,57.1,0.088,Luxury Quiet Standard
+BMW-NVH-1313,179.7,4086,79.5,0.203,Luxury Quiet Standard
+BMW-NVH-1314,90.8,2072,60.6,0.228,Luxury Quiet Standard
+BMW-NVH-1315,156.1,3851,74.0,0.19,Luxury Quiet Standard
+BMW-NVH-1316,41.8,1047,57.4,0.127,Luxury Quiet Standard
+BMW-NVH-1317,156.3,3618,73.7,0.215,Luxury Quiet Standard
+BMW-NVH-1318,33.3,863,54.4,0.12,Luxury Quiet Standard
+BMW-NVH-1319,93.0,2105,66.2,0.136,Luxury Quiet Standard
+BMW-NVH-1320,100.3,2449,67.6,0.103,Luxury Quiet Standard
+BMW-NVH-1321,64.0,1573,60.9,0.081,Luxury Quiet Standard
+BMW-NVH-1322,87.4,2108,64.3,0.146,Luxury Quiet Standard
+BMW-NVH-1323,88.1,2239,61.9,0.231,Luxury Quiet Standard
+BMW-NVH-1324,158.0,3819,74.3,0.206,Luxury Quiet Standard
+BMW-NVH-1325,50.8,1328,55.7,0.057,Luxury Quiet Standard
+BMW-NVH-1326,130.4,3243,74.9,0.227,Unwanted Boom / Hum
+BMW-NVH-1327,116.4,2794,67.0,0.199,Luxury Quiet Standard
+BMW-NVH-1328,49.8,1144,59.6,0.151,Luxury Quiet Standard
+BMW-NVH-1329,54.6,1338,58.2,0.146,Luxury Quiet Standard
+BMW-NVH-1330,92.9,2164,66.1,0.205,Luxury Quiet Standard
+BMW-NVH-1331,31.7,843,57.7,0.137,Luxury Quiet Standard
+BMW-NVH-1332,62.4,1492,59.5,0.146,Luxury Quiet Standard
+BMW-NVH-1333,78.2,1868,64.0,0.127,Luxury Quiet Standard
+BMW-NVH-1334,152.7,3575,79.7,0.237,Unwanted Boom / Hum
+BMW-NVH-1335,156.0,3849,74.2,0.216,Luxury Quiet Standard
+BMW-NVH-1336,109.1,2631,68.4,0.169,Luxury Quiet Standard
+BMW-NVH-1337,68.4,1579,58.8,0.122,Luxury Quiet Standard
+BMW-NVH-1338,40.5,823,59.5,0.103,Luxury Quiet Standard
+BMW-NVH-1339,161.3,3915,80.4,0.246,Unwanted Boom / Hum
+BMW-NVH-1340,98.8,2432,64.4,0.183,Luxury Quiet Standard
+BMW-NVH-1341,88.9,2231,65.4,0.107,Luxury Quiet Standard
+BMW-NVH-1342,93.8,2263,65.6,0.159,Luxury Quiet Standard
+BMW-NVH-1343,126.4,3230,69.4,0.16,Luxury Quiet Standard
+BMW-NVH-1344,111.2,2486,67.4,0.17,Luxury Quiet Standard
+BMW-NVH-1345,136.4,3330,67.1,0.161,Luxury Quiet Standard
+BMW-NVH-1346,36.7,842,60.8,0.168,Luxury Quiet Standard
+BMW-NVH-1347,124.0,2979,68.0,0.181,Luxury Quiet Standard
+BMW-NVH-1348,175.4,4180,83.2,0.252,Unwanted Boom / Hum
+BMW-NVH-1349,152.6,3653,75.7,0.217,Luxury Quiet Standard
+BMW-NVH-1350,144.2,3465,73.4,0.17,Luxury Quiet Standard
+BMW-NVH-1351,103.3,2465,64.5,0.184,Luxury Quiet Standard
+BMW-NVH-1352,48.8,1192,58.3,0.145,Luxury Quiet Standard
+BMW-NVH-1353,74.3,1840,62.5,0.152,Luxury Quiet Standard
+BMW-NVH-1354,33.9,827,57.4,0.099,Luxury Quiet Standard
+BMW-NVH-1355,42.1,967,55.8,0.144,Luxury Quiet Standard
+BMW-NVH-1356,36.3,831,56.1,0.139,Luxury Quiet Standard
+BMW-NVH-1357,98.3,2388,65.0,0.157,Luxury Quiet Standard
+BMW-NVH-1358,34.7,871,52.6,0.064,Luxury Quiet Standard
+BMW-NVH-1359,174.2,4169,80.7,0.225,Unwanted Boom / Hum
+BMW-NVH-1360,92.9,2219,68.8,0.196,Luxury Quiet Standard
+BMW-NVH-1361,86.1,1850,64.4,0.131,Luxury Quiet Standard
+BMW-NVH-1362,105.8,2503,66.5,0.178,Luxury Quiet Standard
+BMW-NVH-1363,37.1,947,56.1,0.155,Luxury Quiet Standard
+BMW-NVH-1364,139.4,3358,71.7,0.174,Luxury Quiet Standard
+BMW-NVH-1365,43.9,994,61.9,0.102,Luxury Quiet Standard
+BMW-NVH-1366,176.3,4169,85.0,0.248,Unwanted Boom / Hum
+BMW-NVH-1367,91.8,2205,68.8,0.175,Luxury Quiet Standard
+BMW-NVH-1368,148.2,3481,81.8,0.234,Unwanted Boom / Hum
+BMW-NVH-1369,175.1,4205,76.6,0.214,Luxury Quiet Standard
+BMW-NVH-1370,169.3,4046,78.2,0.3,Unwanted Boom / Hum
+BMW-NVH-1371,152.4,3635,73.2,0.217,Luxury Quiet Standard
+BMW-NVH-1372,168.2,3920,80.3,0.248,Unwanted Boom / Hum
+BMW-NVH-1373,136.7,3456,72.3,0.158,Luxury Quiet Standard
+BMW-NVH-1374,115.2,2701,69.2,0.216,Luxury Quiet Standard
+BMW-NVH-1375,155.8,3790,73.7,0.219,Luxury Quiet Standard
+BMW-NVH-1376,123.9,3040,68.8,0.222,Luxury Quiet Standard
+BMW-NVH-1377,42.2,1101,58.4,0.112,Luxury Quiet Standard
+BMW-NVH-1378,147.1,3546,72.5,0.191,Luxury Quiet Standard
+BMW-NVH-1379,83.6,1882,63.2,0.116,Luxury Quiet Standard
+BMW-NVH-1380,148.5,3509,70.9,0.205,Luxury Quiet Standard
+BMW-NVH-1381,116.7,2782,70.0,0.181,Luxury Quiet Standard
+BMW-NVH-1382,147.5,3516,76.9,0.24,Unwanted Boom / Hum
+BMW-NVH-1383,151.2,3696,74.4,0.187,Luxury Quiet Standard
+BMW-NVH-1384,79.7,1974,64.2,0.11,Luxury Quiet Standard
+BMW-NVH-1385,175.2,4272,84.7,0.296,Unwanted Boom / Hum
+BMW-NVH-1386,165.1,3931,82.2,0.292,Unwanted Boom / Hum
+BMW-NVH-1387,153.8,3760,81.8,0.262,Unwanted Boom / Hum
+BMW-NVH-1388,93.1,2354,65.5,0.12,Luxury Quiet Standard
+BMW-NVH-1389,43.4,1006,57.7,0.108,Luxury Quiet Standard
+BMW-NVH-1390,127.9,3211,70.8,0.189,Luxury Quiet Standard
+BMW-NVH-1391,77.0,1828,61.1,0.186,Luxury Quiet Standard
+BMW-NVH-1392,103.4,2599,67.4,0.177,Luxury Quiet Standard
+BMW-NVH-1393,148.2,3531,77.3,0.227,Unwanted Boom / Hum
+BMW-NVH-1394,85.3,1936,63.3,0.131,Luxury Quiet Standard
+BMW-NVH-1395,172.5,4267,82.5,0.286,Unwanted Boom / Hum
+BMW-NVH-1396,70.5,1709,58.8,0.154,Luxury Quiet Standard
+BMW-NVH-1397,48.8,1252,58.0,0.096,Luxury Quiet Standard
+BMW-NVH-1398,139.7,3277,79.0,0.223,Unwanted Boom / Hum
+BMW-NVH-1399,47.4,1134,60.1,0.118,Luxury Quiet Standard
+BMW-NVH-1400,169.9,4145,79.2,0.227,Unwanted Boom / Hum
+BMW-NVH-1401,34.0,826,54.3,0.103,Luxury Quiet Standard
+BMW-NVH-1402,96.7,2456,63.0,0.12,Luxury Quiet Standard
+BMW-NVH-1403,128.9,2985,69.5,0.263,Luxury Quiet Standard
+BMW-NVH-1404,43.5,989,56.8,0.152,Luxury Quiet Standard
+BMW-NVH-1405,39.1,868,57.9,0.112,Luxury Quiet Standard
+BMW-NVH-1406,170.9,4088,81.3,0.247,Unwanted Boom / Hum
+BMW-NVH-1407,170.5,4048,76.9,0.26,Unwanted Boom / Hum
+BMW-NVH-1408,171.1,4232,77.9,0.193,Luxury Quiet Standard
+BMW-NVH-1409,51.5,1255,58.8,0.128,Luxury Quiet Standard
+BMW-NVH-1410,113.3,2802,70.0,0.176,Luxury Quiet Standard
+BMW-NVH-1411,53.3,1250,60.6,0.196,Luxury Quiet Standard
+BMW-NVH-1412,93.6,2338,64.1,0.124,Luxury Quiet Standard
+BMW-NVH-1413,149.7,3503,78.7,0.234,Unwanted Boom / Hum
+BMW-NVH-1414,59.4,1441,58.2,0.117,Luxury Quiet Standard
+BMW-NVH-1415,107.8,2550,66.8,0.157,Luxury Quiet Standard
+BMW-NVH-1416,54.2,1281,57.2,0.129,Luxury Quiet Standard
+BMW-NVH-1417,30.6,776,59.0,0.153,Luxury Quiet Standard
+BMW-NVH-1418,121.0,2863,71.1,0.135,Luxury Quiet Standard
+BMW-NVH-1419,174.6,4107,81.3,0.256,Unwanted Boom / Hum
+BMW-NVH-1420,156.9,3702,81.3,0.243,Unwanted Boom / Hum
+BMW-NVH-1421,129.9,3115,70.9,0.182,Luxury Quiet Standard
+BMW-NVH-1422,143.3,3426,71.9,0.182,Luxury Quiet Standard
+BMW-NVH-1423,39.5,847,59.1,0.124,Luxury Quiet Standard
+BMW-NVH-1424,100.5,2385,65.1,0.22,Luxury Quiet Standard
+BMW-NVH-1425,77.5,1746,63.0,0.128,Luxury Quiet Standard
+BMW-NVH-1426,57.1,1219,60.3,0.153,Luxury Quiet Standard
+BMW-NVH-1427,107.0,2430,62.9,0.157,Luxury Quiet Standard
+BMW-NVH-1428,76.8,1777,59.6,0.171,Luxury Quiet Standard
+BMW-NVH-1429,146.7,3640,72.4,0.216,Luxury Quiet Standard
+BMW-NVH-1430,69.7,1748,61.4,0.158,Luxury Quiet Standard
+BMW-NVH-1431,168.1,3978,75.7,0.212,Luxury Quiet Standard
+BMW-NVH-1432,140.6,3368,71.1,0.179,Luxury Quiet Standard
+BMW-NVH-1433,30.4,798,56.3,0.095,Luxury Quiet Standard
+BMW-NVH-1434,174.5,4256,76.1,0.178,Luxury Quiet Standard
+BMW-NVH-1435,130.1,3230,70.3,0.212,Luxury Quiet Standard
+BMW-NVH-1436,45.5,1187,55.0,0.168,Luxury Quiet Standard
+BMW-NVH-1437,155.2,3753,77.7,0.229,Unwanted Boom / Hum
+BMW-NVH-1438,79.0,1895,64.6,0.194,Luxury Quiet Standard
+BMW-NVH-1439,136.6,3329,69.7,0.185,Luxury Quiet Standard
+BMW-NVH-1440,108.6,2653,67.7,0.26,Luxury Quiet Standard
+BMW-NVH-1441,33.5,843,56.7,0.122,Luxury Quiet Standard
+BMW-NVH-1442,35.3,838,58.9,0.074,Luxury Quiet Standard
+BMW-NVH-1443,134.6,3158,73.8,0.183,Luxury Quiet Standard
+BMW-NVH-1444,74.6,1852,60.9,0.144,Luxury Quiet Standard
+BMW-NVH-1445,76.6,1739,60.7,0.163,Luxury Quiet Standard
+BMW-NVH-1446,54.2,1245,57.3,0.185,Luxury Quiet Standard
+BMW-NVH-1447,179.6,4259,83.9,0.235,Unwanted Boom / Hum
+BMW-NVH-1448,66.8,1505,58.2,0.092,Luxury Quiet Standard
+BMW-NVH-1449,178.0,4104,75.8,0.216,Luxury Quiet Standard
+BMW-NVH-1450,75.7,1918,63.1,0.157,Luxury Quiet Standard
+BMW-NVH-1451,69.0,1598,61.4,0.152,Luxury Quiet Standard
+BMW-NVH-1452,93.4,2252,66.9,0.123,Luxury Quiet Standard
+BMW-NVH-1453,108.4,2586,69.9,0.226,Luxury Quiet Standard
+BMW-NVH-1454,85.5,1973,63.0,0.138,Luxury Quiet Standard
+BMW-NVH-1455,61.9,1481,62.3,0.132,Luxury Quiet Standard
+BMW-NVH-1456,49.1,1060,55.3,0.126,Luxury Quiet Standard
+BMW-NVH-1457,67.3,1500,60.7,0.151,Luxury Quiet Standard
+BMW-NVH-1458,105.8,2472,68.8,0.173,Luxury Quiet Standard
+BMW-NVH-1459,39.3,925,56.0,0.142,Luxury Quiet Standard
+BMW-NVH-1460,75.1,1850,60.2,0.183,Luxury Quiet Standard
+BMW-NVH-1461,126.0,3072,69.6,0.2,Luxury Quiet Standard
+BMW-NVH-1462,111.3,2720,64.5,0.191,Luxury Quiet Standard
+BMW-NVH-1463,100.5,2384,64.8,0.21,Luxury Quiet Standard
+BMW-NVH-1464,109.2,2586,64.0,0.187,Luxury Quiet Standard
+BMW-NVH-1465,141.7,3306,72.6,0.189,Luxury Quiet Standard
+BMW-NVH-1466,88.1,2125,68.8,0.129,Luxury Quiet Standard
+BMW-NVH-1467,131.4,3163,72.7,0.203,Luxury Quiet Standard
+BMW-NVH-1468,159.8,3800,72.2,0.219,Luxury Quiet Standard
+BMW-NVH-1469,121.0,2945,73.9,0.143,Luxury Quiet Standard
+BMW-NVH-1470,138.7,3359,76.6,0.227,Unwanted Boom / Hum
+BMW-NVH-1471,35.0,791,59.4,0.106,Luxury Quiet Standard
+BMW-NVH-1472,97.5,2402,65.8,0.159,Luxury Quiet Standard
+BMW-NVH-1473,85.8,1990,63.7,0.156,Luxury Quiet Standard
+BMW-NVH-1474,52.2,1188,59.5,0.138,Luxury Quiet Standard
+BMW-NVH-1475,106.7,2614,65.0,0.16,Luxury Quiet Standard
+BMW-NVH-1476,31.5,695,54.2,0.103,Luxury Quiet Standard
+BMW-NVH-1477,157.7,3751,73.8,0.177,Luxury Quiet Standard
+BMW-NVH-1478,113.5,2776,68.8,0.206,Luxury Quiet Standard
+BMW-NVH-1479,88.0,2169,63.3,0.136,Luxury Quiet Standard
+BMW-NVH-1480,126.8,3095,66.9,0.17,Luxury Quiet Standard
+BMW-NVH-1481,144.4,3538,80.8,0.263,Unwanted Boom / Hum
+BMW-NVH-1482,67.3,1680,62.4,0.152,Luxury Quiet Standard
+BMW-NVH-1483,90.6,2175,66.9,0.19,Luxury Quiet Standard
+BMW-NVH-1484,56.9,1455,61.2,0.128,Luxury Quiet Standard
+BMW-NVH-1485,129.1,2961,69.3,0.2,Luxury Quiet Standard
+BMW-NVH-1486,179.9,4425,86.8,0.242,Unwanted Boom / Hum
+BMW-NVH-1487,34.9,911,54.4,0.077,Luxury Quiet Standard
+BMW-NVH-1488,50.7,1054,60.2,0.13,Luxury Quiet Standard
+BMW-NVH-1489,61.5,1430,62.6,0.11,Luxury Quiet Standard
+BMW-NVH-1490,36.6,842,57.1,0.13,Luxury Quiet Standard
+BMW-NVH-1491,76.7,1797,62.2,0.147,Luxury Quiet Standard
+BMW-NVH-1492,52.2,1253,59.4,0.073,Luxury Quiet Standard
+BMW-NVH-1493,103.3,2335,67.9,0.181,Luxury Quiet Standard
+BMW-NVH-1494,87.3,2020,64.1,0.193,Luxury Quiet Standard
+BMW-NVH-1495,109.0,2589,67.6,0.122,Luxury Quiet Standard
+BMW-NVH-1496,40.2,961,57.7,0.123,Luxury Quiet Standard
+BMW-NVH-1497,81.2,1936,63.7,0.158,Luxury Quiet Standard
+BMW-NVH-1498,127.8,2840,66.2,0.21,Luxury Quiet Standard
+BMW-NVH-1499,122.2,2994,69.3,0.133,Luxury Quiet Standard
+BMW-NVH-1500,63.0,1581,63.3,0.112,Luxury Quiet Standard
+BMW-NVH-1501,81.2,1901,65.6,0.151,Luxury Quiet Standard
+BMW-NVH-1502,69.5,1733,64.0,0.167,Luxury Quiet Standard
+BMW-NVH-1503,33.1,815,53.5,0.102,Luxury Quiet Standard
+BMW-NVH-1504,48.5,1369,60.1,0.15,Luxury Quiet Standard
+BMW-NVH-1505,101.5,2529,67.4,0.168,Luxury Quiet Standard
+BMW-NVH-1506,102.6,2496,65.3,0.159,Luxury Quiet Standard
+BMW-NVH-1507,103.6,2448,66.9,0.144,Luxury Quiet Standard
+BMW-NVH-1508,178.9,4180,78.5,0.195,Luxury Quiet Standard
+BMW-NVH-1509,119.8,2854,71.2,0.205,Luxury Quiet Standard
+BMW-NVH-1510,75.8,1832,62.9,0.214,Luxury Quiet Standard
+BMW-NVH-1511,158.0,3796,78.8,0.256,Unwanted Boom / Hum
+BMW-NVH-1512,142.0,3427,74.6,0.249,Unwanted Boom / Hum
+BMW-NVH-1513,74.2,1774,60.3,0.126,Luxury Quiet Standard
+BMW-NVH-1514,156.1,3831,72.1,0.203,Luxury Quiet Standard
+BMW-NVH-1515,69.7,1572,62.2,0.09,Luxury Quiet Standard
+BMW-NVH-1516,102.6,2463,65.1,0.118,Luxury Quiet Standard
+BMW-NVH-1517,112.3,2700,64.6,0.17,Luxury Quiet Standard
+BMW-NVH-1518,81.9,1958,64.1,0.125,Luxury Quiet Standard
+BMW-NVH-1519,117.8,2862,67.7,0.211,Luxury Quiet Standard
+BMW-NVH-1520,114.8,2762,68.4,0.166,Luxury Quiet Standard
+BMW-NVH-1521,85.5,1925,64.5,0.09,Luxury Quiet Standard
+BMW-NVH-1522,125.3,2989,72.0,0.171,Luxury Quiet Standard
+BMW-NVH-1523,156.4,3806,71.1,0.215,Luxury Quiet Standard
+BMW-NVH-1524,125.9,2950,69.9,0.18,Luxury Quiet Standard
+BMW-NVH-1525,94.8,2306,63.0,0.159,Luxury Quiet Standard
+BMW-NVH-1526,148.5,3551,79.5,0.24,Unwanted Boom / Hum
+BMW-NVH-1527,46.9,1065,55.4,0.122,Luxury Quiet Standard
+BMW-NVH-1528,73.4,1639,64.2,0.108,Luxury Quiet Standard
+BMW-NVH-1529,178.1,4172,82.4,0.234,Unwanted Boom / Hum
+BMW-NVH-1530,73.7,1752,61.5,0.141,Luxury Quiet Standard
+BMW-NVH-1531,111.0,2592,65.6,0.158,Luxury Quiet Standard
+BMW-NVH-1532,97.9,2439,69.6,0.217,Luxury Quiet Standard
+BMW-NVH-1533,42.1,1085,56.2,0.185,Luxury Quiet Standard
+BMW-NVH-1534,112.0,2767,67.4,0.184,Luxury Quiet Standard
+BMW-NVH-1535,143.4,3459,73.3,0.193,Luxury Quiet Standard
+BMW-NVH-1536,142.9,3351,74.3,0.179,Luxury Quiet Standard
+BMW-NVH-1537,138.2,3322,78.7,0.24,Unwanted Boom / Hum
+BMW-NVH-1538,85.1,1837,61.0,0.164,Luxury Quiet Standard
+BMW-NVH-1539,62.4,1528,58.7,0.124,Luxury Quiet Standard
+BMW-NVH-1540,96.3,2392,70.4,0.162,Luxury Quiet Standard
+BMW-NVH-1541,122.8,2915,67.3,0.184,Luxury Quiet Standard
+BMW-NVH-1542,121.2,2896,68.9,0.18,Luxury Quiet Standard
+BMW-NVH-1543,95.5,2188,66.3,0.135,Luxury Quiet Standard
+BMW-NVH-1544,147.5,3590,77.9,0.229,Unwanted Boom / Hum
+BMW-NVH-1545,150.9,3738,81.7,0.236,Unwanted Boom / Hum
+BMW-NVH-1546,119.9,2892,69.2,0.162,Luxury Quiet Standard
+BMW-NVH-1547,62.7,1483,61.8,0.169,Luxury Quiet Standard
+BMW-NVH-1548,55.8,1322,61.9,0.096,Luxury Quiet Standard
+BMW-NVH-1549,125.5,3212,68.3,0.191,Luxury Quiet Standard
+BMW-NVH-1550,90.1,2087,63.2,0.141,Luxury Quiet Standard
+BMW-NVH-1551,152.2,3689,71.6,0.198,Luxury Quiet Standard
+BMW-NVH-1552,58.3,1438,59.8,0.147,Luxury Quiet Standard
+BMW-NVH-1553,130.1,3243,68.1,0.208,Luxury Quiet Standard
+BMW-NVH-1554,101.3,2427,66.4,0.177,Luxury Quiet Standard
+BMW-NVH-1555,146.8,3321,72.2,0.219,Luxury Quiet Standard
+BMW-NVH-1556,111.7,2636,67.4,0.199,Luxury Quiet Standard
+BMW-NVH-1557,91.9,2193,64.0,0.218,Luxury Quiet Standard
+BMW-NVH-1558,158.7,3845,78.9,0.265,Unwanted Boom / Hum
+BMW-NVH-1559,33.3,811,57.8,0.151,Luxury Quiet Standard
+BMW-NVH-1560,174.2,4145,82.2,0.285,Unwanted Boom / Hum
+BMW-NVH-1561,175.9,4085,83.1,0.245,Unwanted Boom / Hum
+BMW-NVH-1562,64.8,1528,59.2,0.143,Luxury Quiet Standard
+BMW-NVH-1563,91.6,2168,63.5,0.152,Luxury Quiet Standard
+BMW-NVH-1564,96.4,2395,67.4,0.111,Luxury Quiet Standard
+BMW-NVH-1565,92.6,2352,68.5,0.184,Luxury Quiet Standard
+BMW-NVH-1566,58.2,1448,62.2,0.149,Luxury Quiet Standard
+BMW-NVH-1567,127.5,3009,70.3,0.269,Luxury Quiet Standard
+BMW-NVH-1568,79.1,2023,64.6,0.147,Luxury Quiet Standard
+BMW-NVH-1569,139.6,3332,72.4,0.172,Luxury Quiet Standard
+BMW-NVH-1570,140.2,3394,76.7,0.244,Unwanted Boom / Hum
+BMW-NVH-1571,175.7,4256,84.1,0.315,Unwanted Boom / Hum
+BMW-NVH-1572,168.3,3977,73.9,0.207,Luxury Quiet Standard
+BMW-NVH-1573,53.3,1304,63.3,0.087,Luxury Quiet Standard
+BMW-NVH-1574,125.8,2973,67.3,0.185,Luxury Quiet Standard
+BMW-NVH-1575,156.0,3804,74.1,0.204,Luxury Quiet Standard
+BMW-NVH-1576,37.1,806,58.2,0.049,Luxury Quiet Standard
+BMW-NVH-1577,36.8,873,55.0,0.064,Luxury Quiet Standard
+BMW-NVH-1578,46.1,1121,57.1,0.149,Luxury Quiet Standard
+BMW-NVH-1579,154.4,3599,80.1,0.257,Unwanted Boom / Hum
+BMW-NVH-1580,88.2,2173,62.3,0.246,Luxury Quiet Standard
+BMW-NVH-1581,93.7,2293,62.1,0.126,Luxury Quiet Standard
+BMW-NVH-1582,78.1,1900,65.1,0.131,Luxury Quiet Standard
+BMW-NVH-1583,162.7,3936,77.8,0.214,Luxury Quiet Standard
+BMW-NVH-1584,52.4,1156,62.0,0.08,Luxury Quiet Standard
+BMW-NVH-1585,169.8,4101,79.5,0.188,Luxury Quiet Standard
+BMW-NVH-1586,91.2,2178,62.5,0.11,Luxury Quiet Standard
+BMW-NVH-1587,128.7,2985,70.5,0.21,Luxury Quiet Standard
+BMW-NVH-1588,119.4,2817,70.6,0.226,Luxury Quiet Standard
+BMW-NVH-1589,67.4,1680,62.5,0.126,Luxury Quiet Standard
+BMW-NVH-1590,148.5,3446,71.1,0.186,Luxury Quiet Standard
+BMW-NVH-1591,149.4,3610,79.3,0.235,Unwanted Boom / Hum
+BMW-NVH-1592,62.3,1401,60.1,0.114,Luxury Quiet Standard
+BMW-NVH-1593,131.0,3211,69.5,0.169,Luxury Quiet Standard
+BMW-NVH-1594,70.6,1663,59.7,0.125,Luxury Quiet Standard
+BMW-NVH-1595,84.8,1863,64.8,0.181,Luxury Quiet Standard
+BMW-NVH-1596,42.2,920,57.8,0.102,Luxury Quiet Standard
+BMW-NVH-1597,32.6,888,54.8,0.143,Luxury Quiet Standard
+BMW-NVH-1598,166.4,4038,78.6,0.247,Unwanted Boom / Hum
+BMW-NVH-1599,145.0,3458,70.8,0.191,Luxury Quiet Standard
+BMW-NVH-1600,142.5,3324,80.1,0.231,Unwanted Boom / Hum
+BMW-NVH-1601,40.6,897,56.9,0.107,Luxury Quiet Standard
+BMW-NVH-1602,68.0,1622,61.0,0.111,Luxury Quiet Standard
+BMW-NVH-1603,63.3,1404,59.6,0.073,Luxury Quiet Standard
+BMW-NVH-1604,50.8,1278,61.6,0.144,Luxury Quiet Standard
+BMW-NVH-1605,106.1,2550,66.2,0.172,Luxury Quiet Standard
+BMW-NVH-1606,119.5,2944,72.4,0.196,Luxury Quiet Standard
+BMW-NVH-1607,125.4,3047,70.6,0.166,Luxury Quiet Standard
+BMW-NVH-1608,50.1,1224,58.3,0.143,Luxury Quiet Standard
+BMW-NVH-1609,175.8,4156,82.9,0.23,Unwanted Boom / Hum
+BMW-NVH-1610,161.1,3978,74.4,0.173,Luxury Quiet Standard
+BMW-NVH-1611,93.6,2088,65.5,0.169,Luxury Quiet Standard
+BMW-NVH-1612,115.2,2759,67.4,0.21,Luxury Quiet Standard
+BMW-NVH-1613,97.2,2306,66.5,0.166,Luxury Quiet Standard
+BMW-NVH-1614,136.3,3134,71.3,0.212,Luxury Quiet Standard
+BMW-NVH-1615,101.0,2429,64.8,0.168,Luxury Quiet Standard
+BMW-NVH-1616,123.9,2808,71.9,0.177,Luxury Quiet Standard
+BMW-NVH-1617,50.9,1386,59.9,0.112,Luxury Quiet Standard
+BMW-NVH-1618,132.6,3108,71.0,0.178,Luxury Quiet Standard
+BMW-NVH-1619,171.6,4070,83.3,0.256,Unwanted Boom / Hum
+BMW-NVH-1620,79.3,1825,64.5,0.154,Luxury Quiet Standard
+BMW-NVH-1621,57.6,1455,61.3,0.113,Luxury Quiet Standard
+BMW-NVH-1622,139.4,3320,75.0,0.276,Unwanted Boom / Hum
+BMW-NVH-1623,99.0,2368,66.2,0.185,Luxury Quiet Standard
+BMW-NVH-1624,115.9,2818,66.5,0.153,Luxury Quiet Standard
+BMW-NVH-1625,100.9,2477,67.6,0.189,Luxury Quiet Standard
+BMW-NVH-1626,54.6,1319,58.9,0.118,Luxury Quiet Standard
+BMW-NVH-1627,144.2,3369,70.9,0.179,Luxury Quiet Standard
+BMW-NVH-1628,81.1,1964,62.1,0.146,Luxury Quiet Standard
+BMW-NVH-1629,162.4,3844,83.5,0.282,Unwanted Boom / Hum
+BMW-NVH-1630,61.9,1627,62.3,0.117,Luxury Quiet Standard
+BMW-NVH-1631,172.0,4230,79.3,0.22,Luxury Quiet Standard
+BMW-NVH-1632,74.5,1807,66.0,0.131,Luxury Quiet Standard
+BMW-NVH-1633,44.7,943,60.0,0.136,Luxury Quiet Standard
+BMW-NVH-1634,70.9,1629,61.3,0.154,Luxury Quiet Standard
+BMW-NVH-1635,149.0,3502,71.8,0.175,Luxury Quiet Standard
+BMW-NVH-1636,119.2,2994,70.5,0.212,Luxury Quiet Standard
+BMW-NVH-1637,147.4,3583,72.3,0.219,Luxury Quiet Standard
+BMW-NVH-1638,158.4,3732,74.8,0.218,Luxury Quiet Standard
+BMW-NVH-1639,128.5,3092,68.3,0.17,Luxury Quiet Standard
+BMW-NVH-1640,38.9,955,59.5,0.155,Luxury Quiet Standard
+BMW-NVH-1641,75.1,1835,64.3,0.178,Luxury Quiet Standard
+BMW-NVH-1642,30.7,785,54.9,0.129,Luxury Quiet Standard
+BMW-NVH-1643,132.4,3156,72.5,0.22,Luxury Quiet Standard
+BMW-NVH-1644,174.0,4143,82.8,0.231,Unwanted Boom / Hum
+BMW-NVH-1645,157.9,3750,79.8,0.225,Unwanted Boom / Hum
+BMW-NVH-1646,58.3,1320,61.9,0.084,Luxury Quiet Standard
+BMW-NVH-1647,79.7,1962,66.0,0.167,Luxury Quiet Standard
+BMW-NVH-1648,158.6,3782,81.9,0.273,Unwanted Boom / Hum
+BMW-NVH-1649,157.0,3763,74.4,0.217,Luxury Quiet Standard
+BMW-NVH-1650,144.6,3593,74.6,0.196,Luxury Quiet Standard
+BMW-NVH-1651,40.1,984,58.2,0.139,Luxury Quiet Standard
+BMW-NVH-1652,39.6,812,59.0,0.079,Luxury Quiet Standard
+BMW-NVH-1653,135.3,3263,72.1,0.167,Luxury Quiet Standard
+BMW-NVH-1654,88.0,2132,63.1,0.163,Luxury Quiet Standard
+BMW-NVH-1655,47.3,1056,58.5,0.08,Luxury Quiet Standard
+BMW-NVH-1656,167.7,3924,80.7,0.229,Unwanted Boom / Hum
+BMW-NVH-1657,106.0,2624,64.9,0.141,Luxury Quiet Standard
+BMW-NVH-1658,105.0,2482,66.0,0.213,Luxury Quiet Standard
+BMW-NVH-1659,110.2,2885,68.2,0.223,Luxury Quiet Standard
+BMW-NVH-1660,163.3,3859,82.0,0.223,Unwanted Boom / Hum
+BMW-NVH-1661,53.9,1153,56.2,0.096,Luxury Quiet Standard
+BMW-NVH-1662,86.6,2037,63.7,0.131,Luxury Quiet Standard
+BMW-NVH-1663,42.3,950,57.0,0.144,Luxury Quiet Standard
+BMW-NVH-1664,155.4,3734,75.8,0.2,Luxury Quiet Standard
+BMW-NVH-1665,144.0,3439,72.7,0.175,Luxury Quiet Standard
+BMW-NVH-1666,31.1,696,58.3,0.099,Luxury Quiet Standard
+BMW-NVH-1667,89.0,2181,66.2,0.144,Luxury Quiet Standard
+BMW-NVH-1668,171.0,4054,78.1,0.215,Luxury Quiet Standard
+BMW-NVH-1669,58.0,1474,62.7,0.12,Luxury Quiet Standard
+BMW-NVH-1670,113.5,2650,70.9,0.173,Luxury Quiet Standard
+BMW-NVH-1671,114.3,2764,67.9,0.198,Luxury Quiet Standard
+BMW-NVH-1672,46.1,988,56.0,0.134,Luxury Quiet Standard
+BMW-NVH-1673,158.2,3645,71.8,0.189,Luxury Quiet Standard
+BMW-NVH-1674,161.7,3808,75.5,0.189,Luxury Quiet Standard
+BMW-NVH-1675,126.8,2883,68.4,0.21,Luxury Quiet Standard
+BMW-NVH-1676,174.3,4152,82.7,0.251,Unwanted Boom / Hum
+BMW-NVH-1677,47.4,1014,58.3,0.138,Luxury Quiet Standard
+BMW-NVH-1678,175.9,4139,75.6,0.181,Luxury Quiet Standard
+BMW-NVH-1679,123.2,3040,68.6,0.231,Luxury Quiet Standard
+BMW-NVH-1680,155.2,3795,76.5,0.186,Luxury Quiet Standard
+BMW-NVH-1681,65.4,1559,63.2,0.125,Luxury Quiet Standard
+BMW-NVH-1682,95.6,2219,66.0,0.115,Luxury Quiet Standard
+BMW-NVH-1683,56.5,1348,57.6,0.147,Luxury Quiet Standard
+BMW-NVH-1684,54.8,1391,59.3,0.157,Luxury Quiet Standard
+BMW-NVH-1685,56.3,1350,59.0,0.081,Luxury Quiet Standard
+BMW-NVH-1686,165.2,4009,72.0,0.206,Luxury Quiet Standard
+BMW-NVH-1687,72.2,1617,62.2,0.162,Luxury Quiet Standard
+BMW-NVH-1688,172.2,4062,81.2,0.233,Unwanted Boom / Hum
+BMW-NVH-1689,49.1,1171,57.1,0.104,Luxury Quiet Standard
+BMW-NVH-1690,141.4,3387,71.9,0.211,Luxury Quiet Standard
+BMW-NVH-1691,135.1,3168,71.2,0.229,Luxury Quiet Standard
+BMW-NVH-1692,125.9,2976,70.0,0.13,Luxury Quiet Standard
+BMW-NVH-1693,42.0,1171,56.9,0.093,Luxury Quiet Standard
+BMW-NVH-1694,77.9,1988,63.0,0.181,Luxury Quiet Standard
+BMW-NVH-1695,48.7,1081,57.9,0.107,Luxury Quiet Standard
+BMW-NVH-1696,153.4,3750,81.6,0.241,Unwanted Boom / Hum
+BMW-NVH-1697,144.2,3528,74.2,0.199,Luxury Quiet Standard
+BMW-NVH-1698,34.7,788,57.9,0.076,Luxury Quiet Standard
+BMW-NVH-1699,58.0,1440,60.4,0.124,Luxury Quiet Standard
+BMW-NVH-1700,166.8,4143,84.7,0.262,Unwanted Boom / Hum
+BMW-NVH-1701,121.7,2959,66.6,0.169,Luxury Quiet Standard
+BMW-NVH-1702,126.9,2930,69.9,0.178,Luxury Quiet Standard
+BMW-NVH-1703,64.8,1631,61.9,0.117,Luxury Quiet Standard
+BMW-NVH-1704,116.9,2876,67.2,0.191,Luxury Quiet Standard
+BMW-NVH-1705,80.2,1946,62.5,0.217,Luxury Quiet Standard
+BMW-NVH-1706,80.4,2003,66.9,0.192,Luxury Quiet Standard
+BMW-NVH-1707,167.5,3990,82.1,0.259,Unwanted Boom / Hum
+BMW-NVH-1708,66.9,1496,59.5,0.139,Luxury Quiet Standard
+BMW-NVH-1709,42.9,1118,62.0,0.083,Luxury Quiet Standard
+BMW-NVH-1710,66.5,1398,61.9,0.112,Luxury Quiet Standard
+BMW-NVH-1711,148.0,3556,71.6,0.194,Luxury Quiet Standard
+BMW-NVH-1712,122.0,2872,70.7,0.247,Luxury Quiet Standard
+BMW-NVH-1713,77.8,1854,65.5,0.192,Luxury Quiet Standard
+BMW-NVH-1714,156.5,3820,82.9,0.228,Unwanted Boom / Hum
+BMW-NVH-1715,79.6,1836,61.5,0.156,Luxury Quiet Standard
+BMW-NVH-1716,74.3,1769,64.0,0.152,Luxury Quiet Standard
+BMW-NVH-1717,43.0,1102,55.8,0.118,Luxury Quiet Standard
+BMW-NVH-1718,142.4,3392,73.1,0.218,Luxury Quiet Standard
+BMW-NVH-1719,172.4,4157,78.6,0.223,Unwanted Boom / Hum
+BMW-NVH-1720,49.6,1218,59.0,0.107,Luxury Quiet Standard
+BMW-NVH-1721,59.0,1451,62.0,0.113,Luxury Quiet Standard
+BMW-NVH-1722,50.8,1124,59.7,0.145,Luxury Quiet Standard
+BMW-NVH-1723,161.2,3950,81.6,0.228,Unwanted Boom / Hum
+BMW-NVH-1724,109.3,2579,67.9,0.191,Luxury Quiet Standard
+BMW-NVH-1725,78.6,1850,64.8,0.148,Luxury Quiet Standard
+BMW-NVH-1726,65.9,1583,61.2,0.155,Luxury Quiet Standard
+BMW-NVH-1727,136.7,3309,70.0,0.201,Luxury Quiet Standard
+BMW-NVH-1728,37.6,711,56.6,0.142,Luxury Quiet Standard
+BMW-NVH-1729,36.8,910,54.6,0.114,Luxury Quiet Standard
+BMW-NVH-1730,84.8,1982,64.8,0.179,Luxury Quiet Standard
+BMW-NVH-1731,119.3,2904,68.8,0.155,Luxury Quiet Standard
+BMW-NVH-1732,33.0,935,56.4,0.134,Luxury Quiet Standard
+BMW-NVH-1733,98.5,2453,68.0,0.172,Luxury Quiet Standard
+BMW-NVH-1734,104.4,2437,62.5,0.209,Luxury Quiet Standard
+BMW-NVH-1735,71.0,1835,62.5,0.161,Luxury Quiet Standard
+BMW-NVH-1736,168.9,4088,80.0,0.261,Unwanted Boom / Hum
+BMW-NVH-1737,75.4,1824,64.0,0.216,Luxury Quiet Standard
+BMW-NVH-1738,101.9,2629,64.8,0.193,Luxury Quiet Standard
+BMW-NVH-1739,96.6,2442,65.2,0.174,Luxury Quiet Standard
+BMW-NVH-1740,83.3,1996,63.6,0.184,Luxury Quiet Standard
+BMW-NVH-1741,169.0,4019,78.8,0.227,Unwanted Boom / Hum
+BMW-NVH-1742,123.3,2924,68.6,0.152,Luxury Quiet Standard
+BMW-NVH-1743,45.1,1001,55.1,0.133,Luxury Quiet Standard
+BMW-NVH-1744,53.6,1316,59.0,0.134,Luxury Quiet Standard
+BMW-NVH-1745,58.3,1412,61.3,0.132,Luxury Quiet Standard
+BMW-NVH-1746,179.1,4155,84.8,0.233,Unwanted Boom / Hum
+BMW-NVH-1747,102.6,2577,69.1,0.193,Luxury Quiet Standard
+BMW-NVH-1748,113.0,2584,68.2,0.132,Luxury Quiet Standard
+BMW-NVH-1749,145.0,3505,76.1,0.195,Luxury Quiet Standard
+BMW-NVH-1750,35.4,860,59.1,0.13,Luxury Quiet Standard
+BMW-NVH-1751,146.2,3514,70.2,0.217,Luxury Quiet Standard
+BMW-NVH-1752,65.1,1562,61.1,0.201,Luxury Quiet Standard
+BMW-NVH-1753,55.8,1529,58.4,0.128,Luxury Quiet Standard
+BMW-NVH-1754,139.5,3478,71.5,0.169,Luxury Quiet Standard
+BMW-NVH-1755,82.2,2108,66.9,0.186,Luxury Quiet Standard
+BMW-NVH-1756,40.2,994,58.5,0.154,Luxury Quiet Standard
+BMW-NVH-1757,118.3,2810,68.5,0.193,Luxury Quiet Standard
+BMW-NVH-1758,175.8,4109,81.7,0.241,Unwanted Boom / Hum
+BMW-NVH-1759,97.9,2332,67.3,0.142,Luxury Quiet Standard
+BMW-NVH-1760,72.7,1835,64.2,0.183,Luxury Quiet Standard
+BMW-NVH-1761,144.8,3485,75.9,0.241,Unwanted Boom / Hum
+BMW-NVH-1762,123.2,2927,66.6,0.189,Luxury Quiet Standard
+BMW-NVH-1763,96.4,2363,65.0,0.191,Luxury Quiet Standard
+BMW-NVH-1764,68.7,1764,61.5,0.136,Luxury Quiet Standard
+BMW-NVH-1765,56.3,1268,61.0,0.142,Luxury Quiet Standard
+BMW-NVH-1766,59.8,1587,59.3,0.136,Luxury Quiet Standard
+BMW-NVH-1767,122.9,2802,68.9,0.179,Luxury Quiet Standard
+BMW-NVH-1768,101.0,2457,65.3,0.194,Luxury Quiet Standard
+BMW-NVH-1769,98.2,2299,63.8,0.231,Luxury Quiet Standard
+BMW-NVH-1770,156.0,3830,73.8,0.193,Luxury Quiet Standard
+BMW-NVH-1771,161.2,3821,78.0,0.215,Luxury Quiet Standard
+BMW-NVH-1772,118.0,2790,70.2,0.142,Luxury Quiet Standard
+BMW-NVH-1773,107.9,2547,67.0,0.158,Luxury Quiet Standard
+BMW-NVH-1774,142.2,3396,72.6,0.219,Luxury Quiet Standard
+BMW-NVH-1775,86.7,2049,63.7,0.164,Luxury Quiet Standard
+BMW-NVH-1776,140.8,3232,75.9,0.239,Unwanted Boom / Hum
+BMW-NVH-1777,156.6,3861,81.1,0.235,Unwanted Boom / Hum
+BMW-NVH-1778,135.1,3064,70.9,0.168,Luxury Quiet Standard
+BMW-NVH-1779,106.4,2575,69.8,0.194,Luxury Quiet Standard
+BMW-NVH-1780,132.5,3208,72.1,0.193,Luxury Quiet Standard
+BMW-NVH-1781,111.2,2651,65.8,0.163,Luxury Quiet Standard
+BMW-NVH-1782,44.0,1116,58.8,0.13,Luxury Quiet Standard
+BMW-NVH-1783,106.0,2476,70.2,0.202,Luxury Quiet Standard
+BMW-NVH-1784,142.0,3433,69.5,0.199,Luxury Quiet Standard
+BMW-NVH-1785,44.8,1136,54.5,0.091,Luxury Quiet Standard
+BMW-NVH-1786,173.5,4091,78.3,0.172,Luxury Quiet Standard
+BMW-NVH-1787,114.3,2733,63.6,0.202,Luxury Quiet Standard
+BMW-NVH-1788,96.8,2362,65.5,0.175,Luxury Quiet Standard
+BMW-NVH-1789,77.7,1845,62.5,0.191,Luxury Quiet Standard
+BMW-NVH-1790,96.7,2462,65.9,0.168,Luxury Quiet Standard
+BMW-NVH-1791,136.8,3127,71.0,0.219,Luxury Quiet Standard
+BMW-NVH-1792,42.0,859,56.4,0.107,Luxury Quiet Standard
+BMW-NVH-1793,160.9,3840,81.3,0.278,Unwanted Boom / Hum
+BMW-NVH-1794,72.4,1798,62.0,0.156,Luxury Quiet Standard
+BMW-NVH-1795,142.1,3297,78.3,0.233,Unwanted Boom / Hum
+BMW-NVH-1796,121.1,3045,70.2,0.232,Luxury Quiet Standard
+BMW-NVH-1797,98.2,2244,63.4,0.172,Luxury Quiet Standard
+BMW-NVH-1798,33.7,902,56.7,0.09,Luxury Quiet Standard
+BMW-NVH-1799,93.2,2211,67.1,0.15,Luxury Quiet Standard
+BMW-NVH-1800,105.4,2625,67.2,0.148,Luxury Quiet Standard
+BMW-NVH-1801,81.1,1764,64.5,0.126,Luxury Quiet Standard
+BMW-NVH-1802,63.6,1469,63.8,0.161,Luxury Quiet Standard
+BMW-NVH-1803,112.3,2574,64.5,0.153,Luxury Quiet Standard
+BMW-NVH-1804,42.2,1070,60.0,0.136,Luxury Quiet Standard
+BMW-NVH-1805,70.2,1477,63.2,0.116,Luxury Quiet Standard
+BMW-NVH-1806,153.4,3706,79.5,0.223,Unwanted Boom / Hum
+BMW-NVH-1807,165.1,4103,81.8,0.255,Unwanted Boom / Hum
+BMW-NVH-1808,178.6,4315,83.8,0.283,Unwanted Boom / Hum
+BMW-NVH-1809,116.0,2744,71.8,0.213,Luxury Quiet Standard
+BMW-NVH-1810,165.2,4023,79.5,0.185,Luxury Quiet Standard
+BMW-NVH-1811,136.7,3266,70.1,0.195,Luxury Quiet Standard
+BMW-NVH-1812,55.8,1304,58.9,0.138,Luxury Quiet Standard
+BMW-NVH-1813,111.6,2559,66.7,0.135,Luxury Quiet Standard
+BMW-NVH-1814,143.7,3479,72.7,0.202,Luxury Quiet Standard
+BMW-NVH-1815,92.7,2282,67.8,0.196,Luxury Quiet Standard
+BMW-NVH-1816,67.0,1633,59.8,0.134,Luxury Quiet Standard
+BMW-NVH-1817,44.2,1011,60.0,0.113,Luxury Quiet Standard
+BMW-NVH-1818,107.9,2480,67.3,0.215,Luxury Quiet Standard
+BMW-NVH-1819,96.4,2319,65.0,0.203,Luxury Quiet Standard
+BMW-NVH-1820,100.1,2462,64.7,0.175,Luxury Quiet Standard
+BMW-NVH-1821,154.3,3661,72.3,0.199,Luxury Quiet Standard
+BMW-NVH-1822,34.5,810,60.1,0.128,Luxury Quiet Standard
+BMW-NVH-1823,165.2,4092,81.3,0.222,Unwanted Boom / Hum
+BMW-NVH-1824,150.0,3565,72.3,0.187,Luxury Quiet Standard
+BMW-NVH-1825,136.3,3350,72.6,0.215,Luxury Quiet Standard
+BMW-NVH-1826,84.0,1987,63.2,0.163,Luxury Quiet Standard
+BMW-NVH-1827,35.5,926,58.5,0.097,Luxury Quiet Standard
+BMW-NVH-1828,147.8,3341,70.7,0.18,Luxury Quiet Standard
+BMW-NVH-1829,143.8,3432,74.1,0.198,Luxury Quiet Standard
+BMW-NVH-1830,125.5,2935,70.9,0.227,Luxury Quiet Standard
+BMW-NVH-1831,116.1,2856,67.9,0.181,Luxury Quiet Standard
+BMW-NVH-1832,173.7,4146,81.7,0.231,Unwanted Boom / Hum
+BMW-NVH-1833,94.0,2166,69.7,0.112,Luxury Quiet Standard
+BMW-NVH-1834,162.1,4001,78.0,0.207,Luxury Quiet Standard
+BMW-NVH-1835,45.0,1152,58.5,0.138,Luxury Quiet Standard
+BMW-NVH-1836,147.5,3497,71.7,0.176,Luxury Quiet Standard
+BMW-NVH-1837,137.5,3344,75.3,0.241,Unwanted Boom / Hum
+BMW-NVH-1838,122.7,3014,71.3,0.239,Luxury Quiet Standard
+BMW-NVH-1839,127.3,3085,70.7,0.2,Luxury Quiet Standard
+BMW-NVH-1840,160.8,3905,78.8,0.272,Unwanted Boom / Hum
+BMW-NVH-1841,160.8,3944,74.5,0.207,Luxury Quiet Standard
+BMW-NVH-1842,33.9,874,56.2,0.093,Luxury Quiet Standard
+BMW-NVH-1843,60.9,1521,62.8,0.107,Luxury Quiet Standard
+BMW-NVH-1844,103.8,2352,67.7,0.165,Luxury Quiet Standard
+BMW-NVH-1845,43.2,1039,60.6,0.137,Luxury Quiet Standard
+BMW-NVH-1846,69.6,1607,60.3,0.115,Luxury Quiet Standard
+BMW-NVH-1847,164.4,3981,74.5,0.219,Luxury Quiet Standard
+BMW-NVH-1848,100.9,2469,65.7,0.187,Luxury Quiet Standard
+BMW-NVH-1849,39.0,1012,61.1,0.113,Luxury Quiet Standard
+BMW-NVH-1850,141.4,3245,80.3,0.266,Unwanted Boom / Hum
+BMW-NVH-1851,92.8,2151,63.3,0.176,Luxury Quiet Standard
+BMW-NVH-1852,159.4,3786,78.2,0.256,Unwanted Boom / Hum
+BMW-NVH-1853,32.3,768,57.6,0.109,Luxury Quiet Standard
+BMW-NVH-1854,86.9,2045,64.4,0.179,Luxury Quiet Standard
+BMW-NVH-1855,83.3,2093,64.2,0.163,Luxury Quiet Standard
+BMW-NVH-1856,131.3,3090,72.1,0.17,Luxury Quiet Standard
+BMW-NVH-1857,82.0,2000,61.6,0.186,Luxury Quiet Standard
+BMW-NVH-1858,178.8,4394,77.9,0.168,Luxury Quiet Standard
+BMW-NVH-1859,42.0,1094,59.6,0.135,Luxury Quiet Standard
+BMW-NVH-1860,72.9,1701,65.4,0.181,Luxury Quiet Standard
+BMW-NVH-1861,35.5,910,51.7,0.151,Luxury Quiet Standard
+BMW-NVH-1862,82.9,1972,63.3,0.165,Luxury Quiet Standard
+BMW-NVH-1863,80.8,1996,65.3,0.162,Luxury Quiet Standard
+BMW-NVH-1864,116.1,2806,65.2,0.192,Luxury Quiet Standard
+BMW-NVH-1865,65.6,1495,60.9,0.157,Luxury Quiet Standard
+BMW-NVH-1866,117.2,2910,68.6,0.174,Luxury Quiet Standard
+BMW-NVH-1867,43.3,985,56.8,0.13,Luxury Quiet Standard
+BMW-NVH-1868,99.8,2470,65.2,0.132,Luxury Quiet Standard
+BMW-NVH-1869,72.0,1713,61.2,0.176,Luxury Quiet Standard
+BMW-NVH-1870,86.5,2196,69.0,0.155,Luxury Quiet Standard
+BMW-NVH-1871,173.2,3999,80.1,0.226,Unwanted Boom / Hum
+BMW-NVH-1872,92.4,2186,66.3,0.19,Luxury Quiet Standard
+BMW-NVH-1873,169.1,4050,77.5,0.192,Luxury Quiet Standard
+BMW-NVH-1874,120.1,2920,64.8,0.135,Luxury Quiet Standard
+BMW-NVH-1875,85.0,2109,64.7,0.165,Luxury Quiet Standard
+BMW-NVH-1876,144.9,3562,71.1,0.204,Luxury Quiet Standard
+BMW-NVH-1877,124.4,3017,71.6,0.195,Luxury Quiet Standard
+BMW-NVH-1878,43.8,1192,62.0,0.116,Luxury Quiet Standard
+BMW-NVH-1879,36.1,823,57.6,0.108,Luxury Quiet Standard
+BMW-NVH-1880,162.9,3830,81.0,0.25,Unwanted Boom / Hum
+BMW-NVH-1881,90.4,2191,63.1,0.182,Luxury Quiet Standard
+BMW-NVH-1882,177.3,4325,84.0,0.278,Unwanted Boom / Hum
+BMW-NVH-1883,41.0,951,58.3,0.089,Luxury Quiet Standard
+BMW-NVH-1884,99.9,2357,64.7,0.155,Luxury Quiet Standard
+BMW-NVH-1885,34.7,928,57.4,0.121,Luxury Quiet Standard
+BMW-NVH-1886,146.8,3442,78.5,0.244,Unwanted Boom / Hum
+BMW-NVH-1887,36.0,906,58.4,0.112,Luxury Quiet Standard
+BMW-NVH-1888,165.5,4001,77.0,0.234,Unwanted Boom / Hum
+BMW-NVH-1889,77.5,1966,63.6,0.157,Luxury Quiet Standard
+BMW-NVH-1890,77.7,1960,60.6,0.16,Luxury Quiet Standard
+BMW-NVH-1891,154.4,3707,76.2,0.177,Luxury Quiet Standard
+BMW-NVH-1892,139.3,3366,72.0,0.171,Luxury Quiet Standard
+BMW-NVH-1893,116.4,2786,66.3,0.19,Luxury Quiet Standard
+BMW-NVH-1894,67.8,1552,62.2,0.119,Luxury Quiet Standard
+BMW-NVH-1895,104.2,2591,68.1,0.154,Luxury Quiet Standard
+BMW-NVH-1896,39.5,971,60.3,0.102,Luxury Quiet Standard
+BMW-NVH-1897,96.3,2301,62.9,0.205,Luxury Quiet Standard
+BMW-NVH-1898,107.2,2514,64.8,0.178,Luxury Quiet Standard
+BMW-NVH-1899,120.4,2879,68.9,0.262,Luxury Quiet Standard
+BMW-NVH-1900,160.7,3801,76.0,0.175,Luxury Quiet Standard
+BMW-NVH-1901,154.9,3656,79.6,0.229,Unwanted Boom / Hum
+BMW-NVH-1902,133.2,3217,69.9,0.166,Luxury Quiet Standard
+BMW-NVH-1903,94.5,2234,63.7,0.167,Luxury Quiet Standard
+BMW-NVH-1904,93.3,2337,62.6,0.168,Luxury Quiet Standard
+BMW-NVH-1905,61.6,1491,60.2,0.158,Luxury Quiet Standard
+BMW-NVH-1906,176.7,4105,85.2,0.224,Unwanted Boom / Hum
+BMW-NVH-1907,101.6,2544,68.0,0.203,Luxury Quiet Standard
+BMW-NVH-1908,147.9,3555,79.2,0.272,Unwanted Boom / Hum
+BMW-NVH-1909,99.3,2416,62.7,0.199,Luxury Quiet Standard
+BMW-NVH-1910,37.2,909,56.5,0.123,Luxury Quiet Standard
+BMW-NVH-1911,134.8,3241,72.4,0.192,Luxury Quiet Standard
+BMW-NVH-1912,110.5,2678,69.8,0.138,Luxury Quiet Standard
+BMW-NVH-1913,93.6,2193,64.7,0.159,Luxury Quiet Standard
+BMW-NVH-1914,49.2,1036,58.3,0.027,Luxury Quiet Standard
+BMW-NVH-1915,55.5,1425,62.3,0.103,Luxury Quiet Standard
+BMW-NVH-1916,126.5,3086,69.8,0.203,Luxury Quiet Standard
+BMW-NVH-1917,107.6,2680,66.9,0.202,Luxury Quiet Standard
+BMW-NVH-1918,96.2,2411,64.1,0.215,Luxury Quiet Standard
+BMW-NVH-1919,163.0,3957,80.2,0.223,Unwanted Boom / Hum
+BMW-NVH-1920,47.3,1260,56.7,0.116,Luxury Quiet Standard
+BMW-NVH-1921,71.2,1634,61.2,0.14,Luxury Quiet Standard
+BMW-NVH-1922,66.0,1729,63.4,0.197,Luxury Quiet Standard
+BMW-NVH-1923,112.5,2696,69.8,0.175,Luxury Quiet Standard
+BMW-NVH-1924,74.1,1744,60.2,0.141,Luxury Quiet Standard
+BMW-NVH-1925,157.6,3640,80.0,0.19,Luxury Quiet Standard
+BMW-NVH-1926,51.0,1160,62.8,0.143,Luxury Quiet Standard
+BMW-NVH-1927,106.7,2544,67.7,0.218,Luxury Quiet Standard
+BMW-NVH-1928,68.1,1561,62.7,0.127,Luxury Quiet Standard
+BMW-NVH-1929,179.8,4290,82.8,0.233,Unwanted Boom / Hum
+BMW-NVH-1930,173.9,4165,84.7,0.27,Unwanted Boom / Hum
+BMW-NVH-1931,115.1,2733,72.8,0.133,Luxury Quiet Standard
+BMW-NVH-1932,40.4,917,58.7,0.135,Luxury Quiet Standard
+BMW-NVH-1933,145.1,3434,76.4,0.172,Luxury Quiet Standard
+BMW-NVH-1934,164.2,3820,75.5,0.205,Luxury Quiet Standard
+BMW-NVH-1935,100.6,2436,65.6,0.141,Luxury Quiet Standard
+BMW-NVH-1936,98.1,2364,65.8,0.2,Luxury Quiet Standard
+BMW-NVH-1937,69.9,1609,63.7,0.107,Luxury Quiet Standard
+BMW-NVH-1938,108.7,2682,66.9,0.212,Luxury Quiet Standard
+BMW-NVH-1939,80.4,1942,62.7,0.131,Luxury Quiet Standard
+BMW-NVH-1940,159.4,3826,82.6,0.249,Unwanted Boom / Hum
+BMW-NVH-1941,76.7,1751,63.5,0.171,Luxury Quiet Standard
+BMW-NVH-1942,42.7,1133,61.6,0.135,Luxury Quiet Standard
+BMW-NVH-1943,130.8,3068,72.2,0.174,Luxury Quiet Standard
+BMW-NVH-1944,111.6,2710,67.0,0.134,Luxury Quiet Standard
+BMW-NVH-1945,158.9,3770,75.6,0.197,Luxury Quiet Standard
+BMW-NVH-1946,141.3,3389,71.8,0.188,Luxury Quiet Standard
+BMW-NVH-1947,103.3,2573,66.3,0.175,Luxury Quiet Standard
+BMW-NVH-1948,60.2,1445,55.9,0.145,Luxury Quiet Standard
+BMW-NVH-1949,111.7,2614,66.3,0.179,Luxury Quiet Standard
+BMW-NVH-1950,33.2,726,55.4,0.056,Luxury Quiet Standard
+BMW-NVH-1951,128.5,3062,69.3,0.21,Luxury Quiet Standard
+BMW-NVH-1952,178.6,4363,80.1,0.245,Unwanted Boom / Hum
+BMW-NVH-1953,103.5,2487,65.7,0.218,Luxury Quiet Standard
+BMW-NVH-1954,101.2,2417,66.2,0.158,Luxury Quiet Standard
+BMW-NVH-1955,91.0,2158,70.9,0.162,Luxury Quiet Standard
+BMW-NVH-1956,134.0,3277,73.2,0.189,Luxury Quiet Standard
+BMW-NVH-1957,176.9,4211,81.8,0.245,Unwanted Boom / Hum
+BMW-NVH-1958,53.0,1304,61.0,0.074,Luxury Quiet Standard
+BMW-NVH-1959,122.3,2921,70.4,0.16,Luxury Quiet Standard
+BMW-NVH-1960,44.6,1039,59.9,0.072,Luxury Quiet Standard
+BMW-NVH-1961,163.3,3812,79.6,0.228,Unwanted Boom / Hum
+BMW-NVH-1962,165.7,4079,81.6,0.242,Unwanted Boom / Hum
+BMW-NVH-1963,153.3,3710,71.4,0.2,Luxury Quiet Standard
+BMW-NVH-1964,76.0,1864,63.5,0.184,Luxury Quiet Standard
+BMW-NVH-1965,44.1,998,57.1,0.162,Luxury Quiet Standard
+BMW-NVH-1966,135.3,3182,73.1,0.174,Luxury Quiet Standard
+BMW-NVH-1967,63.8,1500,59.5,0.152,Luxury Quiet Standard
+BMW-NVH-1968,91.6,2172,63.1,0.132,Luxury Quiet Standard
+BMW-NVH-1969,65.1,1558,62.3,0.235,Luxury Quiet Standard
+BMW-NVH-1970,54.6,1452,57.5,0.143,Luxury Quiet Standard
+BMW-NVH-1971,34.2,797,57.0,0.128,Luxury Quiet Standard
+BMW-NVH-1972,93.3,2415,68.8,0.166,Luxury Quiet Standard
+BMW-NVH-1973,92.8,2225,68.6,0.203,Luxury Quiet Standard
+BMW-NVH-1974,43.2,1005,57.6,0.116,Luxury Quiet Standard
+BMW-NVH-1975,83.6,2006,64.4,0.136,Luxury Quiet Standard
+BMW-NVH-1976,32.6,802,55.6,0.124,Luxury Quiet Standard
+BMW-NVH-1977,137.0,3312,73.0,0.214,Luxury Quiet Standard
+BMW-NVH-1978,119.7,2797,68.3,0.174,Luxury Quiet Standard
+BMW-NVH-1979,92.4,2176,65.1,0.136,Luxury Quiet Standard
+BMW-NVH-1980,156.8,3694,70.6,0.183,Luxury Quiet Standard
+BMW-NVH-1981,66.3,1543,61.0,0.153,Luxury Quiet Standard
+BMW-NVH-1982,82.0,1994,63.2,0.15,Luxury Quiet Standard
+BMW-NVH-1983,68.7,1580,59.9,0.089,Luxury Quiet Standard
+BMW-NVH-1984,146.3,3458,72.0,0.181,Luxury Quiet Standard
+BMW-NVH-1985,92.3,2248,65.8,0.131,Luxury Quiet Standard
+BMW-NVH-1986,48.7,1116,55.3,0.173,Luxury Quiet Standard
+BMW-NVH-1987,123.9,2949,65.9,0.21,Luxury Quiet Standard
+BMW-NVH-1988,73.2,1767,63.3,0.214,Luxury Quiet Standard
+BMW-NVH-1989,78.9,1925,62.1,0.209,Luxury Quiet Standard
+BMW-NVH-1990,173.8,4261,81.2,0.23,Unwanted Boom / Hum
+BMW-NVH-1991,103.4,2438,66.4,0.214,Luxury Quiet Standard
+BMW-NVH-1992,77.3,1893,62.4,0.186,Luxury Quiet Standard
+BMW-NVH-1993,170.2,4139,78.5,0.224,Unwanted Boom / Hum
+BMW-NVH-1994,100.5,2373,64.4,0.184,Luxury Quiet Standard
+BMW-NVH-1995,164.8,4045,82.5,0.222,Unwanted Boom / Hum
+BMW-NVH-1996,63.0,1487,61.6,0.109,Luxury Quiet Standard
+BMW-NVH-1997,62.2,1524,59.4,0.117,Luxury Quiet Standard
+BMW-NVH-1998,155.8,3620,70.5,0.177,Luxury Quiet Standard
+BMW-NVH-1999,45.4,1101,57.6,0.14,Luxury Quiet Standard
+BMW-NVH-2000,108.1,2543,66.0,0.184,Luxury Quiet Standard
+BMW-NVH-2001,147.4,3379,74.8,0.202,Luxury Quiet Standard
+BMW-NVH-2002,151.3,3698,77.6,0.245,Unwanted Boom / Hum
+BMW-NVH-2003,67.5,1733,60.2,0.158,Luxury Quiet Standard
+BMW-NVH-2004,174.0,4156,81.2,0.221,Unwanted Boom / Hum
+BMW-NVH-2005,58.3,1370,59.6,0.141,Luxury Quiet Standard
+BMW-NVH-2006,72.6,1870,59.5,0.121,Luxury Quiet Standard
+BMW-NVH-2007,143.4,3397,74.2,0.224,Unwanted Boom / Hum
+BMW-NVH-2008,104.0,2601,69.0,0.183,Luxury Quiet Standard
+BMW-NVH-2009,174.2,4216,79.6,0.194,Luxury Quiet Standard
+BMW-NVH-2010,169.9,4087,76.6,0.208,Luxury Quiet Standard
+BMW-NVH-2011,95.2,2307,65.9,0.158,Luxury Quiet Standard
+BMW-NVH-2012,134.5,3155,68.8,0.19,Luxury Quiet Standard
+BMW-NVH-2013,140.6,3273,73.0,0.214,Luxury Quiet Standard
+BMW-NVH-2014,35.6,826,57.7,0.084,Luxury Quiet Standard
+BMW-NVH-2015,119.5,2897,69.0,0.206,Luxury Quiet Standard
+BMW-NVH-2016,151.5,3711,74.6,0.262,Unwanted Boom / Hum
+BMW-NVH-2017,177.6,4436,85.9,0.267,Unwanted Boom / Hum
+BMW-NVH-2018,125.4,2944,67.7,0.166,Luxury Quiet Standard
+BMW-NVH-2019,150.9,3630,75.7,0.227,Unwanted Boom / Hum
+BMW-NVH-2020,138.5,3380,71.8,0.153,Luxury Quiet Standard
+BMW-NVH-2021,65.1,1521,60.0,0.116,Luxury Quiet Standard
+BMW-NVH-2022,79.3,1903,66.3,0.14,Luxury Quiet Standard
+BMW-NVH-2023,97.4,2154,67.5,0.167,Luxury Quiet Standard
+BMW-NVH-2024,177.7,4284,84.1,0.257,Unwanted Boom / Hum
+BMW-NVH-2025,50.5,1186,63.5,0.113,Luxury Quiet Standard
+BMW-NVH-2026,178.9,4331,81.9,0.232,Unwanted Boom / Hum
+BMW-NVH-2027,176.9,4193,78.1,0.192,Luxury Quiet Standard
+BMW-NVH-2028,58.8,1487,62.7,0.115,Luxury Quiet Standard
+BMW-NVH-2029,93.3,2227,63.4,0.123,Luxury Quiet Standard
+BMW-NVH-2030,40.7,911,57.4,0.173,Luxury Quiet Standard
+BMW-NVH-2031,144.3,3422,72.7,0.186,Luxury Quiet Standard
+BMW-NVH-2032,155.0,3813,79.2,0.229,Unwanted Boom / Hum
+BMW-NVH-2033,88.2,2013,66.0,0.167,Luxury Quiet Standard
+BMW-NVH-2034,101.2,2362,68.0,0.097,Luxury Quiet Standard
+BMW-NVH-2035,121.6,2922,69.8,0.202,Luxury Quiet Standard
+BMW-NVH-2036,135.0,3224,68.7,0.187,Luxury Quiet Standard
+BMW-NVH-2037,97.9,2420,66.9,0.174,Luxury Quiet Standard
+BMW-NVH-2038,103.3,2574,67.4,0.174,Luxury Quiet Standard
+BMW-NVH-2039,44.6,1045,58.6,0.142,Luxury Quiet Standard
+BMW-NVH-2040,168.1,4023,81.3,0.227,Unwanted Boom / Hum
+BMW-NVH-2041,164.5,3973,79.4,0.238,Unwanted Boom / Hum
+BMW-NVH-2042,131.8,3249,71.2,0.172,Luxury Quiet Standard
+BMW-NVH-2043,142.2,3333,69.6,0.141,Luxury Quiet Standard
+BMW-NVH-2044,33.5,866,56.1,0.045,Luxury Quiet Standard
+BMW-NVH-2045,98.6,2341,65.3,0.216,Luxury Quiet Standard
+BMW-NVH-2046,73.7,1775,62.1,0.152,Luxury Quiet Standard
+BMW-NVH-2047,34.0,855,57.8,0.064,Luxury Quiet Standard
+BMW-NVH-2048,83.1,2149,60.6,0.207,Luxury Quiet Standard
+BMW-NVH-2049,116.2,2838,70.6,0.192,Luxury Quiet Standard
+BMW-NVH-2050,95.1,2055,64.1,0.196,Luxury Quiet Standard
+BMW-NVH-2051,134.2,3171,69.6,0.222,Luxury Quiet Standard
+BMW-NVH-2052,178.4,4138,82.8,0.244,Unwanted Boom / Hum
+BMW-NVH-2053,153.1,3659,74.2,0.2,Luxury Quiet Standard
+BMW-NVH-2054,138.8,3427,71.0,0.201,Luxury Quiet Standard
+BMW-NVH-2055,125.9,2899,71.5,0.14,Luxury Quiet Standard
+BMW-NVH-2056,83.5,1869,65.9,0.127,Luxury Quiet Standard
+BMW-NVH-2057,145.2,3610,80.1,0.228,Unwanted Boom / Hum
+BMW-NVH-2058,177.1,4354,84.7,0.27,Unwanted Boom / Hum
+BMW-NVH-2059,87.9,2188,60.9,0.164,Luxury Quiet Standard
+BMW-NVH-2060,155.9,3777,81.6,0.241,Unwanted Boom / Hum
+BMW-NVH-2061,68.6,1656,64.1,0.194,Luxury Quiet Standard
+BMW-NVH-2062,137.3,3190,69.2,0.189,Luxury Quiet Standard
+BMW-NVH-2063,87.4,2255,66.8,0.212,Luxury Quiet Standard
+BMW-NVH-2064,93.1,2286,64.6,0.157,Luxury Quiet Standard
+BMW-NVH-2065,174.5,4319,82.6,0.224,Unwanted Boom / Hum
+BMW-NVH-2066,137.3,3354,72.8,0.201,Luxury Quiet Standard
+BMW-NVH-2067,96.9,2383,64.4,0.253,Luxury Quiet Standard
+BMW-NVH-2068,44.3,1140,59.4,0.131,Luxury Quiet Standard
+BMW-NVH-2069,97.4,2285,67.4,0.157,Luxury Quiet Standard
+BMW-NVH-2070,59.5,1360,62.9,0.137,Luxury Quiet Standard
+BMW-NVH-2071,160.3,3906,74.7,0.215,Luxury Quiet Standard
+BMW-NVH-2072,101.3,2353,67.0,0.173,Luxury Quiet Standard
+BMW-NVH-2073,136.3,3353,79.3,0.231,Unwanted Boom / Hum
+BMW-NVH-2074,123.0,2911,70.8,0.249,Luxury Quiet Standard
+BMW-NVH-2075,98.4,2359,66.8,0.155,Luxury Quiet Standard
+BMW-NVH-2076,114.6,2753,70.3,0.184,Luxury Quiet Standard
+BMW-NVH-2077,64.5,1684,60.4,0.168,Luxury Quiet Standard
+BMW-NVH-2078,106.9,2447,68.3,0.205,Luxury Quiet Standard
+BMW-NVH-2079,70.3,1715,64.1,0.167,Luxury Quiet Standard
+BMW-NVH-2080,153.2,3682,74.9,0.212,Luxury Quiet Standard
+BMW-NVH-2081,152.6,3645,78.8,0.265,Unwanted Boom / Hum
+BMW-NVH-2082,78.2,1952,63.5,0.185,Luxury Quiet Standard
+BMW-NVH-2083,137.0,3191,68.5,0.244,Luxury Quiet Standard
+BMW-NVH-2084,156.5,3743,74.3,0.187,Luxury Quiet Standard
+BMW-NVH-2085,41.0,945,57.6,0.125,Luxury Quiet Standard
+BMW-NVH-2086,71.1,1733,63.9,0.159,Luxury Quiet Standard
+BMW-NVH-2087,132.9,3231,76.0,0.246,Unwanted Boom / Hum
+BMW-NVH-2088,123.6,3045,71.5,0.212,Luxury Quiet Standard
+BMW-NVH-2089,141.7,3326,77.7,0.218,Luxury Quiet Standard
+BMW-NVH-2090,119.7,2879,70.7,0.189,Luxury Quiet Standard
+BMW-NVH-2091,56.9,1258,59.9,0.159,Luxury Quiet Standard
+BMW-NVH-2092,98.4,2402,67.4,0.167,Luxury Quiet Standard
+BMW-NVH-2093,72.4,1592,61.9,0.161,Luxury Quiet Standard
+BMW-NVH-2094,36.2,928,57.7,0.098,Luxury Quiet Standard
+BMW-NVH-2095,91.5,2101,65.1,0.102,Luxury Quiet Standard
+BMW-NVH-2096,95.9,2312,65.3,0.177,Luxury Quiet Standard
+BMW-NVH-2097,52.1,1194,57.2,0.129,Luxury Quiet Standard
+BMW-NVH-2098,76.3,1868,65.5,0.137,Luxury Quiet Standard
+BMW-NVH-2099,133.1,3057,70.8,0.19,Luxury Quiet Standard
+BMW-NVH-2100,88.4,2128,65.6,0.176,Luxury Quiet Standard
+BMW-NVH-2101,159.4,3770,73.5,0.218,Luxury Quiet Standard
+BMW-NVH-2102,163.1,4056,84.6,0.27,Unwanted Boom / Hum
+BMW-NVH-2103,47.6,1264,57.3,0.152,Luxury Quiet Standard
+BMW-NVH-2104,159.5,3849,78.3,0.241,Unwanted Boom / Hum
+BMW-NVH-2105,51.3,1234,58.6,0.128,Luxury Quiet Standard
+BMW-NVH-2106,121.5,2817,70.9,0.161,Luxury Quiet Standard
+BMW-NVH-2107,30.6,788,54.7,0.128,Luxury Quiet Standard
+BMW-NVH-2108,128.3,3120,72.2,0.203,Luxury Quiet Standard
+BMW-NVH-2109,101.2,2478,66.4,0.239,Luxury Quiet Standard
+BMW-NVH-2110,142.2,3443,71.2,0.166,Luxury Quiet Standard
+BMW-NVH-2111,73.7,1794,61.5,0.119,Luxury Quiet Standard
+BMW-NVH-2112,39.0,1005,61.2,0.122,Luxury Quiet Standard
+BMW-NVH-2113,84.3,2155,67.9,0.184,Luxury Quiet Standard
+BMW-NVH-2114,38.2,950,57.2,0.069,Luxury Quiet Standard
+BMW-NVH-2115,99.2,2496,63.5,0.179,Luxury Quiet Standard
+BMW-NVH-2116,30.9,815,54.6,0.17,Luxury Quiet Standard
+BMW-NVH-2117,137.7,3252,69.5,0.173,Luxury Quiet Standard
+BMW-NVH-2118,113.9,2628,67.8,0.146,Luxury Quiet Standard
+BMW-NVH-2119,65.5,1827,61.2,0.164,Luxury Quiet Standard
+BMW-NVH-2120,114.1,2771,69.0,0.184,Luxury Quiet Standard
+BMW-NVH-2121,151.7,3603,75.7,0.188,Luxury Quiet Standard
+BMW-NVH-2122,68.5,1528,60.3,0.153,Luxury Quiet Standard
+BMW-NVH-2123,101.3,2514,67.2,0.156,Luxury Quiet Standard
+BMW-NVH-2124,38.6,790,55.7,0.163,Luxury Quiet Standard
+BMW-NVH-2125,150.1,3483,78.3,0.23,Unwanted Boom / Hum
+BMW-NVH-2126,169.1,4019,74.7,0.219,Luxury Quiet Standard
+BMW-NVH-2127,84.9,1950,64.0,0.158,Luxury Quiet Standard
+BMW-NVH-2128,122.2,2855,71.4,0.234,Luxury Quiet Standard
+BMW-NVH-2129,97.5,2451,65.5,0.198,Luxury Quiet Standard
+BMW-NVH-2130,86.4,2055,64.7,0.194,Luxury Quiet Standard
+BMW-NVH-2131,121.9,2885,70.9,0.14,Luxury Quiet Standard
+BMW-NVH-2132,58.8,1513,61.2,0.157,Luxury Quiet Standard
+BMW-NVH-2133,40.5,1055,60.4,0.128,Luxury Quiet Standard
+BMW-NVH-2134,110.8,2702,65.4,0.16,Luxury Quiet Standard
+BMW-NVH-2135,117.7,2833,69.1,0.173,Luxury Quiet Standard
+BMW-NVH-2136,103.3,2385,66.9,0.177,Luxury Quiet Standard
+BMW-NVH-2137,156.7,3564,81.2,0.25,Unwanted Boom / Hum
+BMW-NVH-2138,127.4,3060,72.4,0.144,Luxury Quiet Standard
+BMW-NVH-2139,158.6,3861,82.9,0.288,Unwanted Boom / Hum
+BMW-NVH-2140,148.9,3541,69.8,0.216,Luxury Quiet Standard
+BMW-NVH-2141,178.2,4333,83.1,0.266,Unwanted Boom / Hum
+BMW-NVH-2142,174.2,4230,81.1,0.228,Unwanted Boom / Hum
+BMW-NVH-2143,116.4,2712,69.5,0.114,Luxury Quiet Standard
+BMW-NVH-2144,67.7,1703,60.1,0.128,Luxury Quiet Standard
+BMW-NVH-2145,79.6,1842,64.2,0.156,Luxury Quiet Standard
+BMW-NVH-2146,155.9,3658,81.3,0.276,Unwanted Boom / Hum
+BMW-NVH-2147,65.6,1704,62.5,0.166,Luxury Quiet Standard
+BMW-NVH-2148,45.4,1008,57.1,0.098,Luxury Quiet Standard
+BMW-NVH-2149,33.1,790,59.1,0.071,Luxury Quiet Standard
+BMW-NVH-2150,177.0,4262,82.0,0.244,Unwanted Boom / Hum
+BMW-NVH-2151,146.5,3521,73.7,0.172,Luxury Quiet Standard
+BMW-NVH-2152,38.1,926,56.1,0.176,Luxury Quiet Standard
+BMW-NVH-2153,76.7,1794,61.6,0.12,Luxury Quiet Standard
+BMW-NVH-2154,96.0,2181,66.5,0.168,Luxury Quiet Standard
+BMW-NVH-2155,118.2,2677,70.3,0.2,Luxury Quiet Standard
+BMW-NVH-2156,108.0,2440,65.8,0.235,Luxury Quiet Standard
+BMW-NVH-2157,163.0,4026,78.2,0.157,Luxury Quiet Standard
+BMW-NVH-2158,72.3,1654,62.1,0.125,Luxury Quiet Standard
+BMW-NVH-2159,115.7,2833,71.8,0.188,Luxury Quiet Standard
+BMW-NVH-2160,64.4,1539,60.0,0.093,Luxury Quiet Standard
+BMW-NVH-2161,113.9,2743,67.9,0.168,Luxury Quiet Standard
+BMW-NVH-2162,150.3,3623,77.1,0.229,Unwanted Boom / Hum
+BMW-NVH-2163,55.9,1337,59.0,0.134,Luxury Quiet Standard
+BMW-NVH-2164,50.3,1180,62.0,0.11,Luxury Quiet Standard
+BMW-NVH-2165,80.7,1787,62.0,0.066,Luxury Quiet Standard
+BMW-NVH-2166,58.2,1355,57.1,0.16,Luxury Quiet Standard
+BMW-NVH-2167,43.3,1003,55.5,0.09,Luxury Quiet Standard
+BMW-NVH-2168,133.1,3228,71.9,0.189,Luxury Quiet Standard
+BMW-NVH-2169,165.9,3937,77.2,0.18,Luxury Quiet Standard
+BMW-NVH-2170,72.5,1697,66.1,0.139,Luxury Quiet Standard
+BMW-NVH-2171,46.7,1009,57.0,0.188,Luxury Quiet Standard
+BMW-NVH-2172,138.2,3411,72.1,0.214,Luxury Quiet Standard
+BMW-NVH-2173,84.4,2039,62.0,0.192,Luxury Quiet Standard
+BMW-NVH-2174,71.0,1874,66.2,0.16,Luxury Quiet Standard
+BMW-NVH-2175,104.6,2472,68.9,0.143,Luxury Quiet Standard
+BMW-NVH-2176,63.3,1612,63.6,0.129,Luxury Quiet Standard
+BMW-NVH-2177,57.0,1434,55.7,0.129,Luxury Quiet Standard
+BMW-NVH-2178,109.9,2635,65.0,0.166,Luxury Quiet Standard
+BMW-NVH-2179,73.7,1614,61.8,0.17,Luxury Quiet Standard
+BMW-NVH-2180,115.3,2795,71.1,0.193,Luxury Quiet Standard
+BMW-NVH-2181,88.3,2143,66.3,0.139,Luxury Quiet Standard
+BMW-NVH-2182,144.9,3437,73.0,0.193,Luxury Quiet Standard
+BMW-NVH-2183,159.5,3783,73.2,0.195,Luxury Quiet Standard
+BMW-NVH-2184,135.9,3430,73.2,0.216,Luxury Quiet Standard
+BMW-NVH-2185,75.7,1802,63.2,0.154,Luxury Quiet Standard
+BMW-NVH-2186,162.7,4097,78.3,0.258,Unwanted Boom / Hum
+BMW-NVH-2187,142.0,3380,76.2,0.251,Unwanted Boom / Hum
+BMW-NVH-2188,149.1,3622,72.2,0.187,Luxury Quiet Standard
+BMW-NVH-2189,159.2,3800,76.3,0.211,Luxury Quiet Standard
+BMW-NVH-2190,155.1,3724,77.8,0.264,Unwanted Boom / Hum
+BMW-NVH-2191,155.2,3858,76.3,0.197,Luxury Quiet Standard
+BMW-NVH-2192,156.3,3730,75.2,0.178,Luxury Quiet Standard
+BMW-NVH-2193,157.0,3745,78.9,0.225,Unwanted Boom / Hum
+BMW-NVH-2194,58.0,1330,63.6,0.147,Luxury Quiet Standard
+BMW-NVH-2195,74.3,1885,58.4,0.138,Luxury Quiet Standard
+BMW-NVH-2196,35.6,919,57.7,0.103,Luxury Quiet Standard
+BMW-NVH-2197,70.5,1650,58.5,0.18,Luxury Quiet Standard
+BMW-NVH-2198,166.4,4089,81.9,0.237,Unwanted Boom / Hum
+BMW-NVH-2199,177.2,4250,78.8,0.217,Luxury Quiet Standard
+BMW-NVH-2200,175.8,4112,80.9,0.266,Unwanted Boom / Hum
+BMW-NVH-2201,83.0,2011,66.2,0.119,Luxury Quiet Standard
+BMW-NVH-2202,44.4,1147,59.4,0.162,Luxury Quiet Standard
+BMW-NVH-2203,171.9,4124,80.6,0.239,Unwanted Boom / Hum
+BMW-NVH-2204,133.2,3117,70.0,0.183,Luxury Quiet Standard
+BMW-NVH-2205,47.5,1189,57.2,0.087,Luxury Quiet Standard
+BMW-NVH-2206,83.4,2124,62.5,0.17,Luxury Quiet Standard
+BMW-NVH-2207,78.4,1826,62.9,0.115,Luxury Quiet Standard
+BMW-NVH-2208,60.4,1537,61.5,0.154,Luxury Quiet Standard
+BMW-NVH-2209,94.6,2187,62.8,0.183,Luxury Quiet Standard
+BMW-NVH-2210,170.5,4052,80.0,0.259,Unwanted Boom / Hum
+BMW-NVH-2211,82.8,2034,65.9,0.197,Luxury Quiet Standard
+BMW-NVH-2212,97.2,2268,64.7,0.142,Luxury Quiet Standard
+BMW-NVH-2213,167.5,3994,80.4,0.24,Unwanted Boom / Hum
+BMW-NVH-2214,133.8,3284,70.8,0.177,Luxury Quiet Standard
+BMW-NVH-2215,152.1,3677,70.2,0.187,Luxury Quiet Standard
+BMW-NVH-2216,177.8,4268,83.7,0.242,Unwanted Boom / Hum
+BMW-NVH-2217,171.2,4065,79.0,0.234,Unwanted Boom / Hum
+BMW-NVH-2218,115.8,2751,68.4,0.192,Luxury Quiet Standard
+BMW-NVH-2219,171.6,4168,83.5,0.26,Unwanted Boom / Hum
+BMW-NVH-2220,64.3,1460,62.4,0.123,Luxury Quiet Standard
+BMW-NVH-2221,159.6,3798,78.3,0.268,Unwanted Boom / Hum
+BMW-NVH-2222,113.4,2788,69.7,0.207,Luxury Quiet Standard
+BMW-NVH-2223,61.7,1622,61.3,0.133,Luxury Quiet Standard
+BMW-NVH-2224,33.0,770,51.6,0.113,Luxury Quiet Standard
+BMW-NVH-2225,116.9,2634,66.3,0.194,Luxury Quiet Standard
+BMW-NVH-2226,105.2,2561,65.4,0.205,Luxury Quiet Standard
+BMW-NVH-2227,119.4,2828,67.9,0.184,Luxury Quiet Standard
+BMW-NVH-2228,63.8,1386,59.3,0.151,Luxury Quiet Standard
+BMW-NVH-2229,47.1,1090,58.8,0.096,Luxury Quiet Standard
+BMW-NVH-2230,164.3,3996,74.9,0.203,Luxury Quiet Standard
+BMW-NVH-2231,140.1,3414,71.5,0.166,Luxury Quiet Standard
+BMW-NVH-2232,143.3,3465,71.5,0.145,Luxury Quiet Standard
+BMW-NVH-2233,164.3,3884,74.5,0.203,Luxury Quiet Standard
+BMW-NVH-2234,77.0,1696,64.9,0.19,Luxury Quiet Standard
+BMW-NVH-2235,175.4,4257,84.9,0.276,Unwanted Boom / Hum
+BMW-NVH-2236,41.2,892,60.4,0.05,Luxury Quiet Standard
+BMW-NVH-2237,149.4,3503,70.9,0.185,Luxury Quiet Standard
+BMW-NVH-2238,91.2,2346,67.6,0.152,Luxury Quiet Standard
+BMW-NVH-2239,122.0,2830,68.4,0.173,Luxury Quiet Standard
+BMW-NVH-2240,57.4,1427,59.6,0.123,Luxury Quiet Standard
+BMW-NVH-2241,98.7,2432,65.1,0.2,Luxury Quiet Standard
+BMW-NVH-2242,114.6,2755,69.9,0.134,Luxury Quiet Standard
+BMW-NVH-2243,65.9,1683,63.9,0.122,Luxury Quiet Standard
+BMW-NVH-2244,163.1,3941,84.1,0.226,Unwanted Boom / Hum
+BMW-NVH-2245,107.4,2575,65.7,0.132,Luxury Quiet Standard
+BMW-NVH-2246,139.5,3448,71.8,0.193,Luxury Quiet Standard
+BMW-NVH-2247,105.9,2589,61.9,0.198,Luxury Quiet Standard
+BMW-NVH-2248,56.1,1451,58.6,0.114,Luxury Quiet Standard
+BMW-NVH-2249,146.3,3454,77.4,0.271,Unwanted Boom / Hum
+BMW-NVH-2250,124.6,2908,69.7,0.167,Luxury Quiet Standard
+BMW-NVH-2251,158.9,3837,80.1,0.277,Unwanted Boom / Hum
+BMW-NVH-2252,165.6,3971,77.2,0.208,Luxury Quiet Standard
+BMW-NVH-2253,51.9,1325,59.5,0.203,Luxury Quiet Standard
+BMW-NVH-2254,158.8,3862,81.2,0.268,Unwanted Boom / Hum
+BMW-NVH-2255,88.3,2082,66.3,0.178,Luxury Quiet Standard
+BMW-NVH-2256,123.8,2854,71.3,0.138,Luxury Quiet Standard
+BMW-NVH-2257,31.9,907,54.2,0.08,Luxury Quiet Standard
+BMW-NVH-2258,154.6,3872,81.0,0.22,Unwanted Boom / Hum
+BMW-NVH-2259,165.4,4001,75.9,0.196,Luxury Quiet Standard
+BMW-NVH-2260,69.9,1689,62.0,0.162,Luxury Quiet Standard
+BMW-NVH-2261,43.8,973,59.5,0.121,Luxury Quiet Standard
+BMW-NVH-2262,58.8,1513,57.5,0.109,Luxury Quiet Standard
+BMW-NVH-2263,135.6,3240,73.3,0.195,Luxury Quiet Standard
+BMW-NVH-2264,176.3,4180,84.6,0.235,Unwanted Boom / Hum
+BMW-NVH-2265,145.2,3567,72.5,0.208,Luxury Quiet Standard
+BMW-NVH-2266,124.8,3047,66.9,0.199,Luxury Quiet Standard
+BMW-NVH-2267,137.3,3259,76.6,0.235,Unwanted Boom / Hum
+BMW-NVH-2268,62.8,1560,57.9,0.153,Luxury Quiet Standard
+BMW-NVH-2269,37.5,978,56.6,0.141,Luxury Quiet Standard
+BMW-NVH-2270,168.5,4030,82.2,0.256,Unwanted Boom / Hum
+BMW-NVH-2271,177.9,4309,78.6,0.219,Luxury Quiet Standard
+BMW-NVH-2272,104.6,2367,62.7,0.194,Luxury Quiet Standard
+BMW-NVH-2273,145.4,3569,78.1,0.277,Unwanted Boom / Hum
+BMW-NVH-2274,149.0,3697,79.8,0.281,Unwanted Boom / Hum
+BMW-NVH-2275,119.0,2896,71.9,0.225,Luxury Quiet Standard
+BMW-NVH-2276,176.2,4173,84.9,0.229,Unwanted Boom / Hum
+BMW-NVH-2277,57.1,1313,60.1,0.116,Luxury Quiet Standard
+BMW-NVH-2278,125.4,3024,69.3,0.16,Luxury Quiet Standard
+BMW-NVH-2279,118.9,3006,66.6,0.193,Luxury Quiet Standard
+BMW-NVH-2280,106.7,2585,70.9,0.157,Luxury Quiet Standard
+BMW-NVH-2281,169.1,4045,76.7,0.216,Luxury Quiet Standard
+BMW-NVH-2282,33.1,792,53.3,0.119,Luxury Quiet Standard
+BMW-NVH-2283,71.0,1752,63.4,0.129,Luxury Quiet Standard
+BMW-NVH-2284,116.3,2780,70.4,0.178,Luxury Quiet Standard
+BMW-NVH-2285,90.0,2253,64.7,0.163,Luxury Quiet Standard
+BMW-NVH-2286,119.6,2831,66.7,0.226,Luxury Quiet Standard
+BMW-NVH-2287,103.6,2629,70.4,0.211,Luxury Quiet Standard
+BMW-NVH-2288,50.4,1185,58.2,0.15,Luxury Quiet Standard
+BMW-NVH-2289,158.0,3794,79.0,0.244,Unwanted Boom / Hum
+BMW-NVH-2290,98.4,2364,68.6,0.147,Luxury Quiet Standard
+BMW-NVH-2291,167.4,4091,80.4,0.272,Unwanted Boom / Hum
+BMW-NVH-2292,151.2,3706,79.9,0.265,Unwanted Boom / Hum
+BMW-NVH-2293,119.9,2872,69.0,0.191,Luxury Quiet Standard
+BMW-NVH-2294,33.1,875,53.6,0.157,Luxury Quiet Standard
+BMW-NVH-2295,155.2,3848,82.9,0.225,Unwanted Boom / Hum
+BMW-NVH-2296,74.3,1757,62.4,0.086,Luxury Quiet Standard
+BMW-NVH-2297,157.6,3897,72.4,0.213,Luxury Quiet Standard
+BMW-NVH-2298,100.7,2506,65.5,0.15,Luxury Quiet Standard
+BMW-NVH-2299,60.4,1532,59.5,0.134,Luxury Quiet Standard
+BMW-NVH-2300,157.8,3899,81.0,0.238,Unwanted Boom / Hum
+BMW-NVH-2301,67.1,1720,63.3,0.201,Luxury Quiet Standard
+BMW-NVH-2302,110.4,2637,64.3,0.141,Luxury Quiet Standard
+BMW-NVH-2303,175.2,4224,78.1,0.203,Luxury Quiet Standard
+BMW-NVH-2304,128.4,3092,70.3,0.125,Luxury Quiet Standard
+BMW-NVH-2305,178.3,4212,79.5,0.21,Luxury Quiet Standard
+BMW-NVH-2306,141.2,3470,76.3,0.242,Unwanted Boom / Hum
+BMW-NVH-2307,167.5,3973,80.3,0.254,Unwanted Boom / Hum
+BMW-NVH-2308,118.0,2900,71.1,0.178,Luxury Quiet Standard
+BMW-NVH-2309,81.7,2026,65.4,0.188,Luxury Quiet Standard
+BMW-NVH-2310,97.3,2350,67.1,0.188,Luxury Quiet Standard
+BMW-NVH-2311,152.5,3837,78.3,0.229,Unwanted Boom / Hum
+BMW-NVH-2312,166.7,3966,84.5,0.236,Unwanted Boom / Hum
+BMW-NVH-2313,112.8,2711,67.5,0.181,Luxury Quiet Standard
+BMW-NVH-2314,153.1,3634,74.3,0.192,Luxury Quiet Standard
+BMW-NVH-2315,119.4,2820,68.8,0.168,Luxury Quiet Standard
+BMW-NVH-2316,130.8,3058,70.1,0.177,Luxury Quiet Standard
+BMW-NVH-2317,120.9,2833,70.6,0.238,Luxury Quiet Standard
+BMW-NVH-2318,173.0,4366,84.1,0.239,Unwanted Boom / Hum
+BMW-NVH-2319,135.7,3061,73.7,0.23,Luxury Quiet Standard
+BMW-NVH-2320,64.2,1514,62.1,0.198,Luxury Quiet Standard
+BMW-NVH-2321,52.7,1294,55.0,0.159,Luxury Quiet Standard
+BMW-NVH-2322,160.7,3773,73.1,0.2,Luxury Quiet Standard
+BMW-NVH-2323,118.0,2773,68.2,0.206,Luxury Quiet Standard
+BMW-NVH-2324,177.2,4318,81.2,0.223,Unwanted Boom / Hum
+BMW-NVH-2325,59.7,1459,58.8,0.144,Luxury Quiet Standard
+BMW-NVH-2326,171.0,4178,84.0,0.238,Unwanted Boom / Hum
+BMW-NVH-2327,118.1,2844,69.6,0.168,Luxury Quiet Standard
+BMW-NVH-2328,38.0,921,59.1,0.148,Luxury Quiet Standard
+BMW-NVH-2329,92.7,2303,67.3,0.15,Luxury Quiet Standard
+BMW-NVH-2330,127.2,3109,69.0,0.241,Luxury Quiet Standard
+BMW-NVH-2331,89.9,2122,61.9,0.126,Luxury Quiet Standard
+BMW-NVH-2332,123.5,3049,69.6,0.191,Luxury Quiet Standard
+BMW-NVH-2333,177.0,4216,82.0,0.311,Unwanted Boom / Hum
+BMW-NVH-2334,41.0,833,54.4,0.125,Luxury Quiet Standard
+BMW-NVH-2335,127.8,2940,69.5,0.143,Luxury Quiet Standard
+BMW-NVH-2336,85.5,1874,62.5,0.163,Luxury Quiet Standard
+BMW-NVH-2337,171.5,4139,81.8,0.252,Unwanted Boom / Hum
+BMW-NVH-2338,44.8,1215,58.8,0.128,Luxury Quiet Standard
+BMW-NVH-2339,61.4,1413,55.2,0.193,Luxury Quiet Standard
+BMW-NVH-2340,85.0,2175,66.4,0.155,Luxury Quiet Standard
+BMW-NVH-2341,76.6,1856,66.2,0.182,Luxury Quiet Standard
+BMW-NVH-2342,172.3,4101,83.2,0.225,Unwanted Boom / Hum
+BMW-NVH-2343,137.2,3270,68.8,0.188,Luxury Quiet Standard
+BMW-NVH-2344,31.4,806,56.8,0.1,Luxury Quiet Standard
+BMW-NVH-2345,129.1,3208,70.7,0.156,Luxury Quiet Standard
+BMW-NVH-2346,152.6,3732,79.7,0.236,Unwanted Boom / Hum
+BMW-NVH-2347,38.6,869,57.8,0.095,Luxury Quiet Standard
+BMW-NVH-2348,116.0,2680,65.4,0.234,Luxury Quiet Standard
+BMW-NVH-2349,128.3,3167,72.8,0.259,Luxury Quiet Standard
+BMW-NVH-2350,120.9,2866,70.0,0.187,Luxury Quiet Standard
+BMW-NVH-2351,151.1,3608,73.2,0.156,Luxury Quiet Standard
+BMW-NVH-2352,48.5,1086,56.3,0.064,Luxury Quiet Standard
+BMW-NVH-2353,52.5,1314,60.6,0.08,Luxury Quiet Standard
+BMW-NVH-2354,155.3,3813,79.0,0.225,Unwanted Boom / Hum
+BMW-NVH-2355,81.8,2012,64.0,0.154,Luxury Quiet Standard
+BMW-NVH-2356,41.6,1059,59.9,0.169,Luxury Quiet Standard
+BMW-NVH-2357,88.1,2052,63.0,0.146,Luxury Quiet Standard
+BMW-NVH-2358,175.8,4072,77.2,0.203,Luxury Quiet Standard
+BMW-NVH-2359,31.7,801,58.0,0.147,Luxury Quiet Standard
+BMW-NVH-2360,108.0,2542,68.7,0.165,Luxury Quiet Standard
+BMW-NVH-2361,166.7,3832,77.2,0.208,Luxury Quiet Standard
+BMW-NVH-2362,42.5,1036,55.9,0.123,Luxury Quiet Standard
+BMW-NVH-2363,83.5,2039,64.0,0.115,Luxury Quiet Standard
+BMW-NVH-2364,161.4,3705,80.5,0.223,Unwanted Boom / Hum
+BMW-NVH-2365,168.9,4065,76.8,0.173,Luxury Quiet Standard
+BMW-NVH-2366,122.9,2758,69.4,0.163,Luxury Quiet Standard
+BMW-NVH-2367,128.0,2983,70.8,0.185,Luxury Quiet Standard
+BMW-NVH-2368,76.7,1778,64.6,0.16,Luxury Quiet Standard
+BMW-NVH-2369,43.3,918,54.2,0.055,Luxury Quiet Standard
+BMW-NVH-2370,150.1,3684,80.0,0.245,Unwanted Boom / Hum
+BMW-NVH-2371,168.1,4047,80.6,0.249,Unwanted Boom / Hum
+BMW-NVH-2372,164.2,3984,81.2,0.267,Unwanted Boom / Hum
+BMW-NVH-2373,110.9,2710,65.4,0.138,Luxury Quiet Standard
+BMW-NVH-2374,64.4,1406,59.8,0.131,Luxury Quiet Standard
+BMW-NVH-2375,88.9,2063,65.4,0.118,Luxury Quiet Standard
+BMW-NVH-2376,173.9,4179,83.6,0.275,Unwanted Boom / Hum
+BMW-NVH-2377,81.6,2010,63.6,0.107,Luxury Quiet Standard
+BMW-NVH-2378,154.7,3792,79.4,0.225,Unwanted Boom / Hum
+BMW-NVH-2379,101.8,2490,64.7,0.181,Luxury Quiet Standard
+BMW-NVH-2380,50.7,1173,58.2,0.073,Luxury Quiet Standard
+BMW-NVH-2381,87.0,2148,65.1,0.193,Luxury Quiet Standard
+BMW-NVH-2382,96.8,2307,65.4,0.157,Luxury Quiet Standard
+BMW-NVH-2383,71.9,1804,64.2,0.208,Luxury Quiet Standard
+BMW-NVH-2384,69.2,1598,61.9,0.121,Luxury Quiet Standard
+BMW-NVH-2385,114.1,2707,69.8,0.194,Luxury Quiet Standard
+BMW-NVH-2386,97.9,2297,67.4,0.185,Luxury Quiet Standard
+BMW-NVH-2387,170.9,4036,76.0,0.196,Luxury Quiet Standard
+BMW-NVH-2388,105.1,2523,67.4,0.168,Luxury Quiet Standard
+BMW-NVH-2389,150.7,3634,72.5,0.202,Luxury Quiet Standard
+BMW-NVH-2390,77.0,1791,62.4,0.168,Luxury Quiet Standard
+BMW-NVH-2391,45.1,1137,58.8,0.118,Luxury Quiet Standard
+BMW-NVH-2392,43.8,1005,55.3,0.093,Luxury Quiet Standard
+BMW-NVH-2393,49.3,1256,59.7,0.146,Luxury Quiet Standard
+BMW-NVH-2394,99.3,2340,67.4,0.131,Luxury Quiet Standard
+BMW-NVH-2395,61.4,1618,59.8,0.119,Luxury Quiet Standard
+BMW-NVH-2396,98.5,2479,64.3,0.222,Luxury Quiet Standard
+BMW-NVH-2397,153.9,3679,80.5,0.266,Unwanted Boom / Hum
+BMW-NVH-2398,76.3,1719,64.4,0.179,Luxury Quiet Standard
+BMW-NVH-2399,130.1,2982,67.1,0.195,Luxury Quiet Standard
+BMW-NVH-2400,41.4,935,57.5,0.114,Luxury Quiet Standard
+BMW-NVH-2401,115.3,2640,66.7,0.19,Luxury Quiet Standard
+BMW-NVH-2402,56.5,1383,59.4,0.16,Luxury Quiet Standard
+BMW-NVH-2403,143.1,3513,80.7,0.221,Unwanted Boom / Hum
+BMW-NVH-2404,138.9,3269,75.8,0.248,Unwanted Boom / Hum
+BMW-NVH-2405,113.9,2829,67.8,0.237,Luxury Quiet Standard
+BMW-NVH-2406,153.5,3753,79.0,0.223,Unwanted Boom / Hum
+BMW-NVH-2407,114.6,2803,69.8,0.166,Luxury Quiet Standard
+BMW-NVH-2408,70.0,1792,61.3,0.126,Luxury Quiet Standard
+BMW-NVH-2409,117.6,2869,68.1,0.195,Luxury Quiet Standard
+BMW-NVH-2410,142.9,3490,72.4,0.202,Luxury Quiet Standard
+BMW-NVH-2411,141.5,3455,70.5,0.193,Luxury Quiet Standard
+BMW-NVH-2412,114.7,2868,68.8,0.189,Luxury Quiet Standard
+BMW-NVH-2413,127.7,3063,67.8,0.213,Luxury Quiet Standard
+BMW-NVH-2414,78.9,1851,62.8,0.153,Luxury Quiet Standard
+BMW-NVH-2415,50.5,1232,58.2,0.144,Luxury Quiet Standard
+BMW-NVH-2416,67.4,1529,60.1,0.164,Luxury Quiet Standard
+BMW-NVH-2417,104.8,2580,65.7,0.142,Luxury Quiet Standard
+BMW-NVH-2418,168.2,4044,83.5,0.223,Unwanted Boom / Hum
+BMW-NVH-2419,110.8,2686,65.6,0.157,Luxury Quiet Standard
+BMW-NVH-2420,47.0,1088,57.2,0.055,Luxury Quiet Standard
+BMW-NVH-2421,152.0,3583,73.3,0.217,Luxury Quiet Standard
+BMW-NVH-2422,104.1,2350,67.6,0.15,Luxury Quiet Standard
+BMW-NVH-2423,166.6,3944,80.4,0.22,Unwanted Boom / Hum
+BMW-NVH-2424,87.2,2088,64.2,0.142,Luxury Quiet Standard
+BMW-NVH-2425,125.3,3191,69.9,0.185,Luxury Quiet Standard
+BMW-NVH-2426,87.8,2172,64.0,0.16,Luxury Quiet Standard
+BMW-NVH-2427,116.2,2795,68.3,0.166,Luxury Quiet Standard
+BMW-NVH-2428,145.7,3341,70.7,0.21,Luxury Quiet Standard
+BMW-NVH-2429,69.3,1745,61.6,0.131,Luxury Quiet Standard
+BMW-NVH-2430,162.3,3728,76.7,0.181,Luxury Quiet Standard
+BMW-NVH-2431,50.5,1203,59.6,0.119,Luxury Quiet Standard
+BMW-NVH-2432,102.5,2392,68.6,0.19,Luxury Quiet Standard
+BMW-NVH-2433,107.0,2600,69.0,0.194,Luxury Quiet Standard
+BMW-NVH-2434,166.5,4020,80.1,0.254,Unwanted Boom / Hum
+BMW-NVH-2435,99.0,2250,63.2,0.183,Luxury Quiet Standard
+BMW-NVH-2436,61.8,1464,61.4,0.142,Luxury Quiet Standard
+BMW-NVH-2437,94.8,2345,66.4,0.154,Luxury Quiet Standard
+BMW-NVH-2438,105.4,2446,64.8,0.218,Luxury Quiet Standard
+BMW-NVH-2439,169.0,4025,80.7,0.23,Unwanted Boom / Hum
+BMW-NVH-2440,122.2,2852,69.0,0.126,Luxury Quiet Standard
+BMW-NVH-2441,90.3,2153,65.4,0.138,Luxury Quiet Standard
+BMW-NVH-2442,115.6,2841,70.9,0.205,Luxury Quiet Standard
+BMW-NVH-2443,108.7,2740,65.2,0.168,Luxury Quiet Standard
+BMW-NVH-2444,114.3,2840,69.9,0.255,Luxury Quiet Standard
+BMW-NVH-2445,76.7,1923,63.8,0.145,Luxury Quiet Standard
+BMW-NVH-2446,63.4,1567,63.6,0.172,Luxury Quiet Standard
+BMW-NVH-2447,173.8,4065,78.0,0.206,Luxury Quiet Standard
+BMW-NVH-2448,71.9,1800,62.7,0.17,Luxury Quiet Standard
+BMW-NVH-2449,133.9,3104,72.1,0.218,Luxury Quiet Standard
+BMW-NVH-2450,136.0,3155,72.2,0.249,Luxury Quiet Standard
+BMW-NVH-2451,93.3,2254,68.9,0.139,Luxury Quiet Standard
+BMW-NVH-2452,33.6,773,59.9,0.15,Luxury Quiet Standard
+BMW-NVH-2453,117.3,2889,67.2,0.233,Luxury Quiet Standard
+BMW-NVH-2454,83.9,2110,63.6,0.133,Luxury Quiet Standard
+BMW-NVH-2455,136.4,3240,75.6,0.221,Unwanted Boom / Hum
+BMW-NVH-2456,171.2,4096,75.6,0.201,Luxury Quiet Standard
+BMW-NVH-2457,57.9,1406,61.2,0.139,Luxury Quiet Standard
+BMW-NVH-2458,51.4,1230,57.7,0.128,Luxury Quiet Standard
+BMW-NVH-2459,122.8,2983,70.1,0.167,Luxury Quiet Standard
+BMW-NVH-2460,118.3,2876,69.9,0.213,Luxury Quiet Standard
+BMW-NVH-2461,178.1,4433,81.3,0.295,Unwanted Boom / Hum
+BMW-NVH-2462,163.3,3871,74.8,0.198,Luxury Quiet Standard
+BMW-NVH-2463,125.2,2886,67.5,0.229,Luxury Quiet Standard
+BMW-NVH-2464,88.4,2139,63.1,0.151,Luxury Quiet Standard
+BMW-NVH-2465,68.4,1734,61.3,0.161,Luxury Quiet Standard
+BMW-NVH-2466,106.4,2592,67.3,0.146,Luxury Quiet Standard
+BMW-NVH-2467,161.8,3896,77.6,0.163,Luxury Quiet Standard
+BMW-NVH-2468,137.2,3187,72.5,0.208,Luxury Quiet Standard
+BMW-NVH-2469,132.5,3086,68.2,0.171,Luxury Quiet Standard
+BMW-NVH-2470,46.3,991,59.2,0.146,Luxury Quiet Standard
+BMW-NVH-2471,145.2,3474,73.7,0.18,Luxury Quiet Standard
+BMW-NVH-2472,115.3,2698,65.7,0.145,Luxury Quiet Standard
+BMW-NVH-2473,112.1,2601,68.6,0.097,Luxury Quiet Standard
+BMW-NVH-2474,104.3,2533,64.7,0.169,Luxury Quiet Standard
+BMW-NVH-2475,69.0,1670,58.4,0.183,Luxury Quiet Standard
+BMW-NVH-2476,49.0,1186,56.9,0.136,Luxury Quiet Standard
+BMW-NVH-2477,150.0,3642,75.5,0.198,Luxury Quiet Standard
+BMW-NVH-2478,123.4,2963,71.3,0.2,Luxury Quiet Standard
+BMW-NVH-2479,130.4,3111,70.0,0.197,Luxury Quiet Standard
+BMW-NVH-2480,164.6,4027,80.6,0.228,Unwanted Boom / Hum
+BMW-NVH-2481,67.2,1629,61.6,0.175,Luxury Quiet Standard
+BMW-NVH-2482,49.0,1179,60.2,0.201,Luxury Quiet Standard
+BMW-NVH-2483,75.1,1829,58.6,0.132,Luxury Quiet Standard
+BMW-NVH-2484,77.0,1814,64.0,0.15,Luxury Quiet Standard
+BMW-NVH-2485,61.2,1442,65.4,0.075,Luxury Quiet Standard
+BMW-NVH-2486,145.1,3440,71.7,0.22,Luxury Quiet Standard
+BMW-NVH-2487,70.1,1651,60.3,0.135,Luxury Quiet Standard
+BMW-NVH-2488,136.4,3360,77.1,0.225,Unwanted Boom / Hum
+BMW-NVH-2489,112.7,2695,67.8,0.174,Luxury Quiet Standard
+BMW-NVH-2490,48.8,1139,57.7,0.199,Luxury Quiet Standard
+BMW-NVH-2491,76.7,1801,64.3,0.129,Luxury Quiet Standard
+BMW-NVH-2492,112.1,2854,66.9,0.172,Luxury Quiet Standard
+BMW-NVH-2493,95.6,2277,62.9,0.153,Luxury Quiet Standard
+BMW-NVH-2494,125.3,3061,74.0,0.161,Luxury Quiet Standard
+BMW-NVH-2495,83.9,2017,65.1,0.133,Luxury Quiet Standard
+BMW-NVH-2496,132.6,3140,70.6,0.19,Luxury Quiet Standard
+BMW-NVH-2497,79.5,1942,61.3,0.19,Luxury Quiet Standard
+BMW-NVH-2498,131.9,3122,72.7,0.196,Luxury Quiet Standard
+BMW-NVH-2499,166.1,3891,82.5,0.245,Unwanted Boom / Hum
+BMW-NVH-2500,136.4,3179,71.5,0.189,Luxury Quiet Standard
+BMW-NVH-2501,151.3,3638,78.4,0.276,Unwanted Boom / Hum
+BMW-NVH-2502,157.4,3687,80.2,0.245,Unwanted Boom / Hum
+BMW-NVH-2503,134.8,3260,70.3,0.209,Luxury Quiet Standard
+BMW-NVH-2504,70.3,1607,59.4,0.126,Luxury Quiet Standard
+BMW-NVH-2505,113.9,2662,70.2,0.119,Luxury Quiet Standard
+BMW-NVH-2506,160.3,3745,83.0,0.245,Unwanted Boom / Hum
+BMW-NVH-2507,179.7,4302,83.1,0.278,Unwanted Boom / Hum
+BMW-NVH-2508,165.9,3899,79.1,0.222,Unwanted Boom / Hum
+BMW-NVH-2509,175.7,4236,83.2,0.229,Unwanted Boom / Hum
+BMW-NVH-2510,148.1,3716,82.0,0.24,Unwanted Boom / Hum
+BMW-NVH-2511,44.8,1055,59.1,0.098,Luxury Quiet Standard
+BMW-NVH-2512,171.6,4141,77.3,0.204,Luxury Quiet Standard
+BMW-NVH-2513,138.9,3334,77.8,0.227,Unwanted Boom / Hum
+BMW-NVH-2514,108.2,2566,67.0,0.166,Luxury Quiet Standard
+BMW-NVH-2515,175.8,4275,72.5,0.163,Luxury Quiet Standard
+BMW-NVH-2516,125.7,3051,68.7,0.171,Luxury Quiet Standard
+BMW-NVH-2517,64.4,1621,62.2,0.159,Luxury Quiet Standard
+BMW-NVH-2518,35.9,907,55.4,0.134,Luxury Quiet Standard
+BMW-NVH-2519,153.5,3863,78.9,0.246,Unwanted Boom / Hum
+BMW-NVH-2520,55.5,1368,61.6,0.147,Luxury Quiet Standard
+BMW-NVH-2521,71.1,1783,63.7,0.13,Luxury Quiet Standard
+BMW-NVH-2522,36.9,878,55.4,0.085,Luxury Quiet Standard
+BMW-NVH-2523,92.8,2152,65.8,0.156,Luxury Quiet Standard
+BMW-NVH-2524,145.2,3509,78.0,0.205,Luxury Quiet Standard
+BMW-NVH-2525,66.4,1571,62.7,0.122,Luxury Quiet Standard
+BMW-NVH-2526,145.1,3434,71.7,0.191,Luxury Quiet Standard
+BMW-NVH-2527,154.2,3730,74.9,0.203,Luxury Quiet Standard
+BMW-NVH-2528,169.3,4066,76.9,0.158,Luxury Quiet Standard
+BMW-NVH-2529,136.9,3424,74.8,0.2,Luxury Quiet Standard
+BMW-NVH-2530,37.2,831,58.1,0.142,Luxury Quiet Standard
+BMW-NVH-2531,115.5,2782,64.9,0.222,Luxury Quiet Standard
+BMW-NVH-2532,114.4,2740,67.9,0.249,Luxury Quiet Standard
+BMW-NVH-2533,59.8,1292,60.9,0.082,Luxury Quiet Standard
+BMW-NVH-2534,158.6,3738,73.6,0.216,Luxury Quiet Standard
+BMW-NVH-2535,145.1,3591,79.5,0.233,Unwanted Boom / Hum
+BMW-NVH-2536,41.5,957,58.9,0.092,Luxury Quiet Standard
+BMW-NVH-2537,146.0,3577,79.1,0.22,Unwanted Boom / Hum
+BMW-NVH-2538,117.7,2813,66.5,0.168,Luxury Quiet Standard
+BMW-NVH-2539,114.9,2754,72.3,0.17,Luxury Quiet Standard
+BMW-NVH-2540,97.4,2300,66.9,0.182,Luxury Quiet Standard
+BMW-NVH-2541,145.6,3502,74.9,0.199,Luxury Quiet Standard
+BMW-NVH-2542,39.9,872,58.2,0.12,Luxury Quiet Standard
+BMW-NVH-2543,31.3,798,56.3,0.172,Luxury Quiet Standard
+BMW-NVH-2544,86.7,2006,62.8,0.154,Luxury Quiet Standard
+BMW-NVH-2545,145.9,3425,75.2,0.219,Luxury Quiet Standard
+BMW-NVH-2546,174.4,4113,80.6,0.253,Unwanted Boom / Hum
+BMW-NVH-2547,173.6,4032,77.2,0.208,Luxury Quiet Standard
+BMW-NVH-2548,80.6,1876,62.4,0.146,Luxury Quiet Standard
+BMW-NVH-2549,46.1,1012,54.9,0.043,Luxury Quiet Standard
+BMW-NVH-2550,154.8,3670,78.2,0.213,Luxury Quiet Standard
+BMW-NVH-2551,102.2,2461,65.3,0.167,Luxury Quiet Standard
+BMW-NVH-2552,119.9,2784,68.7,0.146,Luxury Quiet Standard
+BMW-NVH-2553,146.6,3624,72.1,0.182,Luxury Quiet Standard
+BMW-NVH-2554,148.8,3610,73.5,0.188,Luxury Quiet Standard
+BMW-NVH-2555,61.4,1465,61.7,0.087,Luxury Quiet Standard
+BMW-NVH-2556,145.6,3622,71.6,0.2,Luxury Quiet Standard
+BMW-NVH-2557,129.3,3112,69.9,0.224,Luxury Quiet Standard
+BMW-NVH-2558,118.5,2868,71.9,0.172,Luxury Quiet Standard
+BMW-NVH-2559,70.5,1791,61.0,0.14,Luxury Quiet Standard
+BMW-NVH-2560,89.7,2216,63.7,0.185,Luxury Quiet Standard
+BMW-NVH-2561,98.1,2159,66.2,0.145,Luxury Quiet Standard
+BMW-NVH-2562,113.4,2769,67.8,0.167,Luxury Quiet Standard
+BMW-NVH-2563,36.0,786,54.6,0.184,Luxury Quiet Standard
+BMW-NVH-2564,85.0,2240,66.7,0.146,Luxury Quiet Standard
+BMW-NVH-2565,90.9,2140,62.9,0.137,Luxury Quiet Standard
+BMW-NVH-2566,106.0,2581,67.5,0.176,Luxury Quiet Standard
+BMW-NVH-2567,129.9,3193,72.6,0.163,Luxury Quiet Standard
+BMW-NVH-2568,48.7,1143,61.5,0.153,Luxury Quiet Standard
+BMW-NVH-2569,93.5,2409,61.9,0.13,Luxury Quiet Standard
+BMW-NVH-2570,171.9,4189,77.0,0.207,Luxury Quiet Standard
+BMW-NVH-2571,141.7,3455,75.1,0.274,Unwanted Boom / Hum
+BMW-NVH-2572,125.4,3094,69.5,0.194,Luxury Quiet Standard
+BMW-NVH-2573,150.2,3491,78.6,0.236,Unwanted Boom / Hum
+BMW-NVH-2574,137.0,3200,72.5,0.197,Luxury Quiet Standard
+BMW-NVH-2575,46.2,1164,54.4,0.082,Luxury Quiet Standard
+BMW-NVH-2576,125.1,3085,67.7,0.204,Luxury Quiet Standard
+BMW-NVH-2577,49.2,1294,58.0,0.126,Luxury Quiet Standard
+BMW-NVH-2578,76.8,1852,61.6,0.155,Luxury Quiet Standard
+BMW-NVH-2579,107.8,2627,63.9,0.204,Luxury Quiet Standard
+BMW-NVH-2580,154.9,3666,77.1,0.227,Unwanted Boom / Hum
+BMW-NVH-2581,51.7,1177,60.6,0.138,Luxury Quiet Standard
+BMW-NVH-2582,105.4,2385,66.5,0.189,Luxury Quiet Standard
+BMW-NVH-2583,170.6,4028,73.1,0.203,Luxury Quiet Standard
+BMW-NVH-2584,79.0,1943,63.7,0.093,Luxury Quiet Standard
+BMW-NVH-2585,162.2,3721,80.4,0.256,Unwanted Boom / Hum
+BMW-NVH-2586,107.2,2566,67.3,0.186,Luxury Quiet Standard
+BMW-NVH-2587,127.0,3014,68.7,0.213,Luxury Quiet Standard
+BMW-NVH-2588,62.2,1542,57.5,0.186,Luxury Quiet Standard
+BMW-NVH-2589,153.6,3641,72.8,0.204,Luxury Quiet Standard
+BMW-NVH-2590,58.0,1205,60.3,0.135,Luxury Quiet Standard
+BMW-NVH-2591,84.9,2035,65.4,0.195,Luxury Quiet Standard
+BMW-NVH-2592,161.0,3772,81.1,0.267,Unwanted Boom / Hum
+BMW-NVH-2593,168.3,4038,79.5,0.232,Unwanted Boom / Hum
+BMW-NVH-2594,157.4,3769,75.2,0.204,Luxury Quiet Standard
+BMW-NVH-2595,97.9,2278,63.8,0.156,Luxury Quiet Standard
+BMW-NVH-2596,118.8,2890,71.7,0.178,Luxury Quiet Standard
+BMW-NVH-2597,70.7,1749,59.7,0.149,Luxury Quiet Standard
+BMW-NVH-2598,148.6,3611,79.3,0.312,Unwanted Boom / Hum
+BMW-NVH-2599,159.5,3806,76.3,0.179,Luxury Quiet Standard
+BMW-NVH-2600,155.6,3644,74.1,0.199,Luxury Quiet Standard
+BMW-NVH-2601,143.8,3549,79.4,0.256,Unwanted Boom / Hum
+BMW-NVH-2602,58.4,1449,60.1,0.123,Luxury Quiet Standard
+BMW-NVH-2603,132.0,3246,71.9,0.191,Luxury Quiet Standard
+BMW-NVH-2604,48.3,1087,56.8,0.116,Luxury Quiet Standard
+BMW-NVH-2605,50.9,1278,59.2,0.057,Luxury Quiet Standard
+BMW-NVH-2606,45.7,1110,59.5,0.187,Luxury Quiet Standard
+BMW-NVH-2607,45.8,1027,58.8,0.099,Luxury Quiet Standard
+BMW-NVH-2608,137.8,3385,79.0,0.234,Unwanted Boom / Hum
+BMW-NVH-2609,158.5,3780,79.2,0.223,Unwanted Boom / Hum
+BMW-NVH-2610,101.9,2508,65.5,0.192,Luxury Quiet Standard
+BMW-NVH-2611,116.5,2932,68.0,0.205,Luxury Quiet Standard
+BMW-NVH-2612,141.8,3368,79.0,0.223,Unwanted Boom / Hum
+BMW-NVH-2613,163.8,3918,73.0,0.214,Luxury Quiet Standard
+BMW-NVH-2614,114.4,2753,70.1,0.196,Luxury Quiet Standard
+BMW-NVH-2615,120.6,2792,66.5,0.196,Luxury Quiet Standard
+BMW-NVH-2616,110.6,2558,68.7,0.166,Luxury Quiet Standard
+BMW-NVH-2617,162.1,3914,81.3,0.235,Unwanted Boom / Hum
+BMW-NVH-2618,173.7,4189,83.3,0.259,Unwanted Boom / Hum
+BMW-NVH-2619,79.5,1860,64.2,0.178,Luxury Quiet Standard
+BMW-NVH-2620,141.1,3225,70.2,0.201,Luxury Quiet Standard
+BMW-NVH-2621,177.0,4286,81.6,0.269,Unwanted Boom / Hum
+BMW-NVH-2622,159.8,3851,75.6,0.169,Luxury Quiet Standard
+BMW-NVH-2623,100.2,2470,67.7,0.148,Luxury Quiet Standard
+BMW-NVH-2624,149.4,3611,76.6,0.254,Unwanted Boom / Hum
+BMW-NVH-2625,59.3,1374,56.8,0.164,Luxury Quiet Standard
+BMW-NVH-2626,168.3,4124,77.4,0.215,Luxury Quiet Standard
+BMW-NVH-2627,132.8,3054,68.6,0.243,Luxury Quiet Standard
+BMW-NVH-2628,78.4,1923,61.8,0.188,Luxury Quiet Standard
+BMW-NVH-2629,94.7,2361,64.0,0.11,Luxury Quiet Standard
+BMW-NVH-2630,110.9,2833,68.6,0.21,Luxury Quiet Standard
+BMW-NVH-2631,173.9,4231,82.7,0.244,Unwanted Boom / Hum
+BMW-NVH-2632,30.4,603,52.9,0.092,Luxury Quiet Standard
+BMW-NVH-2633,116.0,2933,67.8,0.239,Luxury Quiet Standard
+BMW-NVH-2634,152.1,3692,74.0,0.177,Luxury Quiet Standard
+BMW-NVH-2635,59.9,1314,60.6,0.139,Luxury Quiet Standard
+BMW-NVH-2636,65.0,1642,63.7,0.178,Luxury Quiet Standard
+BMW-NVH-2637,162.8,3940,74.1,0.211,Luxury Quiet Standard
+BMW-NVH-2638,37.2,976,62.1,0.135,Luxury Quiet Standard
+BMW-NVH-2639,32.6,728,54.7,0.071,Luxury Quiet Standard
+BMW-NVH-2640,86.1,1965,64.9,0.188,Luxury Quiet Standard
+BMW-NVH-2641,79.5,1984,62.5,0.158,Luxury Quiet Standard
+BMW-NVH-2642,132.9,3224,71.4,0.192,Luxury Quiet Standard
+BMW-NVH-2643,118.4,2843,67.8,0.23,Luxury Quiet Standard
+BMW-NVH-2644,116.1,2833,68.6,0.224,Luxury Quiet Standard
+BMW-NVH-2645,89.6,2192,67.1,0.132,Luxury Quiet Standard
+BMW-NVH-2646,160.8,3901,75.6,0.206,Luxury Quiet Standard
+BMW-NVH-2647,82.9,1862,66.4,0.154,Luxury Quiet Standard
+BMW-NVH-2648,173.3,4080,81.3,0.231,Unwanted Boom / Hum
+BMW-NVH-2649,117.4,2676,66.5,0.21,Luxury Quiet Standard
+BMW-NVH-2650,44.2,990,60.3,0.109,Luxury Quiet Standard
+BMW-NVH-2651,121.3,2790,70.7,0.138,Luxury Quiet Standard
+BMW-NVH-2652,53.8,1348,58.7,0.085,Luxury Quiet Standard
+BMW-NVH-2653,176.4,4170,77.3,0.197,Luxury Quiet Standard
+BMW-NVH-2654,74.8,1739,64.7,0.179,Luxury Quiet Standard
+BMW-NVH-2655,104.8,2487,65.0,0.137,Luxury Quiet Standard
+BMW-NVH-2656,158.3,3925,76.3,0.203,Luxury Quiet Standard
+BMW-NVH-2657,101.2,2237,65.4,0.134,Luxury Quiet Standard
+BMW-NVH-2658,41.9,1034,57.5,0.195,Luxury Quiet Standard
+BMW-NVH-2659,30.8,808,56.5,0.059,Luxury Quiet Standard
+BMW-NVH-2660,179.8,4207,83.4,0.242,Unwanted Boom / Hum
+BMW-NVH-2661,49.4,1026,58.3,0.089,Luxury Quiet Standard
+BMW-NVH-2662,35.8,939,57.2,0.147,Luxury Quiet Standard
+BMW-NVH-2663,142.7,3458,73.2,0.202,Luxury Quiet Standard
+BMW-NVH-2664,47.2,1083,60.5,0.15,Luxury Quiet Standard
+BMW-NVH-2665,31.6,739,51.5,0.12,Luxury Quiet Standard
+BMW-NVH-2666,168.8,3994,82.3,0.235,Unwanted Boom / Hum
+BMW-NVH-2667,106.2,2570,69.9,0.173,Luxury Quiet Standard
+BMW-NVH-2668,49.0,1129,59.0,0.093,Luxury Quiet Standard
+BMW-NVH-2669,141.1,3523,71.6,0.185,Luxury Quiet Standard
+BMW-NVH-2670,122.4,2998,70.5,0.165,Luxury Quiet Standard
+BMW-NVH-2671,117.9,2796,70.4,0.176,Luxury Quiet Standard
+BMW-NVH-2672,52.1,1436,60.3,0.108,Luxury Quiet Standard
+BMW-NVH-2673,91.7,2061,61.6,0.149,Luxury Quiet Standard
+BMW-NVH-2674,94.0,2329,63.6,0.195,Luxury Quiet Standard
+BMW-NVH-2675,74.4,1763,62.2,0.13,Luxury Quiet Standard
+BMW-NVH-2676,39.5,857,58.1,0.13,Luxury Quiet Standard
+BMW-NVH-2677,52.8,1195,62.1,0.142,Luxury Quiet Standard
+BMW-NVH-2678,40.8,997,56.9,0.112,Luxury Quiet Standard
+BMW-NVH-2679,117.1,2865,70.8,0.153,Luxury Quiet Standard
+BMW-NVH-2680,178.7,4362,79.0,0.249,Unwanted Boom / Hum
+BMW-NVH-2681,99.9,2325,65.5,0.204,Luxury Quiet Standard
+BMW-NVH-2682,108.5,2649,66.0,0.18,Luxury Quiet Standard
+BMW-NVH-2683,47.9,982,61.8,0.121,Luxury Quiet Standard
+BMW-NVH-2684,33.7,761,58.5,0.112,Luxury Quiet Standard
+BMW-NVH-2685,109.1,2646,68.7,0.133,Luxury Quiet Standard
+BMW-NVH-2686,64.2,1522,62.9,0.146,Luxury Quiet Standard
+BMW-NVH-2687,52.3,1213,60.2,0.06,Luxury Quiet Standard
+BMW-NVH-2688,136.3,3366,73.4,0.154,Luxury Quiet Standard
+BMW-NVH-2689,178.3,4236,75.6,0.179,Luxury Quiet Standard
+BMW-NVH-2690,47.2,1091,57.9,0.125,Luxury Quiet Standard
+BMW-NVH-2691,44.4,1038,61.5,0.093,Luxury Quiet Standard
+BMW-NVH-2692,53.2,1118,57.1,0.095,Luxury Quiet Standard
+BMW-NVH-2693,96.8,2198,66.1,0.118,Luxury Quiet Standard
+BMW-NVH-2694,114.8,2739,71.1,0.199,Luxury Quiet Standard
+BMW-NVH-2695,157.0,3863,79.6,0.283,Unwanted Boom / Hum
+BMW-NVH-2696,64.1,1489,60.0,0.155,Luxury Quiet Standard
+BMW-NVH-2697,168.9,4005,82.2,0.27,Unwanted Boom / Hum
+BMW-NVH-2698,174.6,4188,83.0,0.264,Unwanted Boom / Hum
+BMW-NVH-2699,57.5,1247,60.1,0.096,Luxury Quiet Standard
+BMW-NVH-2700,116.3,2876,65.5,0.202,Luxury Quiet Standard
+BMW-NVH-2701,124.8,3193,69.5,0.209,Luxury Quiet Standard
+BMW-NVH-2702,144.6,3557,81.2,0.25,Unwanted Boom / Hum
+BMW-NVH-2703,85.4,1969,64.4,0.134,Luxury Quiet Standard
+BMW-NVH-2704,56.7,1348,59.1,0.099,Luxury Quiet Standard
+BMW-NVH-2705,127.2,3171,68.6,0.211,Luxury Quiet Standard
+BMW-NVH-2706,90.2,2286,61.2,0.173,Luxury Quiet Standard
+BMW-NVH-2707,151.9,3667,74.2,0.219,Luxury Quiet Standard
+BMW-NVH-2708,39.6,835,58.1,0.112,Luxury Quiet Standard
+BMW-NVH-2709,165.5,3933,81.9,0.232,Unwanted Boom / Hum
+BMW-NVH-2710,138.1,3207,78.9,0.237,Unwanted Boom / Hum
+BMW-NVH-2711,120.4,2992,72.3,0.225,Luxury Quiet Standard
+BMW-NVH-2712,142.7,3376,78.5,0.234,Unwanted Boom / Hum
+BMW-NVH-2713,115.3,2621,68.5,0.24,Luxury Quiet Standard
+BMW-NVH-2714,70.6,1698,62.7,0.127,Luxury Quiet Standard
+BMW-NVH-2715,165.3,4037,83.1,0.228,Unwanted Boom / Hum
+BMW-NVH-2716,128.7,3015,68.5,0.224,Luxury Quiet Standard
+BMW-NVH-2717,110.0,2666,67.3,0.134,Luxury Quiet Standard
+BMW-NVH-2718,56.6,1251,57.7,0.112,Luxury Quiet Standard
+BMW-NVH-2719,65.6,1562,65.1,0.138,Luxury Quiet Standard
+BMW-NVH-2720,142.4,3362,73.6,0.196,Luxury Quiet Standard
+BMW-NVH-2721,149.3,3532,75.2,0.249,Unwanted Boom / Hum
+BMW-NVH-2722,90.1,2213,63.7,0.188,Luxury Quiet Standard
+BMW-NVH-2723,118.6,2811,67.7,0.145,Luxury Quiet Standard
+BMW-NVH-2724,137.3,3184,69.7,0.208,Luxury Quiet Standard
+BMW-NVH-2725,101.6,2341,64.5,0.165,Luxury Quiet Standard
+BMW-NVH-2726,92.5,2150,65.3,0.137,Luxury Quiet Standard
+BMW-NVH-2727,81.1,1916,63.7,0.124,Luxury Quiet Standard
+BMW-NVH-2728,117.1,2769,67.6,0.148,Luxury Quiet Standard
+BMW-NVH-2729,49.4,1290,61.2,0.102,Luxury Quiet Standard
+BMW-NVH-2730,174.5,4071,77.0,0.201,Luxury Quiet Standard
+BMW-NVH-2731,160.9,3918,74.7,0.206,Luxury Quiet Standard
+BMW-NVH-2732,152.7,3464,72.0,0.19,Luxury Quiet Standard
+BMW-NVH-2733,119.4,2807,69.6,0.16,Luxury Quiet Standard
+BMW-NVH-2734,176.7,4402,86.2,0.237,Unwanted Boom / Hum
+BMW-NVH-2735,136.0,3365,73.1,0.176,Luxury Quiet Standard
+BMW-NVH-2736,54.5,1275,62.6,0.074,Luxury Quiet Standard
+BMW-NVH-2737,121.2,2977,69.7,0.19,Luxury Quiet Standard
+BMW-NVH-2738,98.7,2375,63.7,0.173,Luxury Quiet Standard
+BMW-NVH-2739,71.0,1586,62.7,0.157,Luxury Quiet Standard
+BMW-NVH-2740,88.9,2033,65.2,0.164,Luxury Quiet Standard
+BMW-NVH-2741,166.4,4077,75.6,0.183,Luxury Quiet Standard
+BMW-NVH-2742,131.9,3264,73.2,0.197,Luxury Quiet Standard
+BMW-NVH-2743,55.6,1450,59.0,0.157,Luxury Quiet Standard
+BMW-NVH-2744,66.1,1711,59.8,0.173,Luxury Quiet Standard
+BMW-NVH-2745,148.6,3543,73.9,0.161,Luxury Quiet Standard
+BMW-NVH-2746,94.2,2186,65.0,0.109,Luxury Quiet Standard
+BMW-NVH-2747,90.8,1940,64.9,0.104,Luxury Quiet Standard
+BMW-NVH-2748,35.9,888,56.9,0.139,Luxury Quiet Standard
+BMW-NVH-2749,101.8,2402,64.9,0.182,Luxury Quiet Standard
+BMW-NVH-2750,55.5,1406,58.4,0.094,Luxury Quiet Standard
+BMW-NVH-2751,97.2,2388,64.8,0.157,Luxury Quiet Standard
+BMW-NVH-2752,50.8,1241,57.4,0.067,Luxury Quiet Standard
+BMW-NVH-2753,49.0,1138,62.1,0.161,Luxury Quiet Standard
+BMW-NVH-2754,161.2,3819,75.1,0.179,Luxury Quiet Standard
+BMW-NVH-2755,104.0,2560,66.7,0.159,Luxury Quiet Standard
+BMW-NVH-2756,50.0,1263,58.1,0.145,Luxury Quiet Standard
+BMW-NVH-2757,69.2,1597,60.1,0.112,Luxury Quiet Standard
+BMW-NVH-2758,78.1,1864,65.3,0.084,Luxury Quiet Standard
+BMW-NVH-2759,66.7,1598,59.5,0.1,Luxury Quiet Standard
+BMW-NVH-2760,137.0,3425,75.9,0.258,Unwanted Boom / Hum
+BMW-NVH-2761,177.3,4067,75.0,0.195,Luxury Quiet Standard
+BMW-NVH-2762,74.9,1802,61.9,0.136,Luxury Quiet Standard
+BMW-NVH-2763,62.8,1452,57.1,0.118,Luxury Quiet Standard
+BMW-NVH-2764,102.7,2596,68.0,0.191,Luxury Quiet Standard
+BMW-NVH-2765,87.6,2108,65.2,0.16,Luxury Quiet Standard
+BMW-NVH-2766,123.0,2890,70.1,0.214,Luxury Quiet Standard
+BMW-NVH-2767,132.3,3221,76.4,0.223,Unwanted Boom / Hum
+BMW-NVH-2768,62.2,1435,61.1,0.17,Luxury Quiet Standard
+BMW-NVH-2769,176.9,4299,80.7,0.221,Unwanted Boom / Hum
+BMW-NVH-2770,41.6,1077,58.5,0.141,Luxury Quiet Standard
+BMW-NVH-2771,56.9,1432,57.8,0.142,Luxury Quiet Standard
+BMW-NVH-2772,107.7,2527,70.6,0.14,Luxury Quiet Standard
+BMW-NVH-2773,106.6,2613,68.8,0.2,Luxury Quiet Standard
+BMW-NVH-2774,31.9,856,56.4,0.101,Luxury Quiet Standard
+BMW-NVH-2775,164.8,3912,83.8,0.235,Unwanted Boom / Hum
+BMW-NVH-2776,105.8,2554,65.6,0.202,Luxury Quiet Standard
+BMW-NVH-2777,69.4,1757,62.4,0.208,Luxury Quiet Standard
+BMW-NVH-2778,43.5,917,59.3,0.115,Luxury Quiet Standard
+BMW-NVH-2779,120.9,3111,69.1,0.218,Luxury Quiet Standard
+BMW-NVH-2780,97.4,2289,65.3,0.165,Luxury Quiet Standard
+BMW-NVH-2781,175.6,4247,74.9,0.217,Luxury Quiet Standard
+BMW-NVH-2782,144.4,3345,72.8,0.203,Luxury Quiet Standard
+BMW-NVH-2783,138.0,3310,73.9,0.215,Luxury Quiet Standard
+BMW-NVH-2784,65.8,1614,59.1,0.126,Luxury Quiet Standard
+BMW-NVH-2785,88.9,2057,65.6,0.146,Luxury Quiet Standard
+BMW-NVH-2786,179.8,4341,81.2,0.241,Unwanted Boom / Hum
+BMW-NVH-2787,129.9,2986,69.6,0.13,Luxury Quiet Standard
+BMW-NVH-2788,116.0,2697,66.4,0.203,Luxury Quiet Standard
+BMW-NVH-2789,51.8,1296,61.5,0.139,Luxury Quiet Standard
+BMW-NVH-2790,119.2,2941,72.3,0.197,Luxury Quiet Standard
+BMW-NVH-2791,170.9,4110,85.3,0.229,Unwanted Boom / Hum
+BMW-NVH-2792,170.1,4138,75.3,0.219,Luxury Quiet Standard
+BMW-NVH-2793,61.3,1566,62.6,0.112,Luxury Quiet Standard
+BMW-NVH-2794,123.1,2892,68.6,0.165,Luxury Quiet Standard
+BMW-NVH-2795,47.4,1099,60.8,0.116,Luxury Quiet Standard
+BMW-NVH-2796,89.4,2143,63.9,0.11,Luxury Quiet Standard
+BMW-NVH-2797,113.9,2786,71.9,0.185,Luxury Quiet Standard
+BMW-NVH-2798,165.3,3899,79.0,0.244,Unwanted Boom / Hum
+BMW-NVH-2799,117.9,2859,69.5,0.226,Luxury Quiet Standard
+BMW-NVH-2800,38.9,916,59.3,0.131,Luxury Quiet Standard
+BMW-NVH-2801,123.4,2912,72.2,0.17,Luxury Quiet Standard
+BMW-NVH-2802,153.7,3661,73.3,0.208,Luxury Quiet Standard
+BMW-NVH-2803,162.1,3911,77.3,0.221,Unwanted Boom / Hum
+BMW-NVH-2804,125.7,3091,72.8,0.167,Luxury Quiet Standard
+BMW-NVH-2805,43.2,987,57.6,0.19,Luxury Quiet Standard
+BMW-NVH-2806,117.9,2913,68.1,0.124,Luxury Quiet Standard
+BMW-NVH-2807,76.6,1905,65.1,0.147,Luxury Quiet Standard
+BMW-NVH-2808,44.4,955,54.4,0.103,Luxury Quiet Standard
+BMW-NVH-2809,152.6,3765,74.4,0.157,Luxury Quiet Standard
+BMW-NVH-2810,51.3,1355,59.7,0.137,Luxury Quiet Standard
+BMW-NVH-2811,138.6,3227,72.6,0.191,Luxury Quiet Standard
+BMW-NVH-2812,161.0,3812,72.3,0.208,Luxury Quiet Standard
+BMW-NVH-2813,113.9,2807,66.4,0.169,Luxury Quiet Standard
+BMW-NVH-2814,75.0,1859,63.1,0.116,Luxury Quiet Standard
+BMW-NVH-2815,69.3,1618,62.8,0.137,Luxury Quiet Standard
+BMW-NVH-2816,101.8,2445,65.5,0.209,Luxury Quiet Standard
+BMW-NVH-2817,117.8,2902,69.7,0.165,Luxury Quiet Standard
+BMW-NVH-2818,61.5,1448,61.1,0.075,Luxury Quiet Standard
+BMW-NVH-2819,71.0,1803,59.8,0.148,Luxury Quiet Standard
+BMW-NVH-2820,38.3,831,58.2,0.091,Luxury Quiet Standard
+BMW-NVH-2821,39.7,932,56.8,0.075,Luxury Quiet Standard
+BMW-NVH-2822,76.3,1789,66.3,0.154,Luxury Quiet Standard
+BMW-NVH-2823,139.1,3350,70.9,0.197,Luxury Quiet Standard
+BMW-NVH-2824,117.5,2735,66.0,0.178,Luxury Quiet Standard
+BMW-NVH-2825,82.0,1880,62.6,0.167,Luxury Quiet Standard
+BMW-NVH-2826,31.5,674,55.1,0.02,Luxury Quiet Standard
+BMW-NVH-2827,108.6,2498,65.1,0.152,Luxury Quiet Standard
+BMW-NVH-2828,172.9,4174,80.3,0.249,Unwanted Boom / Hum
+BMW-NVH-2829,175.5,4161,78.3,0.201,Luxury Quiet Standard
+BMW-NVH-2830,34.2,940,57.1,0.057,Luxury Quiet Standard
+BMW-NVH-2831,58.4,1521,60.7,0.133,Luxury Quiet Standard
+BMW-NVH-2832,135.7,3143,70.6,0.19,Luxury Quiet Standard
+BMW-NVH-2833,44.3,1010,57.8,0.112,Luxury Quiet Standard
+BMW-NVH-2834,146.0,3618,70.7,0.192,Luxury Quiet Standard
+BMW-NVH-2835,91.8,2112,66.5,0.196,Luxury Quiet Standard
+BMW-NVH-2836,114.5,2665,65.9,0.227,Luxury Quiet Standard
+BMW-NVH-2837,109.8,2542,66.9,0.202,Luxury Quiet Standard
+BMW-NVH-2838,61.3,1401,58.0,0.11,Luxury Quiet Standard
+BMW-NVH-2839,63.8,1656,64.4,0.131,Luxury Quiet Standard
+BMW-NVH-2840,139.6,3421,70.0,0.171,Luxury Quiet Standard
+BMW-NVH-2841,167.5,4071,78.6,0.262,Unwanted Boom / Hum
+BMW-NVH-2842,67.6,1577,62.5,0.138,Luxury Quiet Standard
+BMW-NVH-2843,69.3,1776,64.8,0.204,Luxury Quiet Standard
+BMW-NVH-2844,145.2,3450,78.9,0.233,Unwanted Boom / Hum
+BMW-NVH-2845,90.4,2320,63.7,0.194,Luxury Quiet Standard
+BMW-NVH-2846,115.8,2694,69.0,0.232,Luxury Quiet Standard
+BMW-NVH-2847,115.1,2898,65.2,0.2,Luxury Quiet Standard
+BMW-NVH-2848,161.8,3828,73.1,0.203,Luxury Quiet Standard
+BMW-NVH-2849,142.5,3440,69.8,0.211,Luxury Quiet Standard
+BMW-NVH-2850,78.4,1936,65.4,0.177,Luxury Quiet Standard
+BMW-NVH-2851,102.2,2432,68.3,0.161,Luxury Quiet Standard
+BMW-NVH-2852,144.6,3531,73.3,0.168,Luxury Quiet Standard
+BMW-NVH-2853,173.3,4194,82.7,0.247,Unwanted Boom / Hum
+BMW-NVH-2854,135.8,3172,70.8,0.226,Luxury Quiet Standard
+BMW-NVH-2855,172.8,4185,82.5,0.267,Unwanted Boom / Hum
+BMW-NVH-2856,51.0,1267,59.2,0.143,Luxury Quiet Standard
+BMW-NVH-2857,168.7,4111,77.2,0.152,Luxury Quiet Standard
+BMW-NVH-2858,95.4,2203,62.2,0.207,Luxury Quiet Standard
+BMW-NVH-2859,145.5,3461,74.2,0.215,Luxury Quiet Standard
+BMW-NVH-2860,114.5,2727,70.2,0.182,Luxury Quiet Standard
+BMW-NVH-2861,145.8,3571,80.8,0.239,Unwanted Boom / Hum
+BMW-NVH-2862,52.5,1396,59.4,0.154,Luxury Quiet Standard
+BMW-NVH-2863,110.5,2656,70.4,0.184,Luxury Quiet Standard
+BMW-NVH-2864,145.8,3376,78.5,0.231,Unwanted Boom / Hum
+BMW-NVH-2865,68.2,1655,63.2,0.127,Luxury Quiet Standard
+BMW-NVH-2866,60.9,1285,59.6,0.087,Luxury Quiet Standard
+BMW-NVH-2867,171.4,4028,81.9,0.274,Unwanted Boom / Hum
+BMW-NVH-2868,56.3,1384,58.3,0.125,Luxury Quiet Standard
+BMW-NVH-2869,32.5,704,58.7,0.095,Luxury Quiet Standard
+BMW-NVH-2870,82.6,2147,66.6,0.145,Luxury Quiet Standard
+BMW-NVH-2871,84.9,1902,62.7,0.118,Luxury Quiet Standard
+BMW-NVH-2872,52.6,1186,58.6,0.176,Luxury Quiet Standard
+BMW-NVH-2873,144.8,3421,73.5,0.195,Luxury Quiet Standard
+BMW-NVH-2874,167.7,3816,80.6,0.235,Unwanted Boom / Hum
+BMW-NVH-2875,160.6,3797,80.1,0.281,Unwanted Boom / Hum
+BMW-NVH-2876,69.3,1709,62.3,0.125,Luxury Quiet Standard
+BMW-NVH-2877,35.3,1026,59.8,0.14,Luxury Quiet Standard
+BMW-NVH-2878,89.0,2188,67.4,0.198,Luxury Quiet Standard
+BMW-NVH-2879,117.3,2748,67.9,0.192,Luxury Quiet Standard
+BMW-NVH-2880,67.8,1525,60.2,0.104,Luxury Quiet Standard
+BMW-NVH-2881,172.4,4191,81.7,0.244,Unwanted Boom / Hum
+BMW-NVH-2882,66.6,1587,64.9,0.104,Luxury Quiet Standard
+BMW-NVH-2883,75.0,1894,60.9,0.161,Luxury Quiet Standard
+BMW-NVH-2884,126.4,3009,71.0,0.154,Luxury Quiet Standard
+BMW-NVH-2885,137.3,3242,71.0,0.164,Luxury Quiet Standard
+BMW-NVH-2886,126.5,3028,69.4,0.213,Luxury Quiet Standard
+BMW-NVH-2887,100.3,2364,68.6,0.143,Luxury Quiet Standard
+BMW-NVH-2888,30.1,701,57.2,0.074,Luxury Quiet Standard
+BMW-NVH-2889,56.7,1391,59.0,0.13,Luxury Quiet Standard
+BMW-NVH-2890,81.9,1851,63.4,0.123,Luxury Quiet Standard
+BMW-NVH-2891,54.7,1339,61.0,0.138,Luxury Quiet Standard
+BMW-NVH-2892,171.1,4155,80.7,0.246,Unwanted Boom / Hum
+BMW-NVH-2893,163.4,3818,84.3,0.256,Unwanted Boom / Hum
+BMW-NVH-2894,76.5,1808,62.0,0.147,Luxury Quiet Standard
+BMW-NVH-2895,174.1,4255,84.6,0.233,Unwanted Boom / Hum
+BMW-NVH-2896,113.9,2744,67.1,0.123,Luxury Quiet Standard
+BMW-NVH-2897,157.2,3796,76.5,0.194,Luxury Quiet Standard
+BMW-NVH-2898,74.8,1778,59.5,0.143,Luxury Quiet Standard
+BMW-NVH-2899,122.8,2816,68.4,0.2,Luxury Quiet Standard
+BMW-NVH-2900,135.3,3397,70.9,0.179,Luxury Quiet Standard
+BMW-NVH-2901,136.3,3226,70.4,0.209,Luxury Quiet Standard
+BMW-NVH-2902,69.6,1720,61.5,0.21,Luxury Quiet Standard
+BMW-NVH-2903,59.9,1362,59.1,0.131,Luxury Quiet Standard
+BMW-NVH-2904,118.6,2882,69.2,0.203,Luxury Quiet Standard
+BMW-NVH-2905,97.6,2381,67.1,0.17,Luxury Quiet Standard
+BMW-NVH-2906,37.3,1047,61.1,0.126,Luxury Quiet Standard
+BMW-NVH-2907,105.5,2603,69.7,0.248,Luxury Quiet Standard
+BMW-NVH-2908,126.6,3026,70.8,0.213,Luxury Quiet Standard
+BMW-NVH-2909,43.4,1020,61.4,0.093,Luxury Quiet Standard
+BMW-NVH-2910,37.5,866,61.1,0.156,Luxury Quiet Standard
+BMW-NVH-2911,129.8,3156,69.0,0.25,Luxury Quiet Standard
+BMW-NVH-2912,44.7,1078,57.1,0.133,Luxury Quiet Standard
+BMW-NVH-2913,104.8,2480,70.0,0.136,Luxury Quiet Standard
+BMW-NVH-2914,81.8,1953,65.0,0.117,Luxury Quiet Standard
+BMW-NVH-2915,39.0,965,56.7,0.083,Luxury Quiet Standard
+BMW-NVH-2916,75.0,1821,62.1,0.121,Luxury Quiet Standard
+BMW-NVH-2917,102.4,2405,68.0,0.19,Luxury Quiet Standard
+BMW-NVH-2918,122.2,2816,65.7,0.199,Luxury Quiet Standard
+BMW-NVH-2919,67.4,1587,62.3,0.164,Luxury Quiet Standard
+BMW-NVH-2920,115.8,2908,65.4,0.212,Luxury Quiet Standard
+BMW-NVH-2921,114.9,2645,65.1,0.174,Luxury Quiet Standard
+BMW-NVH-2922,153.4,3547,75.0,0.196,Luxury Quiet Standard
+BMW-NVH-2923,45.0,1052,58.8,0.116,Luxury Quiet Standard
+BMW-NVH-2924,98.2,2375,65.1,0.146,Luxury Quiet Standard
+BMW-NVH-2925,80.0,1901,63.7,0.101,Luxury Quiet Standard
+BMW-NVH-2926,97.1,2286,64.9,0.137,Luxury Quiet Standard
+BMW-NVH-2927,137.8,3299,72.7,0.211,Luxury Quiet Standard
+BMW-NVH-2928,38.8,881,58.3,0.157,Luxury Quiet Standard
+BMW-NVH-2929,151.4,3595,75.8,0.192,Luxury Quiet Standard
+BMW-NVH-2930,32.3,738,54.4,0.122,Luxury Quiet Standard
+BMW-NVH-2931,53.2,1290,58.1,0.143,Luxury Quiet Standard
+BMW-NVH-2932,154.1,3703,77.0,0.211,Luxury Quiet Standard
+BMW-NVH-2933,99.2,2468,63.4,0.145,Luxury Quiet Standard
+BMW-NVH-2934,174.9,4068,76.6,0.206,Luxury Quiet Standard
+BMW-NVH-2935,155.5,3852,76.2,0.165,Luxury Quiet Standard
+BMW-NVH-2936,159.4,3851,74.8,0.148,Luxury Quiet Standard
+BMW-NVH-2937,114.6,2781,67.6,0.145,Luxury Quiet Standard
+BMW-NVH-2938,133.4,3258,68.3,0.207,Luxury Quiet Standard
+BMW-NVH-2939,56.2,1283,58.3,0.143,Luxury Quiet Standard
+BMW-NVH-2940,142.0,3355,78.0,0.222,Unwanted Boom / Hum
+BMW-NVH-2941,48.7,1113,54.4,0.13,Luxury Quiet Standard
+BMW-NVH-2942,120.7,2776,71.1,0.202,Luxury Quiet Standard
+BMW-NVH-2943,54.2,1351,59.9,0.139,Luxury Quiet Standard
+BMW-NVH-2944,104.1,2386,64.8,0.194,Luxury Quiet Standard
+BMW-NVH-2945,172.0,4118,76.4,0.219,Luxury Quiet Standard
+BMW-NVH-2946,168.5,3963,82.1,0.226,Unwanted Boom / Hum
+BMW-NVH-2947,127.6,3151,69.4,0.194,Luxury Quiet Standard
+BMW-NVH-2948,54.0,1223,59.1,0.064,Luxury Quiet Standard
+BMW-NVH-2949,70.4,1782,63.4,0.125,Luxury Quiet Standard
+BMW-NVH-2950,132.1,3144,70.2,0.193,Luxury Quiet Standard
+BMW-NVH-2951,96.4,2385,68.1,0.117,Luxury Quiet Standard
+BMW-NVH-2952,45.3,1112,61.4,0.078,Luxury Quiet Standard
+BMW-NVH-2953,79.4,1821,63.5,0.149,Luxury Quiet Standard
+BMW-NVH-2954,100.0,2488,68.8,0.155,Luxury Quiet Standard
+BMW-NVH-2955,139.8,3161,72.3,0.161,Luxury Quiet Standard
+BMW-NVH-2956,141.0,3446,72.7,0.144,Luxury Quiet Standard
+BMW-NVH-2957,155.4,3673,80.1,0.238,Unwanted Boom / Hum
+BMW-NVH-2958,172.6,4115,82.8,0.229,Unwanted Boom / Hum
+BMW-NVH-2959,164.4,3995,77.1,0.23,Unwanted Boom / Hum
+BMW-NVH-2960,64.5,1497,62.6,0.116,Luxury Quiet Standard
+BMW-NVH-2961,69.9,1688,63.1,0.121,Luxury Quiet Standard
+BMW-NVH-2962,156.2,3660,73.8,0.219,Luxury Quiet Standard
+BMW-NVH-2963,150.4,3686,74.3,0.209,Luxury Quiet Standard
+BMW-NVH-2964,76.7,1879,64.4,0.121,Luxury Quiet Standard
+BMW-NVH-2965,51.5,1279,60.3,0.127,Luxury Quiet Standard
+BMW-NVH-2966,116.9,2895,70.4,0.207,Luxury Quiet Standard
+BMW-NVH-2967,37.1,861,57.3,0.119,Luxury Quiet Standard
+BMW-NVH-2968,54.0,1214,57.5,0.106,Luxury Quiet Standard
+BMW-NVH-2969,72.1,1740,61.7,0.151,Luxury Quiet Standard
+BMW-NVH-2970,160.6,3882,76.5,0.212,Luxury Quiet Standard
+BMW-NVH-2971,101.1,2396,65.1,0.165,Luxury Quiet Standard
+BMW-NVH-2972,178.1,4217,78.0,0.219,Luxury Quiet Standard
+BMW-NVH-2973,125.8,3077,69.1,0.207,Luxury Quiet Standard
+BMW-NVH-2974,153.0,3759,80.9,0.234,Unwanted Boom / Hum
+BMW-NVH-2975,147.3,3622,81.9,0.237,Unwanted Boom / Hum
+BMW-NVH-2976,46.4,1003,59.0,0.109,Luxury Quiet Standard
+BMW-NVH-2977,52.4,1231,60.4,0.102,Luxury Quiet Standard
+BMW-NVH-2978,98.2,2352,65.9,0.166,Luxury Quiet Standard
+BMW-NVH-2979,85.7,2018,64.6,0.104,Luxury Quiet Standard
+BMW-NVH-2980,149.5,3573,74.6,0.174,Luxury Quiet Standard
+BMW-NVH-2981,64.3,1511,62.4,0.116,Luxury Quiet Standard
+BMW-NVH-2982,32.1,767,55.7,0.138,Luxury Quiet Standard
+BMW-NVH-2983,112.6,2750,68.6,0.195,Luxury Quiet Standard
+BMW-NVH-2984,109.1,2577,71.0,0.177,Luxury Quiet Standard
+BMW-NVH-2985,47.4,1099,60.8,0.124,Luxury Quiet Standard
+BMW-NVH-2986,122.5,2780,67.3,0.182,Luxury Quiet Standard
+BMW-NVH-2987,129.4,3088,70.6,0.169,Luxury Quiet Standard
+BMW-NVH-2988,133.4,3296,67.4,0.26,Luxury Quiet Standard
+BMW-NVH-2989,159.6,3750,77.1,0.243,Unwanted Boom / Hum
+BMW-NVH-2990,61.7,1439,62.6,0.091,Luxury Quiet Standard
+BMW-NVH-2991,55.9,1362,57.0,0.188,Luxury Quiet Standard
+BMW-NVH-2992,102.2,2507,66.6,0.178,Luxury Quiet Standard
+BMW-NVH-2993,102.2,2409,64.6,0.127,Luxury Quiet Standard
+BMW-NVH-2994,159.0,3876,73.6,0.202,Luxury Quiet Standard
+BMW-NVH-2995,170.4,4122,74.4,0.21,Luxury Quiet Standard
+BMW-NVH-2996,68.8,1656,61.8,0.14,Luxury Quiet Standard
+BMW-NVH-2997,38.3,952,58.5,0.145,Luxury Quiet Standard
+BMW-NVH-2998,72.6,1642,63.8,0.118,Luxury Quiet Standard
+BMW-NVH-2999,34.2,825,56.3,0.098,Luxury Quiet Standard
+BMW-NVH-3000,149.0,3731,76.7,0.197,Luxury Quiet Standard
+BMW-NVH-3001,40.1,965,57.1,0.091,Luxury Quiet Standard
+BMW-NVH-3002,164.3,3968,81.8,0.276,Unwanted Boom / Hum
+BMW-NVH-3003,109.3,2547,66.9,0.149,Luxury Quiet Standard
+BMW-NVH-3004,90.3,2217,67.2,0.182,Luxury Quiet Standard
+BMW-NVH-3005,84.8,1995,65.4,0.168,Luxury Quiet Standard
+BMW-NVH-3006,129.4,3076,70.6,0.184,Luxury Quiet Standard
+BMW-NVH-3007,60.7,1549,59.7,0.145,Luxury Quiet Standard
+BMW-NVH-3008,41.7,1014,58.8,0.141,Luxury Quiet Standard
+BMW-NVH-3009,83.7,1856,63.4,0.157,Luxury Quiet Standard
+BMW-NVH-3010,118.2,2762,67.5,0.221,Luxury Quiet Standard
+BMW-NVH-3011,61.5,1444,60.5,0.183,Luxury Quiet Standard
+BMW-NVH-3012,105.1,2452,64.4,0.142,Luxury Quiet Standard
+BMW-NVH-3013,177.2,4277,84.0,0.282,Unwanted Boom / Hum
+BMW-NVH-3014,148.5,3585,78.7,0.231,Unwanted Boom / Hum
+BMW-NVH-3015,152.6,3627,71.4,0.204,Luxury Quiet Standard
+BMW-NVH-3016,176.1,4293,85.6,0.225,Unwanted Boom / Hum
+BMW-NVH-3017,91.6,2180,63.1,0.083,Luxury Quiet Standard
+BMW-NVH-3018,116.3,2746,65.9,0.154,Luxury Quiet Standard
+BMW-NVH-3019,95.4,2338,67.3,0.198,Luxury Quiet Standard
+BMW-NVH-3020,149.0,3672,73.6,0.19,Luxury Quiet Standard
+BMW-NVH-3021,107.1,2615,65.1,0.148,Luxury Quiet Standard
+BMW-NVH-3022,83.4,1952,64.7,0.178,Luxury Quiet Standard
+BMW-NVH-3023,112.6,2663,68.0,0.228,Luxury Quiet Standard
+BMW-NVH-3024,177.5,4219,80.2,0.211,Luxury Quiet Standard
+BMW-NVH-3025,131.4,3071,69.0,0.208,Luxury Quiet Standard
+BMW-NVH-3026,78.6,1859,63.6,0.131,Luxury Quiet Standard
+BMW-NVH-3027,165.2,3980,79.6,0.279,Unwanted Boom / Hum
+BMW-NVH-3028,50.5,1328,60.4,0.174,Luxury Quiet Standard
+BMW-NVH-3029,160.6,3672,78.2,0.221,Unwanted Boom / Hum
+BMW-NVH-3030,85.5,1950,66.0,0.179,Luxury Quiet Standard
+BMW-NVH-3031,116.6,2724,69.7,0.224,Luxury Quiet Standard
+BMW-NVH-3032,163.7,3999,79.9,0.261,Unwanted Boom / Hum
+BMW-NVH-3033,172.5,4158,85.6,0.278,Unwanted Boom / Hum
+BMW-NVH-3034,78.9,1865,65.0,0.138,Luxury Quiet Standard
+BMW-NVH-3035,137.3,3297,71.7,0.213,Luxury Quiet Standard
+BMW-NVH-3036,81.3,1827,62.1,0.147,Luxury Quiet Standard
+BMW-NVH-3037,122.8,2976,70.8,0.235,Luxury Quiet Standard
+BMW-NVH-3038,151.4,3605,74.3,0.216,Luxury Quiet Standard
+BMW-NVH-3039,175.9,4236,80.2,0.221,Unwanted Boom / Hum
+BMW-NVH-3040,115.8,2762,69.9,0.21,Luxury Quiet Standard
+BMW-NVH-3041,174.8,4229,82.6,0.243,Unwanted Boom / Hum
+BMW-NVH-3042,140.9,3334,68.8,0.153,Luxury Quiet Standard
+BMW-NVH-3043,150.9,3729,76.7,0.242,Unwanted Boom / Hum
+BMW-NVH-3044,54.0,1367,57.7,0.1,Luxury Quiet Standard
+BMW-NVH-3045,132.9,3205,72.0,0.181,Luxury Quiet Standard
+BMW-NVH-3046,48.8,1330,58.9,0.135,Luxury Quiet Standard
+BMW-NVH-3047,150.3,3600,70.4,0.155,Luxury Quiet Standard
+BMW-NVH-3048,121.6,2825,69.9,0.212,Luxury Quiet Standard
+BMW-NVH-3049,62.5,1517,60.0,0.102,Luxury Quiet Standard
+BMW-NVH-3050,53.2,1236,58.4,0.114,Luxury Quiet Standard
+BMW-NVH-3051,165.5,3835,77.2,0.216,Luxury Quiet Standard
+BMW-NVH-3052,34.2,760,54.6,0.122,Luxury Quiet Standard
+BMW-NVH-3053,76.6,1745,65.9,0.139,Luxury Quiet Standard
+BMW-NVH-3054,160.2,3923,76.8,0.211,Luxury Quiet Standard
+BMW-NVH-3055,88.8,2226,67.8,0.151,Luxury Quiet Standard
+BMW-NVH-3056,149.8,3732,75.6,0.203,Luxury Quiet Standard
+BMW-NVH-3057,105.0,2563,64.6,0.204,Luxury Quiet Standard
+BMW-NVH-3058,133.8,3265,72.5,0.179,Luxury Quiet Standard
+BMW-NVH-3059,114.5,2650,64.3,0.231,Luxury Quiet Standard
+BMW-NVH-3060,133.6,3212,71.7,0.215,Luxury Quiet Standard
+BMW-NVH-3061,42.9,1024,59.8,0.156,Luxury Quiet Standard
+BMW-NVH-3062,115.1,2809,72.6,0.16,Luxury Quiet Standard
+BMW-NVH-3063,177.9,4321,84.8,0.233,Unwanted Boom / Hum
+BMW-NVH-3064,42.5,1130,59.0,0.075,Luxury Quiet Standard
+BMW-NVH-3065,163.3,4045,79.0,0.237,Unwanted Boom / Hum
+BMW-NVH-3066,172.2,4018,82.3,0.252,Unwanted Boom / Hum
+BMW-NVH-3067,121.0,2885,67.3,0.175,Luxury Quiet Standard
+BMW-NVH-3068,93.2,2190,64.2,0.152,Luxury Quiet Standard
+BMW-NVH-3069,121.2,3027,69.3,0.186,Luxury Quiet Standard
+BMW-NVH-3070,129.2,2986,72.3,0.175,Luxury Quiet Standard
+BMW-NVH-3071,105.0,2427,65.9,0.195,Luxury Quiet Standard
+BMW-NVH-3072,108.0,2467,62.5,0.165,Luxury Quiet Standard
+BMW-NVH-3073,159.2,3909,80.2,0.229,Unwanted Boom / Hum
+BMW-NVH-3074,33.6,722,57.6,0.037,Luxury Quiet Standard
+BMW-NVH-3075,32.7,757,54.7,0.149,Luxury Quiet Standard
+BMW-NVH-3076,82.2,2054,62.9,0.145,Luxury Quiet Standard
+BMW-NVH-3077,98.6,2529,63.1,0.175,Luxury Quiet Standard
+BMW-NVH-3078,94.8,2347,63.7,0.156,Luxury Quiet Standard
+BMW-NVH-3079,106.7,2640,69.4,0.164,Luxury Quiet Standard
+BMW-NVH-3080,74.6,1829,60.3,0.178,Luxury Quiet Standard
+BMW-NVH-3081,55.4,1378,57.6,0.155,Luxury Quiet Standard
+BMW-NVH-3082,113.2,2594,68.5,0.124,Luxury Quiet Standard
+BMW-NVH-3083,105.1,2477,62.8,0.094,Luxury Quiet Standard
+BMW-NVH-3084,34.9,764,55.2,0.125,Luxury Quiet Standard
+BMW-NVH-3085,131.6,3271,71.0,0.212,Luxury Quiet Standard
+BMW-NVH-3086,126.9,2926,69.5,0.212,Luxury Quiet Standard
+BMW-NVH-3087,146.1,3648,77.6,0.263,Unwanted Boom / Hum
+BMW-NVH-3088,36.7,1020,57.4,0.142,Luxury Quiet Standard
+BMW-NVH-3089,41.6,1056,59.8,0.128,Luxury Quiet Standard
+BMW-NVH-3090,138.5,3292,72.2,0.172,Luxury Quiet Standard
+BMW-NVH-3091,107.6,2686,70.9,0.193,Luxury Quiet Standard
+BMW-NVH-3092,75.3,1728,62.9,0.131,Luxury Quiet Standard
+BMW-NVH-3093,163.6,3932,74.6,0.218,Luxury Quiet Standard
+BMW-NVH-3094,52.0,1200,60.1,0.102,Luxury Quiet Standard
+BMW-NVH-3095,35.5,886,57.4,0.141,Luxury Quiet Standard
+BMW-NVH-3096,60.4,1453,62.9,0.172,Luxury Quiet Standard
+BMW-NVH-3097,97.3,2343,64.9,0.198,Luxury Quiet Standard
+BMW-NVH-3098,51.4,1200,60.7,0.135,Luxury Quiet Standard
+BMW-NVH-3099,153.5,3772,75.2,0.219,Luxury Quiet Standard
+BMW-NVH-3100,32.5,837,58.9,0.081,Luxury Quiet Standard
+BMW-NVH-3101,155.2,3630,74.1,0.216,Luxury Quiet Standard
+BMW-NVH-3102,149.5,3568,69.5,0.167,Luxury Quiet Standard
+BMW-NVH-3103,124.4,2970,68.6,0.215,Luxury Quiet Standard
+BMW-NVH-3104,101.2,2415,63.8,0.139,Luxury Quiet Standard
+BMW-NVH-3105,104.9,2610,67.4,0.171,Luxury Quiet Standard
+BMW-NVH-3106,98.1,2418,64.6,0.149,Luxury Quiet Standard
+BMW-NVH-3107,35.5,936,58.1,0.103,Luxury Quiet Standard
+BMW-NVH-3108,144.6,3341,71.9,0.17,Luxury Quiet Standard
+BMW-NVH-3109,110.2,2654,70.1,0.137,Luxury Quiet Standard
+BMW-NVH-3110,61.9,1458,62.1,0.069,Luxury Quiet Standard
+BMW-NVH-3111,118.5,2818,68.7,0.166,Luxury Quiet Standard
+BMW-NVH-3112,103.4,2505,66.9,0.165,Luxury Quiet Standard
+BMW-NVH-3113,109.5,2553,69.0,0.154,Luxury Quiet Standard
+BMW-NVH-3114,120.6,3103,68.7,0.159,Luxury Quiet Standard
+BMW-NVH-3115,114.3,2828,69.0,0.164,Luxury Quiet Standard
+BMW-NVH-3116,139.4,3259,79.8,0.229,Unwanted Boom / Hum
+BMW-NVH-3117,59.3,1401,61.6,0.12,Luxury Quiet Standard
+BMW-NVH-3118,153.3,3577,72.2,0.2,Luxury Quiet Standard
+BMW-NVH-3119,176.4,4228,74.9,0.215,Luxury Quiet Standard
+BMW-NVH-3120,52.0,1253,59.9,0.078,Luxury Quiet Standard
+BMW-NVH-3121,87.0,2008,63.7,0.102,Luxury Quiet Standard
+BMW-NVH-3122,147.3,3592,74.1,0.21,Luxury Quiet Standard
+BMW-NVH-3123,175.2,4272,82.6,0.25,Unwanted Boom / Hum
+BMW-NVH-3124,71.8,1795,59.8,0.168,Luxury Quiet Standard
+BMW-NVH-3125,77.7,1747,61.8,0.191,Luxury Quiet Standard
+BMW-NVH-3126,86.6,2131,66.7,0.139,Luxury Quiet Standard
+BMW-NVH-3127,168.6,3910,83.3,0.221,Unwanted Boom / Hum
+BMW-NVH-3128,43.7,1061,60.5,0.133,Luxury Quiet Standard
+BMW-NVH-3129,53.1,1357,56.9,0.12,Luxury Quiet Standard
+BMW-NVH-3130,49.6,1148,56.6,0.127,Luxury Quiet Standard
+BMW-NVH-3131,155.5,3791,75.3,0.23,Unwanted Boom / Hum
+BMW-NVH-3132,35.7,977,57.6,0.077,Luxury Quiet Standard
+BMW-NVH-3133,37.3,921,59.2,0.17,Luxury Quiet Standard
+BMW-NVH-3134,114.4,2846,66.1,0.194,Luxury Quiet Standard
+BMW-NVH-3135,97.0,2269,67.9,0.175,Luxury Quiet Standard
+BMW-NVH-3136,72.9,1754,61.5,0.159,Luxury Quiet Standard
+BMW-NVH-3137,90.4,2118,65.7,0.098,Luxury Quiet Standard
+BMW-NVH-3138,138.8,3327,69.3,0.219,Luxury Quiet Standard
+BMW-NVH-3139,167.0,3906,80.2,0.248,Unwanted Boom / Hum
+BMW-NVH-3140,123.7,3031,70.4,0.208,Luxury Quiet Standard
+BMW-NVH-3141,170.5,4031,74.0,0.179,Luxury Quiet Standard
+BMW-NVH-3142,161.5,3957,72.8,0.202,Luxury Quiet Standard
+BMW-NVH-3143,151.7,3781,74.8,0.187,Luxury Quiet Standard
+BMW-NVH-3144,109.8,2680,71.3,0.222,Luxury Quiet Standard
+BMW-NVH-3145,33.4,781,54.7,0.007,Luxury Quiet Standard
+BMW-NVH-3146,173.9,4123,73.9,0.196,Luxury Quiet Standard
+BMW-NVH-3147,100.3,2525,63.4,0.201,Luxury Quiet Standard
+BMW-NVH-3148,119.8,2842,66.7,0.167,Luxury Quiet Standard
+BMW-NVH-3149,93.8,2238,66.2,0.119,Luxury Quiet Standard
+BMW-NVH-3150,172.8,4049,80.9,0.243,Unwanted Boom / Hum
+BMW-NVH-3151,124.5,3012,67.9,0.197,Luxury Quiet Standard
+BMW-NVH-3152,110.5,2649,65.5,0.161,Luxury Quiet Standard
+BMW-NVH-3153,117.0,2813,68.2,0.133,Luxury Quiet Standard
+BMW-NVH-3154,90.0,2240,61.7,0.154,Luxury Quiet Standard
+BMW-NVH-3155,78.8,1832,61.2,0.177,Luxury Quiet Standard
+BMW-NVH-3156,148.0,3670,76.0,0.265,Unwanted Boom / Hum
+BMW-NVH-3157,113.8,2861,69.1,0.194,Luxury Quiet Standard
+BMW-NVH-3158,35.4,873,53.9,0.077,Luxury Quiet Standard
+BMW-NVH-3159,54.8,1278,57.1,0.093,Luxury Quiet Standard
+BMW-NVH-3160,119.0,2817,66.0,0.143,Luxury Quiet Standard
+BMW-NVH-3161,172.2,4123,82.7,0.26,Unwanted Boom / Hum
+BMW-NVH-3162,106.5,2529,68.0,0.161,Luxury Quiet Standard
+BMW-NVH-3163,100.0,2467,67.0,0.212,Luxury Quiet Standard
+BMW-NVH-3164,151.4,3682,72.5,0.154,Luxury Quiet Standard
+BMW-NVH-3165,97.6,2412,69.9,0.139,Luxury Quiet Standard
+BMW-NVH-3166,92.1,2288,66.4,0.155,Luxury Quiet Standard
+BMW-NVH-3167,151.8,3618,72.1,0.212,Luxury Quiet Standard
+BMW-NVH-3168,141.7,3468,70.2,0.202,Luxury Quiet Standard
+BMW-NVH-3169,178.1,4212,77.5,0.217,Luxury Quiet Standard
+BMW-NVH-3170,166.2,4021,80.1,0.214,Luxury Quiet Standard
+BMW-NVH-3171,91.3,2173,67.6,0.184,Luxury Quiet Standard
+BMW-NVH-3172,117.0,2870,73.0,0.15,Luxury Quiet Standard
+BMW-NVH-3173,141.3,3442,74.1,0.207,Luxury Quiet Standard
+BMW-NVH-3174,93.8,2294,61.3,0.166,Luxury Quiet Standard
+BMW-NVH-3175,96.9,2243,64.4,0.215,Luxury Quiet Standard
+BMW-NVH-3176,89.7,2207,64.6,0.14,Luxury Quiet Standard
+BMW-NVH-3177,65.3,1545,57.8,0.055,Luxury Quiet Standard
+BMW-NVH-3178,50.1,1257,57.5,0.101,Luxury Quiet Standard
+BMW-NVH-3179,142.2,3386,71.9,0.202,Luxury Quiet Standard
+BMW-NVH-3180,51.3,1169,58.3,0.118,Luxury Quiet Standard
+BMW-NVH-3181,91.8,2206,64.2,0.226,Luxury Quiet Standard
+BMW-NVH-3182,118.2,2910,68.3,0.15,Luxury Quiet Standard
+BMW-NVH-3183,48.7,1092,57.4,0.084,Luxury Quiet Standard
+BMW-NVH-3184,54.3,1302,59.6,0.156,Luxury Quiet Standard
+BMW-NVH-3185,84.0,1938,66.3,0.203,Luxury Quiet Standard
+BMW-NVH-3186,85.1,1945,62.2,0.182,Luxury Quiet Standard
+BMW-NVH-3187,100.7,2582,66.6,0.231,Luxury Quiet Standard
+BMW-NVH-3188,45.5,1021,58.0,0.072,Luxury Quiet Standard
+BMW-NVH-3189,146.2,3462,71.5,0.174,Luxury Quiet Standard
+BMW-NVH-3190,31.6,749,58.4,0.088,Luxury Quiet Standard
+BMW-NVH-3191,154.2,3657,79.7,0.224,Unwanted Boom / Hum
+BMW-NVH-3192,176.2,4208,84.5,0.252,Unwanted Boom / Hum
+BMW-NVH-3193,66.8,1543,61.6,0.154,Luxury Quiet Standard
+BMW-NVH-3194,113.0,2644,65.4,0.203,Luxury Quiet Standard
+BMW-NVH-3195,113.0,2669,67.4,0.192,Luxury Quiet Standard
+BMW-NVH-3196,82.6,1877,64.5,0.179,Luxury Quiet Standard
+BMW-NVH-3197,76.8,1865,58.7,0.177,Luxury Quiet Standard
+BMW-NVH-3198,87.2,2091,68.1,0.131,Luxury Quiet Standard
+BMW-NVH-3199,168.3,3911,77.7,0.186,Luxury Quiet Standard
+BMW-NVH-3200,163.2,4068,81.7,0.241,Unwanted Boom / Hum
+BMW-NVH-3201,81.2,1980,63.8,0.201,Luxury Quiet Standard
+BMW-NVH-3202,151.4,3522,77.1,0.254,Unwanted Boom / Hum
+BMW-NVH-3203,62.2,1552,62.7,0.129,Luxury Quiet Standard
+BMW-NVH-3204,39.8,889,55.9,0.047,Luxury Quiet Standard
+BMW-NVH-3205,71.1,1738,62.5,0.185,Luxury Quiet Standard
+BMW-NVH-3206,74.0,1833,64.9,0.139,Luxury Quiet Standard
+BMW-NVH-3207,85.1,2084,60.9,0.155,Luxury Quiet Standard
+BMW-NVH-3208,55.9,1379,60.2,0.131,Luxury Quiet Standard
+BMW-NVH-3209,126.4,2935,69.2,0.175,Luxury Quiet Standard
+BMW-NVH-3210,107.1,2611,66.4,0.238,Luxury Quiet Standard
+BMW-NVH-3211,40.5,866,56.5,0.085,Luxury Quiet Standard
+BMW-NVH-3212,173.6,4234,77.1,0.213,Luxury Quiet Standard
+BMW-NVH-3213,158.7,3916,78.6,0.243,Unwanted Boom / Hum
+BMW-NVH-3214,145.5,3620,78.3,0.276,Unwanted Boom / Hum
+BMW-NVH-3215,126.0,2915,72.7,0.169,Luxury Quiet Standard
+BMW-NVH-3216,36.8,805,59.1,0.155,Luxury Quiet Standard
+BMW-NVH-3217,38.6,988,56.6,0.089,Luxury Quiet Standard
+BMW-NVH-3218,138.6,3350,71.3,0.162,Luxury Quiet Standard
+BMW-NVH-3219,103.7,2534,65.3,0.161,Luxury Quiet Standard
+BMW-NVH-3220,40.8,1016,58.4,0.082,Luxury Quiet Standard
+BMW-NVH-3221,72.8,1784,64.9,0.152,Luxury Quiet Standard
+BMW-NVH-3222,172.2,4150,80.9,0.244,Unwanted Boom / Hum
+BMW-NVH-3223,35.7,771,57.1,0.105,Luxury Quiet Standard
+BMW-NVH-3224,139.7,3253,73.1,0.124,Luxury Quiet Standard
+BMW-NVH-3225,157.6,3626,74.0,0.19,Luxury Quiet Standard
+BMW-NVH-3226,81.6,1981,64.8,0.078,Luxury Quiet Standard
+BMW-NVH-3227,166.0,4063,78.2,0.159,Luxury Quiet Standard
+BMW-NVH-3228,79.1,1981,64.5,0.126,Luxury Quiet Standard
+BMW-NVH-3229,176.6,4253,80.5,0.265,Unwanted Boom / Hum
+BMW-NVH-3230,45.2,1095,61.1,0.098,Luxury Quiet Standard
+BMW-NVH-3231,121.0,2928,72.2,0.239,Luxury Quiet Standard
+BMW-NVH-3232,120.5,2866,67.9,0.201,Luxury Quiet Standard
+BMW-NVH-3233,170.7,4174,77.4,0.173,Luxury Quiet Standard
+BMW-NVH-3234,137.8,3344,72.3,0.19,Luxury Quiet Standard
+BMW-NVH-3235,151.2,3620,75.2,0.191,Luxury Quiet Standard
+BMW-NVH-3236,176.8,4315,82.9,0.238,Unwanted Boom / Hum
+BMW-NVH-3237,80.8,1821,62.7,0.146,Luxury Quiet Standard
+BMW-NVH-3238,104.8,2454,65.0,0.153,Luxury Quiet Standard
+BMW-NVH-3239,121.2,2874,68.0,0.139,Luxury Quiet Standard
+BMW-NVH-3240,45.1,1132,58.1,0.127,Luxury Quiet Standard
+BMW-NVH-3241,133.1,3142,71.1,0.135,Luxury Quiet Standard
+BMW-NVH-3242,132.8,3254,73.9,0.204,Luxury Quiet Standard
+BMW-NVH-3243,67.8,1725,62.8,0.178,Luxury Quiet Standard
+BMW-NVH-3244,179.9,4320,80.4,0.313,Unwanted Boom / Hum
+BMW-NVH-3245,83.6,2071,65.4,0.159,Luxury Quiet Standard
+BMW-NVH-3246,73.2,1747,61.1,0.132,Luxury Quiet Standard
+BMW-NVH-3247,164.2,4016,85.4,0.241,Unwanted Boom / Hum
+BMW-NVH-3248,76.9,1804,65.2,0.133,Luxury Quiet Standard
+BMW-NVH-3249,86.4,2139,63.3,0.142,Luxury Quiet Standard
+BMW-NVH-3250,50.0,1244,58.3,0.084,Luxury Quiet Standard
+BMW-NVH-3251,121.9,2969,69.7,0.225,Luxury Quiet Standard
+BMW-NVH-3252,111.0,2570,67.4,0.107,Luxury Quiet Standard
+BMW-NVH-3253,159.6,3982,80.3,0.228,Unwanted Boom / Hum
+BMW-NVH-3254,89.4,2179,65.3,0.166,Luxury Quiet Standard
+BMW-NVH-3255,123.4,3018,71.7,0.201,Luxury Quiet Standard
+BMW-NVH-3256,149.0,3439,74.3,0.169,Luxury Quiet Standard
+BMW-NVH-3257,58.6,1394,61.7,0.122,Luxury Quiet Standard
+BMW-NVH-3258,82.3,1945,64.9,0.134,Luxury Quiet Standard
+BMW-NVH-3259,55.6,1512,61.4,0.118,Luxury Quiet Standard
+BMW-NVH-3260,140.6,3355,80.3,0.23,Unwanted Boom / Hum
+BMW-NVH-3261,144.7,3434,76.4,0.248,Unwanted Boom / Hum
+BMW-NVH-3262,42.6,995,58.5,0.091,Luxury Quiet Standard
+BMW-NVH-3263,33.4,811,59.8,0.099,Luxury Quiet Standard
+BMW-NVH-3264,153.4,3699,74.8,0.196,Luxury Quiet Standard
+BMW-NVH-3265,50.3,1111,62.0,0.116,Luxury Quiet Standard
+BMW-NVH-3266,34.0,690,55.1,0.093,Luxury Quiet Standard
+BMW-NVH-3267,58.2,1365,63.0,0.111,Luxury Quiet Standard
+BMW-NVH-3268,128.8,3121,71.1,0.154,Luxury Quiet Standard
+BMW-NVH-3269,68.9,1774,63.2,0.157,Luxury Quiet Standard
+BMW-NVH-3270,65.3,1517,62.2,0.177,Luxury Quiet Standard
+BMW-NVH-3271,46.5,971,57.1,0.097,Luxury Quiet Standard
+BMW-NVH-3272,144.8,3480,77.0,0.195,Luxury Quiet Standard
+BMW-NVH-3273,106.5,2535,65.2,0.22,Luxury Quiet Standard
+BMW-NVH-3274,102.4,2467,66.4,0.151,Luxury Quiet Standard
+BMW-NVH-3275,101.0,2461,65.0,0.151,Luxury Quiet Standard
+BMW-NVH-3276,107.8,2694,65.3,0.218,Luxury Quiet Standard
+BMW-NVH-3277,96.0,2272,66.8,0.147,Luxury Quiet Standard
+BMW-NVH-3278,45.5,1073,55.7,0.09,Luxury Quiet Standard
+BMW-NVH-3279,93.3,2211,63.9,0.158,Luxury Quiet Standard
+BMW-NVH-3280,133.5,3239,69.2,0.141,Luxury Quiet Standard
+BMW-NVH-3281,152.0,3687,77.1,0.223,Unwanted Boom / Hum
+BMW-NVH-3282,102.8,2411,63.9,0.21,Luxury Quiet Standard
+BMW-NVH-3283,135.4,3370,70.4,0.167,Luxury Quiet Standard
+BMW-NVH-3284,88.3,2293,67.1,0.164,Luxury Quiet Standard
+BMW-NVH-3285,134.2,3101,70.9,0.204,Luxury Quiet Standard
+BMW-NVH-3286,59.9,1412,61.0,0.171,Luxury Quiet Standard
+BMW-NVH-3287,55.5,1371,58.0,0.096,Luxury Quiet Standard
+BMW-NVH-3288,103.7,2580,71.2,0.153,Luxury Quiet Standard
+BMW-NVH-3289,36.0,998,56.0,0.072,Luxury Quiet Standard
+BMW-NVH-3290,78.5,1831,64.5,0.132,Luxury Quiet Standard
+BMW-NVH-3291,159.5,3737,72.8,0.192,Luxury Quiet Standard
+BMW-NVH-3292,48.5,1194,57.4,0.168,Luxury Quiet Standard
+BMW-NVH-3293,89.4,2228,63.9,0.171,Luxury Quiet Standard
+BMW-NVH-3294,90.9,2251,62.0,0.208,Luxury Quiet Standard
+BMW-NVH-3295,60.1,1429,62.0,0.118,Luxury Quiet Standard
+BMW-NVH-3296,42.5,1074,58.5,0.093,Luxury Quiet Standard
+BMW-NVH-3297,59.9,1390,61.3,0.154,Luxury Quiet Standard
+BMW-NVH-3298,136.9,3266,71.1,0.157,Luxury Quiet Standard
+BMW-NVH-3299,31.3,682,55.7,0.117,Luxury Quiet Standard
+BMW-NVH-3300,61.8,1441,60.8,0.145,Luxury Quiet Standard
+BMW-NVH-3301,156.8,3793,81.9,0.223,Unwanted Boom / Hum
+BMW-NVH-3302,81.7,1977,66.0,0.103,Luxury Quiet Standard
+BMW-NVH-3303,80.4,1872,64.7,0.099,Luxury Quiet Standard
+BMW-NVH-3304,128.7,3164,71.3,0.224,Luxury Quiet Standard
+BMW-NVH-3305,123.2,2863,68.9,0.154,Luxury Quiet Standard
+BMW-NVH-3306,53.1,1392,62.9,0.182,Luxury Quiet Standard
+BMW-NVH-3307,127.8,3060,71.0,0.213,Luxury Quiet Standard
+BMW-NVH-3308,94.3,2408,65.9,0.157,Luxury Quiet Standard
+BMW-NVH-3309,111.2,2804,67.5,0.197,Luxury Quiet Standard
+BMW-NVH-3310,65.6,1675,59.7,0.12,Luxury Quiet Standard
+BMW-NVH-3311,41.3,936,57.7,0.105,Luxury Quiet Standard
+BMW-NVH-3312,96.4,2237,65.6,0.172,Luxury Quiet Standard
+BMW-NVH-3313,82.5,1917,64.4,0.129,Luxury Quiet Standard
+BMW-NVH-3314,126.3,3038,70.4,0.18,Luxury Quiet Standard
+BMW-NVH-3315,93.1,2255,66.5,0.21,Luxury Quiet Standard
+BMW-NVH-3316,79.2,1954,61.8,0.212,Luxury Quiet Standard
+BMW-NVH-3317,167.0,4132,77.7,0.187,Luxury Quiet Standard
+BMW-NVH-3318,131.4,3256,73.3,0.202,Luxury Quiet Standard
+BMW-NVH-3319,107.9,2593,67.9,0.125,Luxury Quiet Standard
+BMW-NVH-3320,42.8,1021,57.1,0.169,Luxury Quiet Standard
+BMW-NVH-3321,155.7,3801,79.2,0.296,Unwanted Boom / Hum
+BMW-NVH-3322,54.9,1376,60.9,0.131,Luxury Quiet Standard
+BMW-NVH-3323,154.1,3764,79.0,0.223,Unwanted Boom / Hum
+BMW-NVH-3324,39.0,917,58.8,0.166,Luxury Quiet Standard
+BMW-NVH-3325,62.3,1560,61.5,0.152,Luxury Quiet Standard
+BMW-NVH-3326,150.7,3579,70.2,0.209,Luxury Quiet Standard
+BMW-NVH-3327,45.3,1265,60.1,0.17,Luxury Quiet Standard
+BMW-NVH-3328,56.7,1283,60.7,0.116,Luxury Quiet Standard
+BMW-NVH-3329,135.0,3172,70.8,0.229,Luxury Quiet Standard
+BMW-NVH-3330,115.6,2746,69.4,0.177,Luxury Quiet Standard
+BMW-NVH-3331,136.8,3379,69.9,0.187,Luxury Quiet Standard
+BMW-NVH-3332,137.6,3141,71.2,0.222,Luxury Quiet Standard
+BMW-NVH-3333,48.8,1134,60.8,0.137,Luxury Quiet Standard
+BMW-NVH-3334,70.6,1764,62.8,0.126,Luxury Quiet Standard
+BMW-NVH-3335,160.7,3930,84.0,0.257,Unwanted Boom / Hum
+BMW-NVH-3336,138.5,3232,70.6,0.209,Luxury Quiet Standard
+BMW-NVH-3337,124.4,3136,67.0,0.199,Luxury Quiet Standard
+BMW-NVH-3338,88.2,2092,64.0,0.112,Luxury Quiet Standard
+BMW-NVH-3339,48.5,1180,58.4,0.108,Luxury Quiet Standard
+BMW-NVH-3340,176.3,4146,76.4,0.21,Luxury Quiet Standard
+BMW-NVH-3341,118.1,2777,66.2,0.144,Luxury Quiet Standard
+BMW-NVH-3342,179.3,4300,82.1,0.22,Unwanted Boom / Hum
+BMW-NVH-3343,76.6,1906,61.7,0.18,Luxury Quiet Standard
+BMW-NVH-3344,166.3,4011,81.2,0.234,Unwanted Boom / Hum
+BMW-NVH-3345,136.1,3312,70.2,0.159,Luxury Quiet Standard
+BMW-NVH-3346,82.3,1941,64.1,0.149,Luxury Quiet Standard
+BMW-NVH-3347,168.1,4097,84.9,0.26,Unwanted Boom / Hum
+BMW-NVH-3348,113.9,2747,70.4,0.224,Luxury Quiet Standard
+BMW-NVH-3349,136.1,3328,75.5,0.158,Luxury Quiet Standard
+BMW-NVH-3350,76.1,1889,59.5,0.14,Luxury Quiet Standard
+BMW-NVH-3351,140.4,3484,76.8,0.231,Unwanted Boom / Hum
+BMW-NVH-3352,52.4,1312,57.7,0.155,Luxury Quiet Standard
+BMW-NVH-3353,172.1,4184,83.0,0.233,Unwanted Boom / Hum
+BMW-NVH-3354,41.8,1043,57.7,0.101,Luxury Quiet Standard
+BMW-NVH-3355,58.4,1393,61.2,0.106,Luxury Quiet Standard
+BMW-NVH-3356,90.7,2121,64.3,0.158,Luxury Quiet Standard
+BMW-NVH-3357,57.0,1359,60.2,0.132,Luxury Quiet Standard
+BMW-NVH-3358,171.9,4067,82.6,0.221,Unwanted Boom / Hum
+BMW-NVH-3359,166.7,3958,75.4,0.143,Luxury Quiet Standard
+BMW-NVH-3360,117.7,2949,66.3,0.277,Luxury Quiet Standard
+BMW-NVH-3361,158.8,3803,80.5,0.221,Unwanted Boom / Hum
+BMW-NVH-3362,136.9,3260,71.0,0.203,Luxury Quiet Standard
+BMW-NVH-3363,124.3,2945,68.4,0.192,Luxury Quiet Standard
+BMW-NVH-3364,60.5,1507,60.0,0.127,Luxury Quiet Standard
+BMW-NVH-3365,157.2,3895,81.2,0.246,Unwanted Boom / Hum
+BMW-NVH-3366,122.0,2795,69.9,0.18,Luxury Quiet Standard
+BMW-NVH-3367,46.2,1206,60.3,0.147,Luxury Quiet Standard
+BMW-NVH-3368,54.6,1310,59.5,0.141,Luxury Quiet Standard
+BMW-NVH-3369,145.9,3613,76.7,0.264,Unwanted Boom / Hum
+BMW-NVH-3370,166.7,3961,77.4,0.201,Luxury Quiet Standard
+BMW-NVH-3371,122.1,2911,70.0,0.23,Luxury Quiet Standard
+BMW-NVH-3372,137.9,3201,74.7,0.228,Unwanted Boom / Hum
+BMW-NVH-3373,36.0,966,60.0,0.169,Luxury Quiet Standard
+BMW-NVH-3374,73.3,1724,63.7,0.162,Luxury Quiet Standard
+BMW-NVH-3375,32.3,731,54.4,0.086,Luxury Quiet Standard
+BMW-NVH-3376,38.1,883,55.9,0.196,Luxury Quiet Standard
+BMW-NVH-3377,76.5,1749,65.0,0.158,Luxury Quiet Standard
+BMW-NVH-3378,73.9,1730,63.2,0.125,Luxury Quiet Standard
+BMW-NVH-3379,172.0,4255,81.2,0.242,Unwanted Boom / Hum
+BMW-NVH-3380,178.8,4259,82.7,0.234,Unwanted Boom / Hum
+BMW-NVH-3381,68.6,1745,60.5,0.119,Luxury Quiet Standard
+BMW-NVH-3382,77.2,1988,63.3,0.129,Luxury Quiet Standard
+BMW-NVH-3383,99.8,2431,65.7,0.168,Luxury Quiet Standard
+BMW-NVH-3384,101.0,2497,66.4,0.156,Luxury Quiet Standard
+BMW-NVH-3385,167.4,4013,79.1,0.237,Unwanted Boom / Hum
+BMW-NVH-3386,46.2,942,59.9,0.096,Luxury Quiet Standard
+BMW-NVH-3387,154.3,3764,76.1,0.231,Unwanted Boom / Hum
+BMW-NVH-3388,66.1,1650,62.9,0.15,Luxury Quiet Standard
+BMW-NVH-3389,94.7,2208,66.0,0.113,Luxury Quiet Standard
+BMW-NVH-3390,76.9,1946,64.0,0.136,Luxury Quiet Standard
+BMW-NVH-3391,136.8,3257,73.6,0.222,Unwanted Boom / Hum
+BMW-NVH-3392,55.3,1321,62.9,0.109,Luxury Quiet Standard
+BMW-NVH-3393,168.5,3913,76.2,0.192,Luxury Quiet Standard
+BMW-NVH-3394,164.8,3968,81.1,0.268,Unwanted Boom / Hum
+BMW-NVH-3395,112.1,2773,64.3,0.199,Luxury Quiet Standard
+BMW-NVH-3396,168.3,4071,81.9,0.271,Unwanted Boom / Hum
+BMW-NVH-3397,39.9,1031,59.6,0.084,Luxury Quiet Standard
+BMW-NVH-3398,142.4,3536,70.7,0.213,Luxury Quiet Standard
+BMW-NVH-3399,71.6,1691,58.9,0.134,Luxury Quiet Standard
+BMW-NVH-3400,164.2,3944,73.3,0.202,Luxury Quiet Standard
+BMW-NVH-3401,136.3,3293,72.8,0.17,Luxury Quiet Standard
+BMW-NVH-3402,139.4,3344,79.1,0.23,Unwanted Boom / Hum
+BMW-NVH-3403,174.1,4290,81.9,0.233,Unwanted Boom / Hum
+BMW-NVH-3404,104.0,2645,69.7,0.184,Luxury Quiet Standard
+BMW-NVH-3405,164.0,3943,81.9,0.231,Unwanted Boom / Hum
+BMW-NVH-3406,177.2,4212,75.6,0.2,Luxury Quiet Standard
+BMW-NVH-3407,152.6,3748,79.0,0.257,Unwanted Boom / Hum
+BMW-NVH-3408,38.6,881,56.0,0.102,Luxury Quiet Standard
+BMW-NVH-3409,168.2,3966,77.9,0.207,Luxury Quiet Standard
+BMW-NVH-3410,70.4,1661,62.2,0.129,Luxury Quiet Standard
+BMW-NVH-3411,40.9,1127,62.3,0.128,Luxury Quiet Standard
+BMW-NVH-3412,163.2,4119,81.8,0.269,Unwanted Boom / Hum
+BMW-NVH-3413,109.0,2597,68.0,0.15,Luxury Quiet Standard
+BMW-NVH-3414,123.5,3151,67.8,0.225,Luxury Quiet Standard
+BMW-NVH-3415,36.2,913,56.3,0.113,Luxury Quiet Standard
+BMW-NVH-3416,149.0,3581,81.4,0.222,Unwanted Boom / Hum
+BMW-NVH-3417,150.5,3606,74.2,0.205,Luxury Quiet Standard
+BMW-NVH-3418,54.7,1387,57.8,0.095,Luxury Quiet Standard
+BMW-NVH-3419,139.2,3419,78.4,0.225,Unwanted Boom / Hum
+BMW-NVH-3420,38.5,995,56.1,0.08,Luxury Quiet Standard
+BMW-NVH-3421,120.6,2828,71.2,0.177,Luxury Quiet Standard
+BMW-NVH-3422,39.6,1029,54.5,0.094,Luxury Quiet Standard
+BMW-NVH-3423,164.9,3938,80.9,0.23,Unwanted Boom / Hum
+BMW-NVH-3424,60.7,1433,57.5,0.18,Luxury Quiet Standard
+BMW-NVH-3425,121.0,2997,70.9,0.188,Luxury Quiet Standard
+BMW-NVH-3426,167.5,4069,81.2,0.288,Unwanted Boom / Hum
+BMW-NVH-3427,132.8,3098,69.1,0.189,Luxury Quiet Standard
+BMW-NVH-3428,122.0,2913,69.9,0.201,Luxury Quiet Standard
+BMW-NVH-3429,83.0,1884,66.2,0.122,Luxury Quiet Standard
+BMW-NVH-3430,157.2,3787,82.2,0.253,Unwanted Boom / Hum
+BMW-NVH-3431,101.9,2554,66.8,0.212,Luxury Quiet Standard
+BMW-NVH-3432,98.6,2400,67.5,0.166,Luxury Quiet Standard
+BMW-NVH-3433,63.2,1519,63.4,0.181,Luxury Quiet Standard
+BMW-NVH-3434,80.4,1922,64.3,0.122,Luxury Quiet Standard
+BMW-NVH-3435,157.4,3699,81.2,0.24,Unwanted Boom / Hum
+BMW-NVH-3436,113.3,2838,68.9,0.175,Luxury Quiet Standard
+BMW-NVH-3437,98.9,2286,67.9,0.126,Luxury Quiet Standard
+BMW-NVH-3438,131.4,3148,70.6,0.251,Luxury Quiet Standard
+BMW-NVH-3439,85.1,2085,66.6,0.182,Luxury Quiet Standard
+BMW-NVH-3440,55.5,1362,58.9,0.168,Luxury Quiet Standard
+BMW-NVH-3441,77.5,1777,60.4,0.135,Luxury Quiet Standard
+BMW-NVH-3442,139.3,3183,71.9,0.148,Luxury Quiet Standard
+BMW-NVH-3443,41.9,918,56.5,0.159,Luxury Quiet Standard
+BMW-NVH-3444,153.8,3689,76.3,0.196,Luxury Quiet Standard
+BMW-NVH-3445,114.2,2761,66.7,0.182,Luxury Quiet Standard
+BMW-NVH-3446,41.9,1127,59.8,0.196,Luxury Quiet Standard
+BMW-NVH-3447,66.2,1630,60.0,0.099,Luxury Quiet Standard
+BMW-NVH-3448,132.1,3212,77.8,0.223,Unwanted Boom / Hum
+BMW-NVH-3449,41.7,990,57.9,0.119,Luxury Quiet Standard
+BMW-NVH-3450,77.5,1866,62.2,0.078,Luxury Quiet Standard
+BMW-NVH-3451,97.5,2396,66.4,0.223,Luxury Quiet Standard
+BMW-NVH-3452,52.9,1222,61.8,0.15,Luxury Quiet Standard
+BMW-NVH-3453,177.3,4228,84.3,0.227,Unwanted Boom / Hum
+BMW-NVH-3454,116.6,2781,68.9,0.199,Luxury Quiet Standard
+BMW-NVH-3455,154.7,3677,77.3,0.228,Unwanted Boom / Hum
+BMW-NVH-3456,102.9,2532,66.8,0.2,Luxury Quiet Standard
+BMW-NVH-3457,52.7,1285,56.1,0.151,Luxury Quiet Standard
+BMW-NVH-3458,95.5,2373,64.7,0.147,Luxury Quiet Standard
+BMW-NVH-3459,94.2,2426,65.0,0.142,Luxury Quiet Standard
+BMW-NVH-3460,150.2,3619,67.5,0.215,Luxury Quiet Standard
+BMW-NVH-3461,63.2,1477,60.4,0.11,Luxury Quiet Standard
+BMW-NVH-3462,34.6,838,59.0,0.06,Luxury Quiet Standard
+BMW-NVH-3463,142.7,3410,71.4,0.177,Luxury Quiet Standard
+BMW-NVH-3464,136.7,3180,70.7,0.174,Luxury Quiet Standard
+BMW-NVH-3465,108.4,2600,69.4,0.156,Luxury Quiet Standard
+BMW-NVH-3466,77.8,1950,63.4,0.173,Luxury Quiet Standard
+BMW-NVH-3467,69.0,1793,62.9,0.147,Luxury Quiet Standard
+BMW-NVH-3468,157.7,3739,80.3,0.264,Unwanted Boom / Hum
+BMW-NVH-3469,79.4,1765,62.5,0.145,Luxury Quiet Standard
+BMW-NVH-3470,149.7,3532,74.5,0.169,Luxury Quiet Standard
+BMW-NVH-3471,141.3,3360,72.7,0.21,Luxury Quiet Standard
+BMW-NVH-3472,167.6,3960,83.4,0.254,Unwanted Boom / Hum
+BMW-NVH-3473,133.8,3235,73.6,0.167,Luxury Quiet Standard
+BMW-NVH-3474,145.1,3438,81.2,0.247,Unwanted Boom / Hum
+BMW-NVH-3475,157.9,3706,73.8,0.196,Luxury Quiet Standard
+BMW-NVH-3476,166.3,4076,77.3,0.207,Luxury Quiet Standard
+BMW-NVH-3477,176.2,4256,83.0,0.23,Unwanted Boom / Hum
+BMW-NVH-3478,30.7,858,56.8,0.087,Luxury Quiet Standard
+BMW-NVH-3479,167.6,4068,77.8,0.196,Luxury Quiet Standard
+BMW-NVH-3480,81.2,1946,65.0,0.155,Luxury Quiet Standard
+BMW-NVH-3481,52.3,1332,59.8,0.119,Luxury Quiet Standard
+BMW-NVH-3482,62.2,1453,60.7,0.131,Luxury Quiet Standard
+BMW-NVH-3483,132.2,3295,76.2,0.237,Unwanted Boom / Hum
+BMW-NVH-3484,137.7,3374,68.4,0.185,Luxury Quiet Standard
+BMW-NVH-3485,163.1,3886,76.6,0.176,Luxury Quiet Standard
+BMW-NVH-3486,73.0,1812,62.4,0.076,Luxury Quiet Standard
+BMW-NVH-3487,155.8,3693,71.2,0.21,Luxury Quiet Standard
+BMW-NVH-3488,79.7,1819,65.2,0.158,Luxury Quiet Standard
+BMW-NVH-3489,178.1,4311,82.2,0.265,Unwanted Boom / Hum
+BMW-NVH-3490,58.6,1413,59.3,0.104,Luxury Quiet Standard
+BMW-NVH-3491,37.3,928,55.8,0.055,Luxury Quiet Standard
+BMW-NVH-3492,140.0,3375,73.7,0.164,Luxury Quiet Standard
+BMW-NVH-3493,50.6,1319,58.2,0.149,Luxury Quiet Standard
+BMW-NVH-3494,150.9,3641,74.5,0.185,Luxury Quiet Standard
+BMW-NVH-3495,148.2,3668,77.8,0.251,Unwanted Boom / Hum
+BMW-NVH-3496,170.9,4019,83.9,0.251,Unwanted Boom / Hum
+BMW-NVH-3497,156.6,3697,81.3,0.233,Unwanted Boom / Hum
+BMW-NVH-3498,113.8,2787,69.9,0.166,Luxury Quiet Standard
+BMW-NVH-3499,173.3,4115,73.2,0.195,Luxury Quiet Standard
+BMW-NVH-3500,104.0,2538,66.1,0.201,Luxury Quiet Standard
+BMW-NVH-3501,90.7,2067,62.0,0.174,Luxury Quiet Standard
+BMW-NVH-3502,113.9,2702,66.4,0.217,Luxury Quiet Standard
+BMW-NVH-3503,146.7,3509,72.9,0.164,Luxury Quiet Standard
+BMW-NVH-3504,45.5,1137,58.6,0.136,Luxury Quiet Standard
+BMW-NVH-3505,36.6,936,57.9,0.169,Luxury Quiet Standard
+BMW-NVH-3506,166.8,4031,77.3,0.205,Luxury Quiet Standard
+BMW-NVH-3507,74.7,1754,63.6,0.172,Luxury Quiet Standard
+BMW-NVH-3508,162.4,3847,83.3,0.23,Unwanted Boom / Hum
+BMW-NVH-3509,43.4,1006,59.3,0.076,Luxury Quiet Standard
+BMW-NVH-3510,112.2,2563,68.8,0.194,Luxury Quiet Standard
+BMW-NVH-3511,154.5,3712,71.7,0.213,Luxury Quiet Standard
+BMW-NVH-3512,88.7,2263,66.5,0.127,Luxury Quiet Standard
+BMW-NVH-3513,145.0,3493,77.8,0.291,Unwanted Boom / Hum
+BMW-NVH-3514,124.1,2918,69.3,0.188,Luxury Quiet Standard
+BMW-NVH-3515,94.3,2225,63.4,0.184,Luxury Quiet Standard
+BMW-NVH-3516,66.5,1650,60.5,0.204,Luxury Quiet Standard
+BMW-NVH-3517,54.9,1375,62.0,0.083,Luxury Quiet Standard
+BMW-NVH-3518,69.8,1768,63.8,0.164,Luxury Quiet Standard
+BMW-NVH-3519,60.7,1386,57.5,0.132,Luxury Quiet Standard
+BMW-NVH-3520,92.5,2172,63.6,0.147,Luxury Quiet Standard
+BMW-NVH-3521,119.5,2843,67.7,0.201,Luxury Quiet Standard
+BMW-NVH-3522,143.7,3504,73.7,0.168,Luxury Quiet Standard
+BMW-NVH-3523,128.3,3122,72.8,0.213,Luxury Quiet Standard
+BMW-NVH-3524,38.3,1003,57.1,0.136,Luxury Quiet Standard
+BMW-NVH-3525,55.4,1308,57.7,0.138,Luxury Quiet Standard
+BMW-NVH-3526,85.8,2081,64.1,0.17,Luxury Quiet Standard
+BMW-NVH-3527,49.2,1214,61.0,0.122,Luxury Quiet Standard
+BMW-NVH-3528,97.6,2330,64.9,0.149,Luxury Quiet Standard
+BMW-NVH-3529,30.2,693,56.1,0.076,Luxury Quiet Standard
+BMW-NVH-3530,123.3,3058,70.0,0.191,Luxury Quiet Standard
+BMW-NVH-3531,42.9,1116,57.6,0.142,Luxury Quiet Standard
+BMW-NVH-3532,164.8,4034,72.7,0.203,Luxury Quiet Standard
+BMW-NVH-3533,105.8,2570,69.2,0.095,Luxury Quiet Standard
+BMW-NVH-3534,151.6,3484,76.7,0.211,Luxury Quiet Standard
+BMW-NVH-3535,96.4,2307,67.5,0.182,Luxury Quiet Standard
+BMW-NVH-3536,138.8,3264,68.0,0.204,Luxury Quiet Standard
+BMW-NVH-3537,35.1,839,53.9,0.147,Luxury Quiet Standard
+BMW-NVH-3538,143.1,3442,76.6,0.225,Unwanted Boom / Hum
+BMW-NVH-3539,154.0,3582,79.7,0.233,Unwanted Boom / Hum
+BMW-NVH-3540,137.8,3315,78.5,0.29,Unwanted Boom / Hum
+BMW-NVH-3541,130.1,3308,74.4,0.23,Unwanted Boom / Hum
+BMW-NVH-3542,116.9,2705,70.9,0.154,Luxury Quiet Standard
+BMW-NVH-3543,116.6,2766,70.5,0.221,Luxury Quiet Standard
+BMW-NVH-3544,153.1,3633,71.1,0.212,Luxury Quiet Standard
+BMW-NVH-3545,78.3,1786,66.4,0.127,Luxury Quiet Standard
+BMW-NVH-3546,44.9,954,58.4,0.071,Luxury Quiet Standard
+BMW-NVH-3547,140.4,3372,76.4,0.236,Unwanted Boom / Hum
+BMW-NVH-3548,93.4,2232,67.6,0.12,Luxury Quiet Standard
+BMW-NVH-3549,172.8,4098,76.8,0.214,Luxury Quiet Standard
+BMW-NVH-3550,36.2,788,54.6,0.101,Luxury Quiet Standard
+BMW-NVH-3551,32.4,780,54.5,0.126,Luxury Quiet Standard
+BMW-NVH-3552,47.2,1108,56.3,0.042,Luxury Quiet Standard
+BMW-NVH-3553,68.8,1688,61.4,0.191,Luxury Quiet Standard
+BMW-NVH-3554,58.5,1460,61.6,0.149,Luxury Quiet Standard
+BMW-NVH-3555,74.1,1810,61.5,0.139,Luxury Quiet Standard
+BMW-NVH-3556,35.3,941,58.9,0.156,Luxury Quiet Standard
+BMW-NVH-3557,118.6,2864,68.2,0.15,Luxury Quiet Standard
+BMW-NVH-3558,168.2,3995,82.9,0.255,Unwanted Boom / Hum
+BMW-NVH-3559,138.7,3271,76.2,0.223,Unwanted Boom / Hum
+BMW-NVH-3560,67.8,1598,60.4,0.134,Luxury Quiet Standard
+BMW-NVH-3561,46.7,1039,55.4,0.125,Luxury Quiet Standard
+BMW-NVH-3562,44.2,1100,61.8,0.176,Luxury Quiet Standard
+BMW-NVH-3563,120.3,2897,70.3,0.162,Luxury Quiet Standard
+BMW-NVH-3564,111.7,2615,68.9,0.136,Luxury Quiet Standard
+BMW-NVH-3565,137.0,3252,72.2,0.194,Luxury Quiet Standard
+BMW-NVH-3566,129.8,3035,68.9,0.183,Luxury Quiet Standard
+BMW-NVH-3567,105.9,2403,66.6,0.158,Luxury Quiet Standard
+BMW-NVH-3568,130.3,3217,80.9,0.222,Unwanted Boom / Hum
+BMW-NVH-3569,171.8,3887,80.7,0.239,Unwanted Boom / Hum
+BMW-NVH-3570,57.0,1372,61.3,0.125,Luxury Quiet Standard
+BMW-NVH-3571,80.3,1970,67.0,0.093,Luxury Quiet Standard
+BMW-NVH-3572,81.0,1928,62.0,0.16,Luxury Quiet Standard
+BMW-NVH-3573,51.1,1224,61.6,0.151,Luxury Quiet Standard
+BMW-NVH-3574,164.8,3906,82.4,0.257,Unwanted Boom / Hum
+BMW-NVH-3575,133.5,3214,71.3,0.193,Luxury Quiet Standard
+BMW-NVH-3576,35.4,1036,58.0,0.095,Luxury Quiet Standard
+BMW-NVH-3577,166.7,3931,76.8,0.171,Luxury Quiet Standard
+BMW-NVH-3578,108.3,2907,69.4,0.191,Luxury Quiet Standard
+BMW-NVH-3579,137.1,3204,72.0,0.201,Luxury Quiet Standard
+BMW-NVH-3580,95.8,2342,66.1,0.205,Luxury Quiet Standard
+BMW-NVH-3581,147.5,3532,71.4,0.213,Luxury Quiet Standard
+BMW-NVH-3582,112.5,2642,69.7,0.199,Luxury Quiet Standard
+BMW-NVH-3583,108.0,2584,69.7,0.158,Luxury Quiet Standard
+BMW-NVH-3584,147.9,3550,70.2,0.215,Luxury Quiet Standard
+BMW-NVH-3585,75.9,2057,63.2,0.183,Luxury Quiet Standard
+BMW-NVH-3586,160.5,3854,75.5,0.206,Luxury Quiet Standard
+BMW-NVH-3587,41.7,955,56.9,0.091,Luxury Quiet Standard
+BMW-NVH-3588,151.1,3659,73.0,0.162,Luxury Quiet Standard
+BMW-NVH-3589,139.6,3382,78.4,0.226,Unwanted Boom / Hum
+BMW-NVH-3590,94.3,2267,66.0,0.204,Luxury Quiet Standard
+BMW-NVH-3591,145.6,3394,73.6,0.198,Luxury Quiet Standard
+BMW-NVH-3592,155.5,3803,77.6,0.201,Luxury Quiet Standard
+BMW-NVH-3593,51.5,1292,60.9,0.09,Luxury Quiet Standard
+BMW-NVH-3594,153.2,3753,75.2,0.149,Luxury Quiet Standard
+BMW-NVH-3595,178.1,4382,83.5,0.255,Unwanted Boom / Hum
+BMW-NVH-3596,151.0,3648,72.4,0.199,Luxury Quiet Standard
+BMW-NVH-3597,33.7,963,55.5,0.117,Luxury Quiet Standard
+BMW-NVH-3598,118.2,2861,69.5,0.208,Luxury Quiet Standard
+BMW-NVH-3599,140.1,3292,72.6,0.204,Luxury Quiet Standard
+BMW-NVH-3600,68.1,1717,61.2,0.115,Luxury Quiet Standard
+BMW-NVH-3601,115.7,2593,68.3,0.156,Luxury Quiet Standard
+BMW-NVH-3602,173.2,4160,83.0,0.294,Unwanted Boom / Hum
+BMW-NVH-3603,125.2,3116,71.7,0.211,Luxury Quiet Standard
+BMW-NVH-3604,126.5,3009,68.4,0.175,Luxury Quiet Standard
+BMW-NVH-3605,100.5,2261,66.8,0.191,Luxury Quiet Standard
+BMW-NVH-3606,86.5,2068,60.4,0.19,Luxury Quiet Standard
+BMW-NVH-3607,106.5,2643,67.8,0.177,Luxury Quiet Standard
+BMW-NVH-3608,54.3,1289,60.2,0.1,Luxury Quiet Standard
+BMW-NVH-3609,128.0,2957,69.5,0.198,Luxury Quiet Standard
+BMW-NVH-3610,140.5,3453,75.5,0.243,Unwanted Boom / Hum
+BMW-NVH-3611,168.2,3975,82.5,0.272,Unwanted Boom / Hum
+BMW-NVH-3612,151.8,3744,72.9,0.172,Luxury Quiet Standard
+BMW-NVH-3613,109.1,2548,64.9,0.24,Luxury Quiet Standard
+BMW-NVH-3614,145.8,3548,76.8,0.219,Luxury Quiet Standard
+BMW-NVH-3615,89.1,2066,64.8,0.195,Luxury Quiet Standard
+BMW-NVH-3616,148.2,3514,74.7,0.134,Luxury Quiet Standard
+BMW-NVH-3617,144.2,3441,80.5,0.237,Unwanted Boom / Hum
+BMW-NVH-3618,81.1,2031,63.3,0.139,Luxury Quiet Standard
+BMW-NVH-3619,145.2,3538,73.8,0.178,Luxury Quiet Standard
+BMW-NVH-3620,158.8,3811,75.5,0.201,Luxury Quiet Standard
+BMW-NVH-3621,80.4,1946,61.2,0.198,Luxury Quiet Standard
+BMW-NVH-3622,44.9,1096,58.0,0.157,Luxury Quiet Standard
+BMW-NVH-3623,107.6,2661,67.7,0.169,Luxury Quiet Standard
+BMW-NVH-3624,145.7,3375,71.2,0.185,Luxury Quiet Standard
+BMW-NVH-3625,164.9,3950,75.0,0.192,Luxury Quiet Standard
+BMW-NVH-3626,143.6,3413,79.7,0.242,Unwanted Boom / Hum
+BMW-NVH-3627,177.2,4356,85.0,0.242,Unwanted Boom / Hum
+BMW-NVH-3628,172.5,4002,76.8,0.202,Luxury Quiet Standard
+BMW-NVH-3629,81.9,2080,63.8,0.171,Luxury Quiet Standard
+BMW-NVH-3630,126.8,2903,66.8,0.183,Luxury Quiet Standard
+BMW-NVH-3631,51.6,1296,61.2,0.124,Luxury Quiet Standard
+BMW-NVH-3632,103.2,2374,65.8,0.146,Luxury Quiet Standard
+BMW-NVH-3633,176.5,4263,79.7,0.223,Unwanted Boom / Hum
+BMW-NVH-3634,90.5,2216,65.9,0.183,Luxury Quiet Standard
+BMW-NVH-3635,50.4,1245,57.2,0.174,Luxury Quiet Standard
+BMW-NVH-3636,95.1,2421,68.0,0.148,Luxury Quiet Standard
+BMW-NVH-3637,179.9,4301,85.8,0.257,Unwanted Boom / Hum
+BMW-NVH-3638,114.6,2746,74.6,0.15,Luxury Quiet Standard
+BMW-NVH-3639,158.2,3880,82.7,0.244,Unwanted Boom / Hum
+BMW-NVH-3640,131.8,3165,67.8,0.185,Luxury Quiet Standard
+BMW-NVH-3641,76.5,1972,62.7,0.136,Luxury Quiet Standard
+BMW-NVH-3642,135.7,3264,72.5,0.22,Luxury Quiet Standard
+BMW-NVH-3643,106.0,2502,68.3,0.201,Luxury Quiet Standard
+BMW-NVH-3644,71.7,1650,63.1,0.117,Luxury Quiet Standard
+BMW-NVH-3645,45.6,1082,55.6,0.11,Luxury Quiet Standard
+BMW-NVH-3646,39.5,1016,58.5,0.123,Luxury Quiet Standard
+BMW-NVH-3647,67.8,1606,61.6,0.108,Luxury Quiet Standard
+BMW-NVH-3648,83.7,2143,62.5,0.162,Luxury Quiet Standard
+BMW-NVH-3649,128.6,3146,71.8,0.11,Luxury Quiet Standard
+BMW-NVH-3650,63.5,1308,61.1,0.109,Luxury Quiet Standard
+BMW-NVH-3651,179.7,4396,83.3,0.223,Unwanted Boom / Hum
+BMW-NVH-3652,167.7,3951,80.7,0.272,Unwanted Boom / Hum
+BMW-NVH-3653,107.1,2488,68.7,0.163,Luxury Quiet Standard
+BMW-NVH-3654,103.1,2438,63.9,0.136,Luxury Quiet Standard
+BMW-NVH-3655,81.8,1943,67.0,0.185,Luxury Quiet Standard
+BMW-NVH-3656,138.6,3159,71.7,0.225,Luxury Quiet Standard
+BMW-NVH-3657,69.5,1720,61.6,0.144,Luxury Quiet Standard
+BMW-NVH-3658,57.1,1368,61.6,0.138,Luxury Quiet Standard
+BMW-NVH-3659,113.0,2649,66.2,0.133,Luxury Quiet Standard
+BMW-NVH-3660,54.3,1219,60.3,0.141,Luxury Quiet Standard
+BMW-NVH-3661,87.5,2134,64.1,0.134,Luxury Quiet Standard
+BMW-NVH-3662,134.7,3126,72.7,0.215,Luxury Quiet Standard
+BMW-NVH-3663,139.6,3322,71.6,0.179,Luxury Quiet Standard
+BMW-NVH-3664,166.0,4097,83.4,0.24,Unwanted Boom / Hum
+BMW-NVH-3665,60.8,1571,62.8,0.166,Luxury Quiet Standard
+BMW-NVH-3666,57.4,1321,64.5,0.136,Luxury Quiet Standard
+BMW-NVH-3667,50.4,1279,61.4,0.221,Luxury Quiet Standard
+BMW-NVH-3668,31.2,612,58.2,0.14,Luxury Quiet Standard
+BMW-NVH-3669,70.7,1818,64.3,0.16,Luxury Quiet Standard
+BMW-NVH-3670,56.3,1247,56.9,0.154,Luxury Quiet Standard
+BMW-NVH-3671,131.2,3108,67.5,0.221,Luxury Quiet Standard
+BMW-NVH-3672,122.6,2992,70.6,0.176,Luxury Quiet Standard
+BMW-NVH-3673,129.4,3066,69.4,0.144,Luxury Quiet Standard
+BMW-NVH-3674,103.3,2370,66.0,0.176,Luxury Quiet Standard
+BMW-NVH-3675,85.2,2075,60.9,0.166,Luxury Quiet Standard
+BMW-NVH-3676,141.2,3211,77.3,0.25,Unwanted Boom / Hum
+BMW-NVH-3677,62.6,1444,59.2,0.185,Luxury Quiet Standard
+BMW-NVH-3678,104.0,2546,67.6,0.241,Luxury Quiet Standard
+BMW-NVH-3679,63.0,1472,61.6,0.145,Luxury Quiet Standard
+BMW-NVH-3680,86.4,2034,62.2,0.144,Luxury Quiet Standard
+BMW-NVH-3681,110.8,2798,68.2,0.147,Luxury Quiet Standard
+BMW-NVH-3682,64.4,1625,61.4,0.097,Luxury Quiet Standard
+BMW-NVH-3683,108.7,2496,68.4,0.228,Luxury Quiet Standard
+BMW-NVH-3684,64.2,1439,62.5,0.106,Luxury Quiet Standard
+BMW-NVH-3685,73.2,1778,62.0,0.141,Luxury Quiet Standard
+BMW-NVH-3686,177.1,4274,77.0,0.199,Luxury Quiet Standard
+BMW-NVH-3687,128.1,3059,73.1,0.194,Luxury Quiet Standard
+BMW-NVH-3688,55.4,1294,56.6,0.2,Luxury Quiet Standard
+BMW-NVH-3689,37.3,814,57.7,0.115,Luxury Quiet Standard
+BMW-NVH-3690,37.7,851,57.3,0.12,Luxury Quiet Standard
+BMW-NVH-3691,82.1,1887,61.7,0.179,Luxury Quiet Standard
+BMW-NVH-3692,125.8,2953,67.6,0.163,Luxury Quiet Standard
+BMW-NVH-3693,63.3,1614,59.2,0.148,Luxury Quiet Standard
+BMW-NVH-3694,156.9,3913,81.4,0.248,Unwanted Boom / Hum
+BMW-NVH-3695,71.5,1663,62.3,0.129,Luxury Quiet Standard
+BMW-NVH-3696,41.7,1060,61.2,0.151,Luxury Quiet Standard
+BMW-NVH-3697,135.7,3282,70.6,0.14,Luxury Quiet Standard
+BMW-NVH-3698,133.2,3225,70.8,0.182,Luxury Quiet Standard
+BMW-NVH-3699,80.6,1828,64.9,0.127,Luxury Quiet Standard
+BMW-NVH-3700,71.9,1762,64.4,0.162,Luxury Quiet Standard
+BMW-NVH-3701,121.5,2917,69.9,0.184,Luxury Quiet Standard
+BMW-NVH-3702,80.1,1913,62.4,0.202,Luxury Quiet Standard
+BMW-NVH-3703,107.8,2680,69.1,0.151,Luxury Quiet Standard
+BMW-NVH-3704,39.3,820,59.4,0.065,Luxury Quiet Standard
+BMW-NVH-3705,120.1,2892,72.2,0.203,Luxury Quiet Standard
+BMW-NVH-3706,135.2,3334,75.1,0.2,Luxury Quiet Standard
+BMW-NVH-3707,119.8,2940,65.4,0.185,Luxury Quiet Standard
+BMW-NVH-3708,59.8,1412,59.4,0.122,Luxury Quiet Standard
+BMW-NVH-3709,34.2,812,58.3,0.05,Luxury Quiet Standard
+BMW-NVH-3710,85.7,2039,67.0,0.115,Luxury Quiet Standard
+BMW-NVH-3711,61.4,1528,62.0,0.159,Luxury Quiet Standard
+BMW-NVH-3712,131.7,3100,71.0,0.201,Luxury Quiet Standard
+BMW-NVH-3713,93.1,2250,69.0,0.184,Luxury Quiet Standard
+BMW-NVH-3714,112.3,2811,64.6,0.178,Luxury Quiet Standard
+BMW-NVH-3715,96.1,2168,64.1,0.176,Luxury Quiet Standard
+BMW-NVH-3716,68.1,1645,59.8,0.119,Luxury Quiet Standard
+BMW-NVH-3717,83.5,2012,63.8,0.146,Luxury Quiet Standard
+BMW-NVH-3718,169.3,4096,81.6,0.237,Unwanted Boom / Hum
+BMW-NVH-3719,105.1,2490,68.3,0.152,Luxury Quiet Standard
+BMW-NVH-3720,41.7,989,55.5,0.14,Luxury Quiet Standard
+BMW-NVH-3721,176.0,4154,83.6,0.242,Unwanted Boom / Hum
+BMW-NVH-3722,58.5,1339,58.3,0.073,Luxury Quiet Standard
+BMW-NVH-3723,74.7,1915,63.0,0.162,Luxury Quiet Standard
+BMW-NVH-3724,141.3,3416,73.4,0.212,Luxury Quiet Standard
+BMW-NVH-3725,162.1,3909,73.0,0.196,Luxury Quiet Standard
+BMW-NVH-3726,143.9,3601,75.3,0.168,Luxury Quiet Standard
+BMW-NVH-3727,128.3,3054,70.1,0.148,Luxury Quiet Standard
+BMW-NVH-3728,57.3,1404,59.0,0.117,Luxury Quiet Standard
+BMW-NVH-3729,135.2,3248,71.5,0.18,Luxury Quiet Standard
+BMW-NVH-3730,91.9,2234,65.9,0.198,Luxury Quiet Standard
+BMW-NVH-3731,48.0,1222,60.7,0.132,Luxury Quiet Standard
+BMW-NVH-3732,162.5,3935,80.6,0.222,Unwanted Boom / Hum
+BMW-NVH-3733,139.1,3266,77.9,0.232,Unwanted Boom / Hum
+BMW-NVH-3734,76.7,1852,65.2,0.172,Luxury Quiet Standard
+BMW-NVH-3735,109.1,2714,68.1,0.172,Luxury Quiet Standard
+BMW-NVH-3736,100.5,2397,64.0,0.143,Luxury Quiet Standard
+BMW-NVH-3737,58.1,1403,59.1,0.154,Luxury Quiet Standard
+BMW-NVH-3738,93.0,2200,66.5,0.173,Luxury Quiet Standard
+BMW-NVH-3739,69.4,1718,57.4,0.21,Luxury Quiet Standard
+BMW-NVH-3740,62.4,1717,62.2,0.126,Luxury Quiet Standard
+BMW-NVH-3741,100.1,2439,70.9,0.167,Luxury Quiet Standard
+BMW-NVH-3742,86.9,2017,64.7,0.182,Luxury Quiet Standard
+BMW-NVH-3743,72.6,1688,59.7,0.144,Luxury Quiet Standard
+BMW-NVH-3744,117.1,2810,69.6,0.215,Luxury Quiet Standard
+BMW-NVH-3745,119.6,2985,67.8,0.228,Luxury Quiet Standard
+BMW-NVH-3746,143.3,3390,70.5,0.209,Luxury Quiet Standard
+BMW-NVH-3747,98.0,2221,63.8,0.185,Luxury Quiet Standard
+BMW-NVH-3748,155.9,3621,81.5,0.237,Unwanted Boom / Hum
+BMW-NVH-3749,133.2,3138,71.0,0.189,Luxury Quiet Standard
+BMW-NVH-3750,87.0,2014,64.2,0.242,Luxury Quiet Standard
+BMW-NVH-3751,171.1,4049,81.5,0.232,Unwanted Boom / Hum
+BMW-NVH-3752,84.4,1976,66.1,0.123,Luxury Quiet Standard
+BMW-NVH-3753,83.4,1958,66.3,0.151,Luxury Quiet Standard
+BMW-NVH-3754,67.7,1458,62.4,0.119,Luxury Quiet Standard
+BMW-NVH-3755,31.1,618,57.7,0.086,Luxury Quiet Standard
+BMW-NVH-3756,88.7,2073,65.0,0.2,Luxury Quiet Standard
+BMW-NVH-3757,116.2,2786,67.5,0.213,Luxury Quiet Standard
+BMW-NVH-3758,45.4,1184,60.8,0.086,Luxury Quiet Standard
+BMW-NVH-3759,70.8,1696,61.3,0.144,Luxury Quiet Standard
+BMW-NVH-3760,164.8,3995,77.2,0.248,Unwanted Boom / Hum
+BMW-NVH-3761,63.7,1497,60.0,0.171,Luxury Quiet Standard
+BMW-NVH-3762,84.9,2128,60.8,0.202,Luxury Quiet Standard
+BMW-NVH-3763,145.7,3548,76.9,0.221,Unwanted Boom / Hum
+BMW-NVH-3764,34.4,781,58.1,0.103,Luxury Quiet Standard
+BMW-NVH-3765,72.2,1668,65.8,0.127,Luxury Quiet Standard
+BMW-NVH-3766,101.2,2403,65.2,0.175,Luxury Quiet Standard
+BMW-NVH-3767,159.4,3832,75.8,0.196,Luxury Quiet Standard
+BMW-NVH-3768,115.0,2673,66.5,0.188,Luxury Quiet Standard
+BMW-NVH-3769,157.8,3710,80.9,0.237,Unwanted Boom / Hum
+BMW-NVH-3770,81.3,1921,65.6,0.148,Luxury Quiet Standard
+BMW-NVH-3771,30.6,643,55.2,0.084,Luxury Quiet Standard
+BMW-NVH-3772,152.3,3623,79.1,0.253,Unwanted Boom / Hum
+BMW-NVH-3773,169.9,4171,80.3,0.224,Unwanted Boom / Hum
+BMW-NVH-3774,115.7,2769,68.6,0.181,Luxury Quiet Standard
+BMW-NVH-3775,120.8,2863,66.7,0.161,Luxury Quiet Standard
+BMW-NVH-3776,59.1,1444,60.9,0.194,Luxury Quiet Standard
+BMW-NVH-3777,172.1,3955,76.4,0.217,Luxury Quiet Standard
+BMW-NVH-3778,129.6,3067,69.5,0.147,Luxury Quiet Standard
+BMW-NVH-3779,53.0,1217,60.2,0.15,Luxury Quiet Standard
+BMW-NVH-3780,154.6,3717,73.9,0.219,Luxury Quiet Standard
+BMW-NVH-3781,53.1,1294,60.5,0.158,Luxury Quiet Standard
+BMW-NVH-3782,84.7,1828,65.3,0.155,Luxury Quiet Standard
+BMW-NVH-3783,81.7,1991,62.4,0.17,Luxury Quiet Standard
+BMW-NVH-3784,57.1,1365,56.2,0.07,Luxury Quiet Standard
+BMW-NVH-3785,147.2,3551,74.2,0.182,Luxury Quiet Standard
+BMW-NVH-3786,64.3,1698,61.2,0.142,Luxury Quiet Standard
+BMW-NVH-3787,149.7,3572,77.4,0.14,Luxury Quiet Standard
+BMW-NVH-3788,140.8,3436,74.7,0.226,Unwanted Boom / Hum
+BMW-NVH-3789,139.5,3360,77.2,0.239,Unwanted Boom / Hum
+BMW-NVH-3790,98.8,2563,69.4,0.146,Luxury Quiet Standard
+BMW-NVH-3791,121.6,2952,67.2,0.227,Luxury Quiet Standard
+BMW-NVH-3792,38.4,938,54.2,0.154,Luxury Quiet Standard
+BMW-NVH-3793,179.6,4238,83.6,0.22,Unwanted Boom / Hum
+BMW-NVH-3794,52.3,1287,58.9,0.11,Luxury Quiet Standard
+BMW-NVH-3795,162.7,3977,71.7,0.211,Luxury Quiet Standard
+BMW-NVH-3796,88.8,2168,66.1,0.163,Luxury Quiet Standard
+BMW-NVH-3797,68.9,1661,62.9,0.102,Luxury Quiet Standard
+BMW-NVH-3798,146.6,3469,70.2,0.192,Luxury Quiet Standard
+BMW-NVH-3799,166.2,3940,76.4,0.255,Unwanted Boom / Hum
+BMW-NVH-3800,111.5,2748,66.0,0.21,Luxury Quiet Standard
+BMW-NVH-3801,38.8,961,53.9,0.107,Luxury Quiet Standard
+BMW-NVH-3802,127.2,2888,70.6,0.214,Luxury Quiet Standard
+BMW-NVH-3803,126.9,3179,70.5,0.199,Luxury Quiet Standard
+BMW-NVH-3804,82.1,2078,67.0,0.149,Luxury Quiet Standard
+BMW-NVH-3805,71.2,1751,66.4,0.163,Luxury Quiet Standard
+BMW-NVH-3806,143.0,3626,69.9,0.174,Luxury Quiet Standard
+BMW-NVH-3807,158.9,3807,81.5,0.229,Unwanted Boom / Hum
+BMW-NVH-3808,129.5,3172,68.3,0.193,Luxury Quiet Standard
+BMW-NVH-3809,172.4,4040,75.0,0.193,Luxury Quiet Standard
+BMW-NVH-3810,99.9,2414,66.4,0.213,Luxury Quiet Standard
+BMW-NVH-3811,149.4,3612,72.4,0.205,Luxury Quiet Standard
+BMW-NVH-3812,124.2,2896,71.9,0.191,Luxury Quiet Standard
+BMW-NVH-3813,137.7,3395,71.5,0.196,Luxury Quiet Standard
+BMW-NVH-3814,171.3,4274,81.4,0.297,Unwanted Boom / Hum
+BMW-NVH-3815,47.5,1044,55.5,0.105,Luxury Quiet Standard
+BMW-NVH-3816,108.1,2510,66.8,0.119,Luxury Quiet Standard
+BMW-NVH-3817,80.1,2022,64.9,0.109,Luxury Quiet Standard
+BMW-NVH-3818,99.3,2365,66.9,0.165,Luxury Quiet Standard
+BMW-NVH-3819,160.2,3738,78.8,0.225,Unwanted Boom / Hum
+BMW-NVH-3820,146.4,3574,74.1,0.194,Luxury Quiet Standard
+BMW-NVH-3821,135.3,3180,74.4,0.233,Luxury Quiet Standard
+BMW-NVH-3822,44.2,1123,60.3,0.096,Luxury Quiet Standard
+BMW-NVH-3823,31.5,636,54.3,0.047,Luxury Quiet Standard
+BMW-NVH-3824,83.9,2011,64.5,0.156,Luxury Quiet Standard
+BMW-NVH-3825,56.4,1392,59.3,0.065,Luxury Quiet Standard
+BMW-NVH-3826,90.3,2123,62.2,0.175,Luxury Quiet Standard
+BMW-NVH-3827,171.0,3954,79.9,0.245,Unwanted Boom / Hum
+BMW-NVH-3828,136.0,3230,75.6,0.186,Luxury Quiet Standard
+BMW-NVH-3829,133.1,3088,69.8,0.132,Luxury Quiet Standard
+BMW-NVH-3830,117.4,2852,68.3,0.165,Luxury Quiet Standard
+BMW-NVH-3831,62.0,1381,61.6,0.105,Luxury Quiet Standard
+BMW-NVH-3832,142.4,3412,73.0,0.208,Luxury Quiet Standard
+BMW-NVH-3833,72.8,1712,62.1,0.144,Luxury Quiet Standard
+BMW-NVH-3834,135.2,3136,70.3,0.15,Luxury Quiet Standard
+BMW-NVH-3835,80.7,1796,64.6,0.143,Luxury Quiet Standard
+BMW-NVH-3836,106.0,2584,68.1,0.183,Luxury Quiet Standard
+BMW-NVH-3837,36.0,876,60.2,0.163,Luxury Quiet Standard
+BMW-NVH-3838,85.0,2106,65.3,0.161,Luxury Quiet Standard
+BMW-NVH-3839,90.7,2343,67.1,0.164,Luxury Quiet Standard
+BMW-NVH-3840,162.2,3910,75.3,0.205,Luxury Quiet Standard
+BMW-NVH-3841,47.0,1138,62.2,0.097,Luxury Quiet Standard
+BMW-NVH-3842,77.7,1781,60.2,0.173,Luxury Quiet Standard
+BMW-NVH-3843,87.0,1970,65.0,0.239,Luxury Quiet Standard
+BMW-NVH-3844,176.5,4184,84.2,0.221,Unwanted Boom / Hum
+BMW-NVH-3845,179.5,4299,74.4,0.217,Luxury Quiet Standard
+BMW-NVH-3846,156.7,3798,73.0,0.192,Luxury Quiet Standard
+BMW-NVH-3847,142.9,3521,81.4,0.239,Unwanted Boom / Hum
+BMW-NVH-3848,141.7,3408,72.6,0.211,Luxury Quiet Standard
+BMW-NVH-3849,96.0,2214,66.0,0.212,Luxury Quiet Standard
+BMW-NVH-3850,155.3,3801,81.5,0.235,Unwanted Boom / Hum
+BMW-NVH-3851,108.6,2555,66.7,0.14,Luxury Quiet Standard
+BMW-NVH-3852,37.7,999,57.7,0.099,Luxury Quiet Standard
+BMW-NVH-3853,109.9,2662,69.3,0.17,Luxury Quiet Standard
+BMW-NVH-3854,77.2,2004,64.4,0.167,Luxury Quiet Standard
+BMW-NVH-3855,163.5,3965,76.1,0.192,Luxury Quiet Standard
+BMW-NVH-3856,50.0,1322,61.8,0.172,Luxury Quiet Standard
+BMW-NVH-3857,127.6,3186,72.1,0.182,Luxury Quiet Standard
+BMW-NVH-3858,48.2,1139,61.5,0.139,Luxury Quiet Standard
+BMW-NVH-3859,152.5,3605,73.1,0.191,Luxury Quiet Standard
+BMW-NVH-3860,165.5,3944,75.1,0.202,Luxury Quiet Standard
+BMW-NVH-3861,42.9,1074,60.0,0.136,Luxury Quiet Standard
+BMW-NVH-3862,83.9,1987,65.1,0.154,Luxury Quiet Standard
+BMW-NVH-3863,165.2,4124,82.9,0.225,Unwanted Boom / Hum
+BMW-NVH-3864,146.1,3433,73.7,0.156,Luxury Quiet Standard
+BMW-NVH-3865,120.9,2881,71.8,0.157,Luxury Quiet Standard
+BMW-NVH-3866,91.7,2195,62.9,0.187,Luxury Quiet Standard
+BMW-NVH-3867,122.4,2912,67.4,0.209,Luxury Quiet Standard
+BMW-NVH-3868,82.6,1846,62.1,0.17,Luxury Quiet Standard
+BMW-NVH-3869,126.4,3138,72.2,0.251,Luxury Quiet Standard
+BMW-NVH-3870,75.4,1715,65.0,0.09,Luxury Quiet Standard
+BMW-NVH-3871,125.2,3120,69.3,0.224,Luxury Quiet Standard
+BMW-NVH-3872,155.2,3770,74.7,0.188,Luxury Quiet Standard
+BMW-NVH-3873,77.6,1886,62.5,0.121,Luxury Quiet Standard
+BMW-NVH-3874,171.4,4033,81.3,0.225,Unwanted Boom / Hum
+BMW-NVH-3875,74.8,1774,62.0,0.141,Luxury Quiet Standard
+BMW-NVH-3876,178.3,4203,83.6,0.231,Unwanted Boom / Hum
+BMW-NVH-3877,55.3,1351,60.0,0.136,Luxury Quiet Standard
+BMW-NVH-3878,159.7,3850,76.5,0.232,Unwanted Boom / Hum
+BMW-NVH-3879,158.5,3804,80.9,0.254,Unwanted Boom / Hum
+BMW-NVH-3880,154.2,3782,80.2,0.27,Unwanted Boom / Hum
+BMW-NVH-3881,69.7,1624,62.0,0.135,Luxury Quiet Standard
+BMW-NVH-3882,156.2,3814,73.5,0.194,Luxury Quiet Standard
+BMW-NVH-3883,138.5,3439,79.8,0.235,Unwanted Boom / Hum
+BMW-NVH-3884,44.1,943,58.4,0.152,Luxury Quiet Standard
+BMW-NVH-3885,179.1,4231,84.3,0.269,Unwanted Boom / Hum
+BMW-NVH-3886,38.7,1073,58.0,0.209,Luxury Quiet Standard
+BMW-NVH-3887,53.1,1115,60.3,0.157,Luxury Quiet Standard
+BMW-NVH-3888,131.2,3055,71.0,0.246,Luxury Quiet Standard
+BMW-NVH-3889,79.4,1881,62.8,0.149,Luxury Quiet Standard
+BMW-NVH-3890,51.9,1270,59.6,0.12,Luxury Quiet Standard
+BMW-NVH-3891,59.2,1595,65.9,0.131,Luxury Quiet Standard
+BMW-NVH-3892,106.6,2705,68.8,0.169,Luxury Quiet Standard
+BMW-NVH-3893,40.2,1007,59.2,0.126,Luxury Quiet Standard
+BMW-NVH-3894,169.3,4081,75.8,0.211,Luxury Quiet Standard
+BMW-NVH-3895,105.8,2574,65.0,0.157,Luxury Quiet Standard
+BMW-NVH-3896,69.1,1617,60.0,0.133,Luxury Quiet Standard
+BMW-NVH-3897,123.2,3011,69.5,0.177,Luxury Quiet Standard
+BMW-NVH-3898,114.8,2821,72.4,0.166,Luxury Quiet Standard
+BMW-NVH-3899,130.9,3230,70.7,0.19,Luxury Quiet Standard
+BMW-NVH-3900,112.3,2802,67.7,0.172,Luxury Quiet Standard
+BMW-NVH-3901,84.4,2103,65.5,0.228,Luxury Quiet Standard
+BMW-NVH-3902,91.5,2202,65.4,0.165,Luxury Quiet Standard
+BMW-NVH-3903,92.0,2142,64.9,0.205,Luxury Quiet Standard
+BMW-NVH-3904,84.1,2049,63.2,0.146,Luxury Quiet Standard
+BMW-NVH-3905,56.7,1337,57.7,0.169,Luxury Quiet Standard
+BMW-NVH-3906,111.6,2630,68.8,0.183,Luxury Quiet Standard
+BMW-NVH-3907,41.1,952,53.9,0.12,Luxury Quiet Standard
+BMW-NVH-3908,157.4,3668,82.8,0.221,Unwanted Boom / Hum
+BMW-NVH-3909,160.8,3808,81.7,0.262,Unwanted Boom / Hum
+BMW-NVH-3910,136.0,3204,72.2,0.203,Luxury Quiet Standard
+BMW-NVH-3911,64.5,1492,61.8,0.176,Luxury Quiet Standard
+BMW-NVH-3912,120.6,2749,70.5,0.202,Luxury Quiet Standard
+BMW-NVH-3913,149.3,3554,72.8,0.201,Luxury Quiet Standard
+BMW-NVH-3914,103.7,2427,65.3,0.183,Luxury Quiet Standard
+BMW-NVH-3915,71.2,1746,61.7,0.15,Luxury Quiet Standard
+BMW-NVH-3916,82.0,1956,64.9,0.114,Luxury Quiet Standard
+BMW-NVH-3917,129.2,3107,66.3,0.158,Luxury Quiet Standard
+BMW-NVH-3918,68.1,1769,60.4,0.18,Luxury Quiet Standard
+BMW-NVH-3919,46.1,1142,60.7,0.136,Luxury Quiet Standard
+BMW-NVH-3920,157.0,3766,73.3,0.184,Luxury Quiet Standard
+BMW-NVH-3921,79.5,1875,65.6,0.145,Luxury Quiet Standard
+BMW-NVH-3922,49.3,1203,57.3,0.125,Luxury Quiet Standard
+BMW-NVH-3923,80.6,1823,62.5,0.144,Luxury Quiet Standard
+BMW-NVH-3924,52.4,1232,57.2,0.129,Luxury Quiet Standard
+BMW-NVH-3925,48.9,1078,56.2,0.063,Luxury Quiet Standard
+BMW-NVH-3926,63.4,1500,60.2,0.115,Luxury Quiet Standard
+BMW-NVH-3927,81.2,2072,63.3,0.153,Luxury Quiet Standard
+BMW-NVH-3928,119.2,2784,66.5,0.113,Luxury Quiet Standard
+BMW-NVH-3929,114.6,2864,69.3,0.172,Luxury Quiet Standard
+BMW-NVH-3930,129.8,3159,69.0,0.218,Luxury Quiet Standard
+BMW-NVH-3931,70.1,1628,61.0,0.146,Luxury Quiet Standard
+BMW-NVH-3932,170.7,4098,77.2,0.208,Luxury Quiet Standard
+BMW-NVH-3933,131.6,3107,70.8,0.212,Luxury Quiet Standard
+BMW-NVH-3934,111.5,2603,66.8,0.225,Luxury Quiet Standard
+BMW-NVH-3935,169.1,4141,77.6,0.252,Unwanted Boom / Hum
+BMW-NVH-3936,60.3,1362,60.6,0.169,Luxury Quiet Standard
+BMW-NVH-3937,136.2,3299,69.8,0.198,Luxury Quiet Standard
+BMW-NVH-3938,49.1,1213,58.1,0.128,Luxury Quiet Standard
+BMW-NVH-3939,40.4,1023,60.7,0.113,Luxury Quiet Standard
+BMW-NVH-3940,32.6,779,58.7,0.086,Luxury Quiet Standard
+BMW-NVH-3941,105.0,2328,65.9,0.179,Luxury Quiet Standard
+BMW-NVH-3942,173.6,4209,81.8,0.246,Unwanted Boom / Hum
+BMW-NVH-3943,45.4,944,59.3,0.161,Luxury Quiet Standard
+BMW-NVH-3944,142.6,3412,72.0,0.155,Luxury Quiet Standard
+BMW-NVH-3945,36.3,921,58.9,0.128,Luxury Quiet Standard
+BMW-NVH-3946,165.9,3947,79.2,0.293,Unwanted Boom / Hum
+BMW-NVH-3947,146.0,3581,72.6,0.19,Luxury Quiet Standard
+BMW-NVH-3948,171.6,4100,79.8,0.25,Unwanted Boom / Hum
+BMW-NVH-3949,76.6,1848,62.6,0.095,Luxury Quiet Standard
+BMW-NVH-3950,142.2,3447,79.0,0.233,Unwanted Boom / Hum
+BMW-NVH-3951,33.3,948,58.7,0.148,Luxury Quiet Standard
+BMW-NVH-3952,80.3,2037,62.3,0.145,Luxury Quiet Standard
+BMW-NVH-3953,90.6,2151,65.6,0.147,Luxury Quiet Standard
+BMW-NVH-3954,121.3,2996,68.8,0.19,Luxury Quiet Standard
+BMW-NVH-3955,92.0,2314,64.3,0.163,Luxury Quiet Standard
+BMW-NVH-3956,172.8,4206,80.8,0.248,Unwanted Boom / Hum
+BMW-NVH-3957,163.2,3927,81.5,0.235,Unwanted Boom / Hum
+BMW-NVH-3958,159.7,3743,71.6,0.152,Luxury Quiet Standard
+BMW-NVH-3959,119.9,2801,67.3,0.123,Luxury Quiet Standard
+BMW-NVH-3960,83.6,1864,62.9,0.132,Luxury Quiet Standard
+BMW-NVH-3961,167.4,3987,73.2,0.201,Luxury Quiet Standard
+BMW-NVH-3962,141.5,3402,71.5,0.124,Luxury Quiet Standard
+BMW-NVH-3963,124.9,3075,70.6,0.141,Luxury Quiet Standard
+BMW-NVH-3964,30.8,586,56.0,0.045,Luxury Quiet Standard
+BMW-NVH-3965,47.7,1129,61.1,0.101,Luxury Quiet Standard
+BMW-NVH-3966,98.4,2171,67.4,0.211,Luxury Quiet Standard
+BMW-NVH-3967,117.6,2860,67.8,0.183,Luxury Quiet Standard
+BMW-NVH-3968,178.6,4314,75.8,0.208,Luxury Quiet Standard
+BMW-NVH-3969,97.3,2345,67.4,0.239,Luxury Quiet Standard
+BMW-NVH-3970,96.3,2363,67.4,0.165,Luxury Quiet Standard
+BMW-NVH-3971,35.4,801,59.0,0.138,Luxury Quiet Standard
+BMW-NVH-3972,148.7,3573,78.2,0.232,Unwanted Boom / Hum
+BMW-NVH-3973,137.9,3240,72.2,0.207,Luxury Quiet Standard
+BMW-NVH-3974,67.1,1517,60.5,0.124,Luxury Quiet Standard
+BMW-NVH-3975,118.5,2839,66.1,0.148,Luxury Quiet Standard
+BMW-NVH-3976,32.5,717,56.7,0.1,Luxury Quiet Standard
+BMW-NVH-3977,60.5,1474,59.8,0.124,Luxury Quiet Standard
+BMW-NVH-3978,143.1,3359,76.8,0.222,Unwanted Boom / Hum
+BMW-NVH-3979,59.6,1307,60.7,0.151,Luxury Quiet Standard
+BMW-NVH-3980,132.2,3037,67.6,0.205,Luxury Quiet Standard
+BMW-NVH-3981,101.6,2464,66.4,0.205,Luxury Quiet Standard
+BMW-NVH-3982,90.6,2097,66.8,0.149,Luxury Quiet Standard
+BMW-NVH-3983,87.4,2070,66.3,0.136,Luxury Quiet Standard
+BMW-NVH-3984,163.4,3892,76.4,0.258,Unwanted Boom / Hum
+BMW-NVH-3985,152.6,3759,74.0,0.217,Luxury Quiet Standard
+BMW-NVH-3986,115.1,2684,67.2,0.173,Luxury Quiet Standard
+BMW-NVH-3987,30.8,668,53.8,0.124,Luxury Quiet Standard
+BMW-NVH-3988,138.6,3241,78.4,0.253,Unwanted Boom / Hum
+BMW-NVH-3989,133.5,3196,70.0,0.165,Luxury Quiet Standard
+BMW-NVH-3990,151.6,3647,73.6,0.217,Luxury Quiet Standard
+BMW-NVH-3991,105.1,2546,69.3,0.179,Luxury Quiet Standard
+BMW-NVH-3992,147.5,3455,73.2,0.204,Luxury Quiet Standard
+BMW-NVH-3993,118.9,2725,67.7,0.182,Luxury Quiet Standard
+BMW-NVH-3994,85.6,2136,62.1,0.142,Luxury Quiet Standard
+BMW-NVH-3995,96.7,2388,65.6,0.155,Luxury Quiet Standard
+BMW-NVH-3996,100.1,2483,64.5,0.187,Luxury Quiet Standard
+BMW-NVH-3997,116.0,2768,70.1,0.168,Luxury Quiet Standard
+BMW-NVH-3998,159.8,3819,77.5,0.277,Unwanted Boom / Hum
+BMW-NVH-3999,60.1,1568,60.3,0.11,Luxury Quiet Standard

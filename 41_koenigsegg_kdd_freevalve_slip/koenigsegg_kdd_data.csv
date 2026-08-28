@@ -1,0 +1,2601 @@
+Regera_Telemetry_ID,Vehicle_Speed_kmh,Engine_Speed_RPM,HydraCoup_Slip_pct,Freevalve_Intake_Lift_mm,Powertrain_Mode
+KOENIG-KDD-1000,351.2,7021,0.0,10.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1001,265.2,5618,0.0,9.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1002,130.6,2946,0.0,5.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1003,126.8,2595,0.0,4.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1004,366.1,7422,0.0,10.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1005,243.9,5143,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1006,303.5,6239,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1007,183.5,3660,0.0,6.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1008,363.6,7553,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1009,335.5,6673,0.0,9.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1010,382.6,7771,0.0,11.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1011,98.9,2100,32.9,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1012,265.7,5419,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1013,64.8,1234,64.1,3.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1014,363.8,7190,0.0,9.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1015,388.4,7847,0.0,11.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1016,167.6,3455,0.0,6.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1017,134.2,2737,0.0,4.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1018,227.0,4776,0.0,7.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1019,75.0,1523,56.3,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1020,183.8,3703,0.0,5.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1021,400.3,7954,0.0,11.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1022,40.1,800,84.9,2.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1023,100.9,2076,33.6,4.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1024,138.3,2632,0.0,4.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1025,160.9,3440,0.0,5.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1026,282.9,5586,0.0,8.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1027,363.3,7284,0.0,10.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1028,318.3,6694,0.0,10.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1029,256.2,5184,0.0,8.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1030,389.8,8029,0.0,10.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1031,156.4,3363,0.0,5.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1032,84.8,1844,48.9,4.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1033,227.0,4605,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1034,305.7,6453,0.0,9.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1035,217.8,4778,0.0,6.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1036,375.9,7592,0.0,11.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1037,339.4,7188,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1038,360.6,7333,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1039,289.6,5744,0.0,8.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1040,191.9,4067,0.0,6.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1041,397.8,8177,0.0,11.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1042,358.6,7367,0.0,10.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1043,125.7,2331,5.3,5.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1044,290.5,5872,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1045,160.5,3410,0.0,6.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1046,36.5,800,85.3,2.88,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1047,132.2,2787,0.0,5.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1048,362.2,7186,0.0,10.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1049,391.5,8310,0.0,11.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1050,74.4,1578,53.7,4.92,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1051,194.2,3703,0.0,6.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1052,148.8,3031,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1053,167.6,3436,0.0,5.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1054,76.2,1419,53.0,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1055,365.7,7572,0.0,11.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1056,85.8,2209,43.7,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1057,71.3,1210,53.4,3.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1058,327.6,6378,0.0,9.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1059,100.6,2118,26.6,4.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1060,183.6,3974,0.0,7.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1061,70.3,1607,53.6,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1062,389.6,7856,0.0,11.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1063,305.6,6325,0.0,9.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1064,308.4,6633,0.0,9.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1065,198.6,3909,0.0,7.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1066,169.0,3627,0.0,6.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1067,51.8,1113,81.0,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1068,62.9,1388,60.0,3.09,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1069,340.7,7101,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1070,342.3,6930,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1071,267.0,5273,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1072,84.1,1534,45.9,4.11,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1073,187.3,3861,0.0,6.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1074,331.8,6795,0.0,9.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1075,108.7,2089,18.3,4.2,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1076,74.4,1142,55.0,3.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1077,146.2,2932,0.0,5.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1078,102.6,1883,26.3,3.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1079,64.7,1531,62.6,3.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1080,87.9,2010,36.8,4.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1081,238.6,5173,0.0,8.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1082,321.5,6429,0.0,10.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1083,242.9,4919,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1084,388.2,8191,0.0,11.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1085,72.6,1466,58.1,4.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1086,389.7,7920,0.0,11.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1087,180.1,3612,0.0,5.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1088,264.5,5405,0.0,8.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1089,209.7,4337,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1090,270.8,5880,0.0,8.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1091,236.8,4930,0.0,8.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1092,297.9,6113,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1093,161.6,2982,0.0,5.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1094,268.8,5653,0.0,8.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1095,75.1,1760,58.7,3.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1096,350.0,7221,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1097,173.0,3657,0.0,6.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1098,363.7,7235,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1099,222.7,4642,0.0,6.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1100,170.3,3193,0.0,5.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1101,246.0,4727,0.0,7.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1102,384.4,8019,0.0,12.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1103,169.2,3605,0.0,6.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1104,223.4,4289,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1105,54.2,1159,69.4,3.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1106,194.2,4099,0.0,7.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1107,71.3,1206,59.1,3.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1108,314.2,6376,0.0,9.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1109,57.0,902,66.3,2.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1110,142.3,2793,0.0,5.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1111,400.3,7761,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1112,378.7,7691,0.0,11.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1113,119.4,2379,8.2,4.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1114,153.1,3030,0.0,5.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1115,115.1,2469,11.2,5.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1116,358.5,7213,0.0,11.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1117,333.7,7007,0.0,10.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1118,44.9,800,79.3,3.1,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1119,184.6,4002,0.0,6.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1120,173.7,3618,0.0,6.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1121,119.9,2531,2.2,4.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1122,220.4,4578,0.0,7.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1123,88.5,1851,42.0,4.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1124,65.0,1437,63.8,3.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1125,79.9,1723,47.2,4.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1126,258.8,5547,0.0,8.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1127,389.1,7965,0.0,11.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1128,167.6,3474,0.0,6.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1129,231.2,4716,0.0,7.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1130,31.8,800,87.1,2.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1131,287.4,5993,0.0,8.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1132,339.8,6779,0.0,9.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1133,150.9,2933,0.0,5.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1134,353.9,7459,0.0,10.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1135,344.3,6894,0.0,10.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1136,240.0,4859,0.0,8.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1137,390.7,8019,0.0,11.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1138,187.9,4169,0.0,6.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1139,400.1,8043,0.0,11.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1140,293.8,6308,0.0,9.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1141,73.9,1421,51.6,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1142,297.9,5806,0.0,8.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1143,206.6,3869,0.0,6.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1144,45.6,1099,78.4,2.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1145,373.0,7524,0.0,11.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1146,52.0,1180,73.0,3.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1147,307.9,6004,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1148,266.6,5358,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1149,340.7,7087,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1150,343.3,7133,0.0,11.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1151,341.5,6704,0.0,9.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1152,258.6,5758,0.0,8.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1153,318.5,6275,0.0,9.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1154,338.7,7116,0.0,10.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1155,311.8,6630,0.0,9.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1156,167.5,3371,0.0,5.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1157,211.4,4245,0.0,6.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1158,59.3,1035,66.7,3.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1159,166.6,3216,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1160,380.1,7608,0.0,11.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1161,56.5,1073,71.1,3.24,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1162,236.1,4884,0.0,7.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1163,259.4,5213,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1164,195.2,4094,0.0,6.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1165,196.0,3960,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1166,134.0,2630,0.0,5.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1167,181.4,3645,0.0,6.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1168,380.9,7675,0.0,10.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1169,124.9,2571,3.1,5.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1170,350.4,7259,0.0,10.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1171,249.5,5005,0.0,7.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1172,283.0,5622,0.0,8.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1173,213.2,4179,0.0,6.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1174,338.4,6949,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1175,407.5,8500,0.0,12.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1176,239.1,4965,0.0,8.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1177,270.1,5607,0.0,9.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1178,308.5,6031,0.0,8.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1179,65.0,1080,60.1,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1180,65.5,1145,58.3,2.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1181,247.4,4822,0.0,7.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1182,372.9,7406,0.0,10.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1183,199.7,4264,0.0,7.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1184,41.4,823,79.0,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1185,119.7,2628,5.3,5.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1186,130.8,2761,0.0,4.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1187,245.7,5044,0.0,8.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1188,333.3,6710,0.0,9.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1189,109.1,2003,25.6,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1190,231.4,4624,0.0,7.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1191,174.1,3651,0.0,6.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1192,108.3,2460,24.6,4.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1193,326.7,6745,0.0,10.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1194,33.7,800,87.6,2.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1195,133.8,2915,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1196,385.1,7685,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1197,308.9,6165,0.0,9.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1198,41.2,800,74.6,2.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1199,250.4,4951,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1200,290.9,5886,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1201,399.8,8002,0.0,11.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1202,387.4,8198,0.0,11.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1203,194.5,4024,0.0,6.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1204,315.0,6226,0.0,8.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1205,302.6,6330,0.0,9.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1206,323.4,7096,0.0,9.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1207,384.2,8015,0.0,11.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1208,294.8,6166,0.0,9.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1209,55.4,1058,69.9,3.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1210,261.8,5409,0.0,9.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1211,261.7,5366,0.0,8.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1212,408.9,8364,0.0,12.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1213,323.6,6638,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1214,340.0,6634,0.0,10.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1215,93.7,1837,42.3,3.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1216,114.1,2413,12.5,5.19,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1217,107.0,2270,21.0,4.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1218,390.3,8114,0.0,12.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1219,79.4,1478,48.5,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1220,268.1,5532,0.0,8.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1221,374.3,7497,0.0,10.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1222,320.7,6587,0.0,9.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1223,137.6,2863,0.0,5.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1224,302.6,6124,0.0,9.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1225,224.4,4450,0.0,6.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1226,67.7,1513,54.8,3.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1227,157.0,2978,0.0,5.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1228,396.0,8106,0.0,11.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1229,35.9,878,79.6,2.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1230,381.1,7765,0.0,10.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1231,215.2,4603,0.0,7.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1232,150.2,2741,0.0,5.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1233,306.6,6320,0.0,9.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1234,153.7,3270,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1235,49.2,936,73.2,3.16,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1236,31.7,800,85.8,2.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1237,106.8,2367,16.5,4.29,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1238,33.6,800,81.5,3.41,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1239,136.1,2537,0.0,5.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1240,147.0,2854,0.0,5.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1241,275.2,5462,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1242,109.6,2236,22.3,4.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1243,339.2,6859,0.0,10.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1244,106.2,2174,22.3,4.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1245,179.0,3517,0.0,6.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1246,243.1,4683,0.0,6.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1247,102.8,1997,27.4,3.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1248,393.0,8156,0.0,11.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1249,75.9,1661,50.9,4.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1250,173.9,3462,0.0,6.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1251,311.8,6134,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1252,261.8,5426,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1253,67.7,1172,60.8,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1254,164.1,3640,0.0,6.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1255,262.4,5337,0.0,8.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1256,288.9,5956,0.0,9.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1257,195.5,3915,0.0,6.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1258,308.3,6462,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1259,316.3,6559,0.0,10.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1260,316.7,6584,0.0,9.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1261,135.5,2764,0.0,5.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1262,183.5,3866,0.0,6.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1263,171.8,3673,0.0,6.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1264,294.5,6231,0.0,8.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1265,267.4,5556,0.0,7.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1266,149.7,3012,0.0,5.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1267,271.8,5486,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1268,108.9,2261,23.6,4.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1269,132.5,2785,0.0,4.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1270,303.8,6206,0.0,9.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1271,187.6,4028,0.0,7.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1272,206.4,4174,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1273,122.7,2475,8.4,4.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1274,191.9,3850,0.0,6.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1275,275.3,5772,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1276,175.4,3634,0.0,6.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1277,223.2,4558,0.0,7.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1278,199.4,3723,0.0,6.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1279,310.3,6325,0.0,9.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1280,127.8,2279,0.0,4.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1281,35.5,927,83.6,3.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1282,299.6,6102,0.0,8.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1283,251.0,5439,0.0,8.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1284,337.4,6924,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1285,186.4,4152,0.0,6.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1286,207.9,4514,0.0,7.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1287,218.0,4232,0.0,6.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1288,39.5,831,84.9,2.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1289,130.5,2620,0.0,5.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1290,78.5,1811,53.7,4.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1291,113.4,2397,16.3,4.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1292,304.9,6316,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1293,165.9,3419,0.0,5.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1294,124.9,2436,3.7,4.66,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1295,62.6,1174,70.2,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1296,198.9,4382,0.0,6.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1297,138.3,2785,0.0,5.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1298,308.3,6419,0.0,9.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1299,190.4,3908,0.0,7.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1300,103.3,2211,26.4,4.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1301,357.5,7337,0.0,10.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1302,278.1,5599,0.0,9.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1303,159.1,3160,0.0,6.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1304,219.3,4286,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1305,155.1,3086,0.0,6.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1306,276.9,5859,0.0,8.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1307,88.0,1594,45.8,4.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1308,88.4,1753,46.1,4.16,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1309,256.0,5116,0.0,8.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1310,211.5,4179,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1311,38.0,800,79.4,2.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1312,379.6,7505,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1313,393.3,8000,0.0,11.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1314,401.2,8372,0.0,11.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1315,243.0,5112,0.0,7.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1316,182.9,3863,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1317,52.0,1151,75.3,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1318,258.5,5300,0.0,7.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1319,52.1,1000,74.1,3.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1320,175.7,3521,0.0,6.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1321,288.0,5828,0.0,8.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1322,221.0,4470,0.0,6.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1323,357.1,7329,0.0,11.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1324,104.3,2184,27.6,4.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1325,297.7,6124,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1326,394.9,8260,0.0,11.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1327,194.0,3953,0.0,6.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1328,65.5,1235,64.7,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1329,120.1,2470,4.8,4.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1330,60.2,1273,68.7,3.66,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1331,269.6,5461,0.0,9.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1332,390.6,7947,0.0,11.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1333,116.0,2512,18.0,4.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1334,220.5,4739,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1335,385.2,7820,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1336,61.5,1526,71.9,3.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1337,333.5,6759,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1338,138.9,2767,0.0,4.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1339,280.0,5568,0.0,8.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1340,64.6,1258,59.5,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1341,381.5,8165,0.0,11.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1342,297.1,6012,0.0,9.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1343,330.0,6590,0.0,10.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1344,299.9,6041,0.0,8.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1345,75.9,1485,53.6,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1346,316.7,6591,0.0,9.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1347,353.3,7425,0.0,11.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1348,107.1,2290,27.5,4.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1349,86.0,1644,44.3,3.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1350,262.3,5236,0.0,8.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1351,212.1,4352,0.0,7.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1352,374.9,7579,0.0,11.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1353,50.2,968,74.6,3.29,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1354,92.7,1808,38.4,3.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1355,106.8,2008,22.8,3.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1356,198.8,3959,0.0,6.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1357,394.4,8089,0.0,10.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1358,159.8,3459,0.0,5.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1359,117.0,2385,11.9,4.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1360,69.8,1580,58.7,4.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1361,387.7,8006,0.0,11.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1362,146.4,2777,0.0,3.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1363,86.3,2107,42.6,4.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1364,272.9,5634,0.0,8.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1365,352.2,7221,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1366,202.8,4462,0.0,7.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1367,146.2,3028,0.0,5.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1368,261.0,5596,0.0,9.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1369,312.9,6330,0.0,9.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1370,49.3,832,79.9,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1371,310.9,6369,0.0,9.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1372,303.1,6313,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1373,372.7,7662,0.0,11.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1374,97.5,2173,32.4,4.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1375,384.3,7860,0.0,10.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1376,263.9,5293,0.0,8.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1377,66.7,1421,60.4,4.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1378,149.6,3309,0.0,6.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1379,220.3,4503,0.0,7.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1380,361.7,7323,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1381,376.8,7647,0.0,11.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1382,116.7,2364,7.2,4.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1383,397.3,7848,0.0,11.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1384,311.8,6292,0.0,9.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1385,162.1,3302,0.0,5.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1386,89.2,1799,35.4,4.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1387,63.8,1077,65.6,3.33,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1388,113.6,2464,15.7,4.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1389,95.3,1849,36.4,3.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1390,195.3,4167,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1391,365.9,7686,0.0,11.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1392,115.7,2567,10.4,5.07,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1393,303.8,6326,0.0,9.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1394,347.8,7013,0.0,10.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1395,201.5,4089,0.0,7.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1396,308.2,5940,0.0,9.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1397,275.3,5795,0.0,8.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1398,213.9,4346,0.0,7.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1399,407.4,8174,0.0,10.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1400,150.7,3167,0.0,6.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1401,310.6,6423,0.0,9.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1402,215.3,4291,0.0,7.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1403,245.9,4886,0.0,8.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1404,285.9,5945,0.0,8.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1405,380.1,7938,0.0,11.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1406,251.5,5283,0.0,7.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1407,148.1,3023,0.0,6.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1408,280.4,5808,0.0,8.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1409,147.0,2690,0.0,4.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1410,380.0,7743,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1411,274.1,5743,0.0,8.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1412,338.8,7060,0.0,11.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1413,323.2,6639,0.0,9.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1414,143.1,3073,0.0,5.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1415,156.1,3126,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1416,166.2,3424,0.0,5.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1417,366.5,7643,0.0,11.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1418,377.8,7788,0.0,10.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1419,69.2,1281,60.7,2.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1420,335.3,6746,0.0,10.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1421,88.2,1736,44.9,4.37,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1422,258.6,5167,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1423,159.7,3380,0.0,5.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1424,282.6,5898,0.0,8.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1425,353.3,7317,0.0,10.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1426,80.8,1864,49.9,3.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1427,93.2,1935,37.1,4.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1428,242.4,5051,0.0,7.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1429,194.6,4079,0.0,7.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1430,373.5,7712,0.0,10.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1431,121.2,2497,3.7,4.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1432,122.7,2563,4.5,4.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1433,126.7,2784,2.4,5.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1434,162.4,3337,0.0,5.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1435,373.2,7961,0.0,11.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1436,165.9,3342,0.0,5.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1437,65.3,1124,61.0,3.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1438,289.6,6012,0.0,9.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1439,151.7,2967,0.0,5.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1440,36.7,800,81.6,3.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1441,229.0,4867,0.0,8.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1442,146.6,2944,0.0,4.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1443,53.0,1032,77.0,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1444,363.7,7191,0.0,10.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1445,326.4,6855,0.0,10.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1446,356.2,7435,0.0,10.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1447,142.1,2765,0.0,4.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1448,395.1,8072,0.0,11.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1449,282.6,5566,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1450,96.8,1864,33.6,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1451,293.7,5985,0.0,8.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1452,130.3,2605,0.0,4.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1453,148.8,2795,0.0,5.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1454,343.0,6978,0.0,10.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1455,146.9,3052,0.0,5.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1456,172.4,3882,0.0,6.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1457,52.8,1072,68.6,3.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1458,196.8,3855,0.0,6.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1459,127.3,2807,5.2,5.1,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1460,351.4,7089,0.0,10.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1461,93.9,1994,41.2,3.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1462,47.8,835,73.5,3.33,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1463,352.7,7438,0.0,10.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1464,228.2,4437,0.0,8.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1465,155.0,3328,0.0,5.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1466,132.8,2862,0.0,4.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1467,103.9,1949,26.7,4.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1468,77.7,1554,56.0,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1469,393.8,8094,0.0,11.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1470,194.5,3809,0.0,6.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1471,261.2,5175,0.0,7.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1472,177.3,3931,0.0,6.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1473,51.9,1066,75.1,3.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1474,265.7,5463,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1475,56.4,1601,67.3,2.89,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1476,78.1,1537,46.8,4.47,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1477,234.1,4669,0.0,7.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1478,109.8,2181,19.0,4.69,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1479,145.2,3269,0.0,6.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1480,321.9,6657,0.0,9.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1481,232.7,4597,0.0,7.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1482,251.9,5332,0.0,8.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1483,405.2,8464,0.0,12.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1484,52.9,932,73.8,3.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1485,89.5,1615,39.3,3.19,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1486,403.3,8347,0.0,11.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1487,356.9,7443,0.0,10.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1488,47.8,976,78.1,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1489,128.3,2475,0.0,4.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1490,120.1,2596,8.0,4.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1491,133.2,2692,0.0,5.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1492,177.7,3861,0.0,6.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1493,388.7,7918,0.0,10.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1494,369.0,7441,0.0,11.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1495,204.3,4186,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1496,362.8,7354,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1497,251.3,5080,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1498,362.2,7352,0.0,10.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1499,185.9,3766,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1500,116.4,2245,9.3,4.37,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1501,111.5,2091,19.0,4.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1502,408.3,8492,0.0,12.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1503,398.0,8132,0.0,10.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1504,344.6,7081,0.0,10.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1505,190.6,3893,0.0,7.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1506,249.7,5175,0.0,8.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1507,134.7,3017,0.0,6.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1508,37.2,800,86.5,2.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1509,44.5,1162,81.0,3.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1510,333.6,6817,0.0,9.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1511,179.0,3412,0.0,5.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1512,308.0,6381,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1513,89.4,1870,40.2,4.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1514,351.9,7181,0.0,9.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1515,359.7,7392,0.0,10.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1516,285.6,5762,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1517,174.6,3731,0.0,6.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1518,354.1,7336,0.0,10.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1519,105.1,2312,27.2,4.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1520,144.9,2995,0.0,4.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1521,207.1,4289,0.0,7.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1522,339.7,6859,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1523,61.0,1133,59.4,3.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1524,115.6,2392,11.4,4.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1525,244.9,4797,0.0,7.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1526,397.8,8243,0.0,11.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1527,198.6,4116,0.0,6.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1528,355.2,7196,0.0,10.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1529,215.0,4195,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1530,336.0,7000,0.0,10.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1531,234.6,4965,0.0,8.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1532,262.4,5450,0.0,8.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1533,99.5,1905,30.6,4.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1534,356.4,7117,0.0,10.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1535,97.1,1682,26.9,4.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1536,253.3,5266,0.0,8.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1537,315.2,6392,0.0,9.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1538,361.9,7569,0.0,10.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1539,55.4,1248,71.3,3.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1540,300.8,6156,0.0,9.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1541,140.2,2888,0.0,5.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1542,354.6,7184,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1543,311.0,6474,0.0,9.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1544,253.1,4990,0.0,7.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1545,41.9,942,83.6,3.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1546,352.0,7245,0.0,10.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1547,378.2,7816,0.0,11.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1548,255.7,5402,0.0,8.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1549,196.9,4100,0.0,7.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1550,251.4,5133,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1551,179.5,3672,0.0,5.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1552,381.1,7798,0.0,10.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1553,332.9,6726,0.0,9.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1554,212.0,4206,0.0,7.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1555,139.7,3007,0.0,5.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1556,102.3,1781,32.5,4.82,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1557,103.2,1908,21.9,4.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1558,181.4,3703,0.0,6.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1559,234.4,4739,0.0,7.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1560,354.0,7441,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1561,59.2,1290,69.9,3.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1562,174.6,3229,0.0,5.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1563,376.0,7744,0.0,11.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1564,79.8,1725,50.9,3.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1565,115.5,2578,14.6,5.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1566,292.4,5948,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1567,187.2,3830,0.0,6.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1568,170.5,3473,0.0,6.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1569,171.2,3431,0.0,6.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1570,307.4,6108,0.0,9.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1571,94.8,2047,39.6,4.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1572,249.1,5041,0.0,7.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1573,242.4,5121,0.0,7.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1574,107.6,2453,22.6,5.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1575,389.0,7950,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1576,77.3,1663,48.3,4.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1577,111.9,2106,19.7,4.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1578,58.4,1256,65.2,4.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1579,306.7,6236,0.0,9.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1580,313.0,6450,0.0,9.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1581,224.9,4408,0.0,7.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1582,207.3,4286,0.0,6.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1583,241.5,4686,0.0,7.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1584,251.0,5059,0.0,7.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1585,142.2,3129,0.0,5.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1586,235.9,4756,0.0,7.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1587,237.0,4833,0.0,7.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1588,132.0,2566,0.0,4.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1589,272.2,5509,0.0,8.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1590,150.2,3205,0.0,5.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1591,250.9,5354,0.0,8.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1592,81.7,1511,45.4,3.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1593,284.1,5841,0.0,9.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1594,345.2,7011,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1595,370.0,7584,0.0,10.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1596,387.9,7855,0.0,11.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1597,344.1,7173,0.0,10.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1598,58.9,1110,70.3,3.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1599,131.0,2592,0.0,4.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1600,234.2,5010,0.0,7.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1601,379.9,7821,0.0,10.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1602,220.3,4619,0.0,7.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1603,244.7,5048,0.0,8.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1604,383.0,8137,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1605,392.5,7679,0.0,11.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1606,147.0,2887,0.0,4.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1607,216.1,4440,0.0,7.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1608,59.8,1252,67.5,3.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1609,125.0,2440,1.0,5.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1610,346.0,6963,0.0,10.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1611,126.2,2518,0.7,4.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1612,270.5,5635,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1613,107.0,2422,22.3,4.75,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1614,319.1,6504,0.0,9.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1615,77.2,1778,53.3,4.23,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1616,201.4,4491,0.0,7.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1617,200.5,4338,0.0,6.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1618,296.1,6061,0.0,8.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1619,72.1,1494,59.5,3.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1620,194.3,3948,0.0,7.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1621,32.9,800,87.3,3.58,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1622,354.7,7489,0.0,11.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1623,104.6,2428,24.3,4.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1624,231.2,4853,0.0,7.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1625,247.2,5191,0.0,8.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1626,87.8,1621,41.6,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1627,112.3,2356,16.8,5.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1628,393.5,7997,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1629,344.3,7076,0.0,10.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1630,407.0,8427,0.0,12.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1631,45.5,952,75.0,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1632,133.7,2600,0.0,4.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1633,240.0,4925,0.0,8.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1634,243.4,5020,0.0,8.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1635,373.5,7836,0.0,11.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1636,335.5,7188,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1637,128.0,2652,0.2,5.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1638,327.8,6349,0.0,9.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1639,238.5,4844,0.0,7.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1640,237.6,4791,0.0,7.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1641,65.0,1462,59.0,3.98,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1642,382.1,7725,0.0,11.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1643,53.0,1090,68.5,3.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1644,94.9,2020,34.9,4.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1645,144.9,2987,0.0,5.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1646,313.6,6427,0.0,9.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1647,37.2,800,81.5,2.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1648,31.8,800,86.1,3.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1649,148.5,2891,0.0,5.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1650,137.2,2720,0.0,5.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1651,34.2,878,83.3,2.69,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1652,322.5,6678,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1653,304.0,6271,0.0,9.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1654,374.6,7768,0.0,10.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1655,307.1,6421,0.0,9.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1656,37.2,800,82.1,3.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1657,190.2,3773,0.0,6.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1658,295.4,6288,0.0,9.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1659,382.2,7748,0.0,11.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1660,140.3,2751,0.0,5.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1661,333.3,7077,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1662,131.7,2667,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1663,90.6,2095,41.7,4.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1664,321.5,6890,0.0,9.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1665,379.0,7837,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1666,127.5,2759,0.0,5.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1667,356.6,7144,0.0,10.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1668,185.0,3869,0.0,6.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1669,137.7,2895,0.0,5.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1670,235.3,4887,0.0,6.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1671,371.3,7319,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1672,311.6,5973,0.0,9.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1673,374.2,7977,0.0,11.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1674,38.8,1046,81.8,3.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1675,109.6,2542,16.7,5.1,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1676,138.6,2605,0.0,4.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1677,336.7,7043,0.0,10.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1678,93.3,2011,37.2,4.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1679,296.5,5933,0.0,9.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1680,80.4,1892,50.0,4.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1681,58.7,1305,67.9,3.16,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1682,48.3,1183,78.0,2.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1683,329.7,6507,0.0,9.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1684,47.2,1078,76.9,2.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1685,382.0,7753,0.0,10.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1686,368.7,7477,0.0,10.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1687,149.0,3427,0.0,5.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1688,44.6,843,84.4,3.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1689,352.9,7195,0.0,11.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1690,281.4,5655,0.0,8.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1691,47.5,948,75.5,3.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1692,275.8,5515,0.0,8.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1693,63.9,1521,61.4,4.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1694,239.3,4791,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1695,79.3,1613,51.9,4.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1696,337.6,6961,0.0,10.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1697,346.8,7035,0.0,10.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1698,60.6,1214,64.7,3.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1699,100.2,1848,31.7,4.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1700,125.9,2477,1.6,4.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1701,257.2,5272,0.0,8.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1702,160.3,3091,0.0,5.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1703,229.8,4829,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1704,157.8,2951,0.0,5.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1705,69.6,1483,58.0,4.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1706,379.4,7550,0.0,10.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1707,248.6,5055,0.0,8.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1708,274.5,5400,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1709,236.5,4893,0.0,7.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1710,186.1,3690,0.0,6.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1711,236.7,4722,0.0,7.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1712,328.0,7175,0.0,9.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1713,99.5,1996,31.1,4.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1714,260.1,5487,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1715,82.1,1403,48.6,3.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1716,270.5,5545,0.0,8.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1717,166.4,3165,0.0,5.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1718,37.8,1088,83.6,3.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1719,239.9,4869,0.0,8.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1720,202.5,3936,0.0,6.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1721,295.6,6083,0.0,9.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1722,65.1,1451,66.9,3.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1723,214.7,4309,0.0,7.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1724,158.1,3299,0.0,6.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1725,261.1,5349,0.0,8.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1726,242.8,4952,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1727,349.4,7222,0.0,10.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1728,194.9,4080,0.0,6.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1729,106.0,2023,24.6,3.92,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1730,79.7,1699,54.4,4.4,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1731,311.8,6349,0.0,9.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1732,165.3,3537,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1733,162.2,3418,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1734,243.3,4864,0.0,8.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1735,78.6,1733,59.6,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1736,61.4,1092,66.4,2.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1737,94.3,1999,32.4,4.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1738,90.0,1589,37.6,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1739,247.8,4864,0.0,8.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1740,52.0,1002,73.3,3.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1741,109.8,2297,19.8,5.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1742,261.5,5282,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1743,190.1,4080,0.0,5.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1744,127.6,2509,0.0,4.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1745,108.9,2186,21.9,5.2,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1746,77.9,1664,57.7,4.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1747,154.7,3212,0.0,5.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1748,385.7,7881,0.0,11.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1749,329.1,6670,0.0,9.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1750,371.9,7627,0.0,11.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1751,33.6,800,87.7,3.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1752,141.9,2744,0.0,5.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1753,39.0,932,82.6,3.43,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1754,70.6,1335,63.8,3.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1755,42.0,990,82.0,3.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1756,103.4,2328,26.1,4.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1757,97.6,2033,36.0,5.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1758,257.8,5282,0.0,8.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1759,218.5,4459,0.0,6.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1760,193.0,4038,0.0,6.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1761,345.9,6832,0.0,9.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1762,269.6,5451,0.0,8.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1763,110.8,2088,18.2,4.58,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1764,206.9,4414,0.0,6.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1765,137.5,2962,0.0,5.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1766,305.2,6216,0.0,9.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1767,356.7,7329,0.0,10.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1768,192.2,3725,0.0,6.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1769,262.9,5543,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1770,297.4,6027,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1771,62.5,1220,68.6,3.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1772,54.3,1132,75.4,3.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1773,186.4,3872,0.0,7.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1774,281.4,5582,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1775,358.3,7262,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1776,326.2,6401,0.0,9.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1777,237.0,4733,0.0,7.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1778,94.8,1915,32.8,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1779,296.7,6232,0.0,9.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1780,372.7,7693,0.0,11.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1781,216.4,4354,0.0,7.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1782,184.5,3862,0.0,7.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1783,119.9,2506,2.1,5.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1784,144.2,2929,0.0,6.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1785,76.6,1955,53.2,4.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1786,109.7,2394,21.0,5.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1787,219.4,4554,0.0,7.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1788,153.1,3118,0.0,5.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1789,341.3,6891,0.0,9.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1790,167.6,3518,0.0,5.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1791,96.3,2039,34.7,4.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1792,145.3,3128,0.0,5.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1793,53.9,948,69.9,2.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1794,60.1,1225,70.0,3.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1795,155.3,3326,0.0,5.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1796,395.0,8158,0.0,11.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1797,332.9,6901,0.0,9.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1798,285.4,5839,0.0,8.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1799,367.5,7705,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1800,246.9,5061,0.0,8.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1801,294.0,6037,0.0,9.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1802,81.2,1615,41.7,3.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1803,112.4,2381,16.3,5.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1804,233.5,4906,0.0,6.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1805,187.2,3712,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1806,133.4,2932,0.0,5.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1807,328.2,6652,0.0,9.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1808,242.0,4759,0.0,7.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1809,104.3,2079,22.6,4.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1810,41.4,939,78.9,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1811,182.8,3607,0.0,6.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1812,59.5,1031,69.2,3.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1813,226.5,4767,0.0,7.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1814,368.8,7315,0.0,10.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1815,143.2,2963,0.0,6.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1816,117.7,2544,12.6,5.2,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1817,323.8,6633,0.0,8.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1818,400.6,8270,0.0,11.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1819,387.1,7976,0.0,11.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1820,307.1,6336,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1821,185.6,3887,0.0,7.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1822,86.7,1736,44.5,3.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1823,284.2,5516,0.0,8.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1824,127.2,2615,0.0,5.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1825,133.4,2607,0.0,5.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1826,337.9,7049,0.0,10.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1827,399.3,8105,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1828,385.6,8159,0.0,11.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1829,91.3,1827,36.9,3.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1830,59.6,1321,70.3,3.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1831,339.7,6814,0.0,9.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1832,341.3,7008,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1833,305.0,6047,0.0,9.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1834,195.1,4118,0.0,7.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1835,58.9,992,65.4,4.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1836,61.1,1089,65.1,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1837,57.9,965,72.1,2.75,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1838,114.3,2437,14.4,5.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1839,306.3,6387,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1840,382.8,7658,0.0,11.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1841,372.4,7733,0.0,10.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1842,216.0,4565,0.0,6.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1843,58.8,1057,68.8,4.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1844,205.5,3972,0.0,6.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1845,402.3,8447,0.0,11.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1846,118.1,2601,6.7,4.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1847,290.8,5871,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1848,169.1,3174,0.0,5.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1849,378.7,7526,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1850,39.8,1028,84.1,3.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1851,40.9,800,80.4,3.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1852,119.3,2252,10.6,4.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1853,143.1,3125,0.0,5.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1854,397.5,8132,0.0,12.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1855,90.6,1931,41.9,4.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1856,370.7,7549,0.0,10.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1857,217.7,4173,0.0,6.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1858,308.5,5905,0.0,8.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1859,165.3,3360,0.0,5.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1860,359.9,7472,0.0,10.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1861,318.5,6598,0.0,10.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1862,110.7,2392,13.2,4.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1863,363.9,7599,0.0,11.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1864,81.7,1560,51.0,4.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1865,53.3,1070,70.0,3.09,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1866,161.7,3505,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1867,263.6,5361,0.0,8.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1868,270.1,5535,0.0,8.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1869,364.0,7462,0.0,10.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1870,195.8,3761,0.0,6.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1871,149.8,3238,0.0,5.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1872,148.7,3001,0.0,5.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1873,96.6,2042,33.5,4.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1874,380.2,7778,0.0,11.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1875,196.6,4157,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1876,159.8,3367,0.0,6.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1877,179.2,3836,0.0,6.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1878,332.8,7001,0.0,10.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1879,147.0,3325,0.0,6.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1880,109.7,2231,18.4,4.43,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1881,272.5,5757,0.0,9.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1882,331.2,6740,0.0,9.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1883,279.0,5616,0.0,7.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1884,273.8,5519,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1885,325.7,6623,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1886,149.2,2845,0.0,5.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1887,396.4,8210,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1888,190.8,3823,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1889,332.2,6820,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1890,101.5,2138,22.2,4.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1891,200.0,3862,0.0,6.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1892,163.6,3472,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1893,166.2,3780,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1894,83.7,1843,42.4,4.47,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1895,397.6,8061,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1896,89.5,1687,38.6,4.24,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1897,254.9,5475,0.0,8.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1898,167.9,3472,0.0,6.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1899,118.9,2524,12.5,4.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1900,268.5,5542,0.0,8.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1901,63.2,1285,66.3,3.82,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1902,198.5,4154,0.0,7.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1903,96.1,1863,32.2,4.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1904,103.2,2431,24.2,4.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1905,145.2,2821,0.0,5.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1906,112.8,2315,17.2,4.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1907,98.8,1796,37.9,3.92,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1908,352.5,7270,0.0,10.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1909,232.6,4731,0.0,7.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1910,197.4,3985,0.0,6.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1911,318.2,6510,0.0,9.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1912,145.1,2853,0.0,4.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1913,148.0,3031,0.0,5.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1914,143.1,2723,0.0,5.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1915,167.7,3407,0.0,6.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1916,75.5,1480,47.8,3.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1917,373.6,7635,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1918,150.2,3260,0.0,5.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1919,325.4,6371,0.0,9.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1920,46.0,1017,76.7,2.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1921,213.2,4468,0.0,7.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1922,335.0,6940,0.0,9.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1923,271.5,5550,0.0,8.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1924,338.3,6917,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1925,115.8,2611,8.2,4.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1926,304.1,6381,0.0,9.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1927,35.7,800,91.2,3.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1928,185.6,3862,0.0,5.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1929,239.3,4793,0.0,7.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1930,115.8,2381,10.8,4.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1931,122.3,2678,3.3,5.58,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1932,383.6,7804,0.0,11.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1933,60.2,1032,62.1,2.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1934,56.7,1203,63.6,3.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1935,234.1,5005,0.0,7.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1936,135.4,2877,0.0,4.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1937,202.9,4205,0.0,6.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1938,247.4,4932,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1939,334.1,6805,0.0,10.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1940,138.3,2669,0.0,5.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1941,202.1,4062,0.0,6.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1942,248.1,5094,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1943,142.4,2931,0.0,5.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1944,394.8,8241,0.0,11.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1945,165.3,3228,0.0,6.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1946,35.5,800,83.3,2.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1947,69.0,1341,57.4,3.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1948,160.3,3279,0.0,5.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1949,193.2,3919,0.0,6.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1950,82.0,1882,47.1,3.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1951,389.0,8058,0.0,11.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1952,127.7,2591,2.6,5.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1953,117.3,2331,8.2,4.66,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1954,345.9,7249,0.0,10.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1955,390.4,8164,0.0,12.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1956,352.1,7231,0.0,10.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1957,271.1,5508,0.0,7.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1958,280.4,5874,0.0,8.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1959,340.3,7002,0.0,10.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1960,58.2,1303,71.2,3.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1961,309.1,6358,0.0,9.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1962,155.7,3069,0.0,6.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1963,300.5,6260,0.0,9.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1964,108.7,2353,22.8,4.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1965,132.1,2784,0.0,5.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1966,186.2,3649,0.0,6.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1967,227.4,4699,0.0,7.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1968,157.9,3262,0.0,5.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1969,234.4,4835,0.0,8.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1970,226.5,4686,0.0,7.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1971,114.4,2475,9.8,4.64,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1972,300.7,5923,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1973,125.8,2559,2.7,5.0,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1974,57.5,1365,70.0,3.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1975,50.0,965,71.2,3.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1976,102.0,2343,29.8,4.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1977,78.6,1664,45.6,4.39,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1978,97.7,2128,31.0,3.88,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1979,59.8,1423,67.4,3.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1980,206.2,4138,0.0,6.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1981,64.9,1070,69.5,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1982,257.7,5510,0.0,8.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1983,230.9,4716,0.0,7.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1984,170.6,3409,0.0,6.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1985,220.2,4540,0.0,6.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1986,44.5,1197,80.7,4.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1987,312.6,6717,0.0,9.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1988,340.8,6841,0.0,10.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1989,43.7,951,80.5,3.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1990,63.5,1461,62.9,3.75,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-1991,268.1,5513,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1992,196.7,3866,0.0,6.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1993,302.5,6167,0.0,9.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1994,156.3,3154,0.0,6.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1995,141.1,3056,0.0,5.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1996,136.0,2709,0.0,4.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1997,327.9,6803,0.0,10.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1998,193.7,4028,0.0,6.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-1999,383.0,8123,0.0,11.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2000,337.3,6770,0.0,10.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2001,262.5,5274,0.0,8.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2002,133.5,2612,0.0,5.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2003,396.5,8149,0.0,11.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2004,208.7,4527,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2005,92.7,1694,37.1,3.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2006,382.5,7814,0.0,11.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2007,83.7,1700,43.1,4.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2008,350.8,7212,0.0,10.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2009,259.7,5296,0.0,8.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2010,377.7,7477,0.0,10.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2011,184.3,3693,0.0,6.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2012,151.8,3048,0.0,5.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2013,108.2,2545,18.8,5.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2014,43.4,800,80.2,2.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2015,46.7,828,79.7,2.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2016,356.1,7215,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2017,316.3,6494,0.0,9.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2018,106.8,2665,23.0,4.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2019,138.5,2798,0.0,5.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2020,153.1,2969,0.0,6.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2021,361.6,7553,0.0,11.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2022,70.1,1329,57.4,3.74,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2023,287.7,5936,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2024,79.3,1639,54.6,3.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2025,76.8,1598,53.3,3.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2026,387.7,7897,0.0,11.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2027,286.2,5622,0.0,9.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2028,360.8,7239,0.0,10.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2029,144.9,2874,0.0,5.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2030,396.0,8241,0.0,11.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2031,89.4,2014,37.4,4.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2032,358.7,7238,0.0,10.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2033,311.0,6285,0.0,9.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2034,271.4,5570,0.0,8.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2035,353.5,7039,0.0,10.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2036,211.5,4604,0.0,7.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2037,380.0,7638,0.0,11.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2038,258.4,5142,0.0,7.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2039,340.4,7065,0.0,9.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2040,140.4,2737,0.0,5.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2041,163.5,3541,0.0,6.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2042,152.5,3111,0.0,5.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2043,350.5,7084,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2044,46.3,938,76.8,2.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2045,387.3,7778,0.0,11.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2046,266.2,5289,0.0,8.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2047,188.2,4106,0.0,6.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2048,385.8,7724,0.0,10.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2049,73.5,1545,53.2,3.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2050,139.5,3080,0.0,4.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2051,88.4,1617,34.9,3.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2052,125.7,2467,0.7,4.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2053,56.4,1257,69.4,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2054,50.5,861,74.4,2.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2055,83.7,1559,53.8,3.61,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2056,301.6,6227,0.0,9.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2057,157.8,3110,0.0,5.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2058,88.6,1707,36.7,4.19,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2059,138.0,2527,0.0,5.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2060,348.6,7151,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2061,116.7,2132,7.8,4.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2062,319.8,6640,0.0,9.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2063,144.2,2951,0.0,5.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2064,83.0,1936,49.5,3.89,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2065,346.8,7207,0.0,10.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2066,297.5,6131,0.0,9.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2067,318.7,6509,0.0,9.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2068,197.2,4096,0.0,7.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2069,327.2,6898,0.0,10.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2070,279.9,5598,0.0,8.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2071,32.2,800,90.2,3.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2072,46.2,1031,85.1,3.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2073,352.2,7310,0.0,10.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2074,301.9,6131,0.0,8.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2075,369.6,7512,0.0,11.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2076,277.5,5517,0.0,8.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2077,38.6,878,87.7,2.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2078,283.5,5749,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2079,238.0,4799,0.0,7.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2080,204.1,4211,0.0,6.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2081,187.4,3856,0.0,6.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2082,57.1,1036,70.2,3.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2083,238.5,5051,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2084,82.8,1713,49.2,4.09,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2085,275.5,5677,0.0,8.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2086,85.8,1772,47.9,3.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2087,145.1,2692,0.0,5.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2088,60.8,1217,69.2,3.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2089,305.0,6413,0.0,9.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2090,283.6,5816,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2091,288.6,5865,0.0,8.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2092,339.6,6616,0.0,9.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2093,364.3,7190,0.0,9.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2094,230.7,4646,0.0,7.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2095,203.4,4076,0.0,6.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2096,388.9,7889,0.0,11.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2097,326.0,6892,0.0,9.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2098,379.8,7735,0.0,11.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2099,363.4,7640,0.0,10.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2100,107.9,2441,23.0,4.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2101,260.6,5549,0.0,8.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2102,78.6,1816,49.3,4.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2103,159.4,3265,0.0,5.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2104,51.5,1014,76.5,2.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2105,325.4,6845,0.0,9.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2106,63.1,1179,61.2,3.41,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2107,305.2,6438,0.0,9.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2108,391.8,7952,0.0,11.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2109,183.9,4043,0.0,6.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2110,409.9,8181,0.0,11.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2111,360.1,7280,0.0,11.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2112,246.2,5000,0.0,7.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2113,178.5,3417,0.0,6.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2114,176.2,3613,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2115,169.7,3347,0.0,5.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2116,200.2,4162,0.0,6.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2117,176.0,3877,0.0,6.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2118,283.5,6067,0.0,9.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2119,281.5,5567,0.0,8.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2120,354.9,7102,0.0,10.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2121,37.1,800,84.4,3.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2122,270.4,5582,0.0,9.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2123,337.5,6908,0.0,9.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2124,109.3,2164,19.4,4.82,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2125,215.0,4275,0.0,6.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2126,31.0,800,88.2,3.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2127,352.8,7189,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2128,133.0,2711,0.0,5.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2129,318.2,6463,0.0,9.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2130,271.0,5637,0.0,8.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2131,140.5,2658,0.0,5.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2132,72.4,1375,57.4,3.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2133,166.3,3361,0.0,5.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2134,32.0,800,87.5,3.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2135,228.1,4657,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2136,157.1,2868,0.0,5.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2137,331.3,6711,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2138,359.1,7456,0.0,11.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2139,260.6,5223,0.0,7.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2140,107.5,2094,18.7,4.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2141,239.5,5093,0.0,8.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2142,356.6,7194,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2143,88.1,1900,37.2,3.69,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2144,264.0,5633,0.0,8.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2145,313.2,6390,0.0,9.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2146,125.6,2610,5.3,5.43,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2147,122.7,2582,9.3,4.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2148,74.0,1527,51.6,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2149,93.3,1743,33.9,4.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2150,298.2,6185,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2151,261.9,5527,0.0,7.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2152,185.9,3707,0.0,6.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2153,396.4,8196,0.0,11.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2154,133.3,3054,0.0,5.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2155,185.1,3747,0.0,5.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2156,51.1,958,73.5,3.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2157,138.0,2893,0.0,5.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2158,40.8,830,86.3,2.98,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2159,91.6,2028,35.4,3.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2160,227.7,4619,0.0,7.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2161,58.2,1423,65.0,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2162,325.2,6535,0.0,9.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2163,288.5,5809,0.0,9.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2164,144.9,3080,0.0,5.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2165,327.9,6645,0.0,9.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2166,143.1,2861,0.0,5.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2167,317.1,6672,0.0,9.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2168,111.4,2304,21.2,4.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2169,246.5,4885,0.0,7.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2170,378.2,7745,0.0,10.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2171,161.3,3538,0.0,7.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2172,364.9,7377,0.0,10.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2173,72.5,1452,55.2,3.55,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2174,158.2,3133,0.0,5.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2175,199.4,4366,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2176,306.6,6448,0.0,10.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2177,138.4,2930,0.0,5.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2178,252.6,5241,0.0,8.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2179,381.7,7909,0.0,11.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2180,400.2,7871,0.0,11.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2181,143.6,3148,0.0,5.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2182,337.6,7043,0.0,10.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2183,311.9,6444,0.0,9.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2184,183.4,3597,0.0,5.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2185,374.0,7526,0.0,10.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2186,173.2,3601,0.0,6.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2187,340.5,7043,0.0,11.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2188,311.8,6344,0.0,9.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2189,113.8,2229,13.4,4.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2190,282.4,5939,0.0,8.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2191,149.0,3011,0.0,5.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2192,64.0,1426,66.9,3.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2193,152.7,3167,0.0,6.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2194,49.4,1239,77.5,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2195,84.6,1795,44.6,4.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2196,110.4,2481,14.8,4.47,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2197,342.2,7124,0.0,11.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2198,321.7,6489,0.0,9.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2199,386.7,7751,0.0,11.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2200,302.9,6133,0.0,9.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2201,155.9,3455,0.0,6.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2202,61.1,1053,68.2,3.46,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2203,142.3,2722,0.0,4.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2204,361.4,7582,0.0,10.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2205,123.8,2306,4.8,4.75,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2206,196.1,3857,0.0,6.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2207,285.4,6058,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2208,165.0,3474,0.0,6.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2209,68.2,1189,61.2,3.89,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2210,84.3,1924,45.2,4.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2211,264.1,5337,0.0,8.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2212,44.3,907,78.8,3.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2213,236.2,4876,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2214,236.1,4871,0.0,7.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2215,247.4,5432,0.0,8.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2216,187.8,4301,0.0,6.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2217,180.8,3505,0.0,5.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2218,340.4,7169,0.0,10.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2219,352.5,7155,0.0,10.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2220,315.5,6222,0.0,9.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2221,312.5,6211,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2222,153.4,3225,0.0,6.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2223,394.3,8262,0.0,11.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2224,299.8,6063,0.0,9.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2225,92.6,2013,40.1,4.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2226,284.4,5743,0.0,9.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2227,343.6,6935,0.0,10.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2228,377.9,7763,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2229,373.0,7871,0.0,11.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2230,184.8,3692,0.0,6.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2231,332.7,6727,0.0,9.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2232,89.5,2359,36.5,5.37,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2233,245.2,4908,0.0,7.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2234,232.7,4685,0.0,7.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2235,41.3,1015,79.7,2.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2236,362.0,7208,0.0,11.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2237,188.2,3625,0.0,6.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2238,393.5,8080,0.0,10.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2239,226.9,4783,0.0,7.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2240,167.4,3507,0.0,5.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2241,286.0,5815,0.0,8.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2242,56.1,1189,74.1,3.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2243,74.5,1584,50.3,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2244,406.5,8188,0.0,11.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2245,222.3,4444,0.0,7.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2246,284.1,5800,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2247,126.7,2533,5.1,4.46,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2248,402.1,8227,0.0,11.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2249,36.6,800,86.4,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2250,279.1,6092,0.0,9.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2251,405.4,8087,0.0,11.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2252,117.3,2376,7.3,4.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2253,132.4,2489,0.0,4.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2254,365.0,7571,0.0,10.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2255,339.5,6552,0.0,10.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2256,339.3,6718,0.0,9.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2257,156.9,3556,0.0,6.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2258,385.3,7789,0.0,11.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2259,102.8,1842,27.4,4.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2260,389.7,8221,0.0,11.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2261,35.8,895,83.9,2.74,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2262,254.2,5166,0.0,8.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2263,380.5,7621,0.0,11.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2264,140.1,2695,0.0,4.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2265,389.2,7939,0.0,11.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2266,325.7,6718,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2267,401.1,8204,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2268,30.6,800,90.6,3.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2269,370.0,7601,0.0,10.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2270,122.2,2657,3.0,5.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2271,65.1,1086,63.6,2.66,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2272,366.7,7575,0.0,11.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2273,157.4,3327,0.0,6.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2274,274.0,5539,0.0,8.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2275,257.0,5420,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2276,208.4,4604,0.0,8.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2277,119.4,2396,7.4,5.1,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2278,326.7,6910,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2279,195.9,4024,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2280,37.0,800,87.4,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2281,201.4,4060,0.0,7.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2282,239.5,4900,0.0,7.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2283,398.7,8062,0.0,12.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2284,57.6,966,69.5,2.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2285,244.1,4963,0.0,8.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2286,240.4,4693,0.0,7.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2287,64.1,1396,64.1,3.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2288,157.5,3319,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2289,160.4,3357,0.0,5.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2290,286.2,5573,0.0,7.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2291,381.6,7994,0.0,11.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2292,331.2,6915,0.0,10.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2293,337.9,6784,0.0,9.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2294,34.8,800,81.5,2.58,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2295,189.3,3660,0.0,6.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2296,199.7,3998,0.0,6.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2297,327.6,6619,0.0,10.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2298,196.5,4139,0.0,6.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2299,312.9,6201,0.0,9.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2300,115.1,2411,17.9,4.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2301,166.0,3321,0.0,6.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2302,284.0,5653,0.0,9.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2303,120.1,2422,8.4,4.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2304,247.0,5254,0.0,7.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2305,278.2,5662,0.0,9.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2306,61.2,1186,62.5,3.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2307,114.8,2329,14.7,4.61,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2308,244.9,5007,0.0,7.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2309,162.5,3662,0.0,5.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2310,118.3,2350,0.5,4.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2311,90.7,1913,35.9,5.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2312,41.3,800,79.6,2.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2313,345.5,7249,0.0,10.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2314,95.8,2139,34.6,4.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2315,365.9,7253,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2316,321.2,6447,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2317,68.9,1293,63.2,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2318,59.1,1070,69.3,3.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2319,117.5,2413,13.0,5.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2320,208.5,3999,0.0,5.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2321,243.4,5033,0.0,7.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2322,349.3,7236,0.0,10.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2323,130.8,2703,0.0,4.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2324,381.4,7927,0.0,11.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2325,306.0,6230,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2326,299.8,6331,0.0,9.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2327,392.7,8130,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2328,397.4,8014,0.0,12.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2329,293.3,5978,0.0,9.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2330,78.0,1391,51.8,3.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2331,312.8,6743,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2332,269.7,5369,0.0,7.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2333,267.2,5460,0.0,8.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2334,271.3,5058,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2335,325.8,6808,0.0,10.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2336,267.0,5565,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2337,321.8,6595,0.0,9.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2338,75.6,1686,55.9,4.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2339,390.9,8023,0.0,11.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2340,361.9,7657,0.0,10.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2341,271.4,5533,0.0,8.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2342,62.0,1311,65.1,3.11,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2343,33.0,1012,85.7,2.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2344,171.9,3588,0.0,6.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2345,107.7,2192,20.8,5.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2346,233.4,4739,0.0,7.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2347,181.2,3756,0.0,6.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2348,386.2,7773,0.0,11.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2349,163.1,3159,0.0,5.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2350,263.1,5667,0.0,9.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2351,130.7,2734,0.0,5.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2352,133.0,2803,0.0,5.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2353,159.7,3088,0.0,6.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2354,387.7,7909,0.0,10.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2355,280.6,5866,0.0,9.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2356,324.1,6348,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2357,225.8,4773,0.0,7.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2358,177.5,3372,0.0,5.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2359,74.3,1394,56.0,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2360,182.7,3440,0.0,5.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2361,296.5,6095,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2362,176.9,3745,0.0,6.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2363,124.0,2528,2.3,5.11,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2364,294.3,5957,0.0,9.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2365,51.3,1032,73.3,3.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2366,36.6,800,85.0,2.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2367,393.7,8130,0.0,11.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2368,409.2,8345,0.0,11.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2369,347.4,7223,0.0,10.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2370,73.6,1475,61.2,3.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2371,88.7,1890,39.4,4.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2372,107.5,1960,22.7,4.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2373,294.6,5919,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2374,229.9,4776,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2375,331.4,6781,0.0,10.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2376,235.6,4800,0.0,8.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2377,184.8,3893,0.0,7.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2378,70.8,1414,58.6,3.79,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2379,158.6,3257,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2380,374.0,7622,0.0,11.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2381,373.6,7867,0.0,10.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2382,206.3,4211,0.0,6.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2383,140.8,3010,0.0,6.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2384,144.9,3049,0.0,5.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2385,396.4,7989,0.0,11.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2386,353.9,7240,0.0,10.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2387,193.2,3875,0.0,6.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2388,272.5,5709,0.0,7.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2389,199.5,4076,0.0,6.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2390,265.5,5520,0.0,8.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2391,408.1,8500,0.0,11.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2392,123.1,2771,1.7,5.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2393,348.8,7070,0.0,10.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2394,317.3,6484,0.0,9.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2395,260.7,5554,0.0,9.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2396,286.7,5951,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2397,91.2,1686,37.1,4.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2398,190.2,3916,0.0,6.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2399,220.4,4526,0.0,6.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2400,238.6,5222,0.0,8.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2401,302.4,6001,0.0,8.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2402,116.9,2526,7.5,4.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2403,61.0,1350,69.7,3.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2404,297.3,6156,0.0,10.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2405,316.0,6574,0.0,9.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2406,368.1,7632,0.0,10.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2407,120.8,2387,5.4,5.41,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2408,237.9,4986,0.0,7.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2409,155.9,3139,0.0,5.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2410,365.6,7517,0.0,11.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2411,184.4,3973,0.0,6.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2412,117.9,2686,12.4,3.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2413,232.1,4652,0.0,7.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2414,183.0,4042,0.0,7.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2415,228.7,4893,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2416,114.7,2260,7.6,4.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2417,384.6,7994,0.0,12.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2418,349.7,7287,0.0,10.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2419,272.3,5960,0.0,9.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2420,367.9,7541,0.0,11.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2421,79.2,1582,52.8,4.47,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2422,288.0,5918,0.0,9.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2423,399.9,8054,0.0,10.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2424,97.0,2023,35.2,4.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2425,223.6,4535,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2426,140.8,2707,0.0,5.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2427,285.2,5668,0.0,8.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2428,211.9,4382,0.0,7.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2429,244.3,4823,0.0,7.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2430,315.7,6781,0.0,10.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2431,46.1,800,82.8,3.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2432,209.4,4274,0.0,7.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2433,187.0,3759,0.0,6.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2434,339.0,6924,0.0,10.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2435,220.4,4351,0.0,7.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2436,367.5,7659,0.0,10.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2437,336.3,7067,0.0,10.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2438,172.3,3458,0.0,6.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2439,93.8,1812,38.4,4.19,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2440,166.6,3549,0.0,6.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2441,237.3,4973,0.0,8.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2442,238.3,5018,0.0,7.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2443,218.5,4293,0.0,6.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2444,212.9,4194,0.0,7.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2445,309.6,6380,0.0,9.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2446,215.5,4228,0.0,6.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2447,32.2,800,87.5,2.61,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2448,322.7,6408,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2449,218.1,4384,0.0,6.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2450,241.6,5024,0.0,7.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2451,271.8,5520,0.0,9.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2452,88.5,1883,40.3,3.88,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2453,107.5,2041,16.3,3.46,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2454,301.7,6107,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2455,231.3,4787,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2456,396.7,8190,0.0,12.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2457,225.3,4501,0.0,7.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2458,39.4,927,85.3,3.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2459,69.3,1576,64.6,3.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2460,203.9,4234,0.0,6.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2461,349.4,7461,0.0,11.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2462,78.2,1514,57.3,4.33,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2463,332.5,6747,0.0,9.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2464,267.7,5421,0.0,8.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2465,225.5,4305,0.0,7.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2466,285.7,5856,0.0,8.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2467,375.1,7621,0.0,11.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2468,312.7,6483,0.0,10.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2469,304.4,6251,0.0,9.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2470,294.8,6103,0.0,9.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2471,290.4,5977,0.0,8.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2472,372.5,7472,0.0,10.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2473,51.6,1029,74.7,3.55,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2474,242.5,4984,0.0,7.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2475,52.4,1269,72.6,3.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2476,224.5,4427,0.0,6.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2477,56.4,1272,66.7,3.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2478,183.5,3677,0.0,5.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2479,271.1,5579,0.0,9.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2480,300.5,6207,0.0,9.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2481,329.7,7111,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2482,337.4,6637,0.0,8.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2483,364.1,7854,0.0,11.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2484,359.7,7126,0.0,10.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2485,257.1,5401,0.0,8.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2486,277.8,5635,0.0,8.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2487,388.5,7720,0.0,11.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2488,154.0,2897,0.0,5.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2489,342.5,6976,0.0,10.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2490,47.1,1038,69.2,2.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2491,380.8,7913,0.0,11.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2492,40.0,932,79.8,3.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2493,226.0,4597,0.0,7.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2494,133.1,2817,0.0,5.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2495,33.0,800,88.0,2.74,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2496,115.0,2202,13.1,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2497,90.3,1634,41.4,3.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2498,284.6,5602,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2499,151.1,3177,0.0,5.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2500,138.3,2730,0.0,5.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2501,258.0,5241,0.0,8.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2502,362.8,7734,0.0,11.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2503,111.4,2476,17.3,4.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2504,295.5,5735,0.0,8.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2505,163.3,3233,0.0,5.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2506,258.1,5549,0.0,8.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2507,387.2,8052,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2508,393.8,8081,0.0,12.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2509,48.4,1106,76.5,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2510,214.2,4338,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2511,241.8,4845,0.0,7.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2512,348.0,6978,0.0,9.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2513,301.1,6014,0.0,8.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2514,305.5,6207,0.0,9.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2515,345.6,7390,0.0,10.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2516,403.7,8487,0.0,12.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2517,347.8,6962,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2518,356.7,7477,0.0,10.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2519,190.6,4090,0.0,6.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2520,206.3,4395,0.0,7.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2521,337.1,7129,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2522,358.3,7546,0.0,11.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2523,163.6,3328,0.0,5.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2524,334.2,6849,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2525,207.0,4587,0.0,7.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2526,334.7,7035,0.0,10.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2527,182.9,3839,0.0,7.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2528,319.4,6402,0.0,9.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2529,188.8,4088,0.0,6.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2530,373.6,7651,0.0,11.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2531,253.5,5005,0.0,8.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2532,217.3,4262,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2533,323.4,6692,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2534,314.4,6493,0.0,9.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2535,367.3,7485,0.0,11.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2536,378.8,7994,0.0,11.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2537,335.3,6836,0.0,10.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2538,53.5,1084,68.3,3.55,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2539,120.1,2663,2.5,4.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2540,393.6,8153,0.0,11.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2541,204.3,4191,0.0,6.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2542,405.0,8141,0.0,11.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2543,140.0,2687,0.0,5.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2544,403.2,8436,0.0,11.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2545,58.2,1049,69.9,3.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2546,85.3,1835,40.0,4.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2547,206.6,4062,0.0,7.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2548,60.1,1058,71.5,3.75,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2549,54.3,1117,75.7,2.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2550,316.5,6536,0.0,9.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2551,331.9,7134,0.0,10.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2552,313.3,6466,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2553,327.4,6646,0.0,10.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2554,37.3,956,82.9,3.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2555,151.6,3363,0.0,6.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2556,119.8,2767,5.5,5.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2557,78.8,1606,50.6,4.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2558,115.8,2363,11.4,4.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2559,101.5,2101,29.4,4.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2560,258.0,5403,0.0,8.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2561,102.6,2041,24.2,4.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2562,115.4,2445,14.0,5.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2563,168.6,3342,0.0,5.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2564,125.8,2723,0.0,6.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2565,72.1,1453,54.3,3.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2566,236.3,4843,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2567,309.1,6380,0.0,9.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2568,306.5,6496,0.0,9.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2569,126.7,2539,2.3,5.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2570,60.8,1146,61.8,3.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2571,329.6,6875,0.0,10.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2572,106.8,2344,22.4,4.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2573,41.5,974,79.5,4.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2574,76.7,1815,56.4,3.98,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2575,36.0,800,86.5,2.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2576,52.8,1173,72.9,2.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2577,176.7,3573,0.0,6.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2578,207.3,4030,0.0,6.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2579,108.0,2178,20.4,5.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2580,255.8,5006,0.0,8.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2581,229.7,4777,0.0,7.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2582,212.4,4312,0.0,7.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2583,390.4,7962,0.0,11.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2584,139.1,3079,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2585,73.4,1546,53.6,3.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2586,296.2,6234,0.0,8.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2587,142.9,3011,0.0,5.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2588,32.2,800,83.8,2.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2589,155.7,3190,0.0,6.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2590,166.0,3235,0.0,4.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2591,318.3,6576,0.0,10.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2592,42.8,800,85.2,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2593,193.9,3911,0.0,6.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2594,404.8,8273,0.0,11.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2595,276.0,5542,0.0,8.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2596,254.5,5366,0.0,8.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2597,369.0,7536,0.0,10.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2598,187.5,3748,0.0,5.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2599,312.5,6505,0.0,9.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2600,315.1,6437,0.0,9.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2601,375.5,7713,0.0,11.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2602,231.1,4718,0.0,7.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2603,262.3,5494,0.0,8.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2604,42.0,977,78.5,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2605,330.7,6985,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2606,88.5,1929,40.5,4.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2607,279.9,5825,0.0,9.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2608,131.3,2730,0.0,5.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2609,270.9,5536,0.0,8.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2610,240.0,5161,0.0,7.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2611,388.4,7894,0.0,11.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2612,297.5,5876,0.0,9.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2613,174.0,3285,0.0,6.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2614,277.3,5471,0.0,9.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2615,350.1,7143,0.0,10.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2616,392.4,8382,0.0,11.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2617,238.8,4944,0.0,7.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2618,373.3,7836,0.0,11.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2619,262.2,5637,0.0,8.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2620,170.2,3553,0.0,6.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2621,230.5,4791,0.0,7.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2622,94.4,2058,29.9,4.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2623,324.2,6774,0.0,9.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2624,216.6,4333,0.0,6.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2625,212.5,4350,0.0,7.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2626,261.0,5318,0.0,8.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2627,237.9,4703,0.0,7.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2628,158.2,3213,0.0,5.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2629,150.5,3164,0.0,5.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2630,257.4,5070,0.0,7.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2631,376.6,7658,0.0,10.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2632,269.7,5479,0.0,8.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2633,174.5,3553,0.0,6.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2634,301.7,6621,0.0,9.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2635,54.4,1055,72.0,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2636,390.6,7821,0.0,11.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2637,70.9,1619,57.6,4.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2638,190.2,4219,0.0,6.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2639,264.1,5260,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2640,267.8,5467,0.0,8.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2641,199.3,4197,0.0,6.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2642,217.3,3993,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2643,320.8,6735,0.0,9.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2644,127.9,2369,0.0,4.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2645,237.6,4974,0.0,8.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2646,353.8,7239,0.0,10.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2647,49.4,1130,76.7,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2648,216.4,4189,0.0,6.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2649,60.7,1169,67.8,3.64,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2650,255.8,5136,0.0,8.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2651,393.4,8137,0.0,11.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2652,258.7,5355,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2653,310.6,6253,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2654,140.7,2722,0.0,4.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2655,164.5,3348,0.0,5.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2656,104.1,2456,22.4,4.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2657,330.9,6874,0.0,9.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2658,245.6,4851,0.0,7.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2659,385.4,7867,0.0,11.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2660,153.6,3047,0.0,5.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2661,31.4,800,85.7,2.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2662,158.8,3221,0.0,5.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2663,407.6,8219,0.0,11.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2664,71.3,1554,56.4,3.66,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2665,295.5,6158,0.0,10.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2666,378.3,7908,0.0,11.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2667,90.9,1839,43.0,3.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2668,70.4,1544,51.8,3.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2669,134.1,2597,0.0,5.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2670,300.8,6060,0.0,9.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2671,226.1,4741,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2672,127.3,2442,3.9,5.29,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2673,54.7,1085,73.5,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2674,208.6,4448,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2675,388.1,8147,0.0,11.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2676,233.5,4758,0.0,7.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2677,115.9,2230,9.3,4.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2678,379.8,7841,0.0,11.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2679,69.7,1408,62.9,3.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2680,278.2,5493,0.0,8.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2681,110.4,1943,16.9,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2682,83.6,1451,45.4,4.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2683,215.7,4220,0.0,7.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2684,120.8,2455,2.6,5.16,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2685,241.5,5034,0.0,7.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2686,105.3,2108,27.5,4.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2687,245.9,5194,0.0,8.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2688,243.2,5117,0.0,8.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2689,96.5,1746,27.5,3.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2690,77.7,1593,49.8,4.3,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2691,85.5,1619,46.8,3.73,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2692,343.6,7017,0.0,10.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2693,103.3,2168,27.0,4.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2694,241.3,4884,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2695,325.5,6560,0.0,9.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2696,159.9,3127,0.0,5.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2697,70.6,1267,60.7,2.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2698,231.3,4567,0.0,7.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2699,398.6,8303,0.0,11.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2700,368.6,7588,0.0,11.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2701,291.2,5910,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2702,305.1,6293,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2703,310.4,6268,0.0,9.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2704,106.4,2154,20.6,4.52,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2705,108.4,2610,15.8,4.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2706,257.1,5323,0.0,8.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2707,380.3,7820,0.0,10.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2708,235.3,4657,0.0,7.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2709,210.2,4368,0.0,7.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2710,306.5,6011,0.0,9.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2711,331.7,7094,0.0,9.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2712,186.0,3592,0.0,6.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2713,347.0,7189,0.0,10.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2714,268.2,5328,0.0,7.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2715,140.9,2961,0.0,5.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2716,101.4,2295,27.5,5.0,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2717,147.3,3309,0.0,5.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2718,312.8,6596,0.0,10.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2719,136.9,2606,0.0,5.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2720,331.2,7004,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2721,334.7,7063,0.0,10.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2722,303.6,6298,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2723,216.5,4581,0.0,7.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2724,215.7,4467,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2725,57.3,1230,69.4,2.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2726,290.2,5786,0.0,8.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2727,175.9,3386,0.0,5.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2728,122.7,2611,6.2,5.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2729,132.1,2636,0.0,5.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2730,152.1,3445,0.0,6.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2731,55.3,1088,74.3,3.39,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2732,114.1,2377,16.1,4.82,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2733,78.6,1739,52.9,3.39,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2734,144.1,2968,0.0,5.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2735,70.9,1549,58.1,3.58,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2736,298.9,6390,0.0,9.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2737,168.1,3324,0.0,5.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2738,324.2,6918,0.0,10.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2739,257.0,5479,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2740,165.8,3300,0.0,5.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2741,360.1,7502,0.0,10.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2742,240.3,4452,0.0,7.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2743,123.4,2383,4.3,4.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2744,247.6,5234,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2745,340.2,7135,0.0,9.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2746,293.7,5874,0.0,8.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2747,152.9,3028,0.0,4.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2748,108.9,1842,16.8,4.02,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2749,33.0,828,85.4,2.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2750,337.9,6913,0.0,10.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2751,289.5,6040,0.0,10.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2752,64.3,1402,64.5,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2753,40.3,942,78.1,3.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2754,299.3,6120,0.0,8.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2755,360.9,7534,0.0,11.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2756,368.9,7837,0.0,11.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2757,45.8,928,79.2,2.92,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2758,168.4,3612,0.0,6.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2759,271.0,5433,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2760,329.2,6765,0.0,10.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2761,201.3,4032,0.0,7.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2762,409.8,7955,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2763,58.3,1035,71.6,3.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2764,397.4,8176,0.0,11.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2765,351.1,6891,0.0,9.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2766,95.2,2218,34.2,4.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2767,67.9,1385,59.5,3.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2768,366.3,7589,0.0,10.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2769,150.7,3270,0.0,5.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2770,253.7,5230,0.0,8.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2771,366.5,7664,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2772,301.1,6115,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2773,104.4,1965,23.0,4.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2774,290.4,6063,0.0,9.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2775,375.0,7880,0.0,11.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2776,183.7,3953,0.0,6.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2777,45.1,800,75.3,3.07,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2778,260.8,5441,0.0,8.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2779,383.7,7916,0.0,10.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2780,229.0,4945,0.0,7.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2781,71.1,1525,57.3,3.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2782,210.2,4457,0.0,6.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2783,295.0,6238,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2784,193.8,3725,0.0,6.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2785,138.0,2595,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2786,278.7,5805,0.0,8.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2787,280.4,5773,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2788,373.8,7711,0.0,11.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2789,81.7,1734,53.4,2.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2790,311.2,6321,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2791,33.5,800,90.2,3.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2792,62.2,1247,67.4,3.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2793,226.1,4564,0.0,7.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2794,129.2,2949,0.2,5.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2795,196.5,3814,0.0,6.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2796,260.3,5406,0.0,7.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2797,383.8,7764,0.0,11.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2798,34.2,800,84.1,2.22,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2799,81.4,1649,47.0,4.33,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2800,106.9,1863,26.2,3.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2801,405.3,8215,0.0,11.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2802,80.4,1775,52.9,3.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2803,354.2,7443,0.0,10.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2804,246.7,4884,0.0,7.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2805,179.7,3947,0.0,6.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2806,237.7,4863,0.0,7.34,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2807,113.7,2578,14.1,5.55,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2808,367.8,7857,0.0,11.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2809,45.1,827,76.8,3.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2810,169.0,3404,0.0,6.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2811,321.8,6734,0.0,9.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2812,138.0,2766,0.0,5.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2813,74.3,1306,57.1,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2814,80.2,1432,48.3,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2815,286.9,6097,0.0,9.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2816,209.7,4080,0.0,6.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2817,43.1,918,76.0,3.2,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2818,114.7,2433,13.3,4.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2819,233.8,4831,0.0,7.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2820,373.3,7653,0.0,11.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2821,83.3,1744,48.9,3.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2822,253.2,5499,0.0,8.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2823,367.2,7646,0.0,11.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2824,291.1,5660,0.0,8.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2825,186.5,3830,0.0,6.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2826,90.6,1794,36.2,3.88,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2827,343.2,7117,0.0,10.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2828,128.2,2684,0.0,4.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2829,347.1,7411,0.0,10.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2830,313.5,6294,0.0,8.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2831,65.7,1157,66.6,3.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2832,121.1,2320,9.0,5.01,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2833,137.5,2776,0.0,5.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2834,230.9,4638,0.0,7.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2835,262.7,5471,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2836,310.7,6698,0.0,8.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2837,40.3,800,80.8,2.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2838,82.3,1574,40.7,3.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2839,47.0,1063,78.3,3.46,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2840,389.2,7788,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2841,278.9,5591,0.0,8.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2842,185.1,3827,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2843,136.4,2829,0.0,5.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2844,307.2,6303,0.0,9.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2845,159.8,3247,0.0,4.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2846,173.8,3495,0.0,6.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2847,304.1,6432,0.0,9.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2848,287.9,5932,0.0,9.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2849,375.2,7856,0.0,11.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2850,286.3,5807,0.0,8.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2851,297.7,6242,0.0,9.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2852,378.3,7409,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2853,145.7,2863,0.0,5.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2854,138.2,2960,0.0,5.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2855,218.1,4434,0.0,7.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2856,266.4,5178,0.0,8.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2857,142.7,2720,0.0,5.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2858,183.7,3812,0.0,6.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2859,31.6,800,86.3,2.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2860,55.4,1122,64.5,3.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2861,313.9,6497,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2862,394.6,8219,0.0,11.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2863,128.4,2328,0.0,4.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2864,332.4,6885,0.0,10.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2865,236.7,4633,0.0,7.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2866,253.8,5046,0.0,7.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2867,154.0,2971,0.0,5.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2868,189.9,3761,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2869,328.4,6765,0.0,10.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2870,191.2,3901,0.0,5.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2871,222.7,4494,0.0,8.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2872,274.6,5590,0.0,9.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2873,338.6,7011,0.0,10.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2874,324.0,6689,0.0,10.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2875,44.3,971,83.9,3.39,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2876,61.0,1463,67.3,4.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2877,322.7,6571,0.0,9.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2878,220.8,4746,0.0,7.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2879,256.5,5441,0.0,8.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2880,288.5,6103,0.0,9.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2881,177.3,3629,0.0,6.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2882,372.2,7610,0.0,11.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2883,236.8,4809,0.0,7.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2884,106.5,2372,24.0,5.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2885,321.4,6589,0.0,9.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2886,53.4,1429,70.4,3.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2887,393.7,8022,0.0,10.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2888,223.1,4583,0.0,6.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2889,211.0,4236,0.0,7.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2890,173.5,3805,0.0,6.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2891,38.5,822,81.8,3.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2892,93.5,1611,37.6,3.94,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2893,223.8,4408,0.0,6.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2894,84.8,1615,46.4,3.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2895,407.2,8298,0.0,11.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2896,157.0,3359,0.0,5.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2897,130.0,2611,0.0,4.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2898,407.4,8386,0.0,12.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2899,277.7,5596,0.0,8.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2900,106.9,2131,24.4,5.06,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2901,249.9,5232,0.0,7.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2902,405.5,8321,0.0,11.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2903,122.4,2265,8.4,4.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2904,112.2,2538,12.8,5.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2905,373.1,7745,0.0,11.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2906,241.3,4916,0.0,7.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2907,41.3,1004,79.0,2.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2908,105.8,2087,21.0,4.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2909,278.7,5835,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2910,294.6,6025,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2911,200.8,3900,0.0,6.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2912,304.0,6269,0.0,8.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2913,153.7,3109,0.0,5.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2914,54.9,1087,71.5,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2915,191.4,4095,0.0,6.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2916,292.9,5739,0.0,8.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2917,32.2,800,84.4,2.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2918,116.2,2142,8.9,4.52,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2919,141.3,2806,0.0,4.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2920,129.5,2565,0.0,5.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2921,330.3,6869,0.0,9.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2922,46.3,1063,77.4,3.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2923,180.2,3579,0.0,6.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2924,60.9,1221,73.9,3.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2925,63.1,1210,66.0,3.6,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2926,113.6,2391,14.2,5.08,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2927,242.1,5146,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2928,320.0,6528,0.0,9.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2929,114.1,2074,8.0,4.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2930,160.5,3336,0.0,5.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2931,41.7,893,81.1,3.33,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2932,188.6,3947,0.0,7.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2933,318.4,6671,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2934,284.2,5835,0.0,8.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2935,338.5,6795,0.0,9.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2936,273.7,5589,0.0,8.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2937,189.6,3916,0.0,6.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2938,188.9,3747,0.0,5.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2939,281.5,5851,0.0,8.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2940,283.8,5698,0.0,8.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2941,130.5,2565,0.0,5.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2942,261.4,5458,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2943,342.4,7184,0.0,9.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2944,311.4,6565,0.0,10.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2945,81.2,1433,48.5,3.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2946,116.5,2266,8.9,4.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2947,259.4,5583,0.0,8.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2948,121.8,2580,0.9,4.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2949,286.0,5860,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2950,319.3,6730,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2951,400.0,8406,0.0,12.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2952,208.7,4311,0.0,7.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2953,174.0,3773,0.0,6.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2954,100.6,2070,30.6,4.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2955,105.7,2289,20.4,4.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2956,73.0,1606,59.9,4.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2957,192.8,3868,0.0,7.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2958,199.8,4198,0.0,7.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2959,47.9,800,74.6,3.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2960,153.5,3072,0.0,5.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2961,175.7,3585,0.0,6.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2962,263.6,5284,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2963,195.3,4055,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2964,91.9,1976,33.7,4.74,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2965,191.2,3941,0.0,6.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2966,195.1,3853,0.0,7.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2967,192.9,3940,0.0,6.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2968,48.9,956,74.5,2.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2969,45.8,852,79.2,3.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2970,57.5,1169,68.5,3.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2971,231.4,4590,0.0,7.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2972,254.6,5071,0.0,7.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2973,310.5,6105,0.0,9.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2974,350.5,7333,0.0,10.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2975,170.4,3760,0.0,5.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2976,97.3,1920,32.7,3.89,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2977,279.2,5677,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2978,153.2,3000,0.0,5.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2979,161.3,3323,0.0,5.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2980,75.8,1696,54.1,4.87,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2981,119.7,2640,6.3,5.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2982,348.7,7090,0.0,10.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2983,387.1,7942,0.0,11.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2984,73.7,1074,55.8,3.51,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2985,365.3,7495,0.0,11.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2986,133.2,2663,0.0,4.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2987,345.6,7117,0.0,10.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2988,320.2,6552,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2989,98.6,1994,27.4,4.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2990,174.7,3966,0.0,7.04,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2991,111.1,2353,16.7,4.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-2992,238.8,4908,0.0,7.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2993,258.3,5417,0.0,8.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2994,381.5,7653,0.0,10.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2995,241.6,4926,0.0,7.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2996,151.3,3088,0.0,5.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2997,223.1,4661,0.0,7.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2998,160.9,3276,0.0,5.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-2999,257.2,5044,0.0,7.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3000,407.8,8240,0.0,11.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3001,252.1,5413,0.0,8.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3002,397.2,8307,0.0,12.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3003,251.9,5041,0.0,8.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3004,386.0,7899,0.0,11.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3005,108.0,2301,23.0,4.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3006,348.9,7273,0.0,11.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3007,385.6,7781,0.0,11.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3008,181.5,3673,0.0,6.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3009,396.2,8062,0.0,11.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3010,405.8,8195,0.0,12.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3011,265.0,5471,0.0,8.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3012,130.6,2410,2.8,4.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3013,64.7,1264,61.2,3.2,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3014,138.2,2935,0.0,5.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3015,296.2,6167,0.0,9.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3016,79.1,1505,55.1,3.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3017,201.6,4370,0.0,7.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3018,117.6,2761,11.7,5.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3019,242.1,4865,0.0,7.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3020,293.9,5866,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3021,88.7,1847,39.1,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3022,320.0,6397,0.0,9.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3023,91.0,1697,40.6,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3024,322.7,6715,0.0,9.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3025,401.8,8203,0.0,11.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3026,182.7,3455,0.0,5.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3027,269.5,5388,0.0,7.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3028,362.9,7526,0.0,11.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3029,75.3,1629,54.5,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3030,223.2,4448,0.0,7.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3031,135.5,2722,0.0,5.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3032,298.9,6145,0.0,9.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3033,391.1,7927,0.0,11.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3034,310.5,6632,0.0,10.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3035,69.5,1639,56.7,4.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3036,86.7,1686,43.5,4.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3037,362.4,7186,0.0,9.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3038,131.6,2581,0.0,4.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3039,51.6,1135,72.3,4.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3040,290.7,5919,0.0,8.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3041,131.5,2565,0.0,5.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3042,106.6,2114,24.1,4.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3043,139.9,3018,0.0,5.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3044,272.5,5718,0.0,8.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3045,175.2,3708,0.0,6.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3046,338.7,6988,0.0,9.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3047,235.0,4833,0.0,7.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3048,261.9,5415,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3049,316.3,6475,0.0,9.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3050,239.9,4943,0.0,7.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3051,262.8,5330,0.0,8.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3052,305.3,6220,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3053,214.9,4427,0.0,7.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3054,409.1,8452,0.0,12.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3055,123.4,2466,6.4,4.72,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3056,282.8,5790,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3057,41.9,857,80.9,2.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3058,404.4,8442,0.0,11.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3059,377.8,7704,0.0,10.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3060,399.8,8311,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3061,48.0,800,78.8,2.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3062,109.5,1973,16.3,4.69,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3063,351.2,6974,0.0,9.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3064,35.6,841,87.9,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3065,360.5,7421,0.0,10.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3066,187.9,4107,0.0,7.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3067,97.5,2113,32.8,4.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3068,371.8,7896,0.0,11.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3069,251.9,5164,0.0,8.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3070,239.4,4884,0.0,7.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3071,139.4,2706,0.0,4.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3072,126.3,2697,0.0,5.21,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3073,75.4,1608,53.6,3.52,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3074,257.8,5478,0.0,8.68,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3075,243.9,5411,0.0,8.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3076,100.2,2056,28.5,4.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3077,328.8,7008,0.0,10.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3078,57.8,1569,66.8,3.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3079,292.8,6125,0.0,8.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3080,384.2,7937,0.0,10.78,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3081,277.9,5704,0.0,9.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3082,164.7,3526,0.0,5.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3083,82.8,1768,50.8,4.05,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3084,330.9,6791,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3085,232.4,4953,0.0,7.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3086,64.4,1243,65.0,3.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3087,330.1,6749,0.0,9.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3088,191.9,3604,0.0,6.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3089,345.2,7100,0.0,10.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3090,242.9,4924,0.0,7.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3091,280.5,5676,0.0,9.17,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3092,149.8,3099,0.0,5.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3093,390.1,7897,0.0,10.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3094,74.3,1288,60.3,3.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3095,377.4,7831,0.0,11.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3096,76.4,1487,54.3,4.14,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3097,263.0,5090,0.0,8.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3098,109.5,2473,15.3,4.27,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3099,216.6,4692,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3100,332.1,6867,0.0,10.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3101,233.9,4326,0.0,7.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3102,231.4,4893,0.0,8.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3103,101.0,2323,28.4,5.23,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3104,105.2,2382,26.9,4.83,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3105,236.8,4935,0.0,8.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3106,264.1,5328,0.0,8.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3107,270.6,5616,0.0,8.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3108,247.8,5011,0.0,7.82,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3109,269.9,5662,0.0,9.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3110,351.9,7077,0.0,10.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3111,254.0,5359,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3112,323.9,6583,0.0,9.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3113,204.8,4195,0.0,6.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3114,240.1,4543,0.0,7.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3115,313.2,6396,0.0,9.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3116,340.3,7117,0.0,10.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3117,391.9,8094,0.0,11.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3118,149.9,3045,0.0,6.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3119,330.0,6764,0.0,9.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3120,386.7,8112,0.0,11.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3121,107.6,2264,20.6,4.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3122,380.6,7754,0.0,11.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3123,143.7,2835,0.0,4.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3124,291.2,6013,0.0,9.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3125,69.8,1463,59.4,3.44,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3126,234.4,4812,0.0,7.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3127,68.2,1197,63.8,3.36,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3128,404.6,8180,0.0,11.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3129,374.5,7794,0.0,11.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3130,40.9,800,84.3,3.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3131,104.2,2070,26.4,4.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3132,372.5,7646,0.0,10.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3133,124.3,2576,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3134,239.5,5050,0.0,8.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3135,117.8,2631,7.4,5.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3136,50.2,1295,72.1,2.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3137,329.3,6632,0.0,9.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3138,121.6,2666,0.7,6.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3139,400.1,8210,0.0,11.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3140,197.1,4130,0.0,6.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3141,119.9,2409,5.4,5.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3142,135.1,2843,0.0,5.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3143,142.2,3133,0.0,5.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3144,191.2,3951,0.0,6.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3145,319.7,6672,0.0,10.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3146,250.6,5228,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3147,373.3,7606,0.0,11.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3148,199.2,4288,0.0,6.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3149,392.8,7936,0.0,11.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3150,147.2,3127,0.0,5.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3151,357.8,7407,0.0,10.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3152,76.1,1639,50.0,4.0,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3153,408.1,8440,0.0,11.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3154,376.3,7595,0.0,10.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3155,274.6,5668,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3156,408.3,8340,0.0,11.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3157,75.7,1749,53.8,4.1,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3158,189.5,3857,0.0,6.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3159,256.8,5208,0.0,7.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3160,254.3,5446,0.0,8.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3161,229.3,4870,0.0,7.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3162,99.8,2083,27.0,4.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3163,165.4,3172,0.0,5.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3164,299.8,6399,0.0,9.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3165,286.1,6128,0.0,9.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3166,296.7,6121,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3167,120.6,2699,10.8,5.4,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3168,87.1,1749,48.2,4.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3169,63.3,1376,64.4,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3170,285.0,5644,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3171,32.4,800,85.3,2.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3172,150.9,3168,0.0,6.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3173,342.8,7012,0.0,10.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3174,165.5,3275,0.0,6.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3175,323.7,6628,0.0,9.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3176,283.6,6022,0.0,9.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3177,32.6,800,84.0,2.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3178,299.6,5987,0.0,9.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3179,139.2,2796,0.0,5.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3180,238.3,4829,0.0,8.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3181,313.3,6173,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3182,395.1,8032,0.0,10.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3183,400.3,8043,0.0,11.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3184,286.5,6022,0.0,8.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3185,189.4,4014,0.0,6.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3186,246.7,5080,0.0,8.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3187,399.7,8211,0.0,11.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3188,329.3,6626,0.0,9.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3189,259.6,5445,0.0,8.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3190,233.4,4912,0.0,7.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3191,139.7,2921,0.0,5.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3192,347.0,7025,0.0,10.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3193,212.7,4362,0.0,6.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3194,230.3,4630,0.0,7.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3195,79.3,1437,50.6,2.76,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3196,359.4,7547,0.0,10.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3197,72.5,1564,56.2,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3198,208.0,4621,0.0,8.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3199,88.7,1758,44.0,3.69,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3200,349.5,6959,0.0,10.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3201,377.4,7820,0.0,10.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3202,109.2,2265,22.7,4.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3203,300.0,6162,0.0,8.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3204,314.7,6317,0.0,9.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3205,150.1,3042,0.0,5.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3206,397.5,8233,0.0,11.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3207,256.3,5340,0.0,9.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3208,88.8,2098,40.9,4.32,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3209,232.7,4676,0.0,8.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3210,123.6,2501,2.1,4.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3211,217.0,4479,0.0,7.38,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3212,147.3,2747,0.0,5.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3213,134.1,2777,0.0,5.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3214,136.7,3063,0.0,5.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3215,249.9,5247,0.0,8.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3216,92.7,2130,40.2,4.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3217,116.6,2383,19.9,4.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3218,273.5,5668,0.0,9.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3219,106.0,2405,22.6,3.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3220,363.3,7531,0.0,11.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3221,334.3,6905,0.0,10.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3222,224.9,4657,0.0,6.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3223,316.0,6369,0.0,9.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3224,51.0,1150,76.8,3.12,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3225,401.9,8198,0.0,11.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3226,57.7,1276,63.3,3.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3227,183.8,4026,0.0,6.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3228,49.1,1000,68.4,3.21,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3229,161.5,3175,0.0,6.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3230,369.2,7433,0.0,11.0,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3231,392.9,7906,0.0,11.44,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3232,264.1,5296,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3233,79.2,1480,53.1,3.35,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3234,385.5,7900,0.0,11.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3235,40.7,848,78.3,3.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3236,242.2,4957,0.0,7.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3237,343.4,6856,0.0,10.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3238,306.5,6519,0.0,9.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3239,368.2,7840,0.0,11.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3240,203.2,4374,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3241,360.6,7532,0.0,10.94,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3242,245.2,5098,0.0,8.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3243,359.4,7257,0.0,10.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3244,247.6,4829,0.0,8.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3245,254.2,5155,0.0,8.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3246,153.6,3066,0.0,5.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3247,381.0,7849,0.0,11.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3248,149.5,2998,0.0,5.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3249,344.9,7027,0.0,9.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3250,214.4,4474,0.0,7.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3251,268.0,5306,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3252,35.1,800,81.5,3.54,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3253,265.9,5443,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3254,286.6,6100,0.0,9.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3255,130.7,2861,0.0,5.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3256,293.6,6156,0.0,9.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3257,316.3,6611,0.0,8.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3258,166.2,3343,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3259,252.6,5273,0.0,8.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3260,312.1,6334,0.0,9.91,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3261,181.1,3958,0.0,6.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3262,371.9,7781,0.0,11.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3263,400.1,8284,0.0,11.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3264,196.3,4153,0.0,6.93,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3265,55.6,1191,70.3,3.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3266,211.9,4299,0.0,6.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3267,48.3,1003,72.1,2.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3268,146.4,3006,0.0,5.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3269,191.5,3809,0.0,6.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3270,195.3,3807,0.0,6.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3271,169.4,3328,0.0,6.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3272,163.0,3474,0.0,5.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3273,137.4,2847,0.0,5.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3274,215.8,4619,0.0,7.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3275,133.7,2703,0.0,4.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3276,154.3,3124,0.0,5.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3277,138.1,2866,0.0,4.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3278,225.2,4784,0.0,8.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3279,393.0,8079,0.0,11.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3280,169.2,3503,0.0,5.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3281,98.8,1911,34.8,3.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3282,204.5,4046,0.0,6.47,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3283,155.8,3021,0.0,5.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3284,263.4,5450,0.0,8.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3285,222.9,4232,0.0,7.62,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3286,69.5,1243,61.0,3.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3287,280.3,5675,0.0,8.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3288,284.4,6009,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3289,175.0,3595,0.0,5.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3290,220.9,4499,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3291,52.7,1049,70.7,3.0,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3292,311.0,6410,0.0,9.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3293,110.0,2236,11.6,4.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3294,386.3,7975,0.0,11.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3295,199.0,4332,0.0,6.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3296,112.9,2319,19.6,4.64,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3297,286.7,6032,0.0,8.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3298,317.5,6484,0.0,8.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3299,305.8,6079,0.0,9.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3300,34.9,809,84.5,3.97,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3301,147.3,2928,0.0,6.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3302,143.2,2931,0.0,5.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3303,122.4,2642,2.1,4.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3304,91.9,1818,38.9,4.13,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3305,257.3,5125,0.0,8.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3306,131.6,2664,0.0,5.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3307,184.2,3733,0.0,6.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3308,96.7,1981,33.8,4.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3309,289.8,5633,0.0,9.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3310,34.2,800,85.4,2.18,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3311,249.9,5122,0.0,8.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3312,146.8,2906,0.0,5.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3313,350.2,7224,0.0,10.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3314,216.8,4350,0.0,6.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3315,104.4,2287,19.3,4.48,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3316,157.3,3360,0.0,5.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3317,200.4,4368,0.0,7.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3318,293.7,5966,0.0,9.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3319,382.6,7665,0.0,10.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3320,36.3,839,88.0,2.59,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3321,280.0,5478,0.0,8.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3322,377.1,7552,0.0,10.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3323,271.1,5699,0.0,8.81,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3324,162.3,3355,0.0,6.16,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3325,59.3,1202,68.0,3.24,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3326,255.4,5285,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3327,112.1,2132,11.2,4.67,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3328,340.9,6973,0.0,10.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3329,157.3,3177,0.0,5.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3330,52.2,1059,69.9,3.09,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3331,300.6,5936,0.0,9.13,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3332,372.3,7482,0.0,10.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3333,93.6,2066,36.3,4.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3334,325.5,6788,0.0,10.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3335,238.4,4944,0.0,7.27,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3336,330.8,6790,0.0,9.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3337,244.6,4785,0.0,7.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3338,353.9,7324,0.0,11.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3339,245.0,5028,0.0,8.02,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3340,367.7,7677,0.0,10.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3341,99.7,2111,27.6,5.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3342,86.9,1847,42.4,3.8,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3343,392.2,8087,0.0,10.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3344,287.6,6014,0.0,8.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3345,31.3,800,86.2,2.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3346,52.5,1353,75.3,3.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3347,87.6,1979,35.6,3.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3348,324.1,6482,0.0,8.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3349,360.4,7283,0.0,11.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3350,241.5,4983,0.0,7.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3351,244.7,5077,0.0,7.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3352,234.6,4817,0.0,7.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3353,386.8,8041,0.0,11.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3354,408.3,7989,0.0,10.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3355,35.0,800,91.0,2.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3356,81.2,1653,43.7,3.28,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3357,285.7,5842,0.0,8.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3358,50.5,1321,77.5,3.19,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3359,93.1,1947,37.9,4.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3360,202.9,4286,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3361,48.2,896,77.1,3.11,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3362,356.4,7337,0.0,10.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3363,240.0,4775,0.0,7.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3364,371.9,7631,0.0,11.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3365,35.7,940,84.7,2.98,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3366,382.6,7877,0.0,10.98,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3367,160.7,3317,0.0,5.46,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3368,246.0,5298,0.0,8.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3369,341.0,6787,0.0,9.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3370,35.4,929,88.7,3.03,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3371,228.1,4738,0.0,7.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3372,379.3,7877,0.0,10.97,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3373,310.8,6425,0.0,8.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3374,112.4,2003,18.2,3.92,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3375,230.1,4681,0.0,7.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3376,173.3,3517,0.0,5.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3377,183.4,3744,0.0,7.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3378,230.5,4808,0.0,7.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3379,336.8,6690,0.0,10.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3380,387.2,7690,0.0,10.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3381,385.0,7971,0.0,11.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3382,216.2,4298,0.0,6.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3383,107.4,2178,22.9,4.26,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3384,312.2,6618,0.0,9.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3385,214.5,4492,0.0,7.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3386,262.1,5431,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3387,292.2,5886,0.0,9.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3388,140.8,2861,0.0,4.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3389,209.0,4302,0.0,7.3,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3390,325.1,6856,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3391,275.7,5456,0.0,8.41,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3392,193.6,3633,0.0,6.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3393,65.1,1471,59.9,3.41,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3394,212.2,4689,0.0,7.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3395,163.6,3405,0.0,6.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3396,309.1,6517,0.0,10.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3397,140.7,2621,0.0,4.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3398,177.5,3623,0.0,6.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3399,150.0,3143,0.0,5.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3400,365.8,7460,0.0,10.77,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3401,281.5,5807,0.0,8.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3402,191.6,3823,0.0,6.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3403,88.5,1652,39.5,3.99,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3404,388.2,7940,0.0,11.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3405,308.0,6174,0.0,9.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3406,300.9,6281,0.0,9.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3407,377.5,7523,0.0,10.51,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3408,177.4,3409,0.0,6.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3409,204.7,4262,0.0,7.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3410,282.0,5835,0.0,8.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3411,275.4,5356,0.0,9.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3412,149.6,3042,0.0,5.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3413,105.9,2282,21.8,4.93,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3414,256.4,5392,0.0,8.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3415,309.6,6286,0.0,9.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3416,110.1,2269,22.5,4.96,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3417,65.0,1254,61.5,3.53,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3418,377.1,7589,0.0,11.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3419,227.1,4476,0.0,7.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3420,51.2,915,73.1,2.7,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3421,225.4,4358,0.0,6.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3422,54.2,1193,70.0,3.31,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3423,289.7,5856,0.0,8.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3424,109.8,2483,17.5,4.89,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3425,355.1,7017,0.0,9.73,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3426,258.6,5453,0.0,8.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3427,174.5,3382,0.0,6.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3428,374.9,7918,0.0,11.43,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3429,247.7,4958,0.0,7.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3430,409.7,8311,0.0,11.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3431,102.8,1884,23.0,3.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3432,64.5,1344,62.5,3.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3433,49.1,940,72.4,3.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3434,215.7,4407,0.0,7.48,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3435,146.3,3111,0.0,5.01,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3436,38.4,800,86.7,2.37,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3437,163.2,3223,0.0,5.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3438,398.3,8080,0.0,11.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3439,110.4,2281,18.5,4.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3440,97.9,2101,35.9,3.65,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3441,185.4,3669,0.0,6.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3442,213.6,4292,0.0,7.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3443,76.9,1788,53.0,4.24,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3444,314.5,6333,0.0,9.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3445,77.1,1595,59.4,3.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3446,82.5,1704,43.6,3.62,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3447,328.2,6742,0.0,10.52,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3448,144.6,3093,0.0,5.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3449,300.1,6224,0.0,9.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3450,193.9,4200,0.0,6.53,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3451,273.5,5484,0.0,8.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3452,270.4,5312,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3453,335.2,6676,0.0,10.07,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3454,91.2,1845,39.2,3.63,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3455,343.4,7116,0.0,10.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3456,142.1,2958,0.0,4.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3457,264.5,5367,0.0,8.7,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3458,189.8,4034,0.0,6.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3459,342.2,7201,0.0,10.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3460,66.0,1298,65.2,3.23,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3461,331.3,6831,0.0,9.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3462,168.4,3391,0.0,6.54,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3463,345.5,7268,0.0,10.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3464,244.2,5068,0.0,7.66,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3465,288.7,5916,0.0,9.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3466,305.7,6200,0.0,9.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3467,96.9,1747,33.1,3.85,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3468,153.1,2945,0.0,5.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3469,393.3,8047,0.0,11.5,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3470,280.6,5502,0.0,8.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3471,179.1,3805,0.0,6.89,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3472,151.3,2981,0.0,5.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3473,188.2,3780,0.0,5.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3474,346.3,7245,0.0,10.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3475,297.8,6022,0.0,8.8,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3476,218.8,4487,0.0,6.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3477,44.0,1051,76.9,3.52,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3478,175.2,3679,0.0,6.32,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3479,71.1,1381,60.4,3.57,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3480,271.0,5600,0.0,8.6,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3481,100.0,2041,35.4,3.91,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3482,307.4,6231,0.0,9.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3483,135.9,2589,0.0,5.18,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3484,197.0,3865,0.0,6.26,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3485,246.1,5059,0.0,7.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3486,101.4,2064,28.2,4.71,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3487,152.8,3089,0.0,5.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3488,65.7,1382,60.0,4.47,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3489,303.8,6269,0.0,10.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3490,337.2,6731,0.0,10.36,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3491,345.9,6923,0.0,10.24,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3492,161.7,3197,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3493,258.9,5402,0.0,8.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3494,124.1,2746,1.2,5.63,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3495,50.4,1093,70.6,4.25,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3496,378.5,7592,0.0,10.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3497,374.3,7700,0.0,11.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3498,244.8,5205,0.0,8.61,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3499,226.1,4621,0.0,7.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3500,181.3,3764,0.0,6.95,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3501,83.8,1630,43.0,4.34,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3502,343.2,7172,0.0,10.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3503,349.4,7173,0.0,10.25,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3504,225.4,4677,0.0,6.83,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3505,146.7,3146,0.0,5.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3506,116.3,2318,9.3,4.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3507,210.6,4513,0.0,7.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3508,361.2,7700,0.0,10.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3509,58.3,1156,70.5,3.45,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3510,172.5,3440,0.0,6.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3511,135.2,2758,0.0,5.22,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3512,130.2,2420,0.0,4.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3513,60.6,1264,65.4,3.43,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3514,71.2,1200,57.6,3.77,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3515,345.5,7058,0.0,10.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3516,265.7,5503,0.0,7.85,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3517,243.3,4798,0.0,7.39,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3518,76.6,1407,56.5,3.38,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3519,219.5,4394,0.0,7.4,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3520,288.0,5673,0.0,8.86,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3521,235.5,5001,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3522,233.0,4659,0.0,7.69,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3523,391.5,8257,0.0,11.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3524,82.3,1586,45.3,4.5,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3525,266.7,5681,0.0,8.72,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3526,390.8,7900,0.0,10.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3527,66.9,1548,57.0,3.81,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3528,122.5,2480,3.3,4.84,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3529,144.6,3083,0.0,5.49,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3530,308.3,6433,0.0,9.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3531,83.2,1482,55.7,3.86,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3532,65.6,1360,61.5,3.56,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3533,211.4,4248,0.0,6.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3534,160.1,2919,0.0,5.08,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3535,182.3,3928,0.0,5.56,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3536,162.9,3348,0.0,6.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3537,393.6,7891,0.0,11.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3538,131.8,2655,0.0,5.09,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3539,388.1,7846,0.0,11.19,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3540,298.5,6217,0.0,9.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3541,153.7,3287,0.0,6.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3542,103.4,2013,28.5,4.68,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3543,346.9,7221,0.0,10.37,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3544,297.0,5973,0.0,8.65,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3545,82.3,1620,44.6,3.78,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3546,100.6,2045,24.5,4.24,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3547,126.0,2675,0.0,4.87,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3548,60.0,1012,67.3,3.17,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3549,334.0,7027,0.0,10.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3550,135.5,2444,0.0,5.23,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3551,287.4,5540,0.0,8.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3552,220.5,4486,0.0,6.58,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3553,338.9,7020,0.0,10.35,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3554,108.0,2042,21.2,3.95,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3555,229.6,4731,0.0,7.2,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3556,189.9,3906,0.0,7.14,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3557,219.8,4567,0.0,7.64,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3558,238.4,5009,0.0,7.67,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3559,267.6,5504,0.0,8.05,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3560,229.8,4815,0.0,7.45,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3561,206.5,4053,0.0,7.29,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3562,405.4,8209,0.0,11.55,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3563,165.5,3363,0.0,6.06,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3564,215.0,4347,0.0,7.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3565,34.5,800,82.5,2.04,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3566,274.7,5892,0.0,9.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3567,175.2,3335,0.0,5.92,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3568,55.2,1179,75.8,3.39,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3569,61.0,1367,67.3,2.88,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3570,265.0,5388,0.0,8.31,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3571,231.1,4714,0.0,6.76,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3572,51.1,1341,74.1,2.98,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3573,326.7,6630,0.0,9.75,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3574,59.9,1085,68.8,3.15,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3575,341.4,6901,0.0,9.42,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3576,360.9,7444,0.0,10.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3577,169.1,3354,0.0,6.12,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3578,383.6,8095,0.0,12.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3579,181.3,3702,0.0,6.15,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3580,360.5,7364,0.0,10.88,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3581,252.3,5189,0.0,8.74,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3582,194.6,3885,0.0,6.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3583,202.7,4170,0.0,7.59,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3584,108.1,2090,25.1,4.9,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3585,99.7,2287,34.1,4.49,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3586,63.6,1326,63.1,3.42,HydraCoup Torque Multiplication Slip
+KOENIG-KDD-3587,229.0,4699,0.0,7.79,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3588,333.3,6703,0.0,9.96,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3589,314.6,6505,0.0,9.9,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3590,341.5,6920,0.0,9.57,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3591,310.4,6511,0.0,9.71,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3592,264.9,5483,0.0,8.03,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3593,359.2,7587,0.0,10.99,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3594,322.3,6574,0.0,10.1,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3595,293.4,5813,0.0,8.28,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3596,362.9,7288,0.0,10.84,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3597,407.9,8500,0.0,11.11,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3598,151.5,3164,0.0,6.33,100% Direct Drive Hydraulic Lockup
+KOENIG-KDD-3599,358.9,7313,0.0,11.07,100% Direct Drive Hydraulic Lockup

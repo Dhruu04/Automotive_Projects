@@ -1,0 +1,2601 @@
+Sensor_Pulse_ID,Tire_Slip_Angle_deg,In_Tread_Piezo_Accel_G,Estimated_Road_Friction_Mu,Contact_Patch_Length_mm,Tire_Grip_Status
+PIRELLI-CYBER-1000,2.47,242.7,1.04,172.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1001,4.34,315.1,1.0,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1002,8.5,513.4,0.71,138.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1003,1.69,186.8,1.07,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1004,6.63,421.1,0.78,152.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1005,7.88,503.0,0.76,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1006,5.84,368.7,0.9,152.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1007,2.19,230.9,0.99,174.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1008,2.14,254.0,1.05,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1009,3.96,296.2,0.95,165.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1010,8.96,519.8,0.74,138.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1011,3.12,284.2,1.0,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1012,2.39,263.2,1.03,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1013,4.93,371.7,0.87,157.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1014,4.84,348.0,0.87,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1015,1.69,180.2,1.1,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1016,6.87,434.6,0.86,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1017,6.53,425.9,0.88,154.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1018,3.09,254.4,0.97,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1019,4.85,351.7,0.94,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1020,2.66,247.9,1.0,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1021,6.05,352.4,0.85,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1022,6.17,416.5,0.76,157.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1023,7.05,440.0,0.78,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1024,4.21,310.5,0.91,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1025,7.03,449.7,0.78,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1026,7.52,482.5,0.77,140.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1027,4.55,318.9,0.91,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1028,5.98,370.2,0.84,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1029,3.18,253.4,1.03,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1030,3.72,253.4,0.97,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1031,5.84,428.0,0.85,151.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1032,6.56,429.5,0.89,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1033,6.39,408.5,0.9,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1034,4.88,331.2,0.88,164.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1035,4.84,356.0,0.91,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1036,5.54,357.9,0.87,160.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1037,6.69,404.7,0.83,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1038,5.87,395.5,0.82,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1039,3.32,257.1,0.94,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1040,5.13,366.7,0.85,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1041,3.03,234.4,1.03,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1042,2.94,241.4,0.96,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1043,2.39,244.9,1.03,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1044,5.92,405.7,0.89,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1045,5.92,386.1,0.91,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1046,4.42,333.3,0.99,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1047,2.13,219.6,1.08,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1048,8.03,488.8,0.74,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1049,7.73,494.0,0.7,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1050,5.84,378.7,0.88,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1051,0.66,166.4,1.0,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1052,4.96,337.4,0.96,158.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1053,8.04,494.5,0.69,145.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1054,5.06,336.0,0.97,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1055,7.28,460.1,0.78,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1056,8.49,506.6,0.75,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1057,5.99,371.5,0.89,148.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1058,2.86,244.7,0.91,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1059,6.03,392.2,0.87,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1060,7.44,441.9,0.84,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1061,1.06,144.9,1.08,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1062,7.11,427.1,0.85,148.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1063,5.95,386.7,0.86,150.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1064,2.93,274.7,1.03,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1065,4.42,290.3,0.89,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1066,1.58,210.4,0.96,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1067,7.92,478.9,0.7,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1068,2.72,234.9,1.04,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1069,7.55,440.6,0.73,149.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1070,6.14,388.8,0.84,152.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1071,5.57,382.0,0.91,156.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1072,1.15,163.1,1.1,179.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1073,5.21,346.4,0.87,154.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1074,4.21,301.4,0.98,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1075,3.88,327.6,0.95,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1076,8.72,521.0,0.61,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1077,0.68,146.9,1.11,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1078,2.77,239.3,1.02,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1079,1.69,206.4,1.12,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1080,7.75,480.6,0.78,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1081,3.12,281.3,0.98,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1082,1.08,159.5,1.07,182.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1083,7.35,454.9,0.79,148.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1084,7.48,443.6,0.76,155.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1085,5.02,321.6,0.88,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1086,5.5,345.9,0.91,154.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1087,6.26,409.3,0.78,148.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1088,4.61,304.4,0.97,162.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1089,5.59,371.7,0.82,150.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1090,8.7,508.0,0.76,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1091,6.08,383.9,0.88,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1092,2.58,218.6,1.04,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1093,6.8,426.3,0.78,151.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1094,6.76,435.8,0.77,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1095,4.32,314.5,0.91,163.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1096,7.49,473.7,0.83,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1097,0.94,173.6,1.11,173.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1098,1.14,168.0,1.08,178.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1099,0.85,171.6,1.13,180.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1100,5.08,344.8,0.89,154.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1101,1.89,208.5,1.01,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1102,7.22,468.8,0.72,151.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1103,4.53,307.8,0.89,160.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1104,3.23,245.2,1.03,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1105,2.9,247.1,1.0,175.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1106,5.26,356.5,0.85,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1107,3.4,264.9,1.03,167.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1108,0.78,153.1,1.11,184.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1109,7.41,463.6,0.73,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1110,6.52,409.8,0.82,154.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1111,8.6,520.3,0.69,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1112,3.66,309.9,1.0,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1113,7.05,434.1,0.81,151.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1114,4.42,309.7,0.9,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1115,7.19,469.7,0.78,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1116,3.4,269.4,0.93,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1117,6.19,398.9,0.88,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1118,8.09,497.4,0.8,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1119,4.12,295.7,0.96,163.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1120,5.92,377.5,0.83,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1121,8.55,492.7,0.8,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1122,1.15,182.5,1.11,181.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1123,7.76,459.4,0.83,140.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1124,7.9,464.6,0.84,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1125,5.44,393.7,0.94,155.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1126,5.22,361.2,0.86,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1127,4.16,304.2,0.96,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1128,6.53,420.0,0.79,152.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1129,1.63,173.1,1.06,175.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1130,3.79,280.5,1.02,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1131,6.09,405.8,0.78,153.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1132,2.85,258.5,0.96,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1133,1.32,169.0,1.05,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1134,6.09,389.0,0.81,155.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1135,5.27,385.3,0.87,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1136,5.41,358.4,0.85,155.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1137,5.32,336.9,0.85,160.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1138,6.77,408.2,0.82,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1139,2.75,232.6,1.02,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1140,7.22,413.8,0.8,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1141,2.12,231.3,1.13,169.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1142,7.87,479.7,0.77,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1143,6.41,398.6,0.87,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1144,1.16,173.6,1.1,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1145,4.01,293.3,0.95,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1146,4.1,290.7,0.92,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1147,7.34,441.9,0.79,146.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1148,6.9,443.5,0.81,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1149,7.97,484.7,0.73,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1150,4.96,326.4,1.02,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1151,7.13,416.8,0.77,144.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1152,7.46,480.6,0.82,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1153,1.74,232.2,1.07,177.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1154,2.88,268.0,0.95,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1155,5.16,353.5,0.95,155.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1156,5.07,344.0,0.89,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1157,2.4,211.2,0.99,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1158,2.94,251.3,0.96,172.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1159,1.01,142.3,1.15,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1160,2.5,237.5,1.02,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1161,3.36,290.3,1.01,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1162,6.68,398.7,0.77,150.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1163,3.5,268.3,0.96,166.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1164,5.73,366.8,0.88,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1165,2.78,268.4,1.09,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1166,4.62,340.1,0.99,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1167,8.61,507.8,0.75,133.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1168,7.35,453.9,0.73,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1169,2.6,220.1,1.01,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1170,5.28,361.3,0.98,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1171,3.72,286.6,0.92,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1172,4.68,328.2,0.86,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1173,7.95,467.8,0.77,141.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1174,1.61,202.3,1.1,172.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1175,5.98,363.0,0.81,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1176,7.85,481.4,0.72,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1177,8.33,509.7,0.73,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1178,2.33,230.1,1.11,172.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1179,2.43,222.1,1.06,172.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1180,0.88,135.2,1.13,185.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1181,6.27,401.4,0.87,151.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1182,7.19,457.9,0.83,145.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1183,8.88,506.0,0.59,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1184,6.88,442.0,0.8,148.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1185,5.81,376.1,0.93,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1186,1.13,156.0,1.14,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1187,5.03,378.0,0.96,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1188,5.34,360.9,0.85,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1189,4.59,311.8,1.01,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1190,3.55,321.4,0.99,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1191,6.45,389.8,0.73,151.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1192,3.79,303.6,0.94,166.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1193,7.74,451.5,0.76,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1194,0.94,149.1,1.1,183.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1195,5.47,368.5,0.85,155.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1196,0.8,173.1,1.09,178.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1197,3.85,269.9,1.01,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1198,1.49,183.2,1.1,174.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1199,8.03,475.6,0.71,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1200,7.07,440.9,0.8,150.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1201,2.89,243.8,0.97,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1202,1.47,202.3,1.04,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1203,6.63,430.0,0.83,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1204,3.02,242.6,0.91,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1205,0.66,159.3,1.11,181.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1206,7.09,444.4,0.82,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1207,3.66,287.3,0.96,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1208,5.62,365.0,0.86,155.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1209,6.28,390.3,0.83,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1210,3.2,289.6,1.01,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1211,5.35,369.1,0.9,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1212,3.27,239.2,1.0,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1213,1.73,185.3,1.15,172.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1214,7.47,422.4,0.79,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1215,6.83,427.3,0.77,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1216,1.0,177.2,1.06,185.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1217,1.24,179.3,1.03,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1218,4.22,305.6,0.87,162.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1219,1.77,210.2,1.09,175.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1220,5.83,386.3,0.86,151.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1221,1.05,143.0,1.08,180.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1222,5.6,394.0,0.96,159.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1223,7.91,468.3,0.77,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1224,3.29,285.3,0.97,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1225,6.94,449.9,0.79,151.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1226,4.75,345.7,0.95,164.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1227,4.32,327.7,0.95,163.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1228,2.93,267.7,0.97,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1229,9.0,540.5,0.67,133.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1230,0.79,171.4,1.19,185.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1231,0.5,157.6,1.11,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1232,4.19,328.6,0.94,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1233,5.6,371.0,0.84,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1234,1.64,184.6,1.03,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1235,2.52,238.9,1.04,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1236,4.59,288.1,0.91,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1237,4.41,325.1,0.87,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1238,6.53,406.7,0.77,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1239,5.99,398.7,0.83,153.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1240,0.63,153.4,1.11,182.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1241,1.87,195.5,1.03,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1242,5.9,367.3,0.9,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1243,7.49,461.2,0.75,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1244,5.98,407.3,0.84,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1245,6.54,422.9,0.82,154.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1246,5.76,423.1,0.88,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1247,0.51,156.6,1.14,180.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1248,1.38,221.4,1.05,173.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1249,5.93,392.5,0.91,146.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1250,4.07,276.0,0.93,162.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1251,4.18,295.3,0.98,168.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1252,0.76,165.2,1.04,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1253,6.85,430.7,0.84,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1254,0.62,131.2,1.14,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1255,5.39,363.7,0.91,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1256,3.58,295.1,0.99,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1257,7.57,465.1,0.81,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1258,4.16,286.5,0.92,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1259,7.16,440.5,0.8,149.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1260,6.59,420.9,0.77,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1261,5.0,334.9,0.9,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1262,7.03,448.9,0.78,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1263,4.51,336.4,0.92,164.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1264,6.88,419.5,0.85,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1265,5.1,344.5,0.87,159.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1266,1.64,183.5,1.08,177.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1267,3.06,265.3,1.03,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1268,7.72,457.5,0.84,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1269,0.94,174.3,1.08,180.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1270,5.84,352.7,0.9,153.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1271,0.77,183.2,1.11,181.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1272,8.73,503.3,0.67,137.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1273,8.99,510.6,0.71,137.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1274,3.71,261.3,0.93,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1275,0.57,150.6,1.11,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1276,7.9,480.1,0.76,146.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1277,8.72,517.4,0.71,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1278,4.29,342.4,1.0,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1279,5.3,349.1,0.89,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1280,1.57,192.7,1.04,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1281,1.4,152.0,1.08,183.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1282,3.26,282.4,1.01,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1283,6.24,423.5,0.81,152.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1284,8.55,508.9,0.74,137.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1285,0.71,167.3,1.1,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1286,5.3,324.5,0.91,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1287,5.7,377.6,0.84,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1288,7.19,460.3,0.84,144.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1289,2.75,247.8,1.01,169.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1290,0.93,152.6,1.09,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1291,3.3,268.6,0.95,166.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1292,6.9,459.1,0.87,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1293,4.71,338.2,0.87,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1294,7.79,462.1,0.74,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1295,8.76,510.6,0.72,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1296,1.75,196.1,1.1,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1297,5.86,376.0,0.92,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1298,3.92,279.0,1.03,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1299,7.04,433.2,0.77,152.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1300,7.19,436.4,0.78,148.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1301,3.65,313.2,0.94,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1302,8.19,495.2,0.77,140.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1303,8.34,506.5,0.83,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1304,3.47,270.4,1.11,166.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1305,8.61,534.0,0.74,140.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1306,6.74,426.6,0.86,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1307,1.35,178.3,1.06,178.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1308,4.95,335.0,0.88,157.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1309,8.84,540.5,0.68,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1310,6.7,422.4,0.85,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1311,4.84,357.2,0.9,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1312,5.89,399.6,0.88,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1313,5.44,349.6,0.9,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1314,3.26,276.4,0.87,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1315,3.39,272.4,0.97,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1316,1.39,184.3,1.07,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1317,7.0,417.8,0.81,151.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1318,8.29,476.1,0.69,144.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1319,0.92,114.3,1.13,185.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1320,3.43,267.2,1.01,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1321,8.83,524.2,0.78,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1322,3.07,256.6,1.02,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1323,0.68,145.4,1.14,176.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1324,6.96,443.5,0.78,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1325,5.03,327.7,0.92,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1326,7.63,456.2,0.69,144.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1327,5.65,356.4,0.94,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1328,7.88,485.3,0.73,146.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1329,7.99,470.2,0.74,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1330,2.95,259.8,0.98,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1331,6.7,420.2,0.82,152.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1332,3.07,271.4,0.97,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1333,0.87,156.5,1.07,176.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1334,5.35,323.8,0.86,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1335,5.84,386.2,0.82,156.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1336,2.98,243.0,0.93,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1337,0.56,152.2,1.19,178.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1338,8.21,489.1,0.82,144.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1339,1.8,213.1,1.07,176.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1340,7.89,458.3,0.66,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1341,4.97,382.1,0.92,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1342,6.95,433.9,0.87,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1343,8.51,497.6,0.72,139.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1344,0.91,155.1,1.06,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1345,8.79,504.4,0.77,135.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1346,3.45,282.1,0.95,164.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1347,4.97,363.3,0.91,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1348,4.76,314.3,0.95,163.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1349,2.86,238.5,0.97,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1350,5.97,376.1,0.86,150.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1351,1.31,170.5,1.01,181.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1352,5.41,393.3,0.92,151.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1353,6.75,429.2,0.76,151.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1354,3.6,275.6,0.95,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1355,1.74,197.1,1.05,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1356,7.27,435.6,0.77,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1357,7.47,454.4,0.75,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1358,5.47,379.1,0.84,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1359,7.51,478.2,0.81,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1360,4.54,321.8,0.99,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1361,6.9,457.5,0.86,149.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1362,2.39,226.2,1.02,174.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1363,6.83,423.1,0.83,154.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1364,3.31,287.4,0.95,173.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1365,6.78,426.2,0.83,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1366,3.01,256.7,0.97,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1367,6.02,409.1,0.81,158.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1368,8.9,506.7,0.72,136.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1369,4.85,345.7,0.9,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1370,5.62,362.8,0.94,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1371,8.13,508.3,0.71,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1372,2.56,222.6,1.02,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1373,7.17,442.2,0.75,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1374,2.71,246.6,1.02,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1375,3.74,295.1,0.97,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1376,1.09,158.1,1.09,184.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1377,8.02,454.7,0.77,137.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1378,7.56,432.2,0.74,139.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1379,5.78,373.5,0.87,157.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1380,7.19,446.8,0.71,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1381,5.85,379.6,0.83,150.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1382,5.33,364.1,0.86,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1383,2.64,250.0,1.02,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1384,2.11,216.4,0.98,177.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1385,6.8,450.7,0.89,149.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1386,5.65,361.0,0.93,153.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1387,3.93,296.6,0.92,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1388,3.09,271.8,1.0,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1389,7.63,456.6,0.74,148.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1390,8.56,497.6,0.79,135.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1391,0.57,122.9,1.19,188.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1392,2.18,197.3,1.1,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1393,2.3,237.7,1.02,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1394,6.36,403.2,0.85,148.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1395,1.0,163.2,1.11,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1396,5.07,361.7,0.87,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1397,2.35,234.4,0.98,172.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1398,4.13,319.9,0.98,165.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1399,4.1,331.0,0.95,157.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1400,2.5,245.8,1.03,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1401,1.33,172.9,1.14,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1402,3.76,297.2,0.93,168.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1403,2.54,244.3,1.0,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1404,4.62,306.0,0.9,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1405,0.68,125.1,1.14,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1406,4.72,318.6,0.92,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1407,4.6,322.8,0.91,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1408,8.85,545.5,0.68,135.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1409,5.52,355.5,0.86,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1410,8.64,516.8,0.7,137.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1411,4.09,306.4,0.9,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1412,0.77,143.0,1.13,181.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1413,2.11,197.9,1.04,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1414,8.47,497.8,0.68,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1415,7.8,465.2,0.72,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1416,4.88,354.2,0.89,164.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1417,1.23,172.2,1.12,178.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1418,0.61,120.5,1.08,183.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1419,8.82,518.5,0.67,138.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1420,6.16,416.0,0.86,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1421,6.15,414.2,0.94,150.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1422,3.07,262.0,0.99,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1423,0.97,139.1,1.08,182.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1424,0.51,144.2,1.13,180.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1425,3.64,274.7,0.95,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1426,1.79,201.3,1.09,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1427,1.68,203.7,1.06,175.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1428,4.93,313.4,0.97,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1429,8.06,474.1,0.8,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1430,4.53,327.8,0.96,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1431,1.69,180.8,1.04,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1432,4.25,317.7,0.95,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1433,3.2,260.5,0.95,167.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1434,2.49,226.9,1.06,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1435,7.09,428.8,0.84,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1436,7.25,449.1,0.8,144.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1437,7.37,437.9,0.71,154.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1438,4.52,317.9,0.9,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1439,8.91,521.6,0.64,142.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1440,0.79,169.4,1.13,183.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1441,5.05,340.2,0.89,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1442,4.79,286.9,0.91,158.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1443,4.53,332.0,0.91,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1444,1.92,215.4,1.04,171.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1445,4.32,354.1,0.93,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1446,7.15,437.7,0.9,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1447,7.7,450.1,0.77,139.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1448,5.57,355.9,0.86,153.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1449,7.0,429.0,0.75,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1450,1.99,184.4,1.07,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1451,3.81,289.1,0.94,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1452,4.79,336.4,0.93,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1453,3.11,249.2,0.97,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1454,6.5,426.0,0.85,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1455,3.96,287.0,0.94,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1456,6.75,435.4,0.84,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1457,8.35,493.4,0.73,143.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1458,3.21,283.2,1.0,172.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1459,1.8,222.7,1.06,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1460,8.81,514.2,0.75,137.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1461,8.24,480.0,0.71,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1462,4.83,323.8,0.93,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1463,8.71,529.5,0.72,135.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1464,8.29,495.0,0.76,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1465,2.34,214.0,1.05,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1466,4.13,299.8,0.94,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1467,8.14,487.0,0.71,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1468,3.57,270.4,0.92,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1469,2.32,223.1,1.09,170.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1470,7.21,476.8,0.8,145.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1471,4.3,299.4,0.93,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1472,7.3,438.3,0.77,145.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1473,5.13,365.3,0.87,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1474,3.54,275.7,0.97,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1475,4.0,285.2,0.95,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1476,7.06,424.4,0.82,154.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1477,3.69,291.3,0.99,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1478,3.37,287.8,0.99,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1479,1.15,180.2,1.12,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1480,8.26,496.5,0.79,142.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1481,3.56,245.8,0.95,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1482,6.53,407.9,0.78,155.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1483,6.36,398.1,0.75,148.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1484,2.87,239.3,1.03,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1485,3.14,237.1,1.08,167.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1486,4.76,338.8,0.89,165.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1487,8.13,477.0,0.74,143.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1488,5.43,373.1,0.9,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1489,7.11,432.3,0.79,149.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1490,6.53,401.6,0.86,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1491,8.01,461.6,0.69,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1492,5.22,376.1,0.94,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1493,3.66,273.2,0.92,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1494,2.96,257.4,0.87,165.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1495,2.42,252.7,1.03,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1496,8.32,508.3,0.72,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1497,8.06,475.9,0.74,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1498,4.76,326.6,0.89,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1499,3.33,277.1,1.01,167.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1500,4.22,307.9,0.95,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1501,3.14,255.0,1.06,165.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1502,4.06,299.6,0.95,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1503,6.5,429.3,0.81,157.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1504,7.61,469.0,0.74,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1505,5.86,373.6,0.83,158.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1506,1.32,177.1,1.08,172.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1507,2.84,248.2,1.03,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1508,3.61,280.2,1.01,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1509,5.21,367.3,0.89,159.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1510,2.94,263.0,1.01,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1511,8.85,522.3,0.64,135.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1512,3.61,285.6,0.92,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1513,5.79,380.0,0.82,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1514,5.51,358.7,0.93,151.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1515,4.13,314.7,0.96,164.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1516,7.69,468.2,0.76,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1517,4.72,334.8,0.89,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1518,4.14,279.5,0.94,161.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1519,2.52,216.2,1.03,178.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1520,2.72,264.4,1.06,166.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1521,4.81,354.2,0.98,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1522,6.67,431.3,0.84,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1523,1.21,150.7,1.07,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1524,5.15,342.4,0.86,153.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1525,5.95,365.2,0.83,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1526,8.27,458.9,0.76,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1527,7.31,428.3,0.77,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1528,5.6,328.7,0.85,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1529,2.62,263.6,1.05,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1530,5.62,382.0,0.91,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1531,8.27,495.3,0.69,143.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1532,5.19,369.6,0.91,152.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1533,1.68,176.3,1.11,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1534,2.81,241.2,1.0,171.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1535,2.2,218.2,1.04,172.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1536,6.27,395.2,0.83,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1537,8.78,494.1,0.75,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1538,7.36,430.7,0.8,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1539,8.73,532.9,0.71,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1540,8.55,516.1,0.75,146.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1541,3.51,282.4,1.0,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1542,7.48,467.7,0.77,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1543,3.3,275.9,0.92,171.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1544,1.79,199.0,1.12,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1545,4.17,314.7,0.95,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1546,5.97,406.3,0.91,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1547,5.88,385.3,0.83,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1548,3.04,260.2,0.94,162.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1549,5.57,388.5,0.8,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1550,6.1,397.6,0.83,147.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1551,5.95,388.0,0.88,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1552,6.43,404.5,0.84,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1553,1.41,178.0,1.11,180.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1554,2.36,242.6,1.04,180.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1555,3.53,282.1,0.96,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1556,5.36,382.0,0.88,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1557,7.27,458.3,0.74,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1558,1.09,169.4,1.14,184.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1559,2.1,218.3,0.97,170.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1560,0.97,184.2,1.09,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1561,4.19,305.4,0.99,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1562,8.89,484.9,0.66,141.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1563,1.59,187.3,1.11,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1564,5.85,382.3,0.79,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1565,7.66,453.0,0.77,144.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1566,5.09,361.2,0.96,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1567,3.45,264.9,0.98,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1568,3.38,272.9,1.0,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1569,2.8,259.6,0.96,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1570,8.42,487.8,0.75,137.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1571,4.87,340.1,0.86,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1572,7.56,475.9,0.85,147.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1573,0.64,149.8,1.09,183.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1574,2.83,262.9,1.0,168.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1575,5.34,386.4,0.92,157.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1576,2.69,264.0,1.07,168.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1577,3.64,290.2,0.94,168.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1578,5.87,383.6,0.81,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1579,2.09,205.6,1.0,174.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1580,6.64,419.6,0.82,153.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1581,4.16,307.7,0.92,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1582,8.45,491.6,0.69,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1583,7.57,461.9,0.77,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1584,7.95,469.1,0.69,144.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1585,4.52,328.6,0.87,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1586,2.94,241.6,1.05,173.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1587,0.93,167.6,1.14,182.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1588,7.49,463.2,0.74,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1589,8.37,463.1,0.75,138.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1590,5.42,341.1,0.92,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1591,6.6,423.2,0.78,153.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1592,2.26,210.7,1.08,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1593,1.81,189.9,1.09,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1594,2.22,206.1,1.12,174.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1595,1.04,168.7,1.09,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1596,2.89,247.8,1.0,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1597,7.73,460.0,0.75,148.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1598,1.81,189.8,1.06,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1599,0.61,149.0,1.19,178.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1600,6.77,428.8,0.84,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1601,2.82,268.0,0.94,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1602,5.44,360.3,0.88,152.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1603,7.45,452.5,0.79,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1604,4.91,326.0,0.96,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1605,2.94,239.6,1.0,168.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1606,6.57,406.4,0.85,155.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1607,8.26,507.9,0.71,140.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1608,1.46,190.5,1.12,176.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1609,1.61,195.1,1.14,176.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1610,3.33,284.5,1.03,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1611,8.7,532.6,0.71,136.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1612,5.54,378.5,0.85,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1613,7.61,454.0,0.79,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1614,3.44,282.4,0.99,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1615,2.2,224.0,1.08,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1616,6.21,384.7,0.86,153.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1617,6.73,399.8,0.9,149.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1618,1.65,195.1,1.1,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1619,1.62,188.1,1.08,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1620,7.9,451.1,0.72,140.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1621,6.37,415.4,0.79,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1622,7.37,459.9,0.79,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1623,4.05,305.6,0.92,166.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1624,6.18,394.3,0.87,153.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1625,0.59,131.7,1.07,179.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1626,5.07,353.4,0.87,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1627,5.75,389.4,0.79,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1628,8.34,508.6,0.76,136.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1629,7.41,455.3,0.83,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1630,5.45,364.6,0.92,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1631,7.13,465.6,0.75,143.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1632,2.17,213.0,1.02,174.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1633,3.21,273.3,0.99,169.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1634,1.22,157.7,1.1,175.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1635,1.83,191.2,1.1,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1636,1.69,186.7,1.0,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1637,2.09,213.1,1.09,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1638,8.88,498.5,0.65,141.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1639,1.95,218.2,1.07,171.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1640,4.15,323.8,1.02,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1641,3.16,250.8,1.01,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1642,7.31,439.4,0.83,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1643,3.83,293.9,0.93,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1644,7.1,442.1,0.82,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1645,6.01,373.1,0.76,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1646,3.66,290.3,1.01,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1647,5.8,399.0,0.88,152.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1648,4.15,307.1,0.96,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1649,3.89,293.8,0.92,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1650,8.56,511.8,0.68,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1651,8.29,485.6,0.76,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1652,6.75,454.6,0.88,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1653,2.99,233.5,1.03,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1654,7.63,461.2,0.73,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1655,2.55,233.2,0.99,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1656,5.94,372.6,0.84,155.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1657,5.2,356.3,0.86,157.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1658,5.29,339.8,0.86,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1659,7.21,453.4,0.77,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1660,8.63,510.5,0.71,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1661,8.43,499.2,0.68,135.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1662,8.21,495.7,0.68,139.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1663,4.37,327.9,0.99,162.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1664,6.96,424.4,0.72,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1665,8.96,531.7,0.7,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1666,2.12,218.3,1.02,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1667,2.62,237.2,1.0,173.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1668,3.38,280.8,0.95,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1669,6.9,431.2,0.88,151.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1670,7.99,480.8,0.74,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1671,3.52,298.8,1.0,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1672,8.0,484.1,0.72,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1673,5.84,386.0,0.9,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1674,4.26,310.7,0.91,158.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1675,5.12,362.5,0.86,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1676,6.62,406.9,0.83,151.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1677,1.74,204.3,1.07,175.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1678,0.73,171.1,1.14,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1679,7.69,465.0,0.81,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1680,0.53,109.6,1.12,185.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1681,2.75,257.4,1.02,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1682,1.68,195.1,1.11,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1683,1.16,161.1,1.14,176.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1684,5.95,364.6,0.9,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1685,5.49,375.0,0.91,158.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1686,3.78,298.5,1.05,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1687,7.68,458.2,0.76,148.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1688,7.24,457.8,0.87,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1689,3.24,248.8,0.99,162.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1690,3.95,299.0,0.92,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1691,8.81,532.6,0.65,139.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1692,1.24,162.8,1.06,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1693,5.55,371.3,0.84,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1694,3.05,267.6,1.0,170.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1695,2.0,231.9,1.04,173.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1696,2.0,213.8,1.07,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1697,8.94,525.9,0.75,140.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1698,2.51,270.6,1.03,173.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1699,8.23,483.1,0.75,142.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1700,3.7,276.2,0.93,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1701,7.0,433.5,0.81,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1702,7.96,476.0,0.8,143.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1703,1.39,169.6,1.12,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1704,7.2,425.1,0.78,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1705,0.81,152.8,1.11,181.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1706,2.6,232.9,1.03,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1707,8.83,523.8,0.7,137.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1708,4.22,304.6,1.0,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1709,7.46,453.9,0.78,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1710,5.11,364.7,0.9,153.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1711,4.61,331.2,0.85,159.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1712,6.85,415.6,0.79,151.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1713,8.31,487.4,0.78,142.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1714,1.64,202.7,1.08,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1715,7.01,406.8,0.71,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1716,2.78,222.8,1.04,171.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1717,7.09,440.2,0.84,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1718,7.89,463.8,0.69,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1719,3.09,269.2,1.04,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1720,7.23,459.3,0.82,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1721,7.16,437.2,0.79,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1722,7.8,475.1,0.79,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1723,5.1,366.4,0.92,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1724,8.46,511.4,0.72,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1725,5.42,355.5,0.92,160.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1726,5.72,386.0,0.84,150.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1727,2.16,187.7,0.96,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1728,0.82,166.3,1.18,184.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1729,1.06,153.4,1.06,182.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1730,4.21,294.6,0.92,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1731,2.11,216.2,0.99,178.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1732,2.6,261.7,1.04,173.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1733,4.91,327.3,0.94,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1734,0.53,158.1,1.05,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1735,0.68,165.5,1.1,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1736,4.8,354.9,0.95,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1737,8.69,514.2,0.68,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1738,6.38,429.8,0.89,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1739,5.18,341.8,0.92,158.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1740,0.76,176.3,1.1,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1741,2.78,241.7,1.03,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1742,2.93,256.9,0.99,163.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1743,6.13,389.7,0.88,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1744,0.97,171.5,1.15,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1745,3.42,278.4,1.02,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1746,8.57,504.0,0.73,139.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1747,7.78,470.8,0.76,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1748,1.16,188.1,1.08,176.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1749,0.99,166.0,1.07,180.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1750,7.03,441.3,0.77,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1751,3.24,272.6,0.95,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1752,6.61,414.2,0.83,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1753,1.05,180.7,1.1,184.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1754,1.87,197.9,1.09,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1755,3.54,276.3,0.92,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1756,3.71,304.9,1.01,167.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1757,5.71,383.0,0.84,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1758,6.5,429.6,0.83,149.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1759,3.96,269.9,0.96,163.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1760,5.91,373.8,0.82,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1761,2.7,250.8,0.98,176.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1762,2.88,243.3,0.97,166.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1763,6.31,409.6,0.91,150.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1764,3.59,274.8,0.99,170.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1765,5.92,389.8,0.87,151.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1766,6.78,431.6,0.78,150.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1767,8.19,467.8,0.81,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1768,7.92,465.4,0.81,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1769,7.51,483.1,0.81,145.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1770,5.66,350.3,0.9,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1771,7.53,461.9,0.78,144.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1772,6.73,424.0,0.8,151.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1773,3.27,293.4,0.94,166.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1774,7.25,441.7,0.74,144.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1775,7.79,475.3,0.73,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1776,2.47,212.0,0.98,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1777,8.0,460.1,0.79,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1778,7.13,446.7,0.8,152.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1779,1.27,150.8,1.14,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1780,7.23,432.3,0.78,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1781,8.68,483.6,0.65,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1782,0.85,132.8,1.04,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1783,1.37,203.9,1.14,176.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1784,1.73,198.7,1.02,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1785,4.9,312.7,0.86,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1786,4.04,294.6,0.92,162.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1787,8.62,482.5,0.68,140.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1788,1.07,161.5,1.11,183.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1789,5.09,350.2,0.94,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1790,5.22,361.4,0.95,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1791,7.57,438.3,0.78,151.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1792,5.71,359.1,0.89,156.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1793,6.04,383.3,0.8,151.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1794,1.2,166.2,1.09,177.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1795,8.54,496.6,0.74,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1796,2.99,221.2,0.99,173.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1797,1.0,156.3,1.11,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1798,4.42,343.9,0.98,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1799,8.69,542.2,0.75,144.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1800,0.59,152.9,1.09,181.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1801,4.38,307.4,0.85,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1802,8.32,493.4,0.71,137.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1803,0.95,128.3,1.02,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1804,8.78,520.2,0.72,140.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1805,1.86,188.1,1.04,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1806,1.95,198.9,1.07,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1807,8.25,507.6,0.73,139.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1808,6.77,413.3,0.84,152.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1809,8.57,499.1,0.64,145.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1810,8.14,487.1,0.71,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1811,6.96,443.4,0.79,150.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1812,7.99,463.2,0.72,151.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1813,5.45,352.2,0.86,160.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1814,1.62,233.8,1.03,172.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1815,7.0,437.8,0.78,151.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1816,0.87,154.8,1.1,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1817,0.71,156.3,1.09,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1818,7.65,455.8,0.79,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1819,4.76,337.6,0.89,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1820,8.6,509.3,0.74,143.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1821,3.76,279.7,0.87,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1822,0.83,174.1,1.05,182.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1823,4.82,329.0,0.83,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1824,3.49,272.2,0.91,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1825,8.7,484.3,0.71,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1826,2.23,213.0,1.06,174.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1827,1.05,206.3,1.08,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1828,7.67,458.8,0.77,143.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1829,7.17,435.8,0.79,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1830,0.9,178.4,1.07,180.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1831,5.65,347.7,0.86,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1832,6.02,378.9,0.9,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1833,0.55,154.1,1.08,184.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1834,7.34,455.0,0.81,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1835,5.5,389.3,0.82,157.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1836,2.95,252.2,1.05,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1837,8.58,523.1,0.75,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1838,6.51,384.8,0.87,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1839,3.39,265.7,0.89,168.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1840,8.89,519.4,0.7,141.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1841,2.96,257.1,0.94,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1842,8.99,527.3,0.76,135.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1843,6.36,428.9,0.77,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1844,8.79,507.1,0.7,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1845,1.48,180.6,1.1,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1846,4.98,324.5,0.9,158.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1847,6.39,400.6,0.9,148.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1848,6.92,422.7,0.79,152.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1849,5.06,326.1,0.92,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1850,3.42,287.7,0.98,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1851,5.95,422.2,0.79,151.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1852,0.87,157.9,1.12,186.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1853,0.53,155.9,1.15,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1854,9.0,540.8,0.67,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1855,3.85,286.9,0.91,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1856,7.96,470.9,0.66,143.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1857,3.05,283.5,1.02,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1858,7.86,472.9,0.8,145.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1859,4.82,350.8,0.91,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1860,6.35,393.3,0.82,156.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1861,8.81,478.3,0.71,137.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1862,3.91,283.0,0.94,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1863,1.28,158.6,1.1,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1864,2.08,212.9,0.99,174.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1865,4.01,308.8,0.91,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1866,4.39,335.3,0.91,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1867,4.63,335.4,0.88,160.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1868,4.52,342.8,0.92,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1869,3.81,316.5,0.91,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1870,1.55,170.3,1.1,181.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1871,6.01,394.1,0.85,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1872,1.08,157.9,1.09,178.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1873,4.24,300.0,0.96,165.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1874,8.52,513.1,0.7,140.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1875,1.18,168.1,1.13,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1876,7.84,464.4,0.73,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1877,1.97,201.5,1.1,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1878,8.36,503.5,0.7,141.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1879,5.17,347.0,0.91,155.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1880,5.15,329.2,0.94,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1881,3.65,276.3,0.91,168.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1882,6.0,395.3,0.91,149.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1883,8.71,517.4,0.72,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1884,7.1,449.8,0.87,149.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1885,7.66,482.1,0.74,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1886,7.67,462.9,0.75,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1887,7.54,457.4,0.76,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1888,1.17,168.2,1.13,182.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1889,1.26,194.6,1.06,174.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1890,8.43,501.9,0.73,140.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1891,2.09,236.7,1.0,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1892,3.76,298.0,0.92,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1893,0.99,153.8,1.07,182.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1894,2.31,217.0,1.1,171.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1895,5.54,355.6,0.88,152.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1896,4.46,326.2,0.97,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1897,8.19,488.9,0.79,139.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1898,5.23,349.9,0.89,157.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1899,7.25,424.5,0.77,143.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1900,4.5,323.3,0.93,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1901,1.33,164.8,1.06,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1902,5.94,408.6,0.92,160.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1903,7.98,469.1,0.72,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1904,1.21,143.5,1.1,178.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1905,4.59,351.1,0.9,159.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1906,2.94,252.4,0.96,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1907,0.53,156.1,1.1,187.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1908,5.54,370.8,0.88,156.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1909,6.99,424.5,0.77,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1910,1.66,208.0,1.08,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1911,6.46,394.0,0.83,151.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1912,5.28,387.6,0.86,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1913,5.68,378.7,0.88,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1914,1.74,206.3,1.02,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1915,5.83,388.6,0.94,155.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1916,7.65,461.6,0.79,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1917,6.26,381.9,0.83,152.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1918,8.35,496.0,0.73,139.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1919,3.47,266.9,0.98,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1920,0.51,182.7,1.13,185.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1921,4.89,344.2,0.93,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1922,2.33,234.7,1.07,178.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1923,3.29,258.5,0.99,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1924,5.18,321.3,0.83,154.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1925,5.13,359.8,0.85,159.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1926,4.78,349.3,0.89,163.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1927,6.81,441.1,0.85,151.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1928,1.89,184.6,1.04,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1929,7.02,441.9,0.72,148.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1930,7.58,441.0,0.82,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1931,0.93,133.6,1.04,183.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1932,4.03,322.1,0.98,157.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1933,2.32,249.5,1.02,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1934,4.55,337.0,0.82,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1935,2.73,234.9,1.11,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1936,4.45,308.2,0.91,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1937,3.38,258.7,0.94,167.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1938,3.73,297.2,0.97,167.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1939,2.06,210.8,1.01,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1940,5.99,385.3,0.85,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1941,2.02,208.5,1.1,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1942,7.97,473.2,0.76,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1943,2.65,251.9,0.94,169.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1944,2.81,286.3,1.0,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1945,5.69,399.1,0.86,158.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1946,7.5,438.3,0.79,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1947,6.82,417.7,0.84,148.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1948,8.82,517.5,0.76,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1949,4.83,350.6,0.9,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1950,1.74,184.3,1.05,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1951,1.84,226.6,1.06,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1952,7.46,452.3,0.78,150.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1953,8.08,480.4,0.87,145.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1954,1.74,235.8,1.01,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1955,5.13,364.7,0.87,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1956,8.97,549.0,0.67,142.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1957,4.82,331.1,0.92,153.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1958,3.73,279.0,1.03,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1959,2.44,187.8,0.96,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1960,6.01,386.2,0.83,155.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1961,4.19,301.3,0.9,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1962,1.58,200.5,1.1,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1963,4.71,352.2,0.93,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1964,4.72,333.2,0.9,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1965,4.83,323.0,0.95,160.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1966,8.12,496.5,0.77,141.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1967,2.35,193.7,1.0,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1968,8.45,479.6,0.71,145.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1969,6.54,388.3,0.87,155.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1970,5.82,384.0,0.86,149.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1971,5.97,405.2,0.84,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1972,1.07,153.5,1.12,185.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1973,7.63,457.4,0.75,142.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1974,0.78,159.0,1.15,186.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1975,3.26,253.2,1.0,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1976,2.37,210.6,1.06,172.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1977,8.52,501.3,0.67,137.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1978,2.53,247.5,1.04,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1979,1.28,209.4,1.03,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1980,6.51,420.8,0.73,149.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1981,5.15,297.0,0.85,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1982,6.36,422.3,0.82,149.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1983,2.96,226.7,1.05,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1984,3.6,302.8,0.98,168.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1985,3.42,260.9,0.95,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1986,8.94,536.5,0.65,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1987,7.06,453.2,0.75,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1988,1.76,209.1,1.05,175.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1989,1.67,201.7,1.06,176.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1990,6.85,432.9,0.76,149.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1991,8.97,526.6,0.67,138.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1992,1.02,197.0,1.04,174.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1993,8.77,518.0,0.66,140.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1994,2.92,300.3,1.01,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1995,5.94,382.1,0.85,154.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1996,5.4,358.0,0.9,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1997,7.12,455.5,0.86,144.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-1998,3.77,284.9,1.0,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-1999,8.72,508.7,0.76,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2000,0.6,150.4,1.18,187.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2001,6.29,392.8,0.82,152.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2002,3.12,250.0,0.98,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2003,2.85,263.4,0.99,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2004,7.95,477.1,0.73,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2005,2.5,216.9,0.97,171.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2006,2.44,229.7,0.93,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2007,5.21,387.0,0.88,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2008,1.16,166.3,1.03,178.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2009,7.21,423.2,0.74,145.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2010,4.85,340.7,0.93,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2011,5.57,346.4,0.86,157.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2012,2.01,212.0,1.0,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2013,2.5,268.7,1.08,175.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2014,8.44,467.8,0.69,138.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2015,8.63,531.2,0.71,138.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2016,3.35,255.8,0.99,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2017,7.97,480.6,0.78,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2018,5.37,347.6,0.83,160.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2019,1.1,170.8,1.09,183.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2020,2.81,236.7,0.99,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2021,1.84,185.9,1.0,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2022,7.23,460.2,0.79,144.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2023,4.19,307.6,0.96,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2024,2.69,234.6,1.02,168.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2025,7.08,393.8,0.76,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2026,8.09,478.8,0.74,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2027,7.65,480.1,0.79,142.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2028,3.54,279.3,0.98,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2029,1.19,182.4,1.14,177.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2030,7.21,443.5,0.84,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2031,2.99,227.9,1.02,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2032,2.41,215.3,1.04,172.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2033,5.1,343.7,0.9,160.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2034,3.71,282.7,0.97,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2035,4.93,344.9,0.92,157.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2036,4.02,313.6,0.93,169.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2037,6.95,471.9,0.81,148.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2038,3.48,272.9,0.94,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2039,1.24,180.7,1.09,175.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2040,8.8,524.7,0.68,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2041,4.58,316.2,0.89,160.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2042,5.92,389.7,0.86,157.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2043,4.37,356.0,0.94,155.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2044,5.9,404.7,0.87,156.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2045,0.97,159.9,1.12,187.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2046,6.81,421.9,0.74,151.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2047,1.88,215.6,0.99,178.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2048,8.38,461.5,0.77,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2049,7.62,462.9,0.82,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2050,4.33,313.6,0.99,160.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2051,4.29,323.0,0.96,160.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2052,7.84,465.9,0.73,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2053,7.98,499.5,0.79,144.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2054,1.66,202.1,1.0,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2055,2.02,220.7,1.04,171.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2056,2.43,221.7,1.06,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2057,0.92,143.8,1.08,181.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2058,8.73,517.0,0.73,140.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2059,2.18,180.4,1.04,171.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2060,4.72,327.6,0.94,158.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2061,6.75,436.8,0.8,152.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2062,5.34,372.6,0.84,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2063,2.22,203.7,1.09,173.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2064,5.45,367.4,0.88,159.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2065,1.72,195.9,1.03,177.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2066,8.84,505.2,0.75,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2067,4.79,350.7,0.91,164.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2068,8.96,479.0,0.71,141.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2069,2.21,222.0,1.01,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2070,4.67,321.8,0.85,162.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2071,1.17,185.8,1.12,177.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2072,4.54,325.5,0.9,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2073,1.49,178.3,1.1,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2074,3.42,294.7,1.02,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2075,8.14,477.3,0.69,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2076,8.06,467.6,0.76,137.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2077,6.19,425.0,0.8,149.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2078,6.23,372.2,0.78,154.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2079,3.53,281.6,1.0,169.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2080,7.37,445.6,0.76,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2081,3.35,283.7,1.04,168.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2082,4.2,277.8,1.01,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2083,4.97,373.6,0.97,159.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2084,5.03,325.8,0.98,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2085,5.87,394.3,0.86,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2086,2.57,231.3,1.01,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2087,1.66,190.2,1.1,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2088,4.99,361.5,0.89,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2089,7.71,478.9,0.76,142.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2090,7.4,453.2,0.8,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2091,6.34,419.3,0.82,150.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2092,4.1,319.2,0.99,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2093,0.84,153.7,1.14,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2094,2.25,208.4,1.06,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2095,0.56,126.9,1.13,183.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2096,3.21,270.8,1.0,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2097,8.3,501.4,0.76,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2098,5.75,349.4,0.88,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2099,2.54,250.6,0.98,172.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2100,6.81,415.1,0.82,153.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2101,4.27,316.7,0.92,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2102,4.9,350.3,0.83,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2103,5.57,367.0,0.91,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2104,3.51,301.5,0.92,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2105,8.19,479.5,0.74,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2106,0.58,136.8,0.98,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2107,4.03,307.4,0.93,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2108,7.82,483.3,0.74,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2109,5.12,341.1,0.85,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2110,7.74,477.0,0.73,143.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2111,8.59,512.5,0.76,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2112,8.4,487.1,0.7,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2113,1.49,183.4,1.14,176.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2114,0.74,162.0,1.09,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2115,3.36,267.1,0.99,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2116,8.25,494.5,0.71,140.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2117,2.18,207.0,0.97,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2118,3.83,269.0,1.02,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2119,1.73,191.6,1.11,178.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2120,0.73,139.8,1.07,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2121,3.17,259.5,1.02,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2122,7.71,460.0,0.77,142.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2123,1.29,171.6,0.99,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2124,5.37,340.2,0.86,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2125,4.43,322.5,0.93,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2126,1.28,178.3,1.16,178.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2127,6.46,436.4,0.76,154.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2128,0.87,155.2,1.1,185.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2129,1.75,202.0,1.06,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2130,4.63,327.6,0.91,163.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2131,1.04,161.9,1.14,178.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2132,0.83,143.3,1.11,184.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2133,6.88,425.0,0.84,145.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2134,3.36,276.3,1.0,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2135,1.75,214.4,1.13,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2136,6.84,427.9,0.82,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2137,8.62,508.7,0.73,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2138,6.92,457.5,0.77,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2139,2.4,242.2,1.11,168.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2140,1.14,174.8,1.12,185.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2141,8.63,489.4,0.71,136.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2142,5.65,391.3,0.81,151.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2143,4.13,309.3,0.92,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2144,6.07,377.3,0.77,155.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2145,5.89,390.9,0.87,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2146,7.09,438.8,0.84,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2147,0.58,140.9,1.1,182.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2148,3.32,255.3,0.98,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2149,3.25,287.3,0.97,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2150,5.46,396.9,0.81,158.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2151,2.86,270.6,1.0,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2152,8.36,500.6,0.72,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2153,6.88,438.7,0.83,143.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2154,0.61,138.2,1.12,179.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2155,5.44,389.4,0.9,156.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2156,4.1,319.1,0.93,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2157,1.06,163.8,1.02,176.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2158,5.15,365.7,0.97,158.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2159,6.9,461.8,0.78,152.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2160,1.5,167.1,1.06,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2161,2.92,241.3,1.02,176.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2162,5.07,338.4,0.93,163.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2163,4.28,273.7,0.92,167.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2164,2.66,242.1,1.03,171.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2165,6.98,438.3,0.69,151.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2166,7.93,474.4,0.71,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2167,0.89,129.9,1.08,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2168,1.49,210.8,1.09,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2169,6.2,399.4,0.84,156.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2170,8.22,477.2,0.76,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2171,7.14,461.1,0.8,147.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2172,3.03,256.4,0.95,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2173,3.72,315.8,0.96,168.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2174,4.49,329.7,0.88,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2175,2.21,210.1,1.02,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2176,0.82,134.6,1.12,183.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2177,8.04,480.8,0.75,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2178,7.82,465.3,0.79,145.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2179,6.75,419.8,0.87,151.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2180,5.25,362.2,0.83,155.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2181,3.79,281.1,1.04,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2182,7.14,419.6,0.86,156.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2183,0.52,158.9,1.02,181.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2184,2.34,240.2,1.0,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2185,5.64,349.9,0.9,152.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2186,3.32,274.8,1.01,165.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2187,1.92,224.4,1.01,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2188,0.97,156.7,1.13,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2189,5.56,346.1,0.86,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2190,0.84,152.4,1.03,181.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2191,3.99,291.0,0.87,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2192,1.74,203.4,1.11,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2193,7.65,452.7,0.8,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2194,8.44,522.4,0.66,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2195,4.78,336.2,0.95,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2196,5.48,385.8,0.88,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2197,4.94,340.6,0.89,160.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2198,0.53,126.6,1.14,183.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2199,5.88,380.2,0.86,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2200,7.74,474.8,0.84,145.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2201,3.71,309.5,1.01,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2202,1.51,183.7,1.09,178.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2203,5.91,421.8,0.88,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2204,1.39,173.4,1.11,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2205,6.7,420.4,0.8,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2206,4.94,331.8,0.94,160.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2207,6.13,420.5,0.85,150.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2208,1.78,217.1,1.11,171.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2209,6.51,414.7,0.91,158.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2210,4.97,337.9,0.93,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2211,4.16,289.4,0.99,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2212,2.52,222.4,0.96,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2213,6.34,411.2,0.86,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2214,4.1,303.4,0.96,159.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2215,2.13,193.8,1.08,174.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2216,8.4,495.5,0.67,139.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2217,6.03,397.1,0.89,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2218,4.5,330.9,0.95,156.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2219,5.47,351.0,0.82,155.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2220,3.43,267.2,1.02,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2221,2.22,223.4,0.98,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2222,8.06,496.7,0.65,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2223,6.98,427.1,0.78,148.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2224,1.17,160.5,1.09,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2225,4.89,362.9,0.93,157.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2226,5.92,401.2,0.85,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2227,5.26,337.7,0.91,161.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2228,2.74,261.5,1.01,173.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2229,6.05,370.0,0.9,152.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2230,3.21,289.8,1.02,169.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2231,7.21,433.2,0.84,145.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2232,6.72,452.7,0.82,156.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2233,4.84,350.5,0.86,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2234,6.03,406.0,0.88,148.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2235,3.2,259.6,0.96,165.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2236,7.99,451.1,0.75,144.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2237,7.07,445.4,0.8,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2238,8.91,521.4,0.64,143.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2239,3.18,282.9,0.99,162.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2240,0.56,132.4,1.16,185.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2241,4.82,347.2,0.96,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2242,0.77,138.1,1.14,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2243,8.63,521.3,0.66,136.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2244,3.48,266.0,1.0,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2245,6.56,438.8,0.78,145.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2246,3.5,288.4,0.94,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2247,3.03,240.1,1.03,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2248,0.65,143.0,1.11,182.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2249,6.06,395.9,0.89,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2250,7.08,445.7,0.87,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2251,4.21,301.6,0.97,163.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2252,7.89,474.6,0.73,144.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2253,3.29,289.5,1.0,167.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2254,5.66,353.8,0.95,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2255,8.47,517.4,0.78,139.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2256,8.98,538.2,0.68,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2257,3.56,273.7,1.04,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2258,3.99,291.6,0.95,166.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2259,1.33,187.5,1.08,173.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2260,7.05,449.2,0.85,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2261,7.88,461.7,0.8,142.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2262,1.37,177.6,1.14,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2263,8.55,499.9,0.74,137.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2264,0.71,131.4,1.15,183.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2265,5.55,389.9,0.83,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2266,1.04,173.8,1.07,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2267,6.99,441.9,0.77,149.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2268,2.65,256.8,1.09,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2269,2.36,209.9,1.06,173.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2270,8.14,477.4,0.71,145.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2271,1.11,169.1,1.09,177.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2272,2.82,248.2,1.01,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2273,6.94,425.9,0.78,147.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2274,0.84,153.5,1.1,185.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2275,5.25,373.5,0.88,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2276,7.0,456.0,0.87,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2277,1.68,201.5,1.01,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2278,7.64,463.8,0.75,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2279,7.94,475.6,0.72,135.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2280,4.83,345.0,0.93,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2281,3.64,297.0,1.03,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2282,3.31,288.3,0.97,167.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2283,5.18,321.2,0.96,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2284,8.54,524.2,0.69,141.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2285,5.13,356.1,0.84,161.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2286,8.3,509.1,0.66,135.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2287,1.23,183.5,1.02,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2288,4.6,318.8,0.88,158.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2289,1.57,197.1,1.07,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2290,7.99,516.3,0.73,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2291,3.93,291.4,1.02,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2292,6.22,409.0,0.75,148.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2293,3.58,312.3,0.88,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2294,3.31,237.3,0.95,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2295,3.65,290.1,0.99,169.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2296,5.75,368.7,0.86,158.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2297,6.72,419.4,0.85,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2298,4.95,336.2,0.87,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2299,1.82,187.4,0.95,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2300,0.94,145.4,1.1,180.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2301,8.66,507.9,0.72,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2302,5.1,348.1,0.94,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2303,2.06,223.6,1.08,178.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2304,8.74,506.0,0.71,144.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2305,5.57,345.0,0.83,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2306,5.58,347.2,0.91,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2307,5.98,373.3,0.82,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2308,6.77,422.9,0.82,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2309,8.97,533.6,0.7,144.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2310,2.24,221.4,1.09,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2311,4.25,336.3,0.95,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2312,3.73,290.6,1.04,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2313,1.88,217.9,1.13,175.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2314,6.97,400.2,0.77,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2315,4.01,310.1,0.94,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2316,6.72,415.2,0.85,152.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2317,8.11,503.1,0.76,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2318,3.21,249.7,1.05,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2319,0.53,157.0,1.08,182.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2320,5.64,351.6,0.86,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2321,6.87,455.3,0.77,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2322,8.82,529.4,0.75,137.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2323,3.95,310.7,1.05,160.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2324,5.27,349.8,0.86,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2325,3.26,253.9,0.96,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2326,2.15,212.8,1.0,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2327,4.42,331.0,0.91,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2328,7.04,456.8,0.76,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2329,5.41,360.9,0.87,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2330,5.32,340.4,0.89,153.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2331,1.77,209.0,1.07,174.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2332,7.82,467.4,0.73,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2333,7.38,471.3,0.74,147.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2334,5.26,328.3,0.91,157.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2335,2.16,203.5,0.99,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2336,7.34,445.5,0.78,150.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2337,6.45,388.2,0.78,153.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2338,5.78,367.5,0.86,158.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2339,6.49,412.0,0.78,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2340,1.1,180.5,1.13,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2341,8.09,500.2,0.71,144.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2342,5.74,405.4,0.86,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2343,0.84,149.0,1.02,181.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2344,2.72,227.4,1.04,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2345,5.75,361.5,0.92,151.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2346,6.35,408.3,0.81,158.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2347,3.34,259.4,0.93,171.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2348,5.21,351.1,0.89,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2349,5.24,356.9,0.92,160.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2350,8.96,521.0,0.76,137.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2351,3.41,264.2,0.94,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2352,5.04,335.9,0.92,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2353,4.18,337.4,0.91,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2354,8.72,497.0,0.72,141.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2355,8.97,534.7,0.66,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2356,0.65,171.5,1.08,184.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2357,8.45,473.1,0.79,135.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2358,5.95,378.0,0.87,148.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2359,2.71,239.9,1.02,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2360,1.39,170.8,1.1,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2361,1.58,169.5,1.08,178.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2362,8.58,519.9,0.73,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2363,2.65,276.7,1.07,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2364,3.31,276.8,0.94,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2365,1.68,208.9,1.05,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2366,5.48,366.7,0.87,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2367,0.9,177.2,1.16,178.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2368,3.22,257.1,0.95,171.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2369,7.79,458.5,0.75,145.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2370,8.25,521.8,0.8,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2371,7.84,447.2,0.75,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2372,7.67,462.4,0.82,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2373,7.99,485.0,0.78,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2374,8.11,503.1,0.76,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2375,1.95,196.4,1.02,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2376,7.89,479.2,0.78,143.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2377,6.14,391.8,0.84,156.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2378,3.58,271.9,0.95,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2379,3.23,289.4,0.99,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2380,4.15,319.8,0.95,160.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2381,8.23,494.8,0.72,138.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2382,0.72,141.5,1.13,182.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2383,2.78,261.0,1.0,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2384,3.55,281.9,0.99,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2385,5.97,369.8,0.85,153.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2386,3.92,301.8,0.96,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2387,8.37,505.0,0.76,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2388,6.99,441.6,0.8,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2389,4.02,298.1,0.93,168.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2390,6.6,408.9,0.78,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2391,8.11,480.5,0.71,143.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2392,3.12,253.0,0.95,166.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2393,1.28,197.5,1.08,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2394,3.31,279.8,0.94,166.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2395,4.47,308.3,0.98,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2396,2.79,253.3,1.03,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2397,6.98,402.9,0.86,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2398,3.61,288.0,1.03,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2399,1.42,194.3,1.15,175.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2400,6.76,431.7,0.78,154.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2401,3.84,299.1,0.96,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2402,1.24,167.9,1.08,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2403,6.33,388.8,0.89,152.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2404,6.19,412.3,0.86,148.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2405,4.64,322.2,0.91,160.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2406,0.87,154.5,1.12,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2407,3.46,266.1,0.98,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2408,5.67,376.1,0.88,157.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2409,7.19,441.2,0.82,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2410,3.05,256.9,1.03,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2411,1.25,175.3,1.15,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2412,2.25,184.2,1.06,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2413,1.3,166.7,1.05,178.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2414,4.77,337.1,0.94,163.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2415,4.91,324.7,0.86,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2416,6.78,436.2,0.76,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2417,1.52,202.5,1.02,177.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2418,1.68,184.9,0.96,180.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2419,8.64,526.1,0.77,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2420,0.52,138.0,1.09,185.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2421,3.78,321.7,0.93,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2422,8.15,483.1,0.72,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2423,6.99,439.6,0.77,153.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2424,6.26,408.6,0.86,149.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2425,3.93,299.2,0.91,165.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2426,5.83,379.6,0.92,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2427,1.32,198.3,1.03,177.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2428,4.69,333.3,0.95,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2429,1.62,192.3,1.05,177.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2430,2.43,242.2,1.06,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2431,4.72,345.7,0.95,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2432,4.3,330.6,0.94,159.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2433,8.67,521.9,0.8,135.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2434,4.08,316.3,0.9,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2435,7.63,497.9,0.74,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2436,3.0,256.7,1.02,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2437,8.84,515.7,0.74,138.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2438,2.81,262.3,1.01,168.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2439,4.71,340.3,0.88,157.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2440,3.19,254.4,0.91,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2441,3.06,270.5,1.06,167.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2442,5.1,336.1,0.87,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2443,0.87,155.2,1.1,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2444,3.76,267.6,0.9,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2445,8.22,497.5,0.68,145.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2446,6.86,429.6,0.79,150.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2447,3.12,266.0,1.02,170.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2448,6.13,403.2,0.93,157.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2449,2.41,251.2,1.05,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2450,6.25,392.2,0.86,145.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2451,6.65,435.2,0.88,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2452,7.28,415.1,0.81,148.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2453,2.95,255.9,1.01,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2454,8.46,483.2,0.72,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2455,1.48,163.2,1.09,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2456,8.8,502.8,0.75,135.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2457,4.68,317.3,0.89,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2458,5.62,358.3,0.89,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2459,1.73,187.2,1.1,177.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2460,6.5,402.5,0.78,155.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2461,7.31,459.6,0.81,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2462,2.75,272.5,1.03,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2463,7.54,441.2,0.82,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2464,4.63,324.8,0.89,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2465,3.23,265.6,1.07,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2466,8.61,505.0,0.7,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2467,7.11,438.8,0.91,150.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2468,3.83,304.6,1.02,173.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2469,4.81,343.5,0.9,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2470,6.51,404.3,0.82,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2471,8.02,467.0,0.76,142.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2472,5.39,333.7,0.84,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2473,7.49,470.4,0.77,144.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2474,6.24,391.8,0.87,153.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2475,8.94,546.4,0.65,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2476,1.47,183.7,1.07,181.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2477,3.15,266.8,0.99,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2478,3.6,291.2,0.97,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2479,3.73,262.4,0.99,165.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2480,3.69,275.0,0.99,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2481,2.27,224.6,1.12,172.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2482,7.43,460.8,0.77,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2483,7.97,470.3,0.76,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2484,7.98,467.5,0.81,146.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2485,7.37,435.8,0.72,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2486,4.49,331.3,1.0,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2487,4.96,351.8,0.81,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2488,1.54,183.4,1.07,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2489,2.23,229.6,1.08,170.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2490,8.69,489.8,0.69,139.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2491,8.72,527.5,0.77,140.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2492,7.66,444.1,0.79,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2493,0.96,167.0,1.15,182.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2494,4.06,297.0,0.92,163.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2495,3.61,293.7,0.96,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2496,8.34,512.3,0.71,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2497,4.05,294.5,0.91,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2498,1.38,185.1,1.15,175.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2499,6.69,418.4,0.81,159.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2500,1.92,181.4,1.09,173.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2501,8.27,475.3,0.75,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2502,1.7,202.7,1.11,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2503,5.91,399.2,0.84,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2504,5.68,379.7,0.88,156.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2505,2.77,238.0,1.05,176.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2506,1.76,165.8,1.13,171.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2507,5.57,402.2,0.91,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2508,8.04,490.6,0.81,138.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2509,3.65,284.1,1.04,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2510,6.97,434.6,0.8,150.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2511,3.29,285.2,1.03,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2512,3.65,268.2,0.99,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2513,6.24,404.0,0.8,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2514,3.61,275.5,0.97,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2515,5.2,366.9,0.91,164.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2516,6.75,425.5,0.82,152.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2517,8.88,502.3,0.7,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2518,7.11,456.8,0.83,144.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2519,5.7,387.6,0.86,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2520,7.81,464.6,0.73,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2521,3.39,286.8,0.98,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2522,3.88,295.6,1.02,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2523,1.9,235.0,1.07,172.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2524,6.9,425.8,0.86,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2525,7.61,463.5,0.72,151.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2526,8.96,511.2,0.72,133.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2527,3.53,288.0,0.91,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2528,5.85,381.7,0.85,154.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2529,7.99,499.2,0.86,144.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2530,3.13,221.9,0.97,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2531,6.09,407.1,0.86,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2532,6.86,427.5,0.75,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2533,3.23,255.7,0.97,165.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2534,3.22,266.2,1.06,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2535,4.32,321.0,0.89,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2536,3.32,275.4,1.05,171.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2537,3.96,305.2,0.93,160.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2538,5.49,347.3,0.89,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2539,5.11,359.8,0.85,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2540,6.74,443.4,0.89,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2541,2.43,216.5,1.02,167.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2542,0.64,173.9,1.14,181.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2543,4.53,298.6,0.94,163.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2544,6.15,396.4,0.87,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2545,1.68,191.9,1.05,176.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2546,7.03,434.5,0.84,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2547,1.31,164.7,1.13,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2548,1.84,197.6,1.03,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2549,5.5,367.9,0.86,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2550,5.74,384.1,0.86,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2551,4.54,345.0,0.88,157.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2552,5.8,384.9,0.85,147.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2553,7.62,472.1,0.73,145.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2554,8.87,525.7,0.73,139.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2555,4.47,312.3,0.91,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2556,5.3,382.4,0.86,153.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2557,3.32,296.3,0.91,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2558,4.82,327.5,0.91,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2559,6.08,404.6,0.84,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2560,5.96,382.4,0.92,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2561,4.81,338.4,0.91,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2562,0.83,181.1,1.07,179.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2563,7.08,447.3,0.76,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2564,5.73,358.1,0.86,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2565,5.93,415.1,0.86,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2566,1.26,197.3,1.16,172.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2567,6.05,384.3,0.82,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2568,7.62,434.0,0.74,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2569,3.24,263.5,1.01,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2570,4.39,318.4,1.0,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2571,3.73,298.9,0.98,164.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2572,6.65,412.3,0.85,151.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2573,0.77,137.6,1.18,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2574,8.74,513.1,0.71,137.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2575,1.93,207.9,1.07,170.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2576,5.99,375.0,0.85,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2577,6.08,347.9,0.87,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2578,3.74,310.7,0.95,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2579,8.83,524.8,0.66,136.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2580,2.11,199.5,1.09,174.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2581,3.16,303.8,1.0,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2582,7.7,481.7,0.76,141.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2583,4.94,354.5,0.87,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2584,8.43,503.3,0.69,143.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2585,6.01,392.8,0.82,151.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2586,6.01,393.7,0.84,152.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2587,5.25,351.8,0.9,155.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2588,2.66,254.5,1.05,170.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2589,2.75,230.3,1.01,177.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2590,6.93,419.8,0.86,148.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2591,4.51,365.9,0.96,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2592,7.6,466.5,0.78,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2593,6.77,409.7,0.77,153.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2594,5.68,401.5,0.91,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2595,7.41,446.5,0.73,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2596,0.75,152.3,1.09,184.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2597,5.37,335.3,0.94,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2598,4.96,342.9,0.94,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2599,2.65,232.3,1.0,174.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2600,6.04,399.4,0.8,152.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2601,7.92,497.2,0.73,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2602,6.45,420.7,0.8,147.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2603,1.53,196.4,1.07,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2604,4.58,331.8,0.91,157.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2605,0.99,173.3,1.12,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2606,5.49,375.3,0.85,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2607,2.91,252.2,1.05,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2608,0.72,161.2,1.12,183.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2609,7.71,457.8,0.73,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2610,2.98,276.7,1.02,172.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2611,4.14,284.9,0.92,159.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2612,4.26,309.2,0.97,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2613,0.58,160.4,1.15,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2614,8.14,515.2,0.77,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2615,5.47,352.2,0.89,159.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2616,0.7,164.0,1.09,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2617,5.6,355.2,0.88,155.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2618,6.35,403.6,0.8,150.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2619,1.24,156.1,1.06,176.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2620,5.79,382.0,0.77,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2621,4.61,313.6,0.93,163.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2622,2.74,261.6,1.03,170.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2623,1.58,181.2,1.06,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2624,1.99,204.2,1.0,179.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2625,5.89,361.9,0.84,152.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2626,6.4,375.9,0.81,150.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2627,6.59,412.6,0.8,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2628,3.01,259.5,0.94,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2629,6.04,396.0,0.82,154.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2630,4.25,303.9,0.97,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2631,2.15,222.8,0.96,173.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2632,0.55,148.0,1.16,181.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2633,4.09,314.2,0.9,167.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2634,4.31,303.2,0.92,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2635,6.96,412.8,0.75,151.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2636,5.05,362.5,0.92,157.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2637,4.86,351.3,0.88,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2638,3.3,255.2,0.96,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2639,4.23,318.0,1.0,159.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2640,8.41,471.0,0.76,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2641,8.78,526.4,0.72,140.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2642,7.91,469.7,0.76,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2643,4.88,333.2,0.88,159.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2644,5.41,352.9,0.8,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2645,8.55,497.8,0.7,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2646,6.61,430.8,0.84,145.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2647,8.56,490.8,0.72,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2648,1.35,188.4,1.07,180.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2649,6.81,441.6,0.87,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2650,8.45,480.5,0.74,142.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2651,2.74,252.6,0.99,175.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2652,7.9,470.2,0.79,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2653,7.47,436.8,0.77,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2654,8.1,480.3,0.84,139.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2655,4.69,355.2,0.89,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2656,7.3,453.3,0.81,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2657,2.17,216.0,1.07,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2658,1.96,230.7,1.16,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2659,6.8,426.9,0.78,154.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2660,6.53,417.0,0.81,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2661,2.0,199.1,1.06,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2662,4.95,318.1,0.98,159.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2663,3.44,279.7,0.94,171.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2664,1.54,206.9,1.12,176.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2665,2.05,202.9,1.08,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2666,7.94,476.3,0.72,143.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2667,4.38,321.8,0.89,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2668,0.64,137.0,1.11,184.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2669,3.09,268.9,0.99,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2670,2.91,252.2,1.01,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2671,5.27,344.0,0.83,159.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2672,7.92,471.0,0.71,145.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2673,4.84,327.4,0.86,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2674,6.71,391.5,0.86,148.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2675,7.66,467.9,0.82,139.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2676,8.97,506.8,0.76,141.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2677,5.87,363.2,0.82,152.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2678,8.74,553.4,0.71,135.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2679,5.82,393.2,0.87,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2680,7.09,446.0,0.81,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2681,1.22,191.2,1.16,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2682,7.17,464.2,0.76,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2683,1.1,187.9,1.09,177.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2684,4.15,307.8,0.91,165.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2685,7.73,466.8,0.76,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2686,7.42,488.4,0.89,147.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2687,7.53,458.8,0.87,143.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2688,0.59,150.9,1.15,183.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2689,8.46,495.7,0.76,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2690,6.72,434.2,0.81,152.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2691,1.88,208.5,0.98,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2692,1.15,182.9,1.11,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2693,6.55,422.1,0.84,154.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2694,6.73,396.8,0.76,152.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2695,4.95,361.8,0.86,163.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2696,0.63,155.8,1.1,187.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2697,4.26,327.3,0.87,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2698,6.53,379.8,0.78,150.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2699,5.66,384.5,0.88,153.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2700,3.37,285.6,0.9,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2701,4.37,296.7,0.87,159.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2702,0.74,151.2,1.02,185.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2703,3.36,280.1,1.04,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2704,0.7,151.9,1.13,181.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2705,1.72,186.9,1.03,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2706,2.85,254.9,1.03,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2707,7.61,467.4,0.69,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2708,2.2,205.6,0.99,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2709,4.57,321.8,0.85,160.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2710,6.06,394.5,0.76,155.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2711,5.12,354.7,0.88,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2712,2.66,243.7,0.96,169.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2713,7.11,424.9,0.82,140.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2714,4.36,318.9,0.95,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2715,5.88,357.2,0.81,153.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2716,2.88,257.8,1.04,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2717,7.08,469.6,0.81,143.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2718,4.26,314.7,0.97,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2719,3.21,265.5,0.98,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2720,1.63,190.4,1.1,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2721,2.92,262.1,0.94,169.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2722,6.96,428.1,0.81,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2723,6.54,398.8,0.86,149.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2724,7.14,442.9,0.8,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2725,3.67,270.2,0.95,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2726,6.19,396.2,0.74,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2727,2.68,195.4,0.93,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2728,3.67,312.1,0.96,167.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2729,7.73,496.0,0.73,142.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2730,6.29,386.3,0.82,153.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2731,4.82,341.7,0.89,162.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2732,3.1,250.9,1.0,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2733,4.88,336.6,0.88,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2734,6.48,415.5,0.79,146.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2735,4.83,369.2,0.92,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2736,6.7,425.3,0.8,150.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2737,1.52,194.7,1.07,177.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2738,3.18,260.0,0.95,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2739,8.78,523.3,0.72,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2740,7.06,420.8,0.8,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2741,4.03,301.8,1.0,162.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2742,6.63,448.5,0.77,154.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2743,1.19,172.8,1.09,175.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2744,8.2,489.2,0.71,145.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2745,7.15,453.3,0.74,148.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2746,6.13,403.3,0.91,153.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2747,8.4,491.4,0.68,134.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2748,6.85,425.7,0.8,151.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2749,1.8,205.8,1.05,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2750,1.46,178.2,1.08,182.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2751,6.97,427.4,0.72,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2752,8.25,491.2,0.68,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2753,4.82,338.2,0.89,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2754,2.74,236.7,1.04,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2755,7.46,466.7,0.83,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2756,7.62,454.0,0.78,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2757,0.72,172.6,1.16,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2758,2.16,228.4,1.05,171.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2759,5.98,417.8,0.83,155.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2760,6.46,425.8,0.74,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2761,5.51,372.6,0.87,158.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2762,4.89,362.9,0.95,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2763,3.01,281.1,1.03,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2764,5.18,341.3,0.95,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2765,8.83,507.3,0.72,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2766,7.22,427.7,0.75,147.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2767,4.9,319.1,0.94,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2768,3.15,237.9,0.99,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2769,2.92,243.0,1.05,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2770,6.57,399.1,0.78,149.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2771,2.4,229.8,0.95,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2772,7.89,478.4,0.71,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2773,3.1,267.4,1.01,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2774,3.43,243.0,1.01,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2775,4.22,320.3,1.02,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2776,5.44,360.6,0.93,159.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2777,6.33,403.7,0.82,154.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2778,1.08,176.7,1.14,185.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2779,8.85,504.9,0.73,137.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2780,5.34,355.0,0.94,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2781,1.58,185.4,1.09,172.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2782,3.98,307.0,0.98,165.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2783,3.53,257.9,0.96,165.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2784,4.8,338.6,0.89,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2785,6.3,399.9,0.91,149.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2786,5.05,321.0,0.98,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2787,4.64,309.2,0.95,159.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2788,0.59,157.5,1.17,186.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2789,7.33,459.6,0.75,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2790,0.82,158.1,1.1,175.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2791,8.32,497.2,0.81,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2792,2.87,224.0,0.99,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2793,8.14,463.4,0.79,138.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2794,6.61,433.6,0.8,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2795,2.45,254.1,1.0,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2796,8.45,485.9,0.71,148.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2797,8.73,502.0,0.7,138.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2798,2.55,235.0,1.0,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2799,1.53,208.6,1.1,182.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2800,4.03,302.2,0.96,166.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2801,3.5,277.7,0.96,167.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2802,6.93,441.7,0.77,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2803,3.74,280.2,0.98,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2804,3.95,305.1,0.92,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2805,3.42,259.8,0.94,165.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2806,7.58,441.1,0.81,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2807,3.67,282.7,0.93,164.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2808,0.91,150.6,1.13,185.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2809,6.12,391.7,0.88,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2810,3.41,299.7,1.0,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2811,4.87,316.3,0.86,163.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2812,1.3,184.9,1.06,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2813,7.18,429.3,0.84,150.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2814,5.78,384.6,0.85,153.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2815,6.5,417.9,0.8,148.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2816,2.34,225.6,1.02,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2817,3.0,253.3,1.08,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2818,3.36,291.5,0.98,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2819,8.66,503.8,0.71,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2820,1.62,189.8,1.1,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2821,7.11,442.6,0.82,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2822,7.84,474.9,0.75,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2823,6.78,416.6,0.83,151.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2824,5.48,358.7,0.85,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2825,4.51,330.5,0.97,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2826,3.5,252.1,0.96,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2827,2.95,236.0,1.01,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2828,7.98,464.0,0.84,150.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2829,8.51,517.3,0.75,139.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2830,5.46,370.9,0.88,164.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2831,7.73,474.3,0.82,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2832,7.66,466.9,0.76,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2833,7.56,436.2,0.81,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2834,8.77,475.1,0.71,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2835,0.85,145.9,1.06,182.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2836,4.37,338.2,0.9,161.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2837,8.81,505.6,0.68,140.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2838,7.7,470.8,0.77,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2839,2.81,258.2,1.01,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2840,6.85,450.2,0.82,151.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2841,1.28,153.0,1.03,175.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2842,7.13,441.9,0.82,145.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2843,5.47,375.7,0.84,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2844,8.94,497.2,0.69,139.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2845,5.42,365.2,0.92,157.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2846,1.73,216.0,1.04,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2847,5.27,368.6,0.92,159.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2848,8.5,496.0,0.68,144.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2849,6.93,426.4,0.81,151.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2850,8.38,488.6,0.71,139.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2851,8.65,503.2,0.64,136.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2852,8.82,539.7,0.67,135.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2853,7.14,448.9,0.85,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2854,7.29,454.0,0.77,140.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2855,7.83,476.8,0.77,142.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2856,8.96,527.2,0.65,135.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2857,6.49,393.5,0.76,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2858,6.82,430.2,0.85,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2859,5.09,342.5,0.83,163.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2860,3.41,278.1,0.95,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2861,1.87,207.0,1.05,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2862,7.85,469.0,0.77,146.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2863,7.6,467.9,0.73,147.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2864,4.26,327.9,0.96,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2865,4.67,318.2,1.0,163.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2866,7.29,425.5,0.77,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2867,5.76,378.2,0.78,154.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2868,8.4,504.1,0.75,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2869,5.43,371.8,0.87,161.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2870,4.93,326.3,0.94,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2871,2.55,249.7,1.06,174.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2872,0.53,150.1,1.13,181.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2873,7.01,437.6,0.75,151.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2874,4.5,329.9,1.0,157.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2875,8.01,487.2,0.88,132.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2876,4.55,318.7,0.86,162.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2877,6.56,394.6,0.81,153.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2878,4.9,347.4,0.86,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2879,1.7,195.4,1.13,173.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2880,1.65,203.4,1.07,175.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2881,8.44,499.1,0.73,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2882,8.9,520.6,0.71,137.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2883,5.59,358.2,0.88,157.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2884,5.21,332.7,0.88,155.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2885,1.72,207.2,1.08,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2886,5.12,335.5,0.85,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2887,8.15,483.4,0.69,139.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2888,1.91,217.3,1.07,172.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2889,1.17,184.0,1.11,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2890,1.22,168.8,1.14,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2891,4.42,314.7,0.96,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2892,7.59,461.5,0.74,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2893,5.11,365.8,0.88,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2894,6.34,390.3,0.79,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2895,4.89,334.5,0.97,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2896,5.88,374.1,0.8,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2897,1.59,183.1,1.12,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2898,2.19,224.2,1.03,178.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2899,0.58,131.4,1.08,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2900,7.47,444.0,0.76,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2901,3.4,268.6,0.95,166.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2902,0.62,157.0,1.13,188.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2903,2.6,220.4,1.07,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2904,7.81,473.1,0.82,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2905,8.78,486.6,0.69,145.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2906,4.14,298.1,0.98,165.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2907,1.33,185.2,1.08,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2908,4.23,305.7,0.97,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2909,4.13,312.5,0.99,160.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2910,6.86,441.4,0.82,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2911,8.24,484.3,0.73,140.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2912,2.84,259.9,1.06,172.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2913,0.82,143.9,1.12,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2914,2.49,243.7,1.06,168.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2915,4.95,327.0,0.87,160.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2916,0.59,144.7,1.13,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2917,5.74,386.1,0.9,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2918,1.72,180.8,1.1,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2919,7.47,438.8,0.83,148.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2920,4.66,333.2,0.94,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2921,9.0,518.4,0.75,138.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2922,1.77,214.1,1.1,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2923,6.56,408.3,0.84,153.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2924,7.72,460.1,0.77,139.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2925,0.61,154.3,1.16,181.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2926,6.29,390.7,0.81,154.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2927,8.65,511.4,0.79,139.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2928,7.57,457.3,0.77,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2929,2.63,228.5,0.96,167.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2930,5.16,351.8,0.94,155.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2931,6.01,401.9,0.82,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2932,3.79,284.5,0.98,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2933,0.66,142.7,1.12,187.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2934,5.08,348.1,0.86,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2935,7.37,429.5,0.74,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2936,8.52,493.3,0.74,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2937,0.61,142.3,1.1,181.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2938,1.43,175.6,1.15,176.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2939,5.05,304.4,0.93,159.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2940,5.16,365.6,0.96,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2941,6.51,401.6,0.9,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2942,2.79,254.0,1.05,172.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2943,6.29,410.7,0.89,156.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2944,6.25,401.0,0.86,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2945,3.76,300.0,1.01,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2946,2.9,269.4,0.99,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2947,5.67,364.8,0.88,152.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2948,3.58,269.3,0.92,169.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2949,3.34,268.7,1.01,170.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2950,8.78,532.9,0.71,138.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2951,3.72,290.2,0.96,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2952,5.36,366.7,0.92,158.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2953,1.18,152.0,1.11,181.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2954,0.73,159.2,1.09,181.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2955,4.26,302.6,0.95,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2956,9.0,524.8,0.69,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2957,3.63,276.9,1.0,163.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2958,5.79,381.1,0.81,154.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2959,3.85,297.5,0.93,163.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2960,2.39,230.8,1.02,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2961,7.06,428.7,0.77,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2962,8.11,483.7,0.78,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2963,2.6,239.1,1.03,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2964,4.21,285.2,1.0,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2965,4.97,358.0,0.93,151.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2966,4.96,322.8,0.93,161.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2967,7.96,471.3,0.74,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2968,6.38,387.7,0.8,149.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2969,4.57,329.1,0.92,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2970,3.06,266.8,1.02,165.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2971,6.3,394.4,0.81,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2972,2.58,227.3,1.05,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2973,4.43,308.8,0.96,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2974,1.82,231.3,0.99,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2975,5.39,359.1,0.87,156.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2976,1.52,185.1,1.1,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2977,4.19,293.6,0.86,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2978,4.13,319.9,0.92,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2979,1.13,136.7,1.13,182.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2980,4.65,307.0,0.95,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2981,7.52,441.4,0.71,152.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2982,5.33,354.7,0.89,155.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2983,7.38,452.0,0.76,146.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2984,6.72,419.5,0.82,154.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2985,1.83,181.6,1.06,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2986,5.32,363.2,0.94,164.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2987,1.73,196.4,1.08,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2988,7.1,446.0,0.77,150.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2989,2.97,275.5,1.06,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2990,4.45,334.7,0.93,163.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2991,7.49,448.5,0.84,141.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2992,0.66,122.0,1.05,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2993,1.24,168.9,1.05,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2994,0.5,138.4,1.16,184.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2995,4.03,325.9,0.99,164.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2996,2.42,229.2,1.06,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2997,8.73,512.8,0.7,135.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-2998,1.39,171.5,1.02,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-2999,7.62,466.8,0.77,137.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3000,4.37,315.2,0.91,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3001,8.53,516.0,0.77,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3002,1.64,207.2,1.06,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3003,7.34,448.4,0.75,147.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3004,1.96,206.9,1.08,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3005,2.86,220.6,1.06,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3006,1.65,204.5,1.06,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3007,7.36,453.4,0.82,143.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3008,5.28,343.7,0.93,158.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3009,4.98,338.5,0.91,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3010,1.19,163.9,1.1,178.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3011,0.79,152.2,1.08,183.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3012,8.86,526.0,0.59,139.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3013,6.71,398.2,0.86,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3014,4.8,340.8,0.88,156.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3015,8.74,496.5,0.71,133.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3016,4.34,299.6,0.97,164.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3017,4.23,323.1,0.92,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3018,2.06,218.8,1.05,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3019,2.7,225.2,0.92,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3020,3.25,260.5,1.04,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3021,7.92,468.8,0.8,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3022,5.8,388.4,0.83,153.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3023,8.0,477.3,0.74,144.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3024,6.01,408.0,0.85,150.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3025,6.5,418.1,0.81,151.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3026,3.73,288.0,1.01,161.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3027,3.67,289.5,0.95,165.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3028,3.19,269.9,0.99,170.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3029,1.41,174.9,1.12,176.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3030,8.5,523.1,0.68,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3031,7.0,447.3,0.84,153.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3032,4.28,339.4,0.89,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3033,5.38,362.3,0.84,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3034,5.82,383.2,0.88,156.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3035,0.87,165.5,1.09,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3036,1.56,208.1,1.17,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3037,7.05,403.7,0.83,151.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3038,4.13,333.4,0.95,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3039,6.34,379.7,0.78,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3040,6.32,396.4,0.86,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3041,4.95,347.3,0.88,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3042,6.0,387.4,0.85,152.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3043,6.53,394.1,0.82,151.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3044,7.35,443.6,0.76,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3045,6.85,412.3,0.84,153.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3046,2.2,235.4,1.07,173.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3047,2.72,232.9,1.08,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3048,0.78,147.9,1.15,176.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3049,6.81,407.5,0.82,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3050,7.25,434.2,0.84,147.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3051,7.0,429.0,0.81,146.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3052,8.24,487.0,0.72,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3053,4.76,349.2,0.94,163.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3054,2.41,221.6,0.97,170.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3055,0.76,166.9,1.14,176.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3056,2.94,221.1,1.0,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3057,5.74,357.1,0.91,151.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3058,8.42,518.4,0.67,138.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3059,6.67,400.1,0.78,150.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3060,7.4,461.2,0.75,147.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3061,8.27,490.0,0.72,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3062,5.84,387.0,0.87,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3063,4.65,338.1,0.9,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3064,6.85,414.5,0.85,143.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3065,3.63,263.1,1.01,164.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3066,7.74,464.3,0.75,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3067,6.71,422.8,0.8,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3068,8.29,467.7,0.73,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3069,1.31,197.3,1.09,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3070,2.83,261.6,1.03,169.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3071,3.62,274.1,0.98,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3072,6.17,376.8,0.86,151.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3073,6.06,373.4,0.87,156.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3074,8.0,489.0,0.73,137.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3075,1.71,208.7,1.07,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3076,3.07,242.5,1.02,168.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3077,4.75,314.3,0.94,157.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3078,8.52,514.2,0.72,136.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3079,2.11,208.3,1.02,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3080,7.66,479.1,0.82,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3081,2.99,254.3,1.03,169.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3082,1.11,159.7,1.15,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3083,1.99,225.0,1.05,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3084,5.73,386.8,0.9,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3085,4.25,328.5,0.91,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3086,3.37,254.4,0.97,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3087,8.96,547.1,0.68,134.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3088,7.18,428.1,0.86,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3089,3.39,255.0,1.04,165.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3090,5.86,385.5,0.8,153.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3091,2.13,186.6,1.03,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3092,0.99,145.5,1.12,178.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3093,3.18,287.4,0.95,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3094,1.01,146.8,1.07,175.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3095,1.89,216.5,1.1,172.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3096,8.33,504.0,0.71,138.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3097,8.04,477.3,0.8,147.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3098,6.75,414.8,0.82,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3099,6.88,425.3,0.82,152.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3100,8.25,484.5,0.72,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3101,1.3,173.3,1.11,178.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3102,8.18,493.0,0.71,144.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3103,6.39,364.4,0.84,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3104,3.84,283.4,0.99,163.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3105,5.62,370.7,0.85,155.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3106,4.4,315.4,0.95,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3107,8.58,525.5,0.81,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3108,2.46,251.7,1.03,167.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3109,1.74,206.4,1.09,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3110,7.97,479.7,0.76,141.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3111,7.76,470.6,0.7,141.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3112,1.56,189.9,1.09,176.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3113,7.59,470.9,0.76,148.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3114,6.94,436.8,0.76,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3115,5.77,392.6,0.83,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3116,3.83,268.7,0.96,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3117,4.12,305.5,0.89,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3118,6.64,411.8,0.86,152.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3119,1.12,163.5,0.98,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3120,8.17,479.3,0.75,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3121,3.15,279.7,1.01,173.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3122,2.01,221.5,0.99,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3123,5.85,386.7,0.84,151.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3124,3.13,279.2,1.03,171.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3125,2.99,229.6,0.94,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3126,8.46,485.9,0.77,143.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3127,1.35,170.7,1.13,178.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3128,0.94,146.6,1.07,186.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3129,1.55,199.1,1.06,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3130,6.63,404.7,0.8,151.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3131,5.76,392.1,0.89,150.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3132,4.32,283.7,0.98,163.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3133,4.62,341.8,0.97,164.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3134,4.24,337.4,0.98,162.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3135,2.74,259.3,1.04,166.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3136,1.6,199.1,1.07,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3137,3.54,266.2,0.96,167.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3138,5.31,356.5,0.87,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3139,4.19,306.6,0.87,161.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3140,1.35,192.9,1.14,173.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3141,1.93,214.4,1.04,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3142,3.55,301.0,0.97,164.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3143,5.27,363.1,0.84,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3144,4.67,312.0,0.97,159.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3145,1.08,177.2,1.06,183.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3146,6.94,424.8,0.83,148.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3147,5.41,342.7,0.86,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3148,0.78,166.8,1.09,176.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3149,2.27,205.1,1.03,174.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3150,6.65,451.4,0.73,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3151,6.34,416.6,0.85,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3152,1.34,202.7,1.12,179.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3153,6.18,429.0,0.9,155.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3154,1.04,169.2,1.13,183.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3155,0.8,159.7,1.09,181.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3156,5.75,356.6,0.84,151.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3157,6.25,406.3,0.81,151.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3158,7.11,447.8,0.79,147.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3159,7.43,452.6,0.74,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3160,8.17,517.8,0.74,142.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3161,6.5,398.3,0.82,150.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3162,7.56,460.9,0.82,144.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3163,1.44,195.1,1.08,180.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3164,1.79,210.6,1.09,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3165,7.81,479.3,0.77,140.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3166,4.05,324.1,0.92,161.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3167,4.01,302.7,0.97,167.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3168,5.18,344.6,0.89,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3169,2.3,232.5,1.05,177.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3170,1.94,223.7,1.02,172.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3171,3.35,275.9,0.93,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3172,5.37,352.3,0.87,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3173,2.08,217.9,1.05,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3174,6.63,415.0,0.77,153.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3175,8.97,518.4,0.65,138.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3176,4.97,333.7,0.95,155.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3177,2.63,220.2,1.08,170.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3178,2.61,241.9,0.99,169.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3179,7.55,474.3,0.77,154.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3180,2.93,251.0,0.93,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3181,7.7,439.7,0.71,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3182,8.97,514.8,0.67,134.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3183,5.27,340.4,0.88,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3184,7.87,464.2,0.71,145.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3185,6.42,387.1,0.82,151.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3186,7.18,445.3,0.76,147.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3187,7.92,482.4,0.79,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3188,1.23,214.3,1.12,170.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3189,7.43,456.5,0.79,150.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3190,4.1,295.2,0.99,168.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3191,5.82,372.2,0.86,152.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3192,6.97,439.2,0.79,146.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3193,4.55,332.8,0.88,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3194,5.82,393.7,0.85,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3195,0.79,132.4,1.09,177.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3196,8.98,520.5,0.7,137.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3197,6.5,381.4,0.84,148.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3198,6.91,444.5,0.83,145.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3199,6.09,376.3,0.89,152.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3200,4.08,295.7,0.89,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3201,7.29,454.5,0.82,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3202,4.73,310.3,0.89,162.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3203,4.83,350.0,0.96,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3204,6.43,413.7,0.83,150.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3205,5.42,382.9,0.87,164.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3206,2.15,235.3,0.98,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3207,6.18,421.7,0.86,151.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3208,7.2,454.9,0.78,142.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3209,2.4,251.8,1.08,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3210,6.99,422.4,0.8,149.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3211,2.46,247.1,1.0,168.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3212,4.52,322.3,0.9,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3213,4.25,314.6,0.98,162.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3214,5.87,393.6,0.83,155.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3215,6.19,405.4,0.78,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3216,5.9,397.9,0.87,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3217,1.87,216.9,1.06,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3218,0.95,157.1,1.06,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3219,5.45,363.2,0.89,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3220,6.94,455.5,0.93,149.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3221,6.61,414.0,0.86,152.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3222,8.03,502.7,0.83,138.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3223,6.82,439.1,0.81,153.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3224,6.04,372.0,0.8,154.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3225,1.26,168.9,1.03,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3226,3.42,260.3,0.96,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3227,2.32,197.5,1.01,170.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3228,6.69,421.5,0.86,151.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3229,8.56,500.8,0.68,137.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3230,4.36,293.6,0.85,162.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3231,1.5,182.5,1.14,174.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3232,1.86,210.5,1.04,170.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3233,7.15,456.7,0.84,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3234,0.56,124.6,1.05,181.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3235,6.07,404.0,0.87,152.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3236,6.74,410.7,0.82,150.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3237,2.45,217.4,1.03,173.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3238,6.5,429.0,0.79,149.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3239,2.16,218.1,1.01,177.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3240,6.93,433.0,0.86,153.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3241,3.12,272.1,0.98,168.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3242,6.58,420.6,0.87,151.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3243,0.77,166.0,1.13,183.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3244,4.31,280.9,0.97,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3245,4.27,296.3,0.95,160.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3246,2.69,261.9,1.01,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3247,5.02,365.0,0.9,156.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3248,6.69,374.6,0.83,145.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3249,6.9,430.9,0.81,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3250,3.89,316.9,0.99,162.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3251,6.41,419.0,0.92,152.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3252,3.69,294.0,1.02,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3253,6.1,396.7,0.83,155.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3254,3.24,273.2,0.99,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3255,5.06,362.2,0.96,156.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3256,2.29,224.5,1.01,170.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3257,4.31,316.3,0.95,159.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3258,3.07,236.9,0.99,167.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3259,2.55,242.8,1.03,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3260,2.05,213.1,1.06,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3261,7.16,454.4,0.78,151.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3262,3.22,267.8,0.96,176.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3263,1.63,201.6,1.03,176.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3264,6.14,380.5,0.86,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3265,5.76,373.9,0.93,158.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3266,3.16,237.5,0.98,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3267,7.78,476.9,0.76,146.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3268,8.4,493.6,0.73,145.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3269,2.39,233.5,1.0,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3270,6.6,421.1,0.82,155.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3271,7.07,415.6,0.8,149.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3272,1.74,202.8,1.06,177.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3273,8.65,500.0,0.7,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3274,6.3,392.7,0.86,154.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3275,7.23,446.4,0.79,147.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3276,3.52,269.5,0.97,170.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3277,1.52,207.9,1.02,179.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3278,6.98,460.2,0.79,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3279,3.73,275.8,0.98,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3280,6.99,433.7,0.76,151.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3281,4.86,316.4,0.91,159.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3282,1.68,208.6,1.1,182.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3283,2.9,259.7,1.03,165.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3284,1.7,217.9,1.06,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3285,6.77,438.4,0.84,152.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3286,7.29,459.7,0.8,151.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3287,2.55,240.2,0.98,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3288,3.79,321.3,0.87,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3289,3.27,263.6,0.96,173.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3290,6.73,425.1,0.86,144.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3291,0.8,169.3,1.04,186.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3292,1.5,201.3,1.03,180.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3293,1.89,225.0,1.08,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3294,4.69,311.1,0.96,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3295,5.92,366.5,0.9,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3296,8.14,512.6,0.79,142.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3297,5.79,383.9,0.82,154.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3298,4.63,330.2,0.94,161.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3299,1.91,206.3,1.09,173.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3300,8.8,506.9,0.76,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3301,1.81,203.8,0.97,179.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3302,7.74,490.0,0.74,149.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3303,5.56,368.4,0.88,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3304,6.22,409.6,0.79,152.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3305,6.41,403.0,0.88,154.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3306,4.14,314.6,1.02,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3307,1.93,184.9,1.04,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3308,4.39,336.7,0.96,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3309,6.31,396.5,0.78,154.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3310,2.28,215.4,0.95,170.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3311,8.59,479.8,0.68,136.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3312,1.82,207.3,1.09,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3313,4.2,308.4,0.97,167.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3314,1.83,203.0,1.09,170.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3315,3.0,239.4,1.02,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3316,6.68,431.2,0.81,148.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3317,2.36,211.3,1.06,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3318,0.68,158.8,1.1,183.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3319,6.35,425.3,0.82,156.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3320,6.25,413.3,0.77,148.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3321,3.44,293.6,0.93,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3322,0.81,161.3,1.13,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3323,7.35,444.1,0.82,144.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3324,6.9,439.6,0.79,151.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3325,5.32,356.1,0.89,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3326,2.59,240.0,1.03,176.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3327,5.63,389.2,0.93,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3328,1.32,169.0,1.03,174.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3329,0.84,168.9,1.12,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3330,8.57,482.0,0.71,135.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3331,7.76,480.5,0.74,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3332,3.01,256.9,0.93,170.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3333,3.7,268.5,0.99,167.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3334,1.37,148.2,0.99,183.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3335,4.32,295.9,0.94,155.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3336,1.33,193.3,1.07,176.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3337,2.9,250.2,1.02,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3338,1.78,197.2,1.04,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3339,4.13,316.0,0.99,164.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3340,8.77,497.4,0.73,136.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3341,0.64,136.8,1.1,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3342,5.55,373.5,0.96,157.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3343,1.09,173.2,1.1,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3344,7.41,466.2,0.81,139.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3345,6.42,400.6,0.84,149.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3346,7.36,452.9,0.84,149.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3347,1.62,207.0,1.12,175.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3348,2.89,274.6,0.98,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3349,7.2,461.9,0.85,152.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3350,3.08,263.4,1.02,169.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3351,2.5,218.9,1.05,171.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3352,6.16,411.5,0.88,149.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3353,4.51,317.9,0.9,162.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3354,8.15,489.8,0.74,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3355,7.97,472.9,0.78,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3356,0.62,138.9,1.21,184.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3357,2.85,253.1,1.01,172.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3358,4.79,339.2,0.89,161.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3359,2.04,208.4,1.14,171.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3360,8.05,504.5,0.77,142.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3361,8.53,487.4,0.71,141.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3362,4.66,318.7,0.98,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3363,4.75,321.3,0.91,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3364,2.78,257.0,1.04,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3365,6.86,386.1,0.78,147.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3366,6.83,432.3,0.8,148.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3367,8.29,504.9,0.7,136.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3368,7.06,438.6,0.8,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3369,6.28,387.5,0.83,151.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3370,7.12,461.3,0.78,151.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3371,7.56,453.1,0.74,147.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3372,0.94,155.5,1.08,181.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3373,7.81,506.6,0.71,140.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3374,1.14,149.2,1.06,185.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3375,2.37,233.7,1.08,175.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3376,5.91,402.5,0.78,157.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3377,1.64,193.9,1.05,173.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3378,3.72,297.6,0.95,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3379,6.94,445.6,0.8,152.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3380,6.5,428.0,0.81,150.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3381,4.6,314.3,0.92,160.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3382,4.08,325.9,0.9,166.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3383,3.45,243.3,1.03,166.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3384,5.79,401.0,0.82,153.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3385,5.94,382.6,0.87,154.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3386,6.54,415.1,0.85,152.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3387,8.23,478.5,0.69,147.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3388,2.59,242.3,1.04,171.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3389,3.0,255.1,0.97,175.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3390,3.86,305.3,1.01,166.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3391,3.95,274.8,0.98,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3392,8.71,524.1,0.74,139.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3393,0.7,177.8,1.12,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3394,4.43,302.3,0.94,162.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3395,1.66,206.7,1.11,172.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3396,6.56,399.2,0.89,149.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3397,8.32,498.9,0.8,142.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3398,2.0,222.0,1.12,175.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3399,2.6,223.9,0.98,171.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3400,1.12,172.5,1.1,178.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3401,6.84,447.6,0.8,148.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3402,6.39,399.4,0.81,149.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3403,7.32,474.7,0.81,138.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3404,8.88,533.4,0.72,141.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3405,6.02,391.3,0.83,152.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3406,3.58,294.6,0.96,169.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3407,1.56,169.3,1.06,173.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3408,3.21,240.6,1.01,165.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3409,1.29,192.6,1.05,178.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3410,5.58,364.8,0.92,152.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3411,5.49,334.5,0.88,157.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3412,4.14,313.5,0.95,164.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3413,1.56,209.8,1.07,177.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3414,8.1,484.5,0.84,143.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3415,2.14,222.1,1.06,174.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3416,2.96,253.5,0.99,171.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3417,5.41,349.7,0.88,158.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3418,1.99,220.7,1.07,177.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3419,1.12,160.0,1.02,182.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3420,2.93,255.5,1.04,171.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3421,2.86,238.7,1.05,167.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3422,1.96,178.6,1.08,177.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3423,4.13,303.3,0.99,166.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3424,8.95,507.4,0.73,132.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3425,3.89,281.5,0.94,162.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3426,2.39,225.2,1.0,172.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3427,2.73,248.1,1.01,168.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3428,2.96,261.3,1.03,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3429,1.09,177.8,1.05,180.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3430,0.52,161.4,1.17,180.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3431,7.0,449.4,0.81,146.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3432,0.83,145.5,1.15,180.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3433,8.58,513.3,0.72,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3434,8.36,497.8,0.7,140.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3435,5.85,402.3,0.91,151.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3436,0.75,158.2,1.15,181.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3437,1.01,183.8,1.05,179.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3438,3.01,276.0,1.05,171.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3439,6.45,420.2,0.8,154.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3440,8.26,517.3,0.68,144.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3441,8.16,497.7,0.72,147.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3442,8.02,484.9,0.71,145.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3443,8.39,493.9,0.75,141.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3444,8.15,498.5,0.78,139.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3445,4.83,327.0,0.91,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3446,8.12,495.7,0.74,144.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3447,5.44,378.6,0.88,153.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3448,4.51,342.2,0.93,169.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3449,0.62,133.0,1.13,182.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3450,2.81,218.9,1.02,169.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3451,6.45,389.5,0.84,150.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3452,3.22,258.2,0.96,168.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3453,1.63,192.6,1.05,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3454,3.89,290.1,1.0,159.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3455,8.78,502.9,0.65,134.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3456,1.84,204.8,1.08,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3457,3.94,311.2,0.97,160.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3458,5.65,379.9,0.84,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3459,1.48,182.0,1.09,174.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3460,3.61,265.6,0.96,164.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3461,7.36,436.7,0.85,146.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3462,7.05,415.7,0.81,146.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3463,7.95,448.6,0.74,143.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3464,6.71,422.4,0.79,150.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3465,6.17,392.7,0.8,147.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3466,8.39,510.1,0.73,138.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3467,6.06,392.5,0.85,155.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3468,1.54,195.4,1.05,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3469,3.06,261.9,0.98,164.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3470,5.38,385.5,0.89,154.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3471,6.94,431.8,0.76,148.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3472,5.2,356.5,0.93,159.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3473,0.7,138.5,1.12,183.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3474,6.93,467.2,0.75,151.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3475,7.98,494.2,0.74,143.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3476,7.45,475.6,0.79,142.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3477,4.2,309.8,0.93,165.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3478,4.45,316.0,0.92,158.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3479,6.43,398.9,0.77,156.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3480,1.65,201.5,1.08,177.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3481,3.0,255.3,1.0,169.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3482,6.82,432.4,0.72,146.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3483,3.27,266.7,1.07,169.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3484,7.64,474.5,0.7,147.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3485,6.44,405.3,0.79,147.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3486,7.95,485.2,0.75,143.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3487,8.38,495.2,0.74,140.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3488,3.26,246.5,0.97,163.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3489,8.73,521.4,0.71,138.2,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3490,2.0,210.7,1.03,173.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3491,8.18,488.5,0.73,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3492,7.11,431.0,0.77,148.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3493,1.94,197.3,1.11,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3494,0.6,145.8,1.09,181.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3495,4.82,337.7,0.85,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3496,8.89,526.3,0.69,136.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3497,6.02,397.1,0.79,155.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3498,6.09,392.0,0.91,152.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3499,7.38,448.1,0.82,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3500,8.18,514.3,0.78,145.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3501,6.75,421.7,0.81,152.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3502,0.64,151.4,1.08,182.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3503,2.14,229.7,1.08,175.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3504,2.28,229.2,1.03,172.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3505,1.5,176.8,1.1,177.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3506,5.78,371.5,0.89,157.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3507,4.99,338.5,0.98,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3508,0.94,184.6,1.13,181.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3509,5.27,363.5,0.93,161.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3510,8.77,510.2,0.74,136.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3511,7.08,440.3,0.85,147.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3512,4.03,268.4,0.97,160.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3513,1.75,208.0,1.01,176.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3514,4.34,294.7,0.96,160.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3515,2.77,251.4,0.92,169.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3516,2.05,213.9,1.05,178.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3517,7.55,460.4,0.72,143.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3518,0.68,154.9,1.21,179.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3519,2.59,235.8,1.0,174.9,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3520,6.36,432.6,0.8,151.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3521,1.84,203.5,1.09,172.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3522,3.78,281.4,0.96,166.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3523,8.52,490.7,0.79,141.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3524,8.87,510.1,0.74,134.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3525,7.47,459.1,0.79,150.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3526,5.25,381.5,0.87,154.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3527,3.82,300.1,1.0,163.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3528,5.09,348.3,0.88,161.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3529,5.32,371.2,0.95,153.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3530,3.6,255.8,0.96,170.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3531,2.63,243.0,0.98,172.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3532,8.51,508.9,0.72,144.1,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3533,1.12,168.7,1.05,181.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3534,8.09,473.4,0.74,140.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3535,1.65,216.9,1.06,172.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3536,4.9,363.5,0.95,163.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3537,8.21,469.7,0.77,142.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3538,0.73,155.9,1.03,183.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3539,4.94,343.5,0.91,159.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3540,1.66,220.6,1.08,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3541,5.3,361.9,0.89,160.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3542,2.29,244.2,1.03,171.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3543,2.04,222.9,1.11,178.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3544,7.93,466.6,0.77,143.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3545,6.48,387.1,0.88,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3546,7.46,460.4,0.79,141.6,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3547,5.07,345.4,0.92,158.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3548,6.94,433.9,0.79,150.5,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3549,4.46,304.0,0.94,161.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3550,1.6,186.1,1.07,179.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3551,4.75,313.9,0.81,165.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3552,2.49,228.6,1.03,172.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3553,3.32,271.7,0.97,169.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3554,7.44,461.9,0.78,140.9,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3555,8.38,528.8,0.68,140.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3556,7.49,440.0,0.83,148.3,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3557,4.54,305.1,0.98,159.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3558,8.11,476.1,0.75,144.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3559,6.37,412.7,0.84,152.4,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3560,4.88,342.6,1.0,158.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3561,2.53,226.1,1.02,167.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3562,0.86,158.7,1.07,182.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3563,0.63,150.2,1.12,178.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3564,5.86,423.8,0.91,149.2,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3565,6.97,413.8,0.78,151.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3566,3.88,271.6,0.97,164.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3567,3.43,235.8,1.0,166.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3568,3.36,280.5,0.95,165.8,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3569,4.37,312.1,0.92,157.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3570,7.86,482.0,0.78,141.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3571,3.56,287.2,0.87,164.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3572,6.0,401.8,0.86,148.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3573,6.53,405.6,0.82,156.4,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3574,6.09,381.3,0.82,149.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3575,2.5,198.7,1.13,168.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3576,5.22,357.0,0.9,159.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3577,4.69,339.6,0.92,166.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3578,8.89,510.2,0.68,142.7,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3579,6.2,358.9,0.85,148.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3580,1.72,170.8,1.04,178.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3581,5.45,368.1,0.9,153.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3582,1.05,175.1,1.14,176.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3583,2.2,217.9,0.99,173.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3584,9.0,520.6,0.69,138.0,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3585,6.53,459.1,0.75,151.8,Peak Slip Exceeded / Traction Loss
+PIRELLI-CYBER-3586,1.39,166.6,1.01,177.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3587,1.72,162.0,1.01,180.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3588,0.93,160.7,1.14,182.0,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3589,1.7,202.2,1.11,174.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3590,1.79,188.6,1.02,174.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3591,6.08,378.4,0.84,153.3,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3592,1.74,236.1,1.12,175.5,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3593,6.35,400.1,0.86,154.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3594,3.15,245.9,0.95,166.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3595,4.18,293.3,0.95,163.7,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3596,1.09,157.7,1.08,180.1,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3597,3.65,308.0,0.98,170.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3598,3.08,254.0,1.09,171.6,Optimal Elastic Grip Domain
+PIRELLI-CYBER-3599,5.36,370.1,0.88,155.2,Optimal Elastic Grip Domain

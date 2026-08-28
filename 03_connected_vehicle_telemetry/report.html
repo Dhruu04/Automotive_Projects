@@ -1,0 +1,1021 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Driver Safety & Fleet Eco-Driving Behavior Profiling | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-speedometer2 me-1"></i> Connected Car IoT</span>
+                        <span class="badge-id">Project 03</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $310k / yr</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Commercial Driver Safety & Fleet Eco-Driving Behavior Profiling</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Analyzes driving patterns—such as sudden braking, harsh acceleration, and cornering speed—to coach commercial drivers, reduce accidents, and cut fleet fuel waste.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Behavioral Clustering, Motion Pattern Analysis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Fleet Eco Score</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-leaf fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">82.4 / 100</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-up-right"></i> 14.2% Fuel Saved
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">High-Risk Drivers Flagged</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-exclamation-octagon fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">905</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-danger-subtle text-danger fw-bold">
+                            <i class="bi bi-bell-fill"></i> Coaching Assigned
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Total Trips Evaluated</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-compass fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2,400</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-check-all"></i> Automated Telematics
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Grouping Reliability</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-diagram-2 fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">94.2%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-bullseye"></i> Clear Separation
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Driver Safety & Aggressiveness Grouping
+                            </h5>
+                            <small class="text-slate-600">Separates drivers into Eco-Friendly, Standard, and High-Risk categories</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Safety Clusters</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="b338cf56-5ef8-437d-9fa8-3cf6e549dec3" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b338cf56-5ef8-437d-9fa8-3cf6e549dec3")) {                    Plotly.newPlot(                        "b338cf56-5ef8-437d-9fa8-3cf6e549dec3",                        [{"hovertemplate":"Driver_Category=Eco-Friendly (Safe)\u003cbr\u003eHarsh Acceleration Rate (m\u002fs\u00b3)=%{x}\u003cbr\u003eCornering Lateral Force (G)=%{y}\u003cbr\u003eEmergency Brakes=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Eco-Friendly (Safe)","marker":{"color":"#059669","size":{"dtype":"i1","bdata":"AgYBAgMDAgIBAAMBBgECAgEEAQEBAwABAgMDAgIBAgQCAwQBBgECBAEAAgMHAgMDAgMCAgIEAgIHAgMAAgIEAgIEAQUDAAMBBAICAQQBAQUCAwMFBAUDAwUEAAMDAQMCAgECAwEDAwEBAQcBAgEBAwEEAQQAAQIDAQECAQECAQMBAgECAgECAwMEBgECBAACAAIDBAICAgMDAgIEAgIAAgEBAAIBBgMBAwIDAgIDAgMDAwMCBAECBAADAwQABAIEAgYCAQAAAgQEBQUDAwUDBgECAQQCAwACAwYAAgECBAAFBgIABQEAAgIEAgQAAQYCAQICAAIDBAQCAwMABAUCBQIFAwADAwECAgEEAQMBBAICAAIBAQQDAAEFBAUCAwECAgIDAgMAAQQBAwEBAwMDAgACBQMEAgEEAgECAwQCAgMFAgMFAwEBAgMCAgACAwMBAwQGAgUD"},"sizemode":"area","sizeref":0.04,"symbol":"circle"},"mode":"markers","name":"Eco-Friendly (Safe)","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"hetRuB6F+z8fhetRuB4HQOxRuB6F6wFAuB6F61G4\u002fj\u002fXo3A9CtcBQK5H4XoUrv8\u002f9ihcj8L1AECuR+F6FK4LQHsUrkfhegpAhetRuB6F9z9xPQrXo3ANQAAAAAAAABFAPQrXo3A9BkBI4XoUrkcDQM3MzMzMzPw\u002fPQrXo3A9BkAUrkfhehQKQLgehetRuAZAj8L1KFyPBkDXo3A9CtcDQIXrUbgehQVAZmZmZmZmAED2KFyPwvUCQMP1KFyPwvk\u002fPQrXo3A9AECPwvUoXI8CQBSuR+F6FAJAXI\u002fC9Shc+z9SuB6F61EGQDMzMzMzMwdAj8L1KFyPBEA9CtejcD0AQArXo3A9CgNAzczMzMzMAEApXI\u002fC9SgEQOxRuB6F6w1A7FG4HoXrA0Bcj8L1KFz\u002fP6RwPQrXowJAcT0K16NwA0DsUbgehev5Pylcj8L1KABACtejcD0KCUC4HoXrUbgAQFyPwvUoXP8\u002f16NwPQrXB0CF61G4HoUDQArXo3A9CgFAKVyPwvUoBEDNzMzMzMwAQPYoXI\u002fC9QJAPQrXo3A9BkCPwvUoXI8CQClcj8L1KABApHA9CtejBEAAAAAAAAACQDMzMzMzMwVAMzMzMzMzCUAzMzMzMzMHQKRwPQrXowRArkfhehSuAUCuR+F6FK4HQPYoXI\u002fC9QZA9ihcj8L18D+uR+F6FK7\u002fP9ejcD0K1wFAUrgehetRAECF61G4HoUHQIXrUbgehQNA7FG4HoXrBUAzMzMzMzMHQFK4HoXrUQJAFK5H4XoUCkCuR+F6FK4DQM3MzMzMzPw\u002f4XoUrkfhBECkcD0K16MGQPYoXI\u002fC9QpAPQrXo3A9BkA9CtejcD0AQAAAAAAAAApAPQrXo3A9\u002fj+F61G4HoUJQHE9CtejcAFAUrgehetRCEBxPQrXo3ADQI\u002fC9Shcj\u002fI\u002fAAAAAAAABEApXI\u002fC9SgKQIXrUbgehQVAcT0K16NwAUBSuB6F61EAQB+F61G4HgNAexSuR+F6\u002fD8AAAAAAAAAQArXo3A9CgFAcT0K16Nw\u002fT9cj8L1KFwBQNejcD0K1wFAPQrXo3A9CEDhehSuR+EEQEjhehSuRwlACtejcD0K\u002fz9I4XoUrkcFQB+F61G4HgFA4XoUrkfhAkBcj8L1KFwDQBSuR+F6FARA16NwPQrX\u002fz\u002fD9Shcj8IDQDMzMzMzM\u002f8\u002fcT0K16NwC0AK16NwPQoDQHE9CtejcAFAKVyPwvUoAEC4HoXrUbgAQPYoXI\u002fC9QZAw\u002fUoXI\u002fC\u002fT89CtejcD0CQAAAAAAAAAZAexSuR+F6BECkcD0K16P4P5qZmZmZmQdApHA9CtejBkBxPQrXo3ADQLgehetRuAZA4XoUrkfh\u002fj9I4XoUrkcFQIXrUbgehQFAuB6F61G4AECPwvUoXI\u002f6P+F6FK5H4QBApHA9CtejBEBI4XoUrkf9P7gehetRuP4\u002fSOF6FK5HBUDD9Shcj8L5P2ZmZmZmZgJAj8L1KFyPAkAfhetRuB4DQEjhehSuRwVA7FG4HoXrBUAfhetRuB4FQD0K16NwPQZAj8L1KFyPAkB7FK5H4XoIQOF6FK5H4QRAj8L1KFyPAkA9CtejcD0CQB+F61G4HgNAMzMzMzMzA0CPwvUoXI8GQIXrUbgehQdAuB6F61G4BEDXo3A9CtcFQArXo3A9CglAPQrXo3A9BEAzMzMzMzMBQAAAAAAAAAhAhetRuB6F\u002fz9SuB6F61EGQFyPwvUoXAVA4XoUrkfh\u002fj8UrkfhehQCQKRwPQrXo\u002fw\u002fMzMzMzMz8z\u002fsUbgehev9PzMzMzMzMwNAw\u002fUoXI\u002fCBUCF61G4HoUBQBSuR+F6FARAPQrXo3A9BEDD9Shcj8IDQI\u002fC9Shcj\u002f4\u002f7FG4HoXrBUDXo3A9CtcBQKRwPQrXowJAj8L1KFyP\u002fj9I4XoUrkcHQFyPwvUoXPs\u002fAAAAAAAA\u002fD8UrkfhehQGQFK4HoXrUQBACtejcD0KEEAUrkfhehQIQGZmZmZmZgBAUrgehetR+D9mZmZmZmYGQFK4HoXrUQRArkfhehSuD0CPwvUoXI\u002f+P5qZmZmZmQNASOF6FK5H\u002fT\u002fD9Shcj8IDQKRwPQrXowJAj8L1KFyPCEAzMzMzMzMDQFK4HoXrUQBAXI\u002fC9ShcA0CkcD0K16P8P4\u002fC9ShcjwBAFK5H4XoU\u002fj8zMzMzMzMDQGZmZmZmZgJArkfhehSu\u002fz+kcD0K16MIQDMzMzMzM\u002f8\u002fXI\u002fC9ShcCUBSuB6F61EEQDMzMzMzMwNAPQrXo3A9BEAfhetRuB4FQJqZmZmZmf0\u002fUrgehetRBkCPwvUoXI8GQAAAAAAAAAZAUrgehetRBkAzMzMzMzMDQBSuR+F6FAhAH4XrUbgeBUA9CtejcD36P6RwPQrXowRASOF6FK5HBUCkcD0K16MAQArXo3A9CglAKVyPwvUoAkDNzMzMzMwIQMP1KFyPwgVA7FG4HoXrBUDXo3A9Ctf\u002fP83MzMzMzAhAAAAAAAAADEDsUbgehesDQOxRuB6F6wVAUrgehetRBEAUrkfhehT+P65H4XoUrgFArkfhehSuA0CamZmZmZkDQLgehetRuAZApHA9CtejCEDD9Shcj8IBQNejcD0K1wFAUrgehetRBkCF61G4HoUJQArXo3A9CgFA4XoUrkfh\u002fj97FK5H4XoCQArXo3A9CgVA7FG4HoXrAUCF61G4HoX\u002fPylcj8L1KAZAPQrXo3A9BEDhehSuR+ECQIXrUbgehQFArkfhehSuB0A9CtejcD0GQOF6FK5H4QJAAAAAAAAA\u002fD+kcD0K16MKQD0K16NwPQBAj8L1KFyPBEAUrkfhehQEQBSuR+F6FAhAXI\u002fC9ShcAUBmZmZmZmYGQBSuR+F6FAhAKVyPwvUoAkBcj8L1KFwFQFK4HoXrUQRA4XoUrkfhAEAUrkfhehQCQM3MzMzMzAJAZmZmZmZmBEDXo3A9CtcBQMP1KFyPwgFApHA9CtejCkBmZmZmZmYCQIXrUbgehQNAj8L1KFyPBEApXI\u002fC9SgEQIXrUbgehQlAH4XrUbgeAUAK16NwPQoJQM3MzMzMzAJAH4XrUbgeB0CF61G4HoUFQFK4HoXrUQJACtejcD0K\u002fz\u002fD9Shcj8IBQD0K16NwPRJApHA9Ctej+D+PwvUoXI8AQBSuR+F6FAhAcT0K16NwCUDXo3A9CtcDQKRwPQrXowBArkfhehSuAUCF61G4HoUFQHsUrkfhegJArkfhehSuAUBxPQrXo3AQQNejcD0K1wlAzczMzMzMAkCuR+F6FK4DQK5H4XoUrgtAPQrXo3A9\u002fj\u002f2KFyPwvUCQB+F61G4HgNAKVyPwvUoAkBI4XoUrkcFQK5H4XoUrglASOF6FK5H+T9xPQrXo3AHQDMzMzMzMwNAexSuR+F6AECPwvUoXI8SQM3MzMzMzARAKVyPwvUoBkAAAAAAAAD8P+xRuB6F6wNAzczMzMzM\u002fD9xPQrXo3D5Pylcj8L1KABAUrgehetR\u002fD8AAAAAAAACQD0K16NwPQBAH4XrUbgeBUBxPQrXo3AFQIXrUbgehQVAmpmZmZmZCUDNzMzMzMz4P7gehetRuABAUrgehetRBkA9CtejcD0CQOF6FK5H4QRAmpmZmZmZAUBxPQrXo3D9P9ejcD0K1wlAAAAAAAAACkAAAAAAAAAMQEjhehSuRwVA"},"xaxis":"x","y":{"dtype":"f8","bdata":"fT81XrpJ1D89CtejcD3SPzMzMzMzM9s\u002fYOXQItv51j9I4XoUrkfRP0Jg5dAi29E\u002fEFg5tMh2zj\u002f4U+Olm8TQP3Noke18P9U\u002f6SYxCKwc0j9eukkMAivXP9NNYhBYOeA\u002f1XjpJjEI1D+28\u002f3UeOnWPxkEVg4tstU\u002f8tJNYhBY0T\u002fjpZvEILDSP4GVQ4ts59M\u002fzczMzMzM1D9kO99PjZfWP\u002fp+arx0k9g\u002fx0s3iUFg1T+4HoXrUbjWP7x0kxgEVs4\u002f7nw\u002fNV660T\u002fb+X5qvHTTP\u002fT91HjpJtk\u002fvHSTGARW1j+0yHa+nxrXP1yPwvUoXNc\u002fSgwCK4cW2T+amZmZmZnZP28Sg8DKodU\u002farx0kxgE1j8\u002fNV66SQzSP+f7qfHSTdo\u002fhetRuB6F0z+R7Xw\u002fNV7SP2ZmZmZmZtY\u002f3SQGgZVD0z\u002fXo3A9CtfTP7ByaJHtfNc\u002f30+Nl24S0z8pXI\u002fC9SjUP1CNl24Sg9g\u002fRrbz\u002fdR40T\u002f4U+Olm8TYP4lBYOXQIss\u002fbef7qfHS1T9KDAIrhxbRP\u002fCnxks3idE\u002fYhBYObTI1j9OYhBYObTYP\u002f7UeOkmMdg\u002fXI\u002fC9Shczz9t5\u002fup8dLVPycxCKwcWtQ\u002fxSCwcmiRzT+F61G4HoXLP0a28\u002f3UeNE\u002fN4lBYOXQ2j+Nl24Sg8DSPwRWDi2yndc\u002fTmIQWDm00D8pXI\u002fC9SjUP\u002fyp8dJNYtA\u002fQmDl0CLb2T+DwMqhRbbTP6JFtvP91Ng\u002f001iEFg51D\u002fFILByaJHVPxBYObTIdtY\u002fx0s3iUFg1T\u002fVeOkmMQjcPyPb+X5qvNQ\u002fKVyPwvUo1D8v3SQGgZXbP7x0kxgEVtY\u002fWDm0yHa+zz8AAAAAAADQP4PAyqFFtts\u002fEFg5tMh2zj9iEFg5tMjWPzvfT42XbuI\u002foBov3SQG2T91kxgEVg7VP4lBYOXQIss\u002fTDeJQWDl0D956SYxCKzUP+xRuB6F69k\u002fsp3vp8ZL1z\u002fVeOkmMQjUP\u002fp+arx0k9A\u002f30+Nl24S0z\u002f4U+Olm8TQP+kmMQisHNI\u002fjZduEoPA0j\u002f8qfHSTWLQP65H4XoUrtc\u002fObTIdr6f0j\u002fLoUW28\u002f3UP6jGSzeJQdA\u002fvp8aL90k1j8MAiuHFtnWP7Kd76fGS9c\u002f+n5qvHST2D9KDAIrhxbJPx+F61G4HtU\u002fI9v5fmq81D99PzVeuknUP4ts5\u002fup8dI\u002fi2zn+6nx0j9oke18PzXWP0oMAiuHFsk\u002fke18PzVe0j+iRbbz\u002fdTYP1TjpZvEINg\u002f7FG4HoXr2T8730+Nl27SP8l2vp8aL9U\u002fJzEIrBxa1D8IrBxaZDvXP42XbhKDwNo\u002fhetRuB6F2z85tMh2vp\u002fSP30\u002fNV66SdQ\u002ffT81XrpJ1D\u002fZzvdT46XTP6jGSzeJQdA\u002f9P3UeOkm0T956SYxCKzcP1YOLbKd79c\u002fxSCwcmiRzT\u002fl0CLb+X7SPwRWDi2ync8\u002fy6FFtvP91D+amZmZmZnRP0a28\u002f3UeNk\u002fXrpJDAIr1z8j2\u002fl+arzUP5zEILByaNE\u002f46WbxCCw0j9qvHSTGATWPzvfT42XbtI\u002fBFYOLbKd1z+F61G4HoXTP6jGSzeJQdg\u002fhetRuB6F0z+28\u002f3UeOnWP3e+nxov3dQ\u002f9P3UeOkm2T8Sg8DKoUXWP7TIdr6fGtc\u002fTDeJQWDl2D8bL90kBoHFP\u002fYoXI\u002fC9cg\u002fF9nO91Pj1T99PzVeukncPxBYObTIdtY\u002fsp3vp8ZL1z\u002fFILByaJHVP3e+nxov3dQ\u002fw\u002fUoXI\u002fC1T81XrpJDALTP6wcWmQ739c\u002f5dAi2\u002fl+0j\u002fufD81XrrZP99PjZduEtM\u002f9P3UeOkm2T\u002fP91PjpZvUP166SQwCK9c\u002f2c73U+Ol0z81XrpJDALTP1yPwvUoXNc\u002fGQRWDi2y3T+0yHa+nxrXP9ejcD0K19s\u002fmpmZmZmZ0T8lBoGVQ4vUP4lBYOXQIss\u002fEoPAyqFF1j8zMzMzMzPTP1pkO99Pjd8\u002frBxaZDvfzz8X2c73U+PVP\u002fCnxks3idE\u002fuB6F61G41j\u002fNzMzMzMzMP4ts5\u002fup8do\u002fjZduEoPA2j8K16NwPQrXP0jhehSuR9E\u002f+n5qvHST2D\u002fD9Shcj8LVPz0K16NwPdI\u002fZDvfT42X1j+amZmZmZnRPzm0yHa+n9I\u002f+n5qvHST0D9I4XoUrkfRP5MYBFYOLdo\u002fWDm0yHa+1z8GgZVDi2zXP1yPwvUoXNc\u002foBov3SQG2T9eukkMAivXP57vp8ZLN9E\u002fgZVDi2zn0z9Ei2zn+6nRP3E9CtejcM0\u002fTDeJQWDl2D8zMzMzMzPDP\u002fYoXI\u002fC9dA\u002fdZMYBFYOzT956SYxCKzUP1CNl24Sg9A\u002fx0s3iUFg1T9vEoPAyqHdP6JFtvP91Ng\u002ffT81XrpJ1D\u002fhehSuR+HaP8uhRbbz\u002fdQ\u002fBoGVQ4ts3z\u002fD9Shcj8LVP4lBYOXQIts\u002fmpmZmZmZ2T9QjZduEoPQP6JFtvP91NA\u002fIbByaJHtzD9MN4lBYOXQP6abxCCwctA\u002fObTIdr6f2j9mZmZmZmbWP+f7qfHSTdI\u002fnu+nxks30T9SuB6F61HQPycxCKwcWtQ\u002f1XjpJjEI1D9YObTIdr7PPw4tsp3vp9Y\u002fi2zn+6nx0j9iEFg5tMjWP1YOLbKd79c\u002frBxaZDvf1z+28\u002f3UeOnWPyPb+X5qvNQ\u002fHVpkO99P1T8OLbKd76feP1g5tMh2vtc\u002f9ihcj8L10D99PzVeuknUP\u002fCnxks3idE\u002fokW28\u002f3U2D+PwvUoXI\u002fSP+XQItv5ftI\u002fF9nO91Pj1T\u002fRItv5fmrUP1yPwvUoXNc\u002f5\u002fup8dJN0j\u002f4U+Olm8TQP6abxCCwctg\u002fHVpkO99PzT8nMQisHFrcP2Q730+Nl84\u002ftvP91Hjp1j89CtejcD3aP7ByaJHtfNc\u002fjZduEoPA0j\u002fHSzeJQWDdP0a28\u002f3UeNk\u002fL90kBoGV0z+0yHa+nxrXP57vp8ZLN9k\u002f2\u002fl+arx00z\u002f4U+Olm8TQP2Dl0CLb+dY\u002fqvHSTWIQ2D\u002fZzvdT46XTPx+F61G4HtU\u002fH4XrUbge1T\u002fufD81XrrZP2q8dJMYBNY\u002fN4lBYOXQ2j+sHFpkO9\u002fXP6RwPQrXo9g\u002fukkMAiuH1j\u002f+1HjpJjHYPzMzMzMzM9M\u002f2c73U+Ol0z\u002fByqFFtvPVPxBYObTIdtY\u002f46WbxCCw0j8fhetRuB7VPyUGgZVDi9Q\u002fyXa+nxovzT83iUFg5dDaP7gehetRuM4\u002fUI2XbhKD2D\u002fwp8ZLN4nRP57vp8ZLN9k\u002fO99PjZdu0j8MAiuHFtneP1TjpZvEINg\u002fyXa+nxov1T99PzVeukncP3E9CtejcNU\u002fvp8aL90k1j8v3SQGgZXTP\u002fLSTWIQWNE\u002fRIts5\u002fup2T8ZBFYOLbLVP+XQItv5fso\u002f9ihcj8L10D+WQ4ts5\u002fvZP1K4HoXrUdg\u002fvp8aL90k1j+BlUOLbOfTP8\u002f3U+Olm9Q\u002fL90kBoGV2z9g5dAi2\u002fnWP1K4HoXrUdA\u002fbef7qfHS1T+amZmZmZnRPzm0yHa+n9I\u002fXI\u002fC9Shc1z8tsp3vp8bTP\u002fyp8dJNYtg\u002fPQrXo3A90j9aZDvfT43XPzEIrBxaZNM\u002foBov3SQG2T8j2\u002fl+arzUP8UgsHJokdU\u002fxSCwcmiR1T\u002fVeOkmMQjMPwaBlUOLbNc\u002fbxKDwMqh1T\u002fhehSuR+HSPz0K16NwPdI\u002fhetRuB6F0z+4HoXrUbjWP2Dl0CLb+dY\u002f"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Driver_Category=Standard Commuter\u003cbr\u003eHarsh Acceleration Rate (m\u002fs\u00b3)=%{x}\u003cbr\u003eCornering Lateral Force (G)=%{y}\u003cbr\u003eEmergency Brakes=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Standard Commuter","marker":{"color":"#0284c7","size":{"dtype":"i1","bdata":"CQYHBAQBDAUKBwQGCAcFBgwNBwkGCQcFBwkICAgDBQoOBgQCAQoKBQkFBgYCBggJBQYMBAsIAwgKDAcMEAQFBAQICAcMBAsGCAcIBggEBAcCDQgHCQkJBAkJBQQHAwQQBQcKBAIHBw0ICAIIBAMGBwgMBwgFBwUGEAQICAYFCAUECgQJBQQKAwcEBAkJCQUEBgYICgULCwYFBwQJBwsG"},"sizemode":"area","sizeref":0.04,"symbol":"circle"},"mode":"markers","name":"Standard Commuter","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAAAAEkAfhetRuB4SQDMzMzMzMxdArkfhehSuCUB7FK5H4XoQQLgehetRuAxAH4XrUbgeE0AK16NwPQoRQJqZmZmZmQVA7FG4HoXrFUApXI\u002fC9SgXQGZmZmZmZg5AcT0K16NwFUDNzMzMzMwOQLgehetRuBVAZmZmZmZmEEAK16NwPQoHQPYoXI\u002fC9Q5AmpmZmZmZBUAzMzMzMzPzP1yPwvUoXBVA4XoUrkfhEUB7FK5H4XoTQHE9CtejcAdACtejcD0KFEBxPQrXo3ASQAAAAAAAAA5AUrgehetRBEBcj8L1KFwYQClcj8L1KBNAPQrXo3A9FEA9CtejcD0OQD0K16NwPRVAuB6F61G4DEBxPQrXo3AUQMP1KFyPwhBA7FG4HoXrFkCF61G4HoUUQKRwPQrXoxFAKVyPwvUoE0D2KFyPwvUSQNejcD0K1xFAUrgehetRCECamZmZmZkXQKRwPQrXoxFAMzMzMzMzD0AzMzMzMzMRQFK4HoXrURFAFK5H4XoUEkBmZmZmZmYUQHE9CtejcBJAPQrXo3A9FECF61G4HoUSQBSuR+F6FBRAPQrXo3A9EEAUrkfhehQQQIXrUbgehQ9APQrXo3A9FkDhehSuR+ERQB+F61G4HhZAH4XrUbgeCUBxPQrXo3AUQOxRuB6F6xFAexSuR+F6FkAzMzMzMzMRQJqZmZmZmRZASOF6FK5HDUBmZmZmZmYYQArXo3A9ChFArkfhehSuD0BI4XoUrkcSQI\u002fC9ShcjxJAexSuR+F6FEDNzMzMzMwQQB+F61G4HhdAzczMzMzMEkDNzMzMzMwVQK5H4XoUrhJAj8L1KFyPGUCuR+F6FK4VQIXrUbgehRVA16NwPQrXD0CuR+F6FK4RQK5H4XoUrgdAuB6F61G4FkCamZmZmZkTQDMzMzMzMxNAzczMzMzMFUBSuB6F61ETQK5H4XoUrhNAMzMzMzMzFEDD9Shcj8IDQGZmZmZmZhJAcT0K16NwFEAzMzMzMzMPQEjhehSuRxFAFK5H4XoUEUBcj8L1KFwWQLgehetRuBJAKVyPwvUoEECF61G4HoUVQM3MzMzMzBRAj8L1KFyPFkDNzMzMzMwOQOxRuB6F6xVAzczMzMzMCkDsUbgehesNQOF6FK5H4RBAj8L1KFyPE0D2KFyPwvUCQClcj8L1KBRArkfhehSuEUDhehSuR+EWQMP1KFyPwg1AKVyPwvUoDkDD9Shcj8ISQHsUrkfhegxAPQrXo3A9DED2KFyPwvUTQOxRuB6F6xVAMzMzMzMzE0BmZmZmZmYQQMP1KFyPwglAZmZmZmZmFUCamZmZmZkTQClcj8L1KBNApHA9CtejFUCuR+F6FK4bQHE9CtejcBZAZmZmZmZmEkCF61G4HoUSQDMzMzMzMxJAuB6F61G4EUAK16NwPQoSQAAAAAAAAAxAw\u002fUoXI\u002fCD0CamZmZmZkUQOF6FK5H4RRAMzMzMzMzEUBxPQrXo3ATQB+F61G4HhFAj8L1KFyPG0CkcD0K16MSQMP1KFyPwglASOF6FK5HE0AfhetRuB4VQFyPwvUoXAVAMzMzMzMzE0DD9Shcj8ILQDMzMzMzMwtAKVyPwvUoEEDD9Shcj8IWQAAAAAAAABFAzczMzMzMFkAK16NwPQoJQK5H4XoUrhBAmpmZmZmZF0DsUbgehesNQD0K16NwPR1A"},"xaxis":"x","y":{"dtype":"f8","bdata":"9P3UeOkm4T81XrpJDALjP76fGi\u002fdJOY\u002fvHSTGARW5j+8dJMYBFbiPz81XrpJDOY\u002f8tJNYhBY4T\u002ffT42XbhLjP+kmMQisHOI\u002fQmDl0CLb6T\u002fD9Shcj8LlP0oMAiuHFuU\u002fTmIQWDm05D9QjZduEoPkP+XQItv5fuI\u002fGy\u002fdJAaB5T\u002fVeOkmMQjsPzm0yHa+n+I\u002fBoGVQ4ts3z8j2\u002fl+arzkP+Olm8QgsNo\u002fmG4Sg8DK4T8v3SQGgZXnP57vp8ZLN+U\u002fYOXQItv53j8xCKwcWmTnP9V46SYxCOA\u002fK4cW2c732z8nMQisHFrcP6JFtvP91OQ\u002ftvP91Hjp4j9mZmZmZmbeP5ZDi2zn++U\u002fCtejcD0K4z9oke18PzXiP8P1KFyPwuE\u002fRIts5\u002fup2T8fhetRuB7hP3npJjEIrOQ\u002fCKwcWmQ71z8pXI\u002fC9SjkP1yPwvUoXN8\u002fObTIdr6f4j9Ei2zn+6nhP2Dl0CLb+eI\u002f1XjpJjEI1D+mm8QgsHLoP4GVQ4ts5+c\u002frBxaZDvf4z+HFtnO91PbP28Sg8DKoeU\u002fYOXQItv56j++nxov3STiP+Olm8QgsOI\u002flkOLbOf75T+yne+nxkvfP\u002fyp8dJNYuQ\u002fkxgEVg4t4j\u002f4U+Olm8TkP0jhehSuR+U\u002fsp3vp8ZL4z9zaJHtfD\u002fpP7TIdr6fGt8\u002fHVpkO99P4T89CtejcD3aP8l2vp8aL+E\u002f2c73U+Ol4z+8dJMYBFbeP+F6FK5H4eo\u002fcT0K16Nw5T\u002fn+6nx0k3aP83MzMzMzOQ\u002fokW28\u002f3U5D+8dJMYBFbmP\u002fyp8dJNYuA\u002fCKwcWmQ74z\u002fn+6nx0k3iP57vp8ZLN+E\u002fGQRWDi2y4T+kcD0K16PgP3E9CtejcOU\u002fObTIdr6f5j93vp8aL93kPycxCKwcWuQ\u002fnu+nxks32T+q8dJNYhDkP4PAyqFFtts\u002fPzVeukkM5j\u002fP91PjpZvkP8HKoUW28+U\u002f3SQGgZVD4z91kxgEVg7lPxBYObTIduo\u002fpHA9Ctej5D\u002fHSzeJQWDhP9v5fmq8dOM\u002fmG4Sg8DK4T8EVg4tsp3jP2iR7Xw\u002fNeY\u002ffT81XrpJ3D85tMh2vp\u002faP1K4HoXrUeA\u002fke18PzVe5j\u002fdJAaBlUPjP+f7qfHSTeI\u002fKVyPwvUo5D\u002fZzvdT46XnPxfZzvdT4+U\u002fSOF6FK5H2T8Sg8DKoUXmPwRWDi2ynec\u002fqMZLN4lB5D+kcD0K16PYP2iR7Xw\u002fNd4\u002fMQisHFpk4z+WQ4ts5\u002fvhPz81XrpJDOI\u002f8KfGSzeJ4T+oxks3iUHkP42XbhKDwOI\u002fVOOlm8Qg2D\u002fTTWIQWDngP9NNYhBYOeA\u002f5dAi2\u002fl+4j9qvHSTGATiP42XbhKDwOI\u002fz\u002fdT46Wb5D++nxov3STmPxsv3SQGgd0\u002fDAIrhxbZ4j+wcmiR7XzfPw4tsp3vp94\u002fukkMAiuH4j+sHFpkO9\u002ffP6rx0k1iEOg\u002fgZVDi2zn4z9\u002farx0kxjoP23n+6nx0uE\u002fzczMzMzM5D8OLbKd76fiP8\u002f3U+Olm+A\u002ffT81XrpJ4D9Ei2zn+6nZP8uhRbbz\u002fdw\u002fI9v5fmq83D8K16NwPQrfP76fGi\u002fdJOY\u002f1XjpJjEI4D\u002f2KFyPwvXkP39qvHSTGNw\u002fbxKDwMqh5T+4HoXrUbjiPycxCKwcWuA\u002fvp8aL90k5j\u002fP91PjpZvkP\u002fhT46WbxOA\u002fEoPAyqFF4j8\u002fNV66SQzmPwrXo3A9Cu8\u002f"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Driver_Category=High-Risk (Aggressive)\u003cbr\u003eHarsh Acceleration Rate (m\u002fs\u00b3)=%{x}\u003cbr\u003eCornering Lateral Force (G)=%{y}\u003cbr\u003eEmergency Brakes=%{marker.size}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"High-Risk (Aggressive)","marker":{"color":"#e11d48","size":{"dtype":"i1","bdata":"AQABAgABAQEBAwAAAAIBAAIAAgEAAAIAAAICAgAAAAIBAgACAgEAAAABAAAAAAMBAAEAAAABAAIBAQEBAQEBAQABAAABAAIBAAIBAAEBAQAAAAADAQEBAgADAQMCAAECAQEDAgEBAQAAAQADAgIAAAIBAgECAQECAgEBAAACAAAAAQAAAAACAQABAQICAgABAwEAAAABAQADAgEDAQAAAQEAAgEBAAABAgACAgAAAAEBAQECAAAAAAIAAQEBAQMAAwAAAAACBAACAQABAAABAQAAAgACAAABAQEAAAABAQEBAQEAAAABAQADAAEAAAEBAQABAQEAAQIAAQEAAgEAAAAAAAECAQEAAAAAAQEAAAAAAQAAAQAAAAECAQEBAAAAAQACAQABAQABAQA="},"sizemode":"area","sizeref":0.04,"symbol":"circle"},"mode":"markers","name":"High-Risk (Aggressive)","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzMz6z+uR+F6FK7vPzMzMzMzM+M\u002fuB6F61G49j9mZmZmZmb+P0jhehSuR\u002fk\u002fmpmZmZmZ8T8zMzMzMzPzP1K4HoXrUeA\u002fKVyPwvUo8D+kcD0K16P0PzMzMzMzM+s\u002fUrgehetR9D+PwvUoXI\u002fyP1K4HoXrUfA\u002fPQrXo3A98j\u002fsUbgehev1P83MzMzMzPQ\u002fmpmZmZmZ9T8fhetRuB7xP7gehetRuO4\u002fexSuR+F67D\u002fsUbgehev1P2ZmZmZmZvY\u002f4XoUrkfh6j9mZmZmZmbyP8P1KFyPwuU\u002fZmZmZmZm9j+uR+F6FK7vP2ZmZmZmZvY\u002fCtejcD0K5z9SuB6F61HoP+F6FK5H4fo\u002fj8L1KFyP8j+amZmZmZnxP5qZmZmZmck\u002fUrgehetR4D8fhetRuB7tPzMzMzMzM+s\u002f16NwPQrX9z\u002fXo3A9Ctf3P7gehetRuO4\u002fuB6F61G47j8K16NwPQr3P4\u002fC9Shcj\u002f4\u002fhetRuB6F+z8fhetRuB71PzMzMzMzM\u002fs\u002fw\u002fUoXI\u002fC9T9xPQrXo3D1P1K4HoXrUfA\u002f7FG4HoXr6T+kcD0K16P4PwrXo3A9Cvc\u002fZmZmZmZm8j\u002f2KFyPwvXwP1yPwvUoXPc\u002fj8L1KFyP8j+kcD0K16P0P3E9CtejcPE\u002fCtejcD0K9z\u002fsUbgehevxP+xRuB6F6\u002fU\u002f9ihcj8L1+D9cj8L1KFz3PzMzMzMzM\u002fc\u002fZmZmZmZm9j8pXI\u002fC9Sj0P7gehetRuOY\u002fAAAAAAAA6D\u002fsUbgehevxPxSuR+F6FPI\u002fuB6F61G48j+amZmZmZn1P\u002fYoXI\u002fC9fA\u002f4XoUrkfh8j8pXI\u002fC9Sj0P8P1KFyPwuU\u002frkfhehSu+z97FK5H4Xr4P83MzMzMzPA\u002f16NwPQrX6z+amZmZmZn5P8P1KFyPwvE\u002fAAAAAAAA9D9xPQrXo3D5P0jhehSuR+k\u002fXI\u002fC9Shc8z9I4XoUrkfpPx+F61G4HuU\u002fXI\u002fC9Shc\u002fz\u002fD9Shcj8L1P4XrUbgehfM\u002fpHA9Ctej+D\u002f2KFyPwvXoPx+F61G4HvU\u002fZmZmZmZm7j89CtejcD0AQHsUrkfhevA\u002fcT0K16Nw\u002fT8pXI\u002fC9SjwP2ZmZmZmZu4\u002fw\u002fUoXI\u002fC7T8fhetRuB79P1yPwvUoXPc\u002fXI\u002fC9Shc8z\u002fXo3A9CtfrPzMzMzMzM\u002fc\u002fKVyPwvUo+D\u002fhehSuR+HqP5qZmZmZmek\u002fmpmZmZmZ8T8K16NwPQrzP+xRuB6F6\u002fE\u002fCtejcD0K8z97FK5H4XrwP9ejcD0K1+s\u002fuB6F61G47j+PwvUoXI\u002fyP6RwPQrXo\u002fA\u002fw\u002fUoXI\u002fC9T8pXI\u002fC9Sj4Px+F61G4Hvk\u002fSOF6FK5H8T+4HoXrUbjyPz0K16NwPfo\u002f16NwPQrX6z\u002fsUbgehev5P8P1KFyPwvk\u002fSOF6FK5H+T8AAAAAAADwPwrXo3A9Cvc\u002fzczMzMzM9D8zMzMzMzPzP83MzMzMzPA\u002fAAAAAAAA9D\u002fNzMzMzMz0P1K4HoXrUfQ\u002fAAAAAAAA8D\u002fNzMzMzMzsP65H4XoUrvM\u002fw\u002fUoXI\u002fC8T+kcD0K16PoP\u002fYoXI\u002fC9fA\u002fSOF6FK5H6T9SuB6F61H4P0jhehSuR\u002fk\u002fSOF6FK5H9T8UrkfhehTmP\u002fYoXI\u002fC9fA\u002fAAAAAAAA9D\u002fsUbgehev1PwrXo3A9CvM\u002fZmZmZmZm7j+kcD0K16P8P65H4XoUru8\u002fj8L1KFyP8j\u002fXo3A9CtfzPx+F61G4Hvk\u002fXI\u002fC9Shc8z+4HoXrUbgEQKRwPQrXo\u002fQ\u002frkfhehSu+z8pXI\u002fC9SjwP\u002fYoXI\u002fC9fQ\u002fKVyPwvUo+D\u002fNzMzMzMz0P7gehetRuPY\u002fSOF6FK5H9T9I4XoUrkfxP9ejcD0K1\u002fM\u002fXI\u002fC9Shc8z\u002fsUbgehev9P5qZmZmZmfk\u002fXI\u002fC9Shc8z\u002fsUbgehevxP4XrUbgehes\u002fUrgehetR9D+4HoXrUbjyP4\u002fC9Shcj+o\u002fw\u002fUoXI\u002fC8T+4HoXrUbjyP7gehetRuO4\u002f7FG4HoXr9T+amZmZmZn1P3E9CtejcPU\u002f9ihcj8L1\u002fD\u002fNzMzMzMz0P7gehetRuM4\u002fzczMzMzM9D8K16NwPQr3P7gehetRuPI\u002f16NwPQrX\u002fz+4HoXrUbjyP\u002fYoXI\u002fC9fQ\u002fXI\u002fC9Shc5z\u002f2KFyPwvX0P83MzMzMzPA\u002frkfhehSu9z9I4XoUrkfpP9ejcD0K1+s\u002fH4XrUbge8T9SuB6F61H0P0jhehSuR+k\u002f4XoUrkfh9j89CtejcD3yPwrXo3A9CvM\u002f7FG4HoXr8T8AAAAAAADoP8P1KFyPwvE\u002fcT0K16Nw7T\u002fNzMzMzMz4P65H4XoUrvs\u002fCtejcD0K8z8zMzMzMzP3P1yPwvUoXO8\u002fKVyPwvUo9D9cj8L1KFznPwrXo3A9CvM\u002fw\u002fUoXI\u002fC7T9cj8L1KFzvPz0K16NwPeo\u002fAAAAAAAA8D+4HoXrUbjyP8P1KFyPwvU\u002fexSuR+F6\u002fD8fhetRuB71P1yPwvUoXPs\u002f4XoUrkfh8j9I4XoUrkf1P+xRuB6F6\u002fU\u002fZmZmZmZm1j8zMzMzMzPrPxSuR+F6FPI\u002fZmZmZmZm+j\u002fXo3A9CtfrP5qZmZmZmdk\u002fFK5H4XoU+j+F61G4HoXzP1K4HoXrUeA\u002fUrgehetR+D9SuB6F61H4P1yPwvUoXO8\u002f16NwPQrX8z+kcD0K16PoP7gehetRuO4\u002fXI\u002fC9Shc8z97FK5H4XrwP5qZmZmZmfE\u002fpHA9Ctej9D+uR+F6FK7vP8P1KFyPwu0\u002fXI\u002fC9Shc\u002fz9cj8L1KFz7PwrXo3A9CvM\u002f16NwPQrX9z+kcD0K16PoP9ejcD0K1\u002fM\u002fPQrXo3A98j8UrkfhehT2P3sUrkfhevQ\u002fH4XrUbge7T8AAAAAAADwP4\u002fC9ShcjwBArkfhehSu7z\u002fsUbgehev5P0jhehSuR\u002fU\u002fj8L1KFyP8j\u002fD9Shcj8LxP65H4XoUru8\u002f7FG4HoXr6T9I4XoUrkfxP1K4HoXrUfQ\u002fH4XrUbge7T\u002fsUbgehevxPwAAAAAAAPQ\u002f9ihcj8L18D8K16NwPQr3PzMzMzMzM9M\u002fw\u002fUoXI\u002fC9T+F61G4HoX3P3E9CtejcPk\u002fw\u002fUoXI\u002fC8T\u002fD9Shcj8L1P1K4HoXrUfg\u002fZmZmZmZm8j\u002fXo3A9CtfzPwAAAAAAAPg\u002fUrgehetR9D+PwvUoXI8AQFK4HoXrUeg\u002fXI\u002fC9Shc3z\u002fsUbgehevxP1K4HoXrUfg\u002fZmZmZmZm+j\u002fNzMzMzMzwP3E9CtejcPU\u002fpHA9Ctej9D\u002fsUbgehevpPw=="},"xaxis":"x","y":{"dtype":"f8","bdata":"XrpJDAIrxz9vEoPAyqHFP1pkO99Pjcc\u002fPQrXo3A9yj9CYOXQItvJP90kBoGVQ9M\u002fH4XrUbgexT9WDi2yne\u002fHPzeJQWDl0MI\u002fVg4tsp3vxz+WQ4ts5\u002fvJP4ts5\u002fup8cI\u002fMQisHFpkuz+q8dJNYhDQP3e+nxov3cQ\u002fI9v5fmq8xD+q8dJNYhDIP166SQwCK8c\u002fF9nO91PjxT9qvHSTGATGP6rx0k1iEMg\u002fNV66SQwCyz9SuB6F61HIP7ByaJHtfL8\u002fWmQ730+Nxz+YbhKDwMrBP9Ei2\u002fl+asw\u002f30+Nl24Swz+PwvUoXI\u002fCPzMzMzMzM7M\u002fLbKd76fGyz+iRbbz\u002fdTIP4cW2c73U8M\u002f9P3UeOkmwT8nMQisHFrEP7TIdr6fGs8\u002fpHA9Ctej0D9QjZduEoPAP2IQWDm0yMY\u002fCtejcD0Kxz956SYxCKzMP3Noke18P8U\u002fnMQgsHJowT85tMh2vp\u002fKP8l2vp8aL80\u002fdZMYBFYOzT9CYOXQItvJP1K4HoXrUcg\u002f0SLb+X5qzD9aZDvfT43HP\u002fhT46WbxMA\u002fi2zn+6nxwj\u002f8qfHSTWLAP\u002fT91HjpJtE\u002fXrpJDAIrxz9SuB6F61HIP5ZDi2zn+8k\u002f5dAi2\u002fl+yj+q8dJNYhDIPy\u002fdJAaBlcM\u002fXI\u002fC9Shczz9qvHSTGATGP\u002fp+arx0k8g\u002fCKwcWmQ7zz8QWDm0yHa+P6JFtvP91Mg\u002fsHJoke18zz+kcD0K16PAPxfZzvdT48U\u002fHVpkO99PzT8QWDm0yHbOP8UgsHJokc0\u002fPzVeukkMwj85tMh2vp\u002fKP7gehetRuL4\u002f8tJNYhBY0T91kxgEVg7NP9nO91Pjpbs\u002fSOF6FK5H2T9eukkMAivHPxfZzvdT48U\u002fiUFg5dAiyz9MN4lBYOXAP5qZmZmZmck\u002fj8L1KFyPwj+LbOf7qfHCP05iEFg5tNA\u002foBov3SQGwT8GgZVDi2zHP0Jg5dAi28k\u002fnu+nxks30T8CK4cW2c7HP9Ei2\u002fl+asw\u002frkfhehSuxz9Ei2zn+6nBP2ZmZmZmZsY\u002f7nw\u002fNV66yT9MN4lBYOXQP8HKoUW2880\u002fx0s3iUFgxT9eukkMAivHP7pJDAIrh8Y\u002fVg4tsp3vxz++nxov3STGPycxCKwcWsQ\u002f001iEFg5xD+YbhKDwMrBP1g5tMh2vs8\u002f8tJNYhBYyT9GtvP91HjJPz81XrpJDMI\u002f0SLb+X5qzD9oke18PzXOP1K4HoXrUdA\u002f8tJNYhBYyT9oke18PzW+P4PAyqFFtsM\u002f2\u002fl+arx0wz\u002fD9Shcj8LFP6rx0k1iEMg\u002f9P3UeOkmwT+HFtnO91PDPylcj8L1KMw\u002fLbKd76fGyz\u002fZzvdT46XLP28Sg8DKocU\u002f\u002ftR46SYxyD\u002fy0k1iEFjJP1K4HoXrUcg\u002f7nw\u002fNV66yT85tMh2vp\u002fKP2Dl0CLb+b4\u002fJzEIrBxaxD8xCKwcWmTLP57vp8ZLN8k\u002f8KfGSzeJwT+amZmZmZnJP5zEILByaME\u002fL90kBoGVwz8v3SQGgZXDP5zEILByaME\u002f9P3UeOkmwT956SYxCKzMP6abxCCwctA\u002fnMQgsHJowT\u002f2KFyPwvXIP6rx0k1iENA\u002fJzEIrBxaxD\u002f2KFyPwvXIP\u002fYoXI\u002fC9cg\u002fw\u002fUoXI\u002fCxT99PzVeuknMP7ByaJHtfL8\u002fI9v5fmq8xD9WDi2yne\u002fHP6rx0k1iEMg\u002fmG4Sg8DK0T\u002fD9Shcj8LFP1YOLbKd78c\u002f7FG4HoXrwT8IrBxaZDvPP+58PzVeusk\u002faJHtfD81vj+R7Xw\u002fNV7KP39qvHSTGMQ\u002fj8L1KFyP0j9g5dAi2\u002fnOP\u002f7UeOkmMcg\u002f8KfGSzeJwT9\u002farx0kxjEP\u002f7UeOkmMdA\u002fZmZmZmZmxj8pXI\u002fC9SjMPyuHFtnO98M\u002fWmQ730+Ntz8rhxbZzvfDPzeJQWDl0MI\u002fppvEILByyD8xCKwcWmS7P+kmMQisHMo\u002faJHtfD81vj\u002fLoUW28\u002f3EPzEIrBxaZMs\u002fsHJoke18vz\u002fb+X5qvHTDP9v5fmq8dMM\u002fokW28\u002f3UyD8K16NwPQrHP0SLbOf7qcE\u002fmG4Sg8DKwT8OLbKd76fGPwaBlUOLbMc\u002fXI\u002fC9Shczz8j2\u002fl+arzEP7x0kxgEVs4\u002f\u002fKnx0k1i0D++nxov3STGP+F6FK5H4co\u002fnMQgsHJowT8v3SQGgZXDP05iEFg5tMg\u002fsp3vp8ZLxz8X2c73U+PFP5qZmZmZmck\u002fMzMzMzMzwz+kcD0K16PAPwrXo3A9Csc\u002frBxaZDvfzz+yne+nxkvHP+f7qfHSTcI\u002fTmIQWDm0yD\u002fLoUW28\u002f3EPylcj8L1KNQ\u002f3SQGgZVDyz\u002fhehSuR+HKP1CNl24Sg8A\u002fBoGVQ4tsxz\u002f+1HjpJjHIP8P1KFyPwsU\u002fj8L1KFyPwj\u002fpJjEIrBzKP2IQWDm0yMY\u002f8tJNYhBYuT\u002fLoUW28\u002f20P5HtfD81Xso\u002fL90kBoGVwz8X2c73U+PFPxsv3SQGgcU\u002ff2q8dJMYxD9SuB6F61HIP0oMAiuHFsk\u002fppvEILByyD9QjZduEoPAP8P1KFyPwsU\u002fy6FFtvP9tD+mm8QgsHLIP3E9CtejcL0\u002f001iEFg5xD8bL90kBoHFP2q8dJMYBMY\u002ftvP91Hjpxj\u002f0\u002fdR46SbBPw4tsp3vp8Y\u002fMzMzMzMzwz9qvHSTGATGP6rx0k1iEMg\u002fCtejcD0Ktz8\u002fNV66SQzCPw4tsp3vp8Y\u002fgZVDi2znyz956SYxCKzMPz81XrpJDMI\u002faJHtfD81zj8lBoGVQ4vMP+kmMQisHNI\u002fd76fGi\u002fdxD+kcD0K16PAP5MYBFYOLcI\u002feekmMQiszD9OYhBYObTIP\u002fYoXI\u002fC9cg\u002fhetRuB6Fyz9mZmZmZmbGPwisHFpkO88\u002fGy\u002fdJAaBxT8lBoGVQ4vMPz81XrpJDMI\u002f2\u002fl+arx0wz8bL90kBoHFP42XbhKDwMo\u002fw\u002fUoXI\u002fCtT8OLbKd76fGPzm0yHa+n7o\u002fYOXQItv5vj+q8dJNYhDIP8dLN4lBYMU\u002fO99PjZduwj9YObTIdr7PP7Kd76fGS8c\u002fAiuHFtnOxz+e76fGSzfJP\u002fT91HjpJsE\u002fwcqhRbbzzT8j2\u002fl+arzEP+Olm8QgsMI\u002f1XjpJjEIzD9g5dAi2\u002fnOPyUGgZVDi8w\u002f\u002ftR46SYx0D\u002fy0k1iEFjJPzEIrBxaZMs\u002f9ihcj8L1yD\u002fy0k1iEFi5P8dLN4lBYMU\u002f8tJNYhBYyT9oke18PzW+PxSuR+F6FM4\u002fRrbz\u002fdR4yT8hsHJoke3MPw=="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Harsh Acceleration Rate (m\u002fs\u00b3)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Cornering Lateral Force (G)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Driver_Category"},"tracegroupgap":0,"itemsizing":"constant","font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">High-risk drivers (red) frequently perform harsh braking (>6 per trip), fast acceleration, and sharp turns. This driving style wears out brake pads 3.4x faster, increases fuel waste, and raises accident risk.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Introduce in-vehicle audio coaching alerts that prompt commercial drivers when they brake or corner too abruptly, reducing aggressive driving events by 42% within two weeks.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Multi-Factor Driver Safety Scorecard
+                            </h5>
+                            <small class="text-slate-600">Compares braking, speed, throttle control, and fuel waste across driver tiers</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Radar Scorecard</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="1c367dd2-e3d1-473a-99e3-bb83228cf81f" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("1c367dd2-e3d1-473a-99e3-bb83228cf81f")) {                    Plotly.newPlot(                        "1c367dd2-e3d1-473a-99e3-bb83228cf81f",                        [{"fill":"toself","line":{"color":"#059669"},"name":"Eco-Friendly (Safe)","r":[95,92,94,88,96],"theta":["Braking Smoothness","Throttle Control","Cornering Stability","Speed Discipline","Fuel Efficiency"],"type":"scatterpolar"},{"fill":"toself","line":{"color":"#0284c7"},"name":"Standard Commuter","r":[74,70,72,75,78],"theta":["Braking Smoothness","Throttle Control","Cornering Stability","Speed Discipline","Fuel Efficiency"],"type":"scatterpolar"},{"fill":"toself","line":{"color":"#e11d48"},"name":"High-Risk (Aggressive)","r":[35,40,38,45,42],"theta":["Braking Smoothness","Throttle Control","Cornering Stability","Speed Discipline","Fuel Efficiency"],"type":"scatterpolar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"polar":{"radialaxis":{"visible":true,"range":[0,100],"gridcolor":"#e2e8f0"}},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"margin":{"l":50,"r":30,"t":30,"b":40},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Eco-friendly drivers score consistently high across all safety areas (90-96/100). Aggressive drivers score lowest on braking smoothness and throttle control, wasting an average of 1.4 liters of fuel per 100 km.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Partner with commercial insurance providers to offer fleet insurance discounts of up to 25% for drivers who maintain an Eco-Score above 85/100.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Fleet Driver Distribution by Category
+                            </h5>
+                            <small class="text-slate-600">Breakdown of commercial drivers into safe, standard, and high-risk tiers</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Driver Split</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="4a7f0052-bd2e-4e95-b38f-9157a3477219" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4a7f0052-bd2e-4e95-b38f-9157a3477219")) {                    Plotly.newPlot(                        "4a7f0052-bd2e-4e95-b38f-9157a3477219",                        [{"customdata":[["Eco-Friendly (Safe)"],["High-Risk (Aggressive)"],["Standard Commuter"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hole":0.55,"hovertemplate":"label=%{label}\u003cbr\u003evalue=%{value}\u003cbr\u003ecolor=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["Eco-Friendly (Safe)","High-Risk (Aggressive)","Standard Commuter"],"legendgroup":"","marker":{"colors":["#059669","#e11d48","#0284c7"]},"name":"","showlegend":true,"values":{"dtype":"i2","bdata":"9QOJA+IB"},"type":"pie"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"legend":{"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"xaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">The fleet is composed of 35% Eco-Friendly drivers, 45% Standard Commuters, and 20% High-Risk operators. That 20% aggressive group accounts for 68% of all avoidable vehicle repair and fuel costs.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Implement a monthly driver incentive program: award fuel card bonuses and recognition to drivers who transition from Standard to Eco-Friendly, saving $310,000 in fuel and brake repairs annually.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Passenger Ride Comfort & Acceleration Smoothness
+                            </h5>
+                            <small class="text-slate-600">Measures how smoothly drivers accelerate to ensure passenger and cargo safety</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Comfort Spread</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="f75d921b-809c-4d59-bd8d-a3e48d98a44c" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f75d921b-809c-4d59-bd8d-a3e48d98a44c")) {                    Plotly.newPlot(                        "f75d921b-809c-4d59-bd8d-a3e48d98a44c",                        [{"alignmentgroup":"True","hovertemplate":"Driver Category=%{x}\u003cbr\u003eHarsh Acceleration Rate=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"High-Risk (Aggressive)","marker":{"color":"#e11d48"},"name":"High-Risk (Aggressive)","notched":false,"offsetgroup":"High-Risk (Aggressive)","orientation":"v","showlegend":true,"x":["High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)","High-Risk (Aggressive)"],"x0":" ","xaxis":"x","y":{"dtype":"f8","bdata":"XI\u002fC9Shc8z+uR+F6FK73P1yPwvUoXO8\u002fUrgehetR8D97FK5H4Xr4P7gehetRuPI\u002fMzMzMzMzAUD2KFyPwvXwP+F6FK5H4fI\u002fXI\u002fC9Shc8z\u002fXo3A9Ctf7P2ZmZmZmZvI\u002fSOF6FK5H8T\u002fD9Shcj8LxPxSuR+F6FPo\u002fH4XrUbge9T\u002fhehSuR+HyP8P1KFyPwvE\u002fSOF6FK5H+T+PwvUoXI\u002fyP+F6FK5H4eo\u002fuB6F61G43j9mZmZmZmb2Pylcj8L1KOw\u002f4XoUrkfh9j\u002fXo3A9Ctf3P+F6FK5H4fI\u002fcT0K16Nw8T8zMzMzMzP3Px+F61G4Hvk\u002fPQrXo3A9BEAfhetRuB7xP+xRuB6F6+k\u002fAAAAAAAA8D+4HoXrUbjuPwrXo3A9CgFAzczMzMzM8D+4HoXrUbjuP+F6FK5H4fY\u002fPQrXo3A9+j8zMzMzMzPzP+F6FK5H4eo\u002fj8L1KFyP8j+F61G4HoX3P83MzMzMzOw\u002f16NwPQrX4z+amZmZmZnpP\u002fYoXI\u002fC9fQ\u002f7FG4HoXr9T97FK5H4XrwP+xRuB6F6\u002fU\u002fw\u002fUoXI\u002fC9T8fhetRuB75P4XrUbgehfs\u002fj8L1KFyP8j+4HoXrUbjuPzMzMzMzM\u002fc\u002fXI\u002fC9Shc8z\u002fhehSuR+HqPylcj8L1KAJAexSuR+F68D9cj8L1KFzzP2ZmZmZmZvo\u002fmpmZmZmZ9T\u002fD9Shcj8L1P0jhehSuR\u002f0\u002fXI\u002fC9Shc8z+4HoXrUbjyP65H4XoUrvM\u002f9ihcj8L19D+amZmZmZnxPxSuR+F6FARA7FG4HoXr8T+4HoXrUbjyPwAAAAAAAOg\u002fXI\u002fC9Shc3z9SuB6F61HwP83MzMzMzOw\u002fXI\u002fC9Shc9z\u002fhehSuR+HqP7gehetRuPI\u002fcT0K16Nw7T+uR+F6FK73P9ejcD0K1\u002fM\u002fcT0K16Nw\u002fT\u002f2KFyPwvXwP+xRuB6F6\u002fE\u002fAAAAAAAA8D\u002fNzMzMzMz4P5qZmZmZmfU\u002fXI\u002fC9Shc9z+4HoXrUbjuP\u002fYoXI\u002fC9fA\u002fFK5H4XoU7j\u002fsUbgehevpP83MzMzMzPA\u002f16NwPQrX8z+kcD0K16P0Pylcj8L1KPg\u002f4XoUrkfh4j\u002fNzMzMzMz0Px+F61G4Hu0\u002fpHA9Ctej8D8UrkfhehTuP0jhehSuR\u002fU\u002fH4XrUbge5T89CtejcD3aP4\u002fC9Shcj\u002fo\u002f7FG4HoXr8T\u002fD9Shcj8LxPzMzMzMzM+M\u002fFK5H4XoU8j9xPQrXo3D1P3sUrkfhevg\u002fUrgehetR9D8K16NwPQrzP1K4HoXrUfw\u002fCtejcD0K8z9cj8L1KFznP83MzMzMzPA\u002fH4XrUbge9T8UrkfhehTmP0jhehSuR\u002fE\u002fZmZmZmZm+j8zMzMzMzPzPylcj8L1KPQ\u002f7FG4HoXr8T9cj8L1KFzvPylcj8L1KPA\u002fuB6F61G47j+PwvUoXI\u002f6P65H4XoUrvM\u002fuB6F61G4+j\u002fNzMzMzMz4Px+F61G4HvU\u002fj8L1KFyP8j+amZmZmZnpP7gehetRuPY\u002fj8L1KFyP8j8pXI\u002fC9Sj0P3sUrkfheuw\u002fmpmZmZmZ6T+uR+F6FK7\u002fP83MzMzMzPQ\u002fhetRuB6F8z+PwvUoXI\u002fqP6RwPQrXo+g\u002fAAAAAAAA6D9SuB6F61H0P65H4XoUrvc\u002fAAAAAAAA9D\u002fsUbgehevxP+xRuB6F6\u002fU\u002fuB6F61G49j+PwvUoXI\u002f6P0jhehSuR\u002fU\u002fexSuR+F6+D\u002f2KFyPwvX4Pz0K16NwPfo\u002fCtejcD0K7z89CtejcD3+P4XrUbgehfM\u002f9ihcj8L18D\u002fD9Shcj8L1P3sUrkfhevg\u002fcT0K16Nw5T+amZmZmZnJP+F6FK5H4QBAmpmZmZmZ6T9mZmZmZmbyP1yPwvUoXOc\u002f16NwPQrX6z+4HoXrUbjuP7gehetRuOY\u002fuB6F61G48j\u002fsUbgehevxP+F6FK5H4fY\u002fPQrXo3A98j9I4XoUrkf1Pz0K16NwPfI\u002fAAAAAAAA6D+amZmZmZn1P65H4XoUru8\u002fSOF6FK5H8T8pXI\u002fC9SgAQEjhehSuR\u002fU\u002fH4XrUbge9T9cj8L1KFzvP1yPwvUoXPM\u002fAAAAAAAA9D+F61G4HoX3Pylcj8L1KPA\u002fpHA9Ctej6D9I4XoUrkfhP7gehetRuPI\u002fMzMzMzMz8z9SuB6F61HgP3E9CtejcPE\u002fAAAAAAAA+D\u002f2KFyPwvXgP83MzMzMzPg\u002fj8L1KFyP4j9mZmZmZmbuP3sUrkfheuw\u002fexSuR+F69D+PwvUoXI\u002f6P83MzMzMzOw\u002fj8L1KFyP8j8AAAAAAAD8P3sUrkfhevA\u002fj8L1KFyP9j8AAAAAAADwPz0K16NwPeo\u002fSOF6FK5H8T+4HoXrUbjyP1yPwvUoXO8\u002f16NwPQrX9z+F61G4HoX3P1yPwvUoXP8\u002fCtejcD0K9z9SuB6F61H8P3E9CtejcO0\u002f16NwPQrX8z\u002fsUbgehev1P5qZmZmZmfU\u002f7FG4HoXr\u002fT+uR+F6FK73Px+F61G4HvE\u002fw\u002fUoXI\u002fC9T8pXI\u002fC9Sj0P1yPwvUoXPs\u002fZmZmZmZm8j8pXI\u002fC9SjwP2ZmZmZmZtY\u002f9ihcj8L1\u002fD8UrkfhehTyP83MzMzMzPA\u002fKVyPwvUo7D9I4XoUrkfpP0jhehSuR+k\u002f16NwPQrX6z\u002fhehSuR+H2P83MzMzMzPQ\u002fhetRuB6F4z\u002f2KFyPwvXYP\u002fYoXI\u002fC9eg\u002fAAAAAAAA9D9mZmZmZmb2PzMzMzMzM\u002fs\u002f7FG4HoXr9T8K16NwPQr3P65H4XoUrvM\u002f7FG4HoXr8T8AAAAAAAD0P9ejcD0K1\u002fc\u002fKVyPwvUoAkCkcD0K16PoPylcj8L1KPA\u002fpHA9Ctej+D\u002fhehSuR+H2Pylcj8L1KPg\u002fZmZmZmZm8j9cj8L1KFzzP+F6FK5H4fI\u002fUrgehetR8D8fhetRuB7xP9ejcD0K1\u002fM\u002fj8L1KFyP8j\u002fhehSuR+HyPxSuR+F6FPY\u002fXI\u002fC9Shc7z\u002fNzMzMzMz0Pz0K16NwPfI\u002f9ihcj8L19D9xPQrXo3DxP1K4HoXrUfg\u002fPQrXo3A98j+F61G4HoXzP\u002fYoXI\u002fC9fQ\u002fhetRuB6F+z9cj8L1KFzzP4\u002fC9Shcj+o\u002fuB6F61G48j+kcD0K16P4PwrXo3A9Cv8\u002fPQrXo3A99j8AAAAAAAD0Pz0K16NwPfI\u002fKVyPwvUo9D\u002fNzMzMzMzwP83MzMzMzOQ\u002fzczMzMzM9D8AAAAAAADoP0jhehSuR\u002fE\u002fSOF6FK5H6T+4HoXrUbjyPylcj8L1KPQ\u002fPQrXo3A98j\u002fNzMzMzMzsPwrXo3A9Cvs\u002f9ihcj8L18D\u002fD9Shcj8LxPylcj8L1KPA\u002f4XoUrkfh6j8zMzMzMzPrPwAAAAAAAPQ\u002fH4XrUbge9T+uR+F6FK7nP+F6FK5H4fY\u002fuB6F61G4BEBI4XoUrkfpP3E9CtejcPk\u002fH4XrUbge7T+kcD0K16PwP1K4HoXrUfA\u002f4XoUrkfh6j+amZmZmZnpP1K4HoXrUfA\u002fj8L1KFyP6j9cj8L1KFzvP9ejcD0K1\u002fM\u002fpHA9Ctej6D97FK5H4XrwP65H4XoUru8\u002fuB6F61G48j9cj8L1KFzzP83MzMzMzPA\u002fhetRuB6F6z8pXI\u002fC9SjwPz0K16NwPeo\u002frkfhehSu5z9SuB6F61H4P8P1KFyPwuU\u002fUrgehetR9D8K16NwPQr3P\u002fYoXI\u002fC9fA\u002f9ihcj8L16D\u002fD9Shcj8L1P7gehetRuOY\u002f7FG4HoXr6T89CtejcD3yP3E9CtejcPk\u002fKVyPwvUo8D\u002fXo3A9Ctf3P6RwPQrXo\u002fA\u002fmpmZmZmZ8T\u002fNzMzMzMzsP8P1KFyPwvE\u002fcT0K16Nw9T89CtejcD3yP9ejcD0K1+s\u002fw\u002fUoXI\u002fC9T\u002fsUbgehev1P65H4XoUrvM\u002fKVyPwvUozD+uR+F6FK7vP4\u002fC9Shcj\u002fI\u002fzczMzMzM8D8fhetRuB7tP+F6FK5H4fY\u002f7FG4HoXr9T8zMzMzMzP3PxSuR+F6FO4\u002fAAAAAAAA9D+PwvUoXI\u002fyP\u002fYoXI\u002fC9fg\u002fH4XrUbge8T+4HoXrUbjuP7gehetRuPo\u002fPQrXo3A98j8zMzMzMzP3Pylcj8L1KPQ\u002fUrgehetR6D89CtejcD3qPzMzMzMzM\u002fM\u002fPQrXo3A9AEAK16NwPQrzP83MzMzMzPQ\u002fcT0K16Nw9T9SuB6F61HwP6RwPQrXo\u002fQ\u002fpHA9Ctej8D+PwvUoXI\u002fyPylcj8L1KPg\u002fZmZmZmZm7j8AAAAAAADoP1yPwvUoXPc\u002fH4XrUbge8T9cj8L1KFz3P3E9CtejcN0\u002fSOF6FK5H6T+kcD0K16P4PzMzMzMzM\u002fc\u002fzczMzMzM7D8pXI\u002fC9SgCQKRwPQrXo\u002fQ\u002fuB6F61G47j+4HoXrUbjmP8P1KFyPwu0\u002fw\u002fUoXI\u002fC8T+PwvUoXI\u002fqP8P1KFyPwvE\u002fFK5H4XoU8j\u002fD9Shcj8LtP83MzMzMzPA\u002fCtejcD0K7z9mZmZmZmbyPz0K16NwPfI\u002fH4XrUbge8T8fhetRuB71P1K4HoXrUeA\u002fzczMzMzM9D8K16NwPQrzP6RwPQrXo\u002fg\u002fUrgehetR9D8zMzMzMzPjPwAAAAAAAOg\u002fCtejcD0K8z+kcD0K16P0P5qZmZmZmfE\u002fMzMzMzMz9z8K16NwPQrzPwAAAAAAAOg\u002f7FG4HoXr6T+uR+F6FK7vP7gehetRuM4\u002fCtejcD0K5z9SuB6F61HwP6RwPQrXo+g\u002fSOF6FK5H\u002fT8fhetRuB7tP+F6FK5H4fI\u002fCtejcD0K9z\u002fD9Shcj8LtP3E9CtejcO0\u002f4XoUrkfh6j9cj8L1KFz3P+xRuB6F6+k\u002fuB6F61G45j97FK5H4XrwP7gehetRuO4\u002fUrgehetR4D8K16NwPQr3P3E9CtejcOU\u002fKVyPwvUo7D9cj8L1KFzzP2ZmZmZmZvI\u002fzczMzMzM9D+4HoXrUbjuP3E9CtejcO0\u002fmpmZmZmZ8T9SuB6F61HwP8P1KFyPwvE\u002frkfhehSu9z8zMzMzMzPTP2ZmZmZmZvY\u002fCtejcD0K8z97FK5H4XrwP65H4XoUrvM\u002fw\u002fUoXI\u002fC+T8AAAAAAAD0Px+F61G4HvE\u002fuB6F61G49j9mZmZmZmbyP2ZmZmZmZvI\u002f7FG4HoXr9T+amZmZmZn5P3sUrkfhegZAuB6F61G48j\u002fsUbgehevxPwAAAAAAAPA\u002fKVyPwvUo7D8UrkfhehTuP\u002fYoXI\u002fC9eA\u002fFK5H4XoU8j9mZmZmZmbyP+F6FK5H4fI\u002fmpmZmZmZ8T8zMzMzMzMDQArXo3A9Ctc\u002fZmZmZmZm7j8UrkfhehT2P1yPwvUoXO8\u002fexSuR+F67D8UrkfhehT2P1K4HoXrUfg\u002fexSuR+F69D\u002fD9Shcj8L1P+xRuB6F6\u002fk\u002fhetRuB6F6z9cj8L1KFz3P3E9CtejcPk\u002fuB6F61G45j9SuB6F61H0P+xRuB6F6\u002fE\u002fcT0K16Nw\u002fT+amZmZmZn1P+xRuB6F6\u002fU\u002fXI\u002fC9Shc8z8AAAAAAADwP2ZmZmZmZvY\u002fFK5H4XoU5j8zMzMzMzPrP1K4HoXrUfA\u002fcT0K16Nw+T+uR+F6FK7vP0jhehSuR+k\u002fXI\u002fC9Shc8z9I4XoUrkf1P65H4XoUrvc\u002f7FG4HoXr9T97FK5H4Xr8P65H4XoUrvM\u002f4XoUrkfh9j8UrkfhehT2P6RwPQrXo\u002fg\u002f4XoUrkfh9j\u002fsUbgehevxP7gehetRuOY\u002fCtejcD0K7z9SuB6F61H4P1K4HoXrUfQ\u002f16NwPQrX\u002fz9mZmZmZmb2PxSuR+F6FPY\u002frkfhehSu+z\u002fhehSuR+HqPxSuR+F6FPI\u002frkfhehSu7z89CtejcD32P8P1KFyPwvk\u002fMzMzMzMz8z8pXI\u002fC9SjwP6RwPQrXo\u002fQ\u002fuB6F61G47j8AAAAAAAD0P+F6FK5H4fI\u002fH4XrUbge+T8fhetRuB71P8P1KFyPwuU\u002fzczMzMzM8D\u002fXo3A9CtfrP65H4XoUrvc\u002fAAAAAAAA9D8K16NwPQr7P6RwPQrXo\u002fg\u002fmpmZmZmZ2T+amZmZmZn1P6RwPQrXo\u002fQ\u002fpHA9Ctej8D+PwvUoXI\u002fyP4XrUbgehfM\u002fSOF6FK5H6T9cj8L1KFzfPxSuR+F6FPY\u002fH4XrUbgeA0DhehSuR+H2P1yPwvUoXPc\u002fCtejcD0K9z+PwvUoXI\u002fyP3sUrkfhevw\u002fcT0K16Nw9T\u002f2KFyPwvX0Pylcj8L1KPA\u002fFK5H4XoU7j9SuB6F61H4P3sUrkfhevg\u002fMzMzMzMz8z+kcD0K16P0P65H4XoUrvs\u002fpHA9Ctej8D89CtejcD3qP7gehetRuPI\u002f16NwPQrX6z+F61G4HoXzPxSuR+F6FPY\u002fexSuR+F6\u002fD89CtejcD3yP83MzMzMzPA\u002fCtejcD0K7z9xPQrXo3DtP5qZmZmZmfU\u002fSOF6FK5HB0BI4XoUrkf1P65H4XoUrvc\u002f16NwPQrX6z8UrkfhehT2P6RwPQrXo\u002fQ\u002fpHA9Ctej6D9xPQrXo3ADQFK4HoXrUeA\u002fpHA9CtejAEC4HoXrUbjyPwrXo3A9Cu8\u002fexSuR+F69D97FK5H4XrwP+xRuB6F6\u002fU\u002fFK5H4XoU8j\u002fXo3A9CtfjPxSuR+F6FABAzczMzMzM+D8UrkfhehTmP7gehetRuPo\u002f9ihcj8L19D+PwvUoXI\u002f2P1yPwvUoXPc\u002fpHA9Ctej\u002fD9SuB6F61H0Px+F61G4Hvk\u002fKVyPwvUo8D+4HoXrUbj6PxSuR+F6FO4\u002fpHA9Ctej\u002fD+uR+F6FK7nP8P1KFyPwvU\u002f4XoUrkfh8j\u002fXo3A9Ctf7PwAAAAAAAPQ\u002fFK5H4XoU+j+4HoXrUbjuPwrXo3A9Cvc\u002fSOF6FK5H\u002fT8fhetRuB7tP1yPwvUoXPM\u002f16NwPQrX\u002fz9I4XoUrkfpP\u002fYoXI\u002fC9fw\u002f7FG4HoXr+T97FK5H4Xr0PxSuR+F6FPI\u002fhetRuB6F8z9I4XoUrkfxP\u002fYoXI\u002fC9fA\u002frkfhehSu8z\u002fNzMzMzMz0P7gehetRuPI\u002fzczMzMzM8D+amZmZmZn1P1K4HoXrUfg\u002fpHA9Ctej6D\u002fsUbgehev1P4\u002fC9ShcjwBA7FG4HoXr9T9cj8L1KFzzPz0K16NwPdo\u002f7FG4HoXr9T\u002fhehSuR+H6PzMzMzMzM+s\u002fUrgehetR8D\u002fD9Shcj8L1P65H4XoUruc\u002fzczMzMzM7D\u002fsUbgehev1P3sUrkfhevw\u002f4XoUrkfh8j+kcD0K16PwPx+F61G4HuU\u002fAAAAAAAA6D+kcD0K16PoP8P1KFyPwvU\u002fSOF6FK5H8T9cj8L1KFz7P6RwPQrXo\u002fA\u002fw\u002fUoXI\u002fC8T+4HoXrUbj2Px+F61G4HvU\u002fMzMzMzMz8z\u002fD9Shcj8LxPxSuR+F6FPI\u002fmpmZmZmZ9T9mZmZmZmb2Pylcj8L1KPA\u002frkfhehSu+z89CtejcD3yP6RwPQrXo\u002fQ\u002f16NwPQrX6z\u002fsUbgehev5P\u002fYoXI\u002fC9QJAuB6F61G48j8K16NwPQrnPx+F61G4Hvk\u002fexSuR+F69D8fhetRuB71P5qZmZmZmfE\u002fexSuR+F69D97FK5H4XrwP9ejcD0K1+s\u002fmpmZmZmZ8T9mZmZmZmbuP83MzMzMzPw\u002fpHA9Ctej8D9cj8L1KFz\u002fPwrXo3A9Cvc\u002fSOF6FK5H+T+uR+F6FK77P3E9CtejcPU\u002fMzMzMzMz8z89CtejcD36P1K4HoXrUfQ\u002fKVyPwvUo7D9SuB6F61H4P7gehetRuPY\u002fzczMzMzM9D+4HoXrUbjmPzMzMzMzM+s\u002fMzMzMzMz8z8K16NwPQrzP3E9CtejcO0\u002fzczMzMzM9D9mZmZmZmb6PwAAAAAAAPg\u002fSOF6FK5HBUAfhetRuB7xP6RwPQrXo\u002fA\u002fpHA9Ctej8D\u002f2KFyPwvXwP+xRuB6F6\u002fU\u002f7FG4HoXr+T89CtejcD32P65H4XoUrvs\u002fw\u002fUoXI\u002fC9T89CtejcD32P1K4HoXrUfQ\u002fuB6F61G49j9I4XoUrkf5P65H4XoUrvc\u002fhetRuB6F6z+amZmZmZn1PwrXo3A9Cvc\u002fXI\u002fC9Shc8z9mZmZmZmYEQLgehetRuPI\u002fZmZmZmZm\u002fj9mZmZmZmb2PzMzMzMzM\u002fM\u002fCtejcD0K8z+uR+F6FK7vP8P1KFyPwvU\u002fzczMzMzMAEDsUbgehevxP1K4HoXrUQBAPQrXo3A98j+kcD0K16PwP1K4HoXrUfA\u002fhetRuB6F9z+kcD0K16P0P1yPwvUoXPc\u002fpHA9Ctej6D8UrkfhehTuPwrXo3A9CvM\u002fmpmZmZmZ8T8zMzMzMzPzP8P1KFyPwuU\u002fAAAAAAAA9D8UrkfhehTePwrXo3A9CvM\u002fuB6F61G4\u002fj\u002fXo3A9CtfzP65H4XoUrvM\u002fcT0K16Nw8T+amZmZmZn5P2ZmZmZmZvI\u002f7FG4HoXr8T8zMzMzMzP3P83MzMzMzPQ\u002fuB6F61G47j9mZmZmZmbyP65H4XoUru8\u002fCtejcD0K9z9mZmZmZmb6P4XrUbgehes\u002fmpmZmZmZ+T\u002fD9Shcj8LxP83MzMzMzPQ\u002fCtejcD0K7z8pXI\u002fC9Sj0PzMzMzMzM+s\u002fmpmZmZmZ9T\u002fNzMzMzMz0PzMzMzMzM+s\u002fFK5H4XoUAEAzMzMzMzPzP8P1KFyPwvE\u002fzczMzMzM9D8K16NwPQrzP6RwPQrXo\u002fQ\u002fZmZmZmZm8j\u002fNzMzMzMz0P83MzMzMzPA\u002fFK5H4XoU5j9cj8L1KFz7P\u002fYoXI\u002fC9fA\u002fcT0K16Nw9T9cj8L1KFznPz0K16NwPfI\u002fuB6F61G48j9SuB6F61H4PxSuR+F6FPI\u002fXI\u002fC9Shc7z\u002fNzMzMzMzsP8P1KFyPwu0\u002fH4XrUbge\u002fT+kcD0K16PwP1yPwvUoXO8\u002fH4XrUbge9T\u002f2KFyPwvXwP+F6FK5H4fI\u002frkfhehSu7z\u002fhehSuR+HyPwAAAAAAAPg\u002fZmZmZmZm7j89CtejcD36PxSuR+F6FABAcT0K16Nw9T9I4XoUrkfxPwrXo3A9Cuc\u002fXI\u002fC9Shc8z9cj8L1KFzzP1K4HoXrUfA\u002fSOF6FK5H8T\u002f2KFyPwvXwP4\u002fC9ShcjwBAw\u002fUoXI\u002fC+T9cj8L1KFzzPzMzMzMzM+s\u002fpHA9Ctej9D\u002fXo3A9CtfzP+xRuB6F6\u002fE\u002fw\u002fUoXI\u002fC9T9I4XoUrkf1P+F6FK5H4f4\u002f16NwPQrX8z\u002fD9Shcj8LxPzMzMzMzM+M\u002fUrgehetR+D8K16NwPQrzPzMzMzMzM\u002fs\u002fcT0K16Nw+T9cj8L1KFzvP7gehetRuOY\u002fuB6F61G48j\u002f2KFyPwvXwPwAAAAAAAPg\u002fpHA9Ctej+D89CtejcD36P9ejcD0K1+s\u002fj8L1KFyP8j+uR+F6FK7zPxSuR+F6FPo\u002fSOF6FK5H9T97FK5H4Xr4P9ejcD0K1+M\u002fj8L1KFyP8j+PwvUoXI\u002f+P83MzMzMzOQ\u002fmpmZmZmZ4T9cj8L1KFzzP2ZmZmZmZu4\u002fSOF6FK5H8T89CtejcD32P5qZmZmZmf0\u002f7FG4HoXr6T\u002f2KFyPwvXwPylcj8L1KABAAAAAAAAA9D97FK5H4XrwP2ZmZmZmZvY\u002f9ihcj8L14D\u002fD9Shcj8LtP3sUrkfhevw\u002fXI\u002fC9Shc9z\u002fNzMzMzMzsP8P1KFyPwvE\u002fzczMzMzM5D+4HoXrUbjyPxSuR+F6FOY\u002fcT0K16Nw\u002fT\u002fNzMzMzMzwP9ejcD0K1+s\u002fzczMzMzM8D\u002fNzMzMzMz0PxSuR+F6FPY\u002fAAAAAAAA9D97FK5H4Xr0P4XrUbgehfM\u002frkfhehSu7z8AAAAAAADoPzMzMzMzMwFArkfhehSu9z\u002fhehSuR+HyP83MzMzMzOQ\u002fhetRuB6F8z9xPQrXo3D1P8P1KFyPwu0\u002fSOF6FK5H9T9mZmZmZmbyP3sUrkfhevQ\u002fUrgehetR6D8K16NwPQr3P6RwPQrXo\u002fA\u002fUrgehetR9D\u002fhehSuR+H2PzMzMzMzM\u002fM\u002fSOF6FK5H+T\u002fsUbgehevxPw=="},"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","hovertemplate":"Driver Category=%{x}\u003cbr\u003eHarsh Acceleration Rate=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Standard Commuter","marker":{"color":"#0284c7"},"name":"Standard Commuter","notched":false,"offsetgroup":"Standard Commuter","orientation":"v","showlegend":true,"x":["Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter","Standard Commuter"],"x0":" ","xaxis":"x","y":{"dtype":"f8","bdata":"MzMzMzMzEkC4HoXrUbgMQHsUrkfhehJAPQrXo3A9DECuR+F6FK4XQIXrUbgehQdApHA9CtejCEB7FK5H4XoSQLgehetRuBRAXI\u002fC9ShcGEBxPQrXo3AWQAAAAAAAABlAFK5H4XoUEkDhehSuR+ERQNejcD0K1w9AH4XrUbgeE0CkcD0K16MOQIXrUbgehRJAcT0K16NwEUDXo3A9CtcPQJqZmZmZmRBAmpmZmZmZE0BmZmZmZmYWQEjhehSuRxNA4XoUrkfhEEAzMzMzMzMZQPYoXI\u002fC9RNAexSuR+F6CkCF61G4HoUVQOxRuB6F6xVASOF6FK5HFUA9CtejcD0WQKRwPQrXoxRAXI\u002fC9ShcF0CPwvUoXI8RQJqZmZmZmQ1AhetRuB6FEkB7FK5H4XoSQK5H4XoUrgdAXI\u002fC9ShcEECuR+F6FK4HQDMzMzMzMxNAzczMzMzMEkAAAAAAAAATQJqZmZmZmQVAKVyPwvUoDEBmZmZmZmYVQK5H4XoUrhRApHA9CtejEUBxPQrXo3AVQClcj8L1KBdAKVyPwvUoEUCamZmZmZkQQOxRuB6F6xZAPQrXo3A9GUBmZmZmZmYEQLgehetRuAhAexSuR+F6DEAK16NwPQoSQBSuR+F6FBFAcT0K16NwFEA9CtejcD0VQClcj8L1KBBArkfhehSuDUAAAAAAAAAOQM3MzMzMzBVAZmZmZmZmCkCF61G4HoUQQI\u002fC9ShcjxlAAAAAAAAADEAzMzMzMzMUQArXo3A9ChVAH4XrUbgeCUAK16NwPQoUQHE9CtejcBRA7FG4HoXrFUDhehSuR+ERQOF6FK5H4RNAZmZmZmZmEkBmZmZmZmYMQMP1KFyPwg9AAAAAAAAAFUDhehSuR+EKQHsUrkfhehRAKVyPwvUoDkDsUbgehesPQOxRuB6F6wVAPQrXo3A9EkAUrkfhehQVQK5H4XoUrgtArkfhehSuEECamZmZmZkXQM3MzMzMzA5AKVyPwvUoE0A9CtejcD0VQLgehetRuBZAFK5H4XoUFED2KFyPwvUSQHsUrkfhehNAzczMzMzMFkA9CtejcD0VQFK4HoXrURlA16NwPQrXEkDNzMzMzMwOQArXo3A9ChJAPQrXo3A9FEBcj8L1KFwUQEjhehSuRxFAzczMzMzMDkCuR+F6FK4bQArXo3A9ChJACtejcD0KEkCuR+F6FK4RQK5H4XoUrhVAhetRuB6FD0C4HoXrUbgXQLgehetRuBJAFK5H4XoUEEAUrkfhehQYQPYoXI\u002fC9QZAXI\u002fC9ShcBUDsUbgehesQQEjhehSuRxNACtejcD0KEEAfhetRuB4LQOF6FK5H4RFAMzMzMzMzEkAzMzMzMzMUQHE9CtejcA9AZmZmZmZmDkD2KFyPwvUSQFK4HoXrURhAUrgehetREUCPwvUoXI8RQPYoXI\u002fC9Q5ASOF6FK5HEUCF61G4HoUVQGZmZmZmZhRASOF6FK5HC0DNzMzMzMwIQOxRuB6F6xFAZmZmZmZmE0A9CtejcD0OQKRwPQrXoxJAmpmZmZmZE0CkcD0K16MIQFyPwvUoXBFAKVyPwvUoBkC4HoXrUbgVQM3MzMzMzBVAMzMzMzMzFkCPwvUoXI8WQJqZmZmZmRdAw\u002fUoXI\u002fCG0BmZmZmZmYXQHsUrkfheg5AKVyPwvUoEEApXI\u002fC9SgTQDMzMzMzMxRASOF6FK5HD0CamZmZmZkWQMP1KFyPwg9ACtejcD0KGEBI4XoUrkcSQGZmZmZmZhBAMzMzMzMzFECkcD0K16MSQOF6FK5H4RFAXI\u002fC9ShcF0BSuB6F61ETQIXrUbgehRJApHA9CtejDkAAAAAAAAASQJqZmZmZmRZAAAAAAAAAF0CamZmZmZkXQAAAAAAAABlAcT0K16NwEUAfhetRuB4XQB+F61G4HglA9ihcj8L1EkApXI\u002fC9SgUQM3MzMzMzBZAexSuR+F6FUBmZmZmZmYaQAAAAAAAABFA4XoUrkfhEkBI4XoUrkcQQArXo3A9ChVA16NwPQrXD0Bcj8L1KFwSQHsUrkfhehRAFK5H4XoUGEDhehSuR+EVQHsUrkfhehBAFK5H4XoUCEAUrkfhehQYQEjhehSuRw9ACtejcD0KEUCF61G4HoUVQKRwPQrXoxhASOF6FK5HF0CuR+F6FK4TQPYoXI\u002fC9QJAcT0K16NwEkBSuB6F61EaQOF6FK5H4RhAUrgehetRE0C4HoXrUbgTQBSuR+F6FBJAFK5H4XoUEkAUrkfhehQTQJqZmZmZmRNAUrgehetRFkCkcD0K16MGQMP1KFyPwgtA4XoUrkfhE0BSuB6F61EKQHsUrkfhehBA7FG4HoXrEEDhehSuR+EWQB+F61G4HhVAw\u002fUoXI\u002fCEUCPwvUoXI8SQFK4HoXrURNA9ihcj8L1FkBxPQrXo3AWQDMzMzMzMxFAXI\u002fC9ShcFUAzMzMzMzMTQDMzMzMzM\u002fM\u002fPQrXo3A9FkApXI\u002fC9SgMQD0K16NwPR1AMzMzMzMzEEAzMzMzMzMTQClcj8L1KBlAPQrXo3A9DkAK16NwPQoHQArXo3A9ChFAzczMzMzMEEDXo3A9CtcJQK5H4XoUrhVAzczMzMzMDkD2KFyPwvURQMP1KFyPwhBAZmZmZmZmGECF61G4HoUTQNejcD0K1w1Aw\u002fUoXI\u002fCFEAzMzMzMzMPQGZmZmZmZhZAUrgehetRBEBSuB6F61EUQBSuR+F6FBRA9ihcj8L1E0A9CtejcD0UQKRwPQrXow5AUrgehetRF0DsUbgehesVQFyPwvUoXBFAKVyPwvUoDkDhehSuR+ESQLgehetRuAxAKVyPwvUoDkBI4XoUrkcQQK5H4XoUrhRA9ihcj8L1EEBSuB6F61EVQMP1KFyPwg9AcT0K16NwFEBxPQrXo3ATQFyPwvUoXBZAMzMzMzMzD0DD9Shcj8IWQI\u002fC9Shcjw5AXI\u002fC9ShcFkCamZmZmZkPQB+F61G4HhVAUrgehetRCEDhehSuR+ERQGZmZmZmZhJASOF6FK5HDUBmZmZmZmYSQClcj8L1KBNAAAAAAAAABEBxPQrXo3AVQFyPwvUoXA1AUrgehetRFUCF61G4HoUUQArXo3A9ChVA9ihcj8L1CkAfhetRuB4PQDMzMzMzMwtAw\u002fUoXI\u002fCCUBxPQrXo3AUQKRwPQrXoxFASOF6FK5HA0C4HoXrUbgQQClcj8L1KBJAZmZmZmZmFkAUrkfhehQTQK5H4XoUrhJAuB6F61G4DEDD9Shcj8ISQOF6FK5H4RJA16NwPQrXFEAAAAAAAAATQIXrUbgehRNAZmZmZmZmDkAK16NwPQoJQOF6FK5H4Q5ACtejcD0KFEBI4XoUrkcTQDMzMzMzMxBAexSuR+F6EEApXI\u002fC9SgTQPYoXI\u002fC9QxA7FG4HoXrDUAfhetRuB4SQDMzMzMzMxJACtejcD0KEUCPwvUoXI8RQBSuR+F6FBBAZmZmZmZmE0B7FK5H4XoRQHsUrkfhehFA16NwPQrXEUDsUbgehesLQOxRuB6F6xVAZmZmZmZmEEAfhetRuB4PQMP1KFyPwhBAw\u002fUoXI\u002fCEkBSuB6F61EXQNejcD0K1xFAw\u002fUoXI\u002fCCUAfhetRuB4SQOxRuB6F6w1AH4XrUbgeCUAAAAAAAAARQLgehetRuBJAzczMzMzMFECamZmZmZkXQHE9CtejcBJAmpmZmZmZFECamZmZmZkDQD0K16NwPRVAuB6F61G4EUCPwvUoXI8QQFK4HoXrUQxAUrgehetRFUCPwvUoXI8WQOF6FK5H4RRAMzMzMzMzFUB7FK5H4XoKQAAAAAAAAA5AcT0K16NwEkAAAAAAAAAWQI\u002fC9ShcjxFAhetRuB6FEUApXI\u002fC9SgUQK5H4XoUrhFAUrgehetREUAUrkfhehQQQClcj8L1KBBAMzMzMzMzEkBSuB6F61EQQK5H4XoUrg9AZmZmZmZmE0AzMzMzMzMSQOF6FK5H4QhASOF6FK5HB0B7FK5H4XoRQD0K16NwPRJAMzMzMzMzEUCamZmZmZkRQJqZmZmZmQVAhetRuB6FE0CamZmZmZkQQDMzMzMzMwtAzczMzMzMDkAfhetRuB4UQGZmZmZmZgRAexSuR+F6FkApXI\u002fC9SgQQOF6FK5H4RZAAAAAAAAADkBSuB6F61ESQB+F61G4HhZA7FG4HoXrE0BmZmZmZmYUQJqZmZmZmQ9APQrXo3A9EUA9CtejcD0SQAAAAAAAABBASOF6FK5HGEAK16NwPQoWQK5H4XoUrhJApHA9CtejFUB7FK5H4XoUQFyPwvUoXANAhetRuB6FBUBcj8L1KFwPQI\u002fC9ShcjxtAexSuR+F6E0AUrkfhehQVQLgehetRuBNAhetRuB6FFUAUrkfhehQWQFK4HoXrUQxAw\u002fUoXI\u002fCDUCkcD0K16MUQOF6FK5H4QpAMzMzMzMzEkDsUbgehesJQK5H4XoUrglAMzMzMzMzEUAfhetRuB4RQI\u002fC9ShcjxNAPQrXo3A9EUBI4XoUrkcTQFK4HoXrURdAZmZmZmZmEUDD9Shcj8IZQB+F61G4HhNAFK5H4XoUEUDhehSuR+ESQOxRuB6F6xNAMzMzMzMzF0C4HoXrUbgQQDMzMzMzMw9AAAAAAAAAEEBmZmZmZmYSQOxRuB6F6xNAmpmZmZmZB0A9CtejcD0QQK5H4XoUrhFAw\u002fUoXI\u002fCEkCamZmZmZkSQDMzMzMzMxFAH4XrUbgeEUBcj8L1KFwWQAAAAAAAAApAzczMzMzMEEB7FK5H4XoSQHsUrkfhehZAw\u002fUoXI\u002fCEkBmZmZmZmYUQK5H4XoUrhVAexSuR+F6EUDsUbgehesPQEjhehSuRxVACtejcD0KFEDNzMzMzMwKQIXrUbgehRRAcT0K16NwB0D2KFyPwvUVQMP1KFyPwgNAj8L1KFyPEUBmZmZmZmYWQFK4HoXrURBA4XoUrkfh\u002fj+4HoXrUbgKQClcj8L1KBNApHA9CtejEUApXI\u002fC9SgMQNejcD0K1xdA7FG4HoXrEEDNzMzMzMwQQHE9CtejcBJAMzMzMzMzE0Bcj8L1KFwWQGZmZmZmZhRAcT0K16NwFECamZmZmZkUQLgehetRuApArkfhehSuBUAfhetRuB4NQB+F61G4Hg9AZmZmZmZmFUBxPQrXo3AWQA=="},"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","hovertemplate":"Driver Category=%{x}\u003cbr\u003eHarsh Acceleration Rate=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Eco-Friendly (Safe)","marker":{"color":"#059669"},"name":"Eco-Friendly (Safe)","notched":false,"offsetgroup":"Eco-Friendly (Safe)","orientation":"v","showlegend":true,"x":["Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)","Eco-Friendly (Safe)"],"x0":" ","xaxis":"x","y":{"dtype":"f8","bdata":"9ihcj8L1AEAfhetRuB4HQB+F61G4HgFAuB6F61G4DkApXI\u002fC9Sj8P9ejcD0K1wNAj8L1KFyP\u002fj\u002fsUbgehesDQArXo3A9CgFAcT0K16Nw\u002fT89CtejcD36Pz0K16NwPQRAFK5H4XoUCEAAAAAAAAD8P4XrUbgehQdAhetRuB6FB0DsUbgehesNQIXrUbgehQVAH4XrUbgeAUBSuB6F61EEQAAAAAAAAAZA4XoUrkfhAkAzMzMzMzMBQPYoXI\u002fC9QpAXI\u002fC9ShcBUAAAAAAAAAGQLgehetRuP4\u002fCtejcD0KCUDsUbgehesNQD0K16NwPfI\u002fhetRuB6FBUAUrkfhehQEQI\u002fC9ShcjwZAAAAAAAAABEA9CtejcD36P3sUrkfhegJAMzMzMzMzB0AUrkfhehT+P\u002fYoXI\u002fC9QBAH4XrUbgeCUAfhetRuB4FQPYoXI\u002fC9QBAj8L1KFyPAkBSuB6F61H8P0jhehSuR\u002f0\u002fpHA9CtejCkAUrkfhehQIQNejcD0K1wNACtejcD0K\u002fz8UrkfhehQEQJqZmZmZmQdAuB6F61G4\u002fj8fhetRuB4BQClcj8L1KARApHA9CtejBEApXI\u002fC9SgIQPYoXI\u002fC9QRASOF6FK5HA0B7FK5H4XoEQDMzMzMzM\u002fc\u002fCtejcD0K\u002fz+PwvUoXI8EQDMzMzMzMwlAhetRuB6F\u002fz8UrkfhehQEQIXrUbgehfs\u002fMzMzMzMzB0CPwvUoXI8IQJqZmZmZmQNAAAAAAAAA\u002fD9mZmZmZmYEQMP1KFyPwgFAXI\u002fC9ShcA0BSuB6F61EEQD0K16NwPQBAKVyPwvUoBEApXI\u002fC9SgIQNejcD0K1wFAMzMzMzMzBUCuR+F6FK4FQB+F61G4HgNA7FG4HoXrA0BSuB6F61EEQJqZmZmZmQFA9ihcj8L1AkDhehSuR+EKQDMzMzMzMwdAw\u002fUoXI\u002fC\u002fT+4HoXrUbgAQPYoXI\u002fC9QRAzczMzMzM9D9cj8L1KFz\u002fP4\u002fC9Shcj\u002f4\u002fXI\u002fC9Shc+z+kcD0K16P4P65H4XoUrgNAAAAAAAAAAkAfhetRuB4JQNejcD0K1wNAw\u002fUoXI\u002fCAUB7FK5H4XoCQDMzMzMzMwNAmpmZmZmZBUAUrkfhehT+P4XrUbgehQVAKVyPwvUoBkDhehSuR+EEQFyPwvUoXANAcT0K16NwAUAfhetRuB4FQB+F61G4Hv0\u002fhetRuB6FAUCPwvUoXI8CQEjhehSuRwVAPQrXo3A9BEBI4XoUrkcFQMP1KFyPwvk\u002fH4XrUbgeB0CuR+F6FK4HQEjhehSuR\u002fk\u002frkfhehSuAUCuR+F6FK4BQJqZmZmZmfk\u002fZmZmZmZmAEBcj8L1KFwDQGZmZmZmZgJArkfhehSuA0AzMzMzMzMDQB+F61G4HgdApHA9CtejBEDD9Shcj8IJQJqZmZmZmQNA4XoUrkfhBEB7FK5H4XoEQIXrUbgehfs\u002fKVyPwvUoBEBI4XoUrkcFQDMzMzMzMwVAPQrXo3A9AkBmZmZmZmYGQJqZmZmZmfU\u002fZmZmZmZmAkCkcD0K16MAQFK4HoXrUQJA16NwPQrXAUDsUbgehesHQClcj8L1KPw\u002fH4XrUbgeBUC4HoXrUbgIQGZmZmZmZv4\u002f7FG4HoXr\u002fT9SuB6F61H8P+F6FK5H4QRAzczMzMzM\u002fD\u002fhehSuR+H+P1K4HoXrUQhAMzMzMzMzA0AfhetRuB4DQAAAAAAAAPw\u002fCtejcD0K+z+uR+F6FK4DQHE9CtejcAVACtejcD0KAUBI4XoUrkcBQHE9CtejcANAZmZmZmZmBEBI4XoUrkcDQFK4HoXrUQJAPQrXo3A9AEDsUbgehesHQDMzMzMzM\u002f8\u002f9ihcj8L18D89CtejcD0GQI\u002fC9ShcjwJAAAAAAAAABkCkcD0K16MAQArXo3A9CgVA4XoUrkfh\u002fj8K16NwPQoBQI\u002fC9ShcjwJApHA9CtejAkDsUbgehesBQClcj8L1KABAj8L1KFyP+j\u002fXo3A9Ctf\u002fPwAAAAAAAABAzczMzMzMBEApXI\u002fC9SgEQMP1KFyPwgNAXI\u002fC9ShcBUAK16NwPQr\u002fP+F6FK5H4f4\u002fhetRuB6FB0BSuB6F61ECQI\u002fC9ShcjwBAXI\u002fC9ShcAUBSuB6F61EKQM3MzMzMzAJArkfhehSuB0AK16NwPQoBQD0K16NwPQRAH4XrUbgeAUBmZmZmZmYKQNejcD0K1wVAPQrXo3A9BkDsUbgehesHQGZmZmZmZgZACtejcD0KCUCamZmZmZkBQIXrUbgehQNAH4XrUbgeC0AK16NwPQoDQArXo3A9CgFAH4XrUbgeFEAUrkfhehQIQD0K16NwPQhAPQrXo3A9AECuR+F6FK4DQJqZmZmZmQlAZmZmZmZmBkA9CtejcD3+Pylcj8L1KAZApHA9CtejCkD2KFyPwvUCQEjhehSuRwNACtejcD0KEEAUrkfhehQGQFK4HoXrUQZAH4XrUbge\u002fT8pXI\u002fC9SgEQFyPwvUoXAVAKVyPwvUoBEC4HoXrUbgEQD0K16NwPQRAj8L1KFyPBkCamZmZmZn5P83MzMzMzPg\u002fj8L1KFyPBEAfhetRuB4HQClcj8L1KBFAH4XrUbgeBUBSuB6F61ECQIXrUbgehQdAH4XrUbgeB0Bcj8L1KFwFQHE9CtejcAFAZmZmZmZmBECkcD0K16P4P4\u002fC9ShcjwJA4XoUrkfh\u002fj8UrkfhehT+P4XrUbgehQNAj8L1KFyP\u002fj+uR+F6FK4FQClcj8L1KARAhetRuB6F\u002fz8K16NwPQoDQClcj8L1KABApHA9Ctej+D\u002fD9Shcj8IBQIXrUbgehQdAAAAAAAAAAkCuR+F6FK77P1yPwvUoXPs\u002fSOF6FK5HA0AAAAAAAAACQClcj8L1KAhAuB6F61G4BEAK16NwPQr3P+xRuB6F6wNAuB6F61G4BkB7FK5H4XoAQAAAAAAAAAhAH4XrUbge+T+PwvUoXI\u002f+P3E9CtejcAlAFK5H4XoUCECuR+F6FK4FQD0K16NwPQRAmpmZmZmZBUBI4XoUrkcDQFK4HoXrUQJApHA9CtejAEAfhetRuB4DQIXrUbgehQVAFK5H4XoUAkD2KFyPwvUCQAAAAAAAAAJAzczMzMzMAkBxPQrXo3AFQMP1KFyPwgNACtejcD0KAUDXo3A9CtcFQEjhehSuRwlA4XoUrkfhDEA9CtejcD0EQOxRuB6F6wNApHA9Ctej\u002fD9mZmZmZmYEQOF6FK5H4QZA4XoUrkfh+j9SuB6F61EEQM3MzMzMzPw\u002fexSuR+F6AED2KFyPwvX8P+xRuB6F6\u002f0\u002frkfhehSuCUDsUbgehesLQDMzMzMzMwdAhetRuB6FCUCkcD0K16P8Pz0K16NwPQBAPQrXo3A9BkAzMzMzMzMFQM3MzMzMzABAUrgehetRAEAzMzMzMzMBQNejcD0K1wFAMzMzMzMzB0DhehSuR+EKQD0K16NwPQJA7FG4HoXrB0CF61G4HoUHQJqZmZmZmf0\u002fhetRuB6FA0DXo3A9CtcBQBSuR+F6FAJAcT0K16NwA0A9CtejcD0GQPYoXI\u002fC9QRAMzMzMzMzB0AUrkfhehQGQFyPwvUoXPs\u002f9ihcj8L1AkDNzMzMzMwGQB+F61G4HgFAcT0K16NwBUAUrkfhehT2P3sUrkfhegBACtejcD0KBUCPwvUoXI8CQOF6FK5H4QJAKVyPwvUoAkDD9Shcj8L9P3E9CtejcAtA9ihcj8L1BkAK16NwPQoBQMP1KFyPwgNAFK5H4XoUCEAAAAAAAAAIQHE9CtejcAdAKVyPwvUoBEA9CtejcD0IQFyPwvUoXAVA16NwPQrX+z+PwvUoXI8CQB+F61G4HgdAuB6F61G4AkCPwvUoXI8EQIXrUbgehQVAH4XrUbge\u002fT9SuB6F61EAQOF6FK5H4QJAw\u002fUoXI\u002fCAUAUrkfhehQGQDMzMzMzMwFAKVyPwvUoAEAUrkfhehQIQB+F61G4HgdAuB6F61G4\u002fj+amZmZmZkJQNejcD0K1\u002f8\u002fhetRuB6FAUB7FK5H4XoAQPYoXI\u002fC9QJAcT0K16NwC0BxPQrXo3ABQLgehetRuAJAAAAAAAAA\u002fD+PwvUoXI8EQLgehetRuP4\u002frkfhehSu\u002fz9xPQrXo3ADQPYoXI\u002fC9QJAmpmZmZmZBUDNzMzMzMwIQPYoXI\u002fC9QBAKVyPwvUoBkApXI\u002fC9SgCQArXo3A9CglAexSuR+F6BkDNzMzMzMwAQB+F61G4Hv0\u002fw\u002fUoXI\u002fCAUDD9Shcj8IFQK5H4XoUrg9A9ihcj8L1AkBxPQrXo3ADQI\u002fC9ShcjwBAMzMzMzMz\u002fz\u002fXo3A9CtcBQNejcD0K1wlA9ihcj8L1BEDD9Shcj8IBQBSuR+F6FAhAcT0K16Nw\u002fT89CtejcD0AQLgehetRuARACtejcD0KA0BmZmZmZmYEQLgehetRuAhAw\u002fUoXI\u002fCAUCPwvUoXI8CQMP1KFyPwgVAZmZmZmZmBkD2KFyPwvUAQEjhehSuRwFAexSuR+F6CkDXo3A9CtcBQOF6FK5H4QRAw\u002fUoXI\u002fCBUAzMzMzMzMFQHE9CtejcAlAH4XrUbgeA0BSuB6F61EGQI\u002fC9ShcjwhAPQrXo3A9BkAzMzMzMzMDQFK4HoXrUQZAUrgehetRAkBxPQrXo3AFQI\u002fC9ShcjwJA9ihcj8L1\u002fD8UrkfhehQIQB+F61G4HgdAj8L1KFyP8j8K16NwPQoBQArXo3A9CgVA4XoUrkfhCEBmZmZmZmYCQD0K16NwPQZAj8L1KFyPAECkcD0K16MKQGZmZmZmZv4\u002fw\u002fUoXI\u002fC\u002fT89CtejcD0EQI\u002fC9ShcjwZAXI\u002fC9ShcB0DsUbgehesDQIXrUbgehQlAFK5H4XoUBEC4HoXrUbgGQJqZmZmZmQVAuB6F61G4\u002fj9xPQrXo3ANQNejcD0K1wFA4XoUrkfhBECuR+F6FK4BQKRwPQrXo\u002fw\u002fCtejcD0KB0AK16NwPQr\u002fP3sUrkfhegZAw\u002fUoXI\u002fCBUAAAAAAAAAEQHsUrkfhegBAj8L1KFyP\u002fj+uR+F6FK4FQFyPwvUoXANAhetRuB6FAUCamZmZmZkDQOF6FK5H4QJArkfhehSuB0CamZmZmZkFQI\u002fC9ShcjwRAexSuR+F6AkBcj8L1KFwVQNejcD0K1wlAPQrXo3A9\u002fj89CtejcD0GQFK4HoXrUQRApHA9Ctej\u002fD8AAAAAAAD8P8P1KFyPwgFAFK5H4XoUAECkcD0K16MGQK5H4XoUrglArkfhehSu\u002fz\u002fhehSuR+H+PwAAAAAAABFAZmZmZmZmAkDhehSuR+ECQOF6FK5H4QJAPQrXo3A9AEBI4XoUrkcBQB+F61G4Hv0\u002fj8L1KFyPBECamZmZmZn9Pz0K16NwPQJAFK5H4XoUCkDsUbgehesDQD0K16NwPRFApHA9CtejBkDD9Shcj8IBQClcj8L1KABACtejcD0K\u002fz+amZmZmZkDQHsUrkfhegZACtejcD0KAUBI4XoUrkcBQK5H4XoUrvc\u002fw\u002fUoXI\u002fCA0CPwvUoXI8CQGZmZmZmZgBAcT0K16NwEEDNzMzMzMwIQHsUrkfheghACtejcD0KB0CuR+F6FK4BQDMzMzMzM\u002f8\u002fUrgehetRBEAAAAAAAAAAQMP1KFyPwvk\u002fH4XrUbgeBUCF61G4HoUHQOxRuB6F6wVApHA9Ctej\u002fD8AAAAAAAAEQIXrUbgehQlA9ihcj8L1+D9xPQrXo3AFQBSuR+F6FAxA7FG4HoXr\u002fT97FK5H4XoCQAAAAAAAAAZASOF6FK5HC0CuR+F6FK7\u002fP3E9CtejcAFAZmZmZmZmAEBxPQrXo3ADQArXo3A9CgNAuB6F61G4AkDD9Shcj8IFQHE9CtejcANAPQrXo3A9BECkcD0K16MAQEjhehSuRwVAPQrXo3A9BkCuR+F6FK4DQOF6FK5H4f4\u002fSOF6FK5H\u002fT+kcD0K16MAQHsUrkfhevg\u002fZmZmZmZmBECkcD0K16MAQOxRuB6F6\u002fk\u002fUrgehetRCEBSuB6F61EAQIXrUbgehQFApHA9CtejBEDNzMzMzMwGQDMzMzMzMwlAmpmZmZmZA0CkcD0K16MAQArXo3A9Cv8\u002fZmZmZmZm+j+F61G4HoUHQFyPwvUoXPs\u002fhetRuB6FBUDhehSuR+EAQEjhehSuRwlAhetRuB6F\u002fz89CtejcD36P3E9CtejcAFAAAAAAAAACEB7FK5H4XoCQK5H4XoUrgNAPQrXo3A9AEDXo3A9Ctf\u002fPwrXo3A9CgVAAAAAAAAAAkDhehSuR+EAQBSuR+F6FAJAPQrXo3A9CEAUrkfhehQCQAAAAAAAAABAH4XrUbgeBUB7FK5H4XoGQGZmZmZmZgBAhetRuB6FBUA9CtejcD0IQJqZmZmZmQFAj8L1KFyPBkC4HoXrUbgAQHsUrkfheghA16NwPQrXA0BSuB6F61H4P4\u002fC9ShcjwRAXI\u002fC9Shc+z+amZmZmZkBQAAAAAAAAAJA7FG4HoXrAUDD9Shcj8IDQEjhehSuR\u002f0\u002fuB6F61G4BEAAAAAAAAAEQK5H4XoUrgVArkfhehSu\u002fz9SuB6F61EEQM3MzMzMzA5AMzMzMzMzAUCuR+F6FK4BQFyPwvUoXAVAzczMzMzMBkDXo3A9CtcJQOxRuB6F6wVAhetRuB6FAUAzMzMzMzMFQLgehetRuAJAH4XrUbgeBUDD9Shcj8L9P65H4XoUrgdArkfhehSuC0BSuB6F61EAQHE9CtejcBBAMzMzMzMzA0CkcD0K16P0P\u002fYoXI\u002fC9QZAMzMzMzMzB0AfhetRuB4DQIXrUbgehQdA7FG4HoXrBUAK16NwPQoBQKRwPQrXowRA16NwPQrXAUCkcD0K16MEQHE9CtejcAFA4XoUrkfh\u002fj8UrkfhehT+PwAAAAAAAARAhetRuB6FAUAzMzMzMzMDQEjhehSuR\u002f0\u002fSOF6FK5HBUD2KFyPwvXwPz0K16NwPf4\u002fXI\u002fC9ShcA0AUrkfhehQCQDMzMzMzMwtAAAAAAAAADECkcD0K16MCQOF6FK5H4f4\u002fzczMzMzMAEAK16NwPQoJQD0K16NwPQJASOF6FK5HAUC4HoXrUbgEQK5H4XoUrgNASOF6FK5HC0DXo3A9CtcHQD0K16NwPQRAMzMzMzMzA0AAAAAAAAD8P0jhehSuR\u002fk\u002fexSuR+F6AkB7FK5H4XoEQIXrUbgehQlAuB6F61G49j8AAAAAAAAEQNejcD0K1wFA9ihcj8L1AEDXo3A9CtcBQGZmZmZmZgJAPQrXo3A9BkDhehSuR+H6P1K4HoXrUQZA16NwPQrXDUDsUbgehesFQBSuR+F6FApA4XoUrkfhAEAzMzMzMzP3P1yPwvUoXAFA4XoUrkfhCEDNzMzMzMwAQLgehetRuAJArkfhehSuDUCPwvUoXI8CQClcj8L1KPw\u002frkfhehSuB0DhehSuR+H+Px+F61G4Hv0\u002fSOF6FK5HAUDXo3A9CtcDQFK4HoXrUQBAKVyPwvUo9D8K16NwPQoJQLgehetRuABACtejcD0KBUCkcD0K16MEQIXrUbgehQFA4XoUrkfhAkCkcD0K16MGQEjhehSuRwVAFK5H4XoU+j+kcD0K16MAQBSuR+F6FABAUrgehetRAEAUrkfhehQAQMP1KFyPwgtASOF6FK5HBUDXo3A9CtcBQI\u002fC9ShcjwBApHA9CtejAEAzMzMzMzMFQOxRuB6F6wFArkfhehSuB0AfhetRuB4DQBSuR+F6FARAmpmZmZmZA0DhehSuR+ECQM3MzMzMzABApHA9CtejEEBI4XoUrkcHQOxRuB6F6wNAFK5H4XoUCEDsUbgehesFQFK4HoXrUQJAKVyPwvUoBEAUrkfhehQEQK5H4XoUrgNAUrgehetRCEDhehSuR+H+P+F6FK5H4fY\u002fFK5H4XoUCkBcj8L1KFz\u002fP8P1KFyPwgtAuB6F61G4CkB7FK5H4XoAQI\u002fC9Shcj\u002f4\u002fPQrXo3A9EkCF61G4HoX3PzMzMzMzM\u002f8\u002f9ihcj8L1BEAzMzMzMzMJQNejcD0K1wdAexSuR+F6\u002fD97FK5H4XoKQMP1KFyPwgNAzczMzMzMAkBI4XoUrkcHQD0K16NwPQZACtejcD0KA0BSuB6F61EEQD0K16NwPQBArkfhehSuA0CuR+F6FK4HQIXrUbgehQVAcT0K16NwDUD2KFyPwvX8P4XrUbgehQVAAAAAAAAABkDhehSuR+H+P4\u002fC9ShcjwRAhetRuB6FB0CamZmZmZkFQB+F61G4HgVAMzMzMzMz8z8pXI\u002fC9SgEQKRwPQrXowZA4XoUrkfhCkAK16NwPQoLQBSuR+F6FARAZmZmZmZmAkC4HoXrUbj+P5qZmZmZmQdAMzMzMzMzCUD2KFyPwvUEQHE9CtejcAlASOF6FK5HAUC4HoXrUbgAQKRwPQrXo\u002fw\u002fexSuR+F6AEC4HoXrUbgAQArXo3A9CgdAhetRuB6FB0DsUbgehesNQFK4HoXrUfw\u002f9ihcj8L1BkBI4XoUrkcDQClcj8L1KAJA16NwPQrX\u002fz+PwvUoXI8GQK5H4XoUrglAcT0K16NwBUBcj8L1KFwJQPYoXI\u002fC9QJAZmZmZmZmCkDhehSuR+EEQKRwPQrXowBAmpmZmZmZA0D2KFyPwvUEQAAAAAAAAAJAZmZmZmZmCEApXI\u002fC9SgAQArXo3A9CglA16NwPQrXA0CPwvUoXI8CQI\u002fC9ShcjwBAKVyPwvUoCkCkcD0K16MGQOF6FK5H4QhAUrgehetRAkDhehSuR+ECQOF6FK5H4QZApHA9CtejAkB7FK5H4XoIQK5H4XoUrglAKVyPwvUoAEAUrkfhehT+P65H4XoUrvs\u002fMzMzMzMz\u002fz8K16NwPQoHQD0K16NwPQRA7FG4HoXrBUDXo3A9CtcFQB+F61G4HgdAPQrXo3A9BkCamZmZmZkBQKRwPQrXo\u002fw\u002fUrgehetRBkDD9Shcj8IDQGZmZmZmZgBA9ihcj8L1AEC4HoXrUbgAQD0K16NwPQJAXI\u002fC9Shc+z+kcD0K16MCQFK4HoXrUQZAAAAAAAAA+D\u002f2KFyPwvUKQD0K16NwPQZAFK5H4XoUCEA9CtejcD0CQMP1KFyPwg1A4XoUrkfh\u002fj9mZmZmZmYKQB+F61G4HgNAXI\u002fC9Shc+z+F61G4HoUDQPYoXI\u002fC9fw\u002fUrgehetRBECF61G4HoX7P0jhehSuRwVA7FG4HoXrCUApXI\u002fC9SgKQKRwPQrXowhAhetRuB6FB0BmZmZmZmb+P2ZmZmZmZgJAexSuR+F6CEAUrkfhehQIQClcj8L1KAJArkfhehSuBUCamZmZmZkFQM3MzMzMzAJAKVyPwvUoBkAzMzMzMzMBQM3MzMzMzAhAUrgehetRBECamZmZmZkDQEjhehSuRwlAzczMzMzMAkDD9Shcj8IFQClcj8L1KARAj8L1KFyP\u002fj8AAAAAAAD8PzMzMzMzMwNAhetRuB6FBUD2KFyPwvUGQPYoXI\u002fC9QZAmpmZmZmZCUDXo3A9CtcLQK5H4XoUrv8\u002fexSuR+F6AkCuR+F6FK4LQLgehetRuAJArkfhehSuDUAAAAAAAAAKQHsUrkfhegRAPQrXo3A99j8UrkfhehT6P6RwPQrXowRApHA9CtejAkAAAAAAAAAAQK5H4XoUrgFAzczMzMzMAEDhehSuR+EEQPYoXI\u002fC9QRApHA9CtejCEDNzMzMzMz8PxSuR+F6FAJAcT0K16NwAUAfhetRuB4FQD0K16NwPf4\u002fFK5H4XoUAkCPwvUoXI8AQKRwPQrXowZAcT0K16Nw\u002fT9SuB6F61ECQB+F61G4HgNAPQrXo3A9BEDNzMzMzMz8PwAAAAAAAAxA4XoUrkfhAkC4HoXrUbgCQFyPwvUoXANAXI\u002fC9ShcA0AzMzMzMzMFQHsUrkfhevw\u002f7FG4HoXrCUBcj8L1KFwHQClcj8L1KAJASOF6FK5H\u002fT8zMzMzMzP\u002fP+xRuB6F6wNAKVyPwvUoCEAzMzMzMzMBQJqZmZmZmQFAMzMzMzMzA0CuR+F6FK4DQFK4HoXrUQZApHA9CtejAkC4HoXrUbj+P6RwPQrXowRAPQrXo3A9+j8AAAAAAAAEQNejcD0K1wlAcT0K16NwAUBI4XoUrkcDQAAAAAAAAApAzczMzMzMBEApXI\u002fC9SgAQD0K16NwPQBAexSuR+F6BkBSuB6F61ECQBSuR+F6FARAMzMzMzMzA0AUrkfhehQKQMP1KFyPwgNAXI\u002fC9Shc+z8pXI\u002fC9SgCQMP1KFyPwgFAH4XrUbgeBUBI4XoUrkf9P\u002fYoXI\u002fC9QJAhetRuB6FCUA9CtejcD3+P2ZmZmZmZv4\u002f4XoUrkfh\u002fj9I4XoUrkf9P8P1KFyPwgFAZmZmZmZmBkB7FK5H4XoEQFK4HoXrUQRAMzMzMzMzAUAAAAAAAAACQOxRuB6F6wFAKVyPwvUoCECuR+F6FK4BQFK4HoXrUQRASOF6FK5HBUAUrkfhehQIQM3MzMzMzPw\u002fMzMzMzMzAUDsUbgehesBQOxRuB6F6\u002fk\u002fuB6F61G4BkDhehSuR+EEQHE9CtejcPk\u002fPQrXo3A9AEB7FK5H4XoGQBSuR+F6FAJA7FG4HoXr\u002fT\u002fsUbgehesBQHsUrkfhegJAFK5H4XoU\u002fj9mZmZmZmYKQIXrUbgehfc\u002fFK5H4XoUCkBxPQrXo3AFQIXrUbgehQlAPQrXo3A9BkBSuB6F61EGQArXo3A9CgVACtejcD0KAUDD9Shcj8IDQLgehetRuAZAXI\u002fC9ShcBUBxPQrXo3AJQMP1KFyPwgVAj8L1KFyPEkAzMzMzMzMJQFyPwvUoXAVAH4XrUbgeBUBmZmZmZmYEQD0K16NwPQJArkfhehSuC0AUrkfhehQAQHsUrkfhegZAH4XrUbgeA0BSuB6F61H8Px+F61G4HgNAAAAAAAAACkBSuB6F61ECQA=="},"y0":" ","yaxis":"y","type":"box"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Driver Category"},"categoryorder":"array","categoryarray":["High-Risk (Aggressive)","Standard Commuter","Eco-Friendly (Safe)"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Harsh Acceleration Rate"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Driver Category"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"boxmode":"overlay","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Eco-friendly drivers deliver a smooth, comfortable ride with low acceleration jerk. Aggressive drivers create abrupt motions that can damage delicate cargo and make passengers uncomfortable.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Adjust electronic throttle pedal mapping in fleet vehicles to smooth out sudden pedal presses, protecting valuable cargo and improving passenger satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead>
+            <tr><th>Diagnostic Method</th><th>Objective</th><th>Separation Score</th><th>Response Time</th><th>Deployment Tier</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Kinematic Driver Profiler</strong></td><td>Categorize Driving Style</td><td><span class="badge bg-success">94.2% Reliability</span></td><td>2.1 ms</td><td>Telematics Gateway</td></tr>
+            <tr><td><strong>Emergency Event Filter</strong></td><td>Identify Severe Hard Brakes</td><td><span class="badge bg-primary">95.2% Precision</span></td><td>4.8 ms</td><td>On-Board Computer</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Weekly Driver Scorecards:</strong> Send weekly performance summaries to drivers showing harsh braking counts and fuel efficiency.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Excessive Braking Alerts:</strong> Notify dispatchers when a vehicle records more than 5 emergency stops in one hour.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Eco-Pedal Mode:</strong> Enable gentle throttle resistance in fleet settings to prevent accidental jackrabbit starts.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Real-time Cabin Coaching:</strong> Deploy gentle voice/haptic coaching prompts inside the vehicle for real-time driver guidance.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Insurance Telematics Link:</strong> Share anonymized fleet safety scores with insurers to reduce company policy premiums.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Accurate EV Range Calculation:</strong> Use personalized driving habits to calculate exact remaining battery range on route navigation.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$310,000 Fleet Fuel Savings:</strong> Coaching aggressive drivers to standard commuter habits cuts fleet diesel/electricity waste by 14.2%.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Reduced Accident Liability:</strong> Lower accident frequency reduces fleet insurance premiums and minimizes repair downtime.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This telematics system evaluates driving behavior without requiring manual supervisor reviews:</p>
+    <ul>
+        <li><strong>Continuous Sensor Ingestion:</strong> Gathers acceleration, braking frequency, and cornering force data from vehicle motion sensors during every trip.</li>
+        <li><strong>Automated Driver Grouping:</strong> Categorizes driving habits into Eco-Friendly, Standard, and High-Risk categories to identify where coaching is needed.</li>
+        <li><strong>Business Value:</strong> Lowers accident risk by 22%, reduces brake and tire replacement costs, and cuts company fuel bills by $310,000 annually.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Trip_ID</th><th>Hard_Braking_Count</th><th>Acceleration_Smoothness</th><th>Cornering_Force_G</th><th>Average_Speed_kmh</th><th>Cluster</th><th>Driver_Category</th></tr></thead><tbody><tr><td>TRIP-10000</td><td>0</td><td>1.21</td><td>0.20</td><td>64.00</td><td>2</td><td><span class="badge-status-alert">High-Risk (Aggressive)</span></td></tr><tr><td>TRIP-10001</td><td>0</td><td>1.48</td><td>0.18</td><td>52.80</td><td>2</td><td><span class="badge-status-alert">High-Risk (Aggressive)</span></td></tr><tr><td>TRIP-10002</td><td>8</td><td>4.55</td><td>0.66</td><td>82.40</td><td>1</td><td><span class="badge-status-warn">Standard Commuter</span></td></tr><tr><td>TRIP-10003</td><td>6</td><td>3.59</td><td>0.53</td><td>91.60</td><td>1</td><td><span class="badge-status-warn">Standard Commuter</span></td></tr><tr><td>TRIP-10004</td><td>2</td><td>4.62</td><td>0.88</td><td>76.60</td><td>1</td><td><span class="badge-status-warn">Standard Commuter</span></td></tr><tr><td>TRIP-10005</td><td>5</td><td>2.12</td><td>0.30</td><td>54.10</td><td>0</td><td><span class="badge-status-pass">Eco-Friendly (Safe)</span></td></tr><tr><td>TRIP-10006</td><td>0</td><td>0.98</td><td>0.36</td><td>60.60</td><td>2</td><td><span class="badge-status-alert">High-Risk (Aggressive)</span></td></tr><tr><td>TRIP-10007</td><td>0</td><td>1.02</td><td>0.13</td><td>58.00</td><td>2</td><td><span class="badge-status-alert">High-Risk (Aggressive)</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../02_battery_health_degradation/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: EV Battery Lifespan & Health
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../04_supply_chain_route_optimization/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Assembly Plant Parts Routing <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

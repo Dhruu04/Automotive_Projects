@@ -1,0 +1,20 @@
+"""
+Standalone Generator for Bugatti Rimac: 4-Motor All-Wheel Torque Vectoring (R-AWTV)
+Project ID: 42
+Tech Stack: Nanosecond Inverter Torque Arbitration, Dynamic Yaw Moment ML
+"""
+
+import os
+import sys
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.dirname(current_dir)
+if root_dir not in sys.path:
+    sys.path.insert(0, root_dir)
+
+from build_all_portfolio import render_single_project, PROJECTS_META
+
+if __name__ == "__main__":
+    print(f"Running standalone generation for Project 42 (Rimac 4-Motor Vectoring)...")
+    render_single_project("42")
+    print(f"Successfully generated standalone report at: {os.path.join(current_dir, 'report.html')}")

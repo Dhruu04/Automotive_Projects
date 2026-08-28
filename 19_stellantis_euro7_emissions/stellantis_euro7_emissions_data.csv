@@ -1,0 +1,2601 @@
+RDE_Trip_ID,Exhaust_Gas_Temp_C,AdBlue_Dosing_mg_s,SCR_Catalyst_Efficiency_pct,Tailpipe_NOx_mg_km,Euro7_Status
+STLA-RDE-4000,144.4,71.9,10.0,173.9,Emissions Exceedance Flag
+STLA-RDE-4001,240.8,54.3,78.3,38.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4002,181.5,37.7,66.7,55.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4003,153.8,57.6,26.6,131.3,Emissions Exceedance Flag
+STLA-RDE-4004,193.5,49.3,63.0,74.6,Emissions Exceedance Flag
+STLA-RDE-4005,147.5,18.7,74.1,57.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4006,265.0,58.2,83.2,38.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4007,309.5,47.8,92.4,14.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4008,203.3,30.9,79.6,35.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4009,147.6,80.3,10.0,179.7,Emissions Exceedance Flag
+STLA-RDE-4010,405.3,61.9,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4011,144.4,50.8,26.6,122.0,Emissions Exceedance Flag
+STLA-RDE-4012,352.9,76.3,93.2,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4013,283.0,84.8,80.7,32.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4014,247.9,77.6,71.8,60.5,Emissions Exceedance Flag
+STLA-RDE-4015,356.1,43.9,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4016,221.9,28.9,85.1,31.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4017,154.4,35.2,55.5,71.8,Emissions Exceedance Flag
+STLA-RDE-4018,142.2,63.2,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4019,152.5,28.2,63.4,65.9,Emissions Exceedance Flag
+STLA-RDE-4020,148.3,82.2,10.0,157.9,Emissions Exceedance Flag
+STLA-RDE-4021,193.6,54.1,59.5,79.9,Emissions Exceedance Flag
+STLA-RDE-4022,147.0,65.3,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4023,166.6,65.5,29.6,130.8,Emissions Exceedance Flag
+STLA-RDE-4024,269.0,52.9,85.5,30.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4025,422.3,56.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4026,487.7,44.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4027,199.8,72.1,50.2,99.7,Emissions Exceedance Flag
+STLA-RDE-4028,308.0,15.6,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4029,250.3,69.4,75.6,49.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4030,270.7,62.7,83.2,32.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4031,170.9,16.6,83.1,29.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4032,305.3,43.2,92.7,13.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4033,190.2,72.3,43.3,105.2,Emissions Exceedance Flag
+STLA-RDE-4034,205.8,80.8,48.6,93.8,Emissions Exceedance Flag
+STLA-RDE-4035,143.4,60.4,11.7,149.9,Emissions Exceedance Flag
+STLA-RDE-4036,171.6,45.2,54.6,87.8,Emissions Exceedance Flag
+STLA-RDE-4037,375.2,32.3,97.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4038,185.1,68.5,42.4,121.5,Emissions Exceedance Flag
+STLA-RDE-4039,230.9,68.2,68.9,63.8,Emissions Exceedance Flag
+STLA-RDE-4040,187.7,32.3,73.8,52.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4041,179.8,74.8,32.6,126.5,Emissions Exceedance Flag
+STLA-RDE-4042,267.8,83.1,76.8,45.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4043,178.7,22.8,79.1,38.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4044,218.5,33.5,82.0,34.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4045,303.9,49.6,91.5,18.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4046,574.7,35.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4047,154.4,48.3,39.0,120.1,Emissions Exceedance Flag
+STLA-RDE-4048,181.3,44.8,60.5,79.4,Emissions Exceedance Flag
+STLA-RDE-4049,198.8,61.8,56.8,82.4,Emissions Exceedance Flag
+STLA-RDE-4050,215.5,11.6,93.5,12.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4051,309.0,76.4,87.7,25.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4052,189.9,46.8,63.1,66.6,Emissions Exceedance Flag
+STLA-RDE-4053,201.6,27.9,81.2,33.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4054,385.6,57.7,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4055,204.2,10.0,93.5,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4056,203.8,26.2,82.9,31.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4057,220.2,79.9,58.0,90.2,Emissions Exceedance Flag
+STLA-RDE-4058,142.7,59.3,12.3,165.4,Emissions Exceedance Flag
+STLA-RDE-4059,165.5,68.3,25.5,151.2,Emissions Exceedance Flag
+STLA-RDE-4060,425.4,23.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4061,330.1,12.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4062,296.9,63.6,88.0,21.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4063,168.4,18.0,81.1,37.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4064,246.5,35.0,87.0,25.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4065,201.1,43.4,70.6,53.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4066,680.3,48.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4067,272.0,19.4,94.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4068,400.2,77.9,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4069,265.8,76.5,78.1,41.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4070,168.7,58.8,38.5,127.5,Emissions Exceedance Flag
+STLA-RDE-4071,141.0,21.5,67.5,65.6,Emissions Exceedance Flag
+STLA-RDE-4072,343.8,29.3,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4073,573.4,48.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4074,482.7,27.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4075,307.3,16.5,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4076,187.8,45.1,63.5,72.5,Emissions Exceedance Flag
+STLA-RDE-4077,284.5,20.2,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4078,158.3,57.6,30.9,139.7,Emissions Exceedance Flag
+STLA-RDE-4079,286.5,70.5,84.7,25.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4080,144.0,48.6,29.4,128.0,Emissions Exceedance Flag
+STLA-RDE-4081,141.8,81.4,10.0,170.0,Emissions Exceedance Flag
+STLA-RDE-4082,384.9,61.4,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4083,240.2,75.3,69.7,64.2,Emissions Exceedance Flag
+STLA-RDE-4084,221.7,67.9,65.0,67.5,Emissions Exceedance Flag
+STLA-RDE-4085,235.3,45.6,80.4,40.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4086,189.7,45.9,63.8,64.4,Emissions Exceedance Flag
+STLA-RDE-4087,162.8,43.7,50.5,98.6,Emissions Exceedance Flag
+STLA-RDE-4088,301.1,13.3,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4089,167.4,65.6,30.2,120.6,Emissions Exceedance Flag
+STLA-RDE-4090,224.8,25.3,87.5,25.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4091,368.4,66.9,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4092,184.2,27.4,76.8,45.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4093,294.7,47.5,90.7,17.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4094,346.6,44.5,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4095,202.7,78.3,48.0,99.7,Emissions Exceedance Flag
+STLA-RDE-4096,206.6,39.4,75.2,47.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4097,200.7,65.9,55.1,88.5,Emissions Exceedance Flag
+STLA-RDE-4098,323.0,72.2,90.4,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4099,216.5,58.9,67.5,54.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4100,238.3,59.1,75.6,44.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4101,275.6,29.3,92.6,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4102,154.1,50.8,35.5,130.4,Emissions Exceedance Flag
+STLA-RDE-4103,536.2,27.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4104,270.5,29.8,92.0,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4105,426.6,18.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4106,224.5,79.6,60.5,89.2,Emissions Exceedance Flag
+STLA-RDE-4107,249.3,11.6,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4108,162.3,37.3,57.6,69.6,Emissions Exceedance Flag
+STLA-RDE-4109,448.4,77.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4110,146.9,49.1,31.4,139.5,Emissions Exceedance Flag
+STLA-RDE-4111,225.6,63.6,68.9,55.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4112,257.6,68.9,78.0,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4113,243.0,81.2,68.5,59.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4114,265.5,29.1,91.7,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4115,494.3,51.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4116,183.4,44.6,61.7,71.7,Emissions Exceedance Flag
+STLA-RDE-4117,341.2,50.4,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4118,239.2,26.5,89.2,20.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4119,166.8,29.6,68.2,57.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4120,351.0,65.9,93.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4121,281.0,27.9,93.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4122,430.4,18.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4123,278.1,54.5,86.8,25.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4124,465.8,32.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4125,227.5,46.5,77.8,46.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4126,179.0,22.1,79.9,34.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4127,187.6,45.6,63.0,68.9,Emissions Exceedance Flag
+STLA-RDE-4128,172.2,80.8,19.4,161.5,Emissions Exceedance Flag
+STLA-RDE-4129,186.5,41.4,65.9,61.8,Emissions Exceedance Flag
+STLA-RDE-4130,258.0,74.1,76.4,41.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4131,202.6,62.9,58.2,76.7,Emissions Exceedance Flag
+STLA-RDE-4132,393.2,41.8,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4133,157.0,10.0,87.8,22.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4134,161.9,41.0,53.1,95.7,Emissions Exceedance Flag
+STLA-RDE-4135,169.0,12.5,87.0,21.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4136,146.8,52.4,26.7,138.1,Emissions Exceedance Flag
+STLA-RDE-4137,145.3,52.7,24.7,149.3,Emissions Exceedance Flag
+STLA-RDE-4138,276.3,12.2,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4139,209.1,60.4,63.2,71.9,Emissions Exceedance Flag
+STLA-RDE-4140,211.4,69.5,58.9,80.1,Emissions Exceedance Flag
+STLA-RDE-4141,502.0,63.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4142,291.0,71.0,85.5,27.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4143,301.6,31.2,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4144,199.1,56.6,60.6,58.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4145,312.0,59.8,90.8,20.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4146,321.3,52.3,92.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4147,199.5,28.0,80.6,39.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4148,156.1,41.6,48.7,89.2,Emissions Exceedance Flag
+STLA-RDE-4149,151.4,23.0,69.7,66.1,Emissions Exceedance Flag
+STLA-RDE-4150,296.5,79.0,85.0,25.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4151,192.3,81.2,38.1,113.1,Emissions Exceedance Flag
+STLA-RDE-4152,239.3,37.5,84.7,26.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4153,204.0,58.3,61.9,63.3,Emissions Exceedance Flag
+STLA-RDE-4154,186.4,71.0,41.4,99.0,Emissions Exceedance Flag
+STLA-RDE-4155,399.9,40.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4156,168.4,18.9,80.2,46.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4157,624.8,14.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4158,296.5,50.8,90.3,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4159,194.8,83.6,38.3,99.1,Emissions Exceedance Flag
+STLA-RDE-4160,282.9,72.2,83.5,37.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4161,232.7,42.0,81.3,35.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4162,318.2,69.0,90.2,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4163,393.5,83.3,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4164,183.3,84.9,27.0,127.4,Emissions Exceedance Flag
+STLA-RDE-4165,374.9,83.1,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4166,205.6,13.9,91.1,16.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4167,146.5,39.5,44.5,108.8,Emissions Exceedance Flag
+STLA-RDE-4168,172.2,44.8,55.3,81.9,Emissions Exceedance Flag
+STLA-RDE-4169,306.0,81.6,86.3,25.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4170,191.9,47.0,64.0,57.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4171,183.3,12.2,89.5,21.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4172,329.3,62.5,92.3,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4173,217.0,23.2,87.3,20.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4174,168.8,43.1,55.0,75.3,Emissions Exceedance Flag
+STLA-RDE-4175,174.9,59.4,42.9,97.3,Emissions Exceedance Flag
+STLA-RDE-4176,196.2,14.5,89.5,21.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4177,741.1,17.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4178,163.4,49.4,44.6,115.5,Emissions Exceedance Flag
+STLA-RDE-4179,153.2,38.0,51.2,90.9,Emissions Exceedance Flag
+STLA-RDE-4180,142.5,31.7,53.1,91.1,Emissions Exceedance Flag
+STLA-RDE-4181,287.5,25.8,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4182,365.1,27.6,97.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4183,239.9,45.3,81.7,40.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4184,140.2,17.2,73.7,56.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4185,323.9,75.1,90.1,19.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4186,319.0,36.9,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4187,164.3,51.0,43.5,105.9,Emissions Exceedance Flag
+STLA-RDE-4188,261.0,75.5,76.9,42.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4189,379.0,26.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4190,226.8,64.6,68.9,60.3,Emissions Exceedance Flag
+STLA-RDE-4191,575.8,38.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4192,173.4,40.3,60.5,74.0,Emissions Exceedance Flag
+STLA-RDE-4193,233.7,78.4,65.6,66.8,Emissions Exceedance Flag
+STLA-RDE-4194,253.1,67.0,77.3,42.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4195,157.9,71.4,13.9,164.7,Emissions Exceedance Flag
+STLA-RDE-4196,169.2,72.4,24.9,127.4,Emissions Exceedance Flag
+STLA-RDE-4197,250.5,83.8,70.6,56.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4198,160.3,48.0,43.9,114.8,Emissions Exceedance Flag
+STLA-RDE-4199,212.8,51.9,69.9,63.3,Emissions Exceedance Flag
+STLA-RDE-4200,182.2,38.5,66.4,62.0,Emissions Exceedance Flag
+STLA-RDE-4201,188.3,36.4,70.7,46.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4202,179.9,46.3,58.4,81.4,Emissions Exceedance Flag
+STLA-RDE-4203,283.2,59.0,86.6,24.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4204,236.9,32.5,86.3,27.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4205,716.8,54.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4206,155.3,55.1,31.2,121.1,Emissions Exceedance Flag
+STLA-RDE-4207,533.1,56.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4208,207.8,60.0,62.7,71.3,Emissions Exceedance Flag
+STLA-RDE-4209,350.6,75.7,93.0,14.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4210,263.7,47.8,85.9,24.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4211,143.6,33.7,50.8,85.0,Emissions Exceedance Flag
+STLA-RDE-4212,155.2,20.2,74.7,51.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4213,476.6,13.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4214,178.4,54.0,50.4,99.3,Emissions Exceedance Flag
+STLA-RDE-4215,210.7,36.4,78.3,40.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4216,354.5,20.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4217,176.8,53.3,50.0,89.3,Emissions Exceedance Flag
+STLA-RDE-4218,189.3,40.9,67.5,60.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4219,472.4,48.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4220,165.1,27.3,70.1,61.0,Emissions Exceedance Flag
+STLA-RDE-4221,269.9,84.7,77.0,46.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4222,152.1,30.3,60.5,78.1,Emissions Exceedance Flag
+STLA-RDE-4223,145.9,14.4,79.6,40.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4224,202.2,48.1,67.8,60.5,Emissions Exceedance Flag
+STLA-RDE-4225,173.2,10.1,90.1,17.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4226,174.2,75.4,26.7,138.0,Emissions Exceedance Flag
+STLA-RDE-4227,144.6,55.5,20.0,145.2,Emissions Exceedance Flag
+STLA-RDE-4228,269.9,16.7,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4229,240.9,35.7,85.8,23.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4230,567.0,32.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4231,453.0,31.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4232,254.3,42.0,86.0,24.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4233,187.8,62.9,49.1,94.5,Emissions Exceedance Flag
+STLA-RDE-4234,319.6,25.3,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4235,177.8,52.7,51.3,89.0,Emissions Exceedance Flag
+STLA-RDE-4236,142.6,49.5,26.8,136.6,Emissions Exceedance Flag
+STLA-RDE-4237,152.4,16.3,78.9,40.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4238,140.1,47.1,27.9,149.6,Emissions Exceedance Flag
+STLA-RDE-4239,215.0,34.3,80.7,43.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4240,175.5,35.4,66.2,69.1,Emissions Exceedance Flag
+STLA-RDE-4241,230.9,75.7,65.5,69.3,Emissions Exceedance Flag
+STLA-RDE-4242,174.8,72.9,29.8,110.4,Emissions Exceedance Flag
+STLA-RDE-4243,219.8,43.2,77.1,45.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4244,234.4,62.7,72.7,51.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4245,143.4,78.4,10.0,162.8,Emissions Exceedance Flag
+STLA-RDE-4246,226.2,40.3,80.5,40.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4247,370.7,23.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4248,220.2,77.5,59.2,86.2,Emissions Exceedance Flag
+STLA-RDE-4249,167.5,84.8,10.0,163.4,Emissions Exceedance Flag
+STLA-RDE-4250,152.9,22.4,71.1,50.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4251,163.4,82.7,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4252,320.1,83.3,88.4,20.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4253,183.0,73.6,36.5,108.2,Emissions Exceedance Flag
+STLA-RDE-4254,460.5,29.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4255,177.6,82.0,23.9,143.0,Emissions Exceedance Flag
+STLA-RDE-4256,244.8,72.6,72.5,56.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4257,230.4,55.7,74.4,47.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4258,296.5,78.6,85.1,33.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4259,166.8,40.1,57.0,95.6,Emissions Exceedance Flag
+STLA-RDE-4260,207.8,73.1,54.7,100.5,Emissions Exceedance Flag
+STLA-RDE-4261,221.1,10.1,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4262,776.8,64.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4263,234.6,34.7,84.9,31.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4264,233.2,23.7,89.5,18.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4265,205.3,30.0,80.7,38.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4266,204.9,71.1,54.1,76.7,Emissions Exceedance Flag
+STLA-RDE-4267,251.4,63.2,78.1,43.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4268,200.5,32.1,78.0,41.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4269,178.6,26.5,75.7,40.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4270,213.2,34.9,79.8,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4271,317.6,30.4,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4272,160.7,30.4,64.6,69.1,Emissions Exceedance Flag
+STLA-RDE-4273,263.8,49.5,85.5,23.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4274,201.6,37.5,74.7,51.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4275,391.3,24.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4276,209.1,75.9,53.7,89.9,Emissions Exceedance Flag
+STLA-RDE-4277,192.7,11.4,91.4,15.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4278,217.5,65.3,64.4,66.5,Emissions Exceedance Flag
+STLA-RDE-4279,385.8,62.8,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4280,291.8,46.9,90.5,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4281,444.6,51.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4282,217.6,56.3,69.4,60.4,Emissions Exceedance Flag
+STLA-RDE-4283,267.0,19.8,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4284,345.8,59.1,94.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4285,243.4,55.4,78.6,42.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4286,197.5,67.0,52.3,85.6,Emissions Exceedance Flag
+STLA-RDE-4287,260.2,13.9,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4288,311.5,15.1,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4289,280.2,46.3,89.1,21.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4290,311.8,22.4,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4291,213.8,68.0,61.1,66.6,Emissions Exceedance Flag
+STLA-RDE-4292,372.5,68.6,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4293,437.2,77.2,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4294,145.8,16.2,77.1,46.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4295,156.1,28.7,64.5,73.0,Emissions Exceedance Flag
+STLA-RDE-4296,146.5,55.9,21.4,157.3,Emissions Exceedance Flag
+STLA-RDE-4297,182.5,13.4,88.4,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4298,383.6,26.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4299,167.4,60.6,35.6,145.9,Emissions Exceedance Flag
+STLA-RDE-4300,302.7,21.3,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4301,223.3,63.2,68.1,67.5,Emissions Exceedance Flag
+STLA-RDE-4302,224.6,18.4,90.9,17.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4303,245.5,21.0,92.1,15.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4304,300.5,84.5,84.8,29.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4305,504.4,66.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4306,174.2,73.7,28.4,143.4,Emissions Exceedance Flag
+STLA-RDE-4307,199.4,17.5,87.9,23.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4308,278.2,23.1,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4309,167.1,65.2,30.4,123.1,Emissions Exceedance Flag
+STLA-RDE-4310,255.1,30.3,90.0,19.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4311,190.3,71.3,44.2,104.4,Emissions Exceedance Flag
+STLA-RDE-4312,239.6,45.7,81.5,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4313,247.9,72.6,73.6,59.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4314,190.1,65.3,48.7,93.6,Emissions Exceedance Flag
+STLA-RDE-4315,173.2,35.5,65.1,61.2,Emissions Exceedance Flag
+STLA-RDE-4316,196.1,35.2,74.5,52.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4317,167.1,71.9,23.3,127.3,Emissions Exceedance Flag
+STLA-RDE-4318,335.6,66.6,92.5,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4319,171.1,82.7,16.4,132.6,Emissions Exceedance Flag
+STLA-RDE-4320,150.1,69.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4321,206.1,36.2,77.0,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4322,266.0,67.3,80.8,40.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4323,369.0,30.7,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4324,425.6,40.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4325,171.1,57.7,41.6,106.2,Emissions Exceedance Flag
+STLA-RDE-4326,143.2,28.8,57.8,78.0,Emissions Exceedance Flag
+STLA-RDE-4327,682.5,76.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4328,141.9,39.2,41.4,98.0,Emissions Exceedance Flag
+STLA-RDE-4329,201.7,81.3,45.3,115.9,Emissions Exceedance Flag
+STLA-RDE-4330,544.2,21.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4331,140.1,15.5,76.3,48.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4332,205.4,53.5,65.7,57.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4333,142.7,60.5,10.7,162.0,Emissions Exceedance Flag
+STLA-RDE-4334,148.0,31.2,57.0,78.7,Emissions Exceedance Flag
+STLA-RDE-4335,302.4,45.2,92.1,16.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4336,177.3,36.8,65.7,64.0,Emissions Exceedance Flag
+STLA-RDE-4337,494.6,31.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4338,163.8,44.7,50.2,92.4,Emissions Exceedance Flag
+STLA-RDE-4339,400.5,76.5,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4340,203.7,50.4,67.0,59.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4341,162.2,50.0,43.0,116.7,Emissions Exceedance Flag
+STLA-RDE-4342,146.3,66.4,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4343,145.5,22.4,68.1,62.1,Emissions Exceedance Flag
+STLA-RDE-4344,272.6,59.5,84.4,32.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4345,171.0,30.7,68.8,59.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4346,154.9,55.9,29.8,130.7,Emissions Exceedance Flag
+STLA-RDE-4347,190.5,71.0,44.5,104.8,Emissions Exceedance Flag
+STLA-RDE-4348,209.1,60.9,62.9,80.3,Emissions Exceedance Flag
+STLA-RDE-4349,153.2,74.0,10.0,162.5,Emissions Exceedance Flag
+STLA-RDE-4350,161.1,56.1,35.1,125.8,Emissions Exceedance Flag
+STLA-RDE-4351,149.8,13.8,81.4,37.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4352,248.9,70.4,74.8,47.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4353,160.6,19.3,77.5,45.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4354,143.5,29.4,57.0,82.1,Emissions Exceedance Flag
+STLA-RDE-4355,338.8,37.4,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4356,254.3,65.5,78.1,44.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4357,140.2,51.0,22.0,157.7,Emissions Exceedance Flag
+STLA-RDE-4358,453.5,21.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4359,311.9,34.2,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4360,170.4,67.5,31.0,147.0,Emissions Exceedance Flag
+STLA-RDE-4361,294.7,36.5,92.9,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4362,198.6,13.7,90.4,18.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4363,189.7,55.3,56.4,82.9,Emissions Exceedance Flag
+STLA-RDE-4364,280.0,49.8,88.2,22.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4365,338.0,14.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4366,248.2,71.3,74.2,43.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4367,197.8,12.9,90.9,16.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4368,338.9,75.0,91.9,14.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4369,667.0,57.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4370,365.4,84.7,93.6,12.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4371,231.5,60.8,72.5,43.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4372,225.1,54.3,73.2,50.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4373,207.3,75.4,52.9,73.7,Emissions Exceedance Flag
+STLA-RDE-4374,694.7,10.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4375,228.5,70.0,67.1,56.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4376,481.3,38.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4377,554.6,52.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4378,335.6,60.6,93.2,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4379,218.4,58.9,68.3,59.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4380,199.7,29.2,79.8,34.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4381,213.2,57.4,66.8,59.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4382,171.8,18.4,81.5,28.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4383,146.6,36.6,48.7,100.0,Emissions Exceedance Flag
+STLA-RDE-4384,257.2,82.5,73.5,51.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4385,267.8,81.5,77.3,41.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4386,179.4,27.6,75.0,38.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4387,604.6,13.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4388,185.7,79.5,33.8,135.1,Emissions Exceedance Flag
+STLA-RDE-4389,187.3,47.0,61.7,71.0,Emissions Exceedance Flag
+STLA-RDE-4390,142.8,78.8,10.0,154.1,Emissions Exceedance Flag
+STLA-RDE-4391,385.2,32.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4392,186.6,85.0,30.1,127.7,Emissions Exceedance Flag
+STLA-RDE-4393,239.5,76.3,69.0,56.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4394,315.0,56.6,91.6,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4395,232.6,28.8,87.2,18.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4396,145.3,46.5,33.7,119.6,Emissions Exceedance Flag
+STLA-RDE-4397,347.6,15.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4398,412.4,57.2,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4399,213.1,41.2,76.2,50.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4400,208.8,69.1,57.7,78.4,Emissions Exceedance Flag
+STLA-RDE-4401,180.4,44.5,60.3,66.2,Emissions Exceedance Flag
+STLA-RDE-4402,242.1,55.3,78.3,47.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4403,390.5,69.8,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4404,211.1,73.4,56.4,85.8,Emissions Exceedance Flag
+STLA-RDE-4405,191.7,75.1,42.2,127.7,Emissions Exceedance Flag
+STLA-RDE-4406,174.6,23.0,77.8,42.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4407,301.3,59.5,89.4,22.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4408,235.9,47.4,79.8,38.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4409,141.6,39.9,40.2,106.1,Emissions Exceedance Flag
+STLA-RDE-4410,185.1,26.7,77.6,44.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4411,528.1,36.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4412,533.8,59.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4413,163.0,30.6,65.5,69.1,Emissions Exceedance Flag
+STLA-RDE-4414,197.6,67.0,52.3,85.5,Emissions Exceedance Flag
+STLA-RDE-4415,247.3,28.8,89.4,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4416,268.5,34.6,90.4,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4417,161.2,20.5,76.3,45.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4418,186.7,61.8,49.2,104.9,Emissions Exceedance Flag
+STLA-RDE-4419,262.1,73.8,77.8,36.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4420,229.8,29.4,86.4,24.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4421,368.3,67.2,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4422,225.3,81.7,59.9,65.6,Emissions Exceedance Flag
+STLA-RDE-4423,519.5,40.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4424,174.6,19.0,81.7,35.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4425,196.4,69.3,49.9,98.6,Emissions Exceedance Flag
+STLA-RDE-4426,160.0,14.3,83.2,34.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4427,299.3,23.3,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4428,176.5,71.6,32.5,128.0,Emissions Exceedance Flag
+STLA-RDE-4429,321.4,73.8,89.9,21.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4430,145.3,33.0,52.8,102.9,Emissions Exceedance Flag
+STLA-RDE-4431,382.4,56.4,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4432,163.7,13.9,84.5,28.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4433,147.9,19.1,73.7,49.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4434,230.6,52.6,75.9,46.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4435,176.2,13.3,87.4,26.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4436,181.0,79.5,29.5,129.6,Emissions Exceedance Flag
+STLA-RDE-4437,162.6,66.7,24.4,139.2,Emissions Exceedance Flag
+STLA-RDE-4438,250.4,30.6,89.2,24.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4439,146.3,50.0,29.6,139.0,Emissions Exceedance Flag
+STLA-RDE-4440,233.5,46.8,79.4,33.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4441,270.9,10.2,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4442,182.6,39.8,65.4,63.8,Emissions Exceedance Flag
+STLA-RDE-4443,388.5,78.9,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4444,193.9,82.4,38.5,133.9,Emissions Exceedance Flag
+STLA-RDE-4445,147.2,54.1,24.7,143.4,Emissions Exceedance Flag
+STLA-RDE-4446,173.5,81.9,19.8,155.9,Emissions Exceedance Flag
+STLA-RDE-4447,250.4,48.0,83.1,30.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4448,207.9,14.2,91.2,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4449,147.0,30.9,57.0,75.1,Emissions Exceedance Flag
+STLA-RDE-4450,1010.5,64.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4451,212.7,23.9,86.1,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4452,384.9,17.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4453,332.1,10.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4454,575.9,83.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4455,486.4,32.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4456,305.6,10.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4457,188.2,25.4,79.6,36.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4458,278.2,23.4,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4459,240.5,77.2,69.0,66.3,Emissions Exceedance Flag
+STLA-RDE-4460,217.6,61.8,66.4,64.1,Emissions Exceedance Flag
+STLA-RDE-4461,377.3,76.0,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4462,177.2,39.5,63.2,72.3,Emissions Exceedance Flag
+STLA-RDE-4463,215.2,58.6,67.1,62.2,Emissions Exceedance Flag
+STLA-RDE-4464,185.7,42.8,64.4,61.6,Emissions Exceedance Flag
+STLA-RDE-4465,311.8,54.5,91.6,17.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4466,563.1,62.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4467,145.2,48.5,30.6,163.7,Emissions Exceedance Flag
+STLA-RDE-4468,332.3,68.7,91.9,15.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4469,211.3,56.7,66.5,67.2,Emissions Exceedance Flag
+STLA-RDE-4470,162.0,20.9,76.1,46.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4471,247.8,41.7,84.8,28.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4472,152.1,39.2,48.9,95.3,Emissions Exceedance Flag
+STLA-RDE-4473,370.9,40.3,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4474,185.8,14.7,87.8,24.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4475,284.4,58.2,87.0,25.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4476,145.9,17.7,75.0,52.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4477,388.8,40.0,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4478,267.3,29.7,91.7,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4479,266.9,49.6,86.0,28.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4480,150.4,52.9,29.5,117.0,Emissions Exceedance Flag
+STLA-RDE-4481,223.9,12.7,93.7,14.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4482,199.4,33.5,76.8,44.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4483,147.5,36.3,49.7,98.6,Emissions Exceedance Flag
+STLA-RDE-4484,312.1,55.1,91.5,16.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4485,292.9,71.2,85.8,28.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4486,228.5,63.4,70.2,63.0,Emissions Exceedance Flag
+STLA-RDE-4487,332.8,61.3,92.8,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4488,272.7,83.2,78.3,39.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4489,189.6,16.2,87.2,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4490,199.4,84.0,41.8,111.2,Emissions Exceedance Flag
+STLA-RDE-4491,212.9,27.7,83.9,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4492,241.8,77.7,69.4,62.0,Emissions Exceedance Flag
+STLA-RDE-4493,232.9,21.6,90.4,18.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4494,410.6,43.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4495,225.2,70.3,65.5,63.7,Emissions Exceedance Flag
+STLA-RDE-4496,353.0,50.5,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4497,242.6,24.6,90.4,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4498,149.7,39.4,46.9,99.0,Emissions Exceedance Flag
+STLA-RDE-4499,331.1,19.1,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4500,147.7,44.7,38.1,102.7,Emissions Exceedance Flag
+STLA-RDE-4501,213.4,80.1,53.9,87.6,Emissions Exceedance Flag
+STLA-RDE-4502,208.2,57.7,64.4,64.3,Emissions Exceedance Flag
+STLA-RDE-4503,222.9,21.4,89.1,23.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4504,237.1,12.5,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4505,142.3,39.6,41.2,121.8,Emissions Exceedance Flag
+STLA-RDE-4506,353.8,76.2,93.3,12.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4507,443.0,36.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4508,252.3,66.7,77.1,40.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4509,147.3,57.7,19.8,128.8,Emissions Exceedance Flag
+STLA-RDE-4510,520.7,61.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4511,186.5,70.4,42.0,108.0,Emissions Exceedance Flag
+STLA-RDE-4512,191.9,17.7,86.4,26.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4513,295.5,30.0,94.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4514,179.3,26.5,75.9,45.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4515,206.8,62.0,61.0,71.3,Emissions Exceedance Flag
+STLA-RDE-4516,230.1,70.1,67.7,61.4,Emissions Exceedance Flag
+STLA-RDE-4517,165.3,19.2,79.0,35.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4518,292.5,46.8,90.6,17.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4519,205.3,80.5,48.4,95.7,Emissions Exceedance Flag
+STLA-RDE-4520,223.5,27.4,86.2,26.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4521,221.8,79.7,59.0,76.2,Emissions Exceedance Flag
+STLA-RDE-4522,160.0,78.6,10.0,178.4,Emissions Exceedance Flag
+STLA-RDE-4523,204.3,22.0,85.7,24.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4524,195.2,50.8,62.7,72.0,Emissions Exceedance Flag
+STLA-RDE-4525,142.9,81.4,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4526,200.0,15.1,89.6,19.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4527,506.4,81.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4528,171.0,37.1,62.4,73.0,Emissions Exceedance Flag
+STLA-RDE-4529,141.2,59.6,10.1,177.2,Emissions Exceedance Flag
+STLA-RDE-4530,188.2,75.3,39.4,116.0,Emissions Exceedance Flag
+STLA-RDE-4531,157.6,61.5,25.5,121.0,Emissions Exceedance Flag
+STLA-RDE-4532,193.7,57.2,57.2,79.4,Emissions Exceedance Flag
+STLA-RDE-4533,142.0,55.3,17.5,162.5,Emissions Exceedance Flag
+STLA-RDE-4534,262.3,73.6,77.9,40.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4535,203.6,83.7,45.1,92.8,Emissions Exceedance Flag
+STLA-RDE-4536,166.7,14.6,84.4,33.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4537,329.7,25.2,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4538,197.2,84.4,39.7,116.9,Emissions Exceedance Flag
+STLA-RDE-4539,195.9,33.6,75.6,48.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4540,208.6,68.7,57.9,71.7,Emissions Exceedance Flag
+STLA-RDE-4541,180.6,30.6,72.7,51.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4542,263.2,59.6,82.3,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4543,181.6,20.4,82.0,30.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4544,152.4,11.7,84.8,31.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4545,393.4,37.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4546,171.0,39.4,60.1,61.6,Emissions Exceedance Flag
+STLA-RDE-4547,287.6,78.9,83.1,34.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4548,241.1,76.2,69.7,54.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4549,237.3,68.1,71.5,45.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4550,278.7,11.9,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4551,176.4,20.7,80.4,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4552,161.3,35.3,59.3,68.1,Emissions Exceedance Flag
+STLA-RDE-4553,524.0,33.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4554,161.4,49.0,43.5,104.6,Emissions Exceedance Flag
+STLA-RDE-4555,198.8,59.4,58.4,74.4,Emissions Exceedance Flag
+STLA-RDE-4556,312.7,24.2,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4557,171.7,33.0,66.8,67.2,Emissions Exceedance Flag
+STLA-RDE-4558,159.5,38.4,54.6,75.0,Emissions Exceedance Flag
+STLA-RDE-4559,236.6,46.6,80.3,34.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4560,341.3,27.1,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4561,190.2,26.9,78.9,35.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4562,142.6,45.6,32.5,140.4,Emissions Exceedance Flag
+STLA-RDE-4563,382.8,67.3,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4564,186.9,31.6,74.1,50.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4565,154.4,67.0,15.3,165.4,Emissions Exceedance Flag
+STLA-RDE-4566,237.3,43.6,81.7,40.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4567,216.5,29.9,83.5,29.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4568,183.6,32.1,72.5,56.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4569,213.0,48.2,72.1,45.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4570,169.2,54.0,44.0,114.5,Emissions Exceedance Flag
+STLA-RDE-4571,261.9,15.5,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4572,362.3,70.3,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4573,226.1,30.4,85.2,31.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4574,141.8,17.0,74.5,50.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4575,253.1,82.4,72.1,53.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4576,186.5,10.4,91.4,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4577,298.9,39.1,92.8,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4578,148.6,48.2,34.3,124.7,Emissions Exceedance Flag
+STLA-RDE-4579,282.4,42.4,90.3,17.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4580,180.7,73.2,34.9,133.0,Emissions Exceedance Flag
+STLA-RDE-4581,154.7,59.9,24.5,145.2,Emissions Exceedance Flag
+STLA-RDE-4582,154.9,46.5,41.6,118.2,Emissions Exceedance Flag
+STLA-RDE-4583,180.5,42.2,62.3,76.0,Emissions Exceedance Flag
+STLA-RDE-4584,236.2,80.7,65.7,62.0,Emissions Exceedance Flag
+STLA-RDE-4585,165.5,60.8,33.7,140.5,Emissions Exceedance Flag
+STLA-RDE-4586,233.2,31.6,86.0,28.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4587,153.5,33.3,57.4,80.1,Emissions Exceedance Flag
+STLA-RDE-4588,219.6,47.6,74.8,47.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4589,142.2,33.1,50.7,81.9,Emissions Exceedance Flag
+STLA-RDE-4590,142.8,72.9,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4591,238.1,18.7,92.2,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4592,147.0,36.8,48.6,103.6,Emissions Exceedance Flag
+STLA-RDE-4593,219.4,49.5,73.7,46.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4594,378.5,81.2,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4595,213.2,64.4,62.8,55.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4596,249.6,36.0,87.2,23.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4597,149.1,55.6,24.6,136.5,Emissions Exceedance Flag
+STLA-RDE-4598,154.7,34.5,56.5,79.6,Emissions Exceedance Flag
+STLA-RDE-4599,490.6,82.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4600,307.4,22.3,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4601,271.7,50.7,86.6,23.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4602,322.9,71.3,90.5,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4603,281.9,63.2,85.4,30.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4604,169.9,13.7,85.9,23.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4605,157.5,22.0,73.3,49.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4606,195.4,77.5,43.2,98.8,Emissions Exceedance Flag
+STLA-RDE-4607,205.8,42.8,72.7,40.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4608,177.8,41.0,62.1,70.6,Emissions Exceedance Flag
+STLA-RDE-4609,182.2,14.1,87.7,21.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4610,440.1,23.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4611,162.8,52.9,40.2,109.3,Emissions Exceedance Flag
+STLA-RDE-4612,142.2,81.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4613,191.8,30.2,76.8,46.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4614,618.8,66.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4615,148.5,14.9,79.7,32.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4616,233.8,59.2,74.0,48.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4617,206.5,40.1,74.7,44.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4618,254.2,37.6,87.5,23.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4619,214.7,15.3,91.4,18.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4620,159.6,18.7,77.9,34.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4621,344.5,36.1,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4622,409.6,22.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4623,228.8,83.3,60.9,83.9,Emissions Exceedance Flag
+STLA-RDE-4624,168.2,50.2,47.2,99.0,Emissions Exceedance Flag
+STLA-RDE-4625,154.4,12.7,84.0,28.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4626,202.1,81.7,45.3,88.6,Emissions Exceedance Flag
+STLA-RDE-4627,226.3,62.1,69.9,49.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4628,198.1,11.9,91.6,18.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4629,333.9,25.1,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4630,229.8,29.2,86.5,23.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4631,288.6,41.6,91.2,17.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4632,338.0,39.2,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4633,143.6,47.9,30.1,134.4,Emissions Exceedance Flag
+STLA-RDE-4634,285.3,40.9,91.0,17.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4635,335.2,15.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4636,379.2,57.7,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4637,178.5,42.0,61.5,73.7,Emissions Exceedance Flag
+STLA-RDE-4638,178.2,53.2,51.0,86.6,Emissions Exceedance Flag
+STLA-RDE-4639,283.9,11.8,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4640,186.1,35.0,71.0,59.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4641,228.1,16.9,92.0,14.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4642,196.6,65.7,52.7,94.6,Emissions Exceedance Flag
+STLA-RDE-4643,370.6,32.1,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4644,312.1,15.2,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4645,251.3,17.8,93.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4646,307.8,72.0,88.2,24.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4647,186.5,57.3,52.8,90.6,Emissions Exceedance Flag
+STLA-RDE-4648,412.2,74.4,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4649,175.3,41.0,60.8,66.0,Emissions Exceedance Flag
+STLA-RDE-4650,238.7,63.2,74.0,54.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4651,408.4,83.4,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4652,153.6,35.4,54.8,92.2,Emissions Exceedance Flag
+STLA-RDE-4653,443.5,47.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4654,190.7,85.0,33.7,132.1,Emissions Exceedance Flag
+STLA-RDE-4655,323.2,70.6,90.6,18.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4656,301.1,25.8,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4657,229.1,79.5,62.9,79.2,Emissions Exceedance Flag
+STLA-RDE-4658,384.8,71.8,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4659,252.4,78.8,73.0,48.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4660,171.1,82.5,16.5,149.2,Emissions Exceedance Flag
+STLA-RDE-4661,171.2,58.6,40.8,105.6,Emissions Exceedance Flag
+STLA-RDE-4662,333.2,26.4,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4663,328.7,46.3,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4664,240.2,15.7,93.7,12.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4665,178.2,33.3,69.4,56.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4666,287.5,19.9,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4667,148.9,30.5,58.4,91.3,Emissions Exceedance Flag
+STLA-RDE-4668,158.2,27.6,66.9,61.0,Emissions Exceedance Flag
+STLA-RDE-4669,229.7,30.7,85.8,25.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4670,149.7,13.4,82.0,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4671,184.4,73.9,37.3,108.6,Emissions Exceedance Flag
+STLA-RDE-4672,216.3,32.4,82.1,36.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4673,151.5,53.1,30.2,140.9,Emissions Exceedance Flag
+STLA-RDE-4674,283.1,57.9,86.8,24.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4675,211.4,74.0,56.3,77.3,Emissions Exceedance Flag
+STLA-RDE-4676,597.6,64.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4677,213.8,32.5,81.4,30.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4678,159.0,53.6,36.2,114.6,Emissions Exceedance Flag
+STLA-RDE-4679,358.0,36.9,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4680,212.3,80.6,52.9,86.3,Emissions Exceedance Flag
+STLA-RDE-4681,616.8,22.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4682,223.9,13.0,93.5,13.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4683,267.3,23.4,93.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4684,304.3,61.2,89.5,18.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4685,214.0,84.6,51.7,77.6,Emissions Exceedance Flag
+STLA-RDE-4686,140.3,76.3,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4687,468.8,18.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4688,244.8,44.6,83.1,35.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4689,168.2,27.8,70.8,52.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4690,173.6,26.3,74.2,42.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4691,467.5,33.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4692,225.6,40.3,80.3,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4693,283.6,76.4,82.7,33.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4694,313.8,50.7,92.3,13.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4695,416.9,70.1,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4696,367.0,33.8,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4697,602.8,59.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4698,142.7,50.4,25.5,150.6,Emissions Exceedance Flag
+STLA-RDE-4699,201.2,14.2,90.4,18.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4700,159.2,44.1,47.7,93.9,Emissions Exceedance Flag
+STLA-RDE-4701,184.5,71.8,39.3,120.3,Emissions Exceedance Flag
+STLA-RDE-4702,204.4,19.2,87.5,21.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4703,340.4,46.9,95.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4704,160.2,77.9,10.0,150.0,Emissions Exceedance Flag
+STLA-RDE-4705,150.2,63.6,14.9,161.3,Emissions Exceedance Flag
+STLA-RDE-4706,190.5,78.1,39.0,106.1,Emissions Exceedance Flag
+STLA-RDE-4707,228.1,79.2,62.5,69.7,Emissions Exceedance Flag
+STLA-RDE-4708,308.9,70.6,88.6,22.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4709,173.9,33.6,67.3,66.9,Emissions Exceedance Flag
+STLA-RDE-4710,174.9,32.6,68.7,59.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4711,207.6,50.0,68.9,59.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4712,145.4,48.5,30.9,136.0,Emissions Exceedance Flag
+STLA-RDE-4713,298.0,22.2,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4714,181.6,43.3,61.9,77.7,Emissions Exceedance Flag
+STLA-RDE-4715,352.3,78.6,92.9,14.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4716,268.7,64.8,82.2,32.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4717,150.4,78.3,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4718,145.7,50.5,28.3,135.9,Emissions Exceedance Flag
+STLA-RDE-4719,202.3,43.9,70.7,59.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4720,165.3,14.5,84.1,26.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4721,829.6,48.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4722,379.9,51.0,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4723,322.9,10.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4724,810.9,23.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4725,219.7,15.1,92.0,16.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4726,145.6,41.0,41.7,91.8,Emissions Exceedance Flag
+STLA-RDE-4727,313.8,52.4,92.1,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4728,627.6,38.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4729,174.5,64.8,37.4,112.3,Emissions Exceedance Flag
+STLA-RDE-4730,194.3,58.8,56.3,79.0,Emissions Exceedance Flag
+STLA-RDE-4731,237.2,16.5,93.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4732,165.8,35.0,62.0,75.5,Emissions Exceedance Flag
+STLA-RDE-4733,338.9,55.5,94.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4734,249.9,45.3,84.0,30.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4735,185.8,58.1,51.7,92.9,Emissions Exceedance Flag
+STLA-RDE-4736,465.7,13.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4737,239.0,62.8,74.3,57.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4738,167.7,60.4,36.1,131.6,Emissions Exceedance Flag
+STLA-RDE-4739,314.7,20.4,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4740,381.0,77.1,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4741,192.2,65.3,50.2,103.6,Emissions Exceedance Flag
+STLA-RDE-4742,303.6,77.3,86.6,27.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4743,185.3,45.9,61.6,69.8,Emissions Exceedance Flag
+STLA-RDE-4744,312.1,44.6,93.1,12.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4745,169.9,33.3,65.8,47.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4746,189.4,49.0,61.1,77.7,Emissions Exceedance Flag
+STLA-RDE-4747,178.4,78.1,28.3,133.0,Emissions Exceedance Flag
+STLA-RDE-4748,344.4,69.3,93.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4749,156.0,10.8,86.7,26.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4750,177.5,80.6,25.2,147.3,Emissions Exceedance Flag
+STLA-RDE-4751,217.3,19.7,89.2,21.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4752,248.7,70.4,74.7,46.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4753,225.1,21.6,89.4,21.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4754,140.6,33.6,48.9,94.8,Emissions Exceedance Flag
+STLA-RDE-4755,367.1,51.7,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4756,207.2,19.1,88.1,22.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4757,218.0,34.1,81.5,32.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4758,240.6,38.9,84.4,30.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4759,439.5,12.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4760,243.7,12.7,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4761,165.2,30.4,66.7,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4762,162.3,33.2,62.3,74.2,Emissions Exceedance Flag
+STLA-RDE-4763,411.7,20.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4764,336.6,82.0,90.9,18.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4765,263.8,76.9,77.4,44.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4766,337.8,22.7,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4767,179.4,72.3,34.5,124.1,Emissions Exceedance Flag
+STLA-RDE-4768,177.5,82.1,23.7,150.1,Emissions Exceedance Flag
+STLA-RDE-4769,239.5,66.8,72.9,54.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4770,151.3,75.2,10.0,152.0,Emissions Exceedance Flag
+STLA-RDE-4771,143.3,42.8,37.3,136.6,Emissions Exceedance Flag
+STLA-RDE-4772,215.9,64.1,64.3,67.0,Emissions Exceedance Flag
+STLA-RDE-4773,316.2,14.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4774,222.7,18.6,90.5,20.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4775,167.4,59.9,36.3,135.4,Emissions Exceedance Flag
+STLA-RDE-4776,180.5,76.3,31.9,118.8,Emissions Exceedance Flag
+STLA-RDE-4777,141.5,24.0,64.0,76.6,Emissions Exceedance Flag
+STLA-RDE-4778,184.5,35.0,70.4,53.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4779,172.8,82.7,18.1,168.1,Emissions Exceedance Flag
+STLA-RDE-4780,262.9,68.2,79.7,38.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4781,218.8,76.6,59.0,79.3,Emissions Exceedance Flag
+STLA-RDE-4782,190.5,35.3,72.5,55.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4783,286.4,71.4,84.5,34.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4784,182.3,27.6,76.0,46.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4785,449.3,44.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4786,182.5,81.2,29.4,123.9,Emissions Exceedance Flag
+STLA-RDE-4787,181.5,48.9,56.9,70.7,Emissions Exceedance Flag
+STLA-RDE-4788,168.5,78.7,17.5,177.0,Emissions Exceedance Flag
+STLA-RDE-4789,216.4,68.1,62.3,65.5,Emissions Exceedance Flag
+STLA-RDE-4790,260.9,30.2,90.8,15.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4791,141.3,31.7,52.2,95.3,Emissions Exceedance Flag
+STLA-RDE-4792,252.3,69.6,76.1,46.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4793,255.2,42.3,86.1,23.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4794,171.3,20.0,79.9,35.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4795,190.4,30.6,76.1,44.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4796,169.9,11.6,88.1,24.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4797,190.5,51.7,59.6,76.6,Emissions Exceedance Flag
+STLA-RDE-4798,247.5,61.4,77.6,42.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4799,349.3,17.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4800,322.2,54.5,92.6,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4801,366.5,77.3,94.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4802,153.8,23.3,70.3,64.8,Emissions Exceedance Flag
+STLA-RDE-4803,169.5,52.1,46.1,107.0,Emissions Exceedance Flag
+STLA-RDE-4804,184.7,20.7,82.5,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4805,149.5,56.9,23.2,138.1,Emissions Exceedance Flag
+STLA-RDE-4806,170.4,77.3,21.0,150.2,Emissions Exceedance Flag
+STLA-RDE-4807,234.4,68.0,70.4,60.6,Emissions Exceedance Flag
+STLA-RDE-4808,342.0,76.2,92.1,16.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4809,240.3,38.5,84.5,32.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4810,182.6,82.4,28.5,129.2,Emissions Exceedance Flag
+STLA-RDE-4811,191.6,69.8,46.3,98.4,Emissions Exceedance Flag
+STLA-RDE-4812,411.0,59.6,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4813,179.9,64.1,42.3,91.1,Emissions Exceedance Flag
+STLA-RDE-4814,471.8,41.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4815,232.6,61.2,72.7,55.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4816,260.8,17.5,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4817,257.2,41.3,86.7,26.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4818,141.2,33.8,49.1,82.8,Emissions Exceedance Flag
+STLA-RDE-4819,201.7,53.8,63.8,69.3,Emissions Exceedance Flag
+STLA-RDE-4820,313.4,58.0,91.2,16.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4821,154.8,44.2,44.4,106.5,Emissions Exceedance Flag
+STLA-RDE-4822,209.4,51.6,68.6,66.6,Emissions Exceedance Flag
+STLA-RDE-4823,163.3,44.6,50.0,108.2,Emissions Exceedance Flag
+STLA-RDE-4824,414.1,74.7,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4825,320.7,46.2,93.6,12.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4826,190.0,63.2,50.3,81.8,Emissions Exceedance Flag
+STLA-RDE-4827,417.0,25.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4828,245.9,10.9,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4829,167.7,71.5,24.3,134.5,Emissions Exceedance Flag
+STLA-RDE-4830,356.5,83.4,92.9,13.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4831,262.4,19.2,94.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4832,152.0,35.5,53.6,87.9,Emissions Exceedance Flag
+STLA-RDE-4833,157.6,29.3,64.5,72.6,Emissions Exceedance Flag
+STLA-RDE-4834,251.6,28.1,90.3,19.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4835,388.7,54.9,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4836,274.9,61.2,84.5,29.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4837,232.2,79.4,64.4,61.1,Emissions Exceedance Flag
+STLA-RDE-4838,326.4,49.3,93.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4839,471.1,70.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4840,282.3,39.9,90.8,17.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4841,291.8,72.9,85.2,30.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4842,235.7,52.4,77.6,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4843,287.5,36.2,92.2,14.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4844,183.3,82.1,29.3,114.9,Emissions Exceedance Flag
+STLA-RDE-4845,327.7,29.1,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4846,200.6,32.6,77.7,43.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4847,141.4,74.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4848,149.5,55.0,25.7,141.3,Emissions Exceedance Flag
+STLA-RDE-4849,153.4,77.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-4850,152.9,69.3,10.6,145.7,Emissions Exceedance Flag
+STLA-RDE-4851,165.7,36.5,60.3,76.3,Emissions Exceedance Flag
+STLA-RDE-4852,210.8,54.0,67.9,54.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4853,299.6,42.2,92.3,12.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4854,206.1,50.4,68.0,60.3,Emissions Exceedance Flag
+STLA-RDE-4855,181.0,61.0,45.9,105.2,Emissions Exceedance Flag
+STLA-RDE-4856,150.4,76.9,10.0,160.7,Emissions Exceedance Flag
+STLA-RDE-4857,202.3,56.4,62.4,64.2,Emissions Exceedance Flag
+STLA-RDE-4858,206.0,14.1,91.0,17.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4859,183.4,23.1,80.1,38.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4860,476.1,84.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4861,302.5,36.5,93.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4862,260.9,47.4,85.5,27.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4863,168.7,47.2,50.7,96.7,Emissions Exceedance Flag
+STLA-RDE-4864,141.7,42.5,36.4,112.4,Emissions Exceedance Flag
+STLA-RDE-4865,187.3,49.5,59.6,73.7,Emissions Exceedance Flag
+STLA-RDE-4866,141.6,80.1,10.0,152.5,Emissions Exceedance Flag
+STLA-RDE-4867,147.1,35.1,51.1,104.0,Emissions Exceedance Flag
+STLA-RDE-4868,160.9,44.5,48.4,104.0,Emissions Exceedance Flag
+STLA-RDE-4869,302.9,51.3,91.0,18.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4870,237.4,23.5,90.2,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4871,385.2,79.5,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4872,248.4,47.2,83.0,25.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4873,168.7,17.5,81.7,32.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4874,377.0,46.2,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4875,278.1,50.0,87.8,24.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4876,307.3,21.3,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4877,156.1,18.9,76.7,43.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4878,182.3,34.7,69.7,58.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4879,254.9,58.7,80.6,34.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4880,338.4,54.7,94.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4881,150.4,34.4,54.1,78.2,Emissions Exceedance Flag
+STLA-RDE-4882,270.8,38.6,89.7,21.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4883,146.4,40.7,42.8,110.6,Emissions Exceedance Flag
+STLA-RDE-4884,164.3,36.4,59.7,74.7,Emissions Exceedance Flag
+STLA-RDE-4885,164.4,52.9,41.5,107.9,Emissions Exceedance Flag
+STLA-RDE-4886,605.6,46.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4887,166.1,84.5,10.0,165.2,Emissions Exceedance Flag
+STLA-RDE-4888,190.2,66.8,47.7,93.6,Emissions Exceedance Flag
+STLA-RDE-4889,237.9,64.1,73.4,53.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4890,228.6,21.6,89.9,18.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4891,233.9,64.2,71.9,44.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4892,151.8,37.1,51.5,92.2,Emissions Exceedance Flag
+STLA-RDE-4893,628.8,20.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4894,436.9,34.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4895,645.9,33.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4896,207.0,29.2,81.7,37.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4897,325.8,61.0,92.2,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4898,431.5,15.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4899,148.7,41.0,44.1,99.8,Emissions Exceedance Flag
+STLA-RDE-4900,224.1,75.4,62.4,68.6,Emissions Exceedance Flag
+STLA-RDE-4901,270.6,23.4,93.7,12.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4902,159.8,58.1,31.7,130.2,Emissions Exceedance Flag
+STLA-RDE-4903,182.6,40.1,65.2,64.3,Emissions Exceedance Flag
+STLA-RDE-4904,202.8,23.1,84.7,28.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4905,177.4,84.7,21.3,159.4,Emissions Exceedance Flag
+STLA-RDE-4906,273.9,71.0,81.8,35.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4907,225.1,64.0,68.5,65.8,Emissions Exceedance Flag
+STLA-RDE-4908,186.5,14.1,88.4,19.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4909,171.4,54.1,45.5,94.9,Emissions Exceedance Flag
+STLA-RDE-4910,248.1,56.2,79.6,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4911,297.2,76.0,85.7,28.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4912,400.7,47.2,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4913,148.0,20.8,71.3,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4914,319.3,19.9,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4915,189.7,64.5,49.1,104.4,Emissions Exceedance Flag
+STLA-RDE-4916,257.6,15.2,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4917,268.5,76.5,78.9,38.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4918,151.1,29.3,61.3,76.2,Emissions Exceedance Flag
+STLA-RDE-4919,171.2,28.9,70.8,46.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4920,327.1,41.4,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4921,311.6,73.3,88.6,21.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4922,195.8,78.1,43.2,88.1,Emissions Exceedance Flag
+STLA-RDE-4923,229.3,16.0,92.5,17.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4924,163.1,21.1,76.3,38.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4925,212.2,49.5,71.1,59.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4926,262.5,64.4,80.7,34.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4927,377.7,53.2,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4928,188.2,67.9,45.3,99.5,Emissions Exceedance Flag
+STLA-RDE-4929,147.9,34.3,52.7,93.9,Emissions Exceedance Flag
+STLA-RDE-4930,199.2,64.2,55.3,101.2,Emissions Exceedance Flag
+STLA-RDE-4931,435.8,71.4,97.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4932,484.8,41.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4933,143.5,22.9,66.5,59.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4934,292.6,71.9,85.6,28.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4935,180.6,31.6,71.9,56.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4936,209.7,39.5,76.1,47.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4937,151.2,58.8,22.5,156.4,Emissions Exceedance Flag
+STLA-RDE-4938,223.8,23.5,88.2,22.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4939,177.2,15.0,86.0,26.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4940,352.3,41.4,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4941,249.0,51.2,81.7,29.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4942,148.4,67.0,10.0,154.2,Emissions Exceedance Flag
+STLA-RDE-4943,301.1,29.0,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4944,155.6,14.4,82.1,35.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4945,169.7,24.3,74.9,48.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4946,363.9,65.6,94.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4947,215.0,78.1,56.0,73.1,Emissions Exceedance Flag
+STLA-RDE-4948,152.0,64.7,15.6,149.8,Emissions Exceedance Flag
+STLA-RDE-4949,348.1,17.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4950,149.2,11.3,84.6,27.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4951,290.9,47.1,90.3,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4952,301.6,81.8,85.5,28.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4953,447.7,43.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4954,148.3,39.0,46.5,99.5,Emissions Exceedance Flag
+STLA-RDE-4955,444.4,41.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4956,193.7,66.7,50.0,105.9,Emissions Exceedance Flag
+STLA-RDE-4957,180.9,49.9,55.7,84.9,Emissions Exceedance Flag
+STLA-RDE-4958,249.1,53.8,80.7,39.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4959,310.4,54.4,91.4,18.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4960,158.5,59.1,29.3,131.8,Emissions Exceedance Flag
+STLA-RDE-4961,366.8,36.2,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4962,168.0,67.9,28.4,147.1,Emissions Exceedance Flag
+STLA-RDE-4963,313.7,49.5,92.5,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4964,175.1,67.0,35.7,120.5,Emissions Exceedance Flag
+STLA-RDE-4965,182.7,40.6,64.8,73.4,Emissions Exceedance Flag
+STLA-RDE-4966,371.2,38.5,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4967,297.4,40.4,92.4,15.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4968,198.3,23.7,83.3,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4969,279.6,28.9,93.1,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4970,157.4,64.4,21.7,162.3,Emissions Exceedance Flag
+STLA-RDE-4971,178.3,64.3,40.9,118.1,Emissions Exceedance Flag
+STLA-RDE-4972,186.1,16.2,86.6,25.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4973,425.7,84.3,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4974,171.4,79.9,19.5,164.8,Emissions Exceedance Flag
+STLA-RDE-4975,143.0,58.2,14.4,155.2,Emissions Exceedance Flag
+STLA-RDE-4976,346.9,24.4,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4977,331.3,28.3,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4978,163.7,24.7,72.4,60.3,Emissions Exceedance Flag
+STLA-RDE-4979,274.5,68.0,82.7,32.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4980,140.9,39.3,40.4,117.2,Emissions Exceedance Flag
+STLA-RDE-4981,177.7,30.7,71.5,57.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4982,302.1,15.8,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4983,173.2,64.7,36.3,139.6,Emissions Exceedance Flag
+STLA-RDE-4984,222.6,42.5,78.4,42.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4985,141.0,84.3,10.0,161.4,Emissions Exceedance Flag
+STLA-RDE-4986,371.3,18.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4987,236.2,11.3,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4988,418.2,12.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4989,311.1,22.4,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4990,229.1,79.5,62.9,69.0,Emissions Exceedance Flag
+STLA-RDE-4991,295.2,14.5,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4992,182.0,83.0,27.4,137.8,Emissions Exceedance Flag
+STLA-RDE-4993,152.1,69.2,10.0,133.0,Emissions Exceedance Flag
+STLA-RDE-4994,288.7,70.0,85.2,26.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4995,161.4,55.9,35.6,129.2,Emissions Exceedance Flag
+STLA-RDE-4996,181.3,44.8,60.4,78.5,Emissions Exceedance Flag
+STLA-RDE-4997,302.9,66.4,88.4,21.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-4998,147.6,43.2,40.2,114.0,Emissions Exceedance Flag
+STLA-RDE-4999,257.4,63.3,79.7,36.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5000,244.5,63.7,75.8,48.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5001,218.5,55.2,70.3,55.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5002,164.1,41.8,53.6,87.0,Emissions Exceedance Flag
+STLA-RDE-5003,214.9,58.0,67.3,54.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5004,336.0,32.2,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5005,240.0,24.1,90.3,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5006,220.3,48.0,74.8,53.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5007,330.1,19.9,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5008,206.5,55.5,65.0,60.9,Emissions Exceedance Flag
+STLA-RDE-5009,144.2,34.1,50.6,97.3,Emissions Exceedance Flag
+STLA-RDE-5010,159.8,24.2,71.5,61.4,Emissions Exceedance Flag
+STLA-RDE-5011,148.0,62.5,14.0,141.2,Emissions Exceedance Flag
+STLA-RDE-5012,330.5,59.4,92.8,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5013,276.2,53.7,86.6,25.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5014,389.8,61.9,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5015,149.9,11.1,85.1,29.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5016,212.5,66.0,61.5,80.4,Emissions Exceedance Flag
+STLA-RDE-5017,143.1,11.0,83.9,27.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5018,146.3,40.5,43.0,112.8,Emissions Exceedance Flag
+STLA-RDE-5019,152.9,57.3,26.1,130.9,Emissions Exceedance Flag
+STLA-RDE-5020,235.6,60.1,74.2,51.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5021,195.8,28.7,79.1,36.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5022,236.0,55.7,76.3,42.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5023,179.7,13.4,87.9,26.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5024,160.1,71.8,15.8,159.8,Emissions Exceedance Flag
+STLA-RDE-5025,163.2,73.6,17.2,151.9,Emissions Exceedance Flag
+STLA-RDE-5026,159.9,58.0,31.9,134.0,Emissions Exceedance Flag
+STLA-RDE-5027,210.4,22.0,86.8,26.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5028,194.4,42.4,68.6,61.6,Emissions Exceedance Flag
+STLA-RDE-5029,289.6,19.1,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5030,234.0,11.2,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5031,329.3,59.7,92.7,12.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5032,145.2,52.9,24.4,145.3,Emissions Exceedance Flag
+STLA-RDE-5033,171.7,80.2,19.5,180.0,Emissions Exceedance Flag
+STLA-RDE-5034,148.9,42.7,41.9,108.7,Emissions Exceedance Flag
+STLA-RDE-5035,285.2,62.3,86.2,30.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5036,193.1,46.1,65.2,70.9,Emissions Exceedance Flag
+STLA-RDE-5037,166.7,39.4,57.8,97.6,Emissions Exceedance Flag
+STLA-RDE-5038,190.0,48.6,61.8,60.7,Emissions Exceedance Flag
+STLA-RDE-5039,246.9,35.0,87.1,24.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5040,199.2,56.5,60.7,84.4,Emissions Exceedance Flag
+STLA-RDE-5041,459.7,73.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5042,226.7,16.6,92.0,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5043,176.6,12.8,88.0,21.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5044,178.3,60.5,44.3,100.0,Emissions Exceedance Flag
+STLA-RDE-5045,212.0,73.3,57.0,73.2,Emissions Exceedance Flag
+STLA-RDE-5046,336.8,21.9,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5047,287.9,54.5,88.4,22.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5048,236.7,79.0,66.6,65.1,Emissions Exceedance Flag
+STLA-RDE-5049,399.8,28.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5050,375.5,42.4,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5051,282.1,29.1,93.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5052,228.0,62.2,70.5,54.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5053,248.5,21.5,92.2,15.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5054,218.1,28.1,84.8,26.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5055,304.3,54.0,90.7,18.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5056,160.6,82.1,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5057,285.1,21.2,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5058,162.8,32.6,63.2,60.7,Emissions Exceedance Flag
+STLA-RDE-5059,143.8,61.1,11.1,180.0,Emissions Exceedance Flag
+STLA-RDE-5060,142.5,47.4,29.8,127.6,Emissions Exceedance Flag
+STLA-RDE-5061,338.6,65.0,92.9,14.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5062,309.4,61.7,90.1,20.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5063,204.7,11.3,92.7,14.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5064,312.2,50.8,92.2,13.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5065,187.5,21.8,82.2,37.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5066,144.8,69.4,10.0,168.5,Emissions Exceedance Flag
+STLA-RDE-5067,610.6,63.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5068,402.4,69.5,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5069,197.9,16.9,88.0,22.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5070,284.4,51.6,88.5,20.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5071,168.6,18.9,80.3,39.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5072,371.8,80.0,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5073,268.1,63.3,82.4,39.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5074,270.8,25.5,93.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5075,152.0,44.8,41.5,119.9,Emissions Exceedance Flag
+STLA-RDE-5076,238.9,40.7,83.3,31.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5077,151.7,77.8,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5078,142.9,62.9,10.0,165.6,Emissions Exceedance Flag
+STLA-RDE-5079,191.2,76.8,40.6,131.0,Emissions Exceedance Flag
+STLA-RDE-5080,458.5,25.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5081,154.0,36.9,53.1,87.3,Emissions Exceedance Flag
+STLA-RDE-5082,214.1,60.9,65.3,65.9,Emissions Exceedance Flag
+STLA-RDE-5083,407.1,12.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5084,312.6,75.1,88.5,24.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5085,149.9,19.3,74.1,47.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5086,273.0,84.3,78.1,35.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5087,157.3,14.8,82.0,33.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5088,149.6,65.7,11.5,172.1,Emissions Exceedance Flag
+STLA-RDE-5089,234.5,58.9,74.4,51.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5090,554.2,10.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5091,543.1,79.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5092,271.9,84.4,77.7,41.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5093,312.6,39.2,94.0,12.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5094,272.5,65.3,82.9,31.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5095,270.0,78.0,78.9,36.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5096,373.4,10.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5097,169.1,29.0,69.8,57.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5098,184.3,82.8,29.7,104.1,Emissions Exceedance Flag
+STLA-RDE-5099,162.0,37.9,56.7,71.4,Emissions Exceedance Flag
+STLA-RDE-5100,327.3,72.1,90.9,14.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5101,326.0,53.7,93.1,14.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5102,167.0,77.3,17.4,157.7,Emissions Exceedance Flag
+STLA-RDE-5103,189.1,81.8,34.9,115.0,Emissions Exceedance Flag
+STLA-RDE-5104,297.2,34.7,93.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5105,344.8,33.1,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5106,140.7,34.4,47.8,102.2,Emissions Exceedance Flag
+STLA-RDE-5107,273.6,30.0,92.3,14.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5108,279.9,34.8,91.8,16.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5109,146.6,18.7,73.8,51.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5110,161.4,60.4,30.5,149.6,Emissions Exceedance Flag
+STLA-RDE-5111,387.9,32.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5112,165.0,54.6,40.1,107.9,Emissions Exceedance Flag
+STLA-RDE-5113,278.7,68.5,83.5,28.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5114,154.7,64.4,18.8,148.8,Emissions Exceedance Flag
+STLA-RDE-5115,283.3,53.9,87.8,25.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5116,253.4,81.4,72.5,49.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5117,165.1,36.7,59.8,80.7,Emissions Exceedance Flag
+STLA-RDE-5118,188.7,33.4,73.3,56.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5119,241.4,75.1,70.2,58.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5120,379.7,51.0,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5121,146.0,27.9,60.5,67.0,Emissions Exceedance Flag
+STLA-RDE-5122,305.6,21.4,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5123,170.4,34.8,64.5,74.5,Emissions Exceedance Flag
+STLA-RDE-5124,150.0,51.1,31.4,136.4,Emissions Exceedance Flag
+STLA-RDE-5125,292.2,72.5,85.4,25.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5126,144.2,81.0,10.0,174.9,Emissions Exceedance Flag
+STLA-RDE-5127,183.6,18.6,84.1,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5128,497.6,29.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5129,187.7,39.8,67.7,57.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5130,165.0,77.7,14.7,158.5,Emissions Exceedance Flag
+STLA-RDE-5131,158.1,47.0,43.5,95.4,Emissions Exceedance Flag
+STLA-RDE-5132,204.3,24.8,83.9,28.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5133,232.9,61.9,72.5,57.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5134,204.3,75.1,51.2,110.5,Emissions Exceedance Flag
+STLA-RDE-5135,177.7,18.5,82.8,34.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5136,218.4,59.8,67.8,58.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5137,203.3,45.7,69.9,56.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5138,224.6,17.7,91.2,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5139,232.4,16.6,92.6,12.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5140,426.3,45.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5141,160.3,64.2,25.0,156.8,Emissions Exceedance Flag
+STLA-RDE-5142,228.6,32.7,84.7,27.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5143,217.8,55.6,69.8,49.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5144,285.2,63.2,86.0,26.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5145,184.4,34.8,70.5,56.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5146,160.2,64.8,24.2,143.3,Emissions Exceedance Flag
+STLA-RDE-5147,242.5,80.5,68.5,56.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5148,172.0,67.3,32.7,118.1,Emissions Exceedance Flag
+STLA-RDE-5149,234.4,59.3,74.2,56.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5150,344.3,83.6,91.6,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5151,297.1,50.8,90.4,16.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5152,167.1,46.0,50.9,98.1,Emissions Exceedance Flag
+STLA-RDE-5153,279.0,25.4,93.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5154,271.0,63.1,83.2,32.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5155,176.3,71.0,33.0,143.7,Emissions Exceedance Flag
+STLA-RDE-5156,178.7,27.0,75.3,51.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5157,164.3,39.5,56.3,81.0,Emissions Exceedance Flag
+STLA-RDE-5158,210.1,84.1,49.4,101.2,Emissions Exceedance Flag
+STLA-RDE-5159,334.7,49.3,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5160,162.7,83.9,10.0,149.9,Emissions Exceedance Flag
+STLA-RDE-5161,258.6,37.3,88.2,22.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5162,151.9,16.3,78.7,41.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5163,153.0,60.5,22.0,160.5,Emissions Exceedance Flag
+STLA-RDE-5164,157.9,17.3,79.2,40.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5165,143.7,58.6,14.6,142.9,Emissions Exceedance Flag
+STLA-RDE-5166,151.0,47.2,37.6,110.3,Emissions Exceedance Flag
+STLA-RDE-5167,161.0,53.6,37.9,132.1,Emissions Exceedance Flag
+STLA-RDE-5168,168.0,11.9,87.4,24.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5169,195.1,15.5,88.6,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5170,140.4,54.4,17.1,159.1,Emissions Exceedance Flag
+STLA-RDE-5171,192.4,69.8,46.8,93.5,Emissions Exceedance Flag
+STLA-RDE-5172,193.6,54.9,58.8,83.1,Emissions Exceedance Flag
+STLA-RDE-5173,231.1,52.5,76.1,45.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5174,169.6,67.1,30.7,136.6,Emissions Exceedance Flag
+STLA-RDE-5175,141.9,26.4,60.6,75.2,Emissions Exceedance Flag
+STLA-RDE-5176,289.7,36.3,92.4,12.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5177,369.3,25.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5178,179.3,66.2,39.9,113.0,Emissions Exceedance Flag
+STLA-RDE-5179,187.7,58.9,52.2,102.5,Emissions Exceedance Flag
+STLA-RDE-5180,195.3,57.5,57.8,81.4,Emissions Exceedance Flag
+STLA-RDE-5181,225.0,18.9,90.7,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5182,573.2,66.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5183,251.5,21.9,92.4,15.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5184,153.6,37.9,51.5,100.1,Emissions Exceedance Flag
+STLA-RDE-5185,517.0,69.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5186,172.8,53.6,47.0,86.5,Emissions Exceedance Flag
+STLA-RDE-5187,159.6,58.0,31.6,128.1,Emissions Exceedance Flag
+STLA-RDE-5188,152.5,60.0,22.2,143.4,Emissions Exceedance Flag
+STLA-RDE-5189,300.4,79.2,85.7,25.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5190,217.4,80.7,56.0,77.3,Emissions Exceedance Flag
+STLA-RDE-5191,168.0,28.5,69.9,58.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5192,175.8,21.7,79.4,39.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5193,392.1,74.0,96.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5194,221.6,25.6,86.8,25.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5195,206.3,65.9,58.3,87.3,Emissions Exceedance Flag
+STLA-RDE-5196,173.7,55.3,46.0,105.6,Emissions Exceedance Flag
+STLA-RDE-5197,165.0,12.6,86.1,30.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5198,187.9,54.3,56.1,87.0,Emissions Exceedance Flag
+STLA-RDE-5199,222.8,64.0,67.5,67.0,Emissions Exceedance Flag
+STLA-RDE-5200,198.8,62.5,56.3,72.4,Emissions Exceedance Flag
+STLA-RDE-5201,197.4,21.7,84.6,26.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5202,174.8,23.9,77.0,44.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5203,500.1,42.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5204,547.7,24.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5205,173.5,23.5,77.0,46.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5206,256.1,83.3,72.8,53.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5207,173.2,68.3,32.8,141.0,Emissions Exceedance Flag
+STLA-RDE-5208,143.1,35.4,48.1,106.3,Emissions Exceedance Flag
+STLA-RDE-5209,247.0,33.9,87.5,22.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5210,183.8,43.3,63.0,81.8,Emissions Exceedance Flag
+STLA-RDE-5211,148.1,64.6,11.1,156.1,Emissions Exceedance Flag
+STLA-RDE-5212,264.5,17.0,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5213,148.5,18.0,75.4,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5214,166.7,74.7,19.9,129.4,Emissions Exceedance Flag
+STLA-RDE-5215,149.1,25.9,64.8,71.9,Emissions Exceedance Flag
+STLA-RDE-5216,205.1,65.4,58.0,80.4,Emissions Exceedance Flag
+STLA-RDE-5217,235.5,36.2,84.5,28.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5218,262.5,63.9,80.9,36.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5219,197.5,60.5,56.9,87.3,Emissions Exceedance Flag
+STLA-RDE-5220,142.3,46.1,31.6,121.2,Emissions Exceedance Flag
+STLA-RDE-5221,145.1,62.3,10.8,180.0,Emissions Exceedance Flag
+STLA-RDE-5222,302.6,52.7,90.8,15.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5223,414.8,19.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5224,184.3,21.1,82.1,34.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5225,158.0,81.0,10.0,170.9,Emissions Exceedance Flag
+STLA-RDE-5226,253.5,11.4,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5227,246.6,50.5,81.3,36.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5228,226.0,76.2,62.9,70.7,Emissions Exceedance Flag
+STLA-RDE-5229,200.9,52.4,64.3,60.5,Emissions Exceedance Flag
+STLA-RDE-5230,372.1,57.2,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5231,179.8,32.0,71.2,58.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5232,149.5,63.9,13.7,165.7,Emissions Exceedance Flag
+STLA-RDE-5233,226.2,66.6,67.6,59.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5234,210.2,67.0,59.8,81.8,Emissions Exceedance Flag
+STLA-RDE-5235,218.4,72.7,60.9,73.6,Emissions Exceedance Flag
+STLA-RDE-5236,168.9,80.3,16.4,159.9,Emissions Exceedance Flag
+STLA-RDE-5237,231.9,19.5,91.2,16.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5238,153.2,19.2,75.4,38.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5239,250.8,55.7,80.5,42.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5240,154.3,40.8,48.3,96.4,Emissions Exceedance Flag
+STLA-RDE-5241,210.9,60.0,64.3,68.3,Emissions Exceedance Flag
+STLA-RDE-5242,366.0,54.4,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5243,190.6,80.4,37.3,120.6,Emissions Exceedance Flag
+STLA-RDE-5244,246.5,60.3,77.7,46.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5245,315.0,84.1,87.5,25.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5246,453.0,72.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5247,626.6,79.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5248,334.4,63.6,92.7,13.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5249,142.6,57.6,14.7,149.7,Emissions Exceedance Flag
+STLA-RDE-5250,242.3,50.4,80.3,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5251,168.1,36.9,61.1,75.2,Emissions Exceedance Flag
+STLA-RDE-5252,180.3,11.3,89.9,21.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5253,158.4,79.7,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5254,166.6,14.5,84.4,31.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5255,210.2,58.7,64.7,66.7,Emissions Exceedance Flag
+STLA-RDE-5256,492.4,35.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5257,294.0,36.8,92.8,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5258,493.4,63.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5259,312.4,83.0,87.2,24.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5260,141.8,26.4,60.6,83.6,Emissions Exceedance Flag
+STLA-RDE-5261,144.4,61.4,11.4,176.8,Emissions Exceedance Flag
+STLA-RDE-5262,140.5,71.7,10.0,177.7,Emissions Exceedance Flag
+STLA-RDE-5263,278.8,64.5,84.5,31.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5264,467.1,48.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5265,141.0,77.1,10.0,170.2,Emissions Exceedance Flag
+STLA-RDE-5266,341.6,44.2,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5267,265.1,69.6,79.9,37.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5268,230.2,28.6,86.8,23.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5269,208.4,53.4,67.2,62.9,Emissions Exceedance Flag
+STLA-RDE-5270,244.6,41.4,84.3,28.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5271,374.7,11.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5272,174.5,21.8,78.9,39.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5273,140.6,10.1,84.6,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5274,155.2,49.0,38.7,122.1,Emissions Exceedance Flag
+STLA-RDE-5275,166.5,30.3,67.4,56.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5276,249.2,23.9,91.5,15.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5277,173.1,82.6,18.6,160.4,Emissions Exceedance Flag
+STLA-RDE-5278,358.1,34.6,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5279,322.4,19.8,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5280,285.7,57.4,87.4,24.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5281,221.2,12.9,93.3,13.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5282,342.3,40.9,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5283,412.9,66.3,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5284,242.6,47.1,81.7,36.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5285,160.1,45.7,46.5,114.1,Emissions Exceedance Flag
+STLA-RDE-5286,165.5,15.4,83.2,31.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5287,562.1,40.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5288,167.6,20.9,77.9,41.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5289,246.3,28.0,89.6,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5290,187.8,13.0,89.5,20.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5291,330.2,75.0,90.9,17.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5292,331.5,44.5,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5293,456.5,20.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5294,202.9,61.4,59.3,62.4,Emissions Exceedance Flag
+STLA-RDE-5295,518.2,22.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5296,154.0,60.8,22.7,142.6,Emissions Exceedance Flag
+STLA-RDE-5297,412.8,74.7,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5298,196.7,71.3,48.7,107.2,Emissions Exceedance Flag
+STLA-RDE-5299,140.4,37.8,42.4,120.6,Emissions Exceedance Flag
+STLA-RDE-5300,212.6,78.9,54.1,88.8,Emissions Exceedance Flag
+STLA-RDE-5301,218.7,45.0,75.9,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5302,323.0,19.3,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5303,153.8,65.2,16.8,150.5,Emissions Exceedance Flag
+STLA-RDE-5304,316.2,81.2,88.1,18.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5305,158.4,79.2,10.0,160.2,Emissions Exceedance Flag
+STLA-RDE-5306,184.4,17.9,84.9,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5307,311.3,49.3,92.3,16.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5308,200.7,37.7,74.3,47.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5309,236.4,61.2,74.1,51.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5310,185.8,53.7,55.3,89.1,Emissions Exceedance Flag
+STLA-RDE-5311,251.5,72.5,74.9,48.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5312,216.1,23.0,87.2,22.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5313,326.9,20.9,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5314,317.7,57.0,91.8,15.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5315,166.0,44.8,51.5,87.9,Emissions Exceedance Flag
+STLA-RDE-5316,354.2,38.1,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5317,223.9,83.9,58.0,87.1,Emissions Exceedance Flag
+STLA-RDE-5318,149.6,79.5,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5319,207.3,72.8,54.5,104.3,Emissions Exceedance Flag
+STLA-RDE-5320,181.3,72.7,35.8,126.9,Emissions Exceedance Flag
+STLA-RDE-5321,254.8,29.9,90.1,19.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5322,183.0,25.6,77.9,40.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5323,141.8,14.2,78.8,36.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5324,140.5,12.4,81.2,30.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5325,489.5,70.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5326,184.8,53.1,55.2,75.0,Emissions Exceedance Flag
+STLA-RDE-5327,243.8,16.4,93.7,14.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5328,283.4,71.5,83.8,31.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5329,140.0,50.4,22.9,172.3,Emissions Exceedance Flag
+STLA-RDE-5330,284.6,14.6,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5331,293.9,42.5,91.6,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5332,158.9,73.9,11.9,180.0,Emissions Exceedance Flag
+STLA-RDE-5333,147.4,57.1,20.8,166.8,Emissions Exceedance Flag
+STLA-RDE-5334,188.0,62.3,49.7,102.8,Emissions Exceedance Flag
+STLA-RDE-5335,174.2,37.1,63.9,62.7,Emissions Exceedance Flag
+STLA-RDE-5336,229.3,35.0,83.7,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5337,222.5,64.2,67.2,62.0,Emissions Exceedance Flag
+STLA-RDE-5338,264.1,26.3,92.3,15.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5339,321.7,19.7,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5340,319.9,68.6,90.5,17.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5341,276.6,26.3,93.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5342,190.3,76.0,40.4,109.4,Emissions Exceedance Flag
+STLA-RDE-5343,275.1,18.6,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5344,217.9,36.6,80.2,39.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5345,315.5,22.3,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5346,276.6,83.7,79.3,37.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5347,285.4,45.7,89.9,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5348,275.4,77.8,80.4,30.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5349,168.6,38.2,60.1,76.9,Emissions Exceedance Flag
+STLA-RDE-5350,275.7,24.9,93.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5351,221.0,49.7,74.1,47.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5352,195.7,64.5,53.0,91.2,Emissions Exceedance Flag
+STLA-RDE-5353,195.2,50.2,63.2,74.3,Emissions Exceedance Flag
+STLA-RDE-5354,140.8,77.3,10.0,175.5,Emissions Exceedance Flag
+STLA-RDE-5355,382.5,31.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5356,510.6,20.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5357,275.5,46.2,88.4,18.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5358,461.0,83.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5359,183.2,28.0,75.9,47.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5360,327.7,42.5,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5361,222.8,81.4,58.7,93.7,Emissions Exceedance Flag
+STLA-RDE-5362,213.4,53.4,69.2,60.9,Emissions Exceedance Flag
+STLA-RDE-5363,221.0,15.1,92.2,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5364,233.6,73.4,67.7,64.9,Emissions Exceedance Flag
+STLA-RDE-5365,318.2,30.6,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5366,253.2,34.5,88.3,24.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5367,197.5,23.4,83.4,31.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5368,156.5,20.4,74.9,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5369,202.2,68.8,54.0,85.2,Emissions Exceedance Flag
+STLA-RDE-5370,155.6,48.5,39.7,119.4,Emissions Exceedance Flag
+STLA-RDE-5371,144.6,24.8,64.3,64.7,Emissions Exceedance Flag
+STLA-RDE-5372,384.0,82.6,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5373,205.4,68.4,56.2,87.8,Emissions Exceedance Flag
+STLA-RDE-5374,170.0,42.1,56.7,71.4,Emissions Exceedance Flag
+STLA-RDE-5375,302.1,43.1,92.4,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5376,284.9,82.7,81.7,31.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5377,281.1,81.4,81.0,42.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5378,299.1,43.3,92.1,15.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5379,215.0,55.4,68.7,61.3,Emissions Exceedance Flag
+STLA-RDE-5380,292.0,77.6,84.3,28.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5381,251.1,56.1,80.5,37.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5382,276.4,16.7,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5383,385.2,50.2,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5384,148.5,64.3,12.1,163.7,Emissions Exceedance Flag
+STLA-RDE-5385,236.6,20.0,91.6,18.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5386,287.3,52.3,88.8,20.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5387,237.2,43.2,81.9,29.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5388,192.5,66.5,49.4,93.5,Emissions Exceedance Flag
+STLA-RDE-5389,153.5,12.2,84.4,28.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5390,144.9,28.0,59.8,73.9,Emissions Exceedance Flag
+STLA-RDE-5391,579.5,20.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5392,313.6,19.3,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5393,172.2,10.0,90.0,19.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5394,419.1,81.2,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5395,172.8,56.1,44.6,114.8,Emissions Exceedance Flag
+STLA-RDE-5396,154.7,76.2,10.0,161.2,Emissions Exceedance Flag
+STLA-RDE-5397,526.7,45.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5398,162.0,32.4,63.0,62.4,Emissions Exceedance Flag
+STLA-RDE-5399,258.7,27.2,91.4,16.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5400,217.9,16.8,90.9,15.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5401,150.0,48.6,34.9,109.8,Emissions Exceedance Flag
+STLA-RDE-5402,224.3,67.4,66.4,64.8,Emissions Exceedance Flag
+STLA-RDE-5403,184.7,37.8,68.1,58.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5404,179.7,29.7,73.2,48.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5405,165.1,29.2,68.0,59.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5406,428.8,71.7,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5407,396.0,45.1,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5408,206.0,80.7,48.8,83.6,Emissions Exceedance Flag
+STLA-RDE-5409,424.1,58.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5410,370.0,14.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5411,176.8,69.7,34.6,117.2,Emissions Exceedance Flag
+STLA-RDE-5412,347.9,79.7,92.4,12.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5413,145.7,32.3,54.1,84.5,Emissions Exceedance Flag
+STLA-RDE-5414,172.7,43.7,56.7,91.1,Emissions Exceedance Flag
+STLA-RDE-5415,364.8,44.0,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5416,145.0,13.5,80.6,35.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5417,840.5,37.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5418,155.9,56.3,30.2,138.4,Emissions Exceedance Flag
+STLA-RDE-5419,233.7,29.1,87.2,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5420,275.1,40.1,89.9,20.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5421,155.1,71.3,10.7,150.8,Emissions Exceedance Flag
+STLA-RDE-5422,141.3,60.7,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5423,292.9,65.9,86.8,27.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5424,231.6,47.6,78.5,39.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5425,186.7,59.1,51.4,97.7,Emissions Exceedance Flag
+STLA-RDE-5426,148.1,39.3,46.0,101.5,Emissions Exceedance Flag
+STLA-RDE-5427,208.8,70.8,56.7,72.2,Emissions Exceedance Flag
+STLA-RDE-5428,172.5,40.1,60.1,72.1,Emissions Exceedance Flag
+STLA-RDE-5429,214.5,57.4,67.5,66.9,Emissions Exceedance Flag
+STLA-RDE-5430,143.7,33.2,51.6,93.5,Emissions Exceedance Flag
+STLA-RDE-5431,197.7,42.6,69.7,60.4,Emissions Exceedance Flag
+STLA-RDE-5432,140.8,25.8,60.9,71.4,Emissions Exceedance Flag
+STLA-RDE-5433,199.2,76.7,46.6,100.0,Emissions Exceedance Flag
+STLA-RDE-5434,433.9,83.9,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5435,222.5,18.5,90.6,19.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5436,148.6,40.7,44.4,105.8,Emissions Exceedance Flag
+STLA-RDE-5437,483.1,58.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5438,173.1,57.5,43.4,117.3,Emissions Exceedance Flag
+STLA-RDE-5439,415.4,63.4,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5440,190.5,49.1,61.6,68.7,Emissions Exceedance Flag
+STLA-RDE-5441,363.9,54.8,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5442,291.9,80.7,83.7,34.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5443,148.9,32.2,56.1,87.7,Emissions Exceedance Flag
+STLA-RDE-5444,215.0,70.0,60.5,76.5,Emissions Exceedance Flag
+STLA-RDE-5445,185.9,68.4,43.2,114.0,Emissions Exceedance Flag
+STLA-RDE-5446,309.3,36.8,94.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5447,248.9,37.8,86.5,22.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5448,200.4,56.0,61.6,68.6,Emissions Exceedance Flag
+STLA-RDE-5449,179.2,22.5,79.6,38.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5450,260.9,74.3,77.3,44.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5451,159.0,22.0,73.8,51.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5452,171.1,43.8,55.6,96.2,Emissions Exceedance Flag
+STLA-RDE-5453,438.0,64.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5454,264.9,43.5,87.4,20.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5455,161.1,65.1,24.7,138.5,Emissions Exceedance Flag
+STLA-RDE-5456,187.8,70.7,42.7,110.6,Emissions Exceedance Flag
+STLA-RDE-5457,187.6,31.7,74.2,39.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5458,315.4,62.4,90.8,18.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5459,395.8,52.1,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5460,193.2,82.9,37.5,121.0,Emissions Exceedance Flag
+STLA-RDE-5461,454.5,53.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5462,188.5,30.5,75.5,48.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5463,312.8,56.8,91.3,16.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5464,678.0,36.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5465,274.5,66.5,83.0,32.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5466,592.8,51.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5467,192.2,16.5,87.4,22.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5468,273.1,36.4,90.6,18.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5469,162.0,32.8,62.5,71.7,Emissions Exceedance Flag
+STLA-RDE-5470,178.2,29.6,72.7,42.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5471,225.7,16.4,92.0,15.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5472,228.5,27.3,87.2,25.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5473,264.7,78.9,77.1,45.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5474,301.7,35.3,93.7,12.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5475,278.2,52.2,87.3,23.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5476,166.8,59.2,36.5,109.0,Emissions Exceedance Flag
+STLA-RDE-5477,150.9,57.8,23.4,152.1,Emissions Exceedance Flag
+STLA-RDE-5478,141.0,18.3,72.3,47.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5479,184.5,75.2,36.3,125.0,Emissions Exceedance Flag
+STLA-RDE-5480,531.0,58.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5481,302.5,19.7,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5482,283.8,19.6,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5483,203.8,26.4,82.7,34.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5484,797.1,19.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5485,262.1,68.4,79.4,35.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5486,154.1,61.7,21.7,169.5,Emissions Exceedance Flag
+STLA-RDE-5487,243.5,48.3,81.4,39.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5488,313.0,18.5,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5489,145.2,46.3,33.7,138.8,Emissions Exceedance Flag
+STLA-RDE-5490,286.2,79.3,82.7,35.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5491,203.0,25.0,83.5,31.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5492,233.6,33.3,85.3,29.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5493,240.4,22.6,90.9,17.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5494,181.6,80.9,28.9,141.8,Emissions Exceedance Flag
+STLA-RDE-5495,185.2,32.8,72.5,51.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5496,216.1,15.8,91.2,16.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5497,165.1,57.8,36.6,106.0,Emissions Exceedance Flag
+STLA-RDE-5498,188.6,67.0,46.3,103.1,Emissions Exceedance Flag
+STLA-RDE-5499,406.5,84.4,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5500,849.8,25.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5501,199.4,72.6,49.6,92.1,Emissions Exceedance Flag
+STLA-RDE-5502,383.0,60.8,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5503,141.7,26.1,61.0,69.0,Emissions Exceedance Flag
+STLA-RDE-5504,157.5,20.1,75.7,43.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5505,632.4,10.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5506,310.6,69.8,89.0,17.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5507,188.8,83.0,33.7,108.6,Emissions Exceedance Flag
+STLA-RDE-5508,289.8,21.7,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5509,149.5,74.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5510,273.5,18.8,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5511,208.3,75.9,53.2,92.1,Emissions Exceedance Flag
+STLA-RDE-5512,502.6,51.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5513,204.8,28.6,81.5,35.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5514,177.3,45.6,57.5,81.8,Emissions Exceedance Flag
+STLA-RDE-5515,293.4,61.8,87.8,20.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5516,245.5,65.2,75.6,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5517,333.0,76.4,91.1,18.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5518,236.7,27.3,88.5,23.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5519,150.4,26.0,65.4,62.4,Emissions Exceedance Flag
+STLA-RDE-5520,386.7,37.8,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5521,159.4,33.9,59.8,74.3,Emissions Exceedance Flag
+STLA-RDE-5522,229.8,76.0,64.8,61.4,Emissions Exceedance Flag
+STLA-RDE-5523,245.1,64.8,75.6,45.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5524,234.7,68.5,70.3,55.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5525,400.9,77.5,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5526,394.1,51.6,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5527,222.9,30.4,84.6,30.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5528,250.5,34.9,87.8,27.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5529,146.3,46.3,34.7,126.3,Emissions Exceedance Flag
+STLA-RDE-5530,218.5,35.5,80.9,29.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5531,333.6,31.0,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5532,159.7,35.2,58.6,78.9,Emissions Exceedance Flag
+STLA-RDE-5533,360.0,54.9,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5534,265.9,13.9,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5535,327.3,22.3,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5536,397.6,47.7,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5537,285.8,19.1,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5538,155.0,80.2,10.0,169.7,Emissions Exceedance Flag
+STLA-RDE-5539,241.9,59.4,76.6,47.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5540,246.4,36.3,86.5,26.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5541,322.7,79.4,89.4,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5542,456.8,49.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5543,350.5,20.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5544,150.7,68.0,10.0,179.5,Emissions Exceedance Flag
+STLA-RDE-5545,187.2,11.8,90.4,20.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5546,363.7,60.4,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5547,279.8,81.7,80.6,33.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5548,327.7,25.3,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5549,251.8,72.6,74.9,44.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5550,289.4,25.6,94.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5551,460.6,10.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5552,305.4,71.7,87.9,22.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5553,197.2,19.0,86.4,30.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5554,402.7,30.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5555,495.5,73.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5556,201.4,33.6,77.3,42.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5557,303.3,74.1,87.1,24.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5558,344.5,47.5,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5559,197.5,32.5,76.8,44.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5560,475.4,45.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5561,177.5,56.0,48.0,110.2,Emissions Exceedance Flag
+STLA-RDE-5562,432.7,23.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5563,160.5,65.9,23.1,154.4,Emissions Exceedance Flag
+STLA-RDE-5564,244.4,42.2,83.9,30.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5565,282.3,50.0,88.5,23.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5566,144.6,81.6,10.0,165.3,Emissions Exceedance Flag
+STLA-RDE-5567,288.4,15.7,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5568,270.4,58.9,84.1,31.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5569,175.3,51.5,50.7,85.9,Emissions Exceedance Flag
+STLA-RDE-5570,265.3,42.8,87.7,25.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5571,246.9,82.4,69.6,53.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5572,196.0,44.5,67.7,59.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5573,341.8,67.0,93.0,14.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5574,159.0,33.1,60.7,68.4,Emissions Exceedance Flag
+STLA-RDE-5575,222.4,56.2,71.3,53.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5576,390.8,63.0,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5577,207.5,58.0,63.9,71.1,Emissions Exceedance Flag
+STLA-RDE-5578,185.0,60.8,48.9,100.0,Emissions Exceedance Flag
+STLA-RDE-5579,507.8,74.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5580,282.1,69.3,84.0,29.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5581,198.1,33.9,76.1,46.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5582,513.6,35.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5583,451.9,46.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5584,204.6,15.1,90.2,21.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5585,141.6,45.4,31.9,151.7,Emissions Exceedance Flag
+STLA-RDE-5586,161.8,33.8,61.2,74.9,Emissions Exceedance Flag
+STLA-RDE-5587,207.8,58.8,63.5,80.4,Emissions Exceedance Flag
+STLA-RDE-5588,351.5,46.5,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5589,446.4,49.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5590,181.3,32.4,71.4,46.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5591,142.9,43.4,36.0,120.1,Emissions Exceedance Flag
+STLA-RDE-5592,151.1,54.3,28.3,153.8,Emissions Exceedance Flag
+STLA-RDE-5593,308.2,52.2,91.5,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5594,164.6,20.5,77.3,40.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5595,143.0,36.8,45.9,109.8,Emissions Exceedance Flag
+STLA-RDE-5596,244.2,66.5,74.6,53.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5597,243.4,78.6,69.7,58.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5598,177.7,11.2,89.6,17.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5599,142.4,31.5,53.3,76.5,Emissions Exceedance Flag
+STLA-RDE-5600,177.3,56.8,47.1,105.5,Emissions Exceedance Flag
+STLA-RDE-5601,284.6,16.0,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5602,153.0,73.4,10.0,175.1,Emissions Exceedance Flag
+STLA-RDE-5603,351.2,78.7,92.8,12.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5604,261.7,63.9,80.7,38.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5605,223.7,63.4,68.2,68.3,Emissions Exceedance Flag
+STLA-RDE-5606,164.9,12.6,86.2,30.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5607,248.9,55.4,80.1,34.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5608,245.3,53.8,79.7,43.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5609,153.8,71.0,10.0,164.9,Emissions Exceedance Flag
+STLA-RDE-5610,197.2,61.5,56.0,77.8,Emissions Exceedance Flag
+STLA-RDE-5611,383.4,53.1,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5612,146.3,31.2,56.0,83.6,Emissions Exceedance Flag
+STLA-RDE-5613,373.4,67.9,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5614,143.9,22.6,67.1,64.6,Emissions Exceedance Flag
+STLA-RDE-5615,143.6,31.6,53.8,87.3,Emissions Exceedance Flag
+STLA-RDE-5616,188.1,10.6,91.4,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5617,149.5,33.9,54.3,89.8,Emissions Exceedance Flag
+STLA-RDE-5618,447.7,15.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5619,207.3,49.5,69.1,63.5,Emissions Exceedance Flag
+STLA-RDE-5620,192.2,49.5,62.2,71.1,Emissions Exceedance Flag
+STLA-RDE-5621,370.2,41.3,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5622,231.2,48.1,78.1,46.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5623,206.8,78.0,51.0,97.4,Emissions Exceedance Flag
+STLA-RDE-5624,237.5,49.3,79.4,41.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5625,572.9,83.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5626,274.3,12.1,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5627,251.9,74.5,74.3,48.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5628,263.4,71.5,78.9,40.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5629,265.1,75.4,78.2,41.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5630,188.2,67.7,45.5,123.6,Emissions Exceedance Flag
+STLA-RDE-5631,187.1,58.8,51.9,92.9,Emissions Exceedance Flag
+STLA-RDE-5632,160.9,26.8,68.9,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5633,178.4,28.2,74.1,49.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5634,156.4,13.3,83.6,31.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5635,180.6,36.3,67.7,51.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5636,178.2,19.1,82.4,34.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5637,224.0,22.3,88.9,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5638,178.5,65.6,39.9,107.8,Emissions Exceedance Flag
+STLA-RDE-5639,239.5,75.8,69.2,64.9,Emissions Exceedance Flag
+STLA-RDE-5640,280.2,25.1,94.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5641,170.9,84.0,14.7,134.1,Emissions Exceedance Flag
+STLA-RDE-5642,184.4,83.2,29.5,120.0,Emissions Exceedance Flag
+STLA-RDE-5643,171.1,30.3,69.4,58.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5644,196.5,42.8,69.1,52.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5645,188.5,42.9,65.6,62.7,Emissions Exceedance Flag
+STLA-RDE-5646,222.0,27.7,85.8,27.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5647,248.4,22.0,92.1,14.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5648,434.3,81.5,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5649,246.7,64.5,76.2,41.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5650,210.0,54.4,67.2,68.3,Emissions Exceedance Flag
+STLA-RDE-5651,236.6,65.8,72.2,52.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5652,181.8,45.1,60.4,79.8,Emissions Exceedance Flag
+STLA-RDE-5653,154.5,54.5,31.1,124.6,Emissions Exceedance Flag
+STLA-RDE-5654,244.3,38.9,85.2,28.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5655,251.8,72.8,74.9,45.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5656,148.5,15.6,78.6,41.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5657,181.5,53.3,53.1,105.9,Emissions Exceedance Flag
+STLA-RDE-5658,144.1,45.8,33.5,119.1,Emissions Exceedance Flag
+STLA-RDE-5659,335.2,36.2,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5660,153.2,68.2,12.4,164.4,Emissions Exceedance Flag
+STLA-RDE-5661,519.2,20.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5662,247.6,71.8,73.8,45.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5663,198.6,38.3,73.1,51.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5664,460.5,77.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5665,162.7,58.7,33.5,120.5,Emissions Exceedance Flag
+STLA-RDE-5666,231.3,59.7,72.9,62.1,Emissions Exceedance Flag
+STLA-RDE-5667,144.8,20.1,71.1,56.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5668,147.0,44.7,37.6,117.1,Emissions Exceedance Flag
+STLA-RDE-5669,233.8,65.5,71.3,54.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5670,152.6,22.5,70.8,56.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5671,316.1,31.6,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5672,262.9,36.6,89.1,21.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5673,179.9,63.0,43.3,118.0,Emissions Exceedance Flag
+STLA-RDE-5674,218.4,80.1,56.9,84.6,Emissions Exceedance Flag
+STLA-RDE-5675,267.5,27.1,92.4,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5676,153.7,33.0,57.9,79.8,Emissions Exceedance Flag
+STLA-RDE-5677,342.4,77.2,92.0,14.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5678,281.9,79.9,81.6,37.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5679,259.9,48.5,85.0,26.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5680,292.1,53.6,89.2,21.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5681,157.6,58.9,28.7,143.8,Emissions Exceedance Flag
+STLA-RDE-5682,186.5,43.6,64.1,64.5,Emissions Exceedance Flag
+STLA-RDE-5683,296.5,42.7,91.9,14.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5684,164.0,10.4,88.4,19.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5685,303.0,35.9,93.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5686,284.2,40.9,90.8,17.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5687,237.2,27.1,88.6,24.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5688,730.9,73.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5689,201.9,60.5,59.4,89.0,Emissions Exceedance Flag
+STLA-RDE-5690,499.8,55.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5691,149.2,80.5,10.0,173.7,Emissions Exceedance Flag
+STLA-RDE-5692,404.8,55.6,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5693,371.6,49.5,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5694,159.6,48.8,42.5,113.3,Emissions Exceedance Flag
+STLA-RDE-5695,199.7,12.1,91.7,16.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5696,207.0,45.1,71.7,57.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5697,290.1,43.1,91.1,18.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5698,162.5,18.2,79.4,36.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5699,208.6,36.0,77.9,45.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5700,449.5,61.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5701,140.1,24.0,63.3,71.4,Emissions Exceedance Flag
+STLA-RDE-5702,182.6,48.9,57.6,80.4,Emissions Exceedance Flag
+STLA-RDE-5703,196.7,28.8,79.3,38.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5704,289.6,84.1,82.5,34.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5705,267.2,52.9,85.1,25.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5706,317.5,35.4,94.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5707,246.9,61.7,77.3,46.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5708,386.6,46.3,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5709,320.0,28.0,96.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5710,234.1,57.1,75.1,43.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5711,192.6,24.8,81.2,35.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5712,226.6,79.5,61.6,79.0,Emissions Exceedance Flag
+STLA-RDE-5713,278.9,27.1,93.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5714,146.4,11.3,84.0,30.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5715,281.8,14.8,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5716,352.4,38.2,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5717,200.8,77.8,47.0,115.8,Emissions Exceedance Flag
+STLA-RDE-5718,175.4,37.7,64.0,68.3,Emissions Exceedance Flag
+STLA-RDE-5719,306.6,23.6,96.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5720,357.5,42.8,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5721,372.4,47.2,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5722,219.9,68.4,63.9,75.7,Emissions Exceedance Flag
+STLA-RDE-5723,379.6,14.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5724,143.9,21.3,69.0,54.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5725,426.2,26.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5726,197.3,45.3,67.7,48.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5727,161.1,62.3,28.0,136.8,Emissions Exceedance Flag
+STLA-RDE-5728,178.0,56.2,48.1,102.3,Emissions Exceedance Flag
+STLA-RDE-5729,259.2,54.9,82.8,35.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5730,285.7,37.1,91.9,14.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5731,284.0,18.1,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5732,416.8,71.1,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5733,169.1,81.6,15.3,148.6,Emissions Exceedance Flag
+STLA-RDE-5734,143.7,44.2,35.6,138.9,Emissions Exceedance Flag
+STLA-RDE-5735,311.2,73.4,88.5,20.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5736,212.5,79.4,53.8,88.2,Emissions Exceedance Flag
+STLA-RDE-5737,173.2,55.0,45.9,119.4,Emissions Exceedance Flag
+STLA-RDE-5738,181.0,72.3,35.9,115.4,Emissions Exceedance Flag
+STLA-RDE-5739,172.1,34.7,65.4,71.5,Emissions Exceedance Flag
+STLA-RDE-5740,180.2,45.4,59.4,79.9,Emissions Exceedance Flag
+STLA-RDE-5741,240.7,27.9,88.8,22.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5742,152.2,62.2,19.0,131.6,Emissions Exceedance Flag
+STLA-RDE-5743,200.1,26.6,81.7,32.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5744,177.1,61.0,43.0,105.7,Emissions Exceedance Flag
+STLA-RDE-5745,293.8,21.7,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5746,178.0,18.2,83.2,34.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5747,219.8,22.1,88.3,20.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5748,390.8,20.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5749,183.1,55.0,52.6,96.8,Emissions Exceedance Flag
+STLA-RDE-5750,544.6,44.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5751,152.9,20.3,73.8,43.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5752,243.5,59.6,77.0,43.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5753,151.0,30.1,60.2,90.7,Emissions Exceedance Flag
+STLA-RDE-5754,164.5,83.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5755,173.4,16.5,83.8,30.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5756,147.4,48.1,33.3,122.8,Emissions Exceedance Flag
+STLA-RDE-5757,357.8,26.2,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5758,226.9,71.8,65.5,68.1,Emissions Exceedance Flag
+STLA-RDE-5759,457.6,31.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5760,161.3,67.3,22.4,154.8,Emissions Exceedance Flag
+STLA-RDE-5761,201.9,34.0,77.2,42.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5762,163.3,31.1,65.0,69.1,Emissions Exceedance Flag
+STLA-RDE-5763,227.3,57.6,72.5,54.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5764,143.8,76.1,10.0,170.7,Emissions Exceedance Flag
+STLA-RDE-5765,189.5,37.8,70.1,58.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5766,339.8,31.0,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5767,203.4,36.7,75.8,41.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5768,162.1,31.3,64.3,71.8,Emissions Exceedance Flag
+STLA-RDE-5769,140.2,22.2,66.0,68.2,Emissions Exceedance Flag
+STLA-RDE-5770,307.0,84.5,86.0,27.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5771,178.6,44.5,59.3,70.8,Emissions Exceedance Flag
+STLA-RDE-5772,294.1,28.8,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5773,204.1,61.1,60.2,81.2,Emissions Exceedance Flag
+STLA-RDE-5774,215.6,34.7,80.6,40.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5775,314.1,19.8,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5776,217.0,45.1,75.3,43.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5777,217.1,33.9,81.4,34.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5778,255.0,35.8,88.2,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5779,241.4,13.1,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5780,219.4,35.6,81.1,36.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5781,149.4,53.9,27.1,144.4,Emissions Exceedance Flag
+STLA-RDE-5782,142.0,33.1,50.6,106.0,Emissions Exceedance Flag
+STLA-RDE-5783,593.0,68.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5784,192.1,51.6,60.5,83.8,Emissions Exceedance Flag
+STLA-RDE-5785,208.4,15.7,90.4,16.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5786,234.0,39.6,82.7,34.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5787,180.5,25.7,77.1,45.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5788,156.9,64.3,21.4,152.6,Emissions Exceedance Flag
+STLA-RDE-5789,176.7,13.7,87.1,22.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5790,183.9,79.8,31.8,133.7,Emissions Exceedance Flag
+STLA-RDE-5791,146.2,20.2,71.5,59.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5792,173.1,81.9,19.3,148.9,Emissions Exceedance Flag
+STLA-RDE-5793,193.6,34.7,73.9,44.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5794,203.2,52.0,65.7,70.9,Emissions Exceedance Flag
+STLA-RDE-5795,184.0,18.9,83.9,35.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5796,152.3,22.3,71.0,54.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5797,154.3,67.3,14.8,180.0,Emissions Exceedance Flag
+STLA-RDE-5798,192.2,15.9,87.9,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5799,191.4,58.9,54.5,82.3,Emissions Exceedance Flag
+STLA-RDE-5800,268.8,15.0,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5801,232.7,56.2,75.0,55.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5802,442.8,55.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5803,170.9,22.6,77.0,46.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5804,147.7,55.1,23.8,130.9,Emissions Exceedance Flag
+STLA-RDE-5805,191.3,15.6,87.9,20.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5806,384.7,15.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5807,273.9,34.2,91.2,15.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5808,391.2,28.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5809,214.0,54.7,68.7,68.2,Emissions Exceedance Flag
+STLA-RDE-5810,142.7,56.0,17.2,179.1,Emissions Exceedance Flag
+STLA-RDE-5811,232.7,38.6,82.8,36.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5812,352.8,84.2,92.4,12.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5813,142.0,32.0,52.2,93.3,Emissions Exceedance Flag
+STLA-RDE-5814,152.7,61.2,20.9,148.8,Emissions Exceedance Flag
+STLA-RDE-5815,168.7,74.2,22.5,158.6,Emissions Exceedance Flag
+STLA-RDE-5816,581.4,80.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5817,269.3,59.5,83.8,31.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5818,240.6,35.6,85.7,27.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5819,304.6,75.4,87.1,27.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5820,279.7,44.8,89.3,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5821,185.6,16.5,86.2,22.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5822,347.6,11.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5823,207.8,25.1,84.4,27.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5824,197.2,73.8,47.3,110.4,Emissions Exceedance Flag
+STLA-RDE-5825,140.8,65.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5826,148.2,58.3,19.9,146.5,Emissions Exceedance Flag
+STLA-RDE-5827,278.4,23.4,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5828,168.7,30.5,68.1,77.5,Emissions Exceedance Flag
+STLA-RDE-5829,549.2,20.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5830,561.5,25.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5831,645.7,61.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5832,193.8,83.0,37.9,108.0,Emissions Exceedance Flag
+STLA-RDE-5833,207.3,31.0,80.6,36.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5834,320.7,74.8,89.7,17.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5835,337.0,40.4,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5836,222.6,62.1,68.4,64.1,Emissions Exceedance Flag
+STLA-RDE-5837,306.7,56.5,90.6,19.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5838,196.2,80.9,41.4,119.7,Emissions Exceedance Flag
+STLA-RDE-5839,218.3,21.1,88.6,20.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5840,157.8,28.9,65.1,71.9,Emissions Exceedance Flag
+STLA-RDE-5841,282.2,77.2,82.3,35.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5842,163.1,51.1,42.5,129.8,Emissions Exceedance Flag
+STLA-RDE-5843,169.5,48.3,50.0,102.8,Emissions Exceedance Flag
+STLA-RDE-5844,597.8,17.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5845,255.9,57.1,81.3,37.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5846,193.0,72.2,45.4,111.6,Emissions Exceedance Flag
+STLA-RDE-5847,228.7,46.1,78.3,45.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5848,142.0,68.8,10.0,171.0,Emissions Exceedance Flag
+STLA-RDE-5849,264.0,37.4,89.0,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5850,321.2,38.9,94.7,13.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5851,419.8,14.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5852,263.3,83.7,75.2,48.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5853,339.9,48.6,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5854,193.3,36.5,72.5,50.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5855,358.6,55.2,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5856,191.6,57.9,55.4,75.0,Emissions Exceedance Flag
+STLA-RDE-5857,229.5,39.1,81.8,36.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5858,302.5,18.1,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5859,151.0,36.4,51.9,95.0,Emissions Exceedance Flag
+STLA-RDE-5860,220.5,72.6,62.0,65.4,Emissions Exceedance Flag
+STLA-RDE-5861,155.9,72.2,10.5,167.5,Emissions Exceedance Flag
+STLA-RDE-5862,314.3,77.2,88.4,21.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5863,215.0,41.7,76.5,50.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5864,201.2,16.4,88.9,24.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5865,183.3,54.2,53.4,80.2,Emissions Exceedance Flag
+STLA-RDE-5866,225.5,83.7,59.0,83.1,Emissions Exceedance Flag
+STLA-RDE-5867,242.0,33.8,86.7,26.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5868,278.0,68.9,83.2,32.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5869,146.7,78.6,10.0,160.3,Emissions Exceedance Flag
+STLA-RDE-5870,167.5,34.9,63.0,73.3,Emissions Exceedance Flag
+STLA-RDE-5871,162.7,12.7,85.7,25.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5872,351.5,76.8,93.0,13.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5873,211.3,47.8,71.7,53.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5874,230.0,17.0,92.2,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5875,224.8,42.2,79.1,35.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5876,212.3,20.7,87.9,23.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5877,285.3,17.2,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5878,215.2,12.7,92.8,13.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5879,344.1,44.0,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5880,181.6,32.8,71.2,51.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5881,163.3,29.3,67.0,58.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5882,422.6,18.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5883,363.8,65.3,94.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5884,171.9,63.9,36.1,150.1,Emissions Exceedance Flag
+STLA-RDE-5885,509.3,53.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5886,145.5,12.2,82.7,31.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5887,342.2,74.6,92.3,15.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5888,234.9,38.2,83.5,30.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5889,252.7,12.3,95.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5890,274.6,65.9,83.2,30.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5891,249.9,26.8,90.5,16.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5892,498.4,15.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5893,445.8,61.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5894,187.8,28.0,77.3,45.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5895,174.7,50.8,51.0,88.8,Emissions Exceedance Flag
+STLA-RDE-5896,233.5,10.6,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5897,276.4,23.0,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5898,161.5,42.9,50.6,88.9,Emissions Exceedance Flag
+STLA-RDE-5899,143.0,73.9,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5900,301.4,25.5,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5901,219.3,61.8,67.1,59.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5902,526.5,82.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5903,225.6,13.4,93.5,13.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5904,149.0,77.3,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5905,152.8,45.0,41.9,115.9,Emissions Exceedance Flag
+STLA-RDE-5906,307.7,75.9,87.6,27.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5907,166.9,27.7,70.3,58.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5908,384.2,68.9,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5909,330.9,26.7,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5910,145.3,24.4,65.2,75.2,Emissions Exceedance Flag
+STLA-RDE-5911,294.0,22.7,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5912,158.2,39.2,52.8,108.0,Emissions Exceedance Flag
+STLA-RDE-5913,269.4,48.8,86.7,25.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5914,147.7,22.6,68.8,55.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5915,303.2,48.3,91.6,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5916,148.0,32.5,55.2,92.2,Emissions Exceedance Flag
+STLA-RDE-5917,149.3,64.8,12.4,176.1,Emissions Exceedance Flag
+STLA-RDE-5918,205.3,38.4,75.4,53.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5919,174.4,84.6,18.1,127.0,Emissions Exceedance Flag
+STLA-RDE-5920,161.8,72.9,16.6,144.2,Emissions Exceedance Flag
+STLA-RDE-5921,195.3,20.1,85.2,26.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5922,177.3,11.8,89.0,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5923,363.0,31.4,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5924,218.6,31.2,83.2,30.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5925,245.1,38.2,85.6,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5926,145.1,20.1,71.2,58.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5927,235.0,33.7,85.4,27.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5928,166.4,81.1,12.7,180.0,Emissions Exceedance Flag
+STLA-RDE-5929,346.8,47.2,95.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5930,205.2,57.1,63.3,69.9,Emissions Exceedance Flag
+STLA-RDE-5931,207.1,65.1,59.3,79.4,Emissions Exceedance Flag
+STLA-RDE-5932,196.6,10.4,92.5,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5933,144.0,28.1,59.2,83.2,Emissions Exceedance Flag
+STLA-RDE-5934,170.4,10.1,89.7,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5935,218.4,27.7,85.1,29.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5936,284.9,16.8,96.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5937,144.8,10.1,85.5,27.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5938,173.2,50.1,50.7,99.9,Emissions Exceedance Flag
+STLA-RDE-5939,157.4,63.4,23.0,159.7,Emissions Exceedance Flag
+STLA-RDE-5940,343.6,31.8,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5941,152.4,39.8,48.4,92.6,Emissions Exceedance Flag
+STLA-RDE-5942,165.2,66.5,27.2,151.0,Emissions Exceedance Flag
+STLA-RDE-5943,182.2,64.0,44.2,114.1,Emissions Exceedance Flag
+STLA-RDE-5944,368.9,17.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5945,178.9,17.3,84.2,29.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5946,152.5,18.6,75.9,49.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5947,200.2,32.5,77.7,42.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5948,141.0,83.8,10.0,158.9,Emissions Exceedance Flag
+STLA-RDE-5949,355.3,22.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5950,143.8,80.7,10.0,162.4,Emissions Exceedance Flag
+STLA-RDE-5951,268.4,74.5,79.4,36.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5952,155.2,79.1,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-5953,165.6,11.2,87.8,24.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5954,286.6,81.9,82.2,33.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5955,497.6,49.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5956,148.4,73.2,10.0,170.9,Emissions Exceedance Flag
+STLA-RDE-5957,162.7,58.2,34.1,103.8,Emissions Exceedance Flag
+STLA-RDE-5958,341.4,78.5,91.8,14.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5959,199.2,58.8,59.0,84.8,Emissions Exceedance Flag
+STLA-RDE-5960,189.3,41.0,67.4,67.3,Emissions Exceedance Flag
+STLA-RDE-5961,236.4,59.8,74.7,44.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5962,218.3,39.1,78.9,34.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5963,197.0,16.5,88.2,20.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5964,279.0,38.8,90.7,19.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5965,267.2,44.2,87.6,25.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5966,181.4,79.9,29.6,149.6,Emissions Exceedance Flag
+STLA-RDE-5967,243.6,29.0,88.8,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5968,213.2,45.4,73.8,46.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5969,154.3,71.0,10.0,156.0,Emissions Exceedance Flag
+STLA-RDE-5970,188.8,82.4,34.2,108.4,Emissions Exceedance Flag
+STLA-RDE-5971,287.4,17.6,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5972,257.9,57.4,81.8,35.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5973,693.3,58.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5974,152.7,59.3,23.3,132.2,Emissions Exceedance Flag
+STLA-RDE-5975,222.8,59.1,70.0,49.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5976,492.3,81.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5977,234.6,68.6,70.2,47.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5978,495.7,39.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5979,181.3,24.2,78.6,42.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5980,159.1,18.6,77.9,48.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5981,297.2,45.9,91.4,17.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5982,405.6,49.9,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5983,287.8,37.6,92.0,14.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5984,230.4,28.3,87.0,21.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5985,197.3,71.7,48.8,89.2,Emissions Exceedance Flag
+STLA-RDE-5986,449.1,41.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5987,351.7,47.9,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5988,288.6,22.3,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5989,155.1,78.1,10.0,148.9,Emissions Exceedance Flag
+STLA-RDE-5990,230.7,19.3,91.2,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5991,203.6,64.0,58.0,88.4,Emissions Exceedance Flag
+STLA-RDE-5992,155.7,63.5,21.1,180.0,Emissions Exceedance Flag
+STLA-RDE-5993,306.0,32.3,94.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5994,185.7,13.2,89.0,19.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5995,385.3,56.4,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5996,178.3,67.4,38.1,118.3,Emissions Exceedance Flag
+STLA-RDE-5997,176.9,60.0,43.8,110.3,Emissions Exceedance Flag
+STLA-RDE-5998,161.8,13.2,84.9,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-5999,602.2,34.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6000,206.8,33.2,79.2,40.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6001,369.9,37.4,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6002,224.0,50.5,74.8,44.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6003,261.0,32.9,89.9,20.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6004,265.1,62.2,82.0,29.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6005,222.5,15.0,92.4,17.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6006,177.8,35.3,67.4,73.7,Emissions Exceedance Flag
+STLA-RDE-6007,255.0,26.3,91.3,14.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6008,269.2,29.8,91.8,17.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6009,158.6,12.5,85.0,27.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6010,272.4,72.1,81.1,36.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6011,309.2,61.5,90.1,18.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6012,159.8,47.8,43.8,110.4,Emissions Exceedance Flag
+STLA-RDE-6013,553.1,57.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6014,260.5,21.1,93.5,13.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6015,223.5,33.2,83.3,34.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6016,141.9,73.8,10.0,175.4,Emissions Exceedance Flag
+STLA-RDE-6017,330.0,72.8,91.1,16.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6018,248.8,34.4,87.6,20.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6019,214.8,46.2,73.9,44.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6020,249.5,48.4,82.8,29.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6021,163.0,71.1,19.9,166.4,Emissions Exceedance Flag
+STLA-RDE-6022,575.3,82.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6023,305.1,41.7,92.9,13.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6024,165.1,13.9,84.7,33.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6025,531.9,70.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6026,183.6,30.1,74.2,51.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6027,164.7,11.9,86.8,25.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6028,408.8,13.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6029,165.1,50.6,44.5,109.3,Emissions Exceedance Flag
+STLA-RDE-6030,204.2,48.8,68.2,58.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6031,209.5,19.3,88.3,22.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6032,209.1,50.9,69.0,60.6,Emissions Exceedance Flag
+STLA-RDE-6033,295.3,14.8,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6034,172.6,64.0,36.5,103.2,Emissions Exceedance Flag
+STLA-RDE-6035,341.5,41.8,95.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6036,327.4,25.0,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6037,188.7,19.4,84.4,25.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6038,323.0,13.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6039,415.8,81.3,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6040,174.7,30.3,70.8,51.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6041,900.9,12.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6042,213.4,81.4,53.1,96.3,Emissions Exceedance Flag
+STLA-RDE-6043,346.8,63.6,93.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6044,264.9,14.7,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6045,334.2,81.7,90.6,17.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6046,191.5,33.3,74.3,47.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6047,149.7,69.9,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6048,195.6,75.8,44.6,109.2,Emissions Exceedance Flag
+STLA-RDE-6049,464.1,12.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6050,192.7,53.6,59.3,79.4,Emissions Exceedance Flag
+STLA-RDE-6051,142.7,11.3,83.4,33.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6052,166.7,35.5,62.0,81.5,Emissions Exceedance Flag
+STLA-RDE-6053,184.2,72.7,38.3,87.1,Emissions Exceedance Flag
+STLA-RDE-6054,506.1,76.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6055,526.0,83.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6056,390.0,15.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6057,189.4,61.2,51.5,81.1,Emissions Exceedance Flag
+STLA-RDE-6058,451.1,57.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6059,160.9,41.3,52.2,83.4,Emissions Exceedance Flag
+STLA-RDE-6060,221.2,42.5,78.0,45.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6061,735.3,10.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6062,316.7,18.2,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6063,146.5,25.1,64.7,61.1,Emissions Exceedance Flag
+STLA-RDE-6064,409.2,58.6,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6065,241.0,13.8,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6066,263.3,56.3,83.3,30.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6067,184.2,84.8,28.0,151.3,Emissions Exceedance Flag
+STLA-RDE-6068,230.4,48.2,77.9,40.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6069,192.2,41.2,68.5,63.4,Emissions Exceedance Flag
+STLA-RDE-6070,412.4,47.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6071,217.9,28.2,84.7,28.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6072,200.0,56.9,60.8,79.0,Emissions Exceedance Flag
+STLA-RDE-6073,512.5,56.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6074,167.3,66.7,28.9,143.4,Emissions Exceedance Flag
+STLA-RDE-6075,280.1,67.5,84.0,26.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6076,198.0,59.0,58.3,80.4,Emissions Exceedance Flag
+STLA-RDE-6077,397.5,38.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6078,183.7,71.1,39.2,112.1,Emissions Exceedance Flag
+STLA-RDE-6079,254.0,74.9,74.9,47.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6080,239.3,14.3,94.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6081,144.5,23.7,65.9,51.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6082,246.1,10.3,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6083,172.9,56.7,44.0,102.5,Emissions Exceedance Flag
+STLA-RDE-6084,194.3,81.4,39.6,131.2,Emissions Exceedance Flag
+STLA-RDE-6085,243.6,33.3,87.2,22.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6086,416.6,83.0,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6087,566.8,39.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6088,204.4,22.3,85.5,28.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6089,396.9,59.7,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6090,306.2,50.7,91.5,15.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6091,218.6,21.8,88.3,21.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6092,241.0,75.0,70.1,57.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6093,427.1,22.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6094,184.7,51.5,56.5,95.6,Emissions Exceedance Flag
+STLA-RDE-6095,186.9,32.8,73.1,49.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6096,224.1,18.9,90.6,19.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6097,188.4,32.4,74.0,49.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6098,339.4,59.5,93.6,12.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6099,318.8,36.7,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6100,192.2,29.3,77.6,44.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6101,241.7,67.8,73.2,54.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6102,281.8,32.7,92.4,14.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6103,555.1,29.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6104,341.4,83.7,91.3,16.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6105,660.1,72.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6106,223.5,84.4,57.5,78.8,Emissions Exceedance Flag
+STLA-RDE-6107,261.2,40.0,87.8,20.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6108,181.7,53.1,53.4,76.4,Emissions Exceedance Flag
+STLA-RDE-6109,225.1,60.9,70.0,53.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6110,268.0,65.2,81.9,29.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6111,142.0,40.5,39.5,115.8,Emissions Exceedance Flag
+STLA-RDE-6112,147.0,43.3,39.5,118.7,Emissions Exceedance Flag
+STLA-RDE-6113,544.8,65.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6114,222.9,27.6,86.0,24.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6115,146.1,63.7,10.0,167.1,Emissions Exceedance Flag
+STLA-RDE-6116,240.0,26.1,89.4,20.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6117,149.4,54.5,26.4,153.3,Emissions Exceedance Flag
+STLA-RDE-6118,483.2,29.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6119,336.1,53.8,94.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6120,182.6,48.6,57.8,83.1,Emissions Exceedance Flag
+STLA-RDE-6121,292.1,43.7,91.2,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6122,177.1,47.8,55.3,77.4,Emissions Exceedance Flag
+STLA-RDE-6123,208.5,54.0,66.8,59.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6124,179.0,62.6,43.0,104.1,Emissions Exceedance Flag
+STLA-RDE-6125,340.1,61.0,93.5,12.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6126,327.5,27.4,96.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6127,203.1,64.9,57.1,78.0,Emissions Exceedance Flag
+STLA-RDE-6128,201.5,25.0,83.2,35.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6129,256.4,31.3,89.8,18.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6130,247.1,34.4,87.4,22.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6131,141.9,18.1,72.9,58.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6132,143.0,28.9,57.5,91.4,Emissions Exceedance Flag
+STLA-RDE-6133,224.7,78.4,61.2,66.6,Emissions Exceedance Flag
+STLA-RDE-6134,432.7,61.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6135,165.7,62.4,32.2,139.4,Emissions Exceedance Flag
+STLA-RDE-6136,225.7,65.6,68.0,65.2,Emissions Exceedance Flag
+STLA-RDE-6137,153.4,78.3,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6138,163.8,53.4,40.4,108.1,Emissions Exceedance Flag
+STLA-RDE-6139,230.0,66.4,69.3,59.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6140,181.9,19.8,82.7,38.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6141,439.5,65.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6142,250.5,38.0,86.7,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6143,292.6,77.5,84.5,26.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6144,335.0,23.6,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6145,266.7,20.7,94.1,12.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6146,247.8,53.0,80.7,33.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6147,161.9,20.2,76.9,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6148,580.7,12.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6149,407.9,40.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6150,149.7,57.9,22.1,154.8,Emissions Exceedance Flag
+STLA-RDE-6151,234.4,53.4,76.7,38.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6152,509.7,32.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6153,216.8,78.5,56.8,75.9,Emissions Exceedance Flag
+STLA-RDE-6154,210.6,83.7,50.0,97.3,Emissions Exceedance Flag
+STLA-RDE-6155,183.9,14.2,87.9,25.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6156,249.9,68.0,75.9,47.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6157,161.1,64.8,25.1,146.1,Emissions Exceedance Flag
+STLA-RDE-6158,184.6,84.3,28.8,123.8,Emissions Exceedance Flag
+STLA-RDE-6159,151.6,64.1,15.9,146.2,Emissions Exceedance Flag
+STLA-RDE-6160,141.8,16.7,75.1,39.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6161,187.7,82.7,32.9,133.6,Emissions Exceedance Flag
+STLA-RDE-6162,388.4,52.3,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6163,197.5,23.3,83.4,33.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6164,176.1,10.4,90.2,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6165,307.3,64.8,89.3,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6166,401.4,76.4,96.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6167,172.2,66.5,33.7,131.3,Emissions Exceedance Flag
+STLA-RDE-6168,314.9,27.2,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6169,334.6,71.9,91.8,15.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6170,161.5,65.2,24.9,141.0,Emissions Exceedance Flag
+STLA-RDE-6171,296.7,73.2,86.1,25.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6172,163.8,72.4,19.3,170.4,Emissions Exceedance Flag
+STLA-RDE-6173,518.6,21.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6174,485.1,19.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6175,241.1,54.6,78.3,40.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6176,150.1,73.4,10.0,161.9,Emissions Exceedance Flag
+STLA-RDE-6177,220.6,11.3,94.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6178,192.6,51.5,60.9,77.8,Emissions Exceedance Flag
+STLA-RDE-6179,316.9,57.3,91.7,14.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6180,188.7,78.4,37.2,125.8,Emissions Exceedance Flag
+STLA-RDE-6181,500.1,48.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6182,220.3,62.2,67.3,60.0,Emissions Exceedance Flag
+STLA-RDE-6183,242.1,62.5,75.5,39.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6184,352.4,77.1,93.0,13.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6185,315.5,47.6,93.0,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6186,153.4,59.1,24.2,149.9,Emissions Exceedance Flag
+STLA-RDE-6187,221.5,71.7,62.9,70.5,Emissions Exceedance Flag
+STLA-RDE-6188,154.1,72.3,10.0,141.3,Emissions Exceedance Flag
+STLA-RDE-6189,160.4,28.9,66.3,65.0,Emissions Exceedance Flag
+STLA-RDE-6190,145.5,36.7,47.8,90.2,Emissions Exceedance Flag
+STLA-RDE-6191,277.8,73.2,82.1,35.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6192,185.6,84.8,29.3,127.7,Emissions Exceedance Flag
+STLA-RDE-6193,173.1,75.3,25.8,145.8,Emissions Exceedance Flag
+STLA-RDE-6194,416.3,33.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6195,241.4,30.1,88.1,23.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6196,178.8,57.2,47.8,96.6,Emissions Exceedance Flag
+STLA-RDE-6197,207.4,61.4,61.7,62.2,Emissions Exceedance Flag
+STLA-RDE-6198,408.5,19.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6199,245.7,65.5,75.5,47.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6200,468.4,34.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6201,164.5,11.0,87.9,25.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6202,314.0,73.2,89.0,19.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6203,310.2,16.3,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6204,164.3,78.9,12.6,172.0,Emissions Exceedance Flag
+STLA-RDE-6205,179.7,58.1,47.5,110.2,Emissions Exceedance Flag
+STLA-RDE-6206,207.6,57.8,64.1,69.0,Emissions Exceedance Flag
+STLA-RDE-6207,156.1,71.7,11.4,167.9,Emissions Exceedance Flag
+STLA-RDE-6208,280.5,13.3,96.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6209,290.2,15.8,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6210,195.8,21.3,84.5,27.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6211,192.2,20.1,84.6,29.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6212,409.6,56.6,97.6,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6213,143.5,26.9,60.7,73.8,Emissions Exceedance Flag
+STLA-RDE-6214,178.4,67.8,37.8,132.5,Emissions Exceedance Flag
+STLA-RDE-6215,205.2,65.6,57.9,84.5,Emissions Exceedance Flag
+STLA-RDE-6216,619.8,70.2,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6217,167.2,82.0,12.5,151.9,Emissions Exceedance Flag
+STLA-RDE-6218,149.7,17.9,75.9,50.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6219,322.8,50.2,93.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6220,181.0,11.2,90.1,19.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6221,227.2,44.3,78.8,44.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6222,165.3,24.9,72.8,50.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6223,183.7,69.3,40.7,116.5,Emissions Exceedance Flag
+STLA-RDE-6224,151.6,50.3,34.0,129.9,Emissions Exceedance Flag
+STLA-RDE-6225,511.7,11.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6226,161.0,12.8,85.2,29.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6227,147.2,51.0,29.0,127.0,Emissions Exceedance Flag
+STLA-RDE-6228,265.4,36.4,89.5,21.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6229,359.0,40.4,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6230,459.2,21.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6231,152.7,45.3,41.3,120.2,Emissions Exceedance Flag
+STLA-RDE-6232,249.8,11.5,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6233,182.0,41.9,63.3,61.4,Emissions Exceedance Flag
+STLA-RDE-6234,317.6,54.4,92.2,15.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6235,186.3,39.6,67.2,51.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6236,209.6,82.1,50.3,81.6,Emissions Exceedance Flag
+STLA-RDE-6237,261.9,81.2,75.5,41.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6238,203.7,21.2,86.1,28.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6239,256.5,22.5,92.7,14.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6240,198.1,61.8,56.4,86.5,Emissions Exceedance Flag
+STLA-RDE-6241,246.8,35.9,86.8,24.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6242,231.3,58.3,73.5,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6243,288.3,19.5,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6244,199.8,59.3,59.1,72.6,Emissions Exceedance Flag
+STLA-RDE-6245,262.6,41.4,87.6,21.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6246,223.9,14.6,92.7,15.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6247,291.1,20.0,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6248,501.5,13.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6249,162.8,10.2,88.5,23.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6250,731.9,69.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6251,172.9,36.7,63.7,75.0,Emissions Exceedance Flag
+STLA-RDE-6252,352.9,25.7,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6253,164.9,12.9,85.8,29.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6254,207.5,17.9,88.9,20.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6255,193.5,77.5,41.8,97.1,Emissions Exceedance Flag
+STLA-RDE-6256,332.5,81.0,90.5,17.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6257,407.6,70.3,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6258,170.4,81.2,17.1,154.6,Emissions Exceedance Flag
+STLA-RDE-6259,171.0,58.3,40.9,112.2,Emissions Exceedance Flag
+STLA-RDE-6260,146.6,17.0,76.2,44.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6261,229.6,71.5,66.8,52.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6262,300.8,43.3,92.2,18.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6263,169.6,83.9,13.4,178.9,Emissions Exceedance Flag
+STLA-RDE-6264,232.2,25.8,88.4,19.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6265,199.0,31.5,78.0,42.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6266,189.1,81.9,34.8,129.2,Emissions Exceedance Flag
+STLA-RDE-6267,170.7,83.8,14.8,180.0,Emissions Exceedance Flag
+STLA-RDE-6268,385.1,81.9,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6269,141.5,52.4,21.3,140.6,Emissions Exceedance Flag
+STLA-RDE-6270,257.7,10.2,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6271,231.2,12.9,94.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6272,412.0,63.1,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6273,250.3,60.4,78.7,43.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6274,328.6,79.8,90.1,19.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6275,155.3,59.3,25.9,122.2,Emissions Exceedance Flag
+STLA-RDE-6276,293.4,54.0,89.3,21.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6277,216.1,12.1,93.3,12.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6278,223.5,84.7,57.4,78.4,Emissions Exceedance Flag
+STLA-RDE-6279,176.7,35.7,66.5,59.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6280,188.2,38.0,69.4,55.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6281,214.4,10.4,94.1,12.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6282,175.2,58.8,43.7,112.6,Emissions Exceedance Flag
+STLA-RDE-6283,162.8,26.8,69.7,57.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6284,187.4,61.4,50.0,100.3,Emissions Exceedance Flag
+STLA-RDE-6285,216.0,43.2,76.0,46.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6286,152.0,53.9,29.6,127.5,Emissions Exceedance Flag
+STLA-RDE-6287,143.8,72.3,10.0,172.4,Emissions Exceedance Flag
+STLA-RDE-6288,241.8,26.6,89.5,21.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6289,391.4,84.2,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6290,149.6,75.3,10.0,168.6,Emissions Exceedance Flag
+STLA-RDE-6291,252.2,41.5,85.8,30.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6292,391.6,83.9,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6293,204.3,42.9,72.1,51.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6294,383.5,41.9,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6295,269.6,43.3,88.2,21.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6296,169.5,41.8,56.8,75.8,Emissions Exceedance Flag
+STLA-RDE-6297,140.7,14.4,78.1,42.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6298,282.7,38.3,91.2,15.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6299,245.8,55.3,79.3,36.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6300,189.3,69.7,44.7,108.3,Emissions Exceedance Flag
+STLA-RDE-6301,157.7,29.3,64.5,69.1,Emissions Exceedance Flag
+STLA-RDE-6302,368.5,56.9,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6303,368.1,64.5,95.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6304,213.8,54.5,68.8,53.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6305,144.7,26.1,62.4,76.6,Emissions Exceedance Flag
+STLA-RDE-6306,310.0,55.3,91.2,18.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6307,202.6,74.4,50.6,90.4,Emissions Exceedance Flag
+STLA-RDE-6308,328.3,54.5,93.2,12.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6309,448.3,76.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6310,156.4,30.5,62.4,71.6,Emissions Exceedance Flag
+STLA-RDE-6311,222.2,38.8,80.1,43.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6312,222.6,10.9,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6313,454.0,35.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6314,301.9,51.5,90.9,19.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6315,177.2,34.8,67.5,61.7,Emissions Exceedance Flag
+STLA-RDE-6316,339.2,70.1,92.5,13.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6317,168.2,24.6,74.1,52.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6318,215.1,48.8,72.5,46.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6319,201.5,78.2,47.2,86.0,Emissions Exceedance Flag
+STLA-RDE-6320,191.9,44.4,65.9,69.4,Emissions Exceedance Flag
+STLA-RDE-6321,392.5,57.6,97.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6322,173.5,22.7,77.8,39.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6323,228.6,41.9,80.3,38.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6324,167.1,49.6,47.0,101.8,Emissions Exceedance Flag
+STLA-RDE-6325,170.8,10.9,88.9,21.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6326,301.4,22.1,96.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6327,360.7,39.5,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6328,429.1,15.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6329,192.8,53.4,59.5,85.0,Emissions Exceedance Flag
+STLA-RDE-6330,243.6,20.2,92.2,17.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6331,316.9,77.0,88.8,21.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6332,156.0,75.9,10.0,173.4,Emissions Exceedance Flag
+STLA-RDE-6333,142.7,82.2,10.0,163.5,Emissions Exceedance Flag
+STLA-RDE-6334,282.8,22.9,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6335,212.1,53.6,68.6,54.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6336,215.7,45.9,74.4,42.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6337,143.0,41.1,39.5,113.7,Emissions Exceedance Flag
+STLA-RDE-6338,328.5,26.6,96.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6339,673.9,26.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6340,435.0,56.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6341,216.0,16.6,90.8,18.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6342,275.7,54.9,86.2,27.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6343,225.1,11.4,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6344,296.0,34.6,93.4,13.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6345,304.2,50.1,91.4,16.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6346,147.0,58.3,18.6,149.0,Emissions Exceedance Flag
+STLA-RDE-6347,359.2,54.8,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6348,176.3,53.2,49.8,92.9,Emissions Exceedance Flag
+STLA-RDE-6349,192.0,34.6,73.5,51.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6350,314.6,16.5,97.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6351,164.2,65.1,27.8,125.1,Emissions Exceedance Flag
+STLA-RDE-6352,241.6,36.7,85.5,27.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6353,150.5,81.4,10.0,178.3,Emissions Exceedance Flag
+STLA-RDE-6354,293.5,84.9,83.2,27.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6355,242.9,11.0,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6356,207.8,54.9,66.0,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6357,288.9,37.0,92.2,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6358,176.0,11.1,89.5,23.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6359,252.3,74.3,74.6,52.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6360,210.9,77.9,53.6,89.2,Emissions Exceedance Flag
+STLA-RDE-6361,284.4,63.5,85.8,27.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6362,543.0,35.5,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6363,303.4,42.4,92.7,13.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6364,182.0,72.9,36.3,101.2,Emissions Exceedance Flag
+STLA-RDE-6365,210.7,73.9,55.9,79.6,Emissions Exceedance Flag
+STLA-RDE-6366,232.2,68.8,69.2,57.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6367,265.5,66.3,80.9,39.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6368,298.9,78.2,85.6,20.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6369,359.8,49.5,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6370,178.9,23.6,78.5,42.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6371,240.2,60.0,75.8,45.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6372,197.8,42.5,69.8,56.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6373,165.5,83.6,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6374,323.8,66.0,91.3,16.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6375,353.1,24.9,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6376,152.2,26.1,66.0,69.5,Emissions Exceedance Flag
+STLA-RDE-6377,312.9,49.6,92.4,17.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6378,161.9,22.2,74.6,58.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6379,202.2,76.6,48.7,82.1,Emissions Exceedance Flag
+STLA-RDE-6380,282.8,12.8,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6381,190.7,53.6,58.2,83.1,Emissions Exceedance Flag
+STLA-RDE-6382,262.5,10.6,96.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6383,466.2,33.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6384,242.7,77.5,69.8,57.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6385,270.6,62.2,83.3,35.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6386,509.6,21.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6387,300.8,30.5,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6388,289.7,12.4,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6389,313.0,26.6,95.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6390,297.2,50.7,90.5,18.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6391,190.1,61.7,51.6,88.4,Emissions Exceedance Flag
+STLA-RDE-6392,181.6,47.9,57.9,93.9,Emissions Exceedance Flag
+STLA-RDE-6393,277.0,75.6,81.3,32.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6394,158.2,19.1,77.0,46.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6395,528.9,73.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6396,302.9,84.2,85.3,32.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6397,152.8,75.3,10.0,173.6,Emissions Exceedance Flag
+STLA-RDE-6398,507.4,50.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6399,203.0,20.8,86.2,21.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6400,211.0,50.4,70.0,48.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6401,146.5,69.2,10.0,159.1,Emissions Exceedance Flag
+STLA-RDE-6402,168.7,33.8,64.7,63.7,Emissions Exceedance Flag
+STLA-RDE-6403,156.0,74.9,10.0,172.7,Emissions Exceedance Flag
+STLA-RDE-6404,189.4,43.9,65.2,56.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6405,156.5,26.0,68.0,54.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6406,361.9,65.7,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6407,400.2,74.3,96.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6408,206.1,41.9,73.4,47.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6409,143.1,81.2,10.0,156.9,Emissions Exceedance Flag
+STLA-RDE-6410,325.6,69.9,91.0,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6411,163.2,29.6,66.7,63.0,Emissions Exceedance Flag
+STLA-RDE-6412,278.0,52.2,87.3,21.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6413,157.1,36.8,55.1,85.5,Emissions Exceedance Flag
+STLA-RDE-6414,530.6,67.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6415,204.3,29.7,80.7,38.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6416,191.6,19.4,85.1,29.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6417,337.2,26.4,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6418,222.2,29.6,84.9,28.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6419,166.2,59.4,35.9,122.1,Emissions Exceedance Flag
+STLA-RDE-6420,340.0,40.2,95.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6421,198.1,76.3,46.1,115.6,Emissions Exceedance Flag
+STLA-RDE-6422,141.2,50.2,24.4,149.0,Emissions Exceedance Flag
+STLA-RDE-6423,168.4,78.4,17.8,156.5,Emissions Exceedance Flag
+STLA-RDE-6424,416.1,22.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6425,160.2,77.6,10.0,168.9,Emissions Exceedance Flag
+STLA-RDE-6426,258.1,57.8,81.7,35.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6427,246.1,54.5,79.7,35.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6428,257.3,54.0,82.7,34.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6429,174.5,29.6,71.4,60.4,Emissions Exceedance Flag
+STLA-RDE-6430,470.7,58.1,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6431,167.6,23.1,75.5,54.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6432,154.6,47.7,39.8,100.8,Emissions Exceedance Flag
+STLA-RDE-6433,208.2,48.4,70.1,57.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6434,238.1,34.2,85.8,26.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6435,286.0,72.9,84.1,30.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6436,394.7,73.2,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6437,370.2,12.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6438,155.1,74.8,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6439,228.9,67.4,68.4,56.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6440,252.2,14.4,95.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6441,263.8,84.3,75.2,44.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6442,167.3,36.1,61.6,84.5,Emissions Exceedance Flag
+STLA-RDE-6443,170.0,80.2,17.7,157.2,Emissions Exceedance Flag
+STLA-RDE-6444,160.3,35.6,58.4,83.3,Emissions Exceedance Flag
+STLA-RDE-6445,228.1,39.3,81.4,37.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6446,425.1,21.0,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6447,252.4,37.3,87.2,25.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6448,273.1,21.6,94.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6449,185.7,48.8,59.3,68.9,Emissions Exceedance Flag
+STLA-RDE-6450,179.3,17.4,84.2,31.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6451,242.3,12.9,94.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6452,296.6,59.4,88.7,24.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6453,152.4,28.5,63.0,75.3,Emissions Exceedance Flag
+STLA-RDE-6454,440.6,78.8,97.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6455,310.1,38.2,93.9,12.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6456,145.0,66.2,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6457,307.7,42.7,93.0,13.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6458,169.2,20.0,79.2,42.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6459,379.1,62.9,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6460,160.8,74.5,13.6,165.8,Emissions Exceedance Flag
+STLA-RDE-6461,188.6,13.0,89.6,21.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6462,187.6,16.4,86.7,25.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6463,380.5,64.6,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6464,164.9,21.4,76.5,48.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6465,686.6,40.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6466,357.7,57.3,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6467,344.5,71.3,92.9,13.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6468,144.1,41.4,39.9,103.1,Emissions Exceedance Flag
+STLA-RDE-6469,174.7,60.9,41.2,98.7,Emissions Exceedance Flag
+STLA-RDE-6470,232.1,16.6,92.6,15.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6471,258.7,44.7,85.9,27.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6472,268.3,14.6,96.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6473,179.4,67.3,39.0,118.6,Emissions Exceedance Flag
+STLA-RDE-6474,197.1,41.0,70.7,59.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6475,176.3,68.1,35.7,136.6,Emissions Exceedance Flag
+STLA-RDE-6476,210.2,16.5,90.1,17.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6477,300.0,41.7,92.4,15.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6478,146.7,60.2,15.7,152.8,Emissions Exceedance Flag
+STLA-RDE-6479,266.2,19.4,94.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6480,199.5,62.1,56.9,88.0,Emissions Exceedance Flag
+STLA-RDE-6481,253.9,51.8,82.6,39.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6482,198.0,45.4,67.9,69.6,Emissions Exceedance Flag
+STLA-RDE-6483,166.0,79.3,14.1,136.6,Emissions Exceedance Flag
+STLA-RDE-6484,211.7,54.2,68.0,63.8,Emissions Exceedance Flag
+STLA-RDE-6485,344.4,26.9,97.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6486,219.9,22.9,87.9,27.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6487,244.9,10.1,96.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6488,143.5,78.5,10.0,177.1,Emissions Exceedance Flag
+STLA-RDE-6489,285.6,20.4,95.5,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6490,260.6,72.1,77.9,39.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6491,186.0,51.3,57.4,82.1,Emissions Exceedance Flag
+STLA-RDE-6492,225.3,25.6,87.4,21.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6493,365.9,68.6,94.8,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6494,348.8,27.6,97.4,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6495,263.7,77.4,77.2,42.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6496,287.7,48.0,89.7,16.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6497,148.1,32.0,56.0,97.3,Emissions Exceedance Flag
+STLA-RDE-6498,179.6,58.2,47.4,100.1,Emissions Exceedance Flag
+STLA-RDE-6499,382.1,82.0,95.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6500,257.3,25.4,91.9,14.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6501,151.1,10.5,86.2,23.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6502,434.5,25.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6503,494.4,51.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6504,445.7,41.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6505,198.3,78.4,44.8,107.2,Emissions Exceedance Flag
+STLA-RDE-6506,177.0,70.3,34.3,132.3,Emissions Exceedance Flag
+STLA-RDE-6507,303.9,33.2,94.3,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6508,531.6,74.6,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6509,242.1,51.0,80.0,41.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6510,381.5,25.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6511,172.9,17.7,82.5,36.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6512,255.6,84.0,72.5,46.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6513,240.2,75.3,69.7,65.1,Emissions Exceedance Flag
+STLA-RDE-6514,335.3,17.3,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6515,275.1,68.9,82.6,30.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6516,171.1,34.5,65.1,64.1,Emissions Exceedance Flag
+STLA-RDE-6517,178.5,35.1,67.8,60.7,Emissions Exceedance Flag
+STLA-RDE-6518,438.8,17.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6519,251.5,14.4,95.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6520,175.9,20.3,80.7,38.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6521,169.8,24.8,74.5,49.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6522,252.1,77.2,73.5,47.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6523,171.0,81.9,17.0,171.3,Emissions Exceedance Flag
+STLA-RDE-6524,205.7,78.5,50.0,102.8,Emissions Exceedance Flag
+STLA-RDE-6525,494.2,38.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6526,171.5,10.5,89.5,19.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6527,192.3,54.9,58.1,81.6,Emissions Exceedance Flag
+STLA-RDE-6528,395.7,54.5,97.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6529,232.9,21.7,90.4,19.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6530,167.0,13.2,85.9,23.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6531,239.0,21.7,91.1,16.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6532,252.8,62.3,78.8,37.3,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6533,187.8,24.7,80.0,33.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6534,194.7,42.2,68.8,61.6,Emissions Exceedance Flag
+STLA-RDE-6535,239.8,78.1,68.4,58.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6536,372.4,41.3,97.1,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6537,184.3,29.0,75.4,46.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6538,173.2,46.8,53.9,79.7,Emissions Exceedance Flag
+STLA-RDE-6539,164.6,37.7,58.4,87.5,Emissions Exceedance Flag
+STLA-RDE-6540,183.0,71.8,38.0,127.6,Emissions Exceedance Flag
+STLA-RDE-6541,478.4,46.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6542,157.1,40.1,51.1,95.2,Emissions Exceedance Flag
+STLA-RDE-6543,234.8,70.0,69.7,55.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6544,160.9,80.7,10.0,177.7,Emissions Exceedance Flag
+STLA-RDE-6545,144.6,43.6,37.2,124.2,Emissions Exceedance Flag
+STLA-RDE-6546,156.2,41.2,49.1,76.9,Emissions Exceedance Flag
+STLA-RDE-6547,232.1,31.7,85.8,27.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6548,212.0,53.2,68.8,49.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6549,732.1,80.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6550,298.4,25.7,95.2,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6551,274.2,33.4,91.4,15.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6552,156.6,60.2,26.1,160.4,Emissions Exceedance Flag
+STLA-RDE-6553,183.7,80.5,31.1,151.5,Emissions Exceedance Flag
+STLA-RDE-6554,418.1,56.8,97.9,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6555,168.7,52.4,45.2,100.8,Emissions Exceedance Flag
+STLA-RDE-6556,524.0,82.7,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6557,434.5,45.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6558,285.9,50.4,89.0,19.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6559,308.2,70.5,88.5,23.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6560,180.3,23.2,79.2,38.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6561,218.1,57.3,69.0,68.1,Emissions Exceedance Flag
+STLA-RDE-6562,183.2,20.9,82.0,36.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6563,141.7,74.6,10.0,170.1,Emissions Exceedance Flag
+STLA-RDE-6564,239.1,75.3,69.2,46.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6565,150.7,69.9,10.0,161.1,Emissions Exceedance Flag
+STLA-RDE-6566,155.6,46.8,41.8,96.7,Emissions Exceedance Flag
+STLA-RDE-6567,247.4,73.4,73.2,47.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6568,159.7,58.4,31.2,120.6,Emissions Exceedance Flag
+STLA-RDE-6569,152.1,67.5,12.0,147.8,Emissions Exceedance Flag
+STLA-RDE-6570,156.6,24.9,69.4,62.9,Emissions Exceedance Flag
+STLA-RDE-6571,160.8,14.6,83.1,30.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6572,172.0,69.5,30.5,126.3,Emissions Exceedance Flag
+STLA-RDE-6573,176.4,54.1,49.0,99.8,Emissions Exceedance Flag
+STLA-RDE-6574,185.8,83.3,30.7,119.7,Emissions Exceedance Flag
+STLA-RDE-6575,480.9,15.4,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6576,143.6,79.4,10.0,160.5,Emissions Exceedance Flag
+STLA-RDE-6577,158.4,45.3,45.7,93.4,Emissions Exceedance Flag
+STLA-RDE-6578,143.4,74.7,10.0,180.0,Emissions Exceedance Flag
+STLA-RDE-6579,239.7,63.3,74.3,57.4,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6580,228.1,52.6,75.1,51.8,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6581,441.0,82.4,97.7,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6582,225.3,47.7,76.6,36.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6583,307.0,82.2,86.4,24.2,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6584,211.0,49.0,70.9,53.6,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6585,167.0,29.1,68.9,49.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6586,226.3,33.0,84.0,31.7,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6587,159.5,71.9,15.2,180.0,Emissions Exceedance Flag
+STLA-RDE-6588,429.2,33.8,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6589,176.5,44.4,58.2,90.9,Emissions Exceedance Flag
+STLA-RDE-6590,234.9,65.1,71.9,59.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6591,181.8,34.7,69.5,64.1,Emissions Exceedance Flag
+STLA-RDE-6592,224.7,53.7,73.4,51.5,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6593,479.3,26.9,98.0,12.0,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6594,208.1,15.9,90.2,19.9,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6595,167.7,32.3,65.8,61.2,Emissions Exceedance Flag
+STLA-RDE-6596,179.7,83.5,24.6,157.9,Emissions Exceedance Flag
+STLA-RDE-6597,212.1,12.5,92.7,13.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6598,142.9,17.2,74.7,41.1,Euro 7 Compliant (<60mg/km)
+STLA-RDE-6599,244.2,67.4,74.3,46.4,Euro 7 Compliant (<60mg/km)

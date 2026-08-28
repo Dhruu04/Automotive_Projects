@@ -1,0 +1,3201 @@
+Inspection_ID,Vehicle_Zone,Defect_Type,Camera_Confidence,Box_Accuracy,Line_Speed_m_min
+INSP-20000,Trunk Lid,No Defect (Pass),0.995,0.0,4.0
+INSP-20001,Hood,No Defect (Pass),0.864,0.0,4.44
+INSP-20002,Quarter Panel Right,Paint Scratch / Blemish,0.704,0.77,4.75
+INSP-20003,Door Left Front,No Defect (Pass),0.816,0.0,4.21
+INSP-20004,Trunk Lid,No Defect (Pass),0.948,0.0,4.52
+INSP-20005,Trunk Lid,Panel Gap Misalignment,0.609,0.89,4.28
+INSP-20006,Hood,No Defect (Pass),0.943,0.0,4.34
+INSP-20007,Roof Pillar,No Defect (Pass),0.866,0.0,3.55
+INSP-20008,Roof Pillar,No Defect (Pass),0.984,0.0,3.81
+INSP-20009,Quarter Panel Right,No Defect (Pass),0.982,0.0,4.01
+INSP-20010,Door Left Front,No Defect (Pass),0.959,0.0,4.4
+INSP-20011,Trunk Lid,No Defect (Pass),0.997,0.0,3.98
+INSP-20012,Roof Pillar,No Defect (Pass),0.906,0.0,4.17
+INSP-20013,Roof Pillar,No Defect (Pass),0.969,0.0,4.12
+INSP-20014,Door Left Front,No Defect (Pass),0.78,0.0,4.29
+INSP-20015,Hood,No Defect (Pass),0.899,0.0,4.28
+INSP-20016,Hood,No Defect (Pass),0.988,0.0,4.23
+INSP-20017,Trunk Lid,No Defect (Pass),0.927,0.0,4.29
+INSP-20018,Roof Pillar,No Defect (Pass),0.826,0.0,4.15
+INSP-20019,Roof Pillar,No Defect (Pass),0.925,0.0,4.12
+INSP-20020,Quarter Panel Right,No Defect (Pass),0.834,0.0,3.77
+INSP-20021,Quarter Panel Right,Clear-coat Orange Peel,0.547,0.87,3.99
+INSP-20022,Hood,Paint Scratch / Blemish,0.464,0.89,3.23
+INSP-20023,Door Left Front,No Defect (Pass),0.93,0.0,4.04
+INSP-20024,Door Left Front,No Defect (Pass),0.873,0.0,3.81
+INSP-20025,Quarter Panel Right,No Defect (Pass),0.982,0.0,4.32
+INSP-20026,Door Left Front,No Defect (Pass),0.988,0.0,4.27
+INSP-20027,Door Left Front,No Defect (Pass),0.881,0.0,3.75
+INSP-20028,Quarter Panel Right,No Defect (Pass),0.967,0.0,4.12
+INSP-20029,Quarter Panel Right,No Defect (Pass),0.937,0.0,4.11
+INSP-20030,Roof Pillar,No Defect (Pass),0.957,0.0,4.65
+INSP-20031,Roof Pillar,No Defect (Pass),0.977,0.0,4.24
+INSP-20032,Roof Pillar,No Defect (Pass),0.933,0.0,3.87
+INSP-20033,Trunk Lid,No Defect (Pass),0.934,0.0,3.99
+INSP-20034,Roof Pillar,Clear-coat Orange Peel,0.677,0.89,4.14
+INSP-20035,Roof Pillar,No Defect (Pass),0.999,0.0,4.17
+INSP-20036,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.28
+INSP-20037,Roof Pillar,No Defect (Pass),0.817,0.0,3.99
+INSP-20038,Door Left Front,No Defect (Pass),0.933,0.0,3.6
+INSP-20039,Hood,No Defect (Pass),0.984,0.0,4.19
+INSP-20040,Quarter Panel Right,No Defect (Pass),0.905,0.0,4.14
+INSP-20041,Quarter Panel Right,Welding Porosity,0.519,0.76,3.9
+INSP-20042,Door Left Front,No Defect (Pass),0.903,0.0,4.81
+INSP-20043,Roof Pillar,No Defect (Pass),0.935,0.0,4.31
+INSP-20044,Door Left Front,No Defect (Pass),0.976,0.0,3.65
+INSP-20045,Trunk Lid,Paint Scratch / Blemish,0.94,0.87,4.32
+INSP-20046,Hood,Welding Porosity,0.758,0.84,4.09
+INSP-20047,Roof Pillar,No Defect (Pass),0.939,0.0,4.31
+INSP-20048,Hood,No Defect (Pass),0.873,0.0,4.16
+INSP-20049,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.12
+INSP-20050,Trunk Lid,No Defect (Pass),0.693,0.0,4.34
+INSP-20051,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.57
+INSP-20052,Door Left Front,No Defect (Pass),0.958,0.0,4.36
+INSP-20053,Door Left Front,No Defect (Pass),0.996,0.0,4.19
+INSP-20054,Door Left Front,No Defect (Pass),0.85,0.0,4.23
+INSP-20055,Roof Pillar,No Defect (Pass),0.896,0.0,4.14
+INSP-20056,Trunk Lid,Clear-coat Orange Peel,0.962,0.72,4.3
+INSP-20057,Quarter Panel Right,No Defect (Pass),0.821,0.0,4.15
+INSP-20058,Door Left Front,No Defect (Pass),0.697,0.0,4.51
+INSP-20059,Trunk Lid,No Defect (Pass),0.633,0.0,4.34
+INSP-20060,Roof Pillar,No Defect (Pass),0.824,0.0,4.37
+INSP-20061,Hood,No Defect (Pass),0.877,0.0,4.54
+INSP-20062,Hood,No Defect (Pass),0.86,0.0,4.11
+INSP-20063,Trunk Lid,No Defect (Pass),0.997,0.0,4.65
+INSP-20064,Roof Pillar,No Defect (Pass),0.953,0.0,4.38
+INSP-20065,Quarter Panel Right,No Defect (Pass),0.88,0.0,4.01
+INSP-20066,Hood,No Defect (Pass),0.958,0.0,4.01
+INSP-20067,Quarter Panel Right,No Defect (Pass),0.712,0.0,4.43
+INSP-20068,Roof Pillar,No Defect (Pass),0.815,0.0,3.57
+INSP-20069,Trunk Lid,No Defect (Pass),0.555,0.0,4.24
+INSP-20070,Hood,No Defect (Pass),0.829,0.0,3.93
+INSP-20071,Trunk Lid,No Defect (Pass),0.864,0.0,3.88
+INSP-20072,Roof Pillar,No Defect (Pass),0.99,0.0,4.27
+INSP-20073,Trunk Lid,No Defect (Pass),0.905,0.0,4.32
+INSP-20074,Trunk Lid,No Defect (Pass),0.946,0.0,4.45
+INSP-20075,Trunk Lid,No Defect (Pass),0.957,0.0,4.33
+INSP-20076,Trunk Lid,No Defect (Pass),0.752,0.0,4.09
+INSP-20077,Hood,No Defect (Pass),0.844,0.0,4.41
+INSP-20078,Hood,Welding Porosity,0.801,0.75,3.95
+INSP-20079,Quarter Panel Right,No Defect (Pass),0.995,0.0,4.34
+INSP-20080,Roof Pillar,Welding Porosity,0.717,0.84,4.7
+INSP-20081,Hood,No Defect (Pass),0.885,0.0,3.76
+INSP-20082,Door Left Front,No Defect (Pass),0.763,0.0,3.94
+INSP-20083,Hood,Paint Scratch / Blemish,0.846,0.85,4.24
+INSP-20084,Roof Pillar,No Defect (Pass),0.973,0.0,3.61
+INSP-20085,Hood,No Defect (Pass),0.938,0.0,3.85
+INSP-20086,Hood,No Defect (Pass),0.612,0.0,4.56
+INSP-20087,Roof Pillar,No Defect (Pass),0.961,0.0,3.98
+INSP-20088,Hood,No Defect (Pass),0.986,0.0,4.46
+INSP-20089,Hood,No Defect (Pass),0.966,0.0,4.29
+INSP-20090,Trunk Lid,No Defect (Pass),0.811,0.0,4.13
+INSP-20091,Roof Pillar,No Defect (Pass),0.909,0.0,3.98
+INSP-20092,Door Left Front,No Defect (Pass),0.731,0.0,4.17
+INSP-20093,Roof Pillar,No Defect (Pass),0.975,0.0,4.84
+INSP-20094,Trunk Lid,No Defect (Pass),0.998,0.0,4.6
+INSP-20095,Trunk Lid,No Defect (Pass),0.946,0.0,4.3
+INSP-20096,Roof Pillar,No Defect (Pass),0.971,0.0,3.54
+INSP-20097,Trunk Lid,No Defect (Pass),0.886,0.0,4.09
+INSP-20098,Hood,No Defect (Pass),0.727,0.0,4.1
+INSP-20099,Quarter Panel Right,No Defect (Pass),0.934,0.0,4.54
+INSP-20100,Quarter Panel Right,No Defect (Pass),0.952,0.0,4.39
+INSP-20101,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.17
+INSP-20102,Quarter Panel Right,No Defect (Pass),0.993,0.0,3.56
+INSP-20103,Roof Pillar,No Defect (Pass),0.94,0.0,4.47
+INSP-20104,Door Left Front,No Defect (Pass),0.903,0.0,4.46
+INSP-20105,Quarter Panel Right,Paint Scratch / Blemish,0.758,0.95,4.34
+INSP-20106,Trunk Lid,No Defect (Pass),0.759,0.0,4.12
+INSP-20107,Quarter Panel Right,No Defect (Pass),0.859,0.0,3.88
+INSP-20108,Roof Pillar,No Defect (Pass),0.971,0.0,3.76
+INSP-20109,Trunk Lid,No Defect (Pass),0.969,0.0,3.83
+INSP-20110,Quarter Panel Right,No Defect (Pass),0.983,0.0,4.35
+INSP-20111,Hood,No Defect (Pass),0.942,0.0,4.39
+INSP-20112,Door Left Front,No Defect (Pass),0.988,0.0,4.67
+INSP-20113,Quarter Panel Right,No Defect (Pass),0.774,0.0,3.99
+INSP-20114,Trunk Lid,No Defect (Pass),0.984,0.0,4.5
+INSP-20115,Quarter Panel Right,No Defect (Pass),0.988,0.0,3.59
+INSP-20116,Roof Pillar,No Defect (Pass),0.982,0.0,4.23
+INSP-20117,Quarter Panel Right,No Defect (Pass),0.984,0.0,4.29
+INSP-20118,Quarter Panel Right,No Defect (Pass),0.809,0.0,4.43
+INSP-20119,Trunk Lid,Panel Gap Misalignment,0.404,0.93,4.22
+INSP-20120,Roof Pillar,No Defect (Pass),0.94,0.0,4.07
+INSP-20121,Hood,No Defect (Pass),0.976,0.0,4.42
+INSP-20122,Roof Pillar,No Defect (Pass),0.935,0.0,4.45
+INSP-20123,Door Left Front,No Defect (Pass),0.886,0.0,4.09
+INSP-20124,Hood,No Defect (Pass),0.916,0.0,4.1
+INSP-20125,Door Left Front,No Defect (Pass),0.975,0.0,4.13
+INSP-20126,Trunk Lid,No Defect (Pass),0.749,0.0,3.97
+INSP-20127,Trunk Lid,No Defect (Pass),0.89,0.0,4.58
+INSP-20128,Quarter Panel Right,No Defect (Pass),0.853,0.0,4.31
+INSP-20129,Door Left Front,No Defect (Pass),0.974,0.0,5.1
+INSP-20130,Roof Pillar,No Defect (Pass),1.0,0.0,3.77
+INSP-20131,Hood,No Defect (Pass),0.985,0.0,4.34
+INSP-20132,Roof Pillar,Clear-coat Orange Peel,0.852,0.72,3.93
+INSP-20133,Trunk Lid,No Defect (Pass),0.995,0.0,4.62
+INSP-20134,Hood,No Defect (Pass),0.893,0.0,3.87
+INSP-20135,Trunk Lid,No Defect (Pass),0.948,0.0,4.33
+INSP-20136,Trunk Lid,No Defect (Pass),0.807,0.0,3.91
+INSP-20137,Roof Pillar,No Defect (Pass),0.933,0.0,4.28
+INSP-20138,Roof Pillar,No Defect (Pass),0.697,0.0,3.86
+INSP-20139,Door Left Front,No Defect (Pass),0.88,0.0,4.59
+INSP-20140,Quarter Panel Right,No Defect (Pass),0.979,0.0,4.01
+INSP-20141,Roof Pillar,No Defect (Pass),0.961,0.0,4.03
+INSP-20142,Door Left Front,No Defect (Pass),0.943,0.0,4.32
+INSP-20143,Hood,Clear-coat Orange Peel,0.908,0.9,4.45
+INSP-20144,Trunk Lid,No Defect (Pass),0.925,0.0,4.45
+INSP-20145,Hood,No Defect (Pass),0.959,0.0,4.78
+INSP-20146,Door Left Front,No Defect (Pass),0.929,0.0,4.13
+INSP-20147,Trunk Lid,Clear-coat Orange Peel,0.966,0.67,4.48
+INSP-20148,Door Left Front,No Defect (Pass),0.956,0.0,4.36
+INSP-20149,Door Left Front,No Defect (Pass),0.745,0.0,4.23
+INSP-20150,Roof Pillar,No Defect (Pass),0.987,0.0,3.86
+INSP-20151,Quarter Panel Right,Clear-coat Orange Peel,0.598,0.91,4.06
+INSP-20152,Door Left Front,No Defect (Pass),0.757,0.0,4.36
+INSP-20153,Quarter Panel Right,Paint Scratch / Blemish,0.681,0.69,4.25
+INSP-20154,Door Left Front,No Defect (Pass),0.886,0.0,4.2
+INSP-20155,Door Left Front,No Defect (Pass),0.901,0.0,3.98
+INSP-20156,Trunk Lid,No Defect (Pass),0.977,0.0,4.25
+INSP-20157,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.28
+INSP-20158,Roof Pillar,No Defect (Pass),0.976,0.0,4.52
+INSP-20159,Hood,No Defect (Pass),0.873,0.0,4.46
+INSP-20160,Door Left Front,No Defect (Pass),0.834,0.0,4.55
+INSP-20161,Quarter Panel Right,No Defect (Pass),0.525,0.0,4.8
+INSP-20162,Roof Pillar,No Defect (Pass),0.962,0.0,4.39
+INSP-20163,Quarter Panel Right,No Defect (Pass),0.989,0.0,4.19
+INSP-20164,Roof Pillar,No Defect (Pass),0.975,0.0,4.48
+INSP-20165,Quarter Panel Right,No Defect (Pass),0.914,0.0,4.32
+INSP-20166,Trunk Lid,No Defect (Pass),0.899,0.0,4.39
+INSP-20167,Door Left Front,No Defect (Pass),0.899,0.0,4.56
+INSP-20168,Door Left Front,No Defect (Pass),0.928,0.0,4.26
+INSP-20169,Door Left Front,No Defect (Pass),0.816,0.0,4.09
+INSP-20170,Hood,Paint Scratch / Blemish,0.885,0.67,3.86
+INSP-20171,Trunk Lid,No Defect (Pass),0.926,0.0,4.27
+INSP-20172,Quarter Panel Right,No Defect (Pass),0.804,0.0,3.97
+INSP-20173,Trunk Lid,No Defect (Pass),0.898,0.0,4.24
+INSP-20174,Quarter Panel Right,No Defect (Pass),0.999,0.0,4.54
+INSP-20175,Door Left Front,No Defect (Pass),0.922,0.0,4.0
+INSP-20176,Quarter Panel Right,No Defect (Pass),0.754,0.0,4.07
+INSP-20177,Roof Pillar,Panel Gap Misalignment,0.836,0.93,4.24
+INSP-20178,Door Left Front,No Defect (Pass),0.832,0.0,3.81
+INSP-20179,Hood,No Defect (Pass),0.868,0.0,4.28
+INSP-20180,Roof Pillar,No Defect (Pass),0.962,0.0,4.66
+INSP-20181,Hood,No Defect (Pass),0.981,0.0,4.25
+INSP-20182,Roof Pillar,No Defect (Pass),0.907,0.0,4.04
+INSP-20183,Hood,No Defect (Pass),0.93,0.0,4.35
+INSP-20184,Trunk Lid,No Defect (Pass),0.889,0.0,4.65
+INSP-20185,Hood,No Defect (Pass),0.963,0.0,4.66
+INSP-20186,Hood,No Defect (Pass),0.802,0.0,3.89
+INSP-20187,Quarter Panel Right,No Defect (Pass),0.928,0.0,4.36
+INSP-20188,Door Left Front,No Defect (Pass),0.956,0.0,4.31
+INSP-20189,Quarter Panel Right,Paint Scratch / Blemish,0.885,0.72,3.85
+INSP-20190,Quarter Panel Right,Welding Porosity,0.94,0.8,4.04
+INSP-20191,Door Left Front,Welding Porosity,0.892,0.68,4.29
+INSP-20192,Quarter Panel Right,Paint Scratch / Blemish,0.766,0.83,4.19
+INSP-20193,Quarter Panel Right,Panel Gap Misalignment,0.933,0.71,4.51
+INSP-20194,Quarter Panel Right,No Defect (Pass),0.93,0.0,3.85
+INSP-20195,Trunk Lid,No Defect (Pass),0.987,0.0,4.57
+INSP-20196,Trunk Lid,No Defect (Pass),0.992,0.0,4.79
+INSP-20197,Trunk Lid,No Defect (Pass),0.912,0.0,4.38
+INSP-20198,Door Left Front,No Defect (Pass),0.932,0.0,4.36
+INSP-20199,Quarter Panel Right,No Defect (Pass),0.861,0.0,3.72
+INSP-20200,Quarter Panel Right,Paint Scratch / Blemish,0.654,0.9,3.81
+INSP-20201,Quarter Panel Right,No Defect (Pass),0.978,0.0,4.43
+INSP-20202,Hood,No Defect (Pass),0.937,0.0,3.99
+INSP-20203,Hood,No Defect (Pass),0.807,0.0,4.86
+INSP-20204,Roof Pillar,Welding Porosity,0.749,0.75,3.87
+INSP-20205,Door Left Front,No Defect (Pass),0.851,0.0,4.36
+INSP-20206,Door Left Front,No Defect (Pass),0.972,0.0,4.51
+INSP-20207,Hood,No Defect (Pass),0.943,0.0,3.94
+INSP-20208,Roof Pillar,No Defect (Pass),0.934,0.0,4.63
+INSP-20209,Quarter Panel Right,No Defect (Pass),0.963,0.0,4.46
+INSP-20210,Hood,No Defect (Pass),0.831,0.0,4.56
+INSP-20211,Hood,Panel Gap Misalignment,0.806,0.73,4.02
+INSP-20212,Roof Pillar,No Defect (Pass),0.775,0.0,4.41
+INSP-20213,Roof Pillar,No Defect (Pass),0.988,0.0,3.64
+INSP-20214,Hood,No Defect (Pass),0.923,0.0,4.15
+INSP-20215,Trunk Lid,No Defect (Pass),0.946,0.0,4.49
+INSP-20216,Roof Pillar,No Defect (Pass),0.785,0.0,4.17
+INSP-20217,Hood,No Defect (Pass),0.954,0.0,4.33
+INSP-20218,Roof Pillar,No Defect (Pass),0.836,0.0,4.85
+INSP-20219,Trunk Lid,No Defect (Pass),0.936,0.0,4.43
+INSP-20220,Hood,No Defect (Pass),0.867,0.0,4.6
+INSP-20221,Trunk Lid,No Defect (Pass),0.895,0.0,4.33
+INSP-20222,Roof Pillar,No Defect (Pass),0.91,0.0,3.96
+INSP-20223,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.2
+INSP-20224,Trunk Lid,No Defect (Pass),0.983,0.0,3.92
+INSP-20225,Trunk Lid,No Defect (Pass),1.0,0.0,4.31
+INSP-20226,Door Left Front,Paint Scratch / Blemish,0.798,0.84,4.4
+INSP-20227,Door Left Front,No Defect (Pass),0.945,0.0,4.22
+INSP-20228,Door Left Front,No Defect (Pass),0.654,0.0,3.51
+INSP-20229,Door Left Front,No Defect (Pass),0.991,0.0,3.72
+INSP-20230,Roof Pillar,No Defect (Pass),0.931,0.0,3.82
+INSP-20231,Door Left Front,Paint Scratch / Blemish,0.712,0.73,4.37
+INSP-20232,Quarter Panel Right,No Defect (Pass),0.994,0.0,4.77
+INSP-20233,Door Left Front,Paint Scratch / Blemish,0.86,0.85,3.82
+INSP-20234,Door Left Front,No Defect (Pass),0.752,0.0,4.2
+INSP-20235,Roof Pillar,Paint Scratch / Blemish,0.855,0.73,4.75
+INSP-20236,Trunk Lid,No Defect (Pass),0.957,0.0,4.16
+INSP-20237,Trunk Lid,No Defect (Pass),0.818,0.0,3.56
+INSP-20238,Roof Pillar,No Defect (Pass),0.861,0.0,3.9
+INSP-20239,Trunk Lid,No Defect (Pass),0.952,0.0,4.48
+INSP-20240,Quarter Panel Right,No Defect (Pass),0.894,0.0,3.69
+INSP-20241,Door Left Front,No Defect (Pass),0.939,0.0,4.22
+INSP-20242,Roof Pillar,No Defect (Pass),0.949,0.0,4.45
+INSP-20243,Hood,No Defect (Pass),0.985,0.0,4.18
+INSP-20244,Roof Pillar,No Defect (Pass),0.867,0.0,3.97
+INSP-20245,Hood,No Defect (Pass),0.829,0.0,3.72
+INSP-20246,Quarter Panel Right,No Defect (Pass),0.966,0.0,4.56
+INSP-20247,Quarter Panel Right,No Defect (Pass),0.931,0.0,4.73
+INSP-20248,Hood,No Defect (Pass),0.87,0.0,4.77
+INSP-20249,Trunk Lid,No Defect (Pass),0.966,0.0,4.19
+INSP-20250,Door Left Front,No Defect (Pass),0.959,0.0,3.81
+INSP-20251,Roof Pillar,No Defect (Pass),0.925,0.0,4.32
+INSP-20252,Trunk Lid,No Defect (Pass),0.994,0.0,3.97
+INSP-20253,Hood,No Defect (Pass),0.843,0.0,4.05
+INSP-20254,Roof Pillar,No Defect (Pass),0.911,0.0,4.35
+INSP-20255,Quarter Panel Right,No Defect (Pass),0.984,0.0,4.52
+INSP-20256,Trunk Lid,Paint Scratch / Blemish,0.929,0.68,3.88
+INSP-20257,Roof Pillar,No Defect (Pass),0.893,0.0,4.5
+INSP-20258,Roof Pillar,No Defect (Pass),0.927,0.0,3.85
+INSP-20259,Door Left Front,No Defect (Pass),0.955,0.0,4.83
+INSP-20260,Door Left Front,No Defect (Pass),0.916,0.0,3.6
+INSP-20261,Door Left Front,No Defect (Pass),0.981,0.0,4.26
+INSP-20262,Trunk Lid,No Defect (Pass),0.976,0.0,3.94
+INSP-20263,Trunk Lid,No Defect (Pass),0.883,0.0,4.21
+INSP-20264,Door Left Front,No Defect (Pass),0.939,0.0,4.33
+INSP-20265,Hood,No Defect (Pass),0.919,0.0,4.08
+INSP-20266,Quarter Panel Right,No Defect (Pass),0.99,0.0,4.32
+INSP-20267,Trunk Lid,No Defect (Pass),0.994,0.0,4.42
+INSP-20268,Hood,No Defect (Pass),0.801,0.0,4.13
+INSP-20269,Quarter Panel Right,Panel Gap Misalignment,0.829,0.75,4.35
+INSP-20270,Quarter Panel Right,Panel Gap Misalignment,0.914,0.87,3.84
+INSP-20271,Roof Pillar,No Defect (Pass),0.912,0.0,4.64
+INSP-20272,Hood,Paint Scratch / Blemish,0.929,0.93,4.28
+INSP-20273,Door Left Front,No Defect (Pass),0.993,0.0,4.62
+INSP-20274,Roof Pillar,No Defect (Pass),0.853,0.0,4.54
+INSP-20275,Quarter Panel Right,No Defect (Pass),0.906,0.0,4.94
+INSP-20276,Trunk Lid,No Defect (Pass),0.988,0.0,3.72
+INSP-20277,Quarter Panel Right,No Defect (Pass),0.915,0.0,4.26
+INSP-20278,Trunk Lid,No Defect (Pass),0.931,0.0,4.01
+INSP-20279,Hood,No Defect (Pass),0.799,0.0,4.57
+INSP-20280,Quarter Panel Right,No Defect (Pass),0.948,0.0,4.33
+INSP-20281,Hood,Panel Gap Misalignment,0.783,0.89,4.48
+INSP-20282,Quarter Panel Right,No Defect (Pass),0.99,0.0,4.61
+INSP-20283,Door Left Front,No Defect (Pass),0.986,0.0,4.4
+INSP-20284,Hood,No Defect (Pass),0.995,0.0,4.08
+INSP-20285,Door Left Front,No Defect (Pass),1.0,0.0,4.06
+INSP-20286,Roof Pillar,No Defect (Pass),0.962,0.0,5.3
+INSP-20287,Trunk Lid,No Defect (Pass),0.897,0.0,3.79
+INSP-20288,Trunk Lid,No Defect (Pass),0.995,0.0,4.1
+INSP-20289,Hood,No Defect (Pass),0.991,0.0,4.06
+INSP-20290,Roof Pillar,No Defect (Pass),0.672,0.0,4.28
+INSP-20291,Roof Pillar,No Defect (Pass),0.822,0.0,3.71
+INSP-20292,Quarter Panel Right,No Defect (Pass),0.972,0.0,4.0
+INSP-20293,Hood,No Defect (Pass),0.946,0.0,4.23
+INSP-20294,Roof Pillar,No Defect (Pass),1.0,0.0,4.57
+INSP-20295,Hood,No Defect (Pass),0.87,0.0,3.92
+INSP-20296,Quarter Panel Right,No Defect (Pass),0.964,0.0,4.47
+INSP-20297,Trunk Lid,No Defect (Pass),0.84,0.0,4.17
+INSP-20298,Hood,No Defect (Pass),0.962,0.0,4.41
+INSP-20299,Hood,No Defect (Pass),0.982,0.0,4.32
+INSP-20300,Door Left Front,No Defect (Pass),0.954,0.0,4.01
+INSP-20301,Hood,No Defect (Pass),0.938,0.0,4.14
+INSP-20302,Door Left Front,No Defect (Pass),0.82,0.0,4.25
+INSP-20303,Roof Pillar,No Defect (Pass),0.996,0.0,4.42
+INSP-20304,Hood,No Defect (Pass),0.976,0.0,4.34
+INSP-20305,Roof Pillar,No Defect (Pass),0.985,0.0,4.2
+INSP-20306,Hood,No Defect (Pass),0.995,0.0,4.5
+INSP-20307,Hood,Welding Porosity,0.635,0.95,4.36
+INSP-20308,Quarter Panel Right,No Defect (Pass),0.929,0.0,4.4
+INSP-20309,Hood,No Defect (Pass),0.918,0.0,4.84
+INSP-20310,Quarter Panel Right,Clear-coat Orange Peel,0.641,0.75,4.08
+INSP-20311,Roof Pillar,Panel Gap Misalignment,0.928,0.81,4.37
+INSP-20312,Trunk Lid,No Defect (Pass),0.971,0.0,4.64
+INSP-20313,Quarter Panel Right,No Defect (Pass),0.956,0.0,4.25
+INSP-20314,Trunk Lid,No Defect (Pass),0.647,0.0,4.46
+INSP-20315,Hood,No Defect (Pass),0.952,0.0,4.41
+INSP-20316,Quarter Panel Right,No Defect (Pass),0.97,0.0,4.4
+INSP-20317,Quarter Panel Right,No Defect (Pass),0.988,0.0,4.68
+INSP-20318,Quarter Panel Right,No Defect (Pass),0.946,0.0,4.24
+INSP-20319,Roof Pillar,No Defect (Pass),0.615,0.0,4.11
+INSP-20320,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.35
+INSP-20321,Hood,Clear-coat Orange Peel,0.823,0.93,4.36
+INSP-20322,Door Left Front,No Defect (Pass),0.753,0.0,3.88
+INSP-20323,Trunk Lid,Welding Porosity,0.899,0.8,4.26
+INSP-20324,Trunk Lid,No Defect (Pass),0.975,0.0,4.33
+INSP-20325,Roof Pillar,Panel Gap Misalignment,0.785,0.78,4.32
+INSP-20326,Quarter Panel Right,Panel Gap Misalignment,0.908,0.81,4.31
+INSP-20327,Trunk Lid,No Defect (Pass),0.986,0.0,4.09
+INSP-20328,Quarter Panel Right,Panel Gap Misalignment,0.635,0.86,4.22
+INSP-20329,Quarter Panel Right,Clear-coat Orange Peel,0.827,0.72,4.24
+INSP-20330,Door Left Front,No Defect (Pass),0.781,0.0,4.29
+INSP-20331,Trunk Lid,No Defect (Pass),0.955,0.0,4.01
+INSP-20332,Roof Pillar,No Defect (Pass),0.924,0.0,4.56
+INSP-20333,Door Left Front,No Defect (Pass),0.816,0.0,4.2
+INSP-20334,Door Left Front,No Defect (Pass),0.723,0.0,3.79
+INSP-20335,Roof Pillar,No Defect (Pass),0.955,0.0,3.86
+INSP-20336,Door Left Front,No Defect (Pass),0.973,0.0,4.29
+INSP-20337,Roof Pillar,Welding Porosity,0.665,0.9,4.17
+INSP-20338,Roof Pillar,No Defect (Pass),0.841,0.0,3.92
+INSP-20339,Hood,No Defect (Pass),0.891,0.0,3.87
+INSP-20340,Door Left Front,No Defect (Pass),0.907,0.0,4.21
+INSP-20341,Hood,No Defect (Pass),0.894,0.0,4.36
+INSP-20342,Door Left Front,No Defect (Pass),0.942,0.0,4.32
+INSP-20343,Roof Pillar,No Defect (Pass),0.905,0.0,4.05
+INSP-20344,Hood,No Defect (Pass),0.913,0.0,3.91
+INSP-20345,Trunk Lid,Clear-coat Orange Peel,0.734,0.9,4.51
+INSP-20346,Door Left Front,No Defect (Pass),1.0,0.0,3.87
+INSP-20347,Quarter Panel Right,No Defect (Pass),0.928,0.0,4.47
+INSP-20348,Hood,No Defect (Pass),0.98,0.0,4.05
+INSP-20349,Door Left Front,No Defect (Pass),0.929,0.0,4.81
+INSP-20350,Quarter Panel Right,No Defect (Pass),0.989,0.0,4.36
+INSP-20351,Quarter Panel Right,No Defect (Pass),0.772,0.0,3.62
+INSP-20352,Roof Pillar,No Defect (Pass),0.978,0.0,4.47
+INSP-20353,Door Left Front,No Defect (Pass),0.998,0.0,4.42
+INSP-20354,Quarter Panel Right,No Defect (Pass),0.954,0.0,4.64
+INSP-20355,Trunk Lid,No Defect (Pass),0.94,0.0,4.24
+INSP-20356,Hood,Clear-coat Orange Peel,0.904,0.81,3.99
+INSP-20357,Roof Pillar,No Defect (Pass),0.857,0.0,3.95
+INSP-20358,Roof Pillar,No Defect (Pass),0.952,0.0,3.45
+INSP-20359,Hood,No Defect (Pass),0.954,0.0,4.16
+INSP-20360,Trunk Lid,No Defect (Pass),0.833,0.0,3.63
+INSP-20361,Roof Pillar,No Defect (Pass),0.826,0.0,4.08
+INSP-20362,Quarter Panel Right,No Defect (Pass),0.927,0.0,4.21
+INSP-20363,Trunk Lid,No Defect (Pass),0.849,0.0,4.6
+INSP-20364,Door Left Front,No Defect (Pass),0.85,0.0,3.83
+INSP-20365,Roof Pillar,No Defect (Pass),0.731,0.0,3.86
+INSP-20366,Roof Pillar,No Defect (Pass),0.879,0.0,4.07
+INSP-20367,Hood,No Defect (Pass),0.893,0.0,4.47
+INSP-20368,Hood,Paint Scratch / Blemish,0.813,0.75,4.27
+INSP-20369,Quarter Panel Right,No Defect (Pass),0.804,0.0,4.03
+INSP-20370,Door Left Front,No Defect (Pass),0.731,0.0,3.77
+INSP-20371,Door Left Front,No Defect (Pass),0.947,0.0,4.28
+INSP-20372,Trunk Lid,No Defect (Pass),0.95,0.0,4.15
+INSP-20373,Quarter Panel Right,Panel Gap Misalignment,0.87,0.74,3.92
+INSP-20374,Quarter Panel Right,No Defect (Pass),0.909,0.0,4.52
+INSP-20375,Roof Pillar,No Defect (Pass),0.785,0.0,4.06
+INSP-20376,Door Left Front,No Defect (Pass),0.877,0.0,4.11
+INSP-20377,Roof Pillar,No Defect (Pass),0.907,0.0,4.15
+INSP-20378,Quarter Panel Right,No Defect (Pass),0.784,0.0,4.34
+INSP-20379,Door Left Front,No Defect (Pass),0.873,0.0,4.42
+INSP-20380,Trunk Lid,No Defect (Pass),0.91,0.0,4.27
+INSP-20381,Quarter Panel Right,No Defect (Pass),0.572,0.0,4.74
+INSP-20382,Trunk Lid,No Defect (Pass),0.986,0.0,3.97
+INSP-20383,Trunk Lid,No Defect (Pass),0.4,0.0,4.25
+INSP-20384,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.15
+INSP-20385,Door Left Front,No Defect (Pass),0.987,0.0,3.91
+INSP-20386,Door Left Front,No Defect (Pass),0.944,0.0,4.49
+INSP-20387,Hood,No Defect (Pass),0.968,0.0,3.99
+INSP-20388,Door Left Front,No Defect (Pass),0.969,0.0,3.66
+INSP-20389,Hood,No Defect (Pass),0.989,0.0,3.94
+INSP-20390,Hood,No Defect (Pass),0.95,0.0,4.93
+INSP-20391,Roof Pillar,Panel Gap Misalignment,0.791,0.67,4.06
+INSP-20392,Trunk Lid,Panel Gap Misalignment,0.942,0.87,3.43
+INSP-20393,Door Left Front,No Defect (Pass),0.905,0.0,3.65
+INSP-20394,Hood,No Defect (Pass),0.64,0.0,4.36
+INSP-20395,Door Left Front,No Defect (Pass),0.936,0.0,4.07
+INSP-20396,Quarter Panel Right,Clear-coat Orange Peel,0.933,0.77,4.52
+INSP-20397,Door Left Front,No Defect (Pass),0.906,0.0,4.22
+INSP-20398,Trunk Lid,No Defect (Pass),0.967,0.0,3.95
+INSP-20399,Trunk Lid,No Defect (Pass),0.902,0.0,3.61
+INSP-20400,Trunk Lid,No Defect (Pass),0.987,0.0,4.33
+INSP-20401,Roof Pillar,No Defect (Pass),0.977,0.0,3.97
+INSP-20402,Quarter Panel Right,No Defect (Pass),0.949,0.0,4.32
+INSP-20403,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.25
+INSP-20404,Hood,No Defect (Pass),0.895,0.0,4.16
+INSP-20405,Roof Pillar,No Defect (Pass),0.944,0.0,4.41
+INSP-20406,Hood,No Defect (Pass),0.881,0.0,4.01
+INSP-20407,Trunk Lid,Panel Gap Misalignment,0.717,0.88,4.3
+INSP-20408,Roof Pillar,No Defect (Pass),0.87,0.0,4.2
+INSP-20409,Quarter Panel Right,No Defect (Pass),0.997,0.0,3.87
+INSP-20410,Roof Pillar,No Defect (Pass),0.881,0.0,3.92
+INSP-20411,Hood,No Defect (Pass),0.977,0.0,3.78
+INSP-20412,Door Left Front,No Defect (Pass),0.854,0.0,3.97
+INSP-20413,Trunk Lid,No Defect (Pass),0.976,0.0,4.53
+INSP-20414,Hood,No Defect (Pass),0.922,0.0,4.29
+INSP-20415,Door Left Front,No Defect (Pass),0.839,0.0,4.25
+INSP-20416,Door Left Front,No Defect (Pass),0.95,0.0,3.68
+INSP-20417,Hood,No Defect (Pass),0.603,0.0,4.52
+INSP-20418,Roof Pillar,No Defect (Pass),0.822,0.0,4.78
+INSP-20419,Roof Pillar,No Defect (Pass),0.975,0.0,4.76
+INSP-20420,Roof Pillar,No Defect (Pass),0.89,0.0,4.87
+INSP-20421,Door Left Front,Paint Scratch / Blemish,0.707,0.83,4.65
+INSP-20422,Door Left Front,No Defect (Pass),0.971,0.0,4.42
+INSP-20423,Trunk Lid,No Defect (Pass),0.904,0.0,3.81
+INSP-20424,Roof Pillar,No Defect (Pass),0.88,0.0,4.59
+INSP-20425,Hood,Panel Gap Misalignment,0.702,0.9,4.17
+INSP-20426,Quarter Panel Right,No Defect (Pass),0.685,0.0,4.04
+INSP-20427,Door Left Front,No Defect (Pass),0.974,0.0,4.12
+INSP-20428,Quarter Panel Right,No Defect (Pass),0.948,0.0,3.87
+INSP-20429,Quarter Panel Right,No Defect (Pass),0.95,0.0,3.7
+INSP-20430,Door Left Front,Paint Scratch / Blemish,0.773,0.68,3.86
+INSP-20431,Roof Pillar,No Defect (Pass),0.847,0.0,4.43
+INSP-20432,Door Left Front,No Defect (Pass),0.977,0.0,4.32
+INSP-20433,Hood,No Defect (Pass),0.912,0.0,4.19
+INSP-20434,Door Left Front,No Defect (Pass),0.976,0.0,4.18
+INSP-20435,Quarter Panel Right,No Defect (Pass),0.964,0.0,4.07
+INSP-20436,Roof Pillar,No Defect (Pass),0.771,0.0,3.88
+INSP-20437,Trunk Lid,Clear-coat Orange Peel,0.885,0.75,4.28
+INSP-20438,Roof Pillar,No Defect (Pass),0.967,0.0,4.37
+INSP-20439,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.51
+INSP-20440,Door Left Front,No Defect (Pass),0.817,0.0,4.42
+INSP-20441,Hood,No Defect (Pass),0.913,0.0,3.98
+INSP-20442,Roof Pillar,No Defect (Pass),0.855,0.0,3.99
+INSP-20443,Trunk Lid,No Defect (Pass),0.929,0.0,4.18
+INSP-20444,Trunk Lid,No Defect (Pass),0.888,0.0,4.5
+INSP-20445,Door Left Front,No Defect (Pass),0.975,0.0,3.74
+INSP-20446,Hood,No Defect (Pass),0.8,0.0,3.89
+INSP-20447,Trunk Lid,No Defect (Pass),0.967,0.0,3.58
+INSP-20448,Trunk Lid,No Defect (Pass),0.989,0.0,4.27
+INSP-20449,Trunk Lid,No Defect (Pass),0.958,0.0,4.45
+INSP-20450,Quarter Panel Right,No Defect (Pass),0.884,0.0,4.3
+INSP-20451,Hood,No Defect (Pass),0.935,0.0,4.03
+INSP-20452,Hood,No Defect (Pass),0.901,0.0,4.05
+INSP-20453,Hood,No Defect (Pass),0.838,0.0,3.92
+INSP-20454,Quarter Panel Right,No Defect (Pass),0.988,0.0,3.76
+INSP-20455,Quarter Panel Right,No Defect (Pass),0.759,0.0,3.71
+INSP-20456,Door Left Front,No Defect (Pass),0.97,0.0,4.54
+INSP-20457,Door Left Front,No Defect (Pass),0.963,0.0,4.19
+INSP-20458,Hood,No Defect (Pass),0.884,0.0,4.01
+INSP-20459,Roof Pillar,No Defect (Pass),0.934,0.0,4.06
+INSP-20460,Trunk Lid,Clear-coat Orange Peel,0.851,0.91,4.28
+INSP-20461,Door Left Front,No Defect (Pass),0.962,0.0,3.68
+INSP-20462,Roof Pillar,No Defect (Pass),0.973,0.0,4.21
+INSP-20463,Door Left Front,No Defect (Pass),0.995,0.0,4.36
+INSP-20464,Roof Pillar,No Defect (Pass),0.928,0.0,4.37
+INSP-20465,Door Left Front,No Defect (Pass),0.951,0.0,3.88
+INSP-20466,Trunk Lid,Panel Gap Misalignment,0.919,0.82,4.16
+INSP-20467,Trunk Lid,No Defect (Pass),0.974,0.0,4.11
+INSP-20468,Hood,No Defect (Pass),0.802,0.0,4.12
+INSP-20469,Roof Pillar,No Defect (Pass),0.902,0.0,3.8
+INSP-20470,Quarter Panel Right,No Defect (Pass),0.955,0.0,4.19
+INSP-20471,Trunk Lid,No Defect (Pass),0.84,0.0,3.21
+INSP-20472,Hood,Panel Gap Misalignment,0.971,0.78,3.79
+INSP-20473,Trunk Lid,No Defect (Pass),0.992,0.0,4.01
+INSP-20474,Trunk Lid,No Defect (Pass),0.885,0.0,4.28
+INSP-20475,Roof Pillar,No Defect (Pass),0.857,0.0,4.22
+INSP-20476,Roof Pillar,No Defect (Pass),0.92,0.0,4.09
+INSP-20477,Roof Pillar,No Defect (Pass),0.894,0.0,4.19
+INSP-20478,Quarter Panel Right,No Defect (Pass),0.958,0.0,4.57
+INSP-20479,Trunk Lid,Panel Gap Misalignment,0.421,0.76,4.28
+INSP-20480,Door Left Front,No Defect (Pass),0.687,0.0,4.04
+INSP-20481,Roof Pillar,No Defect (Pass),0.946,0.0,4.16
+INSP-20482,Quarter Panel Right,No Defect (Pass),0.71,0.0,4.3
+INSP-20483,Hood,No Defect (Pass),0.979,0.0,3.95
+INSP-20484,Door Left Front,Welding Porosity,0.658,0.66,4.11
+INSP-20485,Door Left Front,No Defect (Pass),0.81,0.0,4.25
+INSP-20486,Door Left Front,No Defect (Pass),0.996,0.0,4.16
+INSP-20487,Roof Pillar,Paint Scratch / Blemish,0.747,0.93,4.18
+INSP-20488,Quarter Panel Right,No Defect (Pass),0.873,0.0,4.12
+INSP-20489,Hood,No Defect (Pass),0.723,0.0,4.44
+INSP-20490,Trunk Lid,Panel Gap Misalignment,0.916,0.76,4.44
+INSP-20491,Quarter Panel Right,No Defect (Pass),0.958,0.0,3.45
+INSP-20492,Roof Pillar,No Defect (Pass),0.935,0.0,4.86
+INSP-20493,Door Left Front,No Defect (Pass),0.956,0.0,4.24
+INSP-20494,Hood,No Defect (Pass),0.908,0.0,4.21
+INSP-20495,Quarter Panel Right,No Defect (Pass),0.955,0.0,4.28
+INSP-20496,Hood,No Defect (Pass),0.963,0.0,3.63
+INSP-20497,Roof Pillar,No Defect (Pass),0.979,0.0,4.57
+INSP-20498,Roof Pillar,No Defect (Pass),0.997,0.0,4.4
+INSP-20499,Quarter Panel Right,No Defect (Pass),0.954,0.0,3.86
+INSP-20500,Door Left Front,No Defect (Pass),0.929,0.0,3.93
+INSP-20501,Trunk Lid,No Defect (Pass),0.821,0.0,4.4
+INSP-20502,Trunk Lid,No Defect (Pass),0.958,0.0,4.35
+INSP-20503,Door Left Front,No Defect (Pass),0.931,0.0,4.34
+INSP-20504,Door Left Front,Paint Scratch / Blemish,0.755,0.68,3.89
+INSP-20505,Roof Pillar,Clear-coat Orange Peel,0.579,0.74,4.15
+INSP-20506,Trunk Lid,No Defect (Pass),0.852,0.0,4.38
+INSP-20507,Hood,No Defect (Pass),0.928,0.0,4.46
+INSP-20508,Door Left Front,Welding Porosity,0.805,0.92,3.92
+INSP-20509,Door Left Front,No Defect (Pass),0.808,0.0,4.1
+INSP-20510,Hood,No Defect (Pass),0.928,0.0,3.97
+INSP-20511,Roof Pillar,Clear-coat Orange Peel,0.747,0.7,3.94
+INSP-20512,Hood,No Defect (Pass),0.988,0.0,4.14
+INSP-20513,Quarter Panel Right,Panel Gap Misalignment,0.86,0.88,4.13
+INSP-20514,Quarter Panel Right,Paint Scratch / Blemish,0.959,0.94,3.67
+INSP-20515,Trunk Lid,No Defect (Pass),0.731,0.0,4.51
+INSP-20516,Hood,No Defect (Pass),0.739,0.0,3.6
+INSP-20517,Hood,No Defect (Pass),0.971,0.0,4.32
+INSP-20518,Trunk Lid,No Defect (Pass),0.992,0.0,4.42
+INSP-20519,Hood,No Defect (Pass),0.943,0.0,4.25
+INSP-20520,Quarter Panel Right,No Defect (Pass),0.954,0.0,4.06
+INSP-20521,Roof Pillar,No Defect (Pass),0.955,0.0,3.96
+INSP-20522,Roof Pillar,No Defect (Pass),0.974,0.0,3.87
+INSP-20523,Hood,No Defect (Pass),0.907,0.0,3.84
+INSP-20524,Roof Pillar,Panel Gap Misalignment,0.606,0.88,4.32
+INSP-20525,Trunk Lid,No Defect (Pass),0.824,0.0,4.77
+INSP-20526,Trunk Lid,No Defect (Pass),0.898,0.0,4.23
+INSP-20527,Trunk Lid,Paint Scratch / Blemish,0.736,0.66,4.64
+INSP-20528,Trunk Lid,No Defect (Pass),0.925,0.0,4.54
+INSP-20529,Quarter Panel Right,No Defect (Pass),0.841,0.0,3.92
+INSP-20530,Trunk Lid,No Defect (Pass),0.909,0.0,4.26
+INSP-20531,Roof Pillar,No Defect (Pass),0.872,0.0,4.35
+INSP-20532,Hood,Paint Scratch / Blemish,0.85,0.7,4.67
+INSP-20533,Hood,No Defect (Pass),0.894,0.0,3.63
+INSP-20534,Door Left Front,No Defect (Pass),0.975,0.0,4.48
+INSP-20535,Door Left Front,No Defect (Pass),0.909,0.0,4.46
+INSP-20536,Quarter Panel Right,No Defect (Pass),0.976,0.0,3.83
+INSP-20537,Trunk Lid,No Defect (Pass),0.928,0.0,4.07
+INSP-20538,Door Left Front,No Defect (Pass),0.89,0.0,3.9
+INSP-20539,Hood,No Defect (Pass),0.935,0.0,3.97
+INSP-20540,Roof Pillar,No Defect (Pass),0.885,0.0,4.42
+INSP-20541,Trunk Lid,No Defect (Pass),0.986,0.0,3.7
+INSP-20542,Quarter Panel Right,No Defect (Pass),0.976,0.0,3.93
+INSP-20543,Quarter Panel Right,No Defect (Pass),0.991,0.0,4.26
+INSP-20544,Hood,No Defect (Pass),0.877,0.0,4.12
+INSP-20545,Quarter Panel Right,No Defect (Pass),0.965,0.0,4.45
+INSP-20546,Trunk Lid,No Defect (Pass),0.962,0.0,4.17
+INSP-20547,Quarter Panel Right,No Defect (Pass),0.895,0.0,3.76
+INSP-20548,Hood,No Defect (Pass),0.858,0.0,4.35
+INSP-20549,Trunk Lid,No Defect (Pass),0.932,0.0,4.58
+INSP-20550,Hood,No Defect (Pass),0.932,0.0,3.97
+INSP-20551,Trunk Lid,No Defect (Pass),1.0,0.0,4.4
+INSP-20552,Hood,No Defect (Pass),1.0,0.0,4.39
+INSP-20553,Roof Pillar,No Defect (Pass),0.971,0.0,3.77
+INSP-20554,Hood,No Defect (Pass),0.823,0.0,4.32
+INSP-20555,Trunk Lid,No Defect (Pass),0.86,0.0,4.31
+INSP-20556,Door Left Front,No Defect (Pass),0.98,0.0,4.55
+INSP-20557,Door Left Front,No Defect (Pass),0.973,0.0,4.5
+INSP-20558,Quarter Panel Right,No Defect (Pass),0.962,0.0,4.28
+INSP-20559,Trunk Lid,Paint Scratch / Blemish,0.795,0.69,3.95
+INSP-20560,Roof Pillar,No Defect (Pass),0.995,0.0,4.25
+INSP-20561,Trunk Lid,Welding Porosity,0.919,0.87,4.08
+INSP-20562,Roof Pillar,No Defect (Pass),0.938,0.0,3.71
+INSP-20563,Quarter Panel Right,No Defect (Pass),0.92,0.0,4.35
+INSP-20564,Quarter Panel Right,No Defect (Pass),0.968,0.0,4.31
+INSP-20565,Trunk Lid,No Defect (Pass),0.874,0.0,4.19
+INSP-20566,Roof Pillar,No Defect (Pass),0.769,0.0,4.61
+INSP-20567,Quarter Panel Right,No Defect (Pass),0.899,0.0,3.54
+INSP-20568,Roof Pillar,No Defect (Pass),0.915,0.0,4.28
+INSP-20569,Trunk Lid,No Defect (Pass),0.848,0.0,4.23
+INSP-20570,Trunk Lid,No Defect (Pass),0.987,0.0,3.88
+INSP-20571,Hood,No Defect (Pass),0.843,0.0,4.18
+INSP-20572,Trunk Lid,No Defect (Pass),0.753,0.0,4.47
+INSP-20573,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.6
+INSP-20574,Quarter Panel Right,No Defect (Pass),0.898,0.0,3.8
+INSP-20575,Roof Pillar,No Defect (Pass),0.95,0.0,3.87
+INSP-20576,Hood,No Defect (Pass),0.972,0.0,4.65
+INSP-20577,Roof Pillar,No Defect (Pass),0.999,0.0,3.76
+INSP-20578,Door Left Front,No Defect (Pass),0.989,0.0,4.11
+INSP-20579,Trunk Lid,No Defect (Pass),0.868,0.0,4.19
+INSP-20580,Hood,No Defect (Pass),0.89,0.0,4.12
+INSP-20581,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.88
+INSP-20582,Roof Pillar,No Defect (Pass),0.967,0.0,4.03
+INSP-20583,Hood,Paint Scratch / Blemish,0.874,0.77,4.4
+INSP-20584,Door Left Front,No Defect (Pass),0.924,0.0,4.41
+INSP-20585,Roof Pillar,No Defect (Pass),0.933,0.0,4.16
+INSP-20586,Quarter Panel Right,No Defect (Pass),0.847,0.0,3.99
+INSP-20587,Door Left Front,No Defect (Pass),0.983,0.0,4.76
+INSP-20588,Door Left Front,No Defect (Pass),0.835,0.0,4.12
+INSP-20589,Quarter Panel Right,No Defect (Pass),0.911,0.0,4.31
+INSP-20590,Trunk Lid,No Defect (Pass),0.956,0.0,3.93
+INSP-20591,Roof Pillar,No Defect (Pass),0.986,0.0,4.1
+INSP-20592,Hood,Paint Scratch / Blemish,0.916,0.82,3.69
+INSP-20593,Hood,No Defect (Pass),0.869,0.0,4.11
+INSP-20594,Hood,No Defect (Pass),0.966,0.0,4.77
+INSP-20595,Quarter Panel Right,No Defect (Pass),0.98,0.0,4.31
+INSP-20596,Door Left Front,No Defect (Pass),0.826,0.0,4.87
+INSP-20597,Roof Pillar,No Defect (Pass),0.972,0.0,4.4
+INSP-20598,Roof Pillar,No Defect (Pass),0.701,0.0,4.06
+INSP-20599,Roof Pillar,Paint Scratch / Blemish,0.818,0.77,4.08
+INSP-20600,Hood,Welding Porosity,0.88,0.84,4.34
+INSP-20601,Trunk Lid,No Defect (Pass),0.992,0.0,4.12
+INSP-20602,Roof Pillar,No Defect (Pass),0.854,0.0,4.39
+INSP-20603,Trunk Lid,No Defect (Pass),0.942,0.0,3.97
+INSP-20604,Door Left Front,No Defect (Pass),0.81,0.0,4.21
+INSP-20605,Trunk Lid,No Defect (Pass),0.97,0.0,3.79
+INSP-20606,Quarter Panel Right,No Defect (Pass),0.958,0.0,4.36
+INSP-20607,Hood,Clear-coat Orange Peel,0.633,0.75,4.06
+INSP-20608,Trunk Lid,No Defect (Pass),0.925,0.0,4.29
+INSP-20609,Quarter Panel Right,No Defect (Pass),0.849,0.0,4.38
+INSP-20610,Hood,Panel Gap Misalignment,0.848,0.88,4.3
+INSP-20611,Hood,No Defect (Pass),0.923,0.0,3.4
+INSP-20612,Quarter Panel Right,No Defect (Pass),0.876,0.0,4.4
+INSP-20613,Quarter Panel Right,Panel Gap Misalignment,0.704,0.67,4.48
+INSP-20614,Hood,No Defect (Pass),0.552,0.0,4.71
+INSP-20615,Roof Pillar,No Defect (Pass),0.99,0.0,4.62
+INSP-20616,Door Left Front,Clear-coat Orange Peel,0.912,0.89,4.01
+INSP-20617,Hood,No Defect (Pass),0.987,0.0,4.64
+INSP-20618,Trunk Lid,No Defect (Pass),0.863,0.0,4.39
+INSP-20619,Hood,No Defect (Pass),0.851,0.0,4.31
+INSP-20620,Door Left Front,No Defect (Pass),0.926,0.0,4.7
+INSP-20621,Door Left Front,No Defect (Pass),0.98,0.0,4.24
+INSP-20622,Quarter Panel Right,No Defect (Pass),0.968,0.0,4.24
+INSP-20623,Hood,No Defect (Pass),0.95,0.0,3.68
+INSP-20624,Door Left Front,No Defect (Pass),0.929,0.0,3.9
+INSP-20625,Quarter Panel Right,No Defect (Pass),0.82,0.0,4.02
+INSP-20626,Hood,No Defect (Pass),0.806,0.0,4.14
+INSP-20627,Roof Pillar,No Defect (Pass),0.848,0.0,3.72
+INSP-20628,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.18
+INSP-20629,Door Left Front,No Defect (Pass),0.926,0.0,4.02
+INSP-20630,Door Left Front,No Defect (Pass),0.968,0.0,4.45
+INSP-20631,Trunk Lid,No Defect (Pass),0.754,0.0,4.29
+INSP-20632,Hood,No Defect (Pass),0.978,0.0,4.1
+INSP-20633,Door Left Front,No Defect (Pass),0.927,0.0,3.97
+INSP-20634,Trunk Lid,No Defect (Pass),0.876,0.0,4.91
+INSP-20635,Quarter Panel Right,No Defect (Pass),0.812,0.0,3.8
+INSP-20636,Hood,No Defect (Pass),0.656,0.0,3.89
+INSP-20637,Quarter Panel Right,No Defect (Pass),0.912,0.0,4.46
+INSP-20638,Trunk Lid,No Defect (Pass),0.956,0.0,3.63
+INSP-20639,Door Left Front,No Defect (Pass),0.717,0.0,4.15
+INSP-20640,Door Left Front,No Defect (Pass),0.885,0.0,3.76
+INSP-20641,Trunk Lid,No Defect (Pass),0.908,0.0,4.07
+INSP-20642,Hood,No Defect (Pass),0.985,0.0,4.65
+INSP-20643,Quarter Panel Right,No Defect (Pass),0.978,0.0,3.8
+INSP-20644,Door Left Front,No Defect (Pass),0.953,0.0,4.22
+INSP-20645,Quarter Panel Right,No Defect (Pass),0.903,0.0,4.33
+INSP-20646,Hood,No Defect (Pass),0.889,0.0,4.21
+INSP-20647,Trunk Lid,No Defect (Pass),0.977,0.0,4.31
+INSP-20648,Quarter Panel Right,No Defect (Pass),0.922,0.0,4.0
+INSP-20649,Trunk Lid,No Defect (Pass),0.765,0.0,3.61
+INSP-20650,Door Left Front,No Defect (Pass),0.948,0.0,4.45
+INSP-20651,Hood,No Defect (Pass),0.847,0.0,4.16
+INSP-20652,Door Left Front,No Defect (Pass),0.93,0.0,4.22
+INSP-20653,Roof Pillar,Panel Gap Misalignment,0.745,0.81,4.7
+INSP-20654,Quarter Panel Right,No Defect (Pass),0.994,0.0,4.44
+INSP-20655,Roof Pillar,No Defect (Pass),0.977,0.0,4.16
+INSP-20656,Quarter Panel Right,No Defect (Pass),0.919,0.0,4.05
+INSP-20657,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.52
+INSP-20658,Door Left Front,No Defect (Pass),0.873,0.0,4.05
+INSP-20659,Hood,Paint Scratch / Blemish,0.826,0.93,4.26
+INSP-20660,Hood,No Defect (Pass),0.954,0.0,4.38
+INSP-20661,Door Left Front,No Defect (Pass),0.762,0.0,4.7
+INSP-20662,Hood,No Defect (Pass),0.926,0.0,3.69
+INSP-20663,Door Left Front,No Defect (Pass),0.942,0.0,4.55
+INSP-20664,Door Left Front,No Defect (Pass),0.876,0.0,3.93
+INSP-20665,Hood,No Defect (Pass),0.887,0.0,3.89
+INSP-20666,Door Left Front,No Defect (Pass),0.661,0.0,3.88
+INSP-20667,Roof Pillar,No Defect (Pass),0.884,0.0,4.46
+INSP-20668,Quarter Panel Right,No Defect (Pass),0.872,0.0,4.47
+INSP-20669,Quarter Panel Right,No Defect (Pass),0.888,0.0,4.21
+INSP-20670,Roof Pillar,No Defect (Pass),0.876,0.0,4.29
+INSP-20671,Door Left Front,No Defect (Pass),0.8,0.0,4.08
+INSP-20672,Quarter Panel Right,No Defect (Pass),0.882,0.0,4.3
+INSP-20673,Door Left Front,No Defect (Pass),0.956,0.0,4.05
+INSP-20674,Hood,No Defect (Pass),0.925,0.0,3.79
+INSP-20675,Hood,Welding Porosity,0.98,0.74,4.5
+INSP-20676,Trunk Lid,No Defect (Pass),0.795,0.0,3.94
+INSP-20677,Hood,No Defect (Pass),0.984,0.0,4.31
+INSP-20678,Hood,No Defect (Pass),0.913,0.0,4.13
+INSP-20679,Quarter Panel Right,No Defect (Pass),0.899,0.0,3.96
+INSP-20680,Roof Pillar,No Defect (Pass),0.942,0.0,4.03
+INSP-20681,Roof Pillar,No Defect (Pass),0.862,0.0,4.54
+INSP-20682,Door Left Front,No Defect (Pass),0.627,0.0,4.86
+INSP-20683,Trunk Lid,No Defect (Pass),0.926,0.0,4.6
+INSP-20684,Quarter Panel Right,No Defect (Pass),0.591,0.0,4.42
+INSP-20685,Trunk Lid,No Defect (Pass),0.717,0.0,4.8
+INSP-20686,Quarter Panel Right,No Defect (Pass),0.913,0.0,4.06
+INSP-20687,Hood,No Defect (Pass),0.968,0.0,4.18
+INSP-20688,Trunk Lid,No Defect (Pass),0.939,0.0,3.9
+INSP-20689,Trunk Lid,Clear-coat Orange Peel,0.728,0.93,4.02
+INSP-20690,Roof Pillar,No Defect (Pass),0.915,0.0,4.21
+INSP-20691,Roof Pillar,No Defect (Pass),0.926,0.0,3.87
+INSP-20692,Roof Pillar,No Defect (Pass),0.977,0.0,3.88
+INSP-20693,Hood,No Defect (Pass),0.962,0.0,4.18
+INSP-20694,Roof Pillar,No Defect (Pass),0.849,0.0,4.26
+INSP-20695,Hood,No Defect (Pass),0.936,0.0,4.26
+INSP-20696,Roof Pillar,No Defect (Pass),0.798,0.0,4.55
+INSP-20697,Trunk Lid,No Defect (Pass),0.997,0.0,3.99
+INSP-20698,Roof Pillar,No Defect (Pass),0.89,0.0,4.18
+INSP-20699,Roof Pillar,No Defect (Pass),0.948,0.0,4.11
+INSP-20700,Door Left Front,No Defect (Pass),0.957,0.0,4.55
+INSP-20701,Hood,No Defect (Pass),0.84,0.0,4.01
+INSP-20702,Quarter Panel Right,No Defect (Pass),0.982,0.0,3.87
+INSP-20703,Trunk Lid,No Defect (Pass),0.984,0.0,3.99
+INSP-20704,Roof Pillar,No Defect (Pass),0.863,0.0,4.07
+INSP-20705,Trunk Lid,No Defect (Pass),0.969,0.0,4.07
+INSP-20706,Roof Pillar,No Defect (Pass),0.982,0.0,4.15
+INSP-20707,Quarter Panel Right,No Defect (Pass),0.815,0.0,3.97
+INSP-20708,Trunk Lid,No Defect (Pass),0.853,0.0,3.94
+INSP-20709,Door Left Front,No Defect (Pass),0.841,0.0,4.01
+INSP-20710,Hood,Welding Porosity,0.894,0.78,4.07
+INSP-20711,Door Left Front,No Defect (Pass),0.969,0.0,3.96
+INSP-20712,Quarter Panel Right,No Defect (Pass),0.884,0.0,4.36
+INSP-20713,Trunk Lid,No Defect (Pass),0.893,0.0,3.79
+INSP-20714,Trunk Lid,No Defect (Pass),0.735,0.0,4.09
+INSP-20715,Quarter Panel Right,No Defect (Pass),0.939,0.0,4.03
+INSP-20716,Quarter Panel Right,No Defect (Pass),0.53,0.0,4.69
+INSP-20717,Hood,No Defect (Pass),0.948,0.0,3.78
+INSP-20718,Door Left Front,No Defect (Pass),0.961,0.0,4.28
+INSP-20719,Door Left Front,No Defect (Pass),0.951,0.0,4.3
+INSP-20720,Trunk Lid,No Defect (Pass),0.945,0.0,3.8
+INSP-20721,Quarter Panel Right,No Defect (Pass),1.0,0.0,3.85
+INSP-20722,Hood,Paint Scratch / Blemish,0.896,0.86,4.13
+INSP-20723,Trunk Lid,No Defect (Pass),0.978,0.0,4.58
+INSP-20724,Trunk Lid,No Defect (Pass),0.939,0.0,4.06
+INSP-20725,Door Left Front,Panel Gap Misalignment,0.874,0.77,4.0
+INSP-20726,Hood,No Defect (Pass),0.938,0.0,4.23
+INSP-20727,Door Left Front,No Defect (Pass),0.997,0.0,4.06
+INSP-20728,Hood,No Defect (Pass),0.952,0.0,3.57
+INSP-20729,Hood,No Defect (Pass),0.914,0.0,3.85
+INSP-20730,Hood,No Defect (Pass),0.926,0.0,4.45
+INSP-20731,Hood,No Defect (Pass),0.889,0.0,4.35
+INSP-20732,Roof Pillar,No Defect (Pass),0.98,0.0,3.85
+INSP-20733,Door Left Front,No Defect (Pass),0.887,0.0,3.56
+INSP-20734,Quarter Panel Right,No Defect (Pass),1.0,0.0,4.46
+INSP-20735,Quarter Panel Right,No Defect (Pass),0.963,0.0,3.91
+INSP-20736,Quarter Panel Right,No Defect (Pass),0.805,0.0,4.65
+INSP-20737,Hood,No Defect (Pass),0.957,0.0,3.74
+INSP-20738,Hood,No Defect (Pass),0.812,0.0,4.18
+INSP-20739,Hood,No Defect (Pass),0.723,0.0,4.26
+INSP-20740,Hood,No Defect (Pass),0.971,0.0,4.16
+INSP-20741,Door Left Front,No Defect (Pass),0.879,0.0,3.88
+INSP-20742,Hood,No Defect (Pass),0.712,0.0,3.97
+INSP-20743,Roof Pillar,No Defect (Pass),0.656,0.0,4.46
+INSP-20744,Quarter Panel Right,No Defect (Pass),0.939,0.0,4.19
+INSP-20745,Door Left Front,No Defect (Pass),0.925,0.0,4.21
+INSP-20746,Quarter Panel Right,No Defect (Pass),0.952,0.0,4.4
+INSP-20747,Trunk Lid,No Defect (Pass),0.87,0.0,4.5
+INSP-20748,Hood,No Defect (Pass),0.949,0.0,3.7
+INSP-20749,Quarter Panel Right,No Defect (Pass),0.746,0.0,4.22
+INSP-20750,Trunk Lid,No Defect (Pass),0.955,0.0,3.87
+INSP-20751,Hood,No Defect (Pass),0.997,0.0,3.97
+INSP-20752,Quarter Panel Right,No Defect (Pass),0.924,0.0,4.29
+INSP-20753,Roof Pillar,No Defect (Pass),0.818,0.0,4.19
+INSP-20754,Hood,Panel Gap Misalignment,0.637,0.94,4.11
+INSP-20755,Trunk Lid,No Defect (Pass),0.747,0.0,4.78
+INSP-20756,Door Left Front,No Defect (Pass),0.967,0.0,4.26
+INSP-20757,Roof Pillar,Paint Scratch / Blemish,0.839,0.84,4.12
+INSP-20758,Roof Pillar,No Defect (Pass),0.945,0.0,3.94
+INSP-20759,Door Left Front,No Defect (Pass),0.971,0.0,4.12
+INSP-20760,Roof Pillar,No Defect (Pass),0.971,0.0,3.69
+INSP-20761,Door Left Front,No Defect (Pass),0.901,0.0,3.96
+INSP-20762,Door Left Front,No Defect (Pass),0.887,0.0,4.04
+INSP-20763,Trunk Lid,No Defect (Pass),0.951,0.0,4.56
+INSP-20764,Trunk Lid,No Defect (Pass),0.972,0.0,4.26
+INSP-20765,Roof Pillar,No Defect (Pass),0.936,0.0,4.18
+INSP-20766,Door Left Front,No Defect (Pass),0.954,0.0,3.89
+INSP-20767,Roof Pillar,No Defect (Pass),0.958,0.0,3.82
+INSP-20768,Roof Pillar,No Defect (Pass),0.91,0.0,4.23
+INSP-20769,Quarter Panel Right,No Defect (Pass),0.88,0.0,4.43
+INSP-20770,Hood,No Defect (Pass),0.9,0.0,4.12
+INSP-20771,Quarter Panel Right,Paint Scratch / Blemish,0.687,0.74,4.12
+INSP-20772,Door Left Front,No Defect (Pass),0.947,0.0,4.01
+INSP-20773,Trunk Lid,No Defect (Pass),0.969,0.0,4.3
+INSP-20774,Trunk Lid,No Defect (Pass),0.755,0.0,3.83
+INSP-20775,Quarter Panel Right,No Defect (Pass),0.531,0.0,3.8
+INSP-20776,Hood,No Defect (Pass),0.975,0.0,4.0
+INSP-20777,Quarter Panel Right,No Defect (Pass),0.857,0.0,4.2
+INSP-20778,Hood,Welding Porosity,0.819,0.73,3.74
+INSP-20779,Quarter Panel Right,No Defect (Pass),0.886,0.0,4.48
+INSP-20780,Door Left Front,No Defect (Pass),0.953,0.0,4.52
+INSP-20781,Quarter Panel Right,No Defect (Pass),0.977,0.0,3.9
+INSP-20782,Door Left Front,No Defect (Pass),0.798,0.0,4.17
+INSP-20783,Roof Pillar,No Defect (Pass),0.953,0.0,4.17
+INSP-20784,Trunk Lid,No Defect (Pass),0.965,0.0,4.36
+INSP-20785,Trunk Lid,No Defect (Pass),0.924,0.0,4.15
+INSP-20786,Door Left Front,Paint Scratch / Blemish,0.916,0.85,4.99
+INSP-20787,Quarter Panel Right,No Defect (Pass),0.926,0.0,4.4
+INSP-20788,Hood,Paint Scratch / Blemish,0.943,0.76,4.34
+INSP-20789,Door Left Front,No Defect (Pass),0.79,0.0,3.96
+INSP-20790,Roof Pillar,No Defect (Pass),0.99,0.0,4.01
+INSP-20791,Trunk Lid,No Defect (Pass),0.853,0.0,4.1
+INSP-20792,Quarter Panel Right,No Defect (Pass),0.872,0.0,4.33
+INSP-20793,Quarter Panel Right,No Defect (Pass),0.857,0.0,4.76
+INSP-20794,Quarter Panel Right,No Defect (Pass),0.543,0.0,4.04
+INSP-20795,Roof Pillar,No Defect (Pass),0.972,0.0,4.24
+INSP-20796,Door Left Front,No Defect (Pass),0.982,0.0,4.32
+INSP-20797,Hood,No Defect (Pass),0.788,0.0,4.11
+INSP-20798,Hood,No Defect (Pass),0.986,0.0,4.73
+INSP-20799,Trunk Lid,No Defect (Pass),0.917,0.0,3.95
+INSP-20800,Hood,No Defect (Pass),0.553,0.0,4.23
+INSP-20801,Trunk Lid,No Defect (Pass),0.824,0.0,4.48
+INSP-20802,Door Left Front,No Defect (Pass),0.927,0.0,4.4
+INSP-20803,Door Left Front,No Defect (Pass),0.937,0.0,4.34
+INSP-20804,Quarter Panel Right,No Defect (Pass),0.753,0.0,4.07
+INSP-20805,Door Left Front,No Defect (Pass),0.955,0.0,4.49
+INSP-20806,Hood,No Defect (Pass),0.926,0.0,4.22
+INSP-20807,Trunk Lid,No Defect (Pass),0.995,0.0,4.59
+INSP-20808,Door Left Front,No Defect (Pass),0.859,0.0,4.33
+INSP-20809,Door Left Front,No Defect (Pass),0.832,0.0,4.67
+INSP-20810,Hood,No Defect (Pass),0.869,0.0,4.09
+INSP-20811,Roof Pillar,No Defect (Pass),0.813,0.0,3.7
+INSP-20812,Quarter Panel Right,No Defect (Pass),0.961,0.0,4.24
+INSP-20813,Roof Pillar,No Defect (Pass),0.985,0.0,4.31
+INSP-20814,Roof Pillar,No Defect (Pass),0.711,0.0,4.11
+INSP-20815,Trunk Lid,No Defect (Pass),0.86,0.0,4.64
+INSP-20816,Door Left Front,No Defect (Pass),0.834,0.0,4.34
+INSP-20817,Door Left Front,No Defect (Pass),0.814,0.0,4.8
+INSP-20818,Hood,No Defect (Pass),0.967,0.0,4.6
+INSP-20819,Door Left Front,No Defect (Pass),0.962,0.0,4.31
+INSP-20820,Trunk Lid,No Defect (Pass),0.966,0.0,4.5
+INSP-20821,Quarter Panel Right,No Defect (Pass),0.998,0.0,4.56
+INSP-20822,Trunk Lid,No Defect (Pass),0.966,0.0,4.42
+INSP-20823,Roof Pillar,No Defect (Pass),0.933,0.0,4.87
+INSP-20824,Door Left Front,No Defect (Pass),0.962,0.0,4.85
+INSP-20825,Roof Pillar,No Defect (Pass),0.891,0.0,4.14
+INSP-20826,Quarter Panel Right,No Defect (Pass),0.941,0.0,4.15
+INSP-20827,Trunk Lid,No Defect (Pass),0.985,0.0,4.61
+INSP-20828,Roof Pillar,No Defect (Pass),0.917,0.0,3.68
+INSP-20829,Trunk Lid,No Defect (Pass),0.959,0.0,4.01
+INSP-20830,Quarter Panel Right,No Defect (Pass),0.905,0.0,4.29
+INSP-20831,Roof Pillar,No Defect (Pass),0.637,0.0,4.18
+INSP-20832,Door Left Front,No Defect (Pass),0.986,0.0,4.21
+INSP-20833,Roof Pillar,No Defect (Pass),0.98,0.0,4.25
+INSP-20834,Quarter Panel Right,No Defect (Pass),0.793,0.0,3.99
+INSP-20835,Hood,No Defect (Pass),0.955,0.0,4.06
+INSP-20836,Hood,No Defect (Pass),0.924,0.0,4.4
+INSP-20837,Roof Pillar,No Defect (Pass),0.968,0.0,4.72
+INSP-20838,Trunk Lid,No Defect (Pass),0.963,0.0,4.75
+INSP-20839,Trunk Lid,No Defect (Pass),0.92,0.0,3.96
+INSP-20840,Quarter Panel Right,Paint Scratch / Blemish,0.856,0.68,3.47
+INSP-20841,Trunk Lid,No Defect (Pass),0.996,0.0,4.33
+INSP-20842,Hood,No Defect (Pass),0.991,0.0,3.77
+INSP-20843,Roof Pillar,Paint Scratch / Blemish,0.847,0.75,3.35
+INSP-20844,Trunk Lid,No Defect (Pass),0.76,0.0,3.85
+INSP-20845,Door Left Front,No Defect (Pass),0.813,0.0,4.15
+INSP-20846,Hood,No Defect (Pass),0.805,0.0,4.65
+INSP-20847,Quarter Panel Right,No Defect (Pass),0.674,0.0,3.96
+INSP-20848,Hood,No Defect (Pass),0.978,0.0,4.08
+INSP-20849,Roof Pillar,No Defect (Pass),0.997,0.0,4.0
+INSP-20850,Door Left Front,No Defect (Pass),0.915,0.0,4.06
+INSP-20851,Hood,No Defect (Pass),0.793,0.0,4.45
+INSP-20852,Hood,No Defect (Pass),0.755,0.0,4.51
+INSP-20853,Quarter Panel Right,No Defect (Pass),0.882,0.0,3.98
+INSP-20854,Trunk Lid,No Defect (Pass),0.871,0.0,4.07
+INSP-20855,Hood,No Defect (Pass),0.954,0.0,4.6
+INSP-20856,Trunk Lid,No Defect (Pass),0.973,0.0,3.91
+INSP-20857,Quarter Panel Right,No Defect (Pass),0.896,0.0,4.26
+INSP-20858,Roof Pillar,No Defect (Pass),0.955,0.0,4.56
+INSP-20859,Trunk Lid,No Defect (Pass),0.676,0.0,4.62
+INSP-20860,Hood,No Defect (Pass),0.953,0.0,4.34
+INSP-20861,Roof Pillar,No Defect (Pass),0.938,0.0,3.64
+INSP-20862,Door Left Front,No Defect (Pass),0.907,0.0,3.93
+INSP-20863,Trunk Lid,No Defect (Pass),0.981,0.0,3.85
+INSP-20864,Trunk Lid,No Defect (Pass),0.912,0.0,4.17
+INSP-20865,Door Left Front,No Defect (Pass),0.924,0.0,4.84
+INSP-20866,Hood,No Defect (Pass),0.974,0.0,4.4
+INSP-20867,Roof Pillar,No Defect (Pass),0.966,0.0,3.89
+INSP-20868,Door Left Front,No Defect (Pass),0.962,0.0,4.46
+INSP-20869,Quarter Panel Right,No Defect (Pass),0.852,0.0,4.72
+INSP-20870,Hood,Welding Porosity,0.829,0.91,4.26
+INSP-20871,Door Left Front,No Defect (Pass),0.749,0.0,3.87
+INSP-20872,Quarter Panel Right,No Defect (Pass),0.955,0.0,4.1
+INSP-20873,Quarter Panel Right,No Defect (Pass),0.881,0.0,4.61
+INSP-20874,Trunk Lid,No Defect (Pass),0.951,0.0,4.23
+INSP-20875,Hood,No Defect (Pass),0.815,0.0,4.15
+INSP-20876,Roof Pillar,No Defect (Pass),0.849,0.0,4.28
+INSP-20877,Trunk Lid,No Defect (Pass),0.979,0.0,4.34
+INSP-20878,Door Left Front,No Defect (Pass),0.934,0.0,4.5
+INSP-20879,Roof Pillar,No Defect (Pass),0.912,0.0,4.58
+INSP-20880,Roof Pillar,No Defect (Pass),0.938,0.0,4.49
+INSP-20881,Roof Pillar,No Defect (Pass),0.802,0.0,4.49
+INSP-20882,Roof Pillar,No Defect (Pass),0.951,0.0,3.85
+INSP-20883,Trunk Lid,No Defect (Pass),0.996,0.0,3.93
+INSP-20884,Trunk Lid,Panel Gap Misalignment,0.677,0.68,4.23
+INSP-20885,Roof Pillar,No Defect (Pass),0.876,0.0,4.53
+INSP-20886,Roof Pillar,No Defect (Pass),0.961,0.0,4.28
+INSP-20887,Trunk Lid,No Defect (Pass),0.921,0.0,4.45
+INSP-20888,Door Left Front,No Defect (Pass),0.817,0.0,4.26
+INSP-20889,Roof Pillar,No Defect (Pass),0.961,0.0,4.1
+INSP-20890,Quarter Panel Right,No Defect (Pass),0.822,0.0,4.45
+INSP-20891,Trunk Lid,No Defect (Pass),0.962,0.0,3.97
+INSP-20892,Roof Pillar,No Defect (Pass),0.986,0.0,3.85
+INSP-20893,Trunk Lid,No Defect (Pass),0.921,0.0,3.51
+INSP-20894,Quarter Panel Right,Welding Porosity,0.63,0.69,4.54
+INSP-20895,Quarter Panel Right,Paint Scratch / Blemish,0.855,0.66,4.21
+INSP-20896,Roof Pillar,No Defect (Pass),0.991,0.0,3.64
+INSP-20897,Door Left Front,No Defect (Pass),0.87,0.0,4.14
+INSP-20898,Quarter Panel Right,No Defect (Pass),0.945,0.0,3.83
+INSP-20899,Roof Pillar,No Defect (Pass),0.916,0.0,4.12
+INSP-20900,Trunk Lid,No Defect (Pass),0.78,0.0,4.0
+INSP-20901,Hood,No Defect (Pass),0.948,0.0,4.07
+INSP-20902,Trunk Lid,No Defect (Pass),0.968,0.0,4.14
+INSP-20903,Quarter Panel Right,No Defect (Pass),0.905,0.0,4.34
+INSP-20904,Roof Pillar,No Defect (Pass),0.995,0.0,4.11
+INSP-20905,Trunk Lid,No Defect (Pass),0.635,0.0,4.11
+INSP-20906,Hood,No Defect (Pass),0.858,0.0,4.12
+INSP-20907,Door Left Front,No Defect (Pass),0.981,0.0,3.95
+INSP-20908,Trunk Lid,Panel Gap Misalignment,0.652,0.69,4.78
+INSP-20909,Trunk Lid,No Defect (Pass),0.987,0.0,4.34
+INSP-20910,Hood,Panel Gap Misalignment,0.855,0.83,4.47
+INSP-20911,Hood,No Defect (Pass),0.996,0.0,4.63
+INSP-20912,Trunk Lid,No Defect (Pass),0.999,0.0,3.89
+INSP-20913,Door Left Front,No Defect (Pass),0.939,0.0,4.37
+INSP-20914,Hood,No Defect (Pass),0.969,0.0,4.24
+INSP-20915,Trunk Lid,No Defect (Pass),0.877,0.0,4.19
+INSP-20916,Door Left Front,No Defect (Pass),0.936,0.0,3.61
+INSP-20917,Hood,No Defect (Pass),0.937,0.0,4.17
+INSP-20918,Roof Pillar,No Defect (Pass),0.932,0.0,4.11
+INSP-20919,Door Left Front,No Defect (Pass),0.927,0.0,4.38
+INSP-20920,Door Left Front,Clear-coat Orange Peel,0.815,0.67,4.0
+INSP-20921,Quarter Panel Right,No Defect (Pass),0.905,0.0,4.12
+INSP-20922,Roof Pillar,No Defect (Pass),0.904,0.0,4.5
+INSP-20923,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.23
+INSP-20924,Door Left Front,No Defect (Pass),0.992,0.0,3.94
+INSP-20925,Trunk Lid,No Defect (Pass),0.856,0.0,4.15
+INSP-20926,Trunk Lid,No Defect (Pass),0.82,0.0,4.14
+INSP-20927,Quarter Panel Right,No Defect (Pass),0.883,0.0,4.01
+INSP-20928,Roof Pillar,No Defect (Pass),0.979,0.0,3.85
+INSP-20929,Door Left Front,No Defect (Pass),0.96,0.0,4.32
+INSP-20930,Quarter Panel Right,Welding Porosity,0.796,0.79,4.45
+INSP-20931,Door Left Front,No Defect (Pass),0.62,0.0,4.22
+INSP-20932,Roof Pillar,No Defect (Pass),0.833,0.0,4.75
+INSP-20933,Roof Pillar,No Defect (Pass),0.942,0.0,4.27
+INSP-20934,Roof Pillar,No Defect (Pass),0.96,0.0,4.03
+INSP-20935,Roof Pillar,No Defect (Pass),0.781,0.0,4.68
+INSP-20936,Trunk Lid,No Defect (Pass),0.907,0.0,4.06
+INSP-20937,Hood,No Defect (Pass),0.816,0.0,4.23
+INSP-20938,Trunk Lid,No Defect (Pass),0.779,0.0,4.02
+INSP-20939,Trunk Lid,No Defect (Pass),0.843,0.0,3.86
+INSP-20940,Trunk Lid,No Defect (Pass),0.994,0.0,3.93
+INSP-20941,Hood,No Defect (Pass),0.855,0.0,4.21
+INSP-20942,Trunk Lid,Paint Scratch / Blemish,0.93,0.76,4.5
+INSP-20943,Trunk Lid,No Defect (Pass),0.962,0.0,4.22
+INSP-20944,Roof Pillar,No Defect (Pass),0.925,0.0,4.29
+INSP-20945,Trunk Lid,No Defect (Pass),0.912,0.0,4.78
+INSP-20946,Roof Pillar,No Defect (Pass),0.952,0.0,4.27
+INSP-20947,Roof Pillar,No Defect (Pass),0.949,0.0,3.81
+INSP-20948,Hood,Paint Scratch / Blemish,0.523,0.66,3.99
+INSP-20949,Trunk Lid,No Defect (Pass),0.981,0.0,4.38
+INSP-20950,Trunk Lid,No Defect (Pass),0.956,0.0,4.08
+INSP-20951,Hood,No Defect (Pass),0.927,0.0,3.99
+INSP-20952,Trunk Lid,Paint Scratch / Blemish,0.649,0.67,4.4
+INSP-20953,Trunk Lid,No Defect (Pass),0.578,0.0,4.88
+INSP-20954,Roof Pillar,Welding Porosity,0.65,0.67,4.04
+INSP-20955,Door Left Front,No Defect (Pass),0.984,0.0,4.32
+INSP-20956,Hood,No Defect (Pass),0.956,0.0,4.47
+INSP-20957,Hood,Paint Scratch / Blemish,0.888,0.8,3.99
+INSP-20958,Roof Pillar,Clear-coat Orange Peel,0.875,0.67,3.79
+INSP-20959,Hood,No Defect (Pass),0.815,0.0,4.58
+INSP-20960,Trunk Lid,No Defect (Pass),0.993,0.0,4.3
+INSP-20961,Trunk Lid,No Defect (Pass),0.766,0.0,4.55
+INSP-20962,Roof Pillar,No Defect (Pass),0.985,0.0,4.75
+INSP-20963,Roof Pillar,No Defect (Pass),0.809,0.0,4.3
+INSP-20964,Door Left Front,No Defect (Pass),0.988,0.0,4.25
+INSP-20965,Door Left Front,No Defect (Pass),0.944,0.0,3.9
+INSP-20966,Trunk Lid,No Defect (Pass),0.986,0.0,3.91
+INSP-20967,Door Left Front,No Defect (Pass),0.966,0.0,4.22
+INSP-20968,Door Left Front,No Defect (Pass),0.975,0.0,4.34
+INSP-20969,Trunk Lid,No Defect (Pass),0.868,0.0,4.86
+INSP-20970,Trunk Lid,No Defect (Pass),0.985,0.0,4.18
+INSP-20971,Hood,No Defect (Pass),0.953,0.0,4.24
+INSP-20972,Door Left Front,No Defect (Pass),0.997,0.0,4.51
+INSP-20973,Door Left Front,No Defect (Pass),0.956,0.0,4.64
+INSP-20974,Hood,No Defect (Pass),0.987,0.0,4.17
+INSP-20975,Door Left Front,No Defect (Pass),0.957,0.0,4.33
+INSP-20976,Door Left Front,No Defect (Pass),0.944,0.0,4.4
+INSP-20977,Roof Pillar,No Defect (Pass),0.728,0.0,4.21
+INSP-20978,Quarter Panel Right,No Defect (Pass),0.962,0.0,4.83
+INSP-20979,Quarter Panel Right,No Defect (Pass),0.781,0.0,3.86
+INSP-20980,Trunk Lid,Welding Porosity,0.937,0.73,4.26
+INSP-20981,Door Left Front,No Defect (Pass),0.88,0.0,3.72
+INSP-20982,Door Left Front,No Defect (Pass),0.978,0.0,4.66
+INSP-20983,Door Left Front,No Defect (Pass),0.917,0.0,4.13
+INSP-20984,Roof Pillar,No Defect (Pass),0.927,0.0,4.32
+INSP-20985,Quarter Panel Right,No Defect (Pass),0.803,0.0,4.52
+INSP-20986,Trunk Lid,Clear-coat Orange Peel,0.969,0.87,4.74
+INSP-20987,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.15
+INSP-20988,Hood,No Defect (Pass),0.907,0.0,4.43
+INSP-20989,Door Left Front,Paint Scratch / Blemish,0.85,0.71,4.04
+INSP-20990,Roof Pillar,Clear-coat Orange Peel,0.919,0.75,4.36
+INSP-20991,Trunk Lid,Paint Scratch / Blemish,0.785,0.89,4.39
+INSP-20992,Trunk Lid,No Defect (Pass),0.841,0.0,4.03
+INSP-20993,Hood,No Defect (Pass),0.932,0.0,4.4
+INSP-20994,Quarter Panel Right,No Defect (Pass),0.861,0.0,4.46
+INSP-20995,Roof Pillar,Paint Scratch / Blemish,0.865,0.7,3.57
+INSP-20996,Roof Pillar,No Defect (Pass),0.744,0.0,4.15
+INSP-20997,Trunk Lid,No Defect (Pass),0.943,0.0,3.84
+INSP-20998,Quarter Panel Right,Panel Gap Misalignment,0.817,0.76,3.78
+INSP-20999,Roof Pillar,No Defect (Pass),0.831,0.0,4.4
+INSP-21000,Quarter Panel Right,No Defect (Pass),0.99,0.0,4.39
+INSP-21001,Trunk Lid,No Defect (Pass),0.999,0.0,3.96
+INSP-21002,Quarter Panel Right,No Defect (Pass),0.807,0.0,4.14
+INSP-21003,Hood,No Defect (Pass),0.934,0.0,4.0
+INSP-21004,Quarter Panel Right,Welding Porosity,0.77,0.86,4.25
+INSP-21005,Trunk Lid,No Defect (Pass),0.412,0.0,4.52
+INSP-21006,Roof Pillar,No Defect (Pass),0.932,0.0,4.57
+INSP-21007,Roof Pillar,No Defect (Pass),0.83,0.0,3.83
+INSP-21008,Roof Pillar,No Defect (Pass),0.961,0.0,4.13
+INSP-21009,Quarter Panel Right,No Defect (Pass),0.934,0.0,4.65
+INSP-21010,Hood,No Defect (Pass),0.845,0.0,4.07
+INSP-21011,Trunk Lid,No Defect (Pass),0.899,0.0,4.79
+INSP-21012,Trunk Lid,No Defect (Pass),0.744,0.0,3.62
+INSP-21013,Quarter Panel Right,No Defect (Pass),0.938,0.0,4.58
+INSP-21014,Hood,No Defect (Pass),0.966,0.0,4.09
+INSP-21015,Quarter Panel Right,No Defect (Pass),0.744,0.0,4.09
+INSP-21016,Trunk Lid,No Defect (Pass),0.537,0.0,3.8
+INSP-21017,Roof Pillar,Welding Porosity,0.83,0.91,4.34
+INSP-21018,Roof Pillar,No Defect (Pass),0.809,0.0,4.24
+INSP-21019,Roof Pillar,No Defect (Pass),0.82,0.0,4.05
+INSP-21020,Quarter Panel Right,No Defect (Pass),0.987,0.0,4.63
+INSP-21021,Door Left Front,No Defect (Pass),0.97,0.0,4.5
+INSP-21022,Roof Pillar,No Defect (Pass),0.887,0.0,4.31
+INSP-21023,Roof Pillar,No Defect (Pass),0.947,0.0,4.08
+INSP-21024,Roof Pillar,No Defect (Pass),0.98,0.0,3.89
+INSP-21025,Hood,No Defect (Pass),0.802,0.0,4.2
+INSP-21026,Roof Pillar,No Defect (Pass),0.741,0.0,3.96
+INSP-21027,Roof Pillar,No Defect (Pass),0.986,0.0,4.43
+INSP-21028,Roof Pillar,No Defect (Pass),0.974,0.0,3.58
+INSP-21029,Hood,No Defect (Pass),0.862,0.0,3.96
+INSP-21030,Quarter Panel Right,No Defect (Pass),0.845,0.0,4.42
+INSP-21031,Hood,No Defect (Pass),0.954,0.0,4.14
+INSP-21032,Quarter Panel Right,No Defect (Pass),0.988,0.0,4.27
+INSP-21033,Quarter Panel Right,No Defect (Pass),0.989,0.0,3.96
+INSP-21034,Quarter Panel Right,No Defect (Pass),0.834,0.0,3.83
+INSP-21035,Quarter Panel Right,No Defect (Pass),0.953,0.0,3.58
+INSP-21036,Trunk Lid,No Defect (Pass),0.943,0.0,4.4
+INSP-21037,Trunk Lid,No Defect (Pass),0.825,0.0,3.89
+INSP-21038,Roof Pillar,No Defect (Pass),0.923,0.0,4.29
+INSP-21039,Trunk Lid,No Defect (Pass),0.871,0.0,4.3
+INSP-21040,Quarter Panel Right,No Defect (Pass),0.758,0.0,3.73
+INSP-21041,Trunk Lid,No Defect (Pass),0.988,0.0,4.63
+INSP-21042,Door Left Front,No Defect (Pass),0.973,0.0,4.19
+INSP-21043,Trunk Lid,No Defect (Pass),0.892,0.0,3.97
+INSP-21044,Door Left Front,No Defect (Pass),0.98,0.0,4.6
+INSP-21045,Door Left Front,Welding Porosity,0.725,0.68,4.26
+INSP-21046,Door Left Front,Paint Scratch / Blemish,0.784,0.88,4.06
+INSP-21047,Door Left Front,No Defect (Pass),0.953,0.0,4.83
+INSP-21048,Roof Pillar,No Defect (Pass),0.888,0.0,4.08
+INSP-21049,Trunk Lid,Welding Porosity,0.867,0.68,4.18
+INSP-21050,Roof Pillar,No Defect (Pass),0.913,0.0,4.35
+INSP-21051,Roof Pillar,No Defect (Pass),0.751,0.0,3.89
+INSP-21052,Trunk Lid,No Defect (Pass),0.989,0.0,4.5
+INSP-21053,Quarter Panel Right,No Defect (Pass),0.904,0.0,4.12
+INSP-21054,Roof Pillar,No Defect (Pass),0.93,0.0,4.11
+INSP-21055,Roof Pillar,No Defect (Pass),0.843,0.0,4.16
+INSP-21056,Hood,No Defect (Pass),0.999,0.0,4.17
+INSP-21057,Quarter Panel Right,No Defect (Pass),0.816,0.0,3.74
+INSP-21058,Roof Pillar,No Defect (Pass),0.955,0.0,4.26
+INSP-21059,Hood,No Defect (Pass),0.981,0.0,3.82
+INSP-21060,Hood,No Defect (Pass),0.864,0.0,3.79
+INSP-21061,Roof Pillar,No Defect (Pass),0.979,0.0,3.69
+INSP-21062,Quarter Panel Right,No Defect (Pass),0.917,0.0,4.11
+INSP-21063,Hood,Clear-coat Orange Peel,0.989,0.69,4.07
+INSP-21064,Trunk Lid,No Defect (Pass),0.94,0.0,4.54
+INSP-21065,Door Left Front,No Defect (Pass),0.958,0.0,4.47
+INSP-21066,Trunk Lid,No Defect (Pass),0.93,0.0,4.29
+INSP-21067,Quarter Panel Right,No Defect (Pass),0.967,0.0,4.59
+INSP-21068,Trunk Lid,No Defect (Pass),0.88,0.0,4.15
+INSP-21069,Door Left Front,No Defect (Pass),0.99,0.0,3.93
+INSP-21070,Quarter Panel Right,Welding Porosity,0.526,0.69,4.44
+INSP-21071,Roof Pillar,No Defect (Pass),0.888,0.0,4.41
+INSP-21072,Trunk Lid,Clear-coat Orange Peel,0.434,0.7,4.36
+INSP-21073,Trunk Lid,No Defect (Pass),0.993,0.0,4.44
+INSP-21074,Quarter Panel Right,No Defect (Pass),0.668,0.0,4.43
+INSP-21075,Quarter Panel Right,No Defect (Pass),0.946,0.0,4.27
+INSP-21076,Roof Pillar,No Defect (Pass),0.856,0.0,3.5
+INSP-21077,Quarter Panel Right,No Defect (Pass),0.719,0.0,4.23
+INSP-21078,Roof Pillar,Panel Gap Misalignment,0.879,0.89,4.86
+INSP-21079,Door Left Front,No Defect (Pass),0.785,0.0,4.05
+INSP-21080,Quarter Panel Right,No Defect (Pass),0.908,0.0,4.23
+INSP-21081,Trunk Lid,No Defect (Pass),0.965,0.0,3.89
+INSP-21082,Trunk Lid,No Defect (Pass),0.949,0.0,4.48
+INSP-21083,Quarter Panel Right,No Defect (Pass),0.947,0.0,4.75
+INSP-21084,Hood,Clear-coat Orange Peel,0.715,0.91,3.92
+INSP-21085,Quarter Panel Right,No Defect (Pass),0.837,0.0,4.04
+INSP-21086,Quarter Panel Right,No Defect (Pass),0.97,0.0,4.26
+INSP-21087,Quarter Panel Right,No Defect (Pass),0.983,0.0,4.85
+INSP-21088,Hood,No Defect (Pass),0.911,0.0,4.14
+INSP-21089,Roof Pillar,No Defect (Pass),0.997,0.0,4.35
+INSP-21090,Door Left Front,No Defect (Pass),0.937,0.0,4.24
+INSP-21091,Trunk Lid,No Defect (Pass),0.996,0.0,4.37
+INSP-21092,Roof Pillar,No Defect (Pass),0.945,0.0,4.12
+INSP-21093,Roof Pillar,No Defect (Pass),0.857,0.0,4.12
+INSP-21094,Door Left Front,No Defect (Pass),0.868,0.0,4.02
+INSP-21095,Door Left Front,No Defect (Pass),0.971,0.0,4.14
+INSP-21096,Roof Pillar,Panel Gap Misalignment,0.625,0.86,3.89
+INSP-21097,Trunk Lid,No Defect (Pass),0.887,0.0,3.97
+INSP-21098,Door Left Front,No Defect (Pass),0.89,0.0,4.16
+INSP-21099,Trunk Lid,No Defect (Pass),0.988,0.0,4.09
+INSP-21100,Door Left Front,No Defect (Pass),0.986,0.0,4.24
+INSP-21101,Quarter Panel Right,No Defect (Pass),1.0,0.0,4.13
+INSP-21102,Hood,No Defect (Pass),0.906,0.0,4.29
+INSP-21103,Hood,No Defect (Pass),0.805,0.0,4.9
+INSP-21104,Door Left Front,No Defect (Pass),0.743,0.0,4.34
+INSP-21105,Quarter Panel Right,No Defect (Pass),0.88,0.0,4.19
+INSP-21106,Hood,Welding Porosity,0.788,0.9,3.88
+INSP-21107,Hood,No Defect (Pass),0.808,0.0,4.32
+INSP-21108,Quarter Panel Right,No Defect (Pass),0.932,0.0,4.67
+INSP-21109,Trunk Lid,No Defect (Pass),0.909,0.0,4.2
+INSP-21110,Trunk Lid,No Defect (Pass),0.972,0.0,4.12
+INSP-21111,Hood,No Defect (Pass),0.962,0.0,4.14
+INSP-21112,Roof Pillar,Panel Gap Misalignment,0.749,0.82,4.35
+INSP-21113,Quarter Panel Right,No Defect (Pass),0.944,0.0,4.37
+INSP-21114,Quarter Panel Right,No Defect (Pass),0.945,0.0,4.28
+INSP-21115,Quarter Panel Right,No Defect (Pass),0.829,0.0,4.38
+INSP-21116,Hood,No Defect (Pass),0.96,0.0,4.63
+INSP-21117,Door Left Front,No Defect (Pass),0.96,0.0,4.61
+INSP-21118,Quarter Panel Right,No Defect (Pass),0.958,0.0,3.87
+INSP-21119,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.51
+INSP-21120,Hood,No Defect (Pass),0.959,0.0,4.1
+INSP-21121,Trunk Lid,No Defect (Pass),0.948,0.0,4.46
+INSP-21122,Trunk Lid,No Defect (Pass),0.995,0.0,4.03
+INSP-21123,Hood,No Defect (Pass),0.615,0.0,4.23
+INSP-21124,Quarter Panel Right,No Defect (Pass),0.798,0.0,4.2
+INSP-21125,Roof Pillar,No Defect (Pass),0.741,0.0,4.72
+INSP-21126,Roof Pillar,Panel Gap Misalignment,0.806,0.84,4.24
+INSP-21127,Hood,No Defect (Pass),0.874,0.0,3.47
+INSP-21128,Roof Pillar,No Defect (Pass),0.863,0.0,4.16
+INSP-21129,Roof Pillar,No Defect (Pass),0.993,0.0,3.58
+INSP-21130,Roof Pillar,No Defect (Pass),0.904,0.0,4.36
+INSP-21131,Roof Pillar,No Defect (Pass),0.799,0.0,4.11
+INSP-21132,Trunk Lid,No Defect (Pass),0.971,0.0,4.08
+INSP-21133,Door Left Front,No Defect (Pass),0.984,0.0,4.76
+INSP-21134,Roof Pillar,No Defect (Pass),0.791,0.0,3.66
+INSP-21135,Quarter Panel Right,No Defect (Pass),0.821,0.0,4.47
+INSP-21136,Door Left Front,Clear-coat Orange Peel,0.874,0.68,3.95
+INSP-21137,Door Left Front,No Defect (Pass),0.716,0.0,4.4
+INSP-21138,Trunk Lid,No Defect (Pass),0.962,0.0,4.16
+INSP-21139,Quarter Panel Right,No Defect (Pass),0.865,0.0,4.1
+INSP-21140,Hood,No Defect (Pass),0.706,0.0,4.34
+INSP-21141,Quarter Panel Right,No Defect (Pass),0.903,0.0,4.16
+INSP-21142,Quarter Panel Right,No Defect (Pass),0.933,0.0,4.14
+INSP-21143,Roof Pillar,No Defect (Pass),0.968,0.0,4.49
+INSP-21144,Hood,No Defect (Pass),0.849,0.0,4.49
+INSP-21145,Hood,No Defect (Pass),0.868,0.0,4.16
+INSP-21146,Door Left Front,No Defect (Pass),0.991,0.0,4.42
+INSP-21147,Roof Pillar,No Defect (Pass),0.952,0.0,4.5
+INSP-21148,Quarter Panel Right,No Defect (Pass),0.958,0.0,4.53
+INSP-21149,Trunk Lid,No Defect (Pass),0.974,0.0,4.04
+INSP-21150,Trunk Lid,No Defect (Pass),0.904,0.0,4.21
+INSP-21151,Hood,No Defect (Pass),0.921,0.0,4.08
+INSP-21152,Hood,No Defect (Pass),0.889,0.0,4.67
+INSP-21153,Door Left Front,No Defect (Pass),0.862,0.0,4.18
+INSP-21154,Trunk Lid,Panel Gap Misalignment,0.856,0.93,4.17
+INSP-21155,Hood,No Defect (Pass),0.922,0.0,3.81
+INSP-21156,Trunk Lid,No Defect (Pass),0.889,0.0,4.32
+INSP-21157,Hood,No Defect (Pass),0.905,0.0,4.22
+INSP-21158,Trunk Lid,No Defect (Pass),0.941,0.0,4.02
+INSP-21159,Quarter Panel Right,No Defect (Pass),0.774,0.0,4.24
+INSP-21160,Hood,Clear-coat Orange Peel,0.85,0.8,3.99
+INSP-21161,Roof Pillar,No Defect (Pass),0.992,0.0,3.88
+INSP-21162,Door Left Front,No Defect (Pass),0.977,0.0,4.24
+INSP-21163,Quarter Panel Right,No Defect (Pass),0.963,0.0,5.04
+INSP-21164,Hood,Panel Gap Misalignment,0.775,0.76,4.54
+INSP-21165,Hood,Panel Gap Misalignment,0.821,0.94,4.32
+INSP-21166,Quarter Panel Right,No Defect (Pass),0.915,0.0,4.28
+INSP-21167,Door Left Front,No Defect (Pass),0.64,0.0,4.5
+INSP-21168,Roof Pillar,No Defect (Pass),0.876,0.0,3.92
+INSP-21169,Trunk Lid,No Defect (Pass),0.876,0.0,4.77
+INSP-21170,Door Left Front,No Defect (Pass),0.987,0.0,4.91
+INSP-21171,Quarter Panel Right,No Defect (Pass),0.692,0.0,3.93
+INSP-21172,Roof Pillar,No Defect (Pass),0.978,0.0,3.95
+INSP-21173,Quarter Panel Right,No Defect (Pass),0.982,0.0,4.12
+INSP-21174,Roof Pillar,Welding Porosity,0.841,0.78,4.55
+INSP-21175,Hood,No Defect (Pass),0.99,0.0,3.63
+INSP-21176,Hood,No Defect (Pass),0.919,0.0,3.65
+INSP-21177,Hood,No Defect (Pass),0.97,0.0,3.93
+INSP-21178,Quarter Panel Right,No Defect (Pass),0.938,0.0,3.93
+INSP-21179,Roof Pillar,No Defect (Pass),0.963,0.0,4.03
+INSP-21180,Trunk Lid,Welding Porosity,0.85,0.77,4.26
+INSP-21181,Trunk Lid,No Defect (Pass),0.828,0.0,4.62
+INSP-21182,Door Left Front,No Defect (Pass),0.998,0.0,4.41
+INSP-21183,Trunk Lid,No Defect (Pass),0.964,0.0,3.89
+INSP-21184,Quarter Panel Right,Paint Scratch / Blemish,0.627,0.73,4.36
+INSP-21185,Roof Pillar,Paint Scratch / Blemish,0.491,0.66,4.1
+INSP-21186,Trunk Lid,No Defect (Pass),0.957,0.0,3.61
+INSP-21187,Roof Pillar,No Defect (Pass),0.921,0.0,4.0
+INSP-21188,Door Left Front,No Defect (Pass),0.89,0.0,4.48
+INSP-21189,Quarter Panel Right,No Defect (Pass),0.807,0.0,4.01
+INSP-21190,Roof Pillar,Clear-coat Orange Peel,0.702,0.71,3.97
+INSP-21191,Roof Pillar,No Defect (Pass),0.785,0.0,4.05
+INSP-21192,Roof Pillar,No Defect (Pass),0.963,0.0,3.74
+INSP-21193,Quarter Panel Right,No Defect (Pass),0.937,0.0,4.08
+INSP-21194,Roof Pillar,No Defect (Pass),0.92,0.0,4.5
+INSP-21195,Quarter Panel Right,No Defect (Pass),0.984,0.0,4.21
+INSP-21196,Door Left Front,No Defect (Pass),0.819,0.0,4.19
+INSP-21197,Hood,No Defect (Pass),0.966,0.0,4.12
+INSP-21198,Hood,Panel Gap Misalignment,0.861,0.88,4.32
+INSP-21199,Hood,No Defect (Pass),0.903,0.0,4.36
+INSP-21200,Trunk Lid,No Defect (Pass),0.845,0.0,4.38
+INSP-21201,Hood,No Defect (Pass),0.981,0.0,4.07
+INSP-21202,Trunk Lid,No Defect (Pass),0.873,0.0,4.31
+INSP-21203,Roof Pillar,No Defect (Pass),0.838,0.0,3.83
+INSP-21204,Roof Pillar,Panel Gap Misalignment,0.853,0.74,3.81
+INSP-21205,Door Left Front,No Defect (Pass),0.9,0.0,4.03
+INSP-21206,Hood,No Defect (Pass),0.957,0.0,4.15
+INSP-21207,Hood,No Defect (Pass),0.953,0.0,4.56
+INSP-21208,Trunk Lid,Panel Gap Misalignment,0.846,0.94,3.91
+INSP-21209,Quarter Panel Right,No Defect (Pass),0.769,0.0,4.09
+INSP-21210,Roof Pillar,No Defect (Pass),0.853,0.0,4.17
+INSP-21211,Door Left Front,No Defect (Pass),0.836,0.0,4.29
+INSP-21212,Roof Pillar,No Defect (Pass),0.834,0.0,4.22
+INSP-21213,Roof Pillar,No Defect (Pass),0.902,0.0,3.54
+INSP-21214,Door Left Front,No Defect (Pass),0.931,0.0,4.11
+INSP-21215,Trunk Lid,No Defect (Pass),0.938,0.0,3.76
+INSP-21216,Hood,No Defect (Pass),0.888,0.0,3.72
+INSP-21217,Roof Pillar,No Defect (Pass),0.997,0.0,4.27
+INSP-21218,Door Left Front,No Defect (Pass),0.909,0.0,4.37
+INSP-21219,Trunk Lid,No Defect (Pass),0.986,0.0,4.08
+INSP-21220,Door Left Front,No Defect (Pass),0.968,0.0,4.76
+INSP-21221,Roof Pillar,No Defect (Pass),0.832,0.0,4.24
+INSP-21222,Trunk Lid,No Defect (Pass),0.971,0.0,4.77
+INSP-21223,Door Left Front,No Defect (Pass),0.962,0.0,3.49
+INSP-21224,Trunk Lid,Panel Gap Misalignment,0.74,0.66,4.0
+INSP-21225,Trunk Lid,No Defect (Pass),0.859,0.0,3.95
+INSP-21226,Trunk Lid,No Defect (Pass),0.98,0.0,3.97
+INSP-21227,Quarter Panel Right,No Defect (Pass),0.956,0.0,3.58
+INSP-21228,Roof Pillar,Clear-coat Orange Peel,0.712,0.8,4.49
+INSP-21229,Hood,Paint Scratch / Blemish,0.874,0.8,4.49
+INSP-21230,Roof Pillar,No Defect (Pass),0.964,0.0,4.8
+INSP-21231,Hood,No Defect (Pass),0.973,0.0,4.24
+INSP-21232,Roof Pillar,No Defect (Pass),0.849,0.0,4.53
+INSP-21233,Trunk Lid,No Defect (Pass),0.995,0.0,4.23
+INSP-21234,Quarter Panel Right,No Defect (Pass),0.853,0.0,4.79
+INSP-21235,Trunk Lid,No Defect (Pass),0.905,0.0,4.02
+INSP-21236,Hood,No Defect (Pass),0.994,0.0,4.06
+INSP-21237,Roof Pillar,No Defect (Pass),0.874,0.0,3.89
+INSP-21238,Trunk Lid,No Defect (Pass),0.753,0.0,3.74
+INSP-21239,Door Left Front,No Defect (Pass),0.959,0.0,3.99
+INSP-21240,Trunk Lid,No Defect (Pass),0.999,0.0,4.64
+INSP-21241,Quarter Panel Right,No Defect (Pass),0.95,0.0,4.43
+INSP-21242,Quarter Panel Right,No Defect (Pass),0.885,0.0,4.29
+INSP-21243,Roof Pillar,No Defect (Pass),0.872,0.0,4.35
+INSP-21244,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.34
+INSP-21245,Hood,No Defect (Pass),0.961,0.0,4.56
+INSP-21246,Hood,No Defect (Pass),0.964,0.0,4.67
+INSP-21247,Roof Pillar,No Defect (Pass),0.855,0.0,4.03
+INSP-21248,Trunk Lid,No Defect (Pass),0.968,0.0,4.28
+INSP-21249,Roof Pillar,Paint Scratch / Blemish,0.83,0.92,4.03
+INSP-21250,Quarter Panel Right,No Defect (Pass),0.904,0.0,4.44
+INSP-21251,Hood,No Defect (Pass),0.976,0.0,4.38
+INSP-21252,Roof Pillar,No Defect (Pass),0.914,0.0,4.27
+INSP-21253,Roof Pillar,No Defect (Pass),0.807,0.0,4.18
+INSP-21254,Roof Pillar,No Defect (Pass),0.977,0.0,4.29
+INSP-21255,Trunk Lid,No Defect (Pass),0.971,0.0,3.99
+INSP-21256,Quarter Panel Right,No Defect (Pass),0.834,0.0,3.69
+INSP-21257,Roof Pillar,No Defect (Pass),0.869,0.0,4.09
+INSP-21258,Quarter Panel Right,No Defect (Pass),0.783,0.0,4.35
+INSP-21259,Quarter Panel Right,No Defect (Pass),0.944,0.0,4.02
+INSP-21260,Door Left Front,No Defect (Pass),0.847,0.0,3.32
+INSP-21261,Hood,No Defect (Pass),0.912,0.0,4.1
+INSP-21262,Roof Pillar,No Defect (Pass),0.969,0.0,4.98
+INSP-21263,Door Left Front,No Defect (Pass),0.92,0.0,4.68
+INSP-21264,Quarter Panel Right,No Defect (Pass),0.936,0.0,4.13
+INSP-21265,Quarter Panel Right,Welding Porosity,0.59,0.95,4.36
+INSP-21266,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.62
+INSP-21267,Roof Pillar,No Defect (Pass),0.981,0.0,4.37
+INSP-21268,Roof Pillar,No Defect (Pass),0.883,0.0,4.23
+INSP-21269,Hood,No Defect (Pass),0.864,0.0,4.28
+INSP-21270,Door Left Front,No Defect (Pass),0.901,0.0,3.69
+INSP-21271,Door Left Front,No Defect (Pass),0.791,0.0,4.22
+INSP-21272,Quarter Panel Right,No Defect (Pass),0.998,0.0,3.99
+INSP-21273,Door Left Front,Welding Porosity,0.815,0.93,4.31
+INSP-21274,Trunk Lid,No Defect (Pass),0.715,0.0,3.99
+INSP-21275,Trunk Lid,No Defect (Pass),0.953,0.0,4.48
+INSP-21276,Door Left Front,No Defect (Pass),0.912,0.0,4.12
+INSP-21277,Trunk Lid,No Defect (Pass),0.948,0.0,4.1
+INSP-21278,Trunk Lid,No Defect (Pass),0.684,0.0,4.46
+INSP-21279,Roof Pillar,No Defect (Pass),0.836,0.0,3.73
+INSP-21280,Door Left Front,No Defect (Pass),0.854,0.0,3.87
+INSP-21281,Roof Pillar,No Defect (Pass),0.956,0.0,4.13
+INSP-21282,Door Left Front,No Defect (Pass),0.961,0.0,4.27
+INSP-21283,Hood,No Defect (Pass),0.933,0.0,3.89
+INSP-21284,Roof Pillar,No Defect (Pass),0.993,0.0,3.99
+INSP-21285,Trunk Lid,No Defect (Pass),0.901,0.0,4.37
+INSP-21286,Hood,No Defect (Pass),0.904,0.0,4.59
+INSP-21287,Door Left Front,No Defect (Pass),0.836,0.0,5.04
+INSP-21288,Door Left Front,No Defect (Pass),0.996,0.0,3.49
+INSP-21289,Quarter Panel Right,No Defect (Pass),0.676,0.0,4.17
+INSP-21290,Hood,Paint Scratch / Blemish,0.83,0.69,4.87
+INSP-21291,Hood,No Defect (Pass),0.863,0.0,4.43
+INSP-21292,Door Left Front,No Defect (Pass),0.59,0.0,4.29
+INSP-21293,Quarter Panel Right,No Defect (Pass),0.811,0.0,3.77
+INSP-21294,Roof Pillar,No Defect (Pass),0.901,0.0,4.3
+INSP-21295,Door Left Front,Welding Porosity,0.985,0.71,4.59
+INSP-21296,Roof Pillar,No Defect (Pass),0.992,0.0,4.17
+INSP-21297,Hood,No Defect (Pass),0.774,0.0,4.16
+INSP-21298,Door Left Front,No Defect (Pass),0.948,0.0,4.43
+INSP-21299,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.18
+INSP-21300,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.32
+INSP-21301,Hood,No Defect (Pass),0.941,0.0,3.76
+INSP-21302,Roof Pillar,No Defect (Pass),0.922,0.0,4.27
+INSP-21303,Hood,No Defect (Pass),0.874,0.0,4.41
+INSP-21304,Roof Pillar,No Defect (Pass),0.999,0.0,4.13
+INSP-21305,Trunk Lid,No Defect (Pass),0.926,0.0,4.6
+INSP-21306,Door Left Front,No Defect (Pass),0.892,0.0,4.64
+INSP-21307,Roof Pillar,No Defect (Pass),0.911,0.0,4.59
+INSP-21308,Trunk Lid,No Defect (Pass),0.89,0.0,4.34
+INSP-21309,Roof Pillar,No Defect (Pass),0.806,0.0,4.25
+INSP-21310,Quarter Panel Right,Paint Scratch / Blemish,0.75,0.81,3.76
+INSP-21311,Hood,No Defect (Pass),0.786,0.0,3.99
+INSP-21312,Trunk Lid,No Defect (Pass),0.864,0.0,4.12
+INSP-21313,Hood,No Defect (Pass),0.963,0.0,4.6
+INSP-21314,Quarter Panel Right,No Defect (Pass),0.597,0.0,4.21
+INSP-21315,Roof Pillar,No Defect (Pass),0.851,0.0,3.73
+INSP-21316,Hood,No Defect (Pass),0.993,0.0,3.75
+INSP-21317,Roof Pillar,No Defect (Pass),0.966,0.0,4.18
+INSP-21318,Trunk Lid,No Defect (Pass),0.939,0.0,3.78
+INSP-21319,Quarter Panel Right,No Defect (Pass),0.608,0.0,4.28
+INSP-21320,Hood,Panel Gap Misalignment,0.753,0.69,4.29
+INSP-21321,Trunk Lid,No Defect (Pass),0.896,0.0,4.08
+INSP-21322,Hood,No Defect (Pass),0.901,0.0,4.35
+INSP-21323,Door Left Front,No Defect (Pass),0.998,0.0,4.42
+INSP-21324,Hood,No Defect (Pass),0.931,0.0,4.36
+INSP-21325,Hood,No Defect (Pass),0.776,0.0,4.16
+INSP-21326,Hood,No Defect (Pass),0.982,0.0,3.88
+INSP-21327,Trunk Lid,No Defect (Pass),0.847,0.0,4.35
+INSP-21328,Roof Pillar,No Defect (Pass),0.997,0.0,3.94
+INSP-21329,Trunk Lid,No Defect (Pass),0.945,0.0,3.91
+INSP-21330,Hood,No Defect (Pass),0.942,0.0,3.81
+INSP-21331,Quarter Panel Right,No Defect (Pass),0.984,0.0,3.98
+INSP-21332,Quarter Panel Right,No Defect (Pass),0.675,0.0,4.82
+INSP-21333,Door Left Front,Welding Porosity,0.822,0.89,4.72
+INSP-21334,Quarter Panel Right,Panel Gap Misalignment,0.657,0.69,3.99
+INSP-21335,Quarter Panel Right,No Defect (Pass),0.997,0.0,4.43
+INSP-21336,Trunk Lid,No Defect (Pass),0.778,0.0,4.12
+INSP-21337,Hood,No Defect (Pass),0.816,0.0,4.14
+INSP-21338,Door Left Front,No Defect (Pass),0.926,0.0,4.2
+INSP-21339,Hood,No Defect (Pass),0.891,0.0,3.63
+INSP-21340,Hood,No Defect (Pass),0.919,0.0,4.27
+INSP-21341,Hood,No Defect (Pass),0.943,0.0,4.54
+INSP-21342,Quarter Panel Right,No Defect (Pass),0.967,0.0,4.12
+INSP-21343,Door Left Front,Paint Scratch / Blemish,0.85,0.69,4.54
+INSP-21344,Quarter Panel Right,No Defect (Pass),0.955,0.0,4.42
+INSP-21345,Hood,No Defect (Pass),0.969,0.0,4.28
+INSP-21346,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.24
+INSP-21347,Hood,No Defect (Pass),0.899,0.0,4.17
+INSP-21348,Door Left Front,Panel Gap Misalignment,0.942,0.71,4.21
+INSP-21349,Hood,No Defect (Pass),0.888,0.0,4.53
+INSP-21350,Door Left Front,No Defect (Pass),0.872,0.0,4.36
+INSP-21351,Quarter Panel Right,No Defect (Pass),0.985,0.0,3.65
+INSP-21352,Quarter Panel Right,No Defect (Pass),0.862,0.0,4.23
+INSP-21353,Quarter Panel Right,No Defect (Pass),0.942,0.0,4.15
+INSP-21354,Hood,No Defect (Pass),0.867,0.0,4.1
+INSP-21355,Roof Pillar,No Defect (Pass),0.916,0.0,4.05
+INSP-21356,Quarter Panel Right,No Defect (Pass),0.926,0.0,4.78
+INSP-21357,Hood,No Defect (Pass),0.994,0.0,4.08
+INSP-21358,Quarter Panel Right,No Defect (Pass),0.936,0.0,4.07
+INSP-21359,Roof Pillar,No Defect (Pass),0.995,0.0,3.72
+INSP-21360,Hood,No Defect (Pass),0.709,0.0,4.43
+INSP-21361,Quarter Panel Right,No Defect (Pass),0.961,0.0,4.54
+INSP-21362,Door Left Front,No Defect (Pass),0.867,0.0,4.11
+INSP-21363,Quarter Panel Right,No Defect (Pass),0.784,0.0,4.3
+INSP-21364,Roof Pillar,No Defect (Pass),0.889,0.0,4.22
+INSP-21365,Hood,Paint Scratch / Blemish,0.925,0.69,3.83
+INSP-21366,Roof Pillar,No Defect (Pass),0.893,0.0,4.6
+INSP-21367,Trunk Lid,No Defect (Pass),0.965,0.0,4.91
+INSP-21368,Hood,No Defect (Pass),0.846,0.0,4.36
+INSP-21369,Roof Pillar,No Defect (Pass),0.945,0.0,4.48
+INSP-21370,Roof Pillar,No Defect (Pass),0.954,0.0,4.36
+INSP-21371,Hood,No Defect (Pass),0.84,0.0,4.18
+INSP-21372,Hood,Welding Porosity,0.895,0.92,4.61
+INSP-21373,Roof Pillar,No Defect (Pass),0.93,0.0,4.01
+INSP-21374,Quarter Panel Right,No Defect (Pass),0.92,0.0,3.95
+INSP-21375,Roof Pillar,No Defect (Pass),0.865,0.0,4.1
+INSP-21376,Roof Pillar,No Defect (Pass),0.836,0.0,4.68
+INSP-21377,Hood,No Defect (Pass),0.966,0.0,4.37
+INSP-21378,Door Left Front,No Defect (Pass),0.894,0.0,4.7
+INSP-21379,Trunk Lid,No Defect (Pass),0.852,0.0,3.69
+INSP-21380,Hood,No Defect (Pass),0.944,0.0,5.04
+INSP-21381,Roof Pillar,No Defect (Pass),0.996,0.0,4.24
+INSP-21382,Roof Pillar,No Defect (Pass),0.956,0.0,4.09
+INSP-21383,Door Left Front,No Defect (Pass),0.914,0.0,3.82
+INSP-21384,Trunk Lid,No Defect (Pass),0.987,0.0,4.31
+INSP-21385,Quarter Panel Right,No Defect (Pass),0.931,0.0,4.45
+INSP-21386,Roof Pillar,No Defect (Pass),0.855,0.0,4.61
+INSP-21387,Trunk Lid,Panel Gap Misalignment,0.851,0.71,3.93
+INSP-21388,Trunk Lid,No Defect (Pass),0.851,0.0,4.46
+INSP-21389,Roof Pillar,No Defect (Pass),0.865,0.0,4.34
+INSP-21390,Hood,No Defect (Pass),0.939,0.0,3.68
+INSP-21391,Hood,Panel Gap Misalignment,0.69,0.72,3.95
+INSP-21392,Door Left Front,No Defect (Pass),0.682,0.0,3.88
+INSP-21393,Quarter Panel Right,No Defect (Pass),0.611,0.0,4.33
+INSP-21394,Trunk Lid,Panel Gap Misalignment,0.629,0.88,4.2
+INSP-21395,Hood,Welding Porosity,0.689,0.89,4.09
+INSP-21396,Quarter Panel Right,No Defect (Pass),0.887,0.0,4.61
+INSP-21397,Roof Pillar,No Defect (Pass),0.808,0.0,4.55
+INSP-21398,Trunk Lid,Paint Scratch / Blemish,0.816,0.8,3.95
+INSP-21399,Roof Pillar,No Defect (Pass),0.937,0.0,3.82
+INSP-21400,Hood,No Defect (Pass),0.98,0.0,4.46
+INSP-21401,Roof Pillar,No Defect (Pass),0.937,0.0,4.35
+INSP-21402,Hood,No Defect (Pass),0.895,0.0,4.51
+INSP-21403,Trunk Lid,No Defect (Pass),0.839,0.0,4.05
+INSP-21404,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.24
+INSP-21405,Trunk Lid,No Defect (Pass),0.959,0.0,4.48
+INSP-21406,Quarter Panel Right,Paint Scratch / Blemish,0.724,0.83,4.35
+INSP-21407,Door Left Front,Welding Porosity,0.852,0.85,4.03
+INSP-21408,Roof Pillar,No Defect (Pass),0.869,0.0,3.61
+INSP-21409,Quarter Panel Right,No Defect (Pass),0.875,0.0,4.77
+INSP-21410,Door Left Front,No Defect (Pass),0.844,0.0,4.0
+INSP-21411,Door Left Front,No Defect (Pass),0.971,0.0,4.15
+INSP-21412,Quarter Panel Right,No Defect (Pass),0.838,0.0,4.15
+INSP-21413,Roof Pillar,No Defect (Pass),0.618,0.0,3.82
+INSP-21414,Quarter Panel Right,Paint Scratch / Blemish,0.779,0.89,4.46
+INSP-21415,Quarter Panel Right,No Defect (Pass),0.909,0.0,4.29
+INSP-21416,Quarter Panel Right,Welding Porosity,0.905,0.8,3.99
+INSP-21417,Roof Pillar,No Defect (Pass),0.966,0.0,3.74
+INSP-21418,Door Left Front,Paint Scratch / Blemish,0.703,0.95,4.05
+INSP-21419,Quarter Panel Right,No Defect (Pass),0.965,0.0,4.59
+INSP-21420,Hood,No Defect (Pass),0.743,0.0,3.97
+INSP-21421,Trunk Lid,No Defect (Pass),0.898,0.0,4.31
+INSP-21422,Hood,No Defect (Pass),0.981,0.0,4.64
+INSP-21423,Hood,No Defect (Pass),0.963,0.0,4.14
+INSP-21424,Door Left Front,Clear-coat Orange Peel,0.848,0.76,4.22
+INSP-21425,Quarter Panel Right,No Defect (Pass),0.985,0.0,4.49
+INSP-21426,Door Left Front,No Defect (Pass),0.991,0.0,4.43
+INSP-21427,Roof Pillar,No Defect (Pass),0.957,0.0,3.76
+INSP-21428,Quarter Panel Right,No Defect (Pass),0.801,0.0,4.42
+INSP-21429,Roof Pillar,No Defect (Pass),0.803,0.0,4.66
+INSP-21430,Door Left Front,No Defect (Pass),0.966,0.0,4.14
+INSP-21431,Door Left Front,No Defect (Pass),0.956,0.0,4.04
+INSP-21432,Roof Pillar,No Defect (Pass),0.953,0.0,4.53
+INSP-21433,Quarter Panel Right,No Defect (Pass),0.978,0.0,4.09
+INSP-21434,Quarter Panel Right,No Defect (Pass),0.67,0.0,4.24
+INSP-21435,Roof Pillar,No Defect (Pass),0.824,0.0,4.36
+INSP-21436,Trunk Lid,No Defect (Pass),0.959,0.0,3.85
+INSP-21437,Roof Pillar,No Defect (Pass),0.963,0.0,4.18
+INSP-21438,Door Left Front,Panel Gap Misalignment,0.665,0.75,4.1
+INSP-21439,Roof Pillar,Welding Porosity,0.872,0.86,4.11
+INSP-21440,Quarter Panel Right,No Defect (Pass),0.887,0.0,4.28
+INSP-21441,Roof Pillar,No Defect (Pass),0.989,0.0,4.1
+INSP-21442,Trunk Lid,No Defect (Pass),0.886,0.0,4.73
+INSP-21443,Door Left Front,No Defect (Pass),0.88,0.0,4.36
+INSP-21444,Hood,No Defect (Pass),0.982,0.0,4.13
+INSP-21445,Trunk Lid,No Defect (Pass),0.863,0.0,4.25
+INSP-21446,Roof Pillar,No Defect (Pass),0.801,0.0,3.94
+INSP-21447,Roof Pillar,No Defect (Pass),0.865,0.0,4.27
+INSP-21448,Trunk Lid,No Defect (Pass),0.864,0.0,4.03
+INSP-21449,Roof Pillar,No Defect (Pass),0.833,0.0,3.99
+INSP-21450,Quarter Panel Right,No Defect (Pass),0.823,0.0,4.35
+INSP-21451,Trunk Lid,No Defect (Pass),0.904,0.0,4.78
+INSP-21452,Door Left Front,No Defect (Pass),0.928,0.0,3.81
+INSP-21453,Roof Pillar,No Defect (Pass),0.896,0.0,4.51
+INSP-21454,Roof Pillar,No Defect (Pass),0.864,0.0,3.92
+INSP-21455,Trunk Lid,No Defect (Pass),0.981,0.0,3.86
+INSP-21456,Roof Pillar,No Defect (Pass),0.671,0.0,4.46
+INSP-21457,Hood,No Defect (Pass),0.903,0.0,4.31
+INSP-21458,Quarter Panel Right,Welding Porosity,0.631,0.73,3.78
+INSP-21459,Roof Pillar,No Defect (Pass),0.902,0.0,4.0
+INSP-21460,Roof Pillar,No Defect (Pass),0.862,0.0,4.23
+INSP-21461,Trunk Lid,No Defect (Pass),0.895,0.0,4.81
+INSP-21462,Quarter Panel Right,No Defect (Pass),0.972,0.0,4.48
+INSP-21463,Door Left Front,Welding Porosity,0.839,0.94,4.29
+INSP-21464,Door Left Front,No Defect (Pass),0.597,0.0,3.78
+INSP-21465,Hood,No Defect (Pass),0.977,0.0,4.66
+INSP-21466,Trunk Lid,No Defect (Pass),0.973,0.0,4.1
+INSP-21467,Door Left Front,No Defect (Pass),0.987,0.0,3.9
+INSP-21468,Quarter Panel Right,Paint Scratch / Blemish,0.764,0.78,4.63
+INSP-21469,Trunk Lid,Welding Porosity,0.85,0.81,4.06
+INSP-21470,Quarter Panel Right,No Defect (Pass),0.698,0.0,4.13
+INSP-21471,Roof Pillar,No Defect (Pass),0.998,0.0,4.33
+INSP-21472,Door Left Front,No Defect (Pass),0.975,0.0,4.28
+INSP-21473,Door Left Front,No Defect (Pass),0.983,0.0,3.89
+INSP-21474,Hood,No Defect (Pass),0.891,0.0,3.93
+INSP-21475,Door Left Front,No Defect (Pass),0.875,0.0,4.12
+INSP-21476,Quarter Panel Right,No Defect (Pass),0.967,0.0,3.87
+INSP-21477,Hood,No Defect (Pass),0.91,0.0,3.89
+INSP-21478,Trunk Lid,No Defect (Pass),0.991,0.0,4.48
+INSP-21479,Quarter Panel Right,No Defect (Pass),0.829,0.0,4.58
+INSP-21480,Hood,No Defect (Pass),0.818,0.0,4.62
+INSP-21481,Door Left Front,No Defect (Pass),0.818,0.0,4.19
+INSP-21482,Quarter Panel Right,No Defect (Pass),0.69,0.0,4.44
+INSP-21483,Hood,No Defect (Pass),0.849,0.0,4.23
+INSP-21484,Trunk Lid,Panel Gap Misalignment,0.74,0.82,4.09
+INSP-21485,Door Left Front,No Defect (Pass),0.935,0.0,4.43
+INSP-21486,Door Left Front,No Defect (Pass),0.941,0.0,4.22
+INSP-21487,Hood,No Defect (Pass),0.699,0.0,4.01
+INSP-21488,Roof Pillar,No Defect (Pass),0.937,0.0,4.59
+INSP-21489,Door Left Front,No Defect (Pass),0.973,0.0,3.92
+INSP-21490,Door Left Front,No Defect (Pass),0.983,0.0,4.4
+INSP-21491,Hood,No Defect (Pass),0.727,0.0,4.14
+INSP-21492,Hood,No Defect (Pass),0.835,0.0,3.57
+INSP-21493,Roof Pillar,No Defect (Pass),0.964,0.0,4.04
+INSP-21494,Quarter Panel Right,No Defect (Pass),0.958,0.0,4.62
+INSP-21495,Hood,No Defect (Pass),0.851,0.0,3.78
+INSP-21496,Trunk Lid,Paint Scratch / Blemish,0.84,0.83,4.11
+INSP-21497,Hood,Paint Scratch / Blemish,0.93,0.94,3.74
+INSP-21498,Door Left Front,No Defect (Pass),0.921,0.0,4.01
+INSP-21499,Quarter Panel Right,No Defect (Pass),0.898,0.0,4.73
+INSP-21500,Hood,No Defect (Pass),0.947,0.0,4.68
+INSP-21501,Door Left Front,No Defect (Pass),0.842,0.0,4.07
+INSP-21502,Quarter Panel Right,No Defect (Pass),0.942,0.0,4.22
+INSP-21503,Hood,No Defect (Pass),0.981,0.0,3.73
+INSP-21504,Door Left Front,No Defect (Pass),1.0,0.0,3.9
+INSP-21505,Quarter Panel Right,No Defect (Pass),0.775,0.0,4.27
+INSP-21506,Roof Pillar,No Defect (Pass),0.906,0.0,3.79
+INSP-21507,Quarter Panel Right,No Defect (Pass),0.801,0.0,4.21
+INSP-21508,Quarter Panel Right,No Defect (Pass),0.96,0.0,3.76
+INSP-21509,Hood,No Defect (Pass),0.898,0.0,4.39
+INSP-21510,Roof Pillar,No Defect (Pass),0.948,0.0,4.2
+INSP-21511,Hood,No Defect (Pass),0.893,0.0,4.03
+INSP-21512,Roof Pillar,No Defect (Pass),0.985,0.0,4.21
+INSP-21513,Roof Pillar,Welding Porosity,0.917,0.94,4.48
+INSP-21514,Quarter Panel Right,No Defect (Pass),0.559,0.0,4.58
+INSP-21515,Roof Pillar,No Defect (Pass),0.927,0.0,4.11
+INSP-21516,Roof Pillar,Clear-coat Orange Peel,0.743,0.88,3.9
+INSP-21517,Door Left Front,No Defect (Pass),0.742,0.0,3.65
+INSP-21518,Door Left Front,No Defect (Pass),0.821,0.0,4.18
+INSP-21519,Trunk Lid,No Defect (Pass),0.962,0.0,4.01
+INSP-21520,Quarter Panel Right,No Defect (Pass),0.949,0.0,4.57
+INSP-21521,Roof Pillar,No Defect (Pass),0.987,0.0,3.93
+INSP-21522,Roof Pillar,No Defect (Pass),0.939,0.0,3.9
+INSP-21523,Trunk Lid,No Defect (Pass),0.916,0.0,3.91
+INSP-21524,Door Left Front,No Defect (Pass),0.887,0.0,4.22
+INSP-21525,Hood,No Defect (Pass),0.937,0.0,3.83
+INSP-21526,Trunk Lid,Welding Porosity,0.646,0.73,4.13
+INSP-21527,Roof Pillar,No Defect (Pass),0.939,0.0,4.32
+INSP-21528,Hood,No Defect (Pass),0.936,0.0,4.28
+INSP-21529,Roof Pillar,No Defect (Pass),0.83,0.0,3.98
+INSP-21530,Trunk Lid,No Defect (Pass),0.922,0.0,3.86
+INSP-21531,Hood,No Defect (Pass),0.988,0.0,3.97
+INSP-21532,Hood,No Defect (Pass),0.972,0.0,4.21
+INSP-21533,Door Left Front,No Defect (Pass),0.912,0.0,3.82
+INSP-21534,Door Left Front,Paint Scratch / Blemish,0.6,0.76,3.78
+INSP-21535,Trunk Lid,Clear-coat Orange Peel,0.883,0.72,4.19
+INSP-21536,Hood,No Defect (Pass),0.907,0.0,4.32
+INSP-21537,Quarter Panel Right,No Defect (Pass),0.902,0.0,4.16
+INSP-21538,Door Left Front,No Defect (Pass),0.995,0.0,3.97
+INSP-21539,Quarter Panel Right,No Defect (Pass),0.801,0.0,4.11
+INSP-21540,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.08
+INSP-21541,Quarter Panel Right,No Defect (Pass),0.797,0.0,4.57
+INSP-21542,Hood,No Defect (Pass),0.663,0.0,4.31
+INSP-21543,Roof Pillar,No Defect (Pass),0.848,0.0,3.76
+INSP-21544,Quarter Panel Right,No Defect (Pass),0.825,0.0,4.87
+INSP-21545,Hood,No Defect (Pass),0.943,0.0,4.52
+INSP-21546,Hood,Paint Scratch / Blemish,0.721,0.75,4.42
+INSP-21547,Hood,Panel Gap Misalignment,0.846,0.87,4.47
+INSP-21548,Quarter Panel Right,No Defect (Pass),0.837,0.0,4.56
+INSP-21549,Trunk Lid,Panel Gap Misalignment,0.628,0.72,4.12
+INSP-21550,Door Left Front,No Defect (Pass),0.85,0.0,4.21
+INSP-21551,Roof Pillar,Paint Scratch / Blemish,0.863,0.94,3.63
+INSP-21552,Trunk Lid,No Defect (Pass),0.963,0.0,4.38
+INSP-21553,Quarter Panel Right,No Defect (Pass),0.945,0.0,4.47
+INSP-21554,Roof Pillar,No Defect (Pass),0.999,0.0,4.43
+INSP-21555,Roof Pillar,No Defect (Pass),0.962,0.0,4.17
+INSP-21556,Quarter Panel Right,No Defect (Pass),0.878,0.0,4.57
+INSP-21557,Hood,Clear-coat Orange Peel,0.898,0.89,4.54
+INSP-21558,Hood,No Defect (Pass),0.976,0.0,4.0
+INSP-21559,Quarter Panel Right,No Defect (Pass),0.991,0.0,4.23
+INSP-21560,Trunk Lid,No Defect (Pass),0.995,0.0,3.75
+INSP-21561,Trunk Lid,No Defect (Pass),0.923,0.0,3.85
+INSP-21562,Roof Pillar,No Defect (Pass),0.969,0.0,4.69
+INSP-21563,Trunk Lid,No Defect (Pass),0.974,0.0,4.39
+INSP-21564,Roof Pillar,No Defect (Pass),0.827,0.0,4.36
+INSP-21565,Trunk Lid,No Defect (Pass),0.94,0.0,3.44
+INSP-21566,Trunk Lid,No Defect (Pass),0.749,0.0,4.3
+INSP-21567,Roof Pillar,No Defect (Pass),0.922,0.0,3.99
+INSP-21568,Roof Pillar,No Defect (Pass),0.961,0.0,4.52
+INSP-21569,Quarter Panel Right,No Defect (Pass),0.688,0.0,3.95
+INSP-21570,Hood,No Defect (Pass),0.927,0.0,4.25
+INSP-21571,Trunk Lid,Panel Gap Misalignment,0.638,0.86,4.18
+INSP-21572,Roof Pillar,No Defect (Pass),0.944,0.0,4.15
+INSP-21573,Trunk Lid,No Defect (Pass),0.949,0.0,4.09
+INSP-21574,Hood,Welding Porosity,0.66,0.7,4.08
+INSP-21575,Quarter Panel Right,No Defect (Pass),0.853,0.0,4.6
+INSP-21576,Quarter Panel Right,No Defect (Pass),0.906,0.0,4.26
+INSP-21577,Hood,No Defect (Pass),0.952,0.0,4.15
+INSP-21578,Trunk Lid,No Defect (Pass),0.942,0.0,4.65
+INSP-21579,Hood,Paint Scratch / Blemish,0.487,0.72,4.02
+INSP-21580,Hood,No Defect (Pass),0.985,0.0,4.21
+INSP-21581,Door Left Front,No Defect (Pass),0.979,0.0,3.92
+INSP-21582,Roof Pillar,No Defect (Pass),0.977,0.0,4.15
+INSP-21583,Quarter Panel Right,No Defect (Pass),0.999,0.0,3.7
+INSP-21584,Hood,No Defect (Pass),0.785,0.0,4.06
+INSP-21585,Hood,No Defect (Pass),0.935,0.0,4.62
+INSP-21586,Hood,No Defect (Pass),0.855,0.0,4.98
+INSP-21587,Quarter Panel Right,Panel Gap Misalignment,0.637,0.93,3.9
+INSP-21588,Trunk Lid,No Defect (Pass),0.981,0.0,4.29
+INSP-21589,Trunk Lid,No Defect (Pass),0.998,0.0,4.46
+INSP-21590,Hood,No Defect (Pass),0.892,0.0,3.61
+INSP-21591,Roof Pillar,No Defect (Pass),0.978,0.0,4.25
+INSP-21592,Trunk Lid,No Defect (Pass),0.878,0.0,4.31
+INSP-21593,Door Left Front,No Defect (Pass),0.967,0.0,4.55
+INSP-21594,Quarter Panel Right,No Defect (Pass),0.843,0.0,4.78
+INSP-21595,Trunk Lid,No Defect (Pass),0.848,0.0,3.6
+INSP-21596,Quarter Panel Right,No Defect (Pass),0.873,0.0,4.15
+INSP-21597,Door Left Front,No Defect (Pass),0.935,0.0,4.37
+INSP-21598,Roof Pillar,No Defect (Pass),0.996,0.0,4.37
+INSP-21599,Quarter Panel Right,No Defect (Pass),0.867,0.0,4.4
+INSP-21600,Door Left Front,Paint Scratch / Blemish,0.851,0.67,3.5
+INSP-21601,Quarter Panel Right,No Defect (Pass),0.944,0.0,4.35
+INSP-21602,Door Left Front,No Defect (Pass),0.955,0.0,4.55
+INSP-21603,Quarter Panel Right,No Defect (Pass),0.98,0.0,4.13
+INSP-21604,Door Left Front,No Defect (Pass),0.998,0.0,3.76
+INSP-21605,Trunk Lid,No Defect (Pass),0.917,0.0,3.97
+INSP-21606,Roof Pillar,No Defect (Pass),0.653,0.0,4.0
+INSP-21607,Trunk Lid,No Defect (Pass),0.912,0.0,3.47
+INSP-21608,Door Left Front,No Defect (Pass),0.922,0.0,4.92
+INSP-21609,Quarter Panel Right,Panel Gap Misalignment,0.576,0.65,4.33
+INSP-21610,Quarter Panel Right,No Defect (Pass),0.923,0.0,4.11
+INSP-21611,Quarter Panel Right,No Defect (Pass),0.894,0.0,4.2
+INSP-21612,Hood,No Defect (Pass),0.718,0.0,4.32
+INSP-21613,Hood,No Defect (Pass),0.909,0.0,4.34
+INSP-21614,Door Left Front,No Defect (Pass),0.961,0.0,4.11
+INSP-21615,Roof Pillar,No Defect (Pass),0.874,0.0,4.63
+INSP-21616,Roof Pillar,Clear-coat Orange Peel,0.759,0.88,4.24
+INSP-21617,Trunk Lid,No Defect (Pass),0.919,0.0,3.83
+INSP-21618,Trunk Lid,No Defect (Pass),0.923,0.0,4.7
+INSP-21619,Door Left Front,No Defect (Pass),0.509,0.0,4.28
+INSP-21620,Quarter Panel Right,No Defect (Pass),0.9,0.0,4.17
+INSP-21621,Quarter Panel Right,No Defect (Pass),0.884,0.0,4.03
+INSP-21622,Hood,No Defect (Pass),0.945,0.0,4.49
+INSP-21623,Roof Pillar,No Defect (Pass),0.91,0.0,4.48
+INSP-21624,Roof Pillar,No Defect (Pass),0.825,0.0,3.81
+INSP-21625,Quarter Panel Right,No Defect (Pass),0.893,0.0,4.24
+INSP-21626,Door Left Front,No Defect (Pass),0.845,0.0,4.02
+INSP-21627,Door Left Front,No Defect (Pass),0.941,0.0,4.53
+INSP-21628,Roof Pillar,No Defect (Pass),0.976,0.0,4.11
+INSP-21629,Roof Pillar,Welding Porosity,0.82,0.95,4.13
+INSP-21630,Door Left Front,No Defect (Pass),0.825,0.0,4.29
+INSP-21631,Trunk Lid,No Defect (Pass),0.927,0.0,4.49
+INSP-21632,Hood,No Defect (Pass),0.932,0.0,3.71
+INSP-21633,Roof Pillar,No Defect (Pass),0.833,0.0,4.41
+INSP-21634,Door Left Front,No Defect (Pass),0.973,0.0,4.42
+INSP-21635,Quarter Panel Right,No Defect (Pass),0.968,0.0,3.64
+INSP-21636,Hood,No Defect (Pass),0.873,0.0,3.89
+INSP-21637,Roof Pillar,No Defect (Pass),0.901,0.0,4.71
+INSP-21638,Quarter Panel Right,No Defect (Pass),0.965,0.0,4.15
+INSP-21639,Quarter Panel Right,No Defect (Pass),0.973,0.0,3.94
+INSP-21640,Hood,No Defect (Pass),0.977,0.0,4.35
+INSP-21641,Door Left Front,No Defect (Pass),0.984,0.0,4.07
+INSP-21642,Quarter Panel Right,No Defect (Pass),0.689,0.0,4.36
+INSP-21643,Quarter Panel Right,No Defect (Pass),0.97,0.0,3.95
+INSP-21644,Hood,No Defect (Pass),0.952,0.0,3.93
+INSP-21645,Hood,No Defect (Pass),0.851,0.0,4.78
+INSP-21646,Hood,No Defect (Pass),0.931,0.0,3.88
+INSP-21647,Roof Pillar,No Defect (Pass),0.811,0.0,4.17
+INSP-21648,Roof Pillar,No Defect (Pass),0.836,0.0,3.83
+INSP-21649,Roof Pillar,No Defect (Pass),0.742,0.0,4.6
+INSP-21650,Roof Pillar,No Defect (Pass),0.841,0.0,3.91
+INSP-21651,Roof Pillar,No Defect (Pass),0.924,0.0,4.49
+INSP-21652,Door Left Front,No Defect (Pass),0.971,0.0,3.65
+INSP-21653,Door Left Front,Panel Gap Misalignment,0.845,0.94,4.35
+INSP-21654,Door Left Front,No Defect (Pass),0.83,0.0,4.35
+INSP-21655,Hood,No Defect (Pass),0.943,0.0,3.63
+INSP-21656,Hood,No Defect (Pass),0.967,0.0,4.34
+INSP-21657,Door Left Front,No Defect (Pass),0.99,0.0,4.65
+INSP-21658,Roof Pillar,No Defect (Pass),0.877,0.0,3.98
+INSP-21659,Door Left Front,No Defect (Pass),0.968,0.0,4.61
+INSP-21660,Hood,No Defect (Pass),0.999,0.0,4.19
+INSP-21661,Roof Pillar,No Defect (Pass),0.979,0.0,3.47
+INSP-21662,Trunk Lid,No Defect (Pass),0.999,0.0,3.59
+INSP-21663,Hood,Panel Gap Misalignment,0.92,0.7,4.3
+INSP-21664,Roof Pillar,No Defect (Pass),0.933,0.0,4.06
+INSP-21665,Quarter Panel Right,No Defect (Pass),0.941,0.0,4.27
+INSP-21666,Door Left Front,No Defect (Pass),0.933,0.0,3.79
+INSP-21667,Quarter Panel Right,No Defect (Pass),0.829,0.0,4.43
+INSP-21668,Door Left Front,No Defect (Pass),0.987,0.0,4.49
+INSP-21669,Door Left Front,Panel Gap Misalignment,0.656,0.83,5.11
+INSP-21670,Door Left Front,No Defect (Pass),0.904,0.0,4.31
+INSP-21671,Trunk Lid,No Defect (Pass),0.9,0.0,4.57
+INSP-21672,Roof Pillar,No Defect (Pass),0.971,0.0,4.27
+INSP-21673,Door Left Front,No Defect (Pass),0.759,0.0,4.87
+INSP-21674,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.26
+INSP-21675,Hood,No Defect (Pass),0.977,0.0,3.62
+INSP-21676,Door Left Front,No Defect (Pass),0.899,0.0,4.45
+INSP-21677,Roof Pillar,No Defect (Pass),0.749,0.0,4.3
+INSP-21678,Roof Pillar,No Defect (Pass),0.842,0.0,3.98
+INSP-21679,Door Left Front,Welding Porosity,0.717,0.87,4.47
+INSP-21680,Roof Pillar,No Defect (Pass),0.723,0.0,4.3
+INSP-21681,Hood,No Defect (Pass),0.963,0.0,4.16
+INSP-21682,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.37
+INSP-21683,Roof Pillar,No Defect (Pass),0.88,0.0,4.31
+INSP-21684,Hood,Welding Porosity,0.669,0.89,4.2
+INSP-21685,Trunk Lid,No Defect (Pass),0.959,0.0,4.59
+INSP-21686,Door Left Front,No Defect (Pass),0.97,0.0,3.82
+INSP-21687,Hood,Welding Porosity,0.903,0.94,3.95
+INSP-21688,Hood,No Defect (Pass),0.885,0.0,4.75
+INSP-21689,Door Left Front,Paint Scratch / Blemish,0.89,0.69,4.51
+INSP-21690,Quarter Panel Right,No Defect (Pass),0.864,0.0,4.34
+INSP-21691,Hood,No Defect (Pass),0.976,0.0,4.04
+INSP-21692,Quarter Panel Right,No Defect (Pass),0.929,0.0,4.35
+INSP-21693,Door Left Front,No Defect (Pass),0.694,0.0,3.57
+INSP-21694,Hood,No Defect (Pass),0.946,0.0,4.11
+INSP-21695,Trunk Lid,No Defect (Pass),0.976,0.0,4.14
+INSP-21696,Hood,No Defect (Pass),0.998,0.0,3.93
+INSP-21697,Hood,No Defect (Pass),0.847,0.0,4.5
+INSP-21698,Roof Pillar,Panel Gap Misalignment,0.813,0.85,3.43
+INSP-21699,Roof Pillar,No Defect (Pass),0.941,0.0,4.27
+INSP-21700,Hood,No Defect (Pass),0.986,0.0,3.98
+INSP-21701,Hood,No Defect (Pass),0.87,0.0,4.4
+INSP-21702,Trunk Lid,No Defect (Pass),0.939,0.0,3.95
+INSP-21703,Quarter Panel Right,No Defect (Pass),0.998,0.0,4.17
+INSP-21704,Quarter Panel Right,No Defect (Pass),0.942,0.0,3.95
+INSP-21705,Quarter Panel Right,No Defect (Pass),0.76,0.0,4.36
+INSP-21706,Hood,No Defect (Pass),0.994,0.0,3.9
+INSP-21707,Quarter Panel Right,No Defect (Pass),0.962,0.0,3.97
+INSP-21708,Roof Pillar,No Defect (Pass),0.988,0.0,4.02
+INSP-21709,Trunk Lid,No Defect (Pass),0.832,0.0,4.83
+INSP-21710,Door Left Front,No Defect (Pass),0.791,0.0,4.51
+INSP-21711,Trunk Lid,No Defect (Pass),0.935,0.0,4.29
+INSP-21712,Roof Pillar,No Defect (Pass),0.934,0.0,4.34
+INSP-21713,Roof Pillar,No Defect (Pass),0.971,0.0,4.0
+INSP-21714,Roof Pillar,No Defect (Pass),0.716,0.0,3.88
+INSP-21715,Quarter Panel Right,No Defect (Pass),0.718,0.0,4.57
+INSP-21716,Roof Pillar,Paint Scratch / Blemish,0.862,0.92,3.75
+INSP-21717,Quarter Panel Right,Welding Porosity,0.661,0.95,3.81
+INSP-21718,Trunk Lid,No Defect (Pass),0.85,0.0,4.42
+INSP-21719,Door Left Front,No Defect (Pass),0.92,0.0,4.12
+INSP-21720,Trunk Lid,No Defect (Pass),0.967,0.0,4.29
+INSP-21721,Roof Pillar,No Defect (Pass),0.94,0.0,4.04
+INSP-21722,Door Left Front,No Defect (Pass),0.978,0.0,4.07
+INSP-21723,Trunk Lid,No Defect (Pass),0.991,0.0,4.3
+INSP-21724,Trunk Lid,No Defect (Pass),0.961,0.0,4.47
+INSP-21725,Hood,No Defect (Pass),0.782,0.0,3.76
+INSP-21726,Hood,No Defect (Pass),0.985,0.0,4.43
+INSP-21727,Door Left Front,No Defect (Pass),0.79,0.0,3.97
+INSP-21728,Hood,No Defect (Pass),0.909,0.0,4.76
+INSP-21729,Trunk Lid,Clear-coat Orange Peel,0.859,0.77,4.08
+INSP-21730,Door Left Front,No Defect (Pass),0.995,0.0,4.14
+INSP-21731,Quarter Panel Right,No Defect (Pass),0.938,0.0,4.01
+INSP-21732,Quarter Panel Right,No Defect (Pass),0.876,0.0,4.18
+INSP-21733,Roof Pillar,No Defect (Pass),0.79,0.0,4.57
+INSP-21734,Trunk Lid,No Defect (Pass),0.943,0.0,3.9
+INSP-21735,Roof Pillar,No Defect (Pass),0.873,0.0,3.85
+INSP-21736,Hood,No Defect (Pass),0.999,0.0,4.27
+INSP-21737,Door Left Front,No Defect (Pass),0.999,0.0,3.92
+INSP-21738,Quarter Panel Right,No Defect (Pass),0.861,0.0,4.21
+INSP-21739,Hood,No Defect (Pass),0.99,0.0,4.36
+INSP-21740,Quarter Panel Right,Paint Scratch / Blemish,0.867,0.67,4.3
+INSP-21741,Quarter Panel Right,No Defect (Pass),0.611,0.0,3.93
+INSP-21742,Roof Pillar,No Defect (Pass),0.951,0.0,4.72
+INSP-21743,Roof Pillar,Clear-coat Orange Peel,0.913,0.7,4.88
+INSP-21744,Trunk Lid,Clear-coat Orange Peel,0.78,0.8,4.41
+INSP-21745,Trunk Lid,Panel Gap Misalignment,0.656,0.84,4.65
+INSP-21746,Roof Pillar,Clear-coat Orange Peel,0.522,0.84,4.07
+INSP-21747,Roof Pillar,No Defect (Pass),0.952,0.0,4.26
+INSP-21748,Hood,No Defect (Pass),0.94,0.0,4.72
+INSP-21749,Trunk Lid,No Defect (Pass),0.908,0.0,3.78
+INSP-21750,Trunk Lid,No Defect (Pass),0.827,0.0,4.25
+INSP-21751,Roof Pillar,No Defect (Pass),0.711,0.0,3.85
+INSP-21752,Quarter Panel Right,No Defect (Pass),0.917,0.0,4.07
+INSP-21753,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.04
+INSP-21754,Trunk Lid,No Defect (Pass),0.787,0.0,4.59
+INSP-21755,Trunk Lid,No Defect (Pass),0.89,0.0,4.7
+INSP-21756,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.05
+INSP-21757,Hood,Welding Porosity,0.582,0.84,4.19
+INSP-21758,Trunk Lid,No Defect (Pass),0.967,0.0,4.07
+INSP-21759,Hood,No Defect (Pass),0.844,0.0,4.37
+INSP-21760,Hood,No Defect (Pass),0.761,0.0,4.23
+INSP-21761,Roof Pillar,No Defect (Pass),0.828,0.0,5.02
+INSP-21762,Roof Pillar,No Defect (Pass),0.728,0.0,4.19
+INSP-21763,Hood,Clear-coat Orange Peel,0.927,0.74,4.14
+INSP-21764,Trunk Lid,Clear-coat Orange Peel,0.719,0.69,3.81
+INSP-21765,Hood,No Defect (Pass),0.972,0.0,4.27
+INSP-21766,Door Left Front,Panel Gap Misalignment,0.942,0.78,3.63
+INSP-21767,Roof Pillar,No Defect (Pass),0.945,0.0,4.34
+INSP-21768,Hood,No Defect (Pass),0.984,0.0,4.15
+INSP-21769,Quarter Panel Right,No Defect (Pass),0.882,0.0,3.65
+INSP-21770,Hood,Paint Scratch / Blemish,0.811,0.77,3.97
+INSP-21771,Door Left Front,No Defect (Pass),0.817,0.0,4.08
+INSP-21772,Roof Pillar,No Defect (Pass),0.864,0.0,3.96
+INSP-21773,Quarter Panel Right,No Defect (Pass),0.79,0.0,4.39
+INSP-21774,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.21
+INSP-21775,Door Left Front,No Defect (Pass),0.853,0.0,4.58
+INSP-21776,Door Left Front,No Defect (Pass),0.858,0.0,3.61
+INSP-21777,Door Left Front,No Defect (Pass),0.878,0.0,4.5
+INSP-21778,Door Left Front,No Defect (Pass),0.738,0.0,4.51
+INSP-21779,Trunk Lid,Panel Gap Misalignment,0.809,0.89,4.25
+INSP-21780,Hood,No Defect (Pass),0.949,0.0,4.24
+INSP-21781,Hood,No Defect (Pass),0.965,0.0,4.44
+INSP-21782,Trunk Lid,No Defect (Pass),0.602,0.0,3.87
+INSP-21783,Quarter Panel Right,No Defect (Pass),0.835,0.0,4.65
+INSP-21784,Trunk Lid,Paint Scratch / Blemish,0.63,0.79,4.07
+INSP-21785,Door Left Front,Paint Scratch / Blemish,0.736,0.78,3.99
+INSP-21786,Quarter Panel Right,No Defect (Pass),0.882,0.0,4.4
+INSP-21787,Quarter Panel Right,No Defect (Pass),0.891,0.0,4.15
+INSP-21788,Trunk Lid,No Defect (Pass),0.909,0.0,4.45
+INSP-21789,Hood,No Defect (Pass),0.981,0.0,4.31
+INSP-21790,Door Left Front,No Defect (Pass),0.956,0.0,4.92
+INSP-21791,Roof Pillar,No Defect (Pass),0.981,0.0,3.9
+INSP-21792,Quarter Panel Right,Welding Porosity,0.759,0.74,4.23
+INSP-21793,Hood,No Defect (Pass),0.96,0.0,4.44
+INSP-21794,Door Left Front,No Defect (Pass),0.987,0.0,3.9
+INSP-21795,Quarter Panel Right,Clear-coat Orange Peel,0.77,0.71,4.84
+INSP-21796,Trunk Lid,No Defect (Pass),0.981,0.0,4.05
+INSP-21797,Quarter Panel Right,No Defect (Pass),0.987,0.0,4.2
+INSP-21798,Hood,No Defect (Pass),0.884,0.0,4.65
+INSP-21799,Door Left Front,No Defect (Pass),0.834,0.0,4.41
+INSP-21800,Door Left Front,No Defect (Pass),0.906,0.0,4.49
+INSP-21801,Door Left Front,No Defect (Pass),0.908,0.0,4.16
+INSP-21802,Hood,Clear-coat Orange Peel,0.789,0.7,4.49
+INSP-21803,Roof Pillar,No Defect (Pass),0.992,0.0,3.92
+INSP-21804,Trunk Lid,No Defect (Pass),0.971,0.0,4.41
+INSP-21805,Roof Pillar,No Defect (Pass),0.951,0.0,4.37
+INSP-21806,Roof Pillar,No Defect (Pass),0.893,0.0,3.61
+INSP-21807,Trunk Lid,No Defect (Pass),0.883,0.0,4.95
+INSP-21808,Roof Pillar,No Defect (Pass),0.938,0.0,4.26
+INSP-21809,Quarter Panel Right,No Defect (Pass),0.929,0.0,4.17
+INSP-21810,Door Left Front,No Defect (Pass),0.859,0.0,4.73
+INSP-21811,Trunk Lid,No Defect (Pass),0.866,0.0,4.0
+INSP-21812,Door Left Front,No Defect (Pass),0.921,0.0,4.24
+INSP-21813,Trunk Lid,No Defect (Pass),0.919,0.0,4.53
+INSP-21814,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.25
+INSP-21815,Quarter Panel Right,No Defect (Pass),0.986,0.0,3.94
+INSP-21816,Hood,No Defect (Pass),0.923,0.0,4.21
+INSP-21817,Door Left Front,No Defect (Pass),0.942,0.0,4.1
+INSP-21818,Hood,No Defect (Pass),0.987,0.0,4.53
+INSP-21819,Roof Pillar,No Defect (Pass),0.811,0.0,4.48
+INSP-21820,Trunk Lid,Paint Scratch / Blemish,0.622,0.82,3.73
+INSP-21821,Hood,No Defect (Pass),0.756,0.0,4.24
+INSP-21822,Roof Pillar,No Defect (Pass),0.903,0.0,4.62
+INSP-21823,Door Left Front,No Defect (Pass),0.743,0.0,4.24
+INSP-21824,Door Left Front,No Defect (Pass),0.858,0.0,4.24
+INSP-21825,Door Left Front,Welding Porosity,0.86,0.73,4.24
+INSP-21826,Quarter Panel Right,No Defect (Pass),0.971,0.0,4.65
+INSP-21827,Door Left Front,No Defect (Pass),0.984,0.0,4.15
+INSP-21828,Door Left Front,No Defect (Pass),0.877,0.0,4.5
+INSP-21829,Hood,Paint Scratch / Blemish,0.844,0.68,4.2
+INSP-21830,Trunk Lid,No Defect (Pass),0.981,0.0,4.43
+INSP-21831,Roof Pillar,No Defect (Pass),0.933,0.0,4.09
+INSP-21832,Trunk Lid,No Defect (Pass),0.963,0.0,4.46
+INSP-21833,Trunk Lid,Clear-coat Orange Peel,0.846,0.75,4.53
+INSP-21834,Door Left Front,No Defect (Pass),0.588,0.0,3.85
+INSP-21835,Quarter Panel Right,Panel Gap Misalignment,0.852,0.77,4.39
+INSP-21836,Quarter Panel Right,No Defect (Pass),0.89,0.0,3.67
+INSP-21837,Roof Pillar,No Defect (Pass),0.977,0.0,4.23
+INSP-21838,Quarter Panel Right,No Defect (Pass),0.721,0.0,4.4
+INSP-21839,Door Left Front,No Defect (Pass),0.964,0.0,4.18
+INSP-21840,Roof Pillar,No Defect (Pass),0.539,0.0,4.12
+INSP-21841,Hood,No Defect (Pass),0.998,0.0,4.69
+INSP-21842,Roof Pillar,Clear-coat Orange Peel,0.501,0.83,4.93
+INSP-21843,Door Left Front,No Defect (Pass),0.978,0.0,4.7
+INSP-21844,Hood,No Defect (Pass),0.941,0.0,4.72
+INSP-21845,Quarter Panel Right,Panel Gap Misalignment,0.711,0.67,3.72
+INSP-21846,Roof Pillar,No Defect (Pass),0.967,0.0,4.34
+INSP-21847,Quarter Panel Right,No Defect (Pass),0.935,0.0,3.97
+INSP-21848,Quarter Panel Right,No Defect (Pass),0.93,0.0,3.68
+INSP-21849,Roof Pillar,No Defect (Pass),0.945,0.0,4.12
+INSP-21850,Hood,No Defect (Pass),0.932,0.0,4.49
+INSP-21851,Quarter Panel Right,No Defect (Pass),0.78,0.0,3.95
+INSP-21852,Hood,No Defect (Pass),0.924,0.0,4.28
+INSP-21853,Door Left Front,No Defect (Pass),0.877,0.0,4.44
+INSP-21854,Trunk Lid,No Defect (Pass),0.937,0.0,4.0
+INSP-21855,Quarter Panel Right,No Defect (Pass),0.952,0.0,4.42
+INSP-21856,Trunk Lid,No Defect (Pass),0.968,0.0,4.31
+INSP-21857,Door Left Front,No Defect (Pass),0.904,0.0,4.01
+INSP-21858,Door Left Front,No Defect (Pass),0.914,0.0,4.33
+INSP-21859,Trunk Lid,No Defect (Pass),0.963,0.0,4.34
+INSP-21860,Roof Pillar,Panel Gap Misalignment,0.915,0.71,3.92
+INSP-21861,Trunk Lid,Clear-coat Orange Peel,0.837,0.87,4.79
+INSP-21862,Trunk Lid,No Defect (Pass),0.889,0.0,4.25
+INSP-21863,Roof Pillar,No Defect (Pass),0.976,0.0,4.51
+INSP-21864,Door Left Front,No Defect (Pass),0.856,0.0,4.04
+INSP-21865,Trunk Lid,No Defect (Pass),0.866,0.0,4.4
+INSP-21866,Quarter Panel Right,No Defect (Pass),0.957,0.0,3.78
+INSP-21867,Trunk Lid,No Defect (Pass),0.952,0.0,4.6
+INSP-21868,Quarter Panel Right,No Defect (Pass),0.889,0.0,3.45
+INSP-21869,Quarter Panel Right,No Defect (Pass),0.91,0.0,4.17
+INSP-21870,Trunk Lid,No Defect (Pass),0.905,0.0,3.92
+INSP-21871,Door Left Front,No Defect (Pass),0.996,0.0,4.74
+INSP-21872,Roof Pillar,No Defect (Pass),0.985,0.0,3.87
+INSP-21873,Trunk Lid,Paint Scratch / Blemish,0.899,0.89,4.47
+INSP-21874,Roof Pillar,Clear-coat Orange Peel,0.764,0.88,4.16
+INSP-21875,Hood,No Defect (Pass),0.795,0.0,3.84
+INSP-21876,Door Left Front,No Defect (Pass),0.978,0.0,4.12
+INSP-21877,Roof Pillar,No Defect (Pass),0.53,0.0,4.67
+INSP-21878,Roof Pillar,No Defect (Pass),0.998,0.0,4.24
+INSP-21879,Door Left Front,No Defect (Pass),0.968,0.0,4.11
+INSP-21880,Door Left Front,No Defect (Pass),0.909,0.0,3.89
+INSP-21881,Roof Pillar,No Defect (Pass),0.867,0.0,4.61
+INSP-21882,Trunk Lid,No Defect (Pass),0.86,0.0,4.0
+INSP-21883,Roof Pillar,No Defect (Pass),0.898,0.0,4.35
+INSP-21884,Hood,Paint Scratch / Blemish,0.749,0.67,3.87
+INSP-21885,Door Left Front,No Defect (Pass),0.899,0.0,4.17
+INSP-21886,Quarter Panel Right,No Defect (Pass),1.0,0.0,4.17
+INSP-21887,Quarter Panel Right,No Defect (Pass),0.718,0.0,4.51
+INSP-21888,Door Left Front,No Defect (Pass),0.916,0.0,4.08
+INSP-21889,Door Left Front,Paint Scratch / Blemish,0.908,0.93,4.81
+INSP-21890,Door Left Front,Paint Scratch / Blemish,0.941,0.9,4.1
+INSP-21891,Hood,No Defect (Pass),0.744,0.0,4.94
+INSP-21892,Hood,No Defect (Pass),0.949,0.0,3.99
+INSP-21893,Door Left Front,No Defect (Pass),0.982,0.0,4.27
+INSP-21894,Trunk Lid,No Defect (Pass),0.973,0.0,4.12
+INSP-21895,Roof Pillar,No Defect (Pass),0.979,0.0,4.06
+INSP-21896,Door Left Front,No Defect (Pass),0.959,0.0,4.42
+INSP-21897,Trunk Lid,No Defect (Pass),0.822,0.0,4.11
+INSP-21898,Door Left Front,No Defect (Pass),0.999,0.0,3.84
+INSP-21899,Door Left Front,No Defect (Pass),0.946,0.0,4.51
+INSP-21900,Quarter Panel Right,Panel Gap Misalignment,0.501,0.67,3.95
+INSP-21901,Trunk Lid,No Defect (Pass),0.841,0.0,4.08
+INSP-21902,Trunk Lid,No Defect (Pass),0.738,0.0,4.8
+INSP-21903,Roof Pillar,No Defect (Pass),0.834,0.0,4.71
+INSP-21904,Quarter Panel Right,No Defect (Pass),0.752,0.0,4.41
+INSP-21905,Roof Pillar,No Defect (Pass),0.839,0.0,4.2
+INSP-21906,Trunk Lid,No Defect (Pass),0.81,0.0,4.42
+INSP-21907,Roof Pillar,No Defect (Pass),0.822,0.0,4.62
+INSP-21908,Quarter Panel Right,No Defect (Pass),0.879,0.0,4.23
+INSP-21909,Quarter Panel Right,No Defect (Pass),0.949,0.0,3.85
+INSP-21910,Hood,No Defect (Pass),0.836,0.0,4.19
+INSP-21911,Roof Pillar,Clear-coat Orange Peel,0.949,0.89,4.24
+INSP-21912,Hood,No Defect (Pass),0.967,0.0,3.89
+INSP-21913,Quarter Panel Right,No Defect (Pass),0.925,0.0,3.7
+INSP-21914,Quarter Panel Right,No Defect (Pass),0.835,0.0,4.17
+INSP-21915,Quarter Panel Right,No Defect (Pass),0.8,0.0,4.53
+INSP-21916,Hood,No Defect (Pass),0.847,0.0,4.04
+INSP-21917,Roof Pillar,No Defect (Pass),0.889,0.0,4.43
+INSP-21918,Hood,No Defect (Pass),0.957,0.0,3.77
+INSP-21919,Hood,No Defect (Pass),0.706,0.0,3.79
+INSP-21920,Hood,No Defect (Pass),0.805,0.0,3.87
+INSP-21921,Quarter Panel Right,No Defect (Pass),0.993,0.0,3.96
+INSP-21922,Trunk Lid,No Defect (Pass),0.919,0.0,4.54
+INSP-21923,Door Left Front,No Defect (Pass),0.926,0.0,4.61
+INSP-21924,Roof Pillar,No Defect (Pass),0.746,0.0,4.36
+INSP-21925,Roof Pillar,No Defect (Pass),0.962,0.0,4.74
+INSP-21926,Quarter Panel Right,No Defect (Pass),0.912,0.0,4.32
+INSP-21927,Roof Pillar,No Defect (Pass),0.951,0.0,4.07
+INSP-21928,Hood,No Defect (Pass),0.766,0.0,4.41
+INSP-21929,Trunk Lid,Welding Porosity,0.888,0.73,4.93
+INSP-21930,Door Left Front,No Defect (Pass),0.884,0.0,4.19
+INSP-21931,Door Left Front,No Defect (Pass),0.978,0.0,4.54
+INSP-21932,Trunk Lid,No Defect (Pass),0.956,0.0,4.25
+INSP-21933,Trunk Lid,Clear-coat Orange Peel,0.777,0.81,4.16
+INSP-21934,Door Left Front,No Defect (Pass),0.686,0.0,4.24
+INSP-21935,Door Left Front,No Defect (Pass),0.729,0.0,4.09
+INSP-21936,Trunk Lid,No Defect (Pass),0.872,0.0,4.19
+INSP-21937,Quarter Panel Right,Paint Scratch / Blemish,0.841,0.92,4.29
+INSP-21938,Roof Pillar,No Defect (Pass),0.674,0.0,4.05
+INSP-21939,Roof Pillar,No Defect (Pass),0.975,0.0,4.19
+INSP-21940,Door Left Front,No Defect (Pass),0.885,0.0,4.07
+INSP-21941,Roof Pillar,Paint Scratch / Blemish,0.991,0.94,3.95
+INSP-21942,Trunk Lid,Welding Porosity,0.858,0.72,4.11
+INSP-21943,Door Left Front,Paint Scratch / Blemish,0.778,0.83,3.82
+INSP-21944,Quarter Panel Right,No Defect (Pass),0.79,0.0,4.0
+INSP-21945,Trunk Lid,No Defect (Pass),0.961,0.0,4.4
+INSP-21946,Door Left Front,No Defect (Pass),0.93,0.0,3.49
+INSP-21947,Hood,No Defect (Pass),0.934,0.0,4.56
+INSP-21948,Quarter Panel Right,No Defect (Pass),0.98,0.0,4.37
+INSP-21949,Roof Pillar,No Defect (Pass),0.975,0.0,3.97
+INSP-21950,Trunk Lid,Panel Gap Misalignment,0.892,0.71,4.04
+INSP-21951,Trunk Lid,No Defect (Pass),0.953,0.0,4.3
+INSP-21952,Hood,No Defect (Pass),0.97,0.0,4.1
+INSP-21953,Hood,Paint Scratch / Blemish,0.675,0.86,4.29
+INSP-21954,Roof Pillar,No Defect (Pass),0.812,0.0,4.34
+INSP-21955,Trunk Lid,No Defect (Pass),0.981,0.0,4.52
+INSP-21956,Trunk Lid,No Defect (Pass),0.893,0.0,4.68
+INSP-21957,Roof Pillar,No Defect (Pass),0.945,0.0,4.53
+INSP-21958,Hood,No Defect (Pass),0.973,0.0,3.92
+INSP-21959,Quarter Panel Right,No Defect (Pass),0.835,0.0,4.35
+INSP-21960,Door Left Front,No Defect (Pass),0.941,0.0,4.19
+INSP-21961,Hood,No Defect (Pass),0.901,0.0,4.29
+INSP-21962,Quarter Panel Right,No Defect (Pass),0.85,0.0,4.16
+INSP-21963,Trunk Lid,Panel Gap Misalignment,0.939,0.78,4.32
+INSP-21964,Roof Pillar,No Defect (Pass),0.948,0.0,4.98
+INSP-21965,Hood,No Defect (Pass),0.974,0.0,3.75
+INSP-21966,Hood,No Defect (Pass),0.988,0.0,4.58
+INSP-21967,Trunk Lid,No Defect (Pass),0.963,0.0,3.9
+INSP-21968,Quarter Panel Right,Clear-coat Orange Peel,0.924,0.84,4.1
+INSP-21969,Door Left Front,No Defect (Pass),0.836,0.0,3.67
+INSP-21970,Quarter Panel Right,No Defect (Pass),0.817,0.0,4.31
+INSP-21971,Roof Pillar,No Defect (Pass),0.967,0.0,4.27
+INSP-21972,Trunk Lid,No Defect (Pass),0.87,0.0,4.08
+INSP-21973,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.02
+INSP-21974,Trunk Lid,No Defect (Pass),0.988,0.0,3.64
+INSP-21975,Trunk Lid,No Defect (Pass),0.718,0.0,4.37
+INSP-21976,Trunk Lid,Clear-coat Orange Peel,0.947,0.69,4.13
+INSP-21977,Roof Pillar,No Defect (Pass),0.908,0.0,4.11
+INSP-21978,Hood,No Defect (Pass),0.94,0.0,4.66
+INSP-21979,Roof Pillar,No Defect (Pass),0.996,0.0,4.44
+INSP-21980,Trunk Lid,Panel Gap Misalignment,0.857,0.87,4.43
+INSP-21981,Roof Pillar,No Defect (Pass),0.922,0.0,3.58
+INSP-21982,Trunk Lid,No Defect (Pass),0.968,0.0,4.89
+INSP-21983,Quarter Panel Right,No Defect (Pass),0.986,0.0,3.96
+INSP-21984,Roof Pillar,No Defect (Pass),0.961,0.0,3.82
+INSP-21985,Quarter Panel Right,No Defect (Pass),0.908,0.0,4.36
+INSP-21986,Roof Pillar,No Defect (Pass),0.939,0.0,3.47
+INSP-21987,Trunk Lid,No Defect (Pass),0.882,0.0,3.94
+INSP-21988,Roof Pillar,No Defect (Pass),0.844,0.0,4.09
+INSP-21989,Quarter Panel Right,No Defect (Pass),0.924,0.0,4.34
+INSP-21990,Trunk Lid,Clear-coat Orange Peel,0.623,0.72,4.45
+INSP-21991,Quarter Panel Right,No Defect (Pass),0.984,0.0,4.03
+INSP-21992,Hood,No Defect (Pass),0.954,0.0,4.33
+INSP-21993,Trunk Lid,No Defect (Pass),0.949,0.0,4.53
+INSP-21994,Hood,No Defect (Pass),0.815,0.0,4.13
+INSP-21995,Hood,No Defect (Pass),0.969,0.0,3.88
+INSP-21996,Hood,No Defect (Pass),0.669,0.0,4.04
+INSP-21997,Trunk Lid,No Defect (Pass),0.706,0.0,4.14
+INSP-21998,Trunk Lid,Paint Scratch / Blemish,0.914,0.91,3.98
+INSP-21999,Trunk Lid,No Defect (Pass),0.926,0.0,3.4
+INSP-22000,Quarter Panel Right,No Defect (Pass),0.966,0.0,3.99
+INSP-22001,Hood,No Defect (Pass),0.832,0.0,4.08
+INSP-22002,Quarter Panel Right,No Defect (Pass),0.877,0.0,4.26
+INSP-22003,Door Left Front,No Defect (Pass),0.985,0.0,4.25
+INSP-22004,Quarter Panel Right,No Defect (Pass),0.902,0.0,4.14
+INSP-22005,Quarter Panel Right,No Defect (Pass),0.711,0.0,3.98
+INSP-22006,Hood,No Defect (Pass),0.924,0.0,4.56
+INSP-22007,Quarter Panel Right,Clear-coat Orange Peel,0.861,0.93,3.7
+INSP-22008,Door Left Front,No Defect (Pass),0.986,0.0,3.92
+INSP-22009,Roof Pillar,No Defect (Pass),0.991,0.0,3.83
+INSP-22010,Hood,Paint Scratch / Blemish,0.914,0.83,4.19
+INSP-22011,Trunk Lid,No Defect (Pass),0.783,0.0,3.47
+INSP-22012,Trunk Lid,No Defect (Pass),0.988,0.0,4.33
+INSP-22013,Roof Pillar,Clear-coat Orange Peel,0.684,0.9,4.02
+INSP-22014,Quarter Panel Right,No Defect (Pass),0.992,0.0,4.01
+INSP-22015,Trunk Lid,No Defect (Pass),0.812,0.0,4.02
+INSP-22016,Trunk Lid,No Defect (Pass),0.93,0.0,4.58
+INSP-22017,Quarter Panel Right,No Defect (Pass),0.993,0.0,3.49
+INSP-22018,Trunk Lid,No Defect (Pass),0.872,0.0,4.11
+INSP-22019,Hood,No Defect (Pass),0.893,0.0,4.58
+INSP-22020,Hood,No Defect (Pass),0.919,0.0,4.04
+INSP-22021,Roof Pillar,No Defect (Pass),0.824,0.0,3.63
+INSP-22022,Quarter Panel Right,No Defect (Pass),0.99,0.0,4.08
+INSP-22023,Quarter Panel Right,No Defect (Pass),0.968,0.0,4.02
+INSP-22024,Trunk Lid,No Defect (Pass),0.927,0.0,4.46
+INSP-22025,Door Left Front,No Defect (Pass),0.909,0.0,4.19
+INSP-22026,Hood,Welding Porosity,0.636,0.72,4.04
+INSP-22027,Roof Pillar,No Defect (Pass),0.804,0.0,4.12
+INSP-22028,Roof Pillar,No Defect (Pass),0.972,0.0,3.81
+INSP-22029,Door Left Front,No Defect (Pass),0.899,0.0,4.22
+INSP-22030,Quarter Panel Right,No Defect (Pass),0.882,0.0,3.98
+INSP-22031,Hood,Paint Scratch / Blemish,0.883,0.73,4.24
+INSP-22032,Door Left Front,No Defect (Pass),0.772,0.0,4.2
+INSP-22033,Quarter Panel Right,Panel Gap Misalignment,0.902,0.77,4.13
+INSP-22034,Hood,No Defect (Pass),0.98,0.0,3.91
+INSP-22035,Door Left Front,No Defect (Pass),0.864,0.0,4.02
+INSP-22036,Quarter Panel Right,Panel Gap Misalignment,0.901,0.66,4.2
+INSP-22037,Door Left Front,No Defect (Pass),0.961,0.0,4.37
+INSP-22038,Door Left Front,No Defect (Pass),0.83,0.0,4.38
+INSP-22039,Hood,No Defect (Pass),0.979,0.0,4.17
+INSP-22040,Door Left Front,No Defect (Pass),0.991,0.0,3.88
+INSP-22041,Trunk Lid,Panel Gap Misalignment,0.596,0.91,4.05
+INSP-22042,Quarter Panel Right,Panel Gap Misalignment,0.755,0.9,4.12
+INSP-22043,Roof Pillar,Welding Porosity,0.814,0.84,4.14
+INSP-22044,Quarter Panel Right,No Defect (Pass),0.812,0.0,4.05
+INSP-22045,Door Left Front,No Defect (Pass),0.97,0.0,3.93
+INSP-22046,Door Left Front,Paint Scratch / Blemish,0.933,0.74,4.12
+INSP-22047,Door Left Front,No Defect (Pass),0.885,0.0,3.82
+INSP-22048,Hood,No Defect (Pass),0.999,0.0,4.52
+INSP-22049,Hood,Panel Gap Misalignment,0.936,0.8,4.0
+INSP-22050,Door Left Front,No Defect (Pass),0.993,0.0,3.82
+INSP-22051,Trunk Lid,No Defect (Pass),0.95,0.0,4.18
+INSP-22052,Trunk Lid,No Defect (Pass),0.752,0.0,4.51
+INSP-22053,Trunk Lid,No Defect (Pass),0.537,0.0,4.1
+INSP-22054,Roof Pillar,No Defect (Pass),0.993,0.0,4.27
+INSP-22055,Roof Pillar,No Defect (Pass),0.745,0.0,4.23
+INSP-22056,Trunk Lid,No Defect (Pass),1.0,0.0,4.25
+INSP-22057,Hood,Panel Gap Misalignment,0.665,0.89,4.25
+INSP-22058,Quarter Panel Right,Paint Scratch / Blemish,0.668,0.82,4.13
+INSP-22059,Trunk Lid,No Defect (Pass),0.985,0.0,4.38
+INSP-22060,Hood,No Defect (Pass),0.76,0.0,4.14
+INSP-22061,Roof Pillar,No Defect (Pass),0.969,0.0,4.14
+INSP-22062,Trunk Lid,No Defect (Pass),0.939,0.0,4.68
+INSP-22063,Hood,Paint Scratch / Blemish,0.821,0.74,3.86
+INSP-22064,Door Left Front,Welding Porosity,0.588,0.84,4.86
+INSP-22065,Roof Pillar,No Defect (Pass),0.926,0.0,4.28
+INSP-22066,Roof Pillar,No Defect (Pass),0.887,0.0,4.06
+INSP-22067,Hood,No Defect (Pass),0.812,0.0,4.31
+INSP-22068,Trunk Lid,Panel Gap Misalignment,0.759,0.75,4.24
+INSP-22069,Roof Pillar,No Defect (Pass),0.985,0.0,4.3
+INSP-22070,Roof Pillar,No Defect (Pass),0.965,0.0,4.43
+INSP-22071,Roof Pillar,Panel Gap Misalignment,0.634,0.8,4.04
+INSP-22072,Quarter Panel Right,No Defect (Pass),0.865,0.0,4.0
+INSP-22073,Roof Pillar,No Defect (Pass),0.971,0.0,4.65
+INSP-22074,Roof Pillar,No Defect (Pass),0.959,0.0,3.93
+INSP-22075,Roof Pillar,No Defect (Pass),0.984,0.0,4.1
+INSP-22076,Quarter Panel Right,No Defect (Pass),0.981,0.0,4.66
+INSP-22077,Hood,No Defect (Pass),0.996,0.0,4.01
+INSP-22078,Door Left Front,No Defect (Pass),0.84,0.0,4.13
+INSP-22079,Hood,No Defect (Pass),0.879,0.0,3.89
+INSP-22080,Trunk Lid,No Defect (Pass),0.924,0.0,4.41
+INSP-22081,Roof Pillar,Clear-coat Orange Peel,0.876,0.86,4.0
+INSP-22082,Quarter Panel Right,Paint Scratch / Blemish,0.839,0.69,3.48
+INSP-22083,Roof Pillar,No Defect (Pass),0.879,0.0,3.98
+INSP-22084,Door Left Front,No Defect (Pass),0.982,0.0,4.04
+INSP-22085,Roof Pillar,No Defect (Pass),0.96,0.0,4.58
+INSP-22086,Quarter Panel Right,Clear-coat Orange Peel,0.86,0.71,4.6
+INSP-22087,Door Left Front,No Defect (Pass),0.958,0.0,4.13
+INSP-22088,Trunk Lid,No Defect (Pass),0.998,0.0,4.0
+INSP-22089,Door Left Front,No Defect (Pass),0.979,0.0,4.01
+INSP-22090,Door Left Front,No Defect (Pass),0.988,0.0,4.3
+INSP-22091,Hood,No Defect (Pass),0.923,0.0,4.52
+INSP-22092,Door Left Front,No Defect (Pass),0.958,0.0,4.94
+INSP-22093,Door Left Front,No Defect (Pass),0.994,0.0,4.43
+INSP-22094,Trunk Lid,No Defect (Pass),0.841,0.0,3.97
+INSP-22095,Hood,No Defect (Pass),0.935,0.0,4.32
+INSP-22096,Trunk Lid,No Defect (Pass),0.922,0.0,3.87
+INSP-22097,Door Left Front,No Defect (Pass),0.921,0.0,4.06
+INSP-22098,Quarter Panel Right,No Defect (Pass),0.938,0.0,4.19
+INSP-22099,Trunk Lid,No Defect (Pass),0.984,0.0,4.03
+INSP-22100,Trunk Lid,Paint Scratch / Blemish,0.763,0.68,4.01
+INSP-22101,Door Left Front,No Defect (Pass),0.883,0.0,4.38
+INSP-22102,Door Left Front,No Defect (Pass),0.921,0.0,4.17
+INSP-22103,Roof Pillar,No Defect (Pass),0.98,0.0,4.48
+INSP-22104,Hood,No Defect (Pass),0.677,0.0,4.55
+INSP-22105,Hood,Welding Porosity,0.803,0.75,4.56
+INSP-22106,Quarter Panel Right,No Defect (Pass),0.99,0.0,4.22
+INSP-22107,Hood,No Defect (Pass),0.83,0.0,4.49
+INSP-22108,Door Left Front,No Defect (Pass),0.805,0.0,4.16
+INSP-22109,Hood,No Defect (Pass),1.0,0.0,4.22
+INSP-22110,Trunk Lid,No Defect (Pass),0.964,0.0,4.59
+INSP-22111,Quarter Panel Right,No Defect (Pass),0.497,0.0,3.43
+INSP-22112,Quarter Panel Right,No Defect (Pass),0.922,0.0,4.13
+INSP-22113,Door Left Front,No Defect (Pass),0.972,0.0,4.27
+INSP-22114,Hood,No Defect (Pass),0.847,0.0,4.16
+INSP-22115,Trunk Lid,No Defect (Pass),0.94,0.0,3.72
+INSP-22116,Quarter Panel Right,No Defect (Pass),0.731,0.0,4.41
+INSP-22117,Door Left Front,No Defect (Pass),0.862,0.0,3.78
+INSP-22118,Trunk Lid,No Defect (Pass),0.99,0.0,4.72
+INSP-22119,Quarter Panel Right,No Defect (Pass),0.873,0.0,4.1
+INSP-22120,Quarter Panel Right,No Defect (Pass),0.987,0.0,4.3
+INSP-22121,Roof Pillar,No Defect (Pass),0.814,0.0,4.48
+INSP-22122,Door Left Front,No Defect (Pass),0.877,0.0,4.06
+INSP-22123,Door Left Front,Clear-coat Orange Peel,0.714,0.74,4.49
+INSP-22124,Hood,No Defect (Pass),0.998,0.0,4.03
+INSP-22125,Hood,No Defect (Pass),0.957,0.0,4.07
+INSP-22126,Hood,No Defect (Pass),0.747,0.0,4.32
+INSP-22127,Quarter Panel Right,No Defect (Pass),0.919,0.0,4.28
+INSP-22128,Hood,Panel Gap Misalignment,0.898,0.74,4.11
+INSP-22129,Trunk Lid,No Defect (Pass),0.854,0.0,4.12
+INSP-22130,Trunk Lid,No Defect (Pass),0.904,0.0,5.1
+INSP-22131,Door Left Front,No Defect (Pass),0.741,0.0,4.24
+INSP-22132,Hood,No Defect (Pass),0.931,0.0,4.42
+INSP-22133,Trunk Lid,Welding Porosity,0.811,0.82,3.89
+INSP-22134,Door Left Front,No Defect (Pass),0.94,0.0,4.03
+INSP-22135,Door Left Front,No Defect (Pass),0.987,0.0,4.43
+INSP-22136,Hood,No Defect (Pass),0.962,0.0,4.44
+INSP-22137,Hood,No Defect (Pass),0.971,0.0,4.59
+INSP-22138,Quarter Panel Right,No Defect (Pass),0.922,0.0,4.38
+INSP-22139,Hood,Panel Gap Misalignment,0.561,0.79,4.2
+INSP-22140,Trunk Lid,No Defect (Pass),0.966,0.0,3.99
+INSP-22141,Hood,No Defect (Pass),0.992,0.0,4.23
+INSP-22142,Hood,No Defect (Pass),0.931,0.0,3.88
+INSP-22143,Quarter Panel Right,No Defect (Pass),0.999,0.0,3.7
+INSP-22144,Quarter Panel Right,No Defect (Pass),0.888,0.0,4.01
+INSP-22145,Roof Pillar,No Defect (Pass),0.921,0.0,4.33
+INSP-22146,Hood,No Defect (Pass),0.98,0.0,3.65
+INSP-22147,Door Left Front,Paint Scratch / Blemish,0.835,0.91,4.46
+INSP-22148,Hood,No Defect (Pass),0.938,0.0,4.31
+INSP-22149,Door Left Front,No Defect (Pass),0.97,0.0,4.16
+INSP-22150,Door Left Front,Welding Porosity,0.732,0.93,3.93
+INSP-22151,Door Left Front,No Defect (Pass),0.677,0.0,4.5
+INSP-22152,Door Left Front,No Defect (Pass),0.875,0.0,3.97
+INSP-22153,Trunk Lid,No Defect (Pass),0.866,0.0,4.66
+INSP-22154,Roof Pillar,No Defect (Pass),0.996,0.0,4.57
+INSP-22155,Trunk Lid,No Defect (Pass),0.908,0.0,4.14
+INSP-22156,Quarter Panel Right,No Defect (Pass),0.921,0.0,3.92
+INSP-22157,Door Left Front,No Defect (Pass),0.781,0.0,4.55
+INSP-22158,Roof Pillar,No Defect (Pass),0.841,0.0,4.07
+INSP-22159,Roof Pillar,No Defect (Pass),0.986,0.0,4.46
+INSP-22160,Trunk Lid,No Defect (Pass),0.963,0.0,4.12
+INSP-22161,Door Left Front,No Defect (Pass),0.896,0.0,3.94
+INSP-22162,Roof Pillar,No Defect (Pass),0.936,0.0,4.38
+INSP-22163,Quarter Panel Right,No Defect (Pass),0.906,0.0,4.47
+INSP-22164,Trunk Lid,No Defect (Pass),0.912,0.0,4.25
+INSP-22165,Roof Pillar,No Defect (Pass),0.956,0.0,3.9
+INSP-22166,Roof Pillar,No Defect (Pass),0.961,0.0,4.49
+INSP-22167,Quarter Panel Right,No Defect (Pass),0.878,0.0,4.01
+INSP-22168,Trunk Lid,No Defect (Pass),0.99,0.0,4.23
+INSP-22169,Trunk Lid,No Defect (Pass),0.917,0.0,3.78
+INSP-22170,Door Left Front,No Defect (Pass),0.818,0.0,4.57
+INSP-22171,Hood,No Defect (Pass),0.851,0.0,4.09
+INSP-22172,Hood,No Defect (Pass),0.932,0.0,4.0
+INSP-22173,Trunk Lid,No Defect (Pass),0.789,0.0,3.96
+INSP-22174,Quarter Panel Right,No Defect (Pass),0.989,0.0,4.12
+INSP-22175,Hood,No Defect (Pass),0.836,0.0,4.19
+INSP-22176,Trunk Lid,No Defect (Pass),0.985,0.0,4.22
+INSP-22177,Hood,No Defect (Pass),0.963,0.0,4.15
+INSP-22178,Trunk Lid,No Defect (Pass),0.97,0.0,4.09
+INSP-22179,Door Left Front,No Defect (Pass),0.971,0.0,4.47
+INSP-22180,Trunk Lid,No Defect (Pass),0.951,0.0,3.95
+INSP-22181,Hood,No Defect (Pass),0.954,0.0,4.31
+INSP-22182,Hood,Paint Scratch / Blemish,0.663,0.8,3.8
+INSP-22183,Hood,No Defect (Pass),0.864,0.0,4.16
+INSP-22184,Door Left Front,No Defect (Pass),0.975,0.0,4.35
+INSP-22185,Hood,Panel Gap Misalignment,0.971,0.87,3.97
+INSP-22186,Door Left Front,Welding Porosity,0.914,0.87,3.74
+INSP-22187,Hood,No Defect (Pass),0.933,0.0,4.26
+INSP-22188,Hood,No Defect (Pass),0.993,0.0,4.76
+INSP-22189,Roof Pillar,No Defect (Pass),0.928,0.0,3.86
+INSP-22190,Door Left Front,No Defect (Pass),0.906,0.0,4.63
+INSP-22191,Trunk Lid,No Defect (Pass),0.991,0.0,4.12
+INSP-22192,Quarter Panel Right,No Defect (Pass),0.752,0.0,3.86
+INSP-22193,Quarter Panel Right,No Defect (Pass),0.979,0.0,4.4
+INSP-22194,Quarter Panel Right,No Defect (Pass),0.778,0.0,3.64
+INSP-22195,Door Left Front,No Defect (Pass),0.976,0.0,3.87
+INSP-22196,Door Left Front,No Defect (Pass),0.813,0.0,4.09
+INSP-22197,Door Left Front,No Defect (Pass),0.807,0.0,3.85
+INSP-22198,Roof Pillar,No Defect (Pass),0.86,0.0,4.74
+INSP-22199,Trunk Lid,No Defect (Pass),0.967,0.0,3.6
+INSP-22200,Door Left Front,No Defect (Pass),0.991,0.0,4.06
+INSP-22201,Hood,No Defect (Pass),0.995,0.0,3.76
+INSP-22202,Hood,Panel Gap Misalignment,0.739,0.66,4.4
+INSP-22203,Roof Pillar,No Defect (Pass),0.91,0.0,4.2
+INSP-22204,Trunk Lid,No Defect (Pass),0.702,0.0,4.42
+INSP-22205,Roof Pillar,No Defect (Pass),0.824,0.0,4.37
+INSP-22206,Roof Pillar,No Defect (Pass),0.908,0.0,4.57
+INSP-22207,Hood,No Defect (Pass),0.879,0.0,4.23
+INSP-22208,Door Left Front,No Defect (Pass),0.919,0.0,4.3
+INSP-22209,Hood,No Defect (Pass),0.935,0.0,4.55
+INSP-22210,Quarter Panel Right,No Defect (Pass),0.901,0.0,4.16
+INSP-22211,Door Left Front,Paint Scratch / Blemish,0.909,0.82,4.19
+INSP-22212,Quarter Panel Right,No Defect (Pass),0.715,0.0,4.5
+INSP-22213,Quarter Panel Right,Welding Porosity,0.748,0.95,4.16
+INSP-22214,Quarter Panel Right,Panel Gap Misalignment,0.877,0.92,4.79
+INSP-22215,Hood,Paint Scratch / Blemish,0.601,0.88,3.99
+INSP-22216,Quarter Panel Right,Welding Porosity,0.819,0.74,4.78
+INSP-22217,Trunk Lid,No Defect (Pass),0.873,0.0,4.32
+INSP-22218,Roof Pillar,No Defect (Pass),0.888,0.0,3.98
+INSP-22219,Hood,No Defect (Pass),0.982,0.0,4.45
+INSP-22220,Door Left Front,No Defect (Pass),0.908,0.0,4.74
+INSP-22221,Door Left Front,No Defect (Pass),0.812,0.0,4.19
+INSP-22222,Roof Pillar,Panel Gap Misalignment,0.789,0.94,4.41
+INSP-22223,Hood,No Defect (Pass),0.976,0.0,4.34
+INSP-22224,Quarter Panel Right,No Defect (Pass),0.987,0.0,4.3
+INSP-22225,Roof Pillar,No Defect (Pass),0.994,0.0,4.23
+INSP-22226,Door Left Front,No Defect (Pass),0.991,0.0,4.28
+INSP-22227,Roof Pillar,No Defect (Pass),0.926,0.0,3.85
+INSP-22228,Door Left Front,No Defect (Pass),0.792,0.0,4.15
+INSP-22229,Door Left Front,No Defect (Pass),0.66,0.0,4.28
+INSP-22230,Quarter Panel Right,No Defect (Pass),0.856,0.0,4.66
+INSP-22231,Quarter Panel Right,Welding Porosity,0.779,0.95,4.6
+INSP-22232,Hood,No Defect (Pass),0.91,0.0,3.83
+INSP-22233,Roof Pillar,No Defect (Pass),0.974,0.0,4.23
+INSP-22234,Door Left Front,No Defect (Pass),0.867,0.0,4.11
+INSP-22235,Roof Pillar,No Defect (Pass),0.806,0.0,4.01
+INSP-22236,Door Left Front,No Defect (Pass),0.882,0.0,4.43
+INSP-22237,Quarter Panel Right,No Defect (Pass),0.895,0.0,4.34
+INSP-22238,Door Left Front,No Defect (Pass),0.978,0.0,3.95
+INSP-22239,Quarter Panel Right,No Defect (Pass),0.966,0.0,4.1
+INSP-22240,Hood,No Defect (Pass),0.976,0.0,3.93
+INSP-22241,Hood,No Defect (Pass),0.71,0.0,4.19
+INSP-22242,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.11
+INSP-22243,Door Left Front,No Defect (Pass),0.927,0.0,4.5
+INSP-22244,Hood,No Defect (Pass),0.968,0.0,4.27
+INSP-22245,Roof Pillar,No Defect (Pass),0.944,0.0,4.17
+INSP-22246,Quarter Panel Right,No Defect (Pass),0.887,0.0,3.9
+INSP-22247,Hood,No Defect (Pass),0.983,0.0,3.69
+INSP-22248,Hood,No Defect (Pass),0.909,0.0,4.39
+INSP-22249,Quarter Panel Right,No Defect (Pass),0.733,0.0,4.16
+INSP-22250,Quarter Panel Right,Welding Porosity,0.897,0.85,4.44
+INSP-22251,Door Left Front,No Defect (Pass),0.988,0.0,4.43
+INSP-22252,Hood,No Defect (Pass),0.868,0.0,4.24
+INSP-22253,Door Left Front,No Defect (Pass),0.834,0.0,4.29
+INSP-22254,Quarter Panel Right,No Defect (Pass),1.0,0.0,4.26
+INSP-22255,Roof Pillar,No Defect (Pass),0.943,0.0,4.28
+INSP-22256,Hood,No Defect (Pass),0.705,0.0,4.0
+INSP-22257,Quarter Panel Right,No Defect (Pass),0.957,0.0,4.31
+INSP-22258,Roof Pillar,No Defect (Pass),0.705,0.0,4.59
+INSP-22259,Roof Pillar,Panel Gap Misalignment,0.839,0.78,4.37
+INSP-22260,Trunk Lid,No Defect (Pass),0.903,0.0,4.1
+INSP-22261,Roof Pillar,Paint Scratch / Blemish,0.667,0.73,3.69
+INSP-22262,Door Left Front,No Defect (Pass),0.951,0.0,4.36
+INSP-22263,Hood,No Defect (Pass),0.698,0.0,4.79
+INSP-22264,Door Left Front,Panel Gap Misalignment,0.678,0.82,3.98
+INSP-22265,Hood,Paint Scratch / Blemish,0.794,0.92,3.85
+INSP-22266,Roof Pillar,No Defect (Pass),0.975,0.0,4.74
+INSP-22267,Hood,No Defect (Pass),0.912,0.0,4.11
+INSP-22268,Quarter Panel Right,Welding Porosity,0.886,0.91,3.81
+INSP-22269,Roof Pillar,No Defect (Pass),0.92,0.0,4.29
+INSP-22270,Hood,No Defect (Pass),0.969,0.0,3.84
+INSP-22271,Door Left Front,No Defect (Pass),0.708,0.0,4.39
+INSP-22272,Quarter Panel Right,No Defect (Pass),0.995,0.0,4.35
+INSP-22273,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.38
+INSP-22274,Trunk Lid,No Defect (Pass),0.827,0.0,4.5
+INSP-22275,Door Left Front,No Defect (Pass),0.95,0.0,4.09
+INSP-22276,Trunk Lid,No Defect (Pass),0.869,0.0,4.49
+INSP-22277,Roof Pillar,No Defect (Pass),0.892,0.0,4.6
+INSP-22278,Quarter Panel Right,No Defect (Pass),0.969,0.0,4.05
+INSP-22279,Hood,No Defect (Pass),0.732,0.0,4.32
+INSP-22280,Roof Pillar,No Defect (Pass),0.915,0.0,3.67
+INSP-22281,Trunk Lid,No Defect (Pass),0.966,0.0,4.12
+INSP-22282,Hood,No Defect (Pass),0.989,0.0,4.31
+INSP-22283,Quarter Panel Right,No Defect (Pass),0.772,0.0,4.52
+INSP-22284,Door Left Front,Clear-coat Orange Peel,0.964,0.68,4.0
+INSP-22285,Quarter Panel Right,No Defect (Pass),0.916,0.0,4.54
+INSP-22286,Door Left Front,No Defect (Pass),0.974,0.0,4.98
+INSP-22287,Trunk Lid,No Defect (Pass),0.822,0.0,4.1
+INSP-22288,Hood,No Defect (Pass),0.904,0.0,3.98
+INSP-22289,Trunk Lid,No Defect (Pass),0.961,0.0,4.42
+INSP-22290,Quarter Panel Right,No Defect (Pass),0.979,0.0,3.89
+INSP-22291,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.24
+INSP-22292,Door Left Front,No Defect (Pass),0.979,0.0,4.76
+INSP-22293,Quarter Panel Right,No Defect (Pass),0.945,0.0,4.11
+INSP-22294,Hood,No Defect (Pass),0.988,0.0,4.13
+INSP-22295,Quarter Panel Right,No Defect (Pass),0.929,0.0,4.11
+INSP-22296,Hood,No Defect (Pass),0.842,0.0,4.11
+INSP-22297,Hood,No Defect (Pass),0.83,0.0,4.45
+INSP-22298,Roof Pillar,No Defect (Pass),0.976,0.0,4.5
+INSP-22299,Trunk Lid,No Defect (Pass),0.951,0.0,3.84
+INSP-22300,Trunk Lid,No Defect (Pass),0.992,0.0,3.99
+INSP-22301,Quarter Panel Right,No Defect (Pass),0.823,0.0,4.26
+INSP-22302,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.74
+INSP-22303,Roof Pillar,No Defect (Pass),0.909,0.0,4.13
+INSP-22304,Quarter Panel Right,No Defect (Pass),0.896,0.0,4.53
+INSP-22305,Trunk Lid,No Defect (Pass),0.985,0.0,4.55
+INSP-22306,Door Left Front,No Defect (Pass),0.997,0.0,3.8
+INSP-22307,Quarter Panel Right,No Defect (Pass),0.972,0.0,4.57
+INSP-22308,Quarter Panel Right,No Defect (Pass),0.987,0.0,4.24
+INSP-22309,Quarter Panel Right,No Defect (Pass),0.939,0.0,3.96
+INSP-22310,Door Left Front,No Defect (Pass),0.91,0.0,4.32
+INSP-22311,Door Left Front,No Defect (Pass),0.977,0.0,4.01
+INSP-22312,Door Left Front,No Defect (Pass),0.89,0.0,4.61
+INSP-22313,Roof Pillar,No Defect (Pass),0.916,0.0,4.23
+INSP-22314,Roof Pillar,No Defect (Pass),0.986,0.0,4.57
+INSP-22315,Hood,No Defect (Pass),0.999,0.0,4.23
+INSP-22316,Roof Pillar,No Defect (Pass),0.98,0.0,4.6
+INSP-22317,Roof Pillar,No Defect (Pass),0.859,0.0,4.41
+INSP-22318,Roof Pillar,No Defect (Pass),0.954,0.0,3.48
+INSP-22319,Trunk Lid,No Defect (Pass),0.729,0.0,4.51
+INSP-22320,Quarter Panel Right,No Defect (Pass),0.793,0.0,4.08
+INSP-22321,Hood,No Defect (Pass),0.978,0.0,4.1
+INSP-22322,Roof Pillar,No Defect (Pass),0.947,0.0,4.15
+INSP-22323,Roof Pillar,No Defect (Pass),0.899,0.0,4.75
+INSP-22324,Hood,No Defect (Pass),0.916,0.0,4.41
+INSP-22325,Quarter Panel Right,No Defect (Pass),0.802,0.0,3.94
+INSP-22326,Trunk Lid,No Defect (Pass),0.993,0.0,4.26
+INSP-22327,Roof Pillar,No Defect (Pass),0.977,0.0,4.05
+INSP-22328,Trunk Lid,No Defect (Pass),0.906,0.0,3.91
+INSP-22329,Quarter Panel Right,No Defect (Pass),0.864,0.0,4.22
+INSP-22330,Door Left Front,No Defect (Pass),0.795,0.0,3.75
+INSP-22331,Quarter Panel Right,No Defect (Pass),0.978,0.0,4.54
+INSP-22332,Hood,Paint Scratch / Blemish,0.921,0.79,4.07
+INSP-22333,Hood,No Defect (Pass),0.883,0.0,4.07
+INSP-22334,Roof Pillar,No Defect (Pass),0.772,0.0,4.54
+INSP-22335,Door Left Front,No Defect (Pass),0.954,0.0,3.86
+INSP-22336,Trunk Lid,Panel Gap Misalignment,0.739,0.72,4.36
+INSP-22337,Quarter Panel Right,No Defect (Pass),0.91,0.0,3.97
+INSP-22338,Door Left Front,No Defect (Pass),0.822,0.0,4.15
+INSP-22339,Roof Pillar,No Defect (Pass),0.861,0.0,4.32
+INSP-22340,Hood,No Defect (Pass),0.975,0.0,4.09
+INSP-22341,Quarter Panel Right,No Defect (Pass),0.914,0.0,4.3
+INSP-22342,Quarter Panel Right,No Defect (Pass),0.905,0.0,4.17
+INSP-22343,Quarter Panel Right,No Defect (Pass),0.927,0.0,4.46
+INSP-22344,Trunk Lid,No Defect (Pass),0.893,0.0,4.2
+INSP-22345,Trunk Lid,No Defect (Pass),0.942,0.0,4.03
+INSP-22346,Hood,No Defect (Pass),0.934,0.0,3.75
+INSP-22347,Roof Pillar,Paint Scratch / Blemish,0.766,0.83,4.23
+INSP-22348,Hood,No Defect (Pass),0.893,0.0,4.19
+INSP-22349,Hood,No Defect (Pass),0.949,0.0,4.17
+INSP-22350,Door Left Front,No Defect (Pass),0.812,0.0,4.45
+INSP-22351,Trunk Lid,No Defect (Pass),0.763,0.0,4.21
+INSP-22352,Hood,No Defect (Pass),0.812,0.0,4.4
+INSP-22353,Roof Pillar,Paint Scratch / Blemish,0.824,0.93,3.89
+INSP-22354,Trunk Lid,No Defect (Pass),0.876,0.0,4.1
+INSP-22355,Trunk Lid,No Defect (Pass),0.981,0.0,4.38
+INSP-22356,Door Left Front,No Defect (Pass),0.971,0.0,4.18
+INSP-22357,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.51
+INSP-22358,Roof Pillar,No Defect (Pass),0.99,0.0,3.9
+INSP-22359,Door Left Front,No Defect (Pass),0.954,0.0,4.98
+INSP-22360,Quarter Panel Right,No Defect (Pass),0.916,0.0,4.41
+INSP-22361,Trunk Lid,No Defect (Pass),0.821,0.0,3.79
+INSP-22362,Hood,No Defect (Pass),0.841,0.0,3.96
+INSP-22363,Roof Pillar,Welding Porosity,0.768,0.67,3.71
+INSP-22364,Roof Pillar,No Defect (Pass),0.917,0.0,4.41
+INSP-22365,Quarter Panel Right,No Defect (Pass),0.965,0.0,4.48
+INSP-22366,Trunk Lid,No Defect (Pass),0.917,0.0,4.32
+INSP-22367,Trunk Lid,No Defect (Pass),0.873,0.0,4.36
+INSP-22368,Door Left Front,No Defect (Pass),0.996,0.0,3.44
+INSP-22369,Quarter Panel Right,No Defect (Pass),0.966,0.0,3.89
+INSP-22370,Door Left Front,Paint Scratch / Blemish,0.684,0.92,4.06
+INSP-22371,Door Left Front,No Defect (Pass),0.942,0.0,4.33
+INSP-22372,Roof Pillar,No Defect (Pass),0.986,0.0,4.13
+INSP-22373,Roof Pillar,No Defect (Pass),0.751,0.0,4.35
+INSP-22374,Hood,Clear-coat Orange Peel,0.77,0.8,4.72
+INSP-22375,Trunk Lid,No Defect (Pass),0.995,0.0,3.98
+INSP-22376,Quarter Panel Right,No Defect (Pass),0.872,0.0,4.49
+INSP-22377,Hood,No Defect (Pass),0.883,0.0,3.9
+INSP-22378,Door Left Front,No Defect (Pass),0.997,0.0,3.66
+INSP-22379,Hood,No Defect (Pass),0.915,0.0,3.98
+INSP-22380,Door Left Front,Paint Scratch / Blemish,0.818,0.88,4.2
+INSP-22381,Trunk Lid,No Defect (Pass),0.88,0.0,4.29
+INSP-22382,Quarter Panel Right,No Defect (Pass),0.94,0.0,4.48
+INSP-22383,Hood,No Defect (Pass),0.749,0.0,4.22
+INSP-22384,Door Left Front,No Defect (Pass),0.979,0.0,4.39
+INSP-22385,Door Left Front,Welding Porosity,0.637,0.91,3.94
+INSP-22386,Roof Pillar,No Defect (Pass),0.9,0.0,4.68
+INSP-22387,Quarter Panel Right,No Defect (Pass),0.976,0.0,4.05
+INSP-22388,Quarter Panel Right,No Defect (Pass),0.828,0.0,4.11
+INSP-22389,Quarter Panel Right,No Defect (Pass),0.939,0.0,4.9
+INSP-22390,Door Left Front,No Defect (Pass),0.941,0.0,4.0
+INSP-22391,Trunk Lid,No Defect (Pass),0.986,0.0,4.17
+INSP-22392,Roof Pillar,No Defect (Pass),0.983,0.0,4.31
+INSP-22393,Trunk Lid,No Defect (Pass),0.986,0.0,4.44
+INSP-22394,Quarter Panel Right,No Defect (Pass),0.991,0.0,4.28
+INSP-22395,Hood,No Defect (Pass),0.864,0.0,3.65
+INSP-22396,Quarter Panel Right,Welding Porosity,0.574,0.67,3.88
+INSP-22397,Roof Pillar,No Defect (Pass),0.976,0.0,4.05
+INSP-22398,Roof Pillar,No Defect (Pass),0.939,0.0,4.18
+INSP-22399,Quarter Panel Right,No Defect (Pass),0.846,0.0,4.31
+INSP-22400,Quarter Panel Right,No Defect (Pass),0.925,0.0,3.95
+INSP-22401,Door Left Front,No Defect (Pass),0.927,0.0,4.43
+INSP-22402,Hood,No Defect (Pass),0.879,0.0,3.53
+INSP-22403,Quarter Panel Right,No Defect (Pass),0.768,0.0,3.71
+INSP-22404,Roof Pillar,No Defect (Pass),0.971,0.0,4.53
+INSP-22405,Hood,No Defect (Pass),0.889,0.0,3.82
+INSP-22406,Quarter Panel Right,No Defect (Pass),0.912,0.0,4.38
+INSP-22407,Trunk Lid,No Defect (Pass),0.892,0.0,4.63
+INSP-22408,Quarter Panel Right,No Defect (Pass),0.932,0.0,4.45
+INSP-22409,Door Left Front,No Defect (Pass),0.969,0.0,4.58
+INSP-22410,Roof Pillar,No Defect (Pass),0.743,0.0,4.17
+INSP-22411,Roof Pillar,No Defect (Pass),0.931,0.0,3.99
+INSP-22412,Roof Pillar,No Defect (Pass),0.969,0.0,4.56
+INSP-22413,Quarter Panel Right,No Defect (Pass),0.884,0.0,4.49
+INSP-22414,Trunk Lid,No Defect (Pass),0.987,0.0,4.47
+INSP-22415,Trunk Lid,No Defect (Pass),0.987,0.0,4.37
+INSP-22416,Hood,No Defect (Pass),0.938,0.0,4.34
+INSP-22417,Hood,No Defect (Pass),0.931,0.0,4.23
+INSP-22418,Roof Pillar,No Defect (Pass),0.941,0.0,3.89
+INSP-22419,Quarter Panel Right,No Defect (Pass),0.782,0.0,4.31
+INSP-22420,Hood,No Defect (Pass),0.949,0.0,3.55
+INSP-22421,Roof Pillar,Welding Porosity,0.795,0.7,4.23
+INSP-22422,Door Left Front,Welding Porosity,0.81,0.66,4.46
+INSP-22423,Hood,No Defect (Pass),0.761,0.0,3.8
+INSP-22424,Trunk Lid,No Defect (Pass),0.735,0.0,3.91
+INSP-22425,Quarter Panel Right,No Defect (Pass),0.631,0.0,4.28
+INSP-22426,Trunk Lid,No Defect (Pass),0.867,0.0,4.29
+INSP-22427,Trunk Lid,No Defect (Pass),0.78,0.0,4.42
+INSP-22428,Hood,No Defect (Pass),0.958,0.0,4.59
+INSP-22429,Quarter Panel Right,No Defect (Pass),0.952,0.0,4.01
+INSP-22430,Roof Pillar,No Defect (Pass),0.972,0.0,4.0
+INSP-22431,Door Left Front,No Defect (Pass),0.863,0.0,4.55
+INSP-22432,Door Left Front,Panel Gap Misalignment,0.929,0.88,4.15
+INSP-22433,Door Left Front,No Defect (Pass),0.994,0.0,4.15
+INSP-22434,Trunk Lid,No Defect (Pass),0.814,0.0,4.09
+INSP-22435,Roof Pillar,No Defect (Pass),0.947,0.0,4.34
+INSP-22436,Quarter Panel Right,No Defect (Pass),0.943,0.0,4.54
+INSP-22437,Trunk Lid,Paint Scratch / Blemish,0.363,0.88,4.58
+INSP-22438,Quarter Panel Right,No Defect (Pass),0.995,0.0,4.3
+INSP-22439,Quarter Panel Right,No Defect (Pass),0.949,0.0,4.59
+INSP-22440,Roof Pillar,Welding Porosity,0.837,0.67,4.22
+INSP-22441,Hood,No Defect (Pass),0.932,0.0,4.56
+INSP-22442,Door Left Front,No Defect (Pass),0.868,0.0,4.11
+INSP-22443,Quarter Panel Right,No Defect (Pass),0.73,0.0,3.91
+INSP-22444,Door Left Front,No Defect (Pass),0.811,0.0,3.87
+INSP-22445,Roof Pillar,No Defect (Pass),0.991,0.0,4.51
+INSP-22446,Door Left Front,No Defect (Pass),0.936,0.0,3.98
+INSP-22447,Door Left Front,Paint Scratch / Blemish,0.762,0.75,4.61
+INSP-22448,Roof Pillar,No Defect (Pass),0.902,0.0,4.36
+INSP-22449,Trunk Lid,No Defect (Pass),0.931,0.0,4.2
+INSP-22450,Door Left Front,No Defect (Pass),0.876,0.0,3.99
+INSP-22451,Roof Pillar,Paint Scratch / Blemish,0.754,0.76,4.4
+INSP-22452,Roof Pillar,Panel Gap Misalignment,0.794,0.66,3.64
+INSP-22453,Roof Pillar,No Defect (Pass),0.891,0.0,4.22
+INSP-22454,Hood,Paint Scratch / Blemish,0.846,0.75,3.85
+INSP-22455,Door Left Front,No Defect (Pass),0.813,0.0,4.59
+INSP-22456,Hood,No Defect (Pass),0.935,0.0,4.31
+INSP-22457,Trunk Lid,No Defect (Pass),0.908,0.0,4.18
+INSP-22458,Quarter Panel Right,No Defect (Pass),0.902,0.0,3.87
+INSP-22459,Trunk Lid,No Defect (Pass),0.918,0.0,4.11
+INSP-22460,Quarter Panel Right,Clear-coat Orange Peel,0.601,0.82,3.9
+INSP-22461,Trunk Lid,Clear-coat Orange Peel,0.97,0.84,4.3
+INSP-22462,Trunk Lid,No Defect (Pass),0.805,0.0,4.02
+INSP-22463,Roof Pillar,Welding Porosity,0.755,0.76,4.21
+INSP-22464,Trunk Lid,No Defect (Pass),0.866,0.0,4.24
+INSP-22465,Door Left Front,No Defect (Pass),0.564,0.0,4.58
+INSP-22466,Door Left Front,No Defect (Pass),0.755,0.0,4.3
+INSP-22467,Trunk Lid,No Defect (Pass),0.946,0.0,3.74
+INSP-22468,Quarter Panel Right,Welding Porosity,0.824,0.68,3.97
+INSP-22469,Roof Pillar,No Defect (Pass),0.708,0.0,4.23
+INSP-22470,Quarter Panel Right,No Defect (Pass),0.994,0.0,4.9
+INSP-22471,Trunk Lid,No Defect (Pass),0.892,0.0,3.9
+INSP-22472,Quarter Panel Right,No Defect (Pass),0.933,0.0,4.56
+INSP-22473,Hood,No Defect (Pass),0.993,0.0,4.48
+INSP-22474,Trunk Lid,No Defect (Pass),0.791,0.0,4.07
+INSP-22475,Trunk Lid,No Defect (Pass),0.999,0.0,4.35
+INSP-22476,Hood,No Defect (Pass),0.98,0.0,4.93
+INSP-22477,Door Left Front,No Defect (Pass),0.792,0.0,3.86
+INSP-22478,Quarter Panel Right,No Defect (Pass),0.913,0.0,4.12
+INSP-22479,Hood,No Defect (Pass),0.972,0.0,3.54
+INSP-22480,Roof Pillar,No Defect (Pass),0.929,0.0,4.04
+INSP-22481,Roof Pillar,No Defect (Pass),0.928,0.0,4.13
+INSP-22482,Quarter Panel Right,No Defect (Pass),0.919,0.0,3.91
+INSP-22483,Hood,No Defect (Pass),0.986,0.0,3.8
+INSP-22484,Door Left Front,No Defect (Pass),0.831,0.0,4.23
+INSP-22485,Roof Pillar,No Defect (Pass),0.919,0.0,4.31
+INSP-22486,Trunk Lid,No Defect (Pass),0.979,0.0,4.49
+INSP-22487,Door Left Front,No Defect (Pass),0.936,0.0,4.11
+INSP-22488,Hood,No Defect (Pass),0.972,0.0,4.19
+INSP-22489,Trunk Lid,Paint Scratch / Blemish,0.732,0.74,4.5
+INSP-22490,Roof Pillar,No Defect (Pass),0.974,0.0,3.81
+INSP-22491,Quarter Panel Right,No Defect (Pass),0.712,0.0,4.35
+INSP-22492,Roof Pillar,No Defect (Pass),0.904,0.0,3.95
+INSP-22493,Door Left Front,No Defect (Pass),0.979,0.0,3.67
+INSP-22494,Roof Pillar,No Defect (Pass),0.944,0.0,4.23
+INSP-22495,Roof Pillar,No Defect (Pass),0.881,0.0,3.6
+INSP-22496,Trunk Lid,No Defect (Pass),0.956,0.0,4.71
+INSP-22497,Roof Pillar,No Defect (Pass),0.903,0.0,4.52
+INSP-22498,Roof Pillar,No Defect (Pass),0.814,0.0,4.67
+INSP-22499,Trunk Lid,No Defect (Pass),0.858,0.0,4.22
+INSP-22500,Hood,No Defect (Pass),0.988,0.0,4.24
+INSP-22501,Hood,Paint Scratch / Blemish,0.828,0.74,4.3
+INSP-22502,Door Left Front,No Defect (Pass),0.775,0.0,3.84
+INSP-22503,Door Left Front,No Defect (Pass),0.995,0.0,4.03
+INSP-22504,Roof Pillar,No Defect (Pass),0.838,0.0,3.95
+INSP-22505,Quarter Panel Right,No Defect (Pass),0.907,0.0,4.55
+INSP-22506,Trunk Lid,No Defect (Pass),0.963,0.0,4.2
+INSP-22507,Door Left Front,No Defect (Pass),0.846,0.0,4.11
+INSP-22508,Quarter Panel Right,No Defect (Pass),0.925,0.0,4.34
+INSP-22509,Roof Pillar,No Defect (Pass),0.828,0.0,4.58
+INSP-22510,Quarter Panel Right,No Defect (Pass),0.943,0.0,4.46
+INSP-22511,Trunk Lid,No Defect (Pass),0.883,0.0,3.9
+INSP-22512,Door Left Front,No Defect (Pass),0.506,0.0,4.09
+INSP-22513,Door Left Front,No Defect (Pass),0.888,0.0,4.56
+INSP-22514,Hood,No Defect (Pass),0.925,0.0,4.59
+INSP-22515,Trunk Lid,No Defect (Pass),0.878,0.0,4.15
+INSP-22516,Hood,No Defect (Pass),0.953,0.0,4.11
+INSP-22517,Hood,No Defect (Pass),0.709,0.0,4.23
+INSP-22518,Roof Pillar,No Defect (Pass),0.749,0.0,4.19
+INSP-22519,Roof Pillar,No Defect (Pass),0.941,0.0,4.1
+INSP-22520,Door Left Front,Paint Scratch / Blemish,0.915,0.68,4.18
+INSP-22521,Roof Pillar,No Defect (Pass),0.971,0.0,4.24
+INSP-22522,Door Left Front,Panel Gap Misalignment,0.717,0.79,3.89
+INSP-22523,Quarter Panel Right,No Defect (Pass),0.859,0.0,4.12
+INSP-22524,Door Left Front,No Defect (Pass),0.943,0.0,3.84
+INSP-22525,Door Left Front,No Defect (Pass),0.94,0.0,4.27
+INSP-22526,Hood,No Defect (Pass),0.84,0.0,4.49
+INSP-22527,Roof Pillar,No Defect (Pass),0.997,0.0,4.32
+INSP-22528,Quarter Panel Right,No Defect (Pass),0.703,0.0,4.46
+INSP-22529,Hood,No Defect (Pass),0.884,0.0,4.15
+INSP-22530,Trunk Lid,No Defect (Pass),0.876,0.0,4.03
+INSP-22531,Hood,No Defect (Pass),0.98,0.0,4.47
+INSP-22532,Roof Pillar,No Defect (Pass),0.974,0.0,3.48
+INSP-22533,Quarter Panel Right,No Defect (Pass),0.792,0.0,4.0
+INSP-22534,Roof Pillar,No Defect (Pass),0.8,0.0,3.94
+INSP-22535,Roof Pillar,Paint Scratch / Blemish,0.939,0.83,3.96
+INSP-22536,Hood,No Defect (Pass),0.932,0.0,3.49
+INSP-22537,Quarter Panel Right,No Defect (Pass),0.86,0.0,4.08
+INSP-22538,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.38
+INSP-22539,Trunk Lid,No Defect (Pass),0.524,0.0,4.67
+INSP-22540,Roof Pillar,No Defect (Pass),0.964,0.0,3.95
+INSP-22541,Quarter Panel Right,No Defect (Pass),0.967,0.0,3.59
+INSP-22542,Door Left Front,No Defect (Pass),0.86,0.0,4.32
+INSP-22543,Trunk Lid,No Defect (Pass),0.968,0.0,4.61
+INSP-22544,Door Left Front,No Defect (Pass),0.991,0.0,3.81
+INSP-22545,Hood,No Defect (Pass),0.992,0.0,4.57
+INSP-22546,Hood,No Defect (Pass),0.846,0.0,4.08
+INSP-22547,Trunk Lid,No Defect (Pass),0.902,0.0,4.14
+INSP-22548,Hood,No Defect (Pass),0.746,0.0,3.82
+INSP-22549,Door Left Front,No Defect (Pass),0.998,0.0,4.43
+INSP-22550,Hood,No Defect (Pass),0.981,0.0,4.03
+INSP-22551,Hood,No Defect (Pass),0.777,0.0,4.58
+INSP-22552,Trunk Lid,No Defect (Pass),0.975,0.0,4.59
+INSP-22553,Hood,No Defect (Pass),0.701,0.0,3.86
+INSP-22554,Hood,No Defect (Pass),0.95,0.0,4.01
+INSP-22555,Roof Pillar,No Defect (Pass),0.987,0.0,4.26
+INSP-22556,Trunk Lid,No Defect (Pass),0.875,0.0,4.01
+INSP-22557,Quarter Panel Right,No Defect (Pass),0.934,0.0,4.15
+INSP-22558,Roof Pillar,Welding Porosity,0.544,0.78,4.62
+INSP-22559,Trunk Lid,Welding Porosity,0.825,0.73,3.92
+INSP-22560,Roof Pillar,No Defect (Pass),0.96,0.0,4.51
+INSP-22561,Door Left Front,No Defect (Pass),0.946,0.0,3.98
+INSP-22562,Door Left Front,No Defect (Pass),0.967,0.0,4.52
+INSP-22563,Quarter Panel Right,No Defect (Pass),0.996,0.0,3.77
+INSP-22564,Roof Pillar,No Defect (Pass),0.81,0.0,4.21
+INSP-22565,Trunk Lid,No Defect (Pass),0.986,0.0,3.87
+INSP-22566,Quarter Panel Right,No Defect (Pass),0.901,0.0,4.06
+INSP-22567,Quarter Panel Right,No Defect (Pass),0.917,0.0,3.77
+INSP-22568,Door Left Front,Panel Gap Misalignment,0.95,0.9,4.07
+INSP-22569,Door Left Front,No Defect (Pass),0.996,0.0,4.53
+INSP-22570,Trunk Lid,No Defect (Pass),0.967,0.0,4.16
+INSP-22571,Hood,No Defect (Pass),0.886,0.0,4.1
+INSP-22572,Roof Pillar,No Defect (Pass),0.861,0.0,3.95
+INSP-22573,Door Left Front,Paint Scratch / Blemish,0.677,0.72,4.66
+INSP-22574,Quarter Panel Right,No Defect (Pass),0.912,0.0,4.7
+INSP-22575,Trunk Lid,No Defect (Pass),0.994,0.0,4.32
+INSP-22576,Trunk Lid,No Defect (Pass),0.949,0.0,4.58
+INSP-22577,Roof Pillar,No Defect (Pass),0.944,0.0,3.79
+INSP-22578,Door Left Front,No Defect (Pass),0.822,0.0,4.23
+INSP-22579,Trunk Lid,No Defect (Pass),0.984,0.0,4.26
+INSP-22580,Trunk Lid,No Defect (Pass),0.99,0.0,4.45
+INSP-22581,Hood,No Defect (Pass),0.937,0.0,4.14
+INSP-22582,Quarter Panel Right,No Defect (Pass),0.994,0.0,4.76
+INSP-22583,Roof Pillar,No Defect (Pass),0.767,0.0,4.06
+INSP-22584,Trunk Lid,No Defect (Pass),0.87,0.0,4.69
+INSP-22585,Trunk Lid,No Defect (Pass),0.838,0.0,3.97
+INSP-22586,Hood,Clear-coat Orange Peel,0.733,0.78,3.79
+INSP-22587,Hood,No Defect (Pass),0.791,0.0,4.28
+INSP-22588,Door Left Front,No Defect (Pass),0.974,0.0,4.23
+INSP-22589,Trunk Lid,No Defect (Pass),0.945,0.0,4.11
+INSP-22590,Door Left Front,No Defect (Pass),0.986,0.0,3.72
+INSP-22591,Trunk Lid,No Defect (Pass),0.905,0.0,3.95
+INSP-22592,Hood,No Defect (Pass),0.886,0.0,3.9
+INSP-22593,Hood,No Defect (Pass),0.861,0.0,4.19
+INSP-22594,Door Left Front,No Defect (Pass),0.964,0.0,4.38
+INSP-22595,Hood,No Defect (Pass),0.971,0.0,4.14
+INSP-22596,Hood,No Defect (Pass),0.882,0.0,4.53
+INSP-22597,Hood,No Defect (Pass),0.912,0.0,4.45
+INSP-22598,Roof Pillar,No Defect (Pass),0.954,0.0,4.53
+INSP-22599,Hood,No Defect (Pass),0.986,0.0,4.18
+INSP-22600,Roof Pillar,No Defect (Pass),0.903,0.0,3.75
+INSP-22601,Trunk Lid,No Defect (Pass),0.831,0.0,4.26
+INSP-22602,Hood,Paint Scratch / Blemish,0.807,0.91,4.23
+INSP-22603,Trunk Lid,No Defect (Pass),0.947,0.0,4.08
+INSP-22604,Hood,No Defect (Pass),0.446,0.0,4.03
+INSP-22605,Hood,No Defect (Pass),0.925,0.0,3.91
+INSP-22606,Door Left Front,No Defect (Pass),0.717,0.0,4.09
+INSP-22607,Roof Pillar,No Defect (Pass),0.942,0.0,3.22
+INSP-22608,Door Left Front,Paint Scratch / Blemish,0.507,0.67,4.31
+INSP-22609,Trunk Lid,No Defect (Pass),0.837,0.0,4.37
+INSP-22610,Door Left Front,No Defect (Pass),0.939,0.0,3.87
+INSP-22611,Door Left Front,No Defect (Pass),0.984,0.0,4.24
+INSP-22612,Door Left Front,No Defect (Pass),0.753,0.0,3.92
+INSP-22613,Quarter Panel Right,No Defect (Pass),0.941,0.0,4.29
+INSP-22614,Roof Pillar,No Defect (Pass),0.989,0.0,4.43
+INSP-22615,Trunk Lid,No Defect (Pass),0.735,0.0,4.13
+INSP-22616,Door Left Front,No Defect (Pass),0.819,0.0,4.48
+INSP-22617,Door Left Front,No Defect (Pass),0.998,0.0,4.52
+INSP-22618,Door Left Front,No Defect (Pass),0.9,0.0,3.65
+INSP-22619,Roof Pillar,No Defect (Pass),0.99,0.0,4.59
+INSP-22620,Door Left Front,No Defect (Pass),0.979,0.0,4.36
+INSP-22621,Trunk Lid,No Defect (Pass),0.953,0.0,4.04
+INSP-22622,Hood,No Defect (Pass),0.921,0.0,4.09
+INSP-22623,Quarter Panel Right,Clear-coat Orange Peel,0.697,0.93,4.09
+INSP-22624,Quarter Panel Right,Paint Scratch / Blemish,0.829,0.8,4.98
+INSP-22625,Roof Pillar,No Defect (Pass),0.915,0.0,4.36
+INSP-22626,Door Left Front,No Defect (Pass),0.866,0.0,3.93
+INSP-22627,Trunk Lid,No Defect (Pass),0.98,0.0,4.24
+INSP-22628,Roof Pillar,No Defect (Pass),0.961,0.0,4.48
+INSP-22629,Hood,No Defect (Pass),0.951,0.0,4.04
+INSP-22630,Roof Pillar,No Defect (Pass),0.904,0.0,4.54
+INSP-22631,Hood,No Defect (Pass),0.877,0.0,4.08
+INSP-22632,Door Left Front,No Defect (Pass),0.823,0.0,3.89
+INSP-22633,Roof Pillar,No Defect (Pass),0.81,0.0,4.77
+INSP-22634,Quarter Panel Right,No Defect (Pass),0.883,0.0,3.99
+INSP-22635,Trunk Lid,No Defect (Pass),0.949,0.0,4.34
+INSP-22636,Door Left Front,Paint Scratch / Blemish,0.777,0.68,4.04
+INSP-22637,Hood,No Defect (Pass),0.942,0.0,4.3
+INSP-22638,Trunk Lid,No Defect (Pass),0.787,0.0,4.29
+INSP-22639,Trunk Lid,No Defect (Pass),0.863,0.0,4.98
+INSP-22640,Quarter Panel Right,No Defect (Pass),0.925,0.0,4.02
+INSP-22641,Roof Pillar,No Defect (Pass),0.944,0.0,3.86
+INSP-22642,Door Left Front,No Defect (Pass),0.851,0.0,4.16
+INSP-22643,Door Left Front,No Defect (Pass),0.842,0.0,4.81
+INSP-22644,Trunk Lid,No Defect (Pass),0.941,0.0,4.24
+INSP-22645,Roof Pillar,No Defect (Pass),0.78,0.0,4.4
+INSP-22646,Roof Pillar,No Defect (Pass),0.974,0.0,3.97
+INSP-22647,Roof Pillar,No Defect (Pass),0.893,0.0,4.15
+INSP-22648,Hood,No Defect (Pass),0.818,0.0,4.25
+INSP-22649,Trunk Lid,No Defect (Pass),0.982,0.0,4.19
+INSP-22650,Door Left Front,No Defect (Pass),0.695,0.0,4.08
+INSP-22651,Hood,No Defect (Pass),0.946,0.0,4.1
+INSP-22652,Trunk Lid,No Defect (Pass),0.943,0.0,3.54
+INSP-22653,Hood,No Defect (Pass),0.968,0.0,3.99
+INSP-22654,Roof Pillar,No Defect (Pass),0.985,0.0,4.17
+INSP-22655,Door Left Front,No Defect (Pass),0.969,0.0,4.03
+INSP-22656,Door Left Front,No Defect (Pass),0.905,0.0,4.02
+INSP-22657,Hood,No Defect (Pass),0.937,0.0,4.31
+INSP-22658,Door Left Front,No Defect (Pass),0.988,0.0,4.2
+INSP-22659,Roof Pillar,No Defect (Pass),0.868,0.0,3.78
+INSP-22660,Hood,No Defect (Pass),0.998,0.0,3.99
+INSP-22661,Roof Pillar,Panel Gap Misalignment,0.91,0.79,4.13
+INSP-22662,Roof Pillar,No Defect (Pass),0.823,0.0,4.12
+INSP-22663,Door Left Front,No Defect (Pass),0.523,0.0,3.93
+INSP-22664,Hood,No Defect (Pass),0.971,0.0,4.02
+INSP-22665,Roof Pillar,No Defect (Pass),0.892,0.0,4.56
+INSP-22666,Hood,Clear-coat Orange Peel,0.968,0.89,4.04
+INSP-22667,Roof Pillar,No Defect (Pass),0.828,0.0,4.29
+INSP-22668,Roof Pillar,Paint Scratch / Blemish,0.652,0.88,4.04
+INSP-22669,Quarter Panel Right,No Defect (Pass),0.816,0.0,3.6
+INSP-22670,Roof Pillar,No Defect (Pass),0.914,0.0,4.33
+INSP-22671,Door Left Front,No Defect (Pass),0.916,0.0,3.9
+INSP-22672,Trunk Lid,No Defect (Pass),0.957,0.0,4.13
+INSP-22673,Trunk Lid,No Defect (Pass),0.782,0.0,4.4
+INSP-22674,Hood,No Defect (Pass),0.787,0.0,4.15
+INSP-22675,Hood,No Defect (Pass),0.816,0.0,3.75
+INSP-22676,Hood,Paint Scratch / Blemish,0.733,0.9,4.34
+INSP-22677,Hood,Paint Scratch / Blemish,0.576,0.87,4.11
+INSP-22678,Door Left Front,No Defect (Pass),0.932,0.0,3.76
+INSP-22679,Trunk Lid,No Defect (Pass),0.941,0.0,4.22
+INSP-22680,Roof Pillar,Welding Porosity,0.62,0.85,4.01
+INSP-22681,Hood,Panel Gap Misalignment,0.762,0.72,3.94
+INSP-22682,Trunk Lid,No Defect (Pass),0.882,0.0,3.81
+INSP-22683,Door Left Front,No Defect (Pass),0.78,0.0,3.91
+INSP-22684,Hood,Paint Scratch / Blemish,0.835,0.77,4.79
+INSP-22685,Door Left Front,No Defect (Pass),0.855,0.0,3.95
+INSP-22686,Trunk Lid,No Defect (Pass),0.967,0.0,4.29
+INSP-22687,Trunk Lid,No Defect (Pass),0.942,0.0,3.9
+INSP-22688,Roof Pillar,Panel Gap Misalignment,0.41,0.78,4.02
+INSP-22689,Door Left Front,No Defect (Pass),0.811,0.0,4.13
+INSP-22690,Trunk Lid,No Defect (Pass),0.992,0.0,4.52
+INSP-22691,Trunk Lid,No Defect (Pass),0.893,0.0,4.09
+INSP-22692,Roof Pillar,Paint Scratch / Blemish,0.651,0.67,4.11
+INSP-22693,Trunk Lid,Welding Porosity,0.637,0.75,4.5
+INSP-22694,Door Left Front,No Defect (Pass),0.768,0.0,4.51
+INSP-22695,Roof Pillar,No Defect (Pass),0.883,0.0,4.44
+INSP-22696,Hood,No Defect (Pass),0.997,0.0,4.94
+INSP-22697,Hood,Clear-coat Orange Peel,0.939,0.69,4.61
+INSP-22698,Hood,No Defect (Pass),0.825,0.0,4.52
+INSP-22699,Quarter Panel Right,No Defect (Pass),0.701,0.0,4.49
+INSP-22700,Hood,No Defect (Pass),0.907,0.0,4.39
+INSP-22701,Door Left Front,No Defect (Pass),0.854,0.0,3.87
+INSP-22702,Roof Pillar,Paint Scratch / Blemish,0.697,0.81,4.02
+INSP-22703,Quarter Panel Right,No Defect (Pass),0.916,0.0,4.06
+INSP-22704,Quarter Panel Right,No Defect (Pass),0.804,0.0,4.01
+INSP-22705,Hood,No Defect (Pass),0.887,0.0,4.58
+INSP-22706,Quarter Panel Right,No Defect (Pass),0.938,0.0,4.6
+INSP-22707,Door Left Front,No Defect (Pass),0.986,0.0,3.95
+INSP-22708,Trunk Lid,No Defect (Pass),0.964,0.0,4.47
+INSP-22709,Hood,Welding Porosity,0.957,0.75,4.19
+INSP-22710,Hood,No Defect (Pass),0.889,0.0,4.68
+INSP-22711,Quarter Panel Right,No Defect (Pass),0.932,0.0,4.12
+INSP-22712,Hood,No Defect (Pass),0.825,0.0,3.96
+INSP-22713,Trunk Lid,No Defect (Pass),0.902,0.0,4.19
+INSP-22714,Roof Pillar,No Defect (Pass),0.999,0.0,4.34
+INSP-22715,Hood,Paint Scratch / Blemish,0.928,0.8,3.82
+INSP-22716,Door Left Front,No Defect (Pass),1.0,0.0,4.4
+INSP-22717,Hood,No Defect (Pass),0.953,0.0,3.85
+INSP-22718,Trunk Lid,No Defect (Pass),0.906,0.0,3.78
+INSP-22719,Quarter Panel Right,No Defect (Pass),0.909,0.0,5.02
+INSP-22720,Hood,No Defect (Pass),0.854,0.0,4.27
+INSP-22721,Quarter Panel Right,No Defect (Pass),0.902,0.0,4.26
+INSP-22722,Hood,No Defect (Pass),0.942,0.0,3.98
+INSP-22723,Roof Pillar,No Defect (Pass),0.768,0.0,4.23
+INSP-22724,Quarter Panel Right,No Defect (Pass),0.979,0.0,4.45
+INSP-22725,Roof Pillar,No Defect (Pass),0.868,0.0,4.4
+INSP-22726,Roof Pillar,No Defect (Pass),0.975,0.0,4.55
+INSP-22727,Trunk Lid,Clear-coat Orange Peel,0.656,0.86,3.87
+INSP-22728,Door Left Front,No Defect (Pass),0.781,0.0,4.25
+INSP-22729,Hood,No Defect (Pass),0.902,0.0,4.36
+INSP-22730,Quarter Panel Right,No Defect (Pass),0.816,0.0,4.27
+INSP-22731,Roof Pillar,No Defect (Pass),0.916,0.0,4.01
+INSP-22732,Quarter Panel Right,No Defect (Pass),0.952,0.0,3.63
+INSP-22733,Quarter Panel Right,No Defect (Pass),0.922,0.0,4.23
+INSP-22734,Door Left Front,No Defect (Pass),0.917,0.0,3.64
+INSP-22735,Roof Pillar,No Defect (Pass),0.899,0.0,4.07
+INSP-22736,Hood,No Defect (Pass),0.909,0.0,4.21
+INSP-22737,Trunk Lid,No Defect (Pass),0.693,0.0,3.49
+INSP-22738,Quarter Panel Right,Paint Scratch / Blemish,0.742,0.93,4.49
+INSP-22739,Hood,No Defect (Pass),0.933,0.0,3.6
+INSP-22740,Door Left Front,No Defect (Pass),0.979,0.0,4.62
+INSP-22741,Quarter Panel Right,No Defect (Pass),0.743,0.0,4.34
+INSP-22742,Door Left Front,No Defect (Pass),0.934,0.0,4.32
+INSP-22743,Trunk Lid,No Defect (Pass),0.916,0.0,4.23
+INSP-22744,Door Left Front,No Defect (Pass),0.755,0.0,4.19
+INSP-22745,Roof Pillar,Paint Scratch / Blemish,0.839,0.74,4.24
+INSP-22746,Trunk Lid,Clear-coat Orange Peel,0.707,0.9,3.96
+INSP-22747,Door Left Front,No Defect (Pass),0.908,0.0,3.6
+INSP-22748,Roof Pillar,No Defect (Pass),0.931,0.0,4.32
+INSP-22749,Quarter Panel Right,No Defect (Pass),0.724,0.0,4.18
+INSP-22750,Hood,No Defect (Pass),0.788,0.0,3.84
+INSP-22751,Hood,No Defect (Pass),0.982,0.0,4.99
+INSP-22752,Door Left Front,No Defect (Pass),0.933,0.0,4.73
+INSP-22753,Roof Pillar,No Defect (Pass),0.905,0.0,4.23
+INSP-22754,Roof Pillar,No Defect (Pass),0.931,0.0,4.53
+INSP-22755,Door Left Front,No Defect (Pass),0.904,0.0,4.34
+INSP-22756,Hood,No Defect (Pass),0.783,0.0,4.5
+INSP-22757,Door Left Front,No Defect (Pass),0.964,0.0,4.02
+INSP-22758,Quarter Panel Right,No Defect (Pass),0.954,0.0,3.79
+INSP-22759,Door Left Front,No Defect (Pass),0.998,0.0,3.87
+INSP-22760,Quarter Panel Right,No Defect (Pass),0.837,0.0,4.23
+INSP-22761,Quarter Panel Right,No Defect (Pass),0.864,0.0,4.32
+INSP-22762,Trunk Lid,No Defect (Pass),0.929,0.0,4.4
+INSP-22763,Roof Pillar,Welding Porosity,0.856,0.76,4.03
+INSP-22764,Trunk Lid,No Defect (Pass),0.726,0.0,4.74
+INSP-22765,Door Left Front,No Defect (Pass),0.88,0.0,4.65
+INSP-22766,Quarter Panel Right,No Defect (Pass),0.649,0.0,4.61
+INSP-22767,Quarter Panel Right,No Defect (Pass),0.744,0.0,4.4
+INSP-22768,Hood,No Defect (Pass),0.836,0.0,4.55
+INSP-22769,Roof Pillar,No Defect (Pass),0.987,0.0,4.32
+INSP-22770,Roof Pillar,No Defect (Pass),0.985,0.0,4.76
+INSP-22771,Trunk Lid,Welding Porosity,0.944,0.81,4.27
+INSP-22772,Quarter Panel Right,No Defect (Pass),0.825,0.0,4.23
+INSP-22773,Quarter Panel Right,No Defect (Pass),0.989,0.0,4.39
+INSP-22774,Trunk Lid,No Defect (Pass),0.982,0.0,4.37
+INSP-22775,Hood,No Defect (Pass),0.986,0.0,4.64
+INSP-22776,Trunk Lid,No Defect (Pass),0.913,0.0,3.86
+INSP-22777,Roof Pillar,No Defect (Pass),0.958,0.0,3.92
+INSP-22778,Quarter Panel Right,No Defect (Pass),0.914,0.0,4.54
+INSP-22779,Quarter Panel Right,No Defect (Pass),0.913,0.0,4.19
+INSP-22780,Trunk Lid,No Defect (Pass),0.951,0.0,4.15
+INSP-22781,Hood,Paint Scratch / Blemish,0.939,0.65,4.1
+INSP-22782,Quarter Panel Right,No Defect (Pass),0.872,0.0,4.83
+INSP-22783,Trunk Lid,No Defect (Pass),0.988,0.0,4.28
+INSP-22784,Roof Pillar,No Defect (Pass),0.848,0.0,4.16
+INSP-22785,Roof Pillar,No Defect (Pass),0.774,0.0,4.24
+INSP-22786,Hood,Panel Gap Misalignment,0.729,0.87,4.48
+INSP-22787,Roof Pillar,No Defect (Pass),0.937,0.0,3.84
+INSP-22788,Roof Pillar,No Defect (Pass),0.952,0.0,4.14
+INSP-22789,Trunk Lid,No Defect (Pass),0.729,0.0,4.27
+INSP-22790,Roof Pillar,No Defect (Pass),0.986,0.0,4.33
+INSP-22791,Quarter Panel Right,No Defect (Pass),0.565,0.0,4.63
+INSP-22792,Hood,No Defect (Pass),0.919,0.0,3.93
+INSP-22793,Hood,No Defect (Pass),0.75,0.0,5.11
+INSP-22794,Quarter Panel Right,No Defect (Pass),0.962,0.0,4.68
+INSP-22795,Hood,No Defect (Pass),0.952,0.0,4.44
+INSP-22796,Trunk Lid,No Defect (Pass),0.808,0.0,3.81
+INSP-22797,Door Left Front,No Defect (Pass),0.69,0.0,4.29
+INSP-22798,Trunk Lid,No Defect (Pass),0.891,0.0,4.17
+INSP-22799,Hood,No Defect (Pass),0.786,0.0,3.98
+INSP-22800,Hood,Panel Gap Misalignment,0.761,0.86,4.2
+INSP-22801,Door Left Front,No Defect (Pass),0.98,0.0,4.44
+INSP-22802,Roof Pillar,No Defect (Pass),0.948,0.0,3.93
+INSP-22803,Roof Pillar,No Defect (Pass),0.909,0.0,4.45
+INSP-22804,Trunk Lid,Paint Scratch / Blemish,0.809,0.7,4.93
+INSP-22805,Trunk Lid,No Defect (Pass),0.982,0.0,3.89
+INSP-22806,Door Left Front,No Defect (Pass),0.777,0.0,4.37
+INSP-22807,Roof Pillar,No Defect (Pass),0.963,0.0,3.99
+INSP-22808,Door Left Front,No Defect (Pass),0.97,0.0,4.19
+INSP-22809,Hood,No Defect (Pass),0.975,0.0,4.26
+INSP-22810,Door Left Front,No Defect (Pass),0.963,0.0,4.23
+INSP-22811,Quarter Panel Right,No Defect (Pass),0.908,0.0,4.5
+INSP-22812,Door Left Front,No Defect (Pass),0.979,0.0,3.79
+INSP-22813,Hood,Welding Porosity,0.876,0.67,4.38
+INSP-22814,Roof Pillar,No Defect (Pass),0.784,0.0,4.54
+INSP-22815,Trunk Lid,No Defect (Pass),0.988,0.0,3.68
+INSP-22816,Roof Pillar,No Defect (Pass),0.804,0.0,4.47
+INSP-22817,Door Left Front,No Defect (Pass),0.888,0.0,3.97
+INSP-22818,Roof Pillar,No Defect (Pass),0.996,0.0,3.97
+INSP-22819,Quarter Panel Right,No Defect (Pass),0.966,0.0,3.99
+INSP-22820,Roof Pillar,No Defect (Pass),0.946,0.0,3.89
+INSP-22821,Hood,No Defect (Pass),0.895,0.0,4.34
+INSP-22822,Roof Pillar,No Defect (Pass),0.859,0.0,4.54
+INSP-22823,Hood,No Defect (Pass),0.744,0.0,4.3
+INSP-22824,Hood,No Defect (Pass),0.97,0.0,4.48
+INSP-22825,Quarter Panel Right,No Defect (Pass),0.977,0.0,4.06
+INSP-22826,Door Left Front,No Defect (Pass),0.96,0.0,3.66
+INSP-22827,Roof Pillar,No Defect (Pass),0.907,0.0,4.3
+INSP-22828,Quarter Panel Right,No Defect (Pass),0.704,0.0,4.84
+INSP-22829,Door Left Front,No Defect (Pass),0.762,0.0,3.67
+INSP-22830,Door Left Front,No Defect (Pass),0.928,0.0,4.21
+INSP-22831,Door Left Front,No Defect (Pass),0.95,0.0,4.4
+INSP-22832,Door Left Front,No Defect (Pass),0.901,0.0,4.22
+INSP-22833,Trunk Lid,No Defect (Pass),0.831,0.0,3.95
+INSP-22834,Trunk Lid,No Defect (Pass),0.927,0.0,4.24
+INSP-22835,Roof Pillar,No Defect (Pass),0.803,0.0,4.41
+INSP-22836,Roof Pillar,No Defect (Pass),0.98,0.0,4.39
+INSP-22837,Hood,No Defect (Pass),0.846,0.0,3.94
+INSP-22838,Trunk Lid,No Defect (Pass),0.928,0.0,3.86
+INSP-22839,Trunk Lid,No Defect (Pass),0.871,0.0,3.98
+INSP-22840,Roof Pillar,No Defect (Pass),0.944,0.0,4.04
+INSP-22841,Door Left Front,No Defect (Pass),0.648,0.0,3.68
+INSP-22842,Quarter Panel Right,No Defect (Pass),0.936,0.0,4.12
+INSP-22843,Trunk Lid,No Defect (Pass),0.953,0.0,4.64
+INSP-22844,Trunk Lid,No Defect (Pass),1.0,0.0,4.05
+INSP-22845,Hood,No Defect (Pass),0.946,0.0,4.4
+INSP-22846,Quarter Panel Right,Paint Scratch / Blemish,0.822,0.67,4.46
+INSP-22847,Quarter Panel Right,No Defect (Pass),0.879,0.0,4.39
+INSP-22848,Roof Pillar,No Defect (Pass),0.86,0.0,4.21
+INSP-22849,Trunk Lid,Panel Gap Misalignment,0.864,0.9,4.27
+INSP-22850,Roof Pillar,No Defect (Pass),0.926,0.0,4.5
+INSP-22851,Roof Pillar,No Defect (Pass),0.993,0.0,4.72
+INSP-22852,Quarter Panel Right,No Defect (Pass),0.832,0.0,3.54
+INSP-22853,Door Left Front,No Defect (Pass),0.963,0.0,4.14
+INSP-22854,Door Left Front,No Defect (Pass),0.938,0.0,4.59
+INSP-22855,Trunk Lid,No Defect (Pass),0.98,0.0,4.65
+INSP-22856,Hood,No Defect (Pass),0.839,0.0,4.74
+INSP-22857,Hood,Panel Gap Misalignment,0.742,0.79,4.07
+INSP-22858,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.07
+INSP-22859,Trunk Lid,No Defect (Pass),0.883,0.0,4.05
+INSP-22860,Quarter Panel Right,No Defect (Pass),0.96,0.0,4.07
+INSP-22861,Trunk Lid,No Defect (Pass),0.892,0.0,4.2
+INSP-22862,Door Left Front,No Defect (Pass),0.884,0.0,4.04
+INSP-22863,Roof Pillar,Welding Porosity,0.673,0.7,4.02
+INSP-22864,Door Left Front,No Defect (Pass),0.968,0.0,3.64
+INSP-22865,Roof Pillar,No Defect (Pass),0.871,0.0,4.47
+INSP-22866,Roof Pillar,No Defect (Pass),0.806,0.0,4.79
+INSP-22867,Hood,No Defect (Pass),0.997,0.0,4.34
+INSP-22868,Trunk Lid,No Defect (Pass),0.815,0.0,4.34
+INSP-22869,Hood,No Defect (Pass),0.97,0.0,4.26
+INSP-22870,Quarter Panel Right,No Defect (Pass),0.975,0.0,4.0
+INSP-22871,Roof Pillar,No Defect (Pass),0.678,0.0,4.13
+INSP-22872,Trunk Lid,No Defect (Pass),0.897,0.0,4.0
+INSP-22873,Door Left Front,No Defect (Pass),0.94,0.0,4.08
+INSP-22874,Door Left Front,Paint Scratch / Blemish,0.856,0.83,4.17
+INSP-22875,Door Left Front,No Defect (Pass),0.976,0.0,4.41
+INSP-22876,Roof Pillar,No Defect (Pass),0.611,0.0,3.93
+INSP-22877,Trunk Lid,No Defect (Pass),0.85,0.0,4.26
+INSP-22878,Hood,No Defect (Pass),0.966,0.0,4.16
+INSP-22879,Trunk Lid,No Defect (Pass),0.816,0.0,3.89
+INSP-22880,Door Left Front,Panel Gap Misalignment,0.884,0.88,3.65
+INSP-22881,Quarter Panel Right,No Defect (Pass),0.957,0.0,4.39
+INSP-22882,Trunk Lid,No Defect (Pass),0.879,0.0,4.28
+INSP-22883,Quarter Panel Right,No Defect (Pass),0.922,0.0,4.39
+INSP-22884,Quarter Panel Right,No Defect (Pass),0.902,0.0,4.33
+INSP-22885,Door Left Front,No Defect (Pass),0.957,0.0,4.12
+INSP-22886,Quarter Panel Right,No Defect (Pass),0.996,0.0,4.24
+INSP-22887,Door Left Front,No Defect (Pass),0.953,0.0,3.67
+INSP-22888,Roof Pillar,No Defect (Pass),0.999,0.0,4.32
+INSP-22889,Quarter Panel Right,Paint Scratch / Blemish,0.886,0.91,4.55
+INSP-22890,Quarter Panel Right,No Defect (Pass),0.827,0.0,4.55
+INSP-22891,Roof Pillar,No Defect (Pass),0.834,0.0,4.12
+INSP-22892,Hood,No Defect (Pass),0.808,0.0,4.42
+INSP-22893,Roof Pillar,No Defect (Pass),0.903,0.0,3.98
+INSP-22894,Trunk Lid,No Defect (Pass),0.961,0.0,3.63
+INSP-22895,Hood,No Defect (Pass),0.977,0.0,3.42
+INSP-22896,Trunk Lid,No Defect (Pass),0.829,0.0,4.22
+INSP-22897,Roof Pillar,No Defect (Pass),0.933,0.0,4.1
+INSP-22898,Quarter Panel Right,No Defect (Pass),0.79,0.0,4.12
+INSP-22899,Trunk Lid,No Defect (Pass),0.873,0.0,4.16
+INSP-22900,Door Left Front,No Defect (Pass),0.96,0.0,3.92
+INSP-22901,Hood,Panel Gap Misalignment,0.854,0.94,3.98
+INSP-22902,Door Left Front,No Defect (Pass),0.977,0.0,3.89
+INSP-22903,Trunk Lid,No Defect (Pass),0.969,0.0,3.95
+INSP-22904,Hood,No Defect (Pass),0.962,0.0,4.11
+INSP-22905,Quarter Panel Right,No Defect (Pass),0.932,0.0,4.86
+INSP-22906,Trunk Lid,No Defect (Pass),0.937,0.0,4.11
+INSP-22907,Roof Pillar,No Defect (Pass),0.984,0.0,4.15
+INSP-22908,Hood,Paint Scratch / Blemish,0.684,0.78,4.39
+INSP-22909,Door Left Front,No Defect (Pass),0.894,0.0,3.49
+INSP-22910,Trunk Lid,Welding Porosity,0.931,0.77,3.78
+INSP-22911,Roof Pillar,No Defect (Pass),0.611,0.0,4.44
+INSP-22912,Trunk Lid,No Defect (Pass),0.921,0.0,3.79
+INSP-22913,Roof Pillar,No Defect (Pass),0.999,0.0,4.21
+INSP-22914,Roof Pillar,No Defect (Pass),0.739,0.0,4.1
+INSP-22915,Trunk Lid,No Defect (Pass),0.907,0.0,4.71
+INSP-22916,Quarter Panel Right,No Defect (Pass),0.877,0.0,4.12
+INSP-22917,Roof Pillar,No Defect (Pass),0.989,0.0,4.03
+INSP-22918,Roof Pillar,No Defect (Pass),0.887,0.0,4.12
+INSP-22919,Hood,No Defect (Pass),0.948,0.0,4.4
+INSP-22920,Quarter Panel Right,No Defect (Pass),0.862,0.0,4.08
+INSP-22921,Roof Pillar,No Defect (Pass),0.937,0.0,4.57
+INSP-22922,Trunk Lid,No Defect (Pass),0.783,0.0,3.87
+INSP-22923,Door Left Front,No Defect (Pass),0.7,0.0,4.11
+INSP-22924,Door Left Front,No Defect (Pass),0.976,0.0,4.47
+INSP-22925,Quarter Panel Right,No Defect (Pass),0.62,0.0,4.55
+INSP-22926,Hood,No Defect (Pass),0.851,0.0,4.27
+INSP-22927,Roof Pillar,No Defect (Pass),0.996,0.0,4.52
+INSP-22928,Hood,No Defect (Pass),0.9,0.0,4.15
+INSP-22929,Roof Pillar,No Defect (Pass),0.951,0.0,4.47
+INSP-22930,Door Left Front,No Defect (Pass),0.991,0.0,3.83
+INSP-22931,Trunk Lid,No Defect (Pass),0.875,0.0,3.92
+INSP-22932,Roof Pillar,No Defect (Pass),0.988,0.0,3.99
+INSP-22933,Hood,No Defect (Pass),0.924,0.0,3.75
+INSP-22934,Roof Pillar,No Defect (Pass),0.869,0.0,4.54
+INSP-22935,Roof Pillar,Welding Porosity,0.931,0.69,4.25
+INSP-22936,Trunk Lid,No Defect (Pass),0.804,0.0,3.9
+INSP-22937,Trunk Lid,No Defect (Pass),0.917,0.0,4.06
+INSP-22938,Roof Pillar,No Defect (Pass),0.91,0.0,4.08
+INSP-22939,Door Left Front,No Defect (Pass),0.792,0.0,4.12
+INSP-22940,Roof Pillar,No Defect (Pass),0.971,0.0,4.41
+INSP-22941,Trunk Lid,No Defect (Pass),0.885,0.0,4.48
+INSP-22942,Door Left Front,No Defect (Pass),0.815,0.0,3.94
+INSP-22943,Door Left Front,No Defect (Pass),0.926,0.0,4.13
+INSP-22944,Roof Pillar,No Defect (Pass),0.809,0.0,3.71
+INSP-22945,Trunk Lid,No Defect (Pass),0.829,0.0,4.08
+INSP-22946,Trunk Lid,No Defect (Pass),0.92,0.0,4.16
+INSP-22947,Roof Pillar,No Defect (Pass),0.798,0.0,4.01
+INSP-22948,Door Left Front,No Defect (Pass),0.988,0.0,3.94
+INSP-22949,Quarter Panel Right,No Defect (Pass),0.764,0.0,4.06
+INSP-22950,Roof Pillar,Paint Scratch / Blemish,0.638,0.66,4.22
+INSP-22951,Trunk Lid,No Defect (Pass),0.916,0.0,4.3
+INSP-22952,Quarter Panel Right,No Defect (Pass),0.873,0.0,4.39
+INSP-22953,Trunk Lid,No Defect (Pass),0.784,0.0,4.67
+INSP-22954,Quarter Panel Right,No Defect (Pass),0.936,0.0,4.35
+INSP-22955,Roof Pillar,Panel Gap Misalignment,0.902,0.91,4.55
+INSP-22956,Quarter Panel Right,No Defect (Pass),0.803,0.0,3.88
+INSP-22957,Door Left Front,No Defect (Pass),0.893,0.0,4.01
+INSP-22958,Quarter Panel Right,No Defect (Pass),0.869,0.0,3.99
+INSP-22959,Quarter Panel Right,No Defect (Pass),0.969,0.0,4.75
+INSP-22960,Roof Pillar,Clear-coat Orange Peel,0.883,0.91,4.22
+INSP-22961,Door Left Front,No Defect (Pass),0.99,0.0,3.97
+INSP-22962,Trunk Lid,No Defect (Pass),0.903,0.0,5.15
+INSP-22963,Door Left Front,No Defect (Pass),0.925,0.0,4.37
+INSP-22964,Roof Pillar,No Defect (Pass),0.93,0.0,4.61
+INSP-22965,Roof Pillar,No Defect (Pass),0.849,0.0,4.1
+INSP-22966,Trunk Lid,No Defect (Pass),0.962,0.0,4.87
+INSP-22967,Hood,No Defect (Pass),0.858,0.0,4.34
+INSP-22968,Door Left Front,No Defect (Pass),0.819,0.0,4.36
+INSP-22969,Door Left Front,No Defect (Pass),0.992,0.0,4.39
+INSP-22970,Roof Pillar,No Defect (Pass),0.579,0.0,3.8
+INSP-22971,Roof Pillar,No Defect (Pass),0.939,0.0,4.61
+INSP-22972,Hood,No Defect (Pass),0.895,0.0,4.48
+INSP-22973,Quarter Panel Right,No Defect (Pass),0.709,0.0,3.84
+INSP-22974,Door Left Front,No Defect (Pass),0.957,0.0,4.34
+INSP-22975,Door Left Front,No Defect (Pass),0.975,0.0,4.21
+INSP-22976,Quarter Panel Right,Paint Scratch / Blemish,0.779,0.77,3.82
+INSP-22977,Hood,No Defect (Pass),0.93,0.0,3.38
+INSP-22978,Quarter Panel Right,No Defect (Pass),0.852,0.0,3.72
+INSP-22979,Roof Pillar,Panel Gap Misalignment,0.86,0.9,4.51
+INSP-22980,Hood,No Defect (Pass),0.955,0.0,4.25
+INSP-22981,Trunk Lid,No Defect (Pass),0.828,0.0,3.81
+INSP-22982,Quarter Panel Right,No Defect (Pass),0.812,0.0,4.84
+INSP-22983,Hood,No Defect (Pass),0.783,0.0,3.82
+INSP-22984,Quarter Panel Right,No Defect (Pass),0.979,0.0,4.24
+INSP-22985,Roof Pillar,No Defect (Pass),0.981,0.0,4.18
+INSP-22986,Quarter Panel Right,No Defect (Pass),0.868,0.0,4.42
+INSP-22987,Trunk Lid,No Defect (Pass),0.903,0.0,4.16
+INSP-22988,Hood,Welding Porosity,0.8,0.9,4.03
+INSP-22989,Roof Pillar,No Defect (Pass),0.675,0.0,4.51
+INSP-22990,Trunk Lid,No Defect (Pass),0.943,0.0,3.8
+INSP-22991,Hood,No Defect (Pass),0.998,0.0,4.46
+INSP-22992,Door Left Front,No Defect (Pass),0.991,0.0,3.92
+INSP-22993,Roof Pillar,No Defect (Pass),0.994,0.0,4.44
+INSP-22994,Trunk Lid,No Defect (Pass),0.839,0.0,3.66
+INSP-22995,Quarter Panel Right,No Defect (Pass),0.885,0.0,3.94
+INSP-22996,Trunk Lid,No Defect (Pass),0.964,0.0,4.95
+INSP-22997,Quarter Panel Right,No Defect (Pass),0.953,0.0,4.43
+INSP-22998,Quarter Panel Right,No Defect (Pass),0.933,0.0,4.86
+INSP-22999,Hood,No Defect (Pass),0.961,0.0,4.49
+INSP-23000,Quarter Panel Right,No Defect (Pass),0.758,0.0,3.98
+INSP-23001,Hood,No Defect (Pass),0.791,0.0,4.67
+INSP-23002,Trunk Lid,No Defect (Pass),0.844,0.0,3.94
+INSP-23003,Quarter Panel Right,No Defect (Pass),0.888,0.0,4.05
+INSP-23004,Trunk Lid,No Defect (Pass),0.827,0.0,4.15
+INSP-23005,Quarter Panel Right,No Defect (Pass),0.863,0.0,4.01
+INSP-23006,Trunk Lid,No Defect (Pass),0.994,0.0,4.39
+INSP-23007,Trunk Lid,No Defect (Pass),0.789,0.0,4.41
+INSP-23008,Door Left Front,No Defect (Pass),0.967,0.0,4.03
+INSP-23009,Hood,No Defect (Pass),0.802,0.0,4.15
+INSP-23010,Roof Pillar,No Defect (Pass),0.922,0.0,4.31
+INSP-23011,Trunk Lid,Panel Gap Misalignment,0.671,0.88,4.12
+INSP-23012,Door Left Front,No Defect (Pass),0.928,0.0,4.05
+INSP-23013,Quarter Panel Right,Clear-coat Orange Peel,0.754,0.68,3.88
+INSP-23014,Door Left Front,No Defect (Pass),0.998,0.0,4.7
+INSP-23015,Door Left Front,No Defect (Pass),0.953,0.0,4.66
+INSP-23016,Hood,No Defect (Pass),0.991,0.0,4.56
+INSP-23017,Door Left Front,No Defect (Pass),0.847,0.0,4.19
+INSP-23018,Door Left Front,No Defect (Pass),0.96,0.0,4.17
+INSP-23019,Trunk Lid,Welding Porosity,0.653,0.81,3.72
+INSP-23020,Trunk Lid,No Defect (Pass),0.997,0.0,4.86
+INSP-23021,Trunk Lid,No Defect (Pass),0.973,0.0,4.52
+INSP-23022,Door Left Front,No Defect (Pass),0.662,0.0,4.27
+INSP-23023,Door Left Front,No Defect (Pass),0.999,0.0,3.98
+INSP-23024,Roof Pillar,No Defect (Pass),0.919,0.0,3.9
+INSP-23025,Hood,No Defect (Pass),0.93,0.0,3.85
+INSP-23026,Door Left Front,No Defect (Pass),0.67,0.0,4.14
+INSP-23027,Door Left Front,No Defect (Pass),0.951,0.0,4.19
+INSP-23028,Quarter Panel Right,Panel Gap Misalignment,0.751,0.71,4.25
+INSP-23029,Trunk Lid,No Defect (Pass),0.872,0.0,4.7
+INSP-23030,Quarter Panel Right,Panel Gap Misalignment,0.929,0.75,4.09
+INSP-23031,Quarter Panel Right,No Defect (Pass),0.736,0.0,4.5
+INSP-23032,Quarter Panel Right,No Defect (Pass),0.854,0.0,4.13
+INSP-23033,Roof Pillar,No Defect (Pass),0.963,0.0,4.5
+INSP-23034,Door Left Front,No Defect (Pass),0.835,0.0,3.62
+INSP-23035,Hood,No Defect (Pass),0.955,0.0,4.4
+INSP-23036,Trunk Lid,Welding Porosity,0.865,0.72,4.19
+INSP-23037,Trunk Lid,No Defect (Pass),0.828,0.0,4.4
+INSP-23038,Roof Pillar,Welding Porosity,0.686,0.7,4.09
+INSP-23039,Roof Pillar,No Defect (Pass),0.979,0.0,4.15
+INSP-23040,Quarter Panel Right,No Defect (Pass),0.903,0.0,4.4
+INSP-23041,Door Left Front,No Defect (Pass),0.987,0.0,4.19
+INSP-23042,Door Left Front,No Defect (Pass),0.671,0.0,4.1
+INSP-23043,Roof Pillar,No Defect (Pass),0.839,0.0,4.34
+INSP-23044,Hood,No Defect (Pass),0.992,0.0,4.96
+INSP-23045,Hood,No Defect (Pass),0.942,0.0,4.4
+INSP-23046,Hood,No Defect (Pass),0.834,0.0,3.8
+INSP-23047,Hood,No Defect (Pass),0.954,0.0,4.3
+INSP-23048,Hood,No Defect (Pass),0.984,0.0,4.58
+INSP-23049,Hood,No Defect (Pass),0.571,0.0,4.38
+INSP-23050,Trunk Lid,No Defect (Pass),0.591,0.0,4.57
+INSP-23051,Quarter Panel Right,No Defect (Pass),0.795,0.0,4.63
+INSP-23052,Roof Pillar,Paint Scratch / Blemish,0.779,0.74,3.87
+INSP-23053,Door Left Front,No Defect (Pass),0.974,0.0,3.7
+INSP-23054,Hood,No Defect (Pass),0.886,0.0,4.26
+INSP-23055,Door Left Front,No Defect (Pass),0.969,0.0,3.78
+INSP-23056,Roof Pillar,No Defect (Pass),0.961,0.0,3.95
+INSP-23057,Trunk Lid,No Defect (Pass),0.96,0.0,4.1
+INSP-23058,Door Left Front,No Defect (Pass),0.978,0.0,4.17
+INSP-23059,Hood,No Defect (Pass),0.996,0.0,4.32
+INSP-23060,Quarter Panel Right,No Defect (Pass),0.953,0.0,3.95
+INSP-23061,Hood,No Defect (Pass),0.931,0.0,4.2
+INSP-23062,Roof Pillar,No Defect (Pass),0.89,0.0,3.86
+INSP-23063,Hood,Paint Scratch / Blemish,0.853,0.69,4.05
+INSP-23064,Trunk Lid,Paint Scratch / Blemish,0.834,0.85,4.96
+INSP-23065,Door Left Front,No Defect (Pass),0.974,0.0,3.94
+INSP-23066,Trunk Lid,Paint Scratch / Blemish,0.791,0.67,4.02
+INSP-23067,Door Left Front,No Defect (Pass),0.967,0.0,4.5
+INSP-23068,Hood,No Defect (Pass),0.972,0.0,4.04
+INSP-23069,Door Left Front,No Defect (Pass),0.69,0.0,4.05
+INSP-23070,Quarter Panel Right,No Defect (Pass),0.969,0.0,4.59
+INSP-23071,Quarter Panel Right,No Defect (Pass),0.983,0.0,4.48
+INSP-23072,Roof Pillar,Panel Gap Misalignment,0.943,0.92,4.05
+INSP-23073,Roof Pillar,No Defect (Pass),0.893,0.0,4.0
+INSP-23074,Trunk Lid,No Defect (Pass),0.724,0.0,4.41
+INSP-23075,Roof Pillar,No Defect (Pass),0.9,0.0,4.22
+INSP-23076,Hood,No Defect (Pass),0.853,0.0,3.73
+INSP-23077,Hood,No Defect (Pass),0.997,0.0,4.61
+INSP-23078,Quarter Panel Right,Panel Gap Misalignment,0.373,0.85,3.88
+INSP-23079,Roof Pillar,Paint Scratch / Blemish,0.693,0.94,3.82
+INSP-23080,Trunk Lid,No Defect (Pass),0.948,0.0,4.52
+INSP-23081,Roof Pillar,No Defect (Pass),0.967,0.0,4.51
+INSP-23082,Quarter Panel Right,No Defect (Pass),0.971,0.0,3.95
+INSP-23083,Roof Pillar,No Defect (Pass),0.968,0.0,4.55
+INSP-23084,Door Left Front,No Defect (Pass),0.932,0.0,4.55
+INSP-23085,Hood,No Defect (Pass),0.95,0.0,4.6
+INSP-23086,Hood,No Defect (Pass),0.856,0.0,4.46
+INSP-23087,Hood,No Defect (Pass),0.84,0.0,3.99
+INSP-23088,Door Left Front,No Defect (Pass),0.805,0.0,4.21
+INSP-23089,Trunk Lid,No Defect (Pass),0.941,0.0,4.5
+INSP-23090,Door Left Front,No Defect (Pass),0.993,0.0,3.77
+INSP-23091,Quarter Panel Right,No Defect (Pass),0.731,0.0,4.41
+INSP-23092,Hood,No Defect (Pass),0.833,0.0,3.79
+INSP-23093,Hood,No Defect (Pass),0.964,0.0,4.68
+INSP-23094,Trunk Lid,No Defect (Pass),0.98,0.0,4.08
+INSP-23095,Hood,No Defect (Pass),0.982,0.0,4.25
+INSP-23096,Roof Pillar,No Defect (Pass),0.862,0.0,4.36
+INSP-23097,Quarter Panel Right,No Defect (Pass),0.731,0.0,4.36
+INSP-23098,Quarter Panel Right,No Defect (Pass),0.737,0.0,3.45
+INSP-23099,Roof Pillar,No Defect (Pass),0.981,0.0,3.82
+INSP-23100,Hood,No Defect (Pass),0.945,0.0,3.96
+INSP-23101,Trunk Lid,No Defect (Pass),0.989,0.0,4.52
+INSP-23102,Quarter Panel Right,No Defect (Pass),0.895,0.0,3.97
+INSP-23103,Trunk Lid,No Defect (Pass),0.512,0.0,4.1
+INSP-23104,Hood,No Defect (Pass),0.807,0.0,4.06
+INSP-23105,Quarter Panel Right,No Defect (Pass),0.899,0.0,4.61
+INSP-23106,Quarter Panel Right,No Defect (Pass),0.908,0.0,3.88
+INSP-23107,Door Left Front,No Defect (Pass),0.994,0.0,4.02
+INSP-23108,Hood,No Defect (Pass),0.945,0.0,3.76
+INSP-23109,Door Left Front,Welding Porosity,0.582,0.66,4.3
+INSP-23110,Door Left Front,No Defect (Pass),0.928,0.0,4.57
+INSP-23111,Quarter Panel Right,No Defect (Pass),0.993,0.0,4.11
+INSP-23112,Quarter Panel Right,No Defect (Pass),0.831,0.0,4.56
+INSP-23113,Roof Pillar,No Defect (Pass),0.986,0.0,4.8
+INSP-23114,Trunk Lid,No Defect (Pass),0.964,0.0,3.6
+INSP-23115,Trunk Lid,No Defect (Pass),0.979,0.0,3.93
+INSP-23116,Hood,No Defect (Pass),0.973,0.0,3.97
+INSP-23117,Quarter Panel Right,No Defect (Pass),0.919,0.0,3.93
+INSP-23118,Hood,No Defect (Pass),0.798,0.0,4.18
+INSP-23119,Door Left Front,Panel Gap Misalignment,0.643,0.75,4.09
+INSP-23120,Hood,No Defect (Pass),0.987,0.0,4.59
+INSP-23121,Quarter Panel Right,No Defect (Pass),0.927,0.0,4.56
+INSP-23122,Quarter Panel Right,No Defect (Pass),0.896,0.0,4.4
+INSP-23123,Hood,No Defect (Pass),0.709,0.0,4.41
+INSP-23124,Hood,No Defect (Pass),0.967,0.0,4.17
+INSP-23125,Door Left Front,No Defect (Pass),0.937,0.0,4.35
+INSP-23126,Trunk Lid,No Defect (Pass),0.886,0.0,4.33
+INSP-23127,Roof Pillar,No Defect (Pass),0.844,0.0,4.05
+INSP-23128,Hood,No Defect (Pass),0.769,0.0,4.41
+INSP-23129,Door Left Front,No Defect (Pass),0.961,0.0,4.2
+INSP-23130,Quarter Panel Right,No Defect (Pass),0.68,0.0,4.53
+INSP-23131,Door Left Front,Panel Gap Misalignment,0.62,0.71,4.11
+INSP-23132,Hood,No Defect (Pass),0.91,0.0,4.41
+INSP-23133,Hood,No Defect (Pass),0.944,0.0,3.98
+INSP-23134,Trunk Lid,No Defect (Pass),0.932,0.0,4.13
+INSP-23135,Door Left Front,No Defect (Pass),0.849,0.0,4.03
+INSP-23136,Trunk Lid,No Defect (Pass),0.747,0.0,4.15
+INSP-23137,Hood,No Defect (Pass),0.97,0.0,4.35
+INSP-23138,Hood,No Defect (Pass),0.944,0.0,4.58
+INSP-23139,Trunk Lid,No Defect (Pass),0.798,0.0,3.91
+INSP-23140,Door Left Front,No Defect (Pass),0.953,0.0,4.14
+INSP-23141,Roof Pillar,No Defect (Pass),0.81,0.0,3.97
+INSP-23142,Door Left Front,No Defect (Pass),0.932,0.0,4.57
+INSP-23143,Trunk Lid,No Defect (Pass),0.956,0.0,4.2
+INSP-23144,Quarter Panel Right,No Defect (Pass),0.866,0.0,4.59
+INSP-23145,Door Left Front,No Defect (Pass),0.971,0.0,4.61
+INSP-23146,Roof Pillar,No Defect (Pass),0.99,0.0,4.28
+INSP-23147,Trunk Lid,No Defect (Pass),0.988,0.0,4.4
+INSP-23148,Quarter Panel Right,No Defect (Pass),0.973,0.0,4.13
+INSP-23149,Door Left Front,No Defect (Pass),0.755,0.0,4.06
+INSP-23150,Roof Pillar,No Defect (Pass),0.971,0.0,4.2
+INSP-23151,Door Left Front,No Defect (Pass),0.987,0.0,4.17
+INSP-23152,Trunk Lid,Welding Porosity,0.835,0.66,4.05
+INSP-23153,Door Left Front,No Defect (Pass),0.966,0.0,3.83
+INSP-23154,Roof Pillar,No Defect (Pass),0.97,0.0,4.15
+INSP-23155,Hood,Panel Gap Misalignment,0.878,0.81,4.12
+INSP-23156,Door Left Front,No Defect (Pass),0.977,0.0,4.05
+INSP-23157,Door Left Front,No Defect (Pass),0.877,0.0,3.87
+INSP-23158,Trunk Lid,No Defect (Pass),0.818,0.0,3.88
+INSP-23159,Roof Pillar,No Defect (Pass),0.976,0.0,4.29
+INSP-23160,Roof Pillar,No Defect (Pass),0.986,0.0,4.05
+INSP-23161,Trunk Lid,No Defect (Pass),0.934,0.0,4.13
+INSP-23162,Door Left Front,No Defect (Pass),0.989,0.0,4.81
+INSP-23163,Roof Pillar,No Defect (Pass),0.985,0.0,4.38
+INSP-23164,Trunk Lid,Paint Scratch / Blemish,0.671,0.82,3.65
+INSP-23165,Roof Pillar,No Defect (Pass),0.87,0.0,4.74
+INSP-23166,Door Left Front,No Defect (Pass),0.943,0.0,4.31
+INSP-23167,Quarter Panel Right,No Defect (Pass),0.855,0.0,3.73
+INSP-23168,Door Left Front,No Defect (Pass),0.926,0.0,4.14
+INSP-23169,Hood,Paint Scratch / Blemish,0.838,0.68,4.26
+INSP-23170,Hood,Clear-coat Orange Peel,0.864,0.67,4.43
+INSP-23171,Roof Pillar,No Defect (Pass),0.889,0.0,4.29
+INSP-23172,Roof Pillar,No Defect (Pass),0.85,0.0,4.02
+INSP-23173,Quarter Panel Right,No Defect (Pass),0.957,0.0,4.17
+INSP-23174,Hood,No Defect (Pass),0.935,0.0,3.76
+INSP-23175,Quarter Panel Right,No Defect (Pass),0.991,0.0,4.54
+INSP-23176,Roof Pillar,No Defect (Pass),0.954,0.0,4.53
+INSP-23177,Trunk Lid,No Defect (Pass),0.57,0.0,4.21
+INSP-23178,Hood,No Defect (Pass),0.997,0.0,3.94
+INSP-23179,Hood,No Defect (Pass),0.864,0.0,4.23
+INSP-23180,Hood,No Defect (Pass),0.993,0.0,3.93
+INSP-23181,Hood,No Defect (Pass),0.991,0.0,3.89
+INSP-23182,Roof Pillar,No Defect (Pass),0.98,0.0,4.49
+INSP-23183,Hood,Clear-coat Orange Peel,0.567,0.82,4.36
+INSP-23184,Quarter Panel Right,No Defect (Pass),0.972,0.0,3.95
+INSP-23185,Roof Pillar,Welding Porosity,0.982,0.8,4.36
+INSP-23186,Door Left Front,No Defect (Pass),0.884,0.0,4.35
+INSP-23187,Quarter Panel Right,No Defect (Pass),0.966,0.0,4.57
+INSP-23188,Door Left Front,No Defect (Pass),0.986,0.0,3.93
+INSP-23189,Hood,Welding Porosity,0.953,0.8,3.83
+INSP-23190,Roof Pillar,No Defect (Pass),0.947,0.0,3.78
+INSP-23191,Roof Pillar,Welding Porosity,0.536,0.67,3.99
+INSP-23192,Roof Pillar,No Defect (Pass),0.965,0.0,4.64
+INSP-23193,Door Left Front,No Defect (Pass),0.917,0.0,4.01
+INSP-23194,Roof Pillar,No Defect (Pass),0.961,0.0,3.92
+INSP-23195,Quarter Panel Right,Paint Scratch / Blemish,0.877,0.86,4.14
+INSP-23196,Door Left Front,No Defect (Pass),0.899,0.0,4.13
+INSP-23197,Door Left Front,No Defect (Pass),0.897,0.0,4.28
+INSP-23198,Quarter Panel Right,No Defect (Pass),0.986,0.0,4.87
+INSP-23199,Roof Pillar,No Defect (Pass),0.891,0.0,4.41

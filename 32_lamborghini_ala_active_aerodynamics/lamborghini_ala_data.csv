@@ -1,0 +1,2601 @@
+Aero_Run_ID,Speed_kmh,Lateral_Acceleration_G,ALA_Flap_State,Total_Downforce_kg,Inner_Wheel_Yaw_Load_pct
+LAMBO-ALA-1000,210.8,1.38,High Downforce (Flaps Closed),195.4,68.7
+LAMBO-ALA-1001,151.2,-0.53,Aero-Vectoring Left,91.4,43.3
+LAMBO-ALA-1002,180.7,-1.25,Low Drag (Flaps Open),40.8,33.9
+LAMBO-ALA-1003,156.7,1.18,Aero-Vectoring Left,81.6,67.6
+LAMBO-ALA-1004,123.8,-0.73,High Downforce (Flaps Closed),59.0,39.1
+LAMBO-ALA-1005,247.1,-1.12,Aero-Vectoring Left,190.4,34.8
+LAMBO-ALA-1006,163.8,0.8,High Downforce (Flaps Closed),118.8,62.4
+LAMBO-ALA-1007,143.6,1.37,Low Drag (Flaps Open),32.3,69.3
+LAMBO-ALA-1008,159.0,-0.78,Aero-Vectoring Left,80.5,36.7
+LAMBO-ALA-1009,170.2,-0.96,High Downforce (Flaps Closed),119.1,35.1
+LAMBO-ALA-1010,337.2,-0.44,Aero-Vectoring Left,367.2,45.3
+LAMBO-ALA-1011,130.1,1.41,High Downforce (Flaps Closed),62.1,72.0
+LAMBO-ALA-1012,329.0,-1.16,Low Drag (Flaps Open),143.7,34.8
+LAMBO-ALA-1013,158.9,-1.16,High Downforce (Flaps Closed),120.8,34.9
+LAMBO-ALA-1014,146.8,-1.42,High Downforce (Flaps Closed),107.3,30.0
+LAMBO-ALA-1015,331.5,-0.49,Low Drag (Flaps Open),159.5,43.5
+LAMBO-ALA-1016,301.1,0.11,High Downforce (Flaps Closed),402.0,53.3
+LAMBO-ALA-1017,279.1,1.27,High Downforce (Flaps Closed),351.8,71.1
+LAMBO-ALA-1018,267.2,-0.81,Low Drag (Flaps Open),105.4,39.2
+LAMBO-ALA-1019,286.8,0.51,Low Drag (Flaps Open),114.9,58.8
+LAMBO-ALA-1020,174.3,-1.13,High Downforce (Flaps Closed),126.8,35.0
+LAMBO-ALA-1021,136.1,1.27,Low Drag (Flaps Open),26.8,66.8
+LAMBO-ALA-1022,292.7,0.44,High Downforce (Flaps Closed),404.7,55.1
+LAMBO-ALA-1023,198.8,0.46,Aero-Vectoring Left,129.8,54.6
+LAMBO-ALA-1024,242.4,-1.23,High Downforce (Flaps Closed),256.0,32.3
+LAMBO-ALA-1025,334.9,1.49,High Downforce (Flaps Closed),502.7,71.8
+LAMBO-ALA-1026,231.9,0.54,High Downforce (Flaps Closed),238.9,58.6
+LAMBO-ALA-1027,160.5,1.33,Aero-Vectoring Right,77.8,71.7
+LAMBO-ALA-1028,255.1,-0.08,Aero-Vectoring Left,209.5,50.2
+LAMBO-ALA-1029,324.2,0.96,High Downforce (Flaps Closed),480.9,66.4
+LAMBO-ALA-1030,337.6,0.26,High Downforce (Flaps Closed),495.5,52.6
+LAMBO-ALA-1031,156.7,-0.01,Low Drag (Flaps Open),24.7,45.8
+LAMBO-ALA-1032,310.0,-0.65,High Downforce (Flaps Closed),439.5,40.2
+LAMBO-ALA-1033,207.0,0.63,Aero-Vectoring Left,142.9,58.0
+LAMBO-ALA-1034,204.0,-1.3,High Downforce (Flaps Closed),184.4,33.6
+LAMBO-ALA-1035,133.0,0.24,Aero-Vectoring Right,46.4,52.5
+LAMBO-ALA-1036,171.9,-0.79,High Downforce (Flaps Closed),130.3,39.1
+LAMBO-ALA-1037,230.3,0.35,High Downforce (Flaps Closed),220.4,56.1
+LAMBO-ALA-1038,128.8,0.99,High Downforce (Flaps Closed),64.1,61.0
+LAMBO-ALA-1039,325.5,-1.11,High Downforce (Flaps Closed),475.0,31.9
+LAMBO-ALA-1040,149.0,1.11,High Downforce (Flaps Closed),112.2,67.1
+LAMBO-ALA-1041,307.7,0.07,High Downforce (Flaps Closed),408.2,50.7
+LAMBO-ALA-1042,141.2,-1.25,Aero-Vectoring Right,58.4,31.5
+LAMBO-ALA-1043,283.2,-1.41,High Downforce (Flaps Closed),368.9,28.0
+LAMBO-ALA-1044,192.3,-0.45,High Downforce (Flaps Closed),163.8,45.4
+LAMBO-ALA-1045,308.6,0.01,Aero-Vectoring Right,309.4,47.8
+LAMBO-ALA-1046,155.8,-0.35,High Downforce (Flaps Closed),114.1,46.1
+LAMBO-ALA-1047,214.5,0.88,Aero-Vectoring Right,155.5,64.2
+LAMBO-ALA-1048,179.7,0.65,Low Drag (Flaps Open),50.7,58.3
+LAMBO-ALA-1049,285.5,-1.01,Low Drag (Flaps Open),118.4,32.2
+LAMBO-ALA-1050,127.6,1.39,Low Drag (Flaps Open),23.1,67.8
+LAMBO-ALA-1051,310.1,-0.48,Aero-Vectoring Left,304.4,44.1
+LAMBO-ALA-1052,182.2,1.42,Aero-Vectoring Left,110.4,68.6
+LAMBO-ALA-1053,171.1,1.43,Aero-Vectoring Right,81.5,70.9
+LAMBO-ALA-1054,171.0,0.75,Aero-Vectoring Right,89.7,60.3
+LAMBO-ALA-1055,168.8,-0.68,High Downforce (Flaps Closed),135.0,40.5
+LAMBO-ALA-1056,306.5,0.71,High Downforce (Flaps Closed),427.2,57.7
+LAMBO-ALA-1057,258.6,1.19,Low Drag (Flaps Open),89.8,66.8
+LAMBO-ALA-1058,199.8,0.16,High Downforce (Flaps Closed),182.1,52.8
+LAMBO-ALA-1059,282.3,0.79,Low Drag (Flaps Open),118.1,64.6
+LAMBO-ALA-1060,292.1,0.07,High Downforce (Flaps Closed),381.2,49.8
+LAMBO-ALA-1061,154.2,0.09,Aero-Vectoring Left,60.8,48.6
+LAMBO-ALA-1062,208.2,-1.31,Aero-Vectoring Right,128.0,33.5
+LAMBO-ALA-1063,137.8,0.48,High Downforce (Flaps Closed),82.5,56.0
+LAMBO-ALA-1064,296.5,0.41,Low Drag (Flaps Open),126.4,55.5
+LAMBO-ALA-1065,301.6,-0.79,Aero-Vectoring Left,286.4,37.9
+LAMBO-ALA-1066,211.2,1.15,High Downforce (Flaps Closed),213.9,70.8
+LAMBO-ALA-1067,314.5,0.79,High Downforce (Flaps Closed),451.8,64.6
+LAMBO-ALA-1068,143.5,-1.46,Aero-Vectoring Left,60.1,28.0
+LAMBO-ALA-1069,128.2,-1.36,Aero-Vectoring Right,48.1,30.8
+LAMBO-ALA-1070,289.4,-1.37,Aero-Vectoring Left,279.0,30.1
+LAMBO-ALA-1071,158.8,0.7,Aero-Vectoring Left,75.1,59.6
+LAMBO-ALA-1072,204.1,-0.03,High Downforce (Flaps Closed),184.4,51.8
+LAMBO-ALA-1073,218.2,-0.47,Aero-Vectoring Right,151.2,41.5
+LAMBO-ALA-1074,307.5,0.35,High Downforce (Flaps Closed),434.0,55.3
+LAMBO-ALA-1075,326.6,-0.62,High Downforce (Flaps Closed),477.6,39.4
+LAMBO-ALA-1076,317.0,1.02,High Downforce (Flaps Closed),449.3,63.9
+LAMBO-ALA-1077,291.6,-0.62,Low Drag (Flaps Open),111.6,43.9
+LAMBO-ALA-1078,280.5,0.49,High Downforce (Flaps Closed),370.7,56.3
+LAMBO-ALA-1079,246.7,1.18,Low Drag (Flaps Open),84.9,64.9
+LAMBO-ALA-1080,321.6,-0.19,Aero-Vectoring Right,323.6,50.1
+LAMBO-ALA-1081,261.7,0.21,Low Drag (Flaps Open),92.8,52.4
+LAMBO-ALA-1082,252.5,-0.16,Aero-Vectoring Left,199.6,47.5
+LAMBO-ALA-1083,125.2,0.94,Low Drag (Flaps Open),20.8,63.0
+LAMBO-ALA-1084,312.2,1.43,Aero-Vectoring Left,305.5,68.4
+LAMBO-ALA-1085,282.1,-0.97,High Downforce (Flaps Closed),349.5,38.4
+LAMBO-ALA-1086,303.3,0.89,Aero-Vectoring Right,291.0,63.3
+LAMBO-ALA-1087,286.6,0.85,Aero-Vectoring Right,277.2,64.6
+LAMBO-ALA-1088,244.9,-1.1,Low Drag (Flaps Open),79.6,35.7
+LAMBO-ALA-1089,238.8,0.86,High Downforce (Flaps Closed),248.4,60.9
+LAMBO-ALA-1090,236.8,-0.72,Aero-Vectoring Right,188.0,39.3
+LAMBO-ALA-1091,162.0,0.07,High Downforce (Flaps Closed),106.5,48.9
+LAMBO-ALA-1092,154.1,1.45,High Downforce (Flaps Closed),114.3,72.0
+LAMBO-ALA-1093,208.3,-0.67,Low Drag (Flaps Open),71.6,37.3
+LAMBO-ALA-1094,229.8,0.12,High Downforce (Flaps Closed),244.8,52.1
+LAMBO-ALA-1095,282.2,0.13,Aero-Vectoring Right,236.5,53.5
+LAMBO-ALA-1096,153.5,1.01,Aero-Vectoring Right,67.7,62.9
+LAMBO-ALA-1097,126.6,-0.22,Aero-Vectoring Right,53.5,44.0
+LAMBO-ALA-1098,141.6,-1.32,Aero-Vectoring Right,73.7,29.1
+LAMBO-ALA-1099,187.2,-0.81,Aero-Vectoring Right,108.7,38.7
+LAMBO-ALA-1100,184.5,0.78,Aero-Vectoring Right,92.4,59.8
+LAMBO-ALA-1101,334.6,1.33,Low Drag (Flaps Open),154.2,69.1
+LAMBO-ALA-1102,218.4,1.1,High Downforce (Flaps Closed),221.4,65.3
+LAMBO-ALA-1103,260.2,0.26,Aero-Vectoring Right,212.9,52.9
+LAMBO-ALA-1104,277.1,0.04,Low Drag (Flaps Open),113.6,47.3
+LAMBO-ALA-1105,201.8,0.54,Low Drag (Flaps Open),59.6,54.8
+LAMBO-ALA-1106,259.4,1.07,Aero-Vectoring Right,208.0,65.3
+LAMBO-ALA-1107,290.5,-0.13,High Downforce (Flaps Closed),356.3,47.4
+LAMBO-ALA-1108,249.3,1.33,High Downforce (Flaps Closed),263.4,68.2
+LAMBO-ALA-1109,186.2,-0.74,High Downforce (Flaps Closed),131.9,37.5
+LAMBO-ALA-1110,165.3,-1.41,Aero-Vectoring Left,84.3,30.3
+LAMBO-ALA-1111,321.7,0.52,Low Drag (Flaps Open),148.2,61.0
+LAMBO-ALA-1112,203.9,1.11,Low Drag (Flaps Open),48.8,63.0
+LAMBO-ALA-1113,247.2,-1.43,High Downforce (Flaps Closed),268.1,31.8
+LAMBO-ALA-1114,273.5,0.84,High Downforce (Flaps Closed),334.1,60.7
+LAMBO-ALA-1115,300.4,1.1,High Downforce (Flaps Closed),409.2,67.0
+LAMBO-ALA-1116,266.4,-0.43,Aero-Vectoring Right,236.2,43.7
+LAMBO-ALA-1117,194.3,-0.22,Low Drag (Flaps Open),59.7,47.8
+LAMBO-ALA-1118,223.3,-0.05,Aero-Vectoring Left,141.7,52.4
+LAMBO-ALA-1119,245.1,0.35,Low Drag (Flaps Open),77.2,54.4
+LAMBO-ALA-1120,337.7,-0.82,Aero-Vectoring Left,367.4,35.5
+LAMBO-ALA-1121,255.2,1.35,Aero-Vectoring Right,211.4,70.1
+LAMBO-ALA-1122,162.6,0.72,Aero-Vectoring Right,74.7,62.7
+LAMBO-ALA-1123,322.2,-0.66,Low Drag (Flaps Open),138.5,39.3
+LAMBO-ALA-1124,256.0,0.62,Aero-Vectoring Right,202.9,58.1
+LAMBO-ALA-1125,132.1,0.61,Aero-Vectoring Left,61.4,55.1
+LAMBO-ALA-1126,133.9,-0.13,Low Drag (Flaps Open),13.2,46.5
+LAMBO-ALA-1127,195.8,-0.66,Aero-Vectoring Right,123.7,40.6
+LAMBO-ALA-1128,304.1,-1.11,High Downforce (Flaps Closed),413.3,31.6
+LAMBO-ALA-1129,187.6,-0.38,Aero-Vectoring Right,111.8,43.8
+LAMBO-ALA-1130,337.3,1.34,Aero-Vectoring Left,349.9,69.0
+LAMBO-ALA-1131,301.4,-0.13,Aero-Vectoring Right,302.4,48.0
+LAMBO-ALA-1132,215.2,-0.15,Aero-Vectoring Left,141.2,46.5
+LAMBO-ALA-1133,129.8,0.63,Aero-Vectoring Right,72.2,52.4
+LAMBO-ALA-1134,181.0,-1.11,High Downforce (Flaps Closed),159.3,33.7
+LAMBO-ALA-1135,203.7,-1.34,Aero-Vectoring Left,121.1,32.2
+LAMBO-ALA-1136,200.2,0.73,High Downforce (Flaps Closed),194.3,58.9
+LAMBO-ALA-1137,149.5,0.29,High Downforce (Flaps Closed),111.6,50.7
+LAMBO-ALA-1138,160.3,0.49,High Downforce (Flaps Closed),100.8,57.7
+LAMBO-ALA-1139,123.3,1.27,High Downforce (Flaps Closed),61.6,68.3
+LAMBO-ALA-1140,186.0,0.93,High Downforce (Flaps Closed),146.5,64.9
+LAMBO-ALA-1141,177.4,-0.43,Low Drag (Flaps Open),38.4,46.4
+LAMBO-ALA-1142,325.9,1.13,Aero-Vectoring Right,342.7,67.5
+LAMBO-ALA-1143,181.6,-0.42,High Downforce (Flaps Closed),152.9,42.3
+LAMBO-ALA-1144,320.3,-1.3,Aero-Vectoring Left,332.5,31.4
+LAMBO-ALA-1145,303.6,0.06,High Downforce (Flaps Closed),430.1,48.4
+LAMBO-ALA-1146,322.6,-0.32,Aero-Vectoring Left,334.3,47.0
+LAMBO-ALA-1147,305.3,0.19,High Downforce (Flaps Closed),436.1,55.1
+LAMBO-ALA-1148,139.7,-0.22,High Downforce (Flaps Closed),92.7,45.9
+LAMBO-ALA-1149,155.8,0.6,High Downforce (Flaps Closed),94.0,58.0
+LAMBO-ALA-1150,132.7,0.27,Aero-Vectoring Left,46.7,54.3
+LAMBO-ALA-1151,263.8,0.37,Aero-Vectoring Left,227.8,54.5
+LAMBO-ALA-1152,331.6,0.83,High Downforce (Flaps Closed),484.3,62.9
+LAMBO-ALA-1153,137.2,-0.35,High Downforce (Flaps Closed),83.2,46.1
+LAMBO-ALA-1154,321.7,-0.85,Low Drag (Flaps Open),139.3,42.9
+LAMBO-ALA-1155,236.8,0.62,High Downforce (Flaps Closed),250.2,58.1
+LAMBO-ALA-1156,209.9,-0.91,Aero-Vectoring Right,136.1,39.9
+LAMBO-ALA-1157,165.4,0.49,High Downforce (Flaps Closed),137.7,54.1
+LAMBO-ALA-1158,287.0,1.42,Low Drag (Flaps Open),127.9,71.3
+LAMBO-ALA-1159,208.6,1.31,High Downforce (Flaps Closed),208.6,67.6
+LAMBO-ALA-1160,162.9,1.45,Aero-Vectoring Right,102.6,69.0
+LAMBO-ALA-1161,145.2,-0.64,High Downforce (Flaps Closed),90.3,41.8
+LAMBO-ALA-1162,227.2,-1.19,Aero-Vectoring Right,155.1,33.6
+LAMBO-ALA-1163,286.7,-1.27,Aero-Vectoring Right,276.4,31.1
+LAMBO-ALA-1164,238.6,0.08,Low Drag (Flaps Open),82.6,50.4
+LAMBO-ALA-1165,276.0,-1.28,Aero-Vectoring Left,222.3,33.0
+LAMBO-ALA-1166,139.4,-0.5,Low Drag (Flaps Open),20.0,43.9
+LAMBO-ALA-1167,226.0,-0.22,Aero-Vectoring Left,154.2,46.0
+LAMBO-ALA-1168,279.9,0.78,Aero-Vectoring Right,251.7,62.8
+LAMBO-ALA-1169,144.9,1.09,Aero-Vectoring Right,61.9,65.8
+LAMBO-ALA-1170,139.2,0.1,Aero-Vectoring Right,59.5,50.1
+LAMBO-ALA-1171,149.1,-1.23,Aero-Vectoring Left,75.1,28.0
+LAMBO-ALA-1172,161.3,-0.6,High Downforce (Flaps Closed),117.1,38.4
+LAMBO-ALA-1173,135.5,-1.23,Low Drag (Flaps Open),17.9,31.0
+LAMBO-ALA-1174,257.1,0.99,Aero-Vectoring Right,226.8,65.9
+LAMBO-ALA-1175,216.0,-0.81,High Downforce (Flaps Closed),216.8,41.3
+LAMBO-ALA-1176,273.1,1.44,Aero-Vectoring Left,236.6,71.7
+LAMBO-ALA-1177,226.0,1.18,High Downforce (Flaps Closed),226.6,68.0
+LAMBO-ALA-1178,195.8,-1.12,High Downforce (Flaps Closed),179.1,32.3
+LAMBO-ALA-1179,185.4,-1.26,High Downforce (Flaps Closed),160.6,30.8
+LAMBO-ALA-1180,319.4,1.1,Aero-Vectoring Right,313.3,66.5
+LAMBO-ALA-1181,330.9,-0.88,Aero-Vectoring Left,348.7,37.1
+LAMBO-ALA-1182,327.2,-0.57,High Downforce (Flaps Closed),468.3,45.2
+LAMBO-ALA-1183,331.5,-0.97,Low Drag (Flaps Open),159.9,36.2
+LAMBO-ALA-1184,250.0,0.05,Aero-Vectoring Left,200.1,49.5
+LAMBO-ALA-1185,300.8,-0.13,Aero-Vectoring Left,283.5,47.8
+LAMBO-ALA-1186,298.0,0.27,High Downforce (Flaps Closed),408.3,54.3
+LAMBO-ALA-1187,214.8,-1.15,Aero-Vectoring Left,150.8,33.0
+LAMBO-ALA-1188,320.2,0.41,Aero-Vectoring Left,335.0,55.1
+LAMBO-ALA-1189,283.9,-0.96,Aero-Vectoring Left,250.6,35.3
+LAMBO-ALA-1190,248.8,1.24,High Downforce (Flaps Closed),283.8,64.1
+LAMBO-ALA-1191,162.1,-1.45,High Downforce (Flaps Closed),110.6,28.7
+LAMBO-ALA-1192,147.4,1.0,High Downforce (Flaps Closed),88.9,62.5
+LAMBO-ALA-1193,159.2,1.45,Aero-Vectoring Left,70.9,72.0
+LAMBO-ALA-1194,199.4,0.78,Low Drag (Flaps Open),50.9,59.9
+LAMBO-ALA-1195,264.3,-0.98,Aero-Vectoring Left,219.4,35.8
+LAMBO-ALA-1196,288.3,-1.1,Aero-Vectoring Left,279.8,40.1
+LAMBO-ALA-1197,162.4,-0.73,Aero-Vectoring Right,85.0,39.6
+LAMBO-ALA-1198,164.0,-1.44,High Downforce (Flaps Closed),111.5,31.2
+LAMBO-ALA-1199,320.3,1.17,High Downforce (Flaps Closed),447.2,64.8
+LAMBO-ALA-1200,180.9,-1.21,Aero-Vectoring Right,99.1,34.7
+LAMBO-ALA-1201,185.2,-1.38,Aero-Vectoring Right,107.1,33.1
+LAMBO-ALA-1202,304.6,0.59,High Downforce (Flaps Closed),402.8,59.6
+LAMBO-ALA-1203,143.4,0.67,High Downforce (Flaps Closed),84.7,59.1
+LAMBO-ALA-1204,150.1,1.02,High Downforce (Flaps Closed),111.3,63.2
+LAMBO-ALA-1205,220.5,-0.97,Low Drag (Flaps Open),70.2,37.4
+LAMBO-ALA-1206,284.3,0.39,Low Drag (Flaps Open),112.9,53.3
+LAMBO-ALA-1207,311.6,0.81,High Downforce (Flaps Closed),431.7,62.9
+LAMBO-ALA-1208,162.4,-1.04,Low Drag (Flaps Open),35.4,33.7
+LAMBO-ALA-1209,278.9,0.64,Aero-Vectoring Left,230.2,57.9
+LAMBO-ALA-1210,159.6,0.19,Aero-Vectoring Left,83.4,51.8
+LAMBO-ALA-1211,182.1,-0.3,Low Drag (Flaps Open),47.0,47.0
+LAMBO-ALA-1212,138.1,1.47,High Downforce (Flaps Closed),79.1,71.5
+LAMBO-ALA-1213,316.6,0.15,High Downforce (Flaps Closed),453.2,52.6
+LAMBO-ALA-1214,303.5,0.58,High Downforce (Flaps Closed),422.2,56.3
+LAMBO-ALA-1215,151.2,-1.17,Aero-Vectoring Left,83.2,34.7
+LAMBO-ALA-1216,296.1,-0.64,Aero-Vectoring Right,275.9,42.0
+LAMBO-ALA-1217,162.3,1.39,Low Drag (Flaps Open),39.5,67.9
+LAMBO-ALA-1218,325.2,0.11,Aero-Vectoring Right,311.3,56.1
+LAMBO-ALA-1219,265.0,0.4,High Downforce (Flaps Closed),313.4,56.4
+LAMBO-ALA-1220,303.5,-0.07,Aero-Vectoring Right,295.6,50.0
+LAMBO-ALA-1221,177.1,0.78,Low Drag (Flaps Open),46.4,62.8
+LAMBO-ALA-1222,151.7,-0.08,Aero-Vectoring Right,60.4,50.0
+LAMBO-ALA-1223,149.0,-0.64,High Downforce (Flaps Closed),89.3,44.4
+LAMBO-ALA-1224,281.3,0.36,Aero-Vectoring Right,259.1,54.4
+LAMBO-ALA-1225,173.1,0.87,Aero-Vectoring Right,106.0,61.3
+LAMBO-ALA-1226,174.6,-0.33,High Downforce (Flaps Closed),148.1,44.4
+LAMBO-ALA-1227,296.9,-0.64,High Downforce (Flaps Closed),389.8,38.4
+LAMBO-ALA-1228,170.0,-0.16,High Downforce (Flaps Closed),125.0,48.5
+LAMBO-ALA-1229,218.8,0.58,Aero-Vectoring Right,152.9,60.6
+LAMBO-ALA-1230,205.9,1.03,Aero-Vectoring Right,140.2,61.6
+LAMBO-ALA-1231,288.1,1.5,High Downforce (Flaps Closed),372.7,68.2
+LAMBO-ALA-1232,326.8,1.34,Aero-Vectoring Left,328.0,71.3
+LAMBO-ALA-1233,201.9,0.16,Aero-Vectoring Right,123.9,53.4
+LAMBO-ALA-1234,337.0,0.65,Aero-Vectoring Left,365.6,60.1
+LAMBO-ALA-1235,134.3,1.44,Aero-Vectoring Right,60.6,72.0
+LAMBO-ALA-1236,122.7,-0.81,Aero-Vectoring Right,53.8,42.9
+LAMBO-ALA-1237,276.0,0.73,Aero-Vectoring Left,227.4,60.9
+LAMBO-ALA-1238,160.9,0.74,Aero-Vectoring Left,93.4,58.4
+LAMBO-ALA-1239,139.3,0.34,Low Drag (Flaps Open),25.1,53.1
+LAMBO-ALA-1240,179.4,1.24,High Downforce (Flaps Closed),141.5,69.3
+LAMBO-ALA-1241,275.7,-1.26,High Downforce (Flaps Closed),333.8,32.1
+LAMBO-ALA-1242,153.2,-0.28,High Downforce (Flaps Closed),106.9,49.6
+LAMBO-ALA-1243,218.2,-0.81,High Downforce (Flaps Closed),213.0,39.3
+LAMBO-ALA-1244,151.5,-0.43,Low Drag (Flaps Open),34.1,45.6
+LAMBO-ALA-1245,245.7,-1.31,Low Drag (Flaps Open),95.7,29.8
+LAMBO-ALA-1246,214.3,0.73,High Downforce (Flaps Closed),220.0,56.9
+LAMBO-ALA-1247,205.6,-1.41,High Downforce (Flaps Closed),166.1,30.7
+LAMBO-ALA-1248,199.0,0.11,High Downforce (Flaps Closed),178.4,52.5
+LAMBO-ALA-1249,131.2,0.59,Aero-Vectoring Right,39.1,58.7
+LAMBO-ALA-1250,146.4,-0.89,Low Drag (Flaps Open),30.9,35.9
+LAMBO-ALA-1251,265.5,-0.34,Low Drag (Flaps Open),94.6,45.0
+LAMBO-ALA-1252,330.6,0.94,Low Drag (Flaps Open),153.3,66.7
+LAMBO-ALA-1253,175.2,1.35,Low Drag (Flaps Open),37.6,70.5
+LAMBO-ALA-1254,296.9,1.3,Aero-Vectoring Right,277.4,68.8
+LAMBO-ALA-1255,205.8,-0.44,Low Drag (Flaps Open),64.3,41.6
+LAMBO-ALA-1256,127.7,-0.56,High Downforce (Flaps Closed),88.2,42.2
+LAMBO-ALA-1257,247.6,0.65,High Downforce (Flaps Closed),265.2,59.4
+LAMBO-ALA-1258,271.5,1.25,High Downforce (Flaps Closed),340.8,68.1
+LAMBO-ALA-1259,202.4,0.24,High Downforce (Flaps Closed),197.0,53.3
+LAMBO-ALA-1260,303.6,1.38,High Downforce (Flaps Closed),397.8,66.5
+LAMBO-ALA-1261,257.6,-1.39,High Downforce (Flaps Closed),290.6,28.9
+LAMBO-ALA-1262,148.3,-0.75,Aero-Vectoring Left,81.8,35.9
+LAMBO-ALA-1263,309.4,-0.53,Aero-Vectoring Right,315.3,44.0
+LAMBO-ALA-1264,249.7,1.17,Aero-Vectoring Right,207.2,71.3
+LAMBO-ALA-1265,156.5,0.56,Aero-Vectoring Left,89.2,56.5
+LAMBO-ALA-1266,260.4,-0.37,Low Drag (Flaps Open),81.9,44.4
+LAMBO-ALA-1267,262.2,-0.8,High Downforce (Flaps Closed),310.0,36.8
+LAMBO-ALA-1268,125.1,0.04,High Downforce (Flaps Closed),67.1,47.5
+LAMBO-ALA-1269,227.9,0.47,Aero-Vectoring Left,168.6,60.6
+LAMBO-ALA-1270,220.5,-1.31,Aero-Vectoring Left,150.1,30.2
+LAMBO-ALA-1271,254.1,0.35,Aero-Vectoring Left,200.8,54.9
+LAMBO-ALA-1272,193.8,-1.14,High Downforce (Flaps Closed),166.5,35.2
+LAMBO-ALA-1273,142.7,0.45,Low Drag (Flaps Open),29.3,55.6
+LAMBO-ALA-1274,261.3,1.29,Aero-Vectoring Right,218.8,64.3
+LAMBO-ALA-1275,124.4,-1.23,Aero-Vectoring Right,51.7,32.2
+LAMBO-ALA-1276,327.6,1.1,High Downforce (Flaps Closed),478.6,66.5
+LAMBO-ALA-1277,223.4,-1.25,Low Drag (Flaps Open),70.0,34.6
+LAMBO-ALA-1278,322.6,-0.53,Aero-Vectoring Left,336.2,46.0
+LAMBO-ALA-1279,242.5,-1.08,Low Drag (Flaps Open),87.2,34.4
+LAMBO-ALA-1280,330.7,-0.76,Low Drag (Flaps Open),154.1,38.8
+LAMBO-ALA-1281,338.1,-1.05,Low Drag (Flaps Open),154.5,34.1
+LAMBO-ALA-1282,154.6,-0.15,Low Drag (Flaps Open),35.4,50.3
+LAMBO-ALA-1283,151.3,0.91,Aero-Vectoring Left,73.9,66.2
+LAMBO-ALA-1284,308.6,0.04,Aero-Vectoring Left,297.5,51.0
+LAMBO-ALA-1285,175.1,1.43,Low Drag (Flaps Open),46.7,65.5
+LAMBO-ALA-1286,265.0,-0.93,Low Drag (Flaps Open),100.8,40.5
+LAMBO-ALA-1287,246.8,-0.35,Aero-Vectoring Right,192.4,43.0
+LAMBO-ALA-1288,177.1,-1.37,Low Drag (Flaps Open),43.5,33.6
+LAMBO-ALA-1289,282.7,1.28,Aero-Vectoring Right,257.3,68.2
+LAMBO-ALA-1290,147.6,-1.09,Low Drag (Flaps Open),32.0,36.3
+LAMBO-ALA-1291,181.2,1.09,Low Drag (Flaps Open),46.7,64.5
+LAMBO-ALA-1292,135.8,-0.59,Aero-Vectoring Left,57.6,43.6
+LAMBO-ALA-1293,181.9,1.3,Aero-Vectoring Left,108.5,67.5
+LAMBO-ALA-1294,132.0,-1.16,High Downforce (Flaps Closed),88.2,35.8
+LAMBO-ALA-1295,127.2,-0.37,Low Drag (Flaps Open),22.7,46.0
+LAMBO-ALA-1296,171.9,-1.37,Aero-Vectoring Left,90.9,28.6
+LAMBO-ALA-1297,172.1,-1.35,Aero-Vectoring Right,94.9,31.9
+LAMBO-ALA-1298,327.7,-0.02,Aero-Vectoring Left,347.6,46.5
+LAMBO-ALA-1299,206.6,-0.2,Aero-Vectoring Right,145.1,47.4
+LAMBO-ALA-1300,330.1,-1.13,High Downforce (Flaps Closed),468.7,35.7
+LAMBO-ALA-1301,339.1,-0.36,Aero-Vectoring Right,368.1,44.7
+LAMBO-ALA-1302,124.1,-0.65,High Downforce (Flaps Closed),65.5,35.1
+LAMBO-ALA-1303,216.7,0.12,Aero-Vectoring Left,156.0,52.3
+LAMBO-ALA-1304,231.4,0.77,Aero-Vectoring Right,179.2,61.9
+LAMBO-ALA-1305,120.4,1.49,High Downforce (Flaps Closed),71.4,72.0
+LAMBO-ALA-1306,210.3,-0.51,Aero-Vectoring Left,138.5,43.4
+LAMBO-ALA-1307,243.4,0.78,High Downforce (Flaps Closed),258.6,59.4
+LAMBO-ALA-1308,271.7,0.96,Aero-Vectoring Left,237.4,62.7
+LAMBO-ALA-1309,124.2,1.14,High Downforce (Flaps Closed),68.8,67.3
+LAMBO-ALA-1310,136.6,-1.34,Aero-Vectoring Left,61.7,28.2
+LAMBO-ALA-1311,316.3,1.4,High Downforce (Flaps Closed),464.4,68.5
+LAMBO-ALA-1312,233.9,1.02,High Downforce (Flaps Closed),238.9,66.3
+LAMBO-ALA-1313,138.2,1.09,High Downforce (Flaps Closed),72.4,63.9
+LAMBO-ALA-1314,309.4,-1.29,Aero-Vectoring Right,310.9,35.5
+LAMBO-ALA-1315,281.0,0.19,Aero-Vectoring Right,260.9,51.6
+LAMBO-ALA-1316,216.6,1.35,Aero-Vectoring Left,161.5,70.7
+LAMBO-ALA-1317,250.5,1.03,High Downforce (Flaps Closed),287.9,62.9
+LAMBO-ALA-1318,312.6,0.4,High Downforce (Flaps Closed),420.3,56.7
+LAMBO-ALA-1319,159.7,1.17,Aero-Vectoring Left,88.3,71.0
+LAMBO-ALA-1320,335.3,1.19,Aero-Vectoring Right,370.0,65.1
+LAMBO-ALA-1321,216.4,0.3,High Downforce (Flaps Closed),223.3,54.4
+LAMBO-ALA-1322,269.2,-1.46,Low Drag (Flaps Open),103.8,29.6
+LAMBO-ALA-1323,180.8,-0.99,High Downforce (Flaps Closed),162.0,35.4
+LAMBO-ALA-1324,319.3,-1.02,Aero-Vectoring Left,329.7,36.3
+LAMBO-ALA-1325,310.0,0.84,Low Drag (Flaps Open),127.3,64.4
+LAMBO-ALA-1326,298.4,0.71,High Downforce (Flaps Closed),392.1,61.4
+LAMBO-ALA-1327,157.0,0.53,Aero-Vectoring Right,80.7,57.0
+LAMBO-ALA-1328,129.7,0.85,Low Drag (Flaps Open),16.2,60.6
+LAMBO-ALA-1329,130.0,0.63,High Downforce (Flaps Closed),59.6,57.9
+LAMBO-ALA-1330,238.7,-0.43,High Downforce (Flaps Closed),247.3,48.2
+LAMBO-ALA-1331,150.3,-0.64,Low Drag (Flaps Open),37.0,39.3
+LAMBO-ALA-1332,161.9,-0.83,Aero-Vectoring Left,87.0,37.5
+LAMBO-ALA-1333,208.9,-1.25,Aero-Vectoring Left,131.9,34.3
+LAMBO-ALA-1334,261.8,0.64,Low Drag (Flaps Open),92.2,57.8
+LAMBO-ALA-1335,210.5,1.03,Aero-Vectoring Left,128.4,63.8
+LAMBO-ALA-1336,252.4,-0.26,Low Drag (Flaps Open),79.5,45.9
+LAMBO-ALA-1337,162.7,0.33,Aero-Vectoring Right,92.4,53.2
+LAMBO-ALA-1338,178.3,-1.19,High Downforce (Flaps Closed),147.6,34.2
+LAMBO-ALA-1339,308.2,-0.1,Low Drag (Flaps Open),138.9,51.0
+LAMBO-ALA-1340,146.2,1.23,Low Drag (Flaps Open),26.1,67.1
+LAMBO-ALA-1341,128.2,0.17,Low Drag (Flaps Open),23.9,52.9
+LAMBO-ALA-1342,122.4,0.71,Low Drag (Flaps Open),31.4,59.1
+LAMBO-ALA-1343,305.1,-0.98,High Downforce (Flaps Closed),437.9,35.9
+LAMBO-ALA-1344,181.6,-0.92,Aero-Vectoring Right,105.1,36.3
+LAMBO-ALA-1345,209.6,-0.88,Aero-Vectoring Left,146.5,33.0
+LAMBO-ALA-1346,329.0,-0.47,Aero-Vectoring Left,336.3,43.8
+LAMBO-ALA-1347,289.4,0.79,Aero-Vectoring Left,279.7,63.3
+LAMBO-ALA-1348,153.5,-0.98,Aero-Vectoring Right,76.9,37.3
+LAMBO-ALA-1349,170.9,1.37,High Downforce (Flaps Closed),141.2,66.8
+LAMBO-ALA-1350,211.0,-0.13,Low Drag (Flaps Open),68.0,49.6
+LAMBO-ALA-1351,147.8,-1.43,High Downforce (Flaps Closed),79.2,32.1
+LAMBO-ALA-1352,284.9,0.07,High Downforce (Flaps Closed),366.5,50.1
+LAMBO-ALA-1353,255.3,0.95,High Downforce (Flaps Closed),287.2,63.7
+LAMBO-ALA-1354,136.2,-0.72,High Downforce (Flaps Closed),77.3,43.8
+LAMBO-ALA-1355,306.4,-0.2,Low Drag (Flaps Open),133.6,44.2
+LAMBO-ALA-1356,286.3,0.03,Aero-Vectoring Left,248.2,53.2
+LAMBO-ALA-1357,311.9,0.82,Aero-Vectoring Left,312.1,60.6
+LAMBO-ALA-1358,263.1,0.96,Low Drag (Flaps Open),102.0,63.6
+LAMBO-ALA-1359,155.8,-0.4,High Downforce (Flaps Closed),116.7,42.7
+LAMBO-ALA-1360,139.1,0.85,High Downforce (Flaps Closed),94.6,62.6
+LAMBO-ALA-1361,337.7,-0.03,Aero-Vectoring Left,367.2,50.2
+LAMBO-ALA-1362,233.3,-0.3,Aero-Vectoring Right,174.8,45.1
+LAMBO-ALA-1363,182.8,-0.93,High Downforce (Flaps Closed),157.3,36.5
+LAMBO-ALA-1364,266.8,0.52,High Downforce (Flaps Closed),336.3,56.5
+LAMBO-ALA-1365,138.6,-0.41,Aero-Vectoring Right,68.5,47.5
+LAMBO-ALA-1366,276.4,1.03,Aero-Vectoring Right,258.8,65.1
+LAMBO-ALA-1367,275.5,-0.61,Aero-Vectoring Right,244.5,42.8
+LAMBO-ALA-1368,169.9,-0.78,High Downforce (Flaps Closed),136.0,41.9
+LAMBO-ALA-1369,203.5,0.5,Low Drag (Flaps Open),65.8,54.2
+LAMBO-ALA-1370,189.9,-0.82,High Downforce (Flaps Closed),145.6,36.5
+LAMBO-ALA-1371,228.7,-0.43,Low Drag (Flaps Open),70.0,46.8
+LAMBO-ALA-1372,130.0,-1.41,Aero-Vectoring Right,46.7,34.9
+LAMBO-ALA-1373,156.0,-0.33,High Downforce (Flaps Closed),103.0,46.2
+LAMBO-ALA-1374,156.6,0.51,Low Drag (Flaps Open),35.7,57.8
+LAMBO-ALA-1375,160.1,-1.35,Low Drag (Flaps Open),33.3,28.2
+LAMBO-ALA-1376,158.9,-0.18,High Downforce (Flaps Closed),116.0,46.6
+LAMBO-ALA-1377,149.7,0.7,Aero-Vectoring Left,76.6,59.0
+LAMBO-ALA-1378,314.0,0.15,Aero-Vectoring Right,325.0,50.1
+LAMBO-ALA-1379,292.5,1.2,Aero-Vectoring Right,273.7,71.1
+LAMBO-ALA-1380,244.3,-1.35,High Downforce (Flaps Closed),281.2,33.3
+LAMBO-ALA-1381,220.4,1.11,High Downforce (Flaps Closed),214.7,64.8
+LAMBO-ALA-1382,172.9,-0.17,Low Drag (Flaps Open),42.5,44.1
+LAMBO-ALA-1383,236.0,1.14,High Downforce (Flaps Closed),253.2,62.5
+LAMBO-ALA-1384,280.8,1.25,Aero-Vectoring Right,255.7,66.2
+LAMBO-ALA-1385,221.3,-1.32,Aero-Vectoring Right,155.8,31.6
+LAMBO-ALA-1386,157.6,1.25,Aero-Vectoring Left,60.7,69.1
+LAMBO-ALA-1387,318.8,-0.66,High Downforce (Flaps Closed),462.9,40.4
+LAMBO-ALA-1388,310.7,-0.29,Low Drag (Flaps Open),133.8,46.6
+LAMBO-ALA-1389,144.0,-1.41,Low Drag (Flaps Open),32.4,28.3
+LAMBO-ALA-1390,131.3,-0.29,Aero-Vectoring Right,55.0,47.1
+LAMBO-ALA-1391,305.4,-1.13,High Downforce (Flaps Closed),417.0,34.5
+LAMBO-ALA-1392,330.5,0.19,High Downforce (Flaps Closed),486.8,50.2
+LAMBO-ALA-1393,135.9,-0.8,High Downforce (Flaps Closed),84.9,39.5
+LAMBO-ALA-1394,196.6,-0.58,Aero-Vectoring Right,130.6,44.0
+LAMBO-ALA-1395,260.0,0.14,Aero-Vectoring Right,219.5,51.3
+LAMBO-ALA-1396,275.8,-0.71,Aero-Vectoring Left,247.1,36.6
+LAMBO-ALA-1397,192.4,0.12,Aero-Vectoring Left,113.6,51.2
+LAMBO-ALA-1398,184.6,-0.14,Aero-Vectoring Left,111.9,46.9
+LAMBO-ALA-1399,144.0,0.11,Aero-Vectoring Left,71.7,51.3
+LAMBO-ALA-1400,127.1,0.95,Aero-Vectoring Right,45.4,64.2
+LAMBO-ALA-1401,223.6,-1.44,High Downforce (Flaps Closed),238.2,31.0
+LAMBO-ALA-1402,132.9,0.62,High Downforce (Flaps Closed),63.0,58.6
+LAMBO-ALA-1403,143.2,-1.18,Aero-Vectoring Right,79.8,34.0
+LAMBO-ALA-1404,226.6,-0.1,Aero-Vectoring Right,154.9,51.1
+LAMBO-ALA-1405,216.6,1.23,Low Drag (Flaps Open),71.6,70.2
+LAMBO-ALA-1406,216.4,0.01,High Downforce (Flaps Closed),211.4,49.7
+LAMBO-ALA-1407,261.2,-1.06,Aero-Vectoring Left,231.5,31.3
+LAMBO-ALA-1408,176.0,0.63,High Downforce (Flaps Closed),136.9,55.8
+LAMBO-ALA-1409,251.2,0.34,High Downforce (Flaps Closed),290.6,55.5
+LAMBO-ALA-1410,269.5,0.92,Aero-Vectoring Right,232.4,61.3
+LAMBO-ALA-1411,288.4,0.65,Low Drag (Flaps Open),123.6,58.1
+LAMBO-ALA-1412,155.1,-0.92,Aero-Vectoring Left,76.6,36.9
+LAMBO-ALA-1413,227.3,-0.11,High Downforce (Flaps Closed),220.8,48.2
+LAMBO-ALA-1414,211.5,-0.3,High Downforce (Flaps Closed),209.1,48.6
+LAMBO-ALA-1415,277.9,1.01,Aero-Vectoring Left,241.2,62.1
+LAMBO-ALA-1416,284.0,0.92,High Downforce (Flaps Closed),360.5,65.3
+LAMBO-ALA-1417,325.5,-0.43,Low Drag (Flaps Open),146.8,45.0
+LAMBO-ALA-1418,264.3,-0.15,Low Drag (Flaps Open),100.7,46.3
+LAMBO-ALA-1419,163.0,-0.87,Aero-Vectoring Left,89.7,39.4
+LAMBO-ALA-1420,293.4,-0.22,Aero-Vectoring Left,276.7,43.4
+LAMBO-ALA-1421,187.7,1.16,Aero-Vectoring Right,97.5,66.9
+LAMBO-ALA-1422,144.8,0.59,Aero-Vectoring Left,65.9,60.6
+LAMBO-ALA-1423,187.3,1.01,High Downforce (Flaps Closed),157.0,64.1
+LAMBO-ALA-1424,190.7,-1.23,High Downforce (Flaps Closed),160.0,31.5
+LAMBO-ALA-1425,301.7,1.34,Low Drag (Flaps Open),144.9,70.7
+LAMBO-ALA-1426,196.6,0.83,Aero-Vectoring Right,122.5,63.0
+LAMBO-ALA-1427,158.1,0.3,High Downforce (Flaps Closed),101.3,53.2
+LAMBO-ALA-1428,214.1,-0.36,High Downforce (Flaps Closed),203.4,44.0
+LAMBO-ALA-1429,339.1,-0.99,Aero-Vectoring Right,365.1,37.0
+LAMBO-ALA-1430,166.6,0.05,Aero-Vectoring Left,80.5,49.5
+LAMBO-ALA-1431,121.1,-0.86,Aero-Vectoring Left,57.7,38.8
+LAMBO-ALA-1432,190.3,-0.43,Aero-Vectoring Right,117.6,45.0
+LAMBO-ALA-1433,183.2,1.38,Aero-Vectoring Right,116.1,70.4
+LAMBO-ALA-1434,128.3,-1.3,High Downforce (Flaps Closed),55.5,29.5
+LAMBO-ALA-1435,338.6,-0.69,High Downforce (Flaps Closed),522.3,42.6
+LAMBO-ALA-1436,266.0,-0.54,Aero-Vectoring Right,225.8,44.2
+LAMBO-ALA-1437,323.5,0.2,High Downforce (Flaps Closed),481.0,53.3
+LAMBO-ALA-1438,236.6,-0.12,High Downforce (Flaps Closed),261.6,48.8
+LAMBO-ALA-1439,279.5,-1.15,Aero-Vectoring Left,252.4,35.0
+LAMBO-ALA-1440,275.8,0.37,High Downforce (Flaps Closed),351.0,54.3
+LAMBO-ALA-1441,183.4,-0.15,High Downforce (Flaps Closed),163.6,51.7
+LAMBO-ALA-1442,203.4,1.43,Aero-Vectoring Left,141.4,72.0
+LAMBO-ALA-1443,312.6,0.99,Low Drag (Flaps Open),132.1,60.0
+LAMBO-ALA-1444,223.8,1.32,Aero-Vectoring Left,155.6,72.0
+LAMBO-ALA-1445,159.1,0.9,Low Drag (Flaps Open),31.3,63.9
+LAMBO-ALA-1446,267.4,-0.06,High Downforce (Flaps Closed),314.2,49.0
+LAMBO-ALA-1447,232.6,0.77,Aero-Vectoring Right,173.6,63.2
+LAMBO-ALA-1448,189.8,-0.1,Low Drag (Flaps Open),45.5,48.2
+LAMBO-ALA-1449,261.0,0.63,High Downforce (Flaps Closed),322.1,61.3
+LAMBO-ALA-1450,300.1,0.68,High Downforce (Flaps Closed),408.4,56.0
+LAMBO-ALA-1451,313.0,-0.97,Aero-Vectoring Left,311.7,35.2
+LAMBO-ALA-1452,138.3,-0.01,High Downforce (Flaps Closed),72.1,48.5
+LAMBO-ALA-1453,329.2,0.6,High Downforce (Flaps Closed),472.0,58.2
+LAMBO-ALA-1454,306.7,0.6,Aero-Vectoring Left,295.7,57.5
+LAMBO-ALA-1455,203.8,-0.05,Aero-Vectoring Right,135.8,45.9
+LAMBO-ALA-1456,182.5,-0.61,Aero-Vectoring Right,113.0,40.9
+LAMBO-ALA-1457,248.3,0.52,Aero-Vectoring Left,197.7,57.9
+LAMBO-ALA-1458,194.3,-0.29,Low Drag (Flaps Open),61.6,46.4
+LAMBO-ALA-1459,294.6,1.23,Aero-Vectoring Right,267.5,69.1
+LAMBO-ALA-1460,241.4,-1.45,Aero-Vectoring Left,176.3,28.1
+LAMBO-ALA-1461,142.6,-0.07,Low Drag (Flaps Open),27.1,45.8
+LAMBO-ALA-1462,339.0,-1.0,High Downforce (Flaps Closed),517.8,34.6
+LAMBO-ALA-1463,281.1,1.47,High Downforce (Flaps Closed),348.9,71.5
+LAMBO-ALA-1464,194.4,1.09,High Downforce (Flaps Closed),163.2,63.7
+LAMBO-ALA-1465,270.3,-0.17,High Downforce (Flaps Closed),346.5,43.3
+LAMBO-ALA-1466,280.4,-0.43,High Downforce (Flaps Closed),354.1,45.9
+LAMBO-ALA-1467,339.7,-0.67,High Downforce (Flaps Closed),528.7,37.1
+LAMBO-ALA-1468,328.0,0.33,Aero-Vectoring Right,347.5,51.7
+LAMBO-ALA-1469,214.1,-0.25,Aero-Vectoring Left,144.4,45.9
+LAMBO-ALA-1470,285.1,0.94,Low Drag (Flaps Open),108.9,64.0
+LAMBO-ALA-1471,209.3,-0.25,Aero-Vectoring Left,145.0,46.5
+LAMBO-ALA-1472,311.3,-1.45,Aero-Vectoring Right,311.8,30.2
+LAMBO-ALA-1473,274.4,-0.82,High Downforce (Flaps Closed),336.6,34.9
+LAMBO-ALA-1474,289.2,-0.23,Low Drag (Flaps Open),118.5,49.3
+LAMBO-ALA-1475,247.3,0.89,High Downforce (Flaps Closed),261.8,62.9
+LAMBO-ALA-1476,250.0,-0.61,High Downforce (Flaps Closed),282.0,39.6
+LAMBO-ALA-1477,238.2,-0.53,Aero-Vectoring Right,177.5,42.0
+LAMBO-ALA-1478,219.0,0.02,Low Drag (Flaps Open),75.6,52.3
+LAMBO-ALA-1479,257.6,-0.37,Aero-Vectoring Right,207.5,39.5
+LAMBO-ALA-1480,227.0,-0.37,Aero-Vectoring Left,165.6,45.1
+LAMBO-ALA-1481,270.6,-1.37,High Downforce (Flaps Closed),325.1,32.8
+LAMBO-ALA-1482,175.3,1.13,Aero-Vectoring Right,116.0,65.9
+LAMBO-ALA-1483,161.8,1.08,Aero-Vectoring Right,70.0,66.2
+LAMBO-ALA-1484,300.3,0.84,Aero-Vectoring Right,300.7,63.8
+LAMBO-ALA-1485,267.6,-0.24,Aero-Vectoring Right,239.7,45.7
+LAMBO-ALA-1486,267.4,0.27,Aero-Vectoring Right,233.0,55.1
+LAMBO-ALA-1487,328.0,0.39,Aero-Vectoring Left,351.2,53.3
+LAMBO-ALA-1488,209.0,-1.14,High Downforce (Flaps Closed),181.0,33.4
+LAMBO-ALA-1489,122.3,0.12,High Downforce (Flaps Closed),77.3,53.1
+LAMBO-ALA-1490,214.5,-0.36,Aero-Vectoring Left,133.7,44.5
+LAMBO-ALA-1491,138.3,-0.83,High Downforce (Flaps Closed),92.6,38.9
+LAMBO-ALA-1492,137.0,-1.26,High Downforce (Flaps Closed),88.0,32.6
+LAMBO-ALA-1493,248.0,-1.25,High Downforce (Flaps Closed),296.4,32.3
+LAMBO-ALA-1494,277.4,0.79,High Downforce (Flaps Closed),330.2,64.2
+LAMBO-ALA-1495,195.5,-1.02,High Downforce (Flaps Closed),174.0,34.5
+LAMBO-ALA-1496,129.4,0.33,High Downforce (Flaps Closed),74.6,55.2
+LAMBO-ALA-1497,151.1,-0.31,High Downforce (Flaps Closed),108.5,45.5
+LAMBO-ALA-1498,189.4,0.06,Low Drag (Flaps Open),43.8,53.7
+LAMBO-ALA-1499,274.5,0.97,High Downforce (Flaps Closed),369.2,65.2
+LAMBO-ALA-1500,191.8,-0.72,High Downforce (Flaps Closed),163.6,42.0
+LAMBO-ALA-1501,165.1,0.61,Aero-Vectoring Right,91.0,58.7
+LAMBO-ALA-1502,157.5,1.33,Aero-Vectoring Right,74.3,64.4
+LAMBO-ALA-1503,191.5,-1.36,High Downforce (Flaps Closed),173.8,31.2
+LAMBO-ALA-1504,246.6,-0.7,Aero-Vectoring Left,195.3,40.4
+LAMBO-ALA-1505,232.3,1.36,High Downforce (Flaps Closed),253.6,68.6
+LAMBO-ALA-1506,136.0,-1.21,Low Drag (Flaps Open),25.0,35.9
+LAMBO-ALA-1507,231.3,0.85,High Downforce (Flaps Closed),261.3,61.5
+LAMBO-ALA-1508,278.8,1.39,Low Drag (Flaps Open),108.0,70.1
+LAMBO-ALA-1509,151.5,0.79,Aero-Vectoring Left,85.0,61.2
+LAMBO-ALA-1510,264.7,0.05,High Downforce (Flaps Closed),339.7,50.7
+LAMBO-ALA-1511,149.6,-1.06,Aero-Vectoring Right,65.0,34.9
+LAMBO-ALA-1512,185.8,0.24,High Downforce (Flaps Closed),169.9,54.3
+LAMBO-ALA-1513,223.9,0.15,High Downforce (Flaps Closed),212.2,50.4
+LAMBO-ALA-1514,219.8,0.87,High Downforce (Flaps Closed),217.9,64.0
+LAMBO-ALA-1515,121.8,0.58,High Downforce (Flaps Closed),64.7,57.5
+LAMBO-ALA-1516,191.8,0.96,High Downforce (Flaps Closed),162.5,62.3
+LAMBO-ALA-1517,292.4,0.82,High Downforce (Flaps Closed),379.3,63.0
+LAMBO-ALA-1518,291.3,1.46,Low Drag (Flaps Open),115.9,70.8
+LAMBO-ALA-1519,315.6,-0.53,High Downforce (Flaps Closed),433.7,42.1
+LAMBO-ALA-1520,238.1,1.32,High Downforce (Flaps Closed),259.4,70.1
+LAMBO-ALA-1521,260.3,-0.02,Aero-Vectoring Right,226.5,50.0
+LAMBO-ALA-1522,324.3,0.14,High Downforce (Flaps Closed),480.3,48.2
+LAMBO-ALA-1523,235.4,0.25,Low Drag (Flaps Open),69.2,53.2
+LAMBO-ALA-1524,191.2,-1.3,Low Drag (Flaps Open),51.8,28.0
+LAMBO-ALA-1525,292.0,0.91,Aero-Vectoring Left,281.1,63.2
+LAMBO-ALA-1526,298.4,-1.06,Aero-Vectoring Left,275.4,34.5
+LAMBO-ALA-1527,214.1,1.23,High Downforce (Flaps Closed),206.7,68.4
+LAMBO-ALA-1528,177.8,1.26,Low Drag (Flaps Open),50.6,68.9
+LAMBO-ALA-1529,296.3,1.44,Aero-Vectoring Right,288.6,69.8
+LAMBO-ALA-1530,274.6,-0.68,Low Drag (Flaps Open),96.0,40.3
+LAMBO-ALA-1531,171.7,-0.26,Aero-Vectoring Left,101.3,47.3
+LAMBO-ALA-1532,159.0,-0.62,Low Drag (Flaps Open),32.1,39.4
+LAMBO-ALA-1533,190.1,0.16,High Downforce (Flaps Closed),155.1,49.3
+LAMBO-ALA-1534,259.1,0.36,High Downforce (Flaps Closed),289.0,52.0
+LAMBO-ALA-1535,273.3,-1.17,Low Drag (Flaps Open),108.4,34.4
+LAMBO-ALA-1536,199.4,-1.01,Low Drag (Flaps Open),68.2,35.6
+LAMBO-ALA-1537,196.9,-0.81,Low Drag (Flaps Open),50.3,34.6
+LAMBO-ALA-1538,167.9,0.41,Aero-Vectoring Left,85.9,58.0
+LAMBO-ALA-1539,127.1,0.06,Low Drag (Flaps Open),26.1,52.3
+LAMBO-ALA-1540,208.3,-0.33,High Downforce (Flaps Closed),193.6,49.0
+LAMBO-ALA-1541,136.2,-0.11,Low Drag (Flaps Open),19.7,45.5
+LAMBO-ALA-1542,208.1,-1.23,Low Drag (Flaps Open),55.6,31.9
+LAMBO-ALA-1543,177.5,-1.49,High Downforce (Flaps Closed),135.8,28.0
+LAMBO-ALA-1544,262.5,-0.3,High Downforce (Flaps Closed),293.9,43.6
+LAMBO-ALA-1545,322.1,0.9,High Downforce (Flaps Closed),467.9,59.4
+LAMBO-ALA-1546,225.4,-1.34,Low Drag (Flaps Open),69.7,31.5
+LAMBO-ALA-1547,275.4,-0.53,Low Drag (Flaps Open),105.3,42.2
+LAMBO-ALA-1548,186.7,0.3,Aero-Vectoring Right,105.5,54.5
+LAMBO-ALA-1549,250.6,0.23,Aero-Vectoring Right,207.1,53.3
+LAMBO-ALA-1550,226.7,-1.41,High Downforce (Flaps Closed),234.6,29.6
+LAMBO-ALA-1551,184.7,0.06,Aero-Vectoring Right,120.1,49.7
+LAMBO-ALA-1552,191.4,0.26,High Downforce (Flaps Closed),149.9,48.6
+LAMBO-ALA-1553,214.2,0.95,Aero-Vectoring Left,145.1,58.5
+LAMBO-ALA-1554,180.6,-0.47,Low Drag (Flaps Open),49.0,45.5
+LAMBO-ALA-1555,305.3,0.94,High Downforce (Flaps Closed),410.3,64.3
+LAMBO-ALA-1556,194.0,-0.37,Low Drag (Flaps Open),54.4,45.0
+LAMBO-ALA-1557,220.9,0.68,High Downforce (Flaps Closed),232.9,57.5
+LAMBO-ALA-1558,283.0,1.23,Aero-Vectoring Left,259.4,67.1
+LAMBO-ALA-1559,334.5,-1.08,Low Drag (Flaps Open),161.7,34.6
+LAMBO-ALA-1560,139.6,-1.34,Aero-Vectoring Left,58.4,31.6
+LAMBO-ALA-1561,147.9,0.68,High Downforce (Flaps Closed),115.3,60.2
+LAMBO-ALA-1562,179.2,-0.66,Aero-Vectoring Left,110.3,40.9
+LAMBO-ALA-1563,184.0,0.79,Low Drag (Flaps Open),52.4,58.8
+LAMBO-ALA-1564,275.3,-0.92,Low Drag (Flaps Open),107.4,37.5
+LAMBO-ALA-1565,281.8,-1.41,High Downforce (Flaps Closed),353.3,32.0
+LAMBO-ALA-1566,219.9,-0.2,High Downforce (Flaps Closed),227.9,49.4
+LAMBO-ALA-1567,257.3,-0.77,Aero-Vectoring Left,209.5,36.8
+LAMBO-ALA-1568,328.1,1.31,High Downforce (Flaps Closed),491.5,66.6
+LAMBO-ALA-1569,217.4,1.1,High Downforce (Flaps Closed),228.0,65.0
+LAMBO-ALA-1570,273.2,0.89,Aero-Vectoring Left,246.5,64.3
+LAMBO-ALA-1571,266.4,0.66,High Downforce (Flaps Closed),334.4,56.3
+LAMBO-ALA-1572,258.8,0.76,Aero-Vectoring Right,199.6,61.1
+LAMBO-ALA-1573,165.9,0.51,High Downforce (Flaps Closed),139.8,59.0
+LAMBO-ALA-1574,156.4,0.86,Low Drag (Flaps Open),31.3,60.2
+LAMBO-ALA-1575,173.2,0.11,Aero-Vectoring Left,91.1,52.0
+LAMBO-ALA-1576,163.0,-0.52,Aero-Vectoring Right,93.3,38.4
+LAMBO-ALA-1577,173.9,0.54,Low Drag (Flaps Open),57.9,54.8
+LAMBO-ALA-1578,308.6,0.34,Aero-Vectoring Left,318.5,55.3
+LAMBO-ALA-1579,170.9,0.24,Low Drag (Flaps Open),34.0,52.2
+LAMBO-ALA-1580,207.2,-0.72,High Downforce (Flaps Closed),198.9,39.2
+LAMBO-ALA-1581,128.1,-0.56,High Downforce (Flaps Closed),83.2,43.3
+LAMBO-ALA-1582,191.9,0.58,High Downforce (Flaps Closed),161.9,56.6
+LAMBO-ALA-1583,123.0,-0.46,High Downforce (Flaps Closed),62.0,44.2
+LAMBO-ALA-1584,328.7,-0.8,High Downforce (Flaps Closed),480.8,40.7
+LAMBO-ALA-1585,158.7,-0.37,High Downforce (Flaps Closed),99.4,43.0
+LAMBO-ALA-1586,121.9,-1.3,High Downforce (Flaps Closed),86.4,32.3
+LAMBO-ALA-1587,195.5,0.18,High Downforce (Flaps Closed),159.2,51.3
+LAMBO-ALA-1588,313.4,0.71,Aero-Vectoring Left,323.4,61.0
+LAMBO-ALA-1589,158.5,0.91,Aero-Vectoring Left,80.9,64.9
+LAMBO-ALA-1590,267.7,1.19,High Downforce (Flaps Closed),328.8,65.5
+LAMBO-ALA-1591,144.5,-0.07,Aero-Vectoring Right,64.1,50.8
+LAMBO-ALA-1592,297.7,0.07,Aero-Vectoring Right,286.0,47.8
+LAMBO-ALA-1593,268.7,-1.06,High Downforce (Flaps Closed),316.3,37.9
+LAMBO-ALA-1594,169.4,0.67,High Downforce (Flaps Closed),125.2,60.5
+LAMBO-ALA-1595,228.9,-0.07,Aero-Vectoring Right,166.0,49.1
+LAMBO-ALA-1596,293.0,0.54,Aero-Vectoring Left,290.1,55.4
+LAMBO-ALA-1597,214.5,-1.34,Aero-Vectoring Left,134.6,32.2
+LAMBO-ALA-1598,134.3,-1.21,Aero-Vectoring Left,55.1,34.4
+LAMBO-ALA-1599,139.5,-0.21,High Downforce (Flaps Closed),86.1,48.6
+LAMBO-ALA-1600,284.5,1.45,High Downforce (Flaps Closed),357.8,69.0
+LAMBO-ALA-1601,239.7,-0.86,Low Drag (Flaps Open),84.3,38.1
+LAMBO-ALA-1602,157.6,0.6,Aero-Vectoring Right,71.2,53.3
+LAMBO-ALA-1603,304.3,0.78,High Downforce (Flaps Closed),421.1,60.6
+LAMBO-ALA-1604,172.2,0.47,Aero-Vectoring Right,89.6,58.1
+LAMBO-ALA-1605,181.8,0.67,Aero-Vectoring Right,93.8,54.5
+LAMBO-ALA-1606,176.0,0.11,High Downforce (Flaps Closed),149.3,53.8
+LAMBO-ALA-1607,137.2,-1.5,Aero-Vectoring Left,49.8,30.3
+LAMBO-ALA-1608,189.0,-1.01,Low Drag (Flaps Open),49.6,36.1
+LAMBO-ALA-1609,321.7,-0.12,High Downforce (Flaps Closed),446.1,49.7
+LAMBO-ALA-1610,166.4,0.66,High Downforce (Flaps Closed),132.3,56.7
+LAMBO-ALA-1611,154.7,0.46,Aero-Vectoring Right,93.1,57.7
+LAMBO-ALA-1612,141.6,1.38,Aero-Vectoring Left,75.9,68.6
+LAMBO-ALA-1613,243.9,-0.59,Low Drag (Flaps Open),78.1,40.7
+LAMBO-ALA-1614,154.7,-1.01,Aero-Vectoring Left,88.8,38.7
+LAMBO-ALA-1615,212.6,0.5,High Downforce (Flaps Closed),189.1,54.5
+LAMBO-ALA-1616,209.9,0.33,Low Drag (Flaps Open),56.4,56.0
+LAMBO-ALA-1617,315.5,0.94,Low Drag (Flaps Open),143.9,62.7
+LAMBO-ALA-1618,253.2,0.14,High Downforce (Flaps Closed),284.6,50.5
+LAMBO-ALA-1619,196.8,0.27,High Downforce (Flaps Closed),177.2,52.7
+LAMBO-ALA-1620,154.4,-1.26,Low Drag (Flaps Open),37.7,33.7
+LAMBO-ALA-1621,321.7,0.91,Low Drag (Flaps Open),143.8,59.9
+LAMBO-ALA-1622,123.1,-0.47,Aero-Vectoring Left,50.9,42.9
+LAMBO-ALA-1623,202.1,0.19,High Downforce (Flaps Closed),170.1,50.5
+LAMBO-ALA-1624,327.1,1.08,Aero-Vectoring Right,345.0,58.8
+LAMBO-ALA-1625,334.4,0.01,Low Drag (Flaps Open),154.9,51.3
+LAMBO-ALA-1626,197.1,1.37,High Downforce (Flaps Closed),159.9,69.0
+LAMBO-ALA-1627,250.5,-1.32,Aero-Vectoring Right,196.4,31.9
+LAMBO-ALA-1628,147.7,1.22,Aero-Vectoring Right,64.2,67.1
+LAMBO-ALA-1629,271.9,1.4,High Downforce (Flaps Closed),336.0,70.0
+LAMBO-ALA-1630,285.8,0.01,High Downforce (Flaps Closed),364.4,50.4
+LAMBO-ALA-1631,199.1,-0.51,Aero-Vectoring Right,120.5,40.8
+LAMBO-ALA-1632,256.4,-0.55,High Downforce (Flaps Closed),282.1,44.0
+LAMBO-ALA-1633,310.0,0.88,Low Drag (Flaps Open),132.3,61.2
+LAMBO-ALA-1634,249.9,0.87,Aero-Vectoring Right,212.8,61.4
+LAMBO-ALA-1635,228.5,-1.25,Aero-Vectoring Left,175.7,32.6
+LAMBO-ALA-1636,207.8,-0.78,Low Drag (Flaps Open),69.2,37.1
+LAMBO-ALA-1637,205.2,1.04,High Downforce (Flaps Closed),178.7,63.7
+LAMBO-ALA-1638,237.6,1.23,Aero-Vectoring Right,172.4,68.1
+LAMBO-ALA-1639,283.8,-0.85,High Downforce (Flaps Closed),348.7,38.0
+LAMBO-ALA-1640,314.4,-1.35,Aero-Vectoring Right,310.8,34.6
+LAMBO-ALA-1641,262.6,-1.11,Low Drag (Flaps Open),105.2,32.8
+LAMBO-ALA-1642,337.8,0.72,High Downforce (Flaps Closed),522.1,59.2
+LAMBO-ALA-1643,260.3,0.27,Aero-Vectoring Right,212.2,56.2
+LAMBO-ALA-1644,260.0,-0.17,High Downforce (Flaps Closed),280.7,50.8
+LAMBO-ALA-1645,281.7,0.8,Low Drag (Flaps Open),101.1,59.0
+LAMBO-ALA-1646,243.1,1.07,Low Drag (Flaps Open),80.0,65.0
+LAMBO-ALA-1647,223.2,-1.22,Aero-Vectoring Right,155.3,36.4
+LAMBO-ALA-1648,292.9,0.16,Aero-Vectoring Left,285.0,50.2
+LAMBO-ALA-1649,321.4,0.51,High Downforce (Flaps Closed),466.4,56.6
+LAMBO-ALA-1650,191.3,0.98,Aero-Vectoring Left,117.6,64.9
+LAMBO-ALA-1651,121.7,-0.08,Low Drag (Flaps Open),23.3,49.3
+LAMBO-ALA-1652,274.8,0.99,High Downforce (Flaps Closed),348.9,64.1
+LAMBO-ALA-1653,264.1,1.2,Aero-Vectoring Left,234.0,68.3
+LAMBO-ALA-1654,203.0,-0.19,High Downforce (Flaps Closed),185.3,49.1
+LAMBO-ALA-1655,281.7,-1.25,High Downforce (Flaps Closed),346.6,33.1
+LAMBO-ALA-1656,251.4,0.19,Aero-Vectoring Right,200.2,52.9
+LAMBO-ALA-1657,171.2,1.09,Aero-Vectoring Left,88.1,60.1
+LAMBO-ALA-1658,328.7,0.43,Low Drag (Flaps Open),147.8,58.2
+LAMBO-ALA-1659,171.2,-0.9,High Downforce (Flaps Closed),130.4,36.9
+LAMBO-ALA-1660,295.6,1.14,Low Drag (Flaps Open),112.7,68.3
+LAMBO-ALA-1661,218.0,-1.37,High Downforce (Flaps Closed),210.4,30.5
+LAMBO-ALA-1662,207.6,-0.31,Low Drag (Flaps Open),55.1,43.9
+LAMBO-ALA-1663,150.3,0.22,Low Drag (Flaps Open),27.4,55.8
+LAMBO-ALA-1664,171.0,-0.84,Aero-Vectoring Left,101.9,40.5
+LAMBO-ALA-1665,170.1,-1.27,Low Drag (Flaps Open),43.6,31.6
+LAMBO-ALA-1666,179.5,-0.01,High Downforce (Flaps Closed),142.6,50.1
+LAMBO-ALA-1667,319.2,0.67,High Downforce (Flaps Closed),463.4,57.2
+LAMBO-ALA-1668,324.0,-1.32,High Downforce (Flaps Closed),478.1,31.6
+LAMBO-ALA-1669,158.7,0.26,High Downforce (Flaps Closed),108.8,51.8
+LAMBO-ALA-1670,157.0,0.2,Low Drag (Flaps Open),43.0,52.0
+LAMBO-ALA-1671,163.3,-0.39,High Downforce (Flaps Closed),120.6,47.6
+LAMBO-ALA-1672,166.3,1.17,Aero-Vectoring Left,103.1,67.1
+LAMBO-ALA-1673,335.7,-1.27,Aero-Vectoring Right,360.0,31.0
+LAMBO-ALA-1674,259.3,0.59,Aero-Vectoring Right,214.0,59.8
+LAMBO-ALA-1675,248.4,-0.83,Aero-Vectoring Left,194.8,37.6
+LAMBO-ALA-1676,334.9,0.25,Aero-Vectoring Left,357.6,53.6
+LAMBO-ALA-1677,175.5,0.79,Aero-Vectoring Left,89.3,59.3
+LAMBO-ALA-1678,242.8,-1.09,Low Drag (Flaps Open),89.7,32.6
+LAMBO-ALA-1679,152.7,-0.84,Low Drag (Flaps Open),36.3,39.8
+LAMBO-ALA-1680,279.0,0.61,Aero-Vectoring Right,253.5,55.5
+LAMBO-ALA-1681,328.5,-0.04,Aero-Vectoring Right,349.7,48.3
+LAMBO-ALA-1682,160.3,0.26,Low Drag (Flaps Open),40.0,55.6
+LAMBO-ALA-1683,264.1,-0.73,Low Drag (Flaps Open),105.3,43.0
+LAMBO-ALA-1684,149.8,-1.04,Aero-Vectoring Left,57.9,35.3
+LAMBO-ALA-1685,280.4,1.48,Aero-Vectoring Left,253.1,69.0
+LAMBO-ALA-1686,194.6,-1.37,High Downforce (Flaps Closed),176.8,35.8
+LAMBO-ALA-1687,261.9,0.19,Aero-Vectoring Left,216.0,55.1
+LAMBO-ALA-1688,136.0,0.66,Low Drag (Flaps Open),30.3,60.1
+LAMBO-ALA-1689,129.9,0.26,High Downforce (Flaps Closed),56.3,53.5
+LAMBO-ALA-1690,271.7,0.85,High Downforce (Flaps Closed),343.3,64.5
+LAMBO-ALA-1691,173.3,-0.41,Aero-Vectoring Left,101.9,42.6
+LAMBO-ALA-1692,210.2,0.68,Low Drag (Flaps Open),61.8,56.9
+LAMBO-ALA-1693,251.7,0.77,Aero-Vectoring Left,190.3,58.8
+LAMBO-ALA-1694,195.1,0.75,Low Drag (Flaps Open),57.0,64.1
+LAMBO-ALA-1695,321.8,1.39,Low Drag (Flaps Open),142.7,69.6
+LAMBO-ALA-1696,185.5,0.08,High Downforce (Flaps Closed),148.3,50.3
+LAMBO-ALA-1697,183.7,-0.98,Aero-Vectoring Right,108.4,36.0
+LAMBO-ALA-1698,141.2,1.1,High Downforce (Flaps Closed),97.6,66.2
+LAMBO-ALA-1699,248.0,0.21,Aero-Vectoring Right,212.8,50.7
+LAMBO-ALA-1700,228.3,-0.15,Aero-Vectoring Left,160.7,46.7
+LAMBO-ALA-1701,312.7,-0.25,Aero-Vectoring Right,309.0,48.3
+LAMBO-ALA-1702,186.9,1.19,Aero-Vectoring Left,117.4,62.7
+LAMBO-ALA-1703,183.4,0.72,High Downforce (Flaps Closed),169.1,60.4
+LAMBO-ALA-1704,216.6,0.69,Aero-Vectoring Left,152.4,62.2
+LAMBO-ALA-1705,307.3,-0.41,Aero-Vectoring Left,281.5,45.2
+LAMBO-ALA-1706,276.4,0.16,Aero-Vectoring Right,244.7,56.3
+LAMBO-ALA-1707,263.8,-1.45,High Downforce (Flaps Closed),317.6,28.0
+LAMBO-ALA-1708,188.4,0.12,Aero-Vectoring Right,107.1,54.1
+LAMBO-ALA-1709,247.9,-0.17,Aero-Vectoring Left,210.9,48.0
+LAMBO-ALA-1710,133.3,-1.37,High Downforce (Flaps Closed),93.9,32.1
+LAMBO-ALA-1711,259.0,-0.87,Low Drag (Flaps Open),102.5,41.5
+LAMBO-ALA-1712,226.2,-1.02,Low Drag (Flaps Open),75.4,37.5
+LAMBO-ALA-1713,335.5,-0.81,Aero-Vectoring Right,365.9,41.2
+LAMBO-ALA-1714,124.6,-0.31,High Downforce (Flaps Closed),60.7,46.4
+LAMBO-ALA-1715,136.9,1.2,Aero-Vectoring Left,57.9,68.1
+LAMBO-ALA-1716,242.0,-1.09,High Downforce (Flaps Closed),242.0,35.9
+LAMBO-ALA-1717,188.6,1.25,Low Drag (Flaps Open),44.4,70.2
+LAMBO-ALA-1718,154.2,-0.56,High Downforce (Flaps Closed),103.1,42.0
+LAMBO-ALA-1719,146.8,1.49,High Downforce (Flaps Closed),76.2,71.7
+LAMBO-ALA-1720,134.1,0.4,Aero-Vectoring Right,51.0,60.0
+LAMBO-ALA-1721,313.0,0.8,Aero-Vectoring Left,332.9,60.5
+LAMBO-ALA-1722,333.1,0.8,High Downforce (Flaps Closed),500.3,59.0
+LAMBO-ALA-1723,319.8,-1.12,High Downforce (Flaps Closed),461.7,31.0
+LAMBO-ALA-1724,312.5,0.88,Aero-Vectoring Right,319.9,61.4
+LAMBO-ALA-1725,221.0,-0.79,High Downforce (Flaps Closed),216.0,37.6
+LAMBO-ALA-1726,247.0,-1.4,High Downforce (Flaps Closed),274.6,29.4
+LAMBO-ALA-1727,182.9,1.01,Aero-Vectoring Right,90.6,65.1
+LAMBO-ALA-1728,222.7,0.88,Aero-Vectoring Left,161.9,60.3
+LAMBO-ALA-1729,211.7,0.36,Low Drag (Flaps Open),64.3,55.0
+LAMBO-ALA-1730,268.9,0.4,Aero-Vectoring Right,241.7,55.2
+LAMBO-ALA-1731,250.9,-0.7,High Downforce (Flaps Closed),267.7,41.8
+LAMBO-ALA-1732,209.7,-1.17,High Downforce (Flaps Closed),211.1,36.6
+LAMBO-ALA-1733,256.5,0.82,High Downforce (Flaps Closed),303.5,59.0
+LAMBO-ALA-1734,214.9,0.8,High Downforce (Flaps Closed),209.3,61.6
+LAMBO-ALA-1735,213.3,-0.78,Aero-Vectoring Left,154.7,37.0
+LAMBO-ALA-1736,159.6,0.72,Aero-Vectoring Right,81.6,62.5
+LAMBO-ALA-1737,334.1,-1.01,Aero-Vectoring Right,354.2,32.4
+LAMBO-ALA-1738,298.9,-0.3,High Downforce (Flaps Closed),408.5,46.3
+LAMBO-ALA-1739,234.0,1.34,High Downforce (Flaps Closed),263.1,67.4
+LAMBO-ALA-1740,255.5,-0.32,Aero-Vectoring Left,205.4,47.1
+LAMBO-ALA-1741,191.9,0.87,Low Drag (Flaps Open),46.6,60.0
+LAMBO-ALA-1742,164.0,1.23,Aero-Vectoring Left,87.8,68.6
+LAMBO-ALA-1743,305.5,1.28,Aero-Vectoring Left,300.2,67.8
+LAMBO-ALA-1744,127.6,-0.84,Aero-Vectoring Left,51.1,38.4
+LAMBO-ALA-1745,196.4,-0.47,Aero-Vectoring Right,121.9,47.1
+LAMBO-ALA-1746,278.2,-1.26,Low Drag (Flaps Open),113.9,32.1
+LAMBO-ALA-1747,137.8,-0.66,Aero-Vectoring Right,51.4,37.9
+LAMBO-ALA-1748,307.4,-1.36,High Downforce (Flaps Closed),428.7,30.4
+LAMBO-ALA-1749,198.6,-1.33,Aero-Vectoring Right,134.8,33.5
+LAMBO-ALA-1750,310.0,-0.51,High Downforce (Flaps Closed),438.5,43.3
+LAMBO-ALA-1751,204.8,0.22,Aero-Vectoring Right,135.9,57.0
+LAMBO-ALA-1752,127.1,0.56,Aero-Vectoring Right,52.8,59.4
+LAMBO-ALA-1753,126.8,-1.28,Low Drag (Flaps Open),29.7,31.0
+LAMBO-ALA-1754,291.0,-0.31,High Downforce (Flaps Closed),384.1,43.7
+LAMBO-ALA-1755,253.9,-0.84,Aero-Vectoring Left,205.1,38.4
+LAMBO-ALA-1756,243.9,0.55,Low Drag (Flaps Open),86.6,58.7
+LAMBO-ALA-1757,288.7,0.02,Aero-Vectoring Right,274.1,52.8
+LAMBO-ALA-1758,334.4,-0.08,Aero-Vectoring Right,356.6,47.8
+LAMBO-ALA-1759,267.9,1.09,Low Drag (Flaps Open),98.5,66.8
+LAMBO-ALA-1760,216.5,-1.29,High Downforce (Flaps Closed),197.4,33.3
+LAMBO-ALA-1761,239.9,-0.17,High Downforce (Flaps Closed),270.6,48.5
+LAMBO-ALA-1762,253.8,1.27,Aero-Vectoring Right,199.0,64.9
+LAMBO-ALA-1763,244.8,-0.26,Aero-Vectoring Left,194.3,45.7
+LAMBO-ALA-1764,165.3,1.39,Aero-Vectoring Right,84.7,68.1
+LAMBO-ALA-1765,198.8,-0.43,High Downforce (Flaps Closed),181.8,44.1
+LAMBO-ALA-1766,266.4,1.04,Aero-Vectoring Left,232.9,65.2
+LAMBO-ALA-1767,337.9,-0.56,Low Drag (Flaps Open),167.0,41.0
+LAMBO-ALA-1768,333.2,-0.54,Low Drag (Flaps Open),150.1,43.4
+LAMBO-ALA-1769,305.6,-1.49,Aero-Vectoring Left,290.3,28.1
+LAMBO-ALA-1770,157.8,0.11,High Downforce (Flaps Closed),103.0,54.5
+LAMBO-ALA-1771,248.2,-0.2,Aero-Vectoring Right,193.5,51.2
+LAMBO-ALA-1772,206.4,-0.77,Low Drag (Flaps Open),59.9,39.1
+LAMBO-ALA-1773,264.8,-0.54,High Downforce (Flaps Closed),316.7,43.2
+LAMBO-ALA-1774,231.4,-0.05,Low Drag (Flaps Open),74.2,47.6
+LAMBO-ALA-1775,261.1,1.11,Low Drag (Flaps Open),90.5,62.8
+LAMBO-ALA-1776,240.4,-0.81,High Downforce (Flaps Closed),250.9,38.7
+LAMBO-ALA-1777,138.9,0.3,Low Drag (Flaps Open),26.1,54.2
+LAMBO-ALA-1778,134.1,-1.35,Aero-Vectoring Left,55.6,33.3
+LAMBO-ALA-1779,254.7,-0.04,Aero-Vectoring Right,214.5,46.8
+LAMBO-ALA-1780,178.3,1.19,Aero-Vectoring Right,110.8,69.3
+LAMBO-ALA-1781,305.3,0.49,Aero-Vectoring Right,299.5,57.5
+LAMBO-ALA-1782,184.7,-1.01,High Downforce (Flaps Closed),151.3,33.7
+LAMBO-ALA-1783,126.8,-1.5,High Downforce (Flaps Closed),68.1,28.1
+LAMBO-ALA-1784,325.9,-0.06,High Downforce (Flaps Closed),468.0,48.2
+LAMBO-ALA-1785,236.4,-1.07,Aero-Vectoring Left,183.9,36.4
+LAMBO-ALA-1786,248.7,-1.1,High Downforce (Flaps Closed),285.3,35.0
+LAMBO-ALA-1787,125.6,0.58,Aero-Vectoring Right,45.2,54.9
+LAMBO-ALA-1788,280.3,-0.97,Aero-Vectoring Left,266.5,37.9
+LAMBO-ALA-1789,152.8,0.41,High Downforce (Flaps Closed),102.1,57.9
+LAMBO-ALA-1790,303.4,-0.31,Low Drag (Flaps Open),135.1,46.2
+LAMBO-ALA-1791,181.5,-0.61,Aero-Vectoring Left,108.4,42.8
+LAMBO-ALA-1792,196.5,0.74,Low Drag (Flaps Open),53.4,56.1
+LAMBO-ALA-1793,174.5,-1.13,Aero-Vectoring Right,99.2,35.1
+LAMBO-ALA-1794,177.6,0.15,High Downforce (Flaps Closed),160.1,52.8
+LAMBO-ALA-1795,223.0,-0.28,High Downforce (Flaps Closed),226.8,48.4
+LAMBO-ALA-1796,236.9,0.68,Aero-Vectoring Left,170.2,59.4
+LAMBO-ALA-1797,272.5,-1.48,Low Drag (Flaps Open),108.3,28.0
+LAMBO-ALA-1798,317.2,0.72,High Downforce (Flaps Closed),454.0,62.1
+LAMBO-ALA-1799,257.3,-0.76,Low Drag (Flaps Open),94.4,38.9
+LAMBO-ALA-1800,220.1,-0.21,Aero-Vectoring Right,152.2,45.7
+LAMBO-ALA-1801,247.4,1.36,Aero-Vectoring Left,203.4,69.1
+LAMBO-ALA-1802,230.1,0.0,High Downforce (Flaps Closed),228.3,50.1
+LAMBO-ALA-1803,217.6,-1.35,Aero-Vectoring Left,157.7,31.0
+LAMBO-ALA-1804,311.1,0.14,High Downforce (Flaps Closed),424.3,55.0
+LAMBO-ALA-1805,253.0,0.06,Aero-Vectoring Left,213.5,51.3
+LAMBO-ALA-1806,336.0,0.7,High Downforce (Flaps Closed),514.0,59.4
+LAMBO-ALA-1807,189.0,1.12,Low Drag (Flaps Open),49.2,65.0
+LAMBO-ALA-1808,286.1,1.17,Low Drag (Flaps Open),112.1,64.9
+LAMBO-ALA-1809,140.3,-0.71,High Downforce (Flaps Closed),75.1,37.6
+LAMBO-ALA-1810,226.8,1.01,High Downforce (Flaps Closed),227.4,63.4
+LAMBO-ALA-1811,152.4,-0.91,Aero-Vectoring Right,76.3,36.4
+LAMBO-ALA-1812,211.6,-0.26,Aero-Vectoring Left,147.5,46.3
+LAMBO-ALA-1813,197.8,-0.88,Low Drag (Flaps Open),51.6,38.6
+LAMBO-ALA-1814,253.5,-1.39,Aero-Vectoring Left,210.4,34.2
+LAMBO-ALA-1815,324.8,0.2,Aero-Vectoring Left,324.8,51.6
+LAMBO-ALA-1816,238.6,-0.88,High Downforce (Flaps Closed),249.7,39.4
+LAMBO-ALA-1817,251.2,0.68,High Downforce (Flaps Closed),292.1,61.5
+LAMBO-ALA-1818,190.2,-1.44,High Downforce (Flaps Closed),159.0,30.4
+LAMBO-ALA-1819,200.3,-1.15,High Downforce (Flaps Closed),196.8,33.9
+LAMBO-ALA-1820,223.0,-0.77,Aero-Vectoring Left,149.7,42.0
+LAMBO-ALA-1821,157.6,-0.07,Low Drag (Flaps Open),30.8,50.1
+LAMBO-ALA-1822,197.7,0.7,High Downforce (Flaps Closed),173.3,59.1
+LAMBO-ALA-1823,184.9,-0.82,Low Drag (Flaps Open),47.0,39.2
+LAMBO-ALA-1824,314.8,-0.93,Aero-Vectoring Right,324.2,35.2
+LAMBO-ALA-1825,218.0,-0.89,Low Drag (Flaps Open),63.5,33.4
+LAMBO-ALA-1826,122.4,-1.27,Aero-Vectoring Right,37.2,31.8
+LAMBO-ALA-1827,333.3,-1.12,Aero-Vectoring Right,342.3,34.4
+LAMBO-ALA-1828,179.0,-0.58,High Downforce (Flaps Closed),136.4,42.8
+LAMBO-ALA-1829,238.9,-0.27,High Downforce (Flaps Closed),248.8,48.4
+LAMBO-ALA-1830,255.2,-0.05,Aero-Vectoring Right,205.9,45.9
+LAMBO-ALA-1831,332.8,-0.52,High Downforce (Flaps Closed),488.6,45.0
+LAMBO-ALA-1832,270.8,-1.37,High Downforce (Flaps Closed),335.8,29.8
+LAMBO-ALA-1833,135.3,0.54,High Downforce (Flaps Closed),88.9,59.1
+LAMBO-ALA-1834,190.7,-0.82,Aero-Vectoring Right,106.8,39.0
+LAMBO-ALA-1835,256.2,-0.79,Aero-Vectoring Left,211.8,40.2
+LAMBO-ALA-1836,207.5,1.11,Low Drag (Flaps Open),60.7,64.4
+LAMBO-ALA-1837,249.9,0.14,High Downforce (Flaps Closed),280.1,53.9
+LAMBO-ALA-1838,181.1,1.13,Low Drag (Flaps Open),54.1,64.0
+LAMBO-ALA-1839,222.6,-0.36,High Downforce (Flaps Closed),231.8,46.7
+LAMBO-ALA-1840,249.2,0.41,High Downforce (Flaps Closed),275.6,53.6
+LAMBO-ALA-1841,319.8,0.34,High Downforce (Flaps Closed),445.1,51.3
+LAMBO-ALA-1842,205.9,1.32,Aero-Vectoring Right,141.3,64.2
+LAMBO-ALA-1843,321.9,-1.24,High Downforce (Flaps Closed),444.4,35.1
+LAMBO-ALA-1844,163.5,0.84,Aero-Vectoring Right,84.7,60.3
+LAMBO-ALA-1845,329.9,0.52,Aero-Vectoring Right,348.6,55.0
+LAMBO-ALA-1846,275.5,1.35,High Downforce (Flaps Closed),327.2,67.3
+LAMBO-ALA-1847,313.6,-1.28,High Downforce (Flaps Closed),438.6,34.3
+LAMBO-ALA-1848,188.7,-0.87,Low Drag (Flaps Open),47.4,35.4
+LAMBO-ALA-1849,181.5,-0.91,Low Drag (Flaps Open),47.8,35.0
+LAMBO-ALA-1850,135.7,0.08,Aero-Vectoring Left,64.8,56.7
+LAMBO-ALA-1851,166.4,-0.36,High Downforce (Flaps Closed),132.6,43.9
+LAMBO-ALA-1852,122.0,0.75,Low Drag (Flaps Open),20.9,61.4
+LAMBO-ALA-1853,270.9,1.08,Low Drag (Flaps Open),108.5,68.1
+LAMBO-ALA-1854,127.1,-0.67,Low Drag (Flaps Open),31.0,39.0
+LAMBO-ALA-1855,284.1,-1.11,Aero-Vectoring Left,255.9,35.0
+LAMBO-ALA-1856,150.7,1.0,Low Drag (Flaps Open),14.8,63.1
+LAMBO-ALA-1857,153.4,-0.9,High Downforce (Flaps Closed),127.1,32.9
+LAMBO-ALA-1858,232.9,-0.44,Low Drag (Flaps Open),75.4,44.5
+LAMBO-ALA-1859,206.5,-1.27,Low Drag (Flaps Open),61.8,31.1
+LAMBO-ALA-1860,270.9,0.85,High Downforce (Flaps Closed),317.0,65.3
+LAMBO-ALA-1861,288.2,0.84,High Downforce (Flaps Closed),379.9,63.2
+LAMBO-ALA-1862,331.2,-0.65,Aero-Vectoring Left,356.3,44.0
+LAMBO-ALA-1863,329.7,0.41,Aero-Vectoring Right,332.8,57.4
+LAMBO-ALA-1864,327.0,-1.43,Aero-Vectoring Right,349.4,30.1
+LAMBO-ALA-1865,228.7,-0.41,High Downforce (Flaps Closed),249.9,42.4
+LAMBO-ALA-1866,311.1,1.3,High Downforce (Flaps Closed),429.3,70.5
+LAMBO-ALA-1867,241.2,-1.49,Aero-Vectoring Left,177.5,28.0
+LAMBO-ALA-1868,174.1,1.34,High Downforce (Flaps Closed),139.5,66.0
+LAMBO-ALA-1869,122.4,0.81,Low Drag (Flaps Open),23.6,62.3
+LAMBO-ALA-1870,334.1,0.17,High Downforce (Flaps Closed),500.8,51.8
+LAMBO-ALA-1871,166.2,1.06,High Downforce (Flaps Closed),119.7,67.1
+LAMBO-ALA-1872,338.4,-1.4,High Downforce (Flaps Closed),509.3,28.0
+LAMBO-ALA-1873,130.3,0.33,Aero-Vectoring Right,48.6,57.7
+LAMBO-ALA-1874,297.3,-0.45,Aero-Vectoring Left,288.5,45.2
+LAMBO-ALA-1875,198.7,0.42,Aero-Vectoring Left,133.9,56.4
+LAMBO-ALA-1876,263.8,0.58,High Downforce (Flaps Closed),297.2,60.7
+LAMBO-ALA-1877,221.3,0.72,Low Drag (Flaps Open),63.6,56.4
+LAMBO-ALA-1878,187.2,0.11,Low Drag (Flaps Open),55.3,53.2
+LAMBO-ALA-1879,165.4,0.57,High Downforce (Flaps Closed),127.0,56.5
+LAMBO-ALA-1880,154.2,-1.1,Low Drag (Flaps Open),29.9,33.6
+LAMBO-ALA-1881,193.6,-0.39,Aero-Vectoring Right,131.2,45.2
+LAMBO-ALA-1882,308.9,0.81,Aero-Vectoring Left,307.3,60.9
+LAMBO-ALA-1883,277.3,0.96,High Downforce (Flaps Closed),353.5,64.0
+LAMBO-ALA-1884,152.4,-1.49,Aero-Vectoring Right,77.9,31.7
+LAMBO-ALA-1885,211.0,-1.5,Aero-Vectoring Right,141.5,29.7
+LAMBO-ALA-1886,284.7,0.46,Aero-Vectoring Right,257.5,53.9
+LAMBO-ALA-1887,179.6,-0.26,Aero-Vectoring Right,94.2,43.5
+LAMBO-ALA-1888,298.0,0.47,Low Drag (Flaps Open),119.5,60.4
+LAMBO-ALA-1889,249.4,0.33,Aero-Vectoring Right,205.6,55.1
+LAMBO-ALA-1890,154.9,0.42,Aero-Vectoring Right,85.0,55.6
+LAMBO-ALA-1891,323.1,1.47,High Downforce (Flaps Closed),477.3,67.7
+LAMBO-ALA-1892,270.4,-1.18,High Downforce (Flaps Closed),317.5,34.2
+LAMBO-ALA-1893,204.8,0.19,Aero-Vectoring Right,124.2,56.0
+LAMBO-ALA-1894,139.8,0.62,Aero-Vectoring Left,77.7,60.7
+LAMBO-ALA-1895,295.6,1.21,High Downforce (Flaps Closed),390.0,66.1
+LAMBO-ALA-1896,270.9,0.25,Low Drag (Flaps Open),100.9,55.5
+LAMBO-ALA-1897,195.3,0.62,Low Drag (Flaps Open),55.3,54.4
+LAMBO-ALA-1898,221.7,0.69,High Downforce (Flaps Closed),206.1,60.0
+LAMBO-ALA-1899,179.5,0.28,High Downforce (Flaps Closed),149.4,58.2
+LAMBO-ALA-1900,298.0,-0.84,High Downforce (Flaps Closed),414.3,40.3
+LAMBO-ALA-1901,197.0,1.42,Aero-Vectoring Right,127.0,71.5
+LAMBO-ALA-1902,163.9,-1.22,High Downforce (Flaps Closed),117.8,38.0
+LAMBO-ALA-1903,178.4,0.02,High Downforce (Flaps Closed),149.1,52.2
+LAMBO-ALA-1904,261.2,-0.05,High Downforce (Flaps Closed),303.0,48.4
+LAMBO-ALA-1905,156.8,-0.3,High Downforce (Flaps Closed),107.4,47.0
+LAMBO-ALA-1906,147.0,1.35,Aero-Vectoring Left,64.5,68.1
+LAMBO-ALA-1907,294.7,1.5,High Downforce (Flaps Closed),379.9,68.1
+LAMBO-ALA-1908,282.2,0.62,Low Drag (Flaps Open),112.8,59.6
+LAMBO-ALA-1909,266.7,0.31,Aero-Vectoring Left,217.9,53.4
+LAMBO-ALA-1910,187.8,-1.35,Aero-Vectoring Right,93.7,30.8
+LAMBO-ALA-1911,218.6,-0.08,Aero-Vectoring Left,156.6,47.1
+LAMBO-ALA-1912,141.7,0.66,High Downforce (Flaps Closed),81.9,60.0
+LAMBO-ALA-1913,204.4,-1.42,High Downforce (Flaps Closed),176.3,30.9
+LAMBO-ALA-1914,262.1,0.94,High Downforce (Flaps Closed),310.9,63.9
+LAMBO-ALA-1915,165.3,0.72,Aero-Vectoring Right,83.9,60.0
+LAMBO-ALA-1916,189.6,-1.38,Low Drag (Flaps Open),52.1,32.4
+LAMBO-ALA-1917,192.5,-0.47,Low Drag (Flaps Open),52.0,42.9
+LAMBO-ALA-1918,209.0,-0.61,Aero-Vectoring Left,129.3,39.7
+LAMBO-ALA-1919,195.5,-0.58,High Downforce (Flaps Closed),181.3,42.6
+LAMBO-ALA-1920,169.5,-0.33,High Downforce (Flaps Closed),142.2,45.7
+LAMBO-ALA-1921,156.1,0.64,Aero-Vectoring Right,86.3,58.7
+LAMBO-ALA-1922,290.1,0.14,High Downforce (Flaps Closed),364.1,55.3
+LAMBO-ALA-1923,121.6,-1.47,Low Drag (Flaps Open),23.9,29.1
+LAMBO-ALA-1924,164.6,-0.88,High Downforce (Flaps Closed),114.8,38.2
+LAMBO-ALA-1925,126.4,-0.44,Aero-Vectoring Right,48.4,45.4
+LAMBO-ALA-1926,149.9,0.96,High Downforce (Flaps Closed),103.2,62.6
+LAMBO-ALA-1927,314.0,-0.09,High Downforce (Flaps Closed),441.7,46.9
+LAMBO-ALA-1928,257.7,0.17,High Downforce (Flaps Closed),298.0,50.3
+LAMBO-ALA-1929,207.2,-0.5,Low Drag (Flaps Open),55.8,39.2
+LAMBO-ALA-1930,328.1,-0.79,Aero-Vectoring Left,347.5,38.5
+LAMBO-ALA-1931,330.8,-0.98,Aero-Vectoring Right,356.5,41.3
+LAMBO-ALA-1932,156.0,-0.17,Low Drag (Flaps Open),37.3,45.0
+LAMBO-ALA-1933,183.0,0.42,Aero-Vectoring Right,113.2,56.7
+LAMBO-ALA-1934,316.2,-0.07,High Downforce (Flaps Closed),451.8,48.3
+LAMBO-ALA-1935,169.0,-0.05,High Downforce (Flaps Closed),144.0,49.7
+LAMBO-ALA-1936,152.0,0.88,High Downforce (Flaps Closed),101.5,65.9
+LAMBO-ALA-1937,132.1,1.22,Low Drag (Flaps Open),34.2,66.6
+LAMBO-ALA-1938,156.4,0.19,Low Drag (Flaps Open),26.6,50.6
+LAMBO-ALA-1939,254.8,-1.24,Low Drag (Flaps Open),89.3,33.7
+LAMBO-ALA-1940,255.7,-0.02,High Downforce (Flaps Closed),313.1,48.0
+LAMBO-ALA-1941,249.9,-0.78,High Downforce (Flaps Closed),293.5,39.9
+LAMBO-ALA-1942,208.0,-1.26,High Downforce (Flaps Closed),190.4,35.7
+LAMBO-ALA-1943,194.3,1.12,Low Drag (Flaps Open),45.4,65.2
+LAMBO-ALA-1944,188.4,-0.36,High Downforce (Flaps Closed),184.1,46.3
+LAMBO-ALA-1945,249.0,-1.22,Low Drag (Flaps Open),82.7,35.1
+LAMBO-ALA-1946,127.6,-0.56,High Downforce (Flaps Closed),72.6,40.2
+LAMBO-ALA-1947,230.5,0.02,High Downforce (Flaps Closed),232.1,52.1
+LAMBO-ALA-1948,156.8,-0.0,High Downforce (Flaps Closed),105.5,49.9
+LAMBO-ALA-1949,132.4,-1.24,Low Drag (Flaps Open),11.4,30.7
+LAMBO-ALA-1950,308.7,0.48,High Downforce (Flaps Closed),431.8,59.2
+LAMBO-ALA-1951,338.3,-1.4,Low Drag (Flaps Open),158.0,31.3
+LAMBO-ALA-1952,172.4,-0.36,High Downforce (Flaps Closed),124.8,44.9
+LAMBO-ALA-1953,333.9,-0.04,Low Drag (Flaps Open),158.2,49.7
+LAMBO-ALA-1954,260.2,-1.46,High Downforce (Flaps Closed),313.3,28.9
+LAMBO-ALA-1955,134.2,-0.02,Aero-Vectoring Left,58.2,50.2
+LAMBO-ALA-1956,257.2,0.21,High Downforce (Flaps Closed),316.6,55.1
+LAMBO-ALA-1957,138.0,-1.4,Low Drag (Flaps Open),29.5,32.5
+LAMBO-ALA-1958,168.3,-1.5,Low Drag (Flaps Open),40.4,30.3
+LAMBO-ALA-1959,253.6,0.74,High Downforce (Flaps Closed),284.8,59.4
+LAMBO-ALA-1960,161.2,0.94,High Downforce (Flaps Closed),132.6,62.0
+LAMBO-ALA-1961,138.5,1.5,High Downforce (Flaps Closed),79.2,72.0
+LAMBO-ALA-1962,288.6,0.2,Aero-Vectoring Right,262.2,54.2
+LAMBO-ALA-1963,251.5,-0.13,Aero-Vectoring Right,211.0,50.2
+LAMBO-ALA-1964,236.1,-1.45,Aero-Vectoring Right,185.7,28.0
+LAMBO-ALA-1965,327.7,-0.85,Aero-Vectoring Left,347.2,39.5
+LAMBO-ALA-1966,179.2,-0.41,Aero-Vectoring Left,101.4,42.8
+LAMBO-ALA-1967,247.2,0.26,High Downforce (Flaps Closed),272.4,56.1
+LAMBO-ALA-1968,272.7,-1.44,Aero-Vectoring Right,231.7,28.0
+LAMBO-ALA-1969,154.7,0.78,High Downforce (Flaps Closed),91.1,59.8
+LAMBO-ALA-1970,128.1,-0.58,High Downforce (Flaps Closed),64.6,38.8
+LAMBO-ALA-1971,239.5,1.18,Low Drag (Flaps Open),74.4,63.6
+LAMBO-ALA-1972,246.2,1.27,Aero-Vectoring Left,192.1,67.6
+LAMBO-ALA-1973,174.4,0.99,Low Drag (Flaps Open),38.9,65.1
+LAMBO-ALA-1974,224.7,0.14,Aero-Vectoring Left,155.5,51.9
+LAMBO-ALA-1975,301.0,1.38,Low Drag (Flaps Open),134.1,70.5
+LAMBO-ALA-1976,121.8,0.94,High Downforce (Flaps Closed),64.9,61.9
+LAMBO-ALA-1977,296.6,0.16,Aero-Vectoring Left,273.1,51.9
+LAMBO-ALA-1978,282.8,-0.99,High Downforce (Flaps Closed),346.7,35.2
+LAMBO-ALA-1979,134.4,-1.34,Low Drag (Flaps Open),20.6,30.6
+LAMBO-ALA-1980,216.3,-0.71,Aero-Vectoring Left,156.0,42.5
+LAMBO-ALA-1981,155.0,1.18,High Downforce (Flaps Closed),101.3,64.5
+LAMBO-ALA-1982,178.6,0.18,High Downforce (Flaps Closed),156.5,52.3
+LAMBO-ALA-1983,252.1,0.3,High Downforce (Flaps Closed),272.1,55.5
+LAMBO-ALA-1984,252.1,0.67,Aero-Vectoring Left,208.1,61.1
+LAMBO-ALA-1985,296.6,0.04,High Downforce (Flaps Closed),368.5,49.3
+LAMBO-ALA-1986,290.1,0.09,High Downforce (Flaps Closed),342.9,49.7
+LAMBO-ALA-1987,255.4,-0.1,Low Drag (Flaps Open),81.2,44.4
+LAMBO-ALA-1988,218.5,0.13,Aero-Vectoring Right,154.3,51.6
+LAMBO-ALA-1989,126.8,-1.03,Aero-Vectoring Right,32.6,34.1
+LAMBO-ALA-1990,239.3,-1.41,High Downforce (Flaps Closed),258.0,30.8
+LAMBO-ALA-1991,213.3,0.31,Low Drag (Flaps Open),70.1,53.0
+LAMBO-ALA-1992,334.2,1.18,Aero-Vectoring Right,371.0,65.8
+LAMBO-ALA-1993,152.2,-0.71,High Downforce (Flaps Closed),117.9,39.1
+LAMBO-ALA-1994,206.7,-0.58,Low Drag (Flaps Open),55.0,45.5
+LAMBO-ALA-1995,264.2,0.53,Aero-Vectoring Left,229.3,58.1
+LAMBO-ALA-1996,180.6,-0.12,Low Drag (Flaps Open),47.2,46.3
+LAMBO-ALA-1997,300.3,-1.3,Aero-Vectoring Left,291.2,36.5
+LAMBO-ALA-1998,161.5,-0.42,High Downforce (Flaps Closed),96.0,47.3
+LAMBO-ALA-1999,226.4,1.12,Aero-Vectoring Left,165.7,68.5
+LAMBO-ALA-2000,168.0,-0.64,Aero-Vectoring Left,84.2,41.0
+LAMBO-ALA-2001,319.1,0.46,High Downforce (Flaps Closed),466.4,56.4
+LAMBO-ALA-2002,273.8,-0.15,Aero-Vectoring Right,233.2,47.1
+LAMBO-ALA-2003,312.6,-0.97,Aero-Vectoring Left,321.2,37.1
+LAMBO-ALA-2004,201.2,0.11,Aero-Vectoring Right,133.6,51.6
+LAMBO-ALA-2005,160.2,-1.04,High Downforce (Flaps Closed),123.4,38.1
+LAMBO-ALA-2006,164.3,-0.5,Low Drag (Flaps Open),42.6,45.1
+LAMBO-ALA-2007,233.1,-0.02,Aero-Vectoring Right,171.9,51.5
+LAMBO-ALA-2008,136.0,0.07,Aero-Vectoring Left,65.8,49.7
+LAMBO-ALA-2009,168.2,0.29,Low Drag (Flaps Open),40.8,59.5
+LAMBO-ALA-2010,337.4,-0.01,Aero-Vectoring Right,376.0,50.4
+LAMBO-ALA-2011,129.5,1.38,Low Drag (Flaps Open),24.4,68.0
+LAMBO-ALA-2012,124.3,0.07,Low Drag (Flaps Open),13.1,49.6
+LAMBO-ALA-2013,276.1,-1.06,High Downforce (Flaps Closed),336.7,36.0
+LAMBO-ALA-2014,306.0,0.68,Low Drag (Flaps Open),137.6,60.3
+LAMBO-ALA-2015,178.0,1.02,Aero-Vectoring Right,109.3,68.1
+LAMBO-ALA-2016,175.3,0.35,Low Drag (Flaps Open),43.3,54.3
+LAMBO-ALA-2017,267.6,0.37,Aero-Vectoring Left,225.7,56.2
+LAMBO-ALA-2018,263.1,1.34,High Downforce (Flaps Closed),299.4,66.5
+LAMBO-ALA-2019,149.9,-0.1,High Downforce (Flaps Closed),83.1,50.6
+LAMBO-ALA-2020,223.2,1.06,High Downforce (Flaps Closed),248.7,65.7
+LAMBO-ALA-2021,120.4,1.18,Aero-Vectoring Right,50.6,69.8
+LAMBO-ALA-2022,302.1,1.19,Aero-Vectoring Right,288.2,62.3
+LAMBO-ALA-2023,267.6,-1.4,High Downforce (Flaps Closed),303.1,29.7
+LAMBO-ALA-2024,335.8,-0.54,High Downforce (Flaps Closed),521.9,45.1
+LAMBO-ALA-2025,156.9,0.61,High Downforce (Flaps Closed),110.0,59.5
+LAMBO-ALA-2026,218.2,0.12,Aero-Vectoring Left,146.9,53.1
+LAMBO-ALA-2027,258.1,1.1,Aero-Vectoring Right,215.6,62.7
+LAMBO-ALA-2028,256.2,-0.37,Aero-Vectoring Left,211.5,44.1
+LAMBO-ALA-2029,218.9,1.2,High Downforce (Flaps Closed),216.8,64.1
+LAMBO-ALA-2030,310.4,0.39,Aero-Vectoring Right,304.9,56.4
+LAMBO-ALA-2031,302.8,0.82,High Downforce (Flaps Closed),410.7,59.4
+LAMBO-ALA-2032,292.0,-1.31,Low Drag (Flaps Open),118.2,34.4
+LAMBO-ALA-2033,301.9,-0.63,High Downforce (Flaps Closed),427.2,40.2
+LAMBO-ALA-2034,153.9,-0.54,Aero-Vectoring Left,58.6,41.6
+LAMBO-ALA-2035,211.5,0.34,Low Drag (Flaps Open),64.6,54.6
+LAMBO-ALA-2036,325.0,0.3,High Downforce (Flaps Closed),465.6,56.7
+LAMBO-ALA-2037,308.4,-0.89,Aero-Vectoring Left,292.0,40.8
+LAMBO-ALA-2038,209.3,-1.22,Aero-Vectoring Left,141.4,29.9
+LAMBO-ALA-2039,203.7,0.94,Aero-Vectoring Right,126.4,56.9
+LAMBO-ALA-2040,154.9,-0.42,Aero-Vectoring Right,81.7,45.3
+LAMBO-ALA-2041,264.9,-1.18,Aero-Vectoring Left,232.4,31.3
+LAMBO-ALA-2042,230.3,1.22,Low Drag (Flaps Open),80.7,66.6
+LAMBO-ALA-2043,285.4,0.94,High Downforce (Flaps Closed),360.1,64.3
+LAMBO-ALA-2044,284.1,-0.4,Aero-Vectoring Left,273.7,43.8
+LAMBO-ALA-2045,201.7,0.17,Aero-Vectoring Right,140.2,52.4
+LAMBO-ALA-2046,282.9,-0.59,Aero-Vectoring Left,246.0,41.4
+LAMBO-ALA-2047,324.3,0.87,Low Drag (Flaps Open),144.3,57.7
+LAMBO-ALA-2048,195.7,0.72,Aero-Vectoring Left,130.8,59.1
+LAMBO-ALA-2049,206.0,1.02,Aero-Vectoring Right,137.0,61.4
+LAMBO-ALA-2050,172.9,-0.59,Aero-Vectoring Right,87.6,38.3
+LAMBO-ALA-2051,280.5,0.64,Aero-Vectoring Right,254.5,61.5
+LAMBO-ALA-2052,144.0,0.21,Aero-Vectoring Right,64.3,53.5
+LAMBO-ALA-2053,299.0,1.49,Aero-Vectoring Right,290.1,72.0
+LAMBO-ALA-2054,265.2,0.75,High Downforce (Flaps Closed),320.1,59.2
+LAMBO-ALA-2055,266.1,-1.12,Aero-Vectoring Left,236.3,33.8
+LAMBO-ALA-2056,281.4,0.18,High Downforce (Flaps Closed),355.6,50.4
+LAMBO-ALA-2057,281.3,0.74,Aero-Vectoring Left,242.1,62.5
+LAMBO-ALA-2058,224.1,0.84,Aero-Vectoring Right,169.5,62.6
+LAMBO-ALA-2059,266.7,-0.36,Low Drag (Flaps Open),108.5,41.4
+LAMBO-ALA-2060,306.3,-1.1,Low Drag (Flaps Open),129.7,33.0
+LAMBO-ALA-2061,237.5,-0.41,Aero-Vectoring Left,185.0,42.2
+LAMBO-ALA-2062,147.9,-1.31,High Downforce (Flaps Closed),93.9,28.8
+LAMBO-ALA-2063,185.5,0.84,High Downforce (Flaps Closed),139.0,61.5
+LAMBO-ALA-2064,238.7,0.78,Aero-Vectoring Left,183.9,58.5
+LAMBO-ALA-2065,337.7,0.37,Low Drag (Flaps Open),150.9,51.1
+LAMBO-ALA-2066,239.7,-0.33,Low Drag (Flaps Open),79.8,44.8
+LAMBO-ALA-2067,206.2,1.47,Aero-Vectoring Left,128.5,69.9
+LAMBO-ALA-2068,319.2,0.19,High Downforce (Flaps Closed),448.7,50.5
+LAMBO-ALA-2069,219.2,1.31,Aero-Vectoring Right,140.0,68.2
+LAMBO-ALA-2070,317.0,-0.51,Low Drag (Flaps Open),143.8,44.7
+LAMBO-ALA-2071,241.7,-1.1,Aero-Vectoring Right,191.2,35.0
+LAMBO-ALA-2072,180.7,-0.24,Low Drag (Flaps Open),48.2,45.6
+LAMBO-ALA-2073,196.6,0.86,High Downforce (Flaps Closed),179.7,61.5
+LAMBO-ALA-2074,222.2,1.29,High Downforce (Flaps Closed),218.1,68.3
+LAMBO-ALA-2075,148.3,-0.23,High Downforce (Flaps Closed),106.8,47.4
+LAMBO-ALA-2076,260.5,1.47,Low Drag (Flaps Open),92.8,72.0
+LAMBO-ALA-2077,329.9,-0.17,High Downforce (Flaps Closed),486.1,48.7
+LAMBO-ALA-2078,274.9,0.52,High Downforce (Flaps Closed),338.6,58.0
+LAMBO-ALA-2079,245.8,1.17,High Downforce (Flaps Closed),287.0,63.6
+LAMBO-ALA-2080,302.5,1.01,Aero-Vectoring Right,298.3,64.8
+LAMBO-ALA-2081,147.0,-0.85,Aero-Vectoring Left,61.7,39.3
+LAMBO-ALA-2082,257.1,-1.08,Aero-Vectoring Right,214.7,34.4
+LAMBO-ALA-2083,292.4,0.81,High Downforce (Flaps Closed),381.2,61.3
+LAMBO-ALA-2084,252.5,-0.61,High Downforce (Flaps Closed),286.8,42.4
+LAMBO-ALA-2085,157.7,0.89,Low Drag (Flaps Open),31.0,60.3
+LAMBO-ALA-2086,278.1,1.5,High Downforce (Flaps Closed),371.7,72.0
+LAMBO-ALA-2087,204.0,0.9,Aero-Vectoring Left,146.9,63.5
+LAMBO-ALA-2088,269.5,-0.49,Aero-Vectoring Right,225.3,45.7
+LAMBO-ALA-2089,188.4,1.09,High Downforce (Flaps Closed),152.7,64.4
+LAMBO-ALA-2090,128.7,-0.31,High Downforce (Flaps Closed),76.3,44.7
+LAMBO-ALA-2091,283.2,-0.15,Aero-Vectoring Right,274.5,47.5
+LAMBO-ALA-2092,228.0,0.63,High Downforce (Flaps Closed),232.1,60.6
+LAMBO-ALA-2093,135.5,-0.15,High Downforce (Flaps Closed),70.8,48.3
+LAMBO-ALA-2094,279.3,0.37,High Downforce (Flaps Closed),349.0,52.2
+LAMBO-ALA-2095,225.3,-0.08,High Downforce (Flaps Closed),243.6,50.0
+LAMBO-ALA-2096,168.6,-1.49,High Downforce (Flaps Closed),130.3,30.3
+LAMBO-ALA-2097,309.0,0.32,Low Drag (Flaps Open),132.4,54.9
+LAMBO-ALA-2098,155.7,0.73,Aero-Vectoring Right,88.0,62.0
+LAMBO-ALA-2099,278.9,0.23,Aero-Vectoring Right,257.1,52.6
+LAMBO-ALA-2100,232.8,-1.49,Aero-Vectoring Right,171.3,30.0
+LAMBO-ALA-2101,187.6,0.03,Aero-Vectoring Left,106.9,51.8
+LAMBO-ALA-2102,260.1,-1.4,Aero-Vectoring Right,197.6,31.7
+LAMBO-ALA-2103,332.0,-1.44,High Downforce (Flaps Closed),514.1,29.4
+LAMBO-ALA-2104,129.3,-1.33,High Downforce (Flaps Closed),83.5,32.1
+LAMBO-ALA-2105,257.2,0.15,Aero-Vectoring Right,214.7,55.0
+LAMBO-ALA-2106,188.4,-0.88,Aero-Vectoring Right,116.2,36.9
+LAMBO-ALA-2107,207.7,0.07,Aero-Vectoring Right,136.4,50.7
+LAMBO-ALA-2108,190.8,0.75,Aero-Vectoring Right,122.7,63.0
+LAMBO-ALA-2109,282.2,1.06,High Downforce (Flaps Closed),356.1,65.6
+LAMBO-ALA-2110,336.7,0.55,High Downforce (Flaps Closed),514.6,57.7
+LAMBO-ALA-2111,152.4,0.42,Aero-Vectoring Right,79.5,56.6
+LAMBO-ALA-2112,313.9,-0.53,Low Drag (Flaps Open),137.2,43.9
+LAMBO-ALA-2113,195.8,0.8,High Downforce (Flaps Closed),162.2,60.4
+LAMBO-ALA-2114,216.4,-0.78,Aero-Vectoring Left,160.4,39.9
+LAMBO-ALA-2115,164.3,0.23,High Downforce (Flaps Closed),125.7,50.9
+LAMBO-ALA-2116,282.0,0.17,Aero-Vectoring Left,261.1,54.4
+LAMBO-ALA-2117,145.4,0.58,High Downforce (Flaps Closed),97.5,57.3
+LAMBO-ALA-2118,253.6,1.31,Low Drag (Flaps Open),97.3,69.5
+LAMBO-ALA-2119,166.9,-0.27,Aero-Vectoring Right,91.0,45.7
+LAMBO-ALA-2120,249.0,0.53,Aero-Vectoring Left,204.4,59.2
+LAMBO-ALA-2121,213.8,-0.24,High Downforce (Flaps Closed),205.8,45.6
+LAMBO-ALA-2122,164.3,-0.3,High Downforce (Flaps Closed),115.1,44.1
+LAMBO-ALA-2123,212.9,-1.31,Aero-Vectoring Right,135.4,30.1
+LAMBO-ALA-2124,160.6,-1.12,High Downforce (Flaps Closed),112.2,35.7
+LAMBO-ALA-2125,140.6,-0.13,Low Drag (Flaps Open),25.3,48.6
+LAMBO-ALA-2126,261.7,0.49,Low Drag (Flaps Open),94.7,53.8
+LAMBO-ALA-2127,260.7,-1.49,Low Drag (Flaps Open),90.7,28.0
+LAMBO-ALA-2128,306.1,0.96,Aero-Vectoring Left,301.3,62.6
+LAMBO-ALA-2129,134.0,-1.34,High Downforce (Flaps Closed),64.1,29.8
+LAMBO-ALA-2130,232.7,-0.65,High Downforce (Flaps Closed),246.3,40.6
+LAMBO-ALA-2131,244.9,-0.57,Low Drag (Flaps Open),75.2,41.3
+LAMBO-ALA-2132,304.5,-0.81,Aero-Vectoring Left,299.6,40.9
+LAMBO-ALA-2133,339.5,-1.45,Low Drag (Flaps Open),166.8,28.0
+LAMBO-ALA-2134,324.9,1.27,Aero-Vectoring Left,340.6,69.7
+LAMBO-ALA-2135,275.2,-0.21,Aero-Vectoring Right,267.8,46.1
+LAMBO-ALA-2136,253.0,-1.19,Aero-Vectoring Left,205.5,32.6
+LAMBO-ALA-2137,180.0,-0.32,High Downforce (Flaps Closed),148.1,41.2
+LAMBO-ALA-2138,286.9,1.21,Low Drag (Flaps Open),116.1,67.5
+LAMBO-ALA-2139,208.9,-1.34,High Downforce (Flaps Closed),201.7,30.8
+LAMBO-ALA-2140,298.4,0.09,Aero-Vectoring Left,274.0,46.7
+LAMBO-ALA-2141,218.5,0.17,High Downforce (Flaps Closed),220.4,54.5
+LAMBO-ALA-2142,179.9,-0.82,Low Drag (Flaps Open),49.8,36.9
+LAMBO-ALA-2143,182.7,-0.64,Aero-Vectoring Left,114.8,42.3
+LAMBO-ALA-2144,121.1,-0.61,High Downforce (Flaps Closed),69.2,41.2
+LAMBO-ALA-2145,288.7,-0.62,Aero-Vectoring Left,255.6,42.8
+LAMBO-ALA-2146,188.5,-1.14,High Downforce (Flaps Closed),154.5,33.8
+LAMBO-ALA-2147,192.8,0.3,Aero-Vectoring Right,125.2,50.9
+LAMBO-ALA-2148,227.9,0.97,Aero-Vectoring Right,169.2,63.9
+LAMBO-ALA-2149,249.9,-0.92,Aero-Vectoring Left,214.4,38.9
+LAMBO-ALA-2150,270.3,0.9,Aero-Vectoring Left,232.1,62.5
+LAMBO-ALA-2151,151.7,1.09,Low Drag (Flaps Open),26.3,61.9
+LAMBO-ALA-2152,313.5,0.89,High Downforce (Flaps Closed),434.5,63.9
+LAMBO-ALA-2153,224.0,-0.46,Low Drag (Flaps Open),60.3,44.5
+LAMBO-ALA-2154,336.3,-0.23,Aero-Vectoring Right,366.1,46.5
+LAMBO-ALA-2155,277.6,0.77,Aero-Vectoring Left,228.7,65.6
+LAMBO-ALA-2156,288.2,-1.46,High Downforce (Flaps Closed),393.8,31.2
+LAMBO-ALA-2157,245.6,0.26,Low Drag (Flaps Open),89.7,52.7
+LAMBO-ALA-2158,321.1,0.09,High Downforce (Flaps Closed),474.7,54.5
+LAMBO-ALA-2159,220.7,0.42,High Downforce (Flaps Closed),212.0,58.1
+LAMBO-ALA-2160,158.8,-0.32,Aero-Vectoring Left,84.4,45.5
+LAMBO-ALA-2161,163.2,-0.14,Aero-Vectoring Left,84.5,46.8
+LAMBO-ALA-2162,196.7,-1.1,High Downforce (Flaps Closed),159.9,32.3
+LAMBO-ALA-2163,327.8,-0.81,High Downforce (Flaps Closed),486.1,37.7
+LAMBO-ALA-2164,209.8,-1.35,High Downforce (Flaps Closed),210.2,31.9
+LAMBO-ALA-2165,127.9,-0.29,Low Drag (Flaps Open),28.1,46.2
+LAMBO-ALA-2166,129.0,-1.41,High Downforce (Flaps Closed),83.1,30.4
+LAMBO-ALA-2167,317.0,-1.2,High Downforce (Flaps Closed),435.5,34.9
+LAMBO-ALA-2168,202.3,0.77,High Downforce (Flaps Closed),171.8,63.2
+LAMBO-ALA-2169,129.9,1.18,High Downforce (Flaps Closed),81.4,66.8
+LAMBO-ALA-2170,132.2,0.79,Aero-Vectoring Right,48.5,59.1
+LAMBO-ALA-2171,148.7,0.75,Aero-Vectoring Left,66.4,57.4
+LAMBO-ALA-2172,270.6,-1.16,Low Drag (Flaps Open),106.4,37.1
+LAMBO-ALA-2173,139.5,-1.43,High Downforce (Flaps Closed),95.1,30.5
+LAMBO-ALA-2174,176.4,1.06,Aero-Vectoring Left,97.6,65.3
+LAMBO-ALA-2175,167.8,0.84,High Downforce (Flaps Closed),136.4,61.6
+LAMBO-ALA-2176,286.6,-1.09,High Downforce (Flaps Closed),370.3,31.3
+LAMBO-ALA-2177,307.7,1.43,High Downforce (Flaps Closed),432.2,70.8
+LAMBO-ALA-2178,294.9,0.06,High Downforce (Flaps Closed),393.5,51.9
+LAMBO-ALA-2179,277.6,0.43,Aero-Vectoring Left,250.8,55.9
+LAMBO-ALA-2180,126.1,0.13,Aero-Vectoring Left,56.9,52.1
+LAMBO-ALA-2181,245.3,-0.59,Aero-Vectoring Right,171.5,43.0
+LAMBO-ALA-2182,301.8,-0.06,High Downforce (Flaps Closed),431.8,50.1
+LAMBO-ALA-2183,246.5,1.47,High Downforce (Flaps Closed),270.8,67.4
+LAMBO-ALA-2184,316.9,-0.03,High Downforce (Flaps Closed),454.6,48.1
+LAMBO-ALA-2185,177.6,1.49,High Downforce (Flaps Closed),162.5,72.0
+LAMBO-ALA-2186,260.6,1.1,Aero-Vectoring Right,217.7,63.3
+LAMBO-ALA-2187,317.7,-0.19,High Downforce (Flaps Closed),481.2,46.0
+LAMBO-ALA-2188,190.0,0.81,High Downforce (Flaps Closed),137.3,63.3
+LAMBO-ALA-2189,338.8,-0.82,Aero-Vectoring Left,372.1,37.3
+LAMBO-ALA-2190,203.9,-0.12,Aero-Vectoring Left,139.3,49.6
+LAMBO-ALA-2191,278.0,-1.1,High Downforce (Flaps Closed),334.5,34.9
+LAMBO-ALA-2192,236.2,-0.84,High Downforce (Flaps Closed),259.9,39.2
+LAMBO-ALA-2193,231.5,0.9,Aero-Vectoring Right,178.8,60.5
+LAMBO-ALA-2194,141.2,0.53,High Downforce (Flaps Closed),75.6,57.3
+LAMBO-ALA-2195,245.5,-0.63,Low Drag (Flaps Open),89.5,38.2
+LAMBO-ALA-2196,203.4,0.98,Low Drag (Flaps Open),52.0,64.2
+LAMBO-ALA-2197,202.6,0.33,Aero-Vectoring Right,118.8,55.4
+LAMBO-ALA-2198,245.6,0.78,Aero-Vectoring Right,204.0,62.5
+LAMBO-ALA-2199,225.4,-0.78,Aero-Vectoring Left,157.4,44.7
+LAMBO-ALA-2200,232.5,0.59,High Downforce (Flaps Closed),240.4,54.8
+LAMBO-ALA-2201,320.1,1.0,Aero-Vectoring Right,327.9,64.3
+LAMBO-ALA-2202,295.2,1.11,High Downforce (Flaps Closed),391.0,70.0
+LAMBO-ALA-2203,169.4,1.2,High Downforce (Flaps Closed),138.5,65.0
+LAMBO-ALA-2204,200.5,0.93,Aero-Vectoring Left,135.9,68.1
+LAMBO-ALA-2205,127.6,0.67,Aero-Vectoring Right,58.2,60.3
+LAMBO-ALA-2206,328.5,-0.94,Aero-Vectoring Right,347.7,35.2
+LAMBO-ALA-2207,288.8,-0.46,High Downforce (Flaps Closed),368.1,41.5
+LAMBO-ALA-2208,249.4,-0.4,High Downforce (Flaps Closed),276.5,44.2
+LAMBO-ALA-2209,254.3,-0.8,Aero-Vectoring Left,202.2,38.5
+LAMBO-ALA-2210,202.4,0.2,High Downforce (Flaps Closed),164.9,53.1
+LAMBO-ALA-2211,312.6,-0.17,Aero-Vectoring Left,307.2,43.9
+LAMBO-ALA-2212,329.2,1.35,Aero-Vectoring Left,336.2,67.2
+LAMBO-ALA-2213,228.1,1.4,High Downforce (Flaps Closed),241.5,69.5
+LAMBO-ALA-2214,283.6,-0.82,Aero-Vectoring Right,257.3,37.6
+LAMBO-ALA-2215,338.7,-0.72,Low Drag (Flaps Open),163.1,41.7
+LAMBO-ALA-2216,157.5,-0.01,Low Drag (Flaps Open),36.5,48.6
+LAMBO-ALA-2217,204.6,-0.49,Aero-Vectoring Right,148.3,42.6
+LAMBO-ALA-2218,186.0,-1.12,Low Drag (Flaps Open),50.0,40.4
+LAMBO-ALA-2219,173.1,-0.93,High Downforce (Flaps Closed),129.3,36.2
+LAMBO-ALA-2220,211.8,-0.48,Aero-Vectoring Left,141.5,41.4
+LAMBO-ALA-2221,130.8,0.77,Aero-Vectoring Right,48.8,59.4
+LAMBO-ALA-2222,259.8,1.07,High Downforce (Flaps Closed),308.8,63.4
+LAMBO-ALA-2223,286.4,1.38,High Downforce (Flaps Closed),362.4,71.8
+LAMBO-ALA-2224,267.4,-0.53,High Downforce (Flaps Closed),321.8,40.6
+LAMBO-ALA-2225,189.9,0.52,Low Drag (Flaps Open),47.1,56.1
+LAMBO-ALA-2226,226.5,1.34,Low Drag (Flaps Open),68.7,70.3
+LAMBO-ALA-2227,246.4,0.04,Aero-Vectoring Right,178.0,51.8
+LAMBO-ALA-2228,300.6,-0.22,Aero-Vectoring Left,299.6,45.5
+LAMBO-ALA-2229,209.8,1.29,High Downforce (Flaps Closed),172.7,65.1
+LAMBO-ALA-2230,141.6,0.49,Low Drag (Flaps Open),32.8,57.8
+LAMBO-ALA-2231,329.6,1.3,High Downforce (Flaps Closed),487.2,67.4
+LAMBO-ALA-2232,329.3,-0.78,High Downforce (Flaps Closed),501.8,37.7
+LAMBO-ALA-2233,219.3,0.86,Aero-Vectoring Right,159.9,60.2
+LAMBO-ALA-2234,144.9,0.57,High Downforce (Flaps Closed),95.9,56.7
+LAMBO-ALA-2235,332.9,0.9,High Downforce (Flaps Closed),495.7,59.7
+LAMBO-ALA-2236,303.0,0.4,Aero-Vectoring Left,290.1,57.6
+LAMBO-ALA-2237,153.8,-0.15,Aero-Vectoring Right,74.2,48.9
+LAMBO-ALA-2238,278.8,1.19,Low Drag (Flaps Open),100.3,64.7
+LAMBO-ALA-2239,315.0,-1.26,Aero-Vectoring Left,318.9,32.2
+LAMBO-ALA-2240,295.1,-1.49,Aero-Vectoring Left,301.0,28.2
+LAMBO-ALA-2241,169.4,1.24,Aero-Vectoring Right,98.4,66.8
+LAMBO-ALA-2242,186.1,-0.69,Aero-Vectoring Left,107.0,40.8
+LAMBO-ALA-2243,327.4,-0.44,Aero-Vectoring Right,335.2,43.6
+LAMBO-ALA-2244,250.4,-0.29,Low Drag (Flaps Open),77.0,49.1
+LAMBO-ALA-2245,156.0,0.93,Aero-Vectoring Right,83.2,63.3
+LAMBO-ALA-2246,186.5,0.12,Low Drag (Flaps Open),44.4,46.7
+LAMBO-ALA-2247,326.8,0.09,Low Drag (Flaps Open),151.7,50.9
+LAMBO-ALA-2248,194.3,-0.12,Aero-Vectoring Right,138.0,50.4
+LAMBO-ALA-2249,164.8,1.33,High Downforce (Flaps Closed),108.1,66.5
+LAMBO-ALA-2250,131.5,0.04,High Downforce (Flaps Closed),85.5,54.2
+LAMBO-ALA-2251,168.1,1.16,Aero-Vectoring Left,84.9,64.3
+LAMBO-ALA-2252,213.8,-0.84,Aero-Vectoring Left,147.0,37.9
+LAMBO-ALA-2253,284.5,0.86,Aero-Vectoring Left,254.5,61.4
+LAMBO-ALA-2254,136.1,-1.35,High Downforce (Flaps Closed),97.0,32.0
+LAMBO-ALA-2255,249.0,1.47,High Downforce (Flaps Closed),286.0,70.4
+LAMBO-ALA-2256,197.8,0.04,Low Drag (Flaps Open),52.7,51.7
+LAMBO-ALA-2257,174.0,-0.67,High Downforce (Flaps Closed),129.4,42.8
+LAMBO-ALA-2258,307.8,0.82,High Downforce (Flaps Closed),432.5,63.3
+LAMBO-ALA-2259,332.0,-0.3,Low Drag (Flaps Open),151.0,48.4
+LAMBO-ALA-2260,304.0,0.98,Aero-Vectoring Left,295.7,62.1
+LAMBO-ALA-2261,238.9,1.11,Low Drag (Flaps Open),89.7,65.7
+LAMBO-ALA-2262,265.7,-0.9,High Downforce (Flaps Closed),318.5,36.9
+LAMBO-ALA-2263,300.7,-0.32,High Downforce (Flaps Closed),404.3,44.5
+LAMBO-ALA-2264,304.6,0.36,Low Drag (Flaps Open),132.2,58.2
+LAMBO-ALA-2265,192.1,0.38,High Downforce (Flaps Closed),159.8,55.3
+LAMBO-ALA-2266,243.1,-0.98,Aero-Vectoring Right,172.7,35.3
+LAMBO-ALA-2267,175.2,0.37,Aero-Vectoring Right,101.0,56.7
+LAMBO-ALA-2268,236.1,-0.93,Aero-Vectoring Right,164.9,36.7
+LAMBO-ALA-2269,154.3,-1.25,Aero-Vectoring Right,86.9,35.4
+LAMBO-ALA-2270,120.9,0.29,High Downforce (Flaps Closed),72.6,52.1
+LAMBO-ALA-2271,205.0,-0.81,High Downforce (Flaps Closed),182.6,38.1
+LAMBO-ALA-2272,247.7,-0.26,High Downforce (Flaps Closed),265.2,48.2
+LAMBO-ALA-2273,125.9,-0.24,Aero-Vectoring Left,48.0,50.6
+LAMBO-ALA-2274,220.1,-0.3,Aero-Vectoring Left,167.0,44.4
+LAMBO-ALA-2275,250.1,-0.76,Aero-Vectoring Right,200.1,41.0
+LAMBO-ALA-2276,236.2,1.08,High Downforce (Flaps Closed),258.6,63.7
+LAMBO-ALA-2277,279.1,0.43,Aero-Vectoring Right,241.7,57.4
+LAMBO-ALA-2278,130.6,1.0,Aero-Vectoring Right,45.4,64.2
+LAMBO-ALA-2279,144.3,0.27,Aero-Vectoring Left,64.8,52.1
+LAMBO-ALA-2280,249.6,1.13,Aero-Vectoring Left,199.5,65.8
+LAMBO-ALA-2281,275.4,0.44,High Downforce (Flaps Closed),344.8,56.3
+LAMBO-ALA-2282,160.8,0.26,Aero-Vectoring Right,84.7,55.7
+LAMBO-ALA-2283,325.2,-1.1,High Downforce (Flaps Closed),475.5,34.7
+LAMBO-ALA-2284,334.5,-0.98,Low Drag (Flaps Open),162.5,35.3
+LAMBO-ALA-2285,186.7,-0.09,Aero-Vectoring Right,103.4,49.6
+LAMBO-ALA-2286,133.8,0.03,Aero-Vectoring Left,50.8,51.9
+LAMBO-ALA-2287,227.2,-0.15,High Downforce (Flaps Closed),230.3,48.1
+LAMBO-ALA-2288,277.5,0.83,High Downforce (Flaps Closed),354.7,62.0
+LAMBO-ALA-2289,227.6,-0.22,Aero-Vectoring Right,181.5,48.5
+LAMBO-ALA-2290,272.3,-0.73,High Downforce (Flaps Closed),329.7,42.0
+LAMBO-ALA-2291,240.1,-0.37,High Downforce (Flaps Closed),250.5,43.6
+LAMBO-ALA-2292,266.5,0.05,Low Drag (Flaps Open),95.1,52.7
+LAMBO-ALA-2293,219.9,-0.85,Aero-Vectoring Left,139.4,37.5
+LAMBO-ALA-2294,187.9,0.81,Low Drag (Flaps Open),50.4,62.4
+LAMBO-ALA-2295,154.6,-0.37,Low Drag (Flaps Open),21.7,42.1
+LAMBO-ALA-2296,277.6,-0.44,High Downforce (Flaps Closed),344.7,42.3
+LAMBO-ALA-2297,337.6,1.41,High Downforce (Flaps Closed),519.4,71.1
+LAMBO-ALA-2298,181.7,-0.41,Aero-Vectoring Right,108.1,41.0
+LAMBO-ALA-2299,175.0,-0.44,High Downforce (Flaps Closed),143.3,45.0
+LAMBO-ALA-2300,225.7,1.38,Low Drag (Flaps Open),72.6,71.2
+LAMBO-ALA-2301,334.5,0.27,High Downforce (Flaps Closed),495.5,53.9
+LAMBO-ALA-2302,210.4,-1.47,Aero-Vectoring Right,155.9,28.1
+LAMBO-ALA-2303,152.4,-1.39,Low Drag (Flaps Open),32.6,28.2
+LAMBO-ALA-2304,179.1,-1.26,High Downforce (Flaps Closed),145.6,29.7
+LAMBO-ALA-2305,184.4,1.13,Aero-Vectoring Right,104.6,67.3
+LAMBO-ALA-2306,222.6,-1.22,High Downforce (Flaps Closed),218.1,32.8
+LAMBO-ALA-2307,269.9,0.53,Aero-Vectoring Right,229.3,55.3
+LAMBO-ALA-2308,294.4,-0.39,Aero-Vectoring Left,270.6,40.7
+LAMBO-ALA-2309,160.3,0.78,Aero-Vectoring Right,99.7,61.6
+LAMBO-ALA-2310,222.1,-1.14,Aero-Vectoring Left,140.7,30.2
+LAMBO-ALA-2311,275.5,-1.46,High Downforce (Flaps Closed),352.6,28.6
+LAMBO-ALA-2312,284.8,-0.14,Low Drag (Flaps Open),112.8,48.7
+LAMBO-ALA-2313,135.0,-0.24,High Downforce (Flaps Closed),66.4,46.2
+LAMBO-ALA-2314,235.9,-1.05,Aero-Vectoring Right,160.9,33.7
+LAMBO-ALA-2315,210.5,-1.44,Aero-Vectoring Right,143.0,32.3
+LAMBO-ALA-2316,332.3,-0.21,Aero-Vectoring Right,351.0,47.4
+LAMBO-ALA-2317,225.7,0.13,High Downforce (Flaps Closed),233.2,50.6
+LAMBO-ALA-2318,183.8,0.33,Aero-Vectoring Left,114.7,53.6
+LAMBO-ALA-2319,151.7,0.92,Aero-Vectoring Left,68.7,65.1
+LAMBO-ALA-2320,180.4,-0.18,Aero-Vectoring Left,113.6,47.4
+LAMBO-ALA-2321,158.9,0.86,High Downforce (Flaps Closed),117.9,62.2
+LAMBO-ALA-2322,258.3,1.03,Low Drag (Flaps Open),99.2,69.0
+LAMBO-ALA-2323,230.9,1.46,Low Drag (Flaps Open),69.4,70.5
+LAMBO-ALA-2324,312.1,1.33,Low Drag (Flaps Open),134.3,72.0
+LAMBO-ALA-2325,153.7,-1.24,Low Drag (Flaps Open),27.5,31.0
+LAMBO-ALA-2326,148.7,-0.24,High Downforce (Flaps Closed),91.2,48.4
+LAMBO-ALA-2327,188.0,-0.64,Aero-Vectoring Right,110.1,44.5
+LAMBO-ALA-2328,215.1,0.09,High Downforce (Flaps Closed),222.0,50.7
+LAMBO-ALA-2329,188.1,-0.84,Aero-Vectoring Right,121.2,38.2
+LAMBO-ALA-2330,285.0,-0.12,Aero-Vectoring Left,255.4,48.8
+LAMBO-ALA-2331,135.4,0.3,Low Drag (Flaps Open),22.7,52.5
+LAMBO-ALA-2332,312.7,-1.18,Aero-Vectoring Right,322.7,33.6
+LAMBO-ALA-2333,267.7,-0.41,High Downforce (Flaps Closed),334.7,44.9
+LAMBO-ALA-2334,176.5,0.28,Low Drag (Flaps Open),43.9,52.9
+LAMBO-ALA-2335,315.2,-1.3,High Downforce (Flaps Closed),456.5,32.1
+LAMBO-ALA-2336,218.5,-1.25,Aero-Vectoring Left,144.9,32.9
+LAMBO-ALA-2337,225.1,-0.86,High Downforce (Flaps Closed),224.2,38.8
+LAMBO-ALA-2338,214.2,0.37,Aero-Vectoring Left,146.5,55.0
+LAMBO-ALA-2339,256.5,0.48,Aero-Vectoring Left,204.9,61.3
+LAMBO-ALA-2340,282.4,-1.36,Aero-Vectoring Right,257.6,30.1
+LAMBO-ALA-2341,300.7,-1.36,Aero-Vectoring Left,287.7,30.8
+LAMBO-ALA-2342,337.4,-0.7,Aero-Vectoring Right,369.6,38.4
+LAMBO-ALA-2343,306.9,0.45,Low Drag (Flaps Open),136.0,52.6
+LAMBO-ALA-2344,204.9,-0.26,Low Drag (Flaps Open),59.1,46.0
+LAMBO-ALA-2345,182.0,1.01,Low Drag (Flaps Open),41.9,67.0
+LAMBO-ALA-2346,160.0,0.08,Low Drag (Flaps Open),29.1,49.0
+LAMBO-ALA-2347,239.6,0.8,Aero-Vectoring Right,183.6,59.6
+LAMBO-ALA-2348,315.3,0.67,High Downforce (Flaps Closed),451.0,60.0
+LAMBO-ALA-2349,189.9,-1.22,Aero-Vectoring Left,104.8,33.8
+LAMBO-ALA-2350,282.3,0.64,Aero-Vectoring Right,252.4,58.4
+LAMBO-ALA-2351,205.7,-0.66,High Downforce (Flaps Closed),191.1,41.8
+LAMBO-ALA-2352,220.1,1.43,High Downforce (Flaps Closed),210.6,70.5
+LAMBO-ALA-2353,154.1,0.17,High Downforce (Flaps Closed),112.1,52.9
+LAMBO-ALA-2354,308.3,-0.18,High Downforce (Flaps Closed),430.4,46.2
+LAMBO-ALA-2355,200.9,-1.01,High Downforce (Flaps Closed),169.8,37.4
+LAMBO-ALA-2356,251.6,-1.03,High Downforce (Flaps Closed),296.6,35.8
+LAMBO-ALA-2357,315.3,0.06,High Downforce (Flaps Closed),446.5,50.5
+LAMBO-ALA-2358,256.5,-0.56,Low Drag (Flaps Open),97.1,39.6
+LAMBO-ALA-2359,179.7,0.46,Aero-Vectoring Left,93.1,57.4
+LAMBO-ALA-2360,302.4,-0.57,High Downforce (Flaps Closed),421.7,41.7
+LAMBO-ALA-2361,220.0,-1.18,Low Drag (Flaps Open),71.6,33.0
+LAMBO-ALA-2362,125.2,-0.81,High Downforce (Flaps Closed),81.1,37.5
+LAMBO-ALA-2363,188.1,-0.35,Aero-Vectoring Left,114.5,44.2
+LAMBO-ALA-2364,288.1,-0.44,High Downforce (Flaps Closed),380.2,46.1
+LAMBO-ALA-2365,260.5,-0.24,Aero-Vectoring Left,227.2,50.3
+LAMBO-ALA-2366,127.5,1.49,Aero-Vectoring Right,44.5,68.5
+LAMBO-ALA-2367,162.8,-1.07,Aero-Vectoring Right,75.4,36.0
+LAMBO-ALA-2368,144.1,0.85,Low Drag (Flaps Open),30.6,63.3
+LAMBO-ALA-2369,171.0,-1.36,High Downforce (Flaps Closed),143.9,31.5
+LAMBO-ALA-2370,226.7,-1.17,Low Drag (Flaps Open),70.8,30.2
+LAMBO-ALA-2371,123.6,-0.18,Aero-Vectoring Left,56.7,48.2
+LAMBO-ALA-2372,178.3,0.12,High Downforce (Flaps Closed),135.3,49.8
+LAMBO-ALA-2373,166.0,0.98,High Downforce (Flaps Closed),107.8,62.6
+LAMBO-ALA-2374,275.6,-1.42,Aero-Vectoring Right,239.0,28.0
+LAMBO-ALA-2375,204.5,-1.48,High Downforce (Flaps Closed),192.2,28.0
+LAMBO-ALA-2376,189.2,-0.66,Low Drag (Flaps Open),56.5,42.0
+LAMBO-ALA-2377,163.5,1.23,Aero-Vectoring Right,88.4,68.5
+LAMBO-ALA-2378,172.2,-1.42,Low Drag (Flaps Open),39.2,31.8
+LAMBO-ALA-2379,255.7,1.07,Low Drag (Flaps Open),95.3,65.3
+LAMBO-ALA-2380,332.3,-0.61,Aero-Vectoring Left,350.6,42.7
+LAMBO-ALA-2381,214.2,-0.23,Low Drag (Flaps Open),63.9,44.9
+LAMBO-ALA-2382,223.4,-0.73,High Downforce (Flaps Closed),237.8,37.1
+LAMBO-ALA-2383,303.7,-0.58,Low Drag (Flaps Open),135.0,37.3
+LAMBO-ALA-2384,137.1,0.1,Aero-Vectoring Left,64.2,48.4
+LAMBO-ALA-2385,225.8,0.66,Aero-Vectoring Right,162.6,61.8
+LAMBO-ALA-2386,274.2,-1.2,Aero-Vectoring Right,234.3,29.4
+LAMBO-ALA-2387,232.5,-0.95,High Downforce (Flaps Closed),245.0,36.8
+LAMBO-ALA-2388,303.1,0.77,Aero-Vectoring Left,278.1,59.6
+LAMBO-ALA-2389,248.0,1.22,Aero-Vectoring Left,189.5,65.5
+LAMBO-ALA-2390,255.5,0.68,High Downforce (Flaps Closed),290.9,57.3
+LAMBO-ALA-2391,320.1,-1.07,High Downforce (Flaps Closed),474.2,35.7
+LAMBO-ALA-2392,260.0,1.02,Low Drag (Flaps Open),89.3,64.5
+LAMBO-ALA-2393,136.7,0.24,Low Drag (Flaps Open),25.1,55.0
+LAMBO-ALA-2394,172.4,-0.43,Aero-Vectoring Left,104.0,46.8
+LAMBO-ALA-2395,141.1,-1.35,Low Drag (Flaps Open),28.5,33.0
+LAMBO-ALA-2396,182.6,-0.76,High Downforce (Flaps Closed),154.1,38.4
+LAMBO-ALA-2397,288.9,1.11,Low Drag (Flaps Open),108.7,63.3
+LAMBO-ALA-2398,161.7,-0.92,Low Drag (Flaps Open),36.6,35.2
+LAMBO-ALA-2399,154.3,0.01,Low Drag (Flaps Open),41.6,49.2
+LAMBO-ALA-2400,201.6,-1.18,Aero-Vectoring Left,128.8,35.9
+LAMBO-ALA-2401,142.8,-0.7,Aero-Vectoring Right,58.5,40.6
+LAMBO-ALA-2402,272.8,0.1,Aero-Vectoring Right,226.8,49.4
+LAMBO-ALA-2403,273.5,0.26,Aero-Vectoring Right,233.3,58.2
+LAMBO-ALA-2404,248.6,-0.82,Aero-Vectoring Right,200.3,36.5
+LAMBO-ALA-2405,228.4,-0.62,High Downforce (Flaps Closed),244.7,41.4
+LAMBO-ALA-2406,228.9,1.26,Low Drag (Flaps Open),68.5,67.1
+LAMBO-ALA-2407,137.7,-1.18,Low Drag (Flaps Open),28.0,32.1
+LAMBO-ALA-2408,148.5,-0.69,Low Drag (Flaps Open),44.3,38.7
+LAMBO-ALA-2409,199.6,0.6,Aero-Vectoring Left,131.8,53.8
+LAMBO-ALA-2410,321.3,-0.92,Aero-Vectoring Left,319.5,36.1
+LAMBO-ALA-2411,207.9,-0.37,Low Drag (Flaps Open),51.7,45.4
+LAMBO-ALA-2412,157.6,1.07,High Downforce (Flaps Closed),114.9,63.9
+LAMBO-ALA-2413,171.0,-0.43,High Downforce (Flaps Closed),128.3,44.4
+LAMBO-ALA-2414,251.5,0.55,High Downforce (Flaps Closed),275.9,54.8
+LAMBO-ALA-2415,218.2,1.23,Aero-Vectoring Right,156.8,64.9
+LAMBO-ALA-2416,132.0,0.17,Aero-Vectoring Right,54.8,53.3
+LAMBO-ALA-2417,140.8,-0.08,Aero-Vectoring Right,73.7,49.3
+LAMBO-ALA-2418,292.4,1.17,High Downforce (Flaps Closed),395.7,69.8
+LAMBO-ALA-2419,183.5,1.15,High Downforce (Flaps Closed),155.4,67.2
+LAMBO-ALA-2420,143.6,-1.43,Aero-Vectoring Left,68.7,28.9
+LAMBO-ALA-2421,157.1,0.55,High Downforce (Flaps Closed),123.9,59.4
+LAMBO-ALA-2422,159.2,-1.01,High Downforce (Flaps Closed),85.2,32.5
+LAMBO-ALA-2423,230.0,-0.02,High Downforce (Flaps Closed),222.8,46.4
+LAMBO-ALA-2424,195.9,-0.53,Aero-Vectoring Right,115.0,40.5
+LAMBO-ALA-2425,260.1,-0.55,Aero-Vectoring Right,224.9,41.8
+LAMBO-ALA-2426,146.6,1.32,Aero-Vectoring Right,76.3,68.2
+LAMBO-ALA-2427,238.2,1.48,Aero-Vectoring Right,181.1,69.2
+LAMBO-ALA-2428,251.1,1.3,High Downforce (Flaps Closed),285.7,70.0
+LAMBO-ALA-2429,195.3,-0.32,Aero-Vectoring Right,133.0,46.9
+LAMBO-ALA-2430,217.6,-0.39,Aero-Vectoring Right,150.9,45.9
+LAMBO-ALA-2431,290.4,0.99,Aero-Vectoring Right,260.1,62.7
+LAMBO-ALA-2432,303.6,0.06,Aero-Vectoring Right,311.4,51.3
+LAMBO-ALA-2433,269.2,-1.3,Low Drag (Flaps Open),106.3,34.5
+LAMBO-ALA-2434,223.8,0.23,Low Drag (Flaps Open),73.6,52.7
+LAMBO-ALA-2435,160.9,-1.11,High Downforce (Flaps Closed),142.3,34.7
+LAMBO-ALA-2436,126.2,-1.08,Aero-Vectoring Right,44.9,33.7
+LAMBO-ALA-2437,129.7,-0.71,Aero-Vectoring Left,46.0,40.0
+LAMBO-ALA-2438,132.3,0.15,Low Drag (Flaps Open),21.5,51.3
+LAMBO-ALA-2439,323.7,-0.75,Low Drag (Flaps Open),153.1,37.8
+LAMBO-ALA-2440,166.7,-0.17,Aero-Vectoring Right,92.4,49.3
+LAMBO-ALA-2441,205.1,1.23,Low Drag (Flaps Open),69.9,64.6
+LAMBO-ALA-2442,248.7,-0.56,High Downforce (Flaps Closed),266.7,43.0
+LAMBO-ALA-2443,300.5,0.26,Low Drag (Flaps Open),128.0,56.9
+LAMBO-ALA-2444,334.1,0.21,High Downforce (Flaps Closed),499.9,54.7
+LAMBO-ALA-2445,339.2,1.2,Aero-Vectoring Left,369.4,69.1
+LAMBO-ALA-2446,151.3,-1.14,High Downforce (Flaps Closed),103.5,32.4
+LAMBO-ALA-2447,174.6,0.57,Aero-Vectoring Left,94.8,60.9
+LAMBO-ALA-2448,310.0,-0.86,Aero-Vectoring Right,304.7,38.8
+LAMBO-ALA-2449,271.5,1.38,High Downforce (Flaps Closed),331.2,69.4
+LAMBO-ALA-2450,189.7,-0.78,High Downforce (Flaps Closed),156.8,40.0
+LAMBO-ALA-2451,335.4,0.09,Low Drag (Flaps Open),155.9,53.4
+LAMBO-ALA-2452,138.4,1.11,Aero-Vectoring Right,70.1,65.8
+LAMBO-ALA-2453,320.0,-1.47,High Downforce (Flaps Closed),459.1,31.6
+LAMBO-ALA-2454,332.4,-1.09,High Downforce (Flaps Closed),482.5,36.5
+LAMBO-ALA-2455,269.2,-1.36,Low Drag (Flaps Open),102.1,31.8
+LAMBO-ALA-2456,211.4,0.26,Aero-Vectoring Right,140.8,55.4
+LAMBO-ALA-2457,136.5,-0.67,Aero-Vectoring Right,53.9,38.8
+LAMBO-ALA-2458,218.4,-0.66,Aero-Vectoring Right,158.1,42.9
+LAMBO-ALA-2459,208.6,-1.36,Low Drag (Flaps Open),65.6,28.6
+LAMBO-ALA-2460,138.1,-0.51,High Downforce (Flaps Closed),89.4,38.4
+LAMBO-ALA-2461,161.3,1.16,Aero-Vectoring Right,83.4,61.6
+LAMBO-ALA-2462,304.1,1.19,High Downforce (Flaps Closed),410.2,64.2
+LAMBO-ALA-2463,224.4,-0.74,Aero-Vectoring Right,162.2,42.5
+LAMBO-ALA-2464,145.2,0.94,High Downforce (Flaps Closed),98.3,60.9
+LAMBO-ALA-2465,144.8,-1.41,High Downforce (Flaps Closed),99.0,28.0
+LAMBO-ALA-2466,154.2,-0.34,High Downforce (Flaps Closed),105.5,46.9
+LAMBO-ALA-2467,213.9,0.62,Low Drag (Flaps Open),63.2,56.2
+LAMBO-ALA-2468,238.1,-0.41,High Downforce (Flaps Closed),256.7,41.8
+LAMBO-ALA-2469,167.5,-1.44,High Downforce (Flaps Closed),132.9,28.0
+LAMBO-ALA-2470,338.2,0.72,Low Drag (Flaps Open),161.3,61.6
+LAMBO-ALA-2471,297.5,0.55,High Downforce (Flaps Closed),376.5,58.3
+LAMBO-ALA-2472,329.6,-1.16,Low Drag (Flaps Open),154.2,36.7
+LAMBO-ALA-2473,142.6,0.04,Aero-Vectoring Right,58.5,45.9
+LAMBO-ALA-2474,122.9,-0.24,Aero-Vectoring Right,50.6,45.3
+LAMBO-ALA-2475,151.4,0.27,High Downforce (Flaps Closed),89.6,57.2
+LAMBO-ALA-2476,237.5,0.23,Aero-Vectoring Right,171.7,54.4
+LAMBO-ALA-2477,188.9,-0.07,Aero-Vectoring Left,118.2,53.8
+LAMBO-ALA-2478,185.1,-0.89,Aero-Vectoring Right,110.0,37.5
+LAMBO-ALA-2479,280.1,-1.21,Aero-Vectoring Left,244.1,32.5
+LAMBO-ALA-2480,208.6,1.07,High Downforce (Flaps Closed),215.0,63.5
+LAMBO-ALA-2481,322.1,0.66,High Downforce (Flaps Closed),474.5,60.9
+LAMBO-ALA-2482,296.1,1.41,Aero-Vectoring Right,291.9,70.9
+LAMBO-ALA-2483,245.8,1.15,Low Drag (Flaps Open),93.7,64.2
+LAMBO-ALA-2484,123.3,-0.74,Low Drag (Flaps Open),18.0,37.9
+LAMBO-ALA-2485,324.9,-0.19,Aero-Vectoring Left,327.2,47.9
+LAMBO-ALA-2486,331.5,0.97,High Downforce (Flaps Closed),490.0,60.1
+LAMBO-ALA-2487,205.6,0.43,High Downforce (Flaps Closed),186.0,55.9
+LAMBO-ALA-2488,192.0,0.34,Low Drag (Flaps Open),54.2,56.9
+LAMBO-ALA-2489,270.0,-0.91,Aero-Vectoring Left,236.6,35.9
+LAMBO-ALA-2490,247.3,-0.08,Low Drag (Flaps Open),81.6,49.7
+LAMBO-ALA-2491,283.5,-0.89,Low Drag (Flaps Open),118.6,38.8
+LAMBO-ALA-2492,152.9,0.85,Aero-Vectoring Right,87.2,61.8
+LAMBO-ALA-2493,213.5,0.24,Aero-Vectoring Left,151.3,57.1
+LAMBO-ALA-2494,223.8,-0.7,Aero-Vectoring Left,161.9,41.4
+LAMBO-ALA-2495,140.0,0.24,Aero-Vectoring Left,64.2,55.6
+LAMBO-ALA-2496,210.1,-0.43,Aero-Vectoring Left,132.7,44.0
+LAMBO-ALA-2497,277.1,0.52,Low Drag (Flaps Open),113.4,60.6
+LAMBO-ALA-2498,264.3,0.28,Aero-Vectoring Right,230.5,51.7
+LAMBO-ALA-2499,209.2,0.52,Low Drag (Flaps Open),68.6,56.2
+LAMBO-ALA-2500,151.6,1.37,Aero-Vectoring Right,65.4,71.2
+LAMBO-ALA-2501,211.3,0.78,High Downforce (Flaps Closed),191.5,66.7
+LAMBO-ALA-2502,133.4,-0.56,Low Drag (Flaps Open),18.2,42.8
+LAMBO-ALA-2503,204.7,-1.15,High Downforce (Flaps Closed),197.4,37.4
+LAMBO-ALA-2504,244.7,1.48,Aero-Vectoring Left,204.1,69.1
+LAMBO-ALA-2505,193.3,1.46,Low Drag (Flaps Open),48.5,69.6
+LAMBO-ALA-2506,214.9,-1.08,High Downforce (Flaps Closed),195.5,35.6
+LAMBO-ALA-2507,130.4,-0.09,Aero-Vectoring Left,62.9,47.4
+LAMBO-ALA-2508,141.2,1.43,High Downforce (Flaps Closed),105.5,68.8
+LAMBO-ALA-2509,195.9,-1.17,High Downforce (Flaps Closed),170.7,32.8
+LAMBO-ALA-2510,141.4,-0.27,Low Drag (Flaps Open),30.2,47.9
+LAMBO-ALA-2511,307.0,-0.61,High Downforce (Flaps Closed),422.9,42.3
+LAMBO-ALA-2512,286.0,0.83,Low Drag (Flaps Open),116.4,59.3
+LAMBO-ALA-2513,198.1,-1.32,High Downforce (Flaps Closed),183.0,28.0
+LAMBO-ALA-2514,290.9,0.27,Aero-Vectoring Right,259.3,53.9
+LAMBO-ALA-2515,308.5,1.12,High Downforce (Flaps Closed),438.1,67.9
+LAMBO-ALA-2516,122.1,0.34,High Downforce (Flaps Closed),77.6,54.8
+LAMBO-ALA-2517,334.4,-0.9,High Downforce (Flaps Closed),509.9,37.3
+LAMBO-ALA-2518,286.2,0.52,High Downforce (Flaps Closed),378.8,57.9
+LAMBO-ALA-2519,224.3,0.4,High Downforce (Flaps Closed),225.8,52.9
+LAMBO-ALA-2520,209.5,0.02,Aero-Vectoring Right,142.3,49.9
+LAMBO-ALA-2521,221.0,1.43,High Downforce (Flaps Closed),228.6,66.1
+LAMBO-ALA-2522,294.5,0.22,High Downforce (Flaps Closed),395.2,51.4
+LAMBO-ALA-2523,260.8,0.35,Aero-Vectoring Right,213.2,54.3
+LAMBO-ALA-2524,146.5,0.99,Low Drag (Flaps Open),26.2,62.8
+LAMBO-ALA-2525,192.3,-0.41,High Downforce (Flaps Closed),186.8,44.5
+LAMBO-ALA-2526,210.2,-1.38,Aero-Vectoring Right,147.3,30.7
+LAMBO-ALA-2527,187.4,1.4,Aero-Vectoring Right,111.4,68.7
+LAMBO-ALA-2528,140.9,0.41,Low Drag (Flaps Open),32.5,61.2
+LAMBO-ALA-2529,146.2,1.4,Low Drag (Flaps Open),33.1,72.0
+LAMBO-ALA-2530,207.9,-1.09,Low Drag (Flaps Open),69.3,34.3
+LAMBO-ALA-2531,200.5,-1.38,High Downforce (Flaps Closed),167.2,31.6
+LAMBO-ALA-2532,166.3,0.13,Aero-Vectoring Right,79.7,52.9
+LAMBO-ALA-2533,321.4,-1.29,High Downforce (Flaps Closed),450.0,32.7
+LAMBO-ALA-2534,198.6,0.23,High Downforce (Flaps Closed),190.3,55.1
+LAMBO-ALA-2535,264.3,-1.16,Aero-Vectoring Left,231.4,36.6
+LAMBO-ALA-2536,288.1,0.42,High Downforce (Flaps Closed),380.5,59.9
+LAMBO-ALA-2537,218.5,0.81,Aero-Vectoring Left,151.8,61.3
+LAMBO-ALA-2538,330.8,-0.81,Aero-Vectoring Right,340.8,41.2
+LAMBO-ALA-2539,189.6,1.46,Aero-Vectoring Left,125.1,68.6
+LAMBO-ALA-2540,245.1,-1.31,Aero-Vectoring Left,188.8,34.9
+LAMBO-ALA-2541,195.0,1.36,High Downforce (Flaps Closed),172.5,68.1
+LAMBO-ALA-2542,171.9,-0.42,High Downforce (Flaps Closed),141.8,43.0
+LAMBO-ALA-2543,123.8,-1.02,Low Drag (Flaps Open),20.1,38.7
+LAMBO-ALA-2544,188.0,1.21,High Downforce (Flaps Closed),154.2,66.4
+LAMBO-ALA-2545,328.9,-1.39,High Downforce (Flaps Closed),485.0,31.6
+LAMBO-ALA-2546,137.2,-1.23,High Downforce (Flaps Closed),82.0,34.6
+LAMBO-ALA-2547,311.7,-0.62,Low Drag (Flaps Open),135.0,41.7
+LAMBO-ALA-2548,122.2,1.24,Aero-Vectoring Left,56.7,69.5
+LAMBO-ALA-2549,281.6,0.99,Low Drag (Flaps Open),107.0,66.0
+LAMBO-ALA-2550,250.5,-0.75,Low Drag (Flaps Open),92.0,36.7
+LAMBO-ALA-2551,172.7,-0.84,Low Drag (Flaps Open),47.5,40.6
+LAMBO-ALA-2552,190.7,-1.16,Low Drag (Flaps Open),55.3,33.9
+LAMBO-ALA-2553,311.1,-0.62,Aero-Vectoring Right,299.5,42.2
+LAMBO-ALA-2554,148.6,0.96,High Downforce (Flaps Closed),85.0,61.2
+LAMBO-ALA-2555,159.7,-0.85,Low Drag (Flaps Open),38.8,39.1
+LAMBO-ALA-2556,314.4,-0.27,Aero-Vectoring Right,310.4,45.7
+LAMBO-ALA-2557,303.0,1.09,Aero-Vectoring Left,288.3,65.0
+LAMBO-ALA-2558,194.4,-0.27,Aero-Vectoring Left,118.9,43.6
+LAMBO-ALA-2559,313.0,-0.84,Low Drag (Flaps Open),140.0,40.5
+LAMBO-ALA-2560,233.8,-0.23,High Downforce (Flaps Closed),249.5,45.5
+LAMBO-ALA-2561,258.6,-1.44,Aero-Vectoring Left,226.2,31.1
+LAMBO-ALA-2562,216.5,0.48,Aero-Vectoring Right,155.5,57.8
+LAMBO-ALA-2563,187.9,0.78,Aero-Vectoring Right,113.1,60.9
+LAMBO-ALA-2564,182.5,-0.4,Low Drag (Flaps Open),56.3,43.7
+LAMBO-ALA-2565,177.7,0.37,High Downforce (Flaps Closed),144.6,56.9
+LAMBO-ALA-2566,147.4,-0.03,High Downforce (Flaps Closed),88.6,49.5
+LAMBO-ALA-2567,263.8,-0.4,Aero-Vectoring Right,212.7,42.8
+LAMBO-ALA-2568,234.9,-0.28,Low Drag (Flaps Open),79.7,43.7
+LAMBO-ALA-2569,329.9,-0.29,Aero-Vectoring Left,344.2,44.2
+LAMBO-ALA-2570,187.9,-0.76,Low Drag (Flaps Open),44.3,37.9
+LAMBO-ALA-2571,144.1,-1.41,High Downforce (Flaps Closed),103.7,33.0
+LAMBO-ALA-2572,275.1,-0.44,Aero-Vectoring Right,231.2,41.8
+LAMBO-ALA-2573,285.8,0.14,Low Drag (Flaps Open),117.7,51.7
+LAMBO-ALA-2574,159.0,-0.64,Low Drag (Flaps Open),39.6,40.0
+LAMBO-ALA-2575,309.0,0.88,Low Drag (Flaps Open),130.7,61.7
+LAMBO-ALA-2576,152.3,-1.01,Low Drag (Flaps Open),30.5,33.6
+LAMBO-ALA-2577,136.2,-0.93,Low Drag (Flaps Open),26.8,36.0
+LAMBO-ALA-2578,331.5,-0.44,High Downforce (Flaps Closed),489.3,43.5
+LAMBO-ALA-2579,247.7,1.33,Low Drag (Flaps Open),84.8,64.8
+LAMBO-ALA-2580,287.0,1.24,High Downforce (Flaps Closed),369.6,67.3
+LAMBO-ALA-2581,305.6,1.19,High Downforce (Flaps Closed),406.6,67.1
+LAMBO-ALA-2582,252.6,0.38,High Downforce (Flaps Closed),286.8,55.8
+LAMBO-ALA-2583,264.3,-0.56,High Downforce (Flaps Closed),322.7,44.1
+LAMBO-ALA-2584,270.5,-1.04,Low Drag (Flaps Open),103.2,35.1
+LAMBO-ALA-2585,334.5,-1.34,High Downforce (Flaps Closed),495.6,28.1
+LAMBO-ALA-2586,274.4,-1.02,Aero-Vectoring Left,249.8,36.7
+LAMBO-ALA-2587,176.3,-0.36,Low Drag (Flaps Open),47.0,48.5
+LAMBO-ALA-2588,252.5,0.31,High Downforce (Flaps Closed),288.1,52.9
+LAMBO-ALA-2589,185.2,-0.31,Aero-Vectoring Right,113.7,45.3
+LAMBO-ALA-2590,235.7,-0.23,Aero-Vectoring Right,180.9,43.5
+LAMBO-ALA-2591,321.2,0.91,Low Drag (Flaps Open),144.1,61.6
+LAMBO-ALA-2592,175.1,0.03,Low Drag (Flaps Open),39.2,49.3
+LAMBO-ALA-2593,149.6,-1.4,High Downforce (Flaps Closed),105.7,31.4
+LAMBO-ALA-2594,236.3,-1.22,Low Drag (Flaps Open),81.6,31.3
+LAMBO-ALA-2595,177.7,0.62,Aero-Vectoring Right,115.3,60.2
+LAMBO-ALA-2596,166.6,0.54,Aero-Vectoring Right,87.8,55.8
+LAMBO-ALA-2597,272.2,0.5,Aero-Vectoring Right,230.6,59.2
+LAMBO-ALA-2598,242.0,0.77,Low Drag (Flaps Open),77.9,61.9
+LAMBO-ALA-2599,306.0,-0.22,Low Drag (Flaps Open),130.6,42.8
+LAMBO-ALA-2600,297.7,-0.5,Aero-Vectoring Right,284.8,44.0
+LAMBO-ALA-2601,328.6,0.09,Aero-Vectoring Left,340.8,50.7
+LAMBO-ALA-2602,302.2,0.27,Low Drag (Flaps Open),129.9,55.1
+LAMBO-ALA-2603,195.5,0.55,Aero-Vectoring Right,131.0,56.0
+LAMBO-ALA-2604,324.0,1.29,Aero-Vectoring Right,337.4,69.7
+LAMBO-ALA-2605,297.6,0.3,Low Drag (Flaps Open),127.4,54.9
+LAMBO-ALA-2606,143.7,1.46,High Downforce (Flaps Closed),84.8,68.9
+LAMBO-ALA-2607,330.2,0.5,Low Drag (Flaps Open),150.2,57.3
+LAMBO-ALA-2608,217.1,0.13,Aero-Vectoring Right,154.5,50.2
+LAMBO-ALA-2609,283.8,0.62,High Downforce (Flaps Closed),367.4,60.4
+LAMBO-ALA-2610,339.5,-1.28,Low Drag (Flaps Open),172.2,29.7
+LAMBO-ALA-2611,315.3,-0.83,Aero-Vectoring Left,313.4,37.7
+LAMBO-ALA-2612,128.9,-1.19,Aero-Vectoring Right,57.1,34.4
+LAMBO-ALA-2613,281.0,1.29,High Downforce (Flaps Closed),360.0,65.8
+LAMBO-ALA-2614,132.3,-0.85,Aero-Vectoring Left,58.9,38.8
+LAMBO-ALA-2615,335.1,-1.45,Aero-Vectoring Left,363.9,28.7
+LAMBO-ALA-2616,242.5,1.15,High Downforce (Flaps Closed),261.2,68.5
+LAMBO-ALA-2617,243.0,0.39,Low Drag (Flaps Open),95.0,54.7
+LAMBO-ALA-2618,279.3,-0.46,High Downforce (Flaps Closed),350.0,40.3
+LAMBO-ALA-2619,267.1,-1.0,High Downforce (Flaps Closed),313.7,30.2
+LAMBO-ALA-2620,207.1,-0.25,Aero-Vectoring Left,128.2,45.1
+LAMBO-ALA-2621,264.2,-0.09,High Downforce (Flaps Closed),330.3,47.0
+LAMBO-ALA-2622,161.8,-0.39,High Downforce (Flaps Closed),131.2,45.0
+LAMBO-ALA-2623,274.2,-1.14,Aero-Vectoring Right,245.8,36.5
+LAMBO-ALA-2624,304.7,0.14,High Downforce (Flaps Closed),416.0,52.1
+LAMBO-ALA-2625,120.7,0.98,Aero-Vectoring Left,50.0,59.7
+LAMBO-ALA-2626,249.7,0.66,Aero-Vectoring Right,206.6,60.8
+LAMBO-ALA-2627,242.2,-0.76,High Downforce (Flaps Closed),271.6,40.9
+LAMBO-ALA-2628,145.2,-0.42,High Downforce (Flaps Closed),113.0,44.1
+LAMBO-ALA-2629,175.2,0.9,Aero-Vectoring Right,113.4,64.8
+LAMBO-ALA-2630,124.2,0.86,High Downforce (Flaps Closed),56.3,59.4
+LAMBO-ALA-2631,174.6,0.15,Aero-Vectoring Right,103.1,49.2
+LAMBO-ALA-2632,177.4,-0.58,High Downforce (Flaps Closed),156.1,42.3
+LAMBO-ALA-2633,193.9,-1.26,High Downforce (Flaps Closed),174.8,30.6
+LAMBO-ALA-2634,186.6,-0.2,Aero-Vectoring Right,100.7,48.7
+LAMBO-ALA-2635,316.2,0.24,High Downforce (Flaps Closed),443.4,54.8
+LAMBO-ALA-2636,130.6,-1.48,Low Drag (Flaps Open),19.6,28.0
+LAMBO-ALA-2637,133.1,-0.74,Low Drag (Flaps Open),23.7,42.5
+LAMBO-ALA-2638,151.4,-1.19,Aero-Vectoring Right,79.8,35.3
+LAMBO-ALA-2639,309.8,-0.53,High Downforce (Flaps Closed),446.3,41.3
+LAMBO-ALA-2640,130.0,-0.55,Aero-Vectoring Left,54.0,45.0
+LAMBO-ALA-2641,258.7,1.43,Aero-Vectoring Left,219.1,68.6
+LAMBO-ALA-2642,184.1,-0.46,High Downforce (Flaps Closed),159.7,42.7
+LAMBO-ALA-2643,221.2,1.01,High Downforce (Flaps Closed),220.4,65.1
+LAMBO-ALA-2644,281.1,-0.87,High Downforce (Flaps Closed),351.2,37.1
+LAMBO-ALA-2645,189.9,-0.94,Aero-Vectoring Left,108.8,35.6
+LAMBO-ALA-2646,208.7,1.06,High Downforce (Flaps Closed),195.0,66.6
+LAMBO-ALA-2647,322.5,0.18,Aero-Vectoring Right,328.2,51.8
+LAMBO-ALA-2648,279.6,-0.26,Low Drag (Flaps Open),110.2,47.9
+LAMBO-ALA-2649,147.1,-0.29,Low Drag (Flaps Open),24.2,43.7
+LAMBO-ALA-2650,300.4,-1.35,High Downforce (Flaps Closed),413.5,34.5
+LAMBO-ALA-2651,212.3,1.33,High Downforce (Flaps Closed),196.8,68.1
+LAMBO-ALA-2652,259.9,-1.43,Aero-Vectoring Right,213.6,29.2
+LAMBO-ALA-2653,328.6,0.95,Low Drag (Flaps Open),156.3,64.4
+LAMBO-ALA-2654,161.8,1.26,Low Drag (Flaps Open),33.1,72.0
+LAMBO-ALA-2655,217.6,-0.5,High Downforce (Flaps Closed),212.8,41.3
+LAMBO-ALA-2656,142.8,0.31,Aero-Vectoring Right,68.3,53.0
+LAMBO-ALA-2657,309.7,0.09,High Downforce (Flaps Closed),445.5,46.9
+LAMBO-ALA-2658,181.3,0.64,High Downforce (Flaps Closed),158.6,57.5
+LAMBO-ALA-2659,298.9,-1.19,High Downforce (Flaps Closed),407.4,32.0
+LAMBO-ALA-2660,137.0,-0.07,Low Drag (Flaps Open),30.0,48.0
+LAMBO-ALA-2661,294.0,1.27,High Downforce (Flaps Closed),388.7,68.3
+LAMBO-ALA-2662,225.1,-0.91,High Downforce (Flaps Closed),236.2,36.2
+LAMBO-ALA-2663,157.2,-0.42,Aero-Vectoring Left,81.1,43.4
+LAMBO-ALA-2664,260.5,0.55,High Downforce (Flaps Closed),298.3,56.0
+LAMBO-ALA-2665,232.2,0.13,Aero-Vectoring Left,173.8,51.5
+LAMBO-ALA-2666,183.1,0.76,High Downforce (Flaps Closed),148.3,62.5
+LAMBO-ALA-2667,331.5,-1.47,High Downforce (Flaps Closed),496.5,29.0
+LAMBO-ALA-2668,225.2,-0.28,High Downforce (Flaps Closed),228.6,45.4
+LAMBO-ALA-2669,253.8,-1.36,Aero-Vectoring Right,212.3,32.4
+LAMBO-ALA-2670,262.5,-0.31,High Downforce (Flaps Closed),305.1,45.1
+LAMBO-ALA-2671,182.0,0.73,Aero-Vectoring Right,98.8,60.6
+LAMBO-ALA-2672,207.4,-0.96,High Downforce (Flaps Closed),192.6,37.8
+LAMBO-ALA-2673,139.6,-0.59,Aero-Vectoring Right,66.1,44.1
+LAMBO-ALA-2674,183.7,-0.48,High Downforce (Flaps Closed),159.8,40.3
+LAMBO-ALA-2675,220.8,-0.09,Aero-Vectoring Left,158.8,45.2
+LAMBO-ALA-2676,254.3,-0.11,Aero-Vectoring Right,216.6,46.7
+LAMBO-ALA-2677,317.0,1.39,High Downforce (Flaps Closed),460.3,72.0
+LAMBO-ALA-2678,237.2,1.27,Aero-Vectoring Left,194.1,67.9
+LAMBO-ALA-2679,187.9,-1.09,High Downforce (Flaps Closed),168.0,33.6
+LAMBO-ALA-2680,239.8,0.43,High Downforce (Flaps Closed),259.1,53.9
+LAMBO-ALA-2681,333.3,0.03,High Downforce (Flaps Closed),477.1,50.3
+LAMBO-ALA-2682,284.7,-0.91,Aero-Vectoring Right,264.2,42.1
+LAMBO-ALA-2683,196.7,-0.17,High Downforce (Flaps Closed),161.3,54.4
+LAMBO-ALA-2684,276.3,0.56,High Downforce (Flaps Closed),346.1,55.8
+LAMBO-ALA-2685,168.4,0.62,Aero-Vectoring Left,103.5,58.3
+LAMBO-ALA-2686,244.5,0.74,Aero-Vectoring Left,200.2,61.8
+LAMBO-ALA-2687,277.8,-0.57,Aero-Vectoring Left,243.5,42.4
+LAMBO-ALA-2688,148.4,0.03,Low Drag (Flaps Open),28.8,48.0
+LAMBO-ALA-2689,253.9,-1.17,Aero-Vectoring Left,209.8,31.8
+LAMBO-ALA-2690,134.0,-0.92,Aero-Vectoring Left,50.5,35.6
+LAMBO-ALA-2691,330.9,-1.05,Low Drag (Flaps Open),148.5,36.1
+LAMBO-ALA-2692,271.6,0.9,Low Drag (Flaps Open),105.3,62.8
+LAMBO-ALA-2693,315.8,-0.57,Low Drag (Flaps Open),136.9,41.9
+LAMBO-ALA-2694,215.0,-1.11,Low Drag (Flaps Open),61.9,37.4
+LAMBO-ALA-2695,271.4,0.52,Low Drag (Flaps Open),103.9,58.1
+LAMBO-ALA-2696,169.1,0.95,High Downforce (Flaps Closed),119.7,63.3
+LAMBO-ALA-2697,282.6,-0.07,Aero-Vectoring Right,248.7,49.8
+LAMBO-ALA-2698,254.7,0.93,Aero-Vectoring Left,213.6,62.6
+LAMBO-ALA-2699,321.3,1.0,Aero-Vectoring Left,317.3,64.1
+LAMBO-ALA-2700,193.4,1.05,High Downforce (Flaps Closed),152.9,67.8
+LAMBO-ALA-2701,295.5,-0.24,Aero-Vectoring Right,284.1,49.8
+LAMBO-ALA-2702,137.8,-0.57,Aero-Vectoring Left,58.1,40.3
+LAMBO-ALA-2703,289.9,0.13,High Downforce (Flaps Closed),365.1,52.9
+LAMBO-ALA-2704,221.9,0.64,High Downforce (Flaps Closed),206.1,55.0
+LAMBO-ALA-2705,316.3,-1.22,Aero-Vectoring Right,315.8,30.9
+LAMBO-ALA-2706,277.5,1.19,Aero-Vectoring Left,248.8,64.5
+LAMBO-ALA-2707,295.8,0.7,High Downforce (Flaps Closed),385.6,58.1
+LAMBO-ALA-2708,203.3,0.48,Aero-Vectoring Right,119.5,56.8
+LAMBO-ALA-2709,218.8,1.13,High Downforce (Flaps Closed),208.9,64.5
+LAMBO-ALA-2710,222.1,0.43,High Downforce (Flaps Closed),205.3,55.4
+LAMBO-ALA-2711,198.4,0.57,Low Drag (Flaps Open),56.7,55.9
+LAMBO-ALA-2712,260.4,-0.6,Low Drag (Flaps Open),106.2,44.4
+LAMBO-ALA-2713,257.0,-0.77,High Downforce (Flaps Closed),298.8,39.1
+LAMBO-ALA-2714,131.7,0.56,Low Drag (Flaps Open),25.5,58.2
+LAMBO-ALA-2715,149.7,-0.71,Aero-Vectoring Right,69.3,39.4
+LAMBO-ALA-2716,227.5,0.69,Low Drag (Flaps Open),80.4,58.5
+LAMBO-ALA-2717,170.1,0.61,Aero-Vectoring Right,98.7,57.1
+LAMBO-ALA-2718,132.9,0.05,Low Drag (Flaps Open),26.9,47.4
+LAMBO-ALA-2719,255.0,1.47,Aero-Vectoring Right,223.3,68.6
+LAMBO-ALA-2720,168.1,0.51,High Downforce (Flaps Closed),117.5,62.0
+LAMBO-ALA-2721,308.0,-0.99,High Downforce (Flaps Closed),430.5,35.4
+LAMBO-ALA-2722,187.2,-0.49,Aero-Vectoring Right,119.4,44.2
+LAMBO-ALA-2723,153.4,1.08,Aero-Vectoring Left,68.6,66.0
+LAMBO-ALA-2724,280.5,1.32,High Downforce (Flaps Closed),349.0,68.1
+LAMBO-ALA-2725,300.7,-0.07,High Downforce (Flaps Closed),421.9,47.3
+LAMBO-ALA-2726,210.2,-0.09,High Downforce (Flaps Closed),211.1,46.1
+LAMBO-ALA-2727,256.0,0.61,High Downforce (Flaps Closed),303.9,59.2
+LAMBO-ALA-2728,224.7,1.35,Aero-Vectoring Left,160.2,68.2
+LAMBO-ALA-2729,257.4,1.0,Aero-Vectoring Left,206.8,64.8
+LAMBO-ALA-2730,316.5,-0.39,Aero-Vectoring Left,333.7,44.2
+LAMBO-ALA-2731,161.4,0.56,Low Drag (Flaps Open),41.9,57.9
+LAMBO-ALA-2732,310.4,1.23,Aero-Vectoring Right,293.5,64.7
+LAMBO-ALA-2733,270.4,0.33,High Downforce (Flaps Closed),316.5,53.2
+LAMBO-ALA-2734,300.0,-0.05,Aero-Vectoring Right,284.8,49.2
+LAMBO-ALA-2735,249.2,1.21,High Downforce (Flaps Closed),262.8,70.9
+LAMBO-ALA-2736,225.5,-1.26,High Downforce (Flaps Closed),223.3,32.0
+LAMBO-ALA-2737,217.4,0.97,High Downforce (Flaps Closed),207.6,64.8
+LAMBO-ALA-2738,279.6,0.93,Low Drag (Flaps Open),109.5,64.4
+LAMBO-ALA-2739,279.1,0.21,Aero-Vectoring Left,232.3,55.8
+LAMBO-ALA-2740,220.8,1.16,High Downforce (Flaps Closed),206.8,65.2
+LAMBO-ALA-2741,219.5,0.14,Low Drag (Flaps Open),71.2,50.1
+LAMBO-ALA-2742,158.7,-0.17,Aero-Vectoring Right,93.1,50.1
+LAMBO-ALA-2743,190.0,0.92,Aero-Vectoring Left,116.4,64.1
+LAMBO-ALA-2744,147.8,-0.46,High Downforce (Flaps Closed),114.3,47.6
+LAMBO-ALA-2745,245.7,1.33,High Downforce (Flaps Closed),282.6,66.7
+LAMBO-ALA-2746,154.1,-0.5,High Downforce (Flaps Closed),105.0,43.2
+LAMBO-ALA-2747,180.5,0.88,High Downforce (Flaps Closed),116.9,62.8
+LAMBO-ALA-2748,290.2,-0.02,High Downforce (Flaps Closed),388.6,50.3
+LAMBO-ALA-2749,133.6,0.08,Low Drag (Flaps Open),16.6,52.3
+LAMBO-ALA-2750,155.4,0.31,High Downforce (Flaps Closed),104.2,53.9
+LAMBO-ALA-2751,144.6,0.09,Low Drag (Flaps Open),33.4,49.2
+LAMBO-ALA-2752,282.7,-0.12,High Downforce (Flaps Closed),362.8,47.9
+LAMBO-ALA-2753,279.5,1.48,High Downforce (Flaps Closed),353.3,68.2
+LAMBO-ALA-2754,254.4,-1.04,High Downforce (Flaps Closed),285.2,35.4
+LAMBO-ALA-2755,177.8,-0.51,High Downforce (Flaps Closed),144.4,43.6
+LAMBO-ALA-2756,184.8,-1.33,High Downforce (Flaps Closed),138.1,31.8
+LAMBO-ALA-2757,214.8,-0.83,High Downforce (Flaps Closed),208.0,33.7
+LAMBO-ALA-2758,210.8,-1.2,Aero-Vectoring Left,145.9,32.9
+LAMBO-ALA-2759,330.7,-0.66,Aero-Vectoring Left,351.4,40.6
+LAMBO-ALA-2760,328.9,-0.51,Aero-Vectoring Right,355.0,42.1
+LAMBO-ALA-2761,267.2,1.24,High Downforce (Flaps Closed),321.6,69.4
+LAMBO-ALA-2762,221.8,1.48,High Downforce (Flaps Closed),227.9,72.0
+LAMBO-ALA-2763,173.9,-1.14,High Downforce (Flaps Closed),124.9,34.6
+LAMBO-ALA-2764,152.3,1.09,High Downforce (Flaps Closed),104.8,65.1
+LAMBO-ALA-2765,321.3,1.12,Low Drag (Flaps Open),141.6,65.5
+LAMBO-ALA-2766,253.5,-0.64,Low Drag (Flaps Open),86.4,40.4
+LAMBO-ALA-2767,237.4,-0.52,High Downforce (Flaps Closed),247.2,37.0
+LAMBO-ALA-2768,207.8,-1.46,Aero-Vectoring Right,139.7,30.1
+LAMBO-ALA-2769,186.0,-1.27,High Downforce (Flaps Closed),133.2,34.6
+LAMBO-ALA-2770,206.8,-0.55,Aero-Vectoring Left,130.9,42.1
+LAMBO-ALA-2771,290.4,-1.49,High Downforce (Flaps Closed),378.9,28.3
+LAMBO-ALA-2772,270.4,0.48,Aero-Vectoring Right,225.5,53.6
+LAMBO-ALA-2773,287.9,-0.81,Aero-Vectoring Right,266.4,40.5
+LAMBO-ALA-2774,221.6,0.69,High Downforce (Flaps Closed),219.2,61.0
+LAMBO-ALA-2775,166.2,-0.16,Low Drag (Flaps Open),38.7,46.0
+LAMBO-ALA-2776,300.8,-0.59,High Downforce (Flaps Closed),406.2,42.6
+LAMBO-ALA-2777,240.6,-1.24,Low Drag (Flaps Open),84.6,34.7
+LAMBO-ALA-2778,192.3,1.23,Aero-Vectoring Left,107.9,66.4
+LAMBO-ALA-2779,183.6,1.11,Low Drag (Flaps Open),41.8,64.8
+LAMBO-ALA-2780,229.5,-1.17,High Downforce (Flaps Closed),255.3,31.5
+LAMBO-ALA-2781,304.2,-0.05,Aero-Vectoring Right,297.1,46.9
+LAMBO-ALA-2782,265.4,0.65,Low Drag (Flaps Open),98.9,60.7
+LAMBO-ALA-2783,239.8,-0.95,Low Drag (Flaps Open),84.1,37.7
+LAMBO-ALA-2784,230.4,0.83,Aero-Vectoring Right,163.7,59.3
+LAMBO-ALA-2785,293.9,-0.06,Aero-Vectoring Left,261.2,47.4
+LAMBO-ALA-2786,237.1,0.24,Aero-Vectoring Left,175.5,55.2
+LAMBO-ALA-2787,155.7,1.42,High Downforce (Flaps Closed),127.3,67.7
+LAMBO-ALA-2788,289.2,-0.72,Low Drag (Flaps Open),117.9,41.0
+LAMBO-ALA-2789,304.7,0.9,Low Drag (Flaps Open),123.1,64.9
+LAMBO-ALA-2790,204.2,-1.49,Low Drag (Flaps Open),53.8,33.2
+LAMBO-ALA-2791,178.3,0.07,High Downforce (Flaps Closed),144.6,49.4
+LAMBO-ALA-2792,209.9,-0.65,High Downforce (Flaps Closed),205.0,43.5
+LAMBO-ALA-2793,134.9,0.87,Low Drag (Flaps Open),27.2,63.7
+LAMBO-ALA-2794,330.1,-0.89,Low Drag (Flaps Open),151.1,37.4
+LAMBO-ALA-2795,274.4,-0.37,Low Drag (Flaps Open),101.3,43.3
+LAMBO-ALA-2796,292.0,0.93,Low Drag (Flaps Open),126.6,59.8
+LAMBO-ALA-2797,209.6,-0.21,High Downforce (Flaps Closed),188.6,46.7
+LAMBO-ALA-2798,324.7,-0.73,High Downforce (Flaps Closed),484.5,42.4
+LAMBO-ALA-2799,286.6,-0.1,Aero-Vectoring Left,272.6,49.6
+LAMBO-ALA-2800,195.7,0.46,High Downforce (Flaps Closed),169.2,55.1
+LAMBO-ALA-2801,124.2,-0.21,Aero-Vectoring Left,55.5,44.4
+LAMBO-ALA-2802,141.3,0.05,Low Drag (Flaps Open),28.4,48.2
+LAMBO-ALA-2803,120.8,1.46,Low Drag (Flaps Open),23.9,70.6
+LAMBO-ALA-2804,312.8,1.39,High Downforce (Flaps Closed),444.0,67.2
+LAMBO-ALA-2805,142.0,0.87,High Downforce (Flaps Closed),82.3,59.6
+LAMBO-ALA-2806,254.8,0.65,Aero-Vectoring Right,204.4,57.6
+LAMBO-ALA-2807,332.6,-1.49,High Downforce (Flaps Closed),504.7,29.1
+LAMBO-ALA-2808,157.0,-0.52,High Downforce (Flaps Closed),123.7,41.1
+LAMBO-ALA-2809,187.9,-0.88,Low Drag (Flaps Open),40.8,40.2
+LAMBO-ALA-2810,288.5,-0.19,Low Drag (Flaps Open),113.6,46.3
+LAMBO-ALA-2811,254.8,-0.29,High Downforce (Flaps Closed),305.0,45.9
+LAMBO-ALA-2812,283.3,-0.97,High Downforce (Flaps Closed),350.9,36.9
+LAMBO-ALA-2813,138.8,-1.23,Aero-Vectoring Left,61.7,34.2
+LAMBO-ALA-2814,172.0,1.14,High Downforce (Flaps Closed),133.6,67.4
+LAMBO-ALA-2815,157.5,0.32,Low Drag (Flaps Open),27.7,50.2
+LAMBO-ALA-2816,162.3,0.15,High Downforce (Flaps Closed),113.2,53.4
+LAMBO-ALA-2817,164.4,-0.0,Aero-Vectoring Left,73.5,52.0
+LAMBO-ALA-2818,182.0,-0.79,High Downforce (Flaps Closed),130.9,44.6
+LAMBO-ALA-2819,259.1,0.64,Aero-Vectoring Right,220.3,60.0
+LAMBO-ALA-2820,165.9,0.06,Low Drag (Flaps Open),42.2,50.6
+LAMBO-ALA-2821,185.6,0.05,High Downforce (Flaps Closed),149.7,47.8
+LAMBO-ALA-2822,155.6,-0.32,Aero-Vectoring Left,70.4,44.2
+LAMBO-ALA-2823,134.2,1.04,Aero-Vectoring Right,67.3,62.8
+LAMBO-ALA-2824,130.1,1.38,Low Drag (Flaps Open),28.9,66.4
+LAMBO-ALA-2825,293.6,1.24,High Downforce (Flaps Closed),385.7,65.3
+LAMBO-ALA-2826,230.0,0.64,Aero-Vectoring Left,168.4,57.5
+LAMBO-ALA-2827,152.5,-0.49,Aero-Vectoring Right,85.7,41.6
+LAMBO-ALA-2828,264.7,-1.43,Aero-Vectoring Left,225.4,28.0
+LAMBO-ALA-2829,315.2,0.45,High Downforce (Flaps Closed),450.4,57.3
+LAMBO-ALA-2830,318.0,-0.25,High Downforce (Flaps Closed),454.5,44.4
+LAMBO-ALA-2831,219.9,0.52,High Downforce (Flaps Closed),224.4,58.5
+LAMBO-ALA-2832,319.6,0.36,High Downforce (Flaps Closed),480.9,55.0
+LAMBO-ALA-2833,267.2,-0.26,Aero-Vectoring Left,234.1,47.4
+LAMBO-ALA-2834,285.6,-1.23,Low Drag (Flaps Open),110.2,32.0
+LAMBO-ALA-2835,256.1,0.87,Low Drag (Flaps Open),94.1,60.4
+LAMBO-ALA-2836,239.3,0.15,High Downforce (Flaps Closed),259.6,49.3
+LAMBO-ALA-2837,167.0,1.44,High Downforce (Flaps Closed),120.8,68.9
+LAMBO-ALA-2838,294.8,-0.21,Aero-Vectoring Right,281.6,45.7
+LAMBO-ALA-2839,120.9,0.89,Low Drag (Flaps Open),21.6,61.8
+LAMBO-ALA-2840,215.9,0.69,High Downforce (Flaps Closed),215.5,59.4
+LAMBO-ALA-2841,212.1,-1.08,Aero-Vectoring Left,144.0,33.2
+LAMBO-ALA-2842,153.4,-0.83,High Downforce (Flaps Closed),86.6,35.2
+LAMBO-ALA-2843,183.7,-0.97,Aero-Vectoring Right,110.7,33.6
+LAMBO-ALA-2844,161.6,1.45,Aero-Vectoring Left,77.7,70.5
+LAMBO-ALA-2845,159.3,-0.03,High Downforce (Flaps Closed),120.4,50.9
+LAMBO-ALA-2846,330.4,0.76,Aero-Vectoring Left,335.3,60.1
+LAMBO-ALA-2847,250.5,0.56,Aero-Vectoring Right,194.0,59.4
+LAMBO-ALA-2848,151.9,0.18,High Downforce (Flaps Closed),99.0,49.7
+LAMBO-ALA-2849,274.6,1.09,High Downforce (Flaps Closed),353.0,64.3
+LAMBO-ALA-2850,148.7,1.3,Aero-Vectoring Left,61.0,70.9
+LAMBO-ALA-2851,324.0,0.69,Aero-Vectoring Left,334.9,61.7
+LAMBO-ALA-2852,306.5,0.18,Aero-Vectoring Left,302.1,53.7
+LAMBO-ALA-2853,247.1,-0.44,Aero-Vectoring Right,203.9,42.7
+LAMBO-ALA-2854,199.7,-1.45,Low Drag (Flaps Open),52.6,28.5
+LAMBO-ALA-2855,244.1,1.34,Aero-Vectoring Left,189.7,70.2
+LAMBO-ALA-2856,207.5,-1.37,High Downforce (Flaps Closed),199.4,28.6
+LAMBO-ALA-2857,312.5,-0.99,Aero-Vectoring Right,316.6,35.4
+LAMBO-ALA-2858,271.8,-1.46,Low Drag (Flaps Open),112.2,31.5
+LAMBO-ALA-2859,194.6,1.43,High Downforce (Flaps Closed),160.2,69.0
+LAMBO-ALA-2860,223.4,-0.93,Low Drag (Flaps Open),77.4,38.7
+LAMBO-ALA-2861,144.3,0.29,Aero-Vectoring Left,71.0,51.3
+LAMBO-ALA-2862,227.1,-1.23,Aero-Vectoring Right,178.2,33.7
+LAMBO-ALA-2863,122.6,0.42,Low Drag (Flaps Open),30.9,54.0
+LAMBO-ALA-2864,291.0,-1.36,High Downforce (Flaps Closed),390.2,28.7
+LAMBO-ALA-2865,154.8,-0.5,Aero-Vectoring Right,66.9,45.0
+LAMBO-ALA-2866,272.2,1.3,Low Drag (Flaps Open),96.1,68.4
+LAMBO-ALA-2867,264.4,-0.26,High Downforce (Flaps Closed),305.9,45.6
+LAMBO-ALA-2868,175.7,-0.38,Aero-Vectoring Right,97.5,46.8
+LAMBO-ALA-2869,288.6,0.27,Aero-Vectoring Left,283.6,54.3
+LAMBO-ALA-2870,208.9,-0.4,High Downforce (Flaps Closed),202.7,43.5
+LAMBO-ALA-2871,224.8,0.96,High Downforce (Flaps Closed),246.5,61.2
+LAMBO-ALA-2872,145.4,-0.97,Low Drag (Flaps Open),34.4,34.6
+LAMBO-ALA-2873,268.6,-1.27,Low Drag (Flaps Open),104.0,32.8
+LAMBO-ALA-2874,178.2,1.43,Low Drag (Flaps Open),31.2,70.1
+LAMBO-ALA-2875,322.1,1.46,Low Drag (Flaps Open),155.3,70.5
+LAMBO-ALA-2876,181.4,0.42,Aero-Vectoring Left,108.7,53.8
+LAMBO-ALA-2877,159.2,-0.71,High Downforce (Flaps Closed),98.5,39.6
+LAMBO-ALA-2878,265.4,-1.14,Aero-Vectoring Right,222.7,34.1
+LAMBO-ALA-2879,149.1,-1.03,High Downforce (Flaps Closed),86.9,35.2
+LAMBO-ALA-2880,154.6,-1.26,High Downforce (Flaps Closed),120.1,32.9
+LAMBO-ALA-2881,212.6,0.72,Aero-Vectoring Left,140.5,56.6
+LAMBO-ALA-2882,178.3,-0.63,High Downforce (Flaps Closed),119.0,42.1
+LAMBO-ALA-2883,325.0,-0.91,Aero-Vectoring Right,342.5,35.4
+LAMBO-ALA-2884,236.9,-0.31,Low Drag (Flaps Open),78.1,46.3
+LAMBO-ALA-2885,263.7,0.68,Aero-Vectoring Right,219.6,60.5
+LAMBO-ALA-2886,335.2,1.45,Aero-Vectoring Right,370.6,71.5
+LAMBO-ALA-2887,272.2,0.77,High Downforce (Flaps Closed),328.0,60.5
+LAMBO-ALA-2888,286.7,1.03,Aero-Vectoring Left,248.5,64.0
+LAMBO-ALA-2889,198.3,0.48,Low Drag (Flaps Open),58.7,55.3
+LAMBO-ALA-2890,337.1,0.93,Aero-Vectoring Right,348.9,61.5
+LAMBO-ALA-2891,199.8,0.69,High Downforce (Flaps Closed),172.5,59.9
+LAMBO-ALA-2892,192.8,-1.09,Aero-Vectoring Right,115.7,32.5
+LAMBO-ALA-2893,286.3,1.38,Aero-Vectoring Left,261.1,69.4
+LAMBO-ALA-2894,152.1,-1.31,Low Drag (Flaps Open),36.0,32.0
+LAMBO-ALA-2895,205.3,-1.18,Aero-Vectoring Right,130.7,33.6
+LAMBO-ALA-2896,268.3,1.23,Aero-Vectoring Left,231.4,68.3
+LAMBO-ALA-2897,240.9,-0.79,Aero-Vectoring Left,185.5,40.9
+LAMBO-ALA-2898,329.9,1.31,High Downforce (Flaps Closed),483.2,67.8
+LAMBO-ALA-2899,285.0,-0.1,Aero-Vectoring Left,264.0,51.5
+LAMBO-ALA-2900,245.1,-0.44,Aero-Vectoring Right,184.2,44.4
+LAMBO-ALA-2901,180.8,-0.83,Low Drag (Flaps Open),52.4,41.4
+LAMBO-ALA-2902,196.8,-1.38,Aero-Vectoring Left,130.5,30.9
+LAMBO-ALA-2903,237.0,0.96,High Downforce (Flaps Closed),252.8,60.7
+LAMBO-ALA-2904,332.9,0.05,Low Drag (Flaps Open),154.6,51.6
+LAMBO-ALA-2905,167.3,1.01,High Downforce (Flaps Closed),116.0,64.7
+LAMBO-ALA-2906,216.2,0.66,Aero-Vectoring Left,143.1,56.0
+LAMBO-ALA-2907,290.1,-1.45,Aero-Vectoring Right,271.2,28.0
+LAMBO-ALA-2908,291.1,0.78,Low Drag (Flaps Open),119.6,65.2
+LAMBO-ALA-2909,225.4,-0.51,High Downforce (Flaps Closed),244.9,46.7
+LAMBO-ALA-2910,283.8,-0.59,Low Drag (Flaps Open),112.4,45.1
+LAMBO-ALA-2911,218.2,-0.11,Aero-Vectoring Right,162.1,50.6
+LAMBO-ALA-2912,193.6,-0.79,High Downforce (Flaps Closed),166.7,39.4
+LAMBO-ALA-2913,238.6,-0.52,Aero-Vectoring Left,185.6,43.9
+LAMBO-ALA-2914,183.6,0.81,High Downforce (Flaps Closed),158.3,58.7
+LAMBO-ALA-2915,269.0,0.71,Aero-Vectoring Left,240.1,61.7
+LAMBO-ALA-2916,229.7,-1.22,Aero-Vectoring Left,177.4,32.0
+LAMBO-ALA-2917,120.2,-0.74,High Downforce (Flaps Closed),68.4,39.3
+LAMBO-ALA-2918,272.6,-1.0,High Downforce (Flaps Closed),334.9,32.9
+LAMBO-ALA-2919,327.5,-0.57,Aero-Vectoring Left,361.3,41.2
+LAMBO-ALA-2920,235.8,0.44,High Downforce (Flaps Closed),260.6,51.7
+LAMBO-ALA-2921,197.5,0.96,High Downforce (Flaps Closed),182.7,63.3
+LAMBO-ALA-2922,210.3,0.51,Aero-Vectoring Left,135.4,55.5
+LAMBO-ALA-2923,250.7,-0.35,Aero-Vectoring Right,202.2,46.2
+LAMBO-ALA-2924,252.4,-1.32,Low Drag (Flaps Open),89.4,32.7
+LAMBO-ALA-2925,252.0,1.38,Aero-Vectoring Left,197.0,69.2
+LAMBO-ALA-2926,192.7,0.24,Aero-Vectoring Left,118.2,53.9
+LAMBO-ALA-2927,227.2,1.48,High Downforce (Flaps Closed),234.3,69.4
+LAMBO-ALA-2928,167.2,1.13,High Downforce (Flaps Closed),122.5,67.3
+LAMBO-ALA-2929,269.3,-1.48,Low Drag (Flaps Open),104.2,28.4
+LAMBO-ALA-2930,249.5,-1.13,High Downforce (Flaps Closed),280.6,32.8
+LAMBO-ALA-2931,301.7,-1.43,Aero-Vectoring Left,288.5,28.7
+LAMBO-ALA-2932,188.5,-1.36,Aero-Vectoring Left,109.9,31.3
+LAMBO-ALA-2933,155.5,-0.55,High Downforce (Flaps Closed),88.0,40.7
+LAMBO-ALA-2934,128.7,-0.46,Low Drag (Flaps Open),25.9,44.5
+LAMBO-ALA-2935,239.0,0.12,Low Drag (Flaps Open),86.5,50.1
+LAMBO-ALA-2936,186.3,-1.0,Aero-Vectoring Right,114.8,35.7
+LAMBO-ALA-2937,146.3,0.46,High Downforce (Flaps Closed),95.4,56.8
+LAMBO-ALA-2938,154.8,-1.28,Aero-Vectoring Right,86.9,31.2
+LAMBO-ALA-2939,270.5,1.06,Aero-Vectoring Left,234.9,63.8
+LAMBO-ALA-2940,206.5,-0.03,Low Drag (Flaps Open),63.8,47.8
+LAMBO-ALA-2941,234.3,-1.12,High Downforce (Flaps Closed),244.0,31.7
+LAMBO-ALA-2942,287.0,-0.38,Low Drag (Flaps Open),105.5,49.5
+LAMBO-ALA-2943,152.6,0.73,High Downforce (Flaps Closed),89.6,60.3
+LAMBO-ALA-2944,263.2,-0.39,Low Drag (Flaps Open),101.3,40.4
+LAMBO-ALA-2945,195.5,1.43,High Downforce (Flaps Closed),163.0,70.6
+LAMBO-ALA-2946,151.5,1.47,Aero-Vectoring Right,88.2,67.5
+LAMBO-ALA-2947,322.1,1.47,Aero-Vectoring Left,340.7,70.3
+LAMBO-ALA-2948,293.3,0.02,High Downforce (Flaps Closed),393.1,47.8
+LAMBO-ALA-2949,241.0,0.36,Aero-Vectoring Right,186.4,54.4
+LAMBO-ALA-2950,314.0,-1.36,Aero-Vectoring Left,312.1,29.6
+LAMBO-ALA-2951,334.6,1.09,High Downforce (Flaps Closed),502.1,61.3
+LAMBO-ALA-2952,227.1,1.29,Aero-Vectoring Right,155.9,67.8
+LAMBO-ALA-2953,203.4,-0.65,High Downforce (Flaps Closed),185.1,42.5
+LAMBO-ALA-2954,152.6,1.45,Aero-Vectoring Left,66.8,68.0
+LAMBO-ALA-2955,162.4,-0.88,High Downforce (Flaps Closed),125.2,39.7
+LAMBO-ALA-2956,278.8,1.07,High Downforce (Flaps Closed),369.1,63.6
+LAMBO-ALA-2957,194.5,1.07,Aero-Vectoring Left,116.6,67.0
+LAMBO-ALA-2958,229.3,0.62,High Downforce (Flaps Closed),234.0,60.1
+LAMBO-ALA-2959,146.3,-0.38,Low Drag (Flaps Open),27.2,43.6
+LAMBO-ALA-2960,163.1,1.46,Aero-Vectoring Left,91.5,68.4
+LAMBO-ALA-2961,256.0,0.94,Low Drag (Flaps Open),84.4,60.7
+LAMBO-ALA-2962,157.3,0.66,High Downforce (Flaps Closed),129.8,57.9
+LAMBO-ALA-2963,209.9,-0.83,Aero-Vectoring Right,153.2,38.9
+LAMBO-ALA-2964,313.6,-0.79,High Downforce (Flaps Closed),437.2,38.0
+LAMBO-ALA-2965,314.8,0.66,High Downforce (Flaps Closed),430.3,55.8
+LAMBO-ALA-2966,188.8,0.06,Low Drag (Flaps Open),52.0,50.6
+LAMBO-ALA-2967,266.7,-0.69,Low Drag (Flaps Open),93.8,41.0
+LAMBO-ALA-2968,290.2,0.9,Low Drag (Flaps Open),121.2,61.7
+LAMBO-ALA-2969,256.2,-1.0,Low Drag (Flaps Open),96.2,39.9
+LAMBO-ALA-2970,211.8,-1.14,Low Drag (Flaps Open),59.5,32.9
+LAMBO-ALA-2971,334.9,-0.14,Aero-Vectoring Left,344.2,48.1
+LAMBO-ALA-2972,210.7,-1.38,Low Drag (Flaps Open),64.7,31.1
+LAMBO-ALA-2973,175.6,0.02,Aero-Vectoring Right,87.1,46.1
+LAMBO-ALA-2974,165.1,0.54,Low Drag (Flaps Open),39.6,57.4
+LAMBO-ALA-2975,129.9,0.56,Aero-Vectoring Right,56.4,56.4
+LAMBO-ALA-2976,181.9,-0.22,Aero-Vectoring Right,102.7,45.5
+LAMBO-ALA-2977,158.9,-1.39,Aero-Vectoring Right,79.6,34.3
+LAMBO-ALA-2978,250.4,-0.13,Aero-Vectoring Right,191.4,47.0
+LAMBO-ALA-2979,208.9,-0.25,High Downforce (Flaps Closed),198.6,44.6
+LAMBO-ALA-2980,303.2,1.49,High Downforce (Flaps Closed),434.9,72.0
+LAMBO-ALA-2981,272.3,0.99,Aero-Vectoring Right,230.2,63.2
+LAMBO-ALA-2982,215.6,-0.22,Aero-Vectoring Right,143.9,49.1
+LAMBO-ALA-2983,154.4,1.02,High Downforce (Flaps Closed),115.6,61.3
+LAMBO-ALA-2984,233.8,-0.25,Aero-Vectoring Left,177.8,46.2
+LAMBO-ALA-2985,317.5,-0.9,Aero-Vectoring Left,314.3,35.4
+LAMBO-ALA-2986,135.7,-0.72,High Downforce (Flaps Closed),93.9,41.4
+LAMBO-ALA-2987,161.5,-0.67,Low Drag (Flaps Open),36.6,41.5
+LAMBO-ALA-2988,185.3,-1.09,High Downforce (Flaps Closed),154.2,34.0
+LAMBO-ALA-2989,262.3,-0.48,High Downforce (Flaps Closed),338.7,44.8
+LAMBO-ALA-2990,313.3,-1.27,Aero-Vectoring Right,320.1,36.2
+LAMBO-ALA-2991,165.4,-1.38,Aero-Vectoring Left,95.6,30.2
+LAMBO-ALA-2992,126.6,0.87,Low Drag (Flaps Open),22.6,60.4
+LAMBO-ALA-2993,231.9,0.2,Low Drag (Flaps Open),73.5,50.7
+LAMBO-ALA-2994,204.9,-0.63,High Downforce (Flaps Closed),181.2,42.6
+LAMBO-ALA-2995,245.0,0.14,Low Drag (Flaps Open),75.8,53.2
+LAMBO-ALA-2996,267.1,0.67,Aero-Vectoring Right,224.2,59.7
+LAMBO-ALA-2997,229.6,-0.44,High Downforce (Flaps Closed),252.0,47.5
+LAMBO-ALA-2998,249.8,-0.15,High Downforce (Flaps Closed),274.6,47.3
+LAMBO-ALA-2999,239.1,0.89,Aero-Vectoring Left,194.0,61.4
+LAMBO-ALA-3000,315.3,-0.35,Aero-Vectoring Left,322.4,46.9
+LAMBO-ALA-3001,187.4,0.06,Low Drag (Flaps Open),44.7,51.1
+LAMBO-ALA-3002,227.9,0.32,Low Drag (Flaps Open),70.7,54.8
+LAMBO-ALA-3003,214.1,-1.06,Low Drag (Flaps Open),68.3,34.5
+LAMBO-ALA-3004,292.6,-0.74,Low Drag (Flaps Open),125.6,42.5
+LAMBO-ALA-3005,201.8,0.79,Aero-Vectoring Right,123.3,62.1
+LAMBO-ALA-3006,137.2,0.79,Aero-Vectoring Right,72.4,60.7
+LAMBO-ALA-3007,179.9,-0.04,Aero-Vectoring Right,90.4,50.6
+LAMBO-ALA-3008,190.8,1.41,High Downforce (Flaps Closed),168.8,70.3
+LAMBO-ALA-3009,120.2,1.04,Aero-Vectoring Right,38.3,64.1
+LAMBO-ALA-3010,306.9,1.34,High Downforce (Flaps Closed),437.1,68.9
+LAMBO-ALA-3011,157.5,0.63,Aero-Vectoring Left,71.4,55.6
+LAMBO-ALA-3012,286.0,1.24,Aero-Vectoring Right,269.9,67.4
+LAMBO-ALA-3013,304.8,1.22,High Downforce (Flaps Closed),406.5,68.4
+LAMBO-ALA-3014,274.0,0.66,Aero-Vectoring Left,236.0,61.1
+LAMBO-ALA-3015,130.7,-1.3,Aero-Vectoring Right,55.6,33.3
+LAMBO-ALA-3016,298.6,0.99,Low Drag (Flaps Open),119.5,64.0
+LAMBO-ALA-3017,168.7,-1.14,Aero-Vectoring Right,89.6,32.1
+LAMBO-ALA-3018,204.6,0.6,Aero-Vectoring Left,154.9,59.8
+LAMBO-ALA-3019,196.2,-1.46,Aero-Vectoring Right,128.2,32.4
+LAMBO-ALA-3020,246.4,0.6,Aero-Vectoring Right,187.1,54.2
+LAMBO-ALA-3021,319.9,0.75,Aero-Vectoring Left,331.0,61.7
+LAMBO-ALA-3022,236.1,-0.75,Aero-Vectoring Left,191.9,42.4
+LAMBO-ALA-3023,155.4,-0.01,High Downforce (Flaps Closed),114.7,53.3
+LAMBO-ALA-3024,150.9,0.95,Aero-Vectoring Right,60.9,61.3
+LAMBO-ALA-3025,278.9,-0.01,Low Drag (Flaps Open),103.0,51.8
+LAMBO-ALA-3026,325.3,0.71,High Downforce (Flaps Closed),465.4,62.1
+LAMBO-ALA-3027,327.9,0.9,High Downforce (Flaps Closed),468.6,67.2
+LAMBO-ALA-3028,251.1,-0.44,High Downforce (Flaps Closed),292.4,42.5
+LAMBO-ALA-3029,321.5,1.02,High Downforce (Flaps Closed),467.5,63.9
+LAMBO-ALA-3030,192.5,-0.42,High Downforce (Flaps Closed),177.5,48.1
+LAMBO-ALA-3031,231.2,-1.23,Aero-Vectoring Right,181.3,35.2
+LAMBO-ALA-3032,157.7,-0.38,Aero-Vectoring Left,77.7,44.7
+LAMBO-ALA-3033,149.5,-1.3,High Downforce (Flaps Closed),100.0,35.2
+LAMBO-ALA-3034,186.7,-0.47,Aero-Vectoring Right,102.5,43.4
+LAMBO-ALA-3035,229.9,-0.23,High Downforce (Flaps Closed),238.5,49.4
+LAMBO-ALA-3036,134.2,-0.05,High Downforce (Flaps Closed),71.1,52.1
+LAMBO-ALA-3037,166.7,0.29,Low Drag (Flaps Open),40.0,53.1
+LAMBO-ALA-3038,271.3,-0.32,High Downforce (Flaps Closed),321.7,50.0
+LAMBO-ALA-3039,274.2,0.39,Aero-Vectoring Right,237.0,52.9
+LAMBO-ALA-3040,324.9,1.38,Aero-Vectoring Left,343.8,70.3
+LAMBO-ALA-3041,192.0,-0.47,High Downforce (Flaps Closed),162.7,42.6
+LAMBO-ALA-3042,122.1,1.38,Aero-Vectoring Left,37.8,71.1
+LAMBO-ALA-3043,166.0,1.09,Aero-Vectoring Left,90.7,65.1
+LAMBO-ALA-3044,228.8,-1.47,Low Drag (Flaps Open),65.7,31.7
+LAMBO-ALA-3045,261.3,0.92,Aero-Vectoring Right,221.4,63.8
+LAMBO-ALA-3046,253.3,-1.08,Low Drag (Flaps Open),89.4,31.6
+LAMBO-ALA-3047,229.1,-0.06,High Downforce (Flaps Closed),248.8,50.1
+LAMBO-ALA-3048,178.9,-1.13,Low Drag (Flaps Open),45.0,34.5
+LAMBO-ALA-3049,290.3,-1.32,Aero-Vectoring Right,261.6,34.2
+LAMBO-ALA-3050,262.3,-0.49,Aero-Vectoring Left,214.5,43.4
+LAMBO-ALA-3051,333.2,0.07,High Downforce (Flaps Closed),493.4,52.6
+LAMBO-ALA-3052,131.8,0.9,High Downforce (Flaps Closed),82.6,65.3
+LAMBO-ALA-3053,252.2,-0.86,Aero-Vectoring Right,207.5,35.6
+LAMBO-ALA-3054,214.0,-0.16,High Downforce (Flaps Closed),221.9,51.0
+LAMBO-ALA-3055,156.0,-0.67,High Downforce (Flaps Closed),106.8,41.4
+LAMBO-ALA-3056,196.4,0.87,High Downforce (Flaps Closed),152.9,64.7
+LAMBO-ALA-3057,121.7,1.25,Aero-Vectoring Left,50.9,63.7
+LAMBO-ALA-3058,288.9,-0.32,Low Drag (Flaps Open),105.6,44.6
+LAMBO-ALA-3059,124.7,1.15,Aero-Vectoring Right,52.3,67.4
+LAMBO-ALA-3060,183.0,-0.65,High Downforce (Flaps Closed),147.0,40.1
+LAMBO-ALA-3061,255.7,1.04,High Downforce (Flaps Closed),303.9,61.8
+LAMBO-ALA-3062,175.5,-1.47,Low Drag (Flaps Open),48.8,31.2
+LAMBO-ALA-3063,315.0,0.47,High Downforce (Flaps Closed),463.1,58.4
+LAMBO-ALA-3064,174.2,-0.27,Aero-Vectoring Left,101.8,47.0
+LAMBO-ALA-3065,281.7,1.36,High Downforce (Flaps Closed),355.3,66.0
+LAMBO-ALA-3066,123.8,-1.49,Low Drag (Flaps Open),25.0,28.2
+LAMBO-ALA-3067,334.5,-0.81,Aero-Vectoring Left,345.0,40.3
+LAMBO-ALA-3068,333.0,0.81,High Downforce (Flaps Closed),495.7,62.1
+LAMBO-ALA-3069,202.4,1.45,Aero-Vectoring Left,135.3,71.1
+LAMBO-ALA-3070,181.3,-1.29,High Downforce (Flaps Closed),140.3,28.0
+LAMBO-ALA-3071,223.5,0.58,High Downforce (Flaps Closed),213.0,56.2
+LAMBO-ALA-3072,324.7,0.93,Aero-Vectoring Right,344.7,65.9
+LAMBO-ALA-3073,322.4,-1.13,High Downforce (Flaps Closed),492.0,35.2
+LAMBO-ALA-3074,186.4,1.46,Aero-Vectoring Right,106.1,72.0
+LAMBO-ALA-3075,246.8,-0.39,Low Drag (Flaps Open),87.5,44.1
+LAMBO-ALA-3076,131.2,-0.43,High Downforce (Flaps Closed),93.3,43.1
+LAMBO-ALA-3077,174.2,0.65,High Downforce (Flaps Closed),140.2,59.6
+LAMBO-ALA-3078,153.6,0.72,Aero-Vectoring Left,88.6,61.5
+LAMBO-ALA-3079,306.7,-0.39,Low Drag (Flaps Open),128.3,47.1
+LAMBO-ALA-3080,243.3,-0.62,High Downforce (Flaps Closed),274.6,44.7
+LAMBO-ALA-3081,267.3,-0.95,High Downforce (Flaps Closed),311.0,35.3
+LAMBO-ALA-3082,224.7,-1.09,Low Drag (Flaps Open),60.0,32.8
+LAMBO-ALA-3083,127.1,0.53,Low Drag (Flaps Open),24.0,60.8
+LAMBO-ALA-3084,293.5,0.19,High Downforce (Flaps Closed),380.0,55.8
+LAMBO-ALA-3085,246.5,1.18,Aero-Vectoring Left,191.8,63.7
+LAMBO-ALA-3086,143.8,0.11,Aero-Vectoring Left,52.9,53.4
+LAMBO-ALA-3087,313.9,1.33,Low Drag (Flaps Open),133.6,69.0
+LAMBO-ALA-3088,224.2,1.34,Aero-Vectoring Left,176.0,69.7
+LAMBO-ALA-3089,216.6,-0.11,High Downforce (Flaps Closed),201.6,48.5
+LAMBO-ALA-3090,192.6,-0.25,High Downforce (Flaps Closed),149.3,49.9
+LAMBO-ALA-3091,293.2,-0.09,High Downforce (Flaps Closed),388.6,44.7
+LAMBO-ALA-3092,214.2,0.73,Low Drag (Flaps Open),66.2,57.1
+LAMBO-ALA-3093,201.1,1.16,High Downforce (Flaps Closed),181.4,66.0
+LAMBO-ALA-3094,235.9,-0.46,High Downforce (Flaps Closed),242.2,44.2
+LAMBO-ALA-3095,247.5,-0.9,Aero-Vectoring Right,202.5,38.6
+LAMBO-ALA-3096,169.8,0.56,Aero-Vectoring Right,86.3,58.8
+LAMBO-ALA-3097,294.7,0.78,Aero-Vectoring Right,272.4,58.7
+LAMBO-ALA-3098,286.9,-0.13,High Downforce (Flaps Closed),351.8,43.8
+LAMBO-ALA-3099,305.1,-1.31,Aero-Vectoring Right,293.6,34.2
+LAMBO-ALA-3100,208.0,-1.3,Aero-Vectoring Right,125.4,30.8
+LAMBO-ALA-3101,159.1,0.76,Aero-Vectoring Left,77.8,55.1
+LAMBO-ALA-3102,148.4,-0.02,High Downforce (Flaps Closed),89.2,50.4
+LAMBO-ALA-3103,181.1,-0.02,Aero-Vectoring Left,112.5,50.2
+LAMBO-ALA-3104,308.7,0.17,Low Drag (Flaps Open),130.9,52.8
+LAMBO-ALA-3105,323.5,-0.74,Low Drag (Flaps Open),151.6,42.3
+LAMBO-ALA-3106,159.1,-1.31,Low Drag (Flaps Open),27.8,33.8
+LAMBO-ALA-3107,192.4,0.36,Aero-Vectoring Right,116.7,51.8
+LAMBO-ALA-3108,260.6,-0.77,Aero-Vectoring Right,221.3,38.7
+LAMBO-ALA-3109,298.8,0.21,Low Drag (Flaps Open),131.8,48.8
+LAMBO-ALA-3110,126.7,0.55,High Downforce (Flaps Closed),61.7,57.7
+LAMBO-ALA-3111,216.3,1.29,Low Drag (Flaps Open),66.7,69.1
+LAMBO-ALA-3112,158.6,-0.54,High Downforce (Flaps Closed),120.1,44.5
+LAMBO-ALA-3113,147.6,-0.89,High Downforce (Flaps Closed),94.1,35.4
+LAMBO-ALA-3114,196.5,-0.63,Aero-Vectoring Right,106.7,43.0
+LAMBO-ALA-3115,320.7,-0.23,Low Drag (Flaps Open),138.7,45.1
+LAMBO-ALA-3116,277.0,-0.24,Aero-Vectoring Left,247.3,45.2
+LAMBO-ALA-3117,253.6,-0.09,Aero-Vectoring Right,201.2,51.4
+LAMBO-ALA-3118,336.9,0.87,Aero-Vectoring Right,368.9,65.5
+LAMBO-ALA-3119,214.7,-0.43,Aero-Vectoring Left,143.0,42.8
+LAMBO-ALA-3120,231.0,-1.03,Aero-Vectoring Right,164.9,35.5
+LAMBO-ALA-3121,334.5,0.94,Aero-Vectoring Left,375.8,63.3
+LAMBO-ALA-3122,153.9,-0.27,Low Drag (Flaps Open),37.6,48.8
+LAMBO-ALA-3123,136.3,-0.31,Low Drag (Flaps Open),23.4,49.0
+LAMBO-ALA-3124,300.5,-0.47,Aero-Vectoring Right,283.1,44.8
+LAMBO-ALA-3125,188.7,-1.11,Aero-Vectoring Left,113.8,36.7
+LAMBO-ALA-3126,267.1,-1.06,Aero-Vectoring Left,232.4,33.5
+LAMBO-ALA-3127,334.2,-1.47,Low Drag (Flaps Open),146.5,32.2
+LAMBO-ALA-3128,300.7,-1.11,Low Drag (Flaps Open),129.1,32.5
+LAMBO-ALA-3129,326.0,-1.28,Aero-Vectoring Left,353.0,34.8
+LAMBO-ALA-3130,263.8,0.16,Aero-Vectoring Right,216.6,52.2
+LAMBO-ALA-3131,241.7,-0.26,Aero-Vectoring Right,189.7,47.1
+LAMBO-ALA-3132,169.6,0.52,High Downforce (Flaps Closed),100.7,52.1
+LAMBO-ALA-3133,198.5,1.41,Aero-Vectoring Left,122.6,67.5
+LAMBO-ALA-3134,125.5,-1.47,High Downforce (Flaps Closed),60.2,28.0
+LAMBO-ALA-3135,156.8,1.02,High Downforce (Flaps Closed),113.3,67.5
+LAMBO-ALA-3136,289.4,-0.35,Aero-Vectoring Left,271.4,49.1
+LAMBO-ALA-3137,177.4,0.86,Low Drag (Flaps Open),39.6,60.6
+LAMBO-ALA-3138,333.7,1.07,High Downforce (Flaps Closed),480.0,65.1
+LAMBO-ALA-3139,317.4,-0.54,High Downforce (Flaps Closed),454.1,42.8
+LAMBO-ALA-3140,180.6,-0.47,Low Drag (Flaps Open),48.1,43.5
+LAMBO-ALA-3141,124.6,0.66,Low Drag (Flaps Open),24.1,55.3
+LAMBO-ALA-3142,147.7,0.63,Aero-Vectoring Right,54.7,56.7
+LAMBO-ALA-3143,253.0,-0.5,High Downforce (Flaps Closed),307.6,42.7
+LAMBO-ALA-3144,327.7,0.56,Aero-Vectoring Right,349.4,60.8
+LAMBO-ALA-3145,337.5,-0.35,Low Drag (Flaps Open),155.0,46.3
+LAMBO-ALA-3146,315.5,0.13,High Downforce (Flaps Closed),454.4,52.4
+LAMBO-ALA-3147,163.8,-0.71,Low Drag (Flaps Open),40.0,42.3
+LAMBO-ALA-3148,282.9,1.12,High Downforce (Flaps Closed),366.1,66.6
+LAMBO-ALA-3149,162.1,1.37,High Downforce (Flaps Closed),120.6,67.1
+LAMBO-ALA-3150,258.1,0.31,Aero-Vectoring Left,214.2,55.6
+LAMBO-ALA-3151,128.9,-0.42,Aero-Vectoring Left,50.2,42.5
+LAMBO-ALA-3152,261.8,0.49,Aero-Vectoring Left,211.2,58.1
+LAMBO-ALA-3153,295.5,-1.39,Aero-Vectoring Right,281.7,32.2
+LAMBO-ALA-3154,248.4,-0.98,Aero-Vectoring Right,203.2,36.5
+LAMBO-ALA-3155,278.5,-1.14,High Downforce (Flaps Closed),343.4,31.9
+LAMBO-ALA-3156,251.0,1.12,High Downforce (Flaps Closed),289.4,63.8
+LAMBO-ALA-3157,304.7,0.27,Low Drag (Flaps Open),121.8,54.0
+LAMBO-ALA-3158,156.9,-1.43,High Downforce (Flaps Closed),96.9,33.1
+LAMBO-ALA-3159,171.1,-0.79,Aero-Vectoring Left,113.8,40.1
+LAMBO-ALA-3160,334.8,1.04,Low Drag (Flaps Open),156.7,63.7
+LAMBO-ALA-3161,248.2,-0.79,Aero-Vectoring Right,199.6,43.8
+LAMBO-ALA-3162,280.1,-1.49,High Downforce (Flaps Closed),360.0,28.0
+LAMBO-ALA-3163,130.9,-0.36,Aero-Vectoring Left,53.2,46.0
+LAMBO-ALA-3164,199.9,-0.62,High Downforce (Flaps Closed),196.1,44.6
+LAMBO-ALA-3165,149.8,-1.02,High Downforce (Flaps Closed),85.4,34.3
+LAMBO-ALA-3166,143.8,-0.02,Aero-Vectoring Left,58.7,52.1
+LAMBO-ALA-3167,213.0,0.08,High Downforce (Flaps Closed),191.2,49.1
+LAMBO-ALA-3168,219.1,-1.04,High Downforce (Flaps Closed),221.2,34.2
+LAMBO-ALA-3169,177.2,-0.26,Aero-Vectoring Right,93.4,45.9
+LAMBO-ALA-3170,180.5,0.0,Aero-Vectoring Left,95.7,52.4
+LAMBO-ALA-3171,209.4,0.33,Aero-Vectoring Right,160.5,55.6
+LAMBO-ALA-3172,154.1,-0.87,High Downforce (Flaps Closed),127.1,41.1
+LAMBO-ALA-3173,291.8,-1.24,High Downforce (Flaps Closed),385.1,28.4
+LAMBO-ALA-3174,258.4,-0.76,Aero-Vectoring Right,208.9,39.5
+LAMBO-ALA-3175,218.3,0.66,Aero-Vectoring Left,146.3,61.3
+LAMBO-ALA-3176,200.8,-1.49,High Downforce (Flaps Closed),166.9,28.0
+LAMBO-ALA-3177,166.8,-1.46,Low Drag (Flaps Open),33.8,30.3
+LAMBO-ALA-3178,236.3,0.56,Low Drag (Flaps Open),77.5,57.4
+LAMBO-ALA-3179,185.8,0.93,Aero-Vectoring Left,109.8,64.5
+LAMBO-ALA-3180,152.4,-0.62,Aero-Vectoring Left,70.9,39.6
+LAMBO-ALA-3181,323.0,1.28,Aero-Vectoring Right,344.3,64.1
+LAMBO-ALA-3182,322.7,-0.23,Aero-Vectoring Left,335.9,49.5
+LAMBO-ALA-3183,121.6,0.6,High Downforce (Flaps Closed),64.1,59.0
+LAMBO-ALA-3184,174.7,1.47,High Downforce (Flaps Closed),136.9,69.4
+LAMBO-ALA-3185,269.3,-0.79,Aero-Vectoring Right,221.6,39.0
+LAMBO-ALA-3186,221.9,-0.87,High Downforce (Flaps Closed),199.5,37.7
+LAMBO-ALA-3187,283.3,0.93,Low Drag (Flaps Open),111.5,64.1
+LAMBO-ALA-3188,137.8,-1.05,Low Drag (Flaps Open),26.8,35.8
+LAMBO-ALA-3189,181.9,-0.89,High Downforce (Flaps Closed),153.6,38.6
+LAMBO-ALA-3190,238.0,-0.89,Aero-Vectoring Right,181.4,39.9
+LAMBO-ALA-3191,260.5,-1.49,High Downforce (Flaps Closed),301.8,28.0
+LAMBO-ALA-3192,273.0,-0.25,Aero-Vectoring Right,238.9,48.2
+LAMBO-ALA-3193,249.7,1.07,Low Drag (Flaps Open),85.8,62.4
+LAMBO-ALA-3194,143.9,1.36,Aero-Vectoring Left,72.9,65.5
+LAMBO-ALA-3195,267.4,1.11,High Downforce (Flaps Closed),312.0,66.6
+LAMBO-ALA-3196,124.7,-0.26,Aero-Vectoring Left,39.2,48.9
+LAMBO-ALA-3197,233.7,-1.13,High Downforce (Flaps Closed),243.0,34.6
+LAMBO-ALA-3198,289.3,1.34,Low Drag (Flaps Open),127.1,68.5
+LAMBO-ALA-3199,297.7,0.44,Low Drag (Flaps Open),118.8,54.2
+LAMBO-ALA-3200,336.9,-0.01,Aero-Vectoring Right,370.1,51.9
+LAMBO-ALA-3201,126.4,-1.29,Aero-Vectoring Left,62.6,34.6
+LAMBO-ALA-3202,154.1,0.79,Aero-Vectoring Right,84.0,59.2
+LAMBO-ALA-3203,135.1,0.46,High Downforce (Flaps Closed),91.5,56.5
+LAMBO-ALA-3204,319.8,1.18,High Downforce (Flaps Closed),453.0,64.5
+LAMBO-ALA-3205,267.9,1.29,High Downforce (Flaps Closed),335.6,69.2
+LAMBO-ALA-3206,237.0,-0.74,Low Drag (Flaps Open),82.5,40.8
+LAMBO-ALA-3207,168.7,0.42,Low Drag (Flaps Open),37.9,58.1
+LAMBO-ALA-3208,275.4,0.97,High Downforce (Flaps Closed),329.3,64.1
+LAMBO-ALA-3209,285.1,-0.51,High Downforce (Flaps Closed),354.0,40.7
+LAMBO-ALA-3210,132.7,-0.25,Aero-Vectoring Right,45.4,47.0
+LAMBO-ALA-3211,306.1,1.42,Aero-Vectoring Left,301.8,69.4
+LAMBO-ALA-3212,315.1,0.66,Low Drag (Flaps Open),143.1,64.2
+LAMBO-ALA-3213,255.7,-0.17,Aero-Vectoring Left,200.9,47.2
+LAMBO-ALA-3214,135.7,0.31,High Downforce (Flaps Closed),89.2,56.0
+LAMBO-ALA-3215,260.6,0.18,Aero-Vectoring Right,211.4,53.2
+LAMBO-ALA-3216,336.4,-1.42,Aero-Vectoring Left,353.7,31.8
+LAMBO-ALA-3217,285.6,0.37,Aero-Vectoring Right,262.1,54.2
+LAMBO-ALA-3218,149.8,-0.6,Low Drag (Flaps Open),26.3,42.6
+LAMBO-ALA-3219,208.0,0.86,High Downforce (Flaps Closed),202.3,57.8
+LAMBO-ALA-3220,276.1,-0.18,High Downforce (Flaps Closed),374.7,49.9
+LAMBO-ALA-3221,248.0,-0.19,High Downforce (Flaps Closed),271.9,50.9
+LAMBO-ALA-3222,224.9,0.1,High Downforce (Flaps Closed),220.6,50.2
+LAMBO-ALA-3223,161.4,-0.27,High Downforce (Flaps Closed),118.3,48.0
+LAMBO-ALA-3224,129.0,-1.39,High Downforce (Flaps Closed),80.1,30.7
+LAMBO-ALA-3225,194.5,-0.19,Aero-Vectoring Right,142.6,47.3
+LAMBO-ALA-3226,193.1,-1.02,Low Drag (Flaps Open),52.3,36.4
+LAMBO-ALA-3227,148.3,0.45,High Downforce (Flaps Closed),110.6,52.3
+LAMBO-ALA-3228,146.1,-0.32,Aero-Vectoring Left,51.5,46.1
+LAMBO-ALA-3229,282.9,0.06,Aero-Vectoring Right,255.5,53.8
+LAMBO-ALA-3230,267.0,0.4,High Downforce (Flaps Closed),316.5,59.7
+LAMBO-ALA-3231,330.5,1.19,Low Drag (Flaps Open),157.9,66.8
+LAMBO-ALA-3232,274.1,-0.72,High Downforce (Flaps Closed),327.4,39.3
+LAMBO-ALA-3233,153.5,-1.16,High Downforce (Flaps Closed),96.3,34.2
+LAMBO-ALA-3234,304.3,1.26,Low Drag (Flaps Open),126.5,68.1
+LAMBO-ALA-3235,284.2,-0.74,Aero-Vectoring Left,273.1,37.4
+LAMBO-ALA-3236,235.4,-1.2,Aero-Vectoring Right,174.9,35.1
+LAMBO-ALA-3237,150.7,-0.32,Low Drag (Flaps Open),34.4,49.0
+LAMBO-ALA-3238,293.9,-1.4,High Downforce (Flaps Closed),384.3,34.0
+LAMBO-ALA-3239,222.9,0.35,Aero-Vectoring Left,157.9,55.9
+LAMBO-ALA-3240,130.2,0.56,Low Drag (Flaps Open),23.1,59.6
+LAMBO-ALA-3241,283.4,-1.43,Aero-Vectoring Left,257.4,32.6
+LAMBO-ALA-3242,120.2,1.26,Aero-Vectoring Left,57.1,65.3
+LAMBO-ALA-3243,194.8,-1.28,Aero-Vectoring Left,121.0,30.2
+LAMBO-ALA-3244,287.9,-1.15,Aero-Vectoring Right,259.3,33.9
+LAMBO-ALA-3245,227.5,-1.33,High Downforce (Flaps Closed),224.6,29.7
+LAMBO-ALA-3246,332.5,1.11,Aero-Vectoring Left,345.7,65.2
+LAMBO-ALA-3247,195.2,1.34,Low Drag (Flaps Open),54.9,71.8
+LAMBO-ALA-3248,232.8,-1.18,Aero-Vectoring Left,181.8,33.6
+LAMBO-ALA-3249,338.5,-1.2,High Downforce (Flaps Closed),500.2,36.7
+LAMBO-ALA-3250,152.0,1.33,Low Drag (Flaps Open),39.7,67.8
+LAMBO-ALA-3251,245.9,0.24,Low Drag (Flaps Open),82.2,54.7
+LAMBO-ALA-3252,247.1,-0.43,Low Drag (Flaps Open),81.9,46.1
+LAMBO-ALA-3253,217.1,0.12,High Downforce (Flaps Closed),213.4,51.7
+LAMBO-ALA-3254,297.8,1.28,High Downforce (Flaps Closed),402.0,66.0
+LAMBO-ALA-3255,250.7,-0.31,Aero-Vectoring Left,210.6,44.7
+LAMBO-ALA-3256,172.0,0.15,High Downforce (Flaps Closed),135.1,52.1
+LAMBO-ALA-3257,336.7,0.81,High Downforce (Flaps Closed),509.8,63.2
+LAMBO-ALA-3258,225.9,-0.57,High Downforce (Flaps Closed),222.3,42.9
+LAMBO-ALA-3259,168.5,0.12,High Downforce (Flaps Closed),111.2,54.6
+LAMBO-ALA-3260,172.0,-0.59,Aero-Vectoring Right,107.8,41.5
+LAMBO-ALA-3261,174.5,0.83,Aero-Vectoring Left,87.8,58.9
+LAMBO-ALA-3262,204.8,1.32,Aero-Vectoring Right,139.2,67.5
+LAMBO-ALA-3263,308.9,0.53,High Downforce (Flaps Closed),428.3,57.1
+LAMBO-ALA-3264,322.0,1.01,Aero-Vectoring Left,331.6,67.8
+LAMBO-ALA-3265,152.8,1.34,Low Drag (Flaps Open),29.4,68.7
+LAMBO-ALA-3266,232.5,0.89,High Downforce (Flaps Closed),239.2,61.2
+LAMBO-ALA-3267,195.2,0.86,Aero-Vectoring Left,128.4,58.3
+LAMBO-ALA-3268,299.3,-1.22,Aero-Vectoring Left,284.9,32.8
+LAMBO-ALA-3269,325.3,0.28,Aero-Vectoring Right,345.6,55.0
+LAMBO-ALA-3270,280.2,0.0,Aero-Vectoring Left,252.4,51.3
+LAMBO-ALA-3271,297.0,-0.7,High Downforce (Flaps Closed),397.0,38.6
+LAMBO-ALA-3272,220.4,1.34,Aero-Vectoring Right,147.5,70.3
+LAMBO-ALA-3273,141.1,-1.42,High Downforce (Flaps Closed),74.9,30.3
+LAMBO-ALA-3274,304.6,1.42,Aero-Vectoring Right,289.6,71.8
+LAMBO-ALA-3275,289.2,1.08,Aero-Vectoring Left,255.9,70.3
+LAMBO-ALA-3276,266.7,0.27,Low Drag (Flaps Open),105.0,51.6
+LAMBO-ALA-3277,249.6,1.04,High Downforce (Flaps Closed),282.9,63.8
+LAMBO-ALA-3278,321.5,1.3,High Downforce (Flaps Closed),450.0,67.2
+LAMBO-ALA-3279,263.7,1.08,Low Drag (Flaps Open),110.1,61.7
+LAMBO-ALA-3280,304.9,-0.89,Aero-Vectoring Left,292.2,36.8
+LAMBO-ALA-3281,234.8,1.23,High Downforce (Flaps Closed),232.4,67.9
+LAMBO-ALA-3282,151.1,-0.29,Aero-Vectoring Left,77.1,45.9
+LAMBO-ALA-3283,149.8,-1.49,Low Drag (Flaps Open),31.4,29.2
+LAMBO-ALA-3284,291.9,0.66,Aero-Vectoring Right,269.3,56.9
+LAMBO-ALA-3285,236.1,-0.79,High Downforce (Flaps Closed),257.3,36.7
+LAMBO-ALA-3286,204.5,1.19,High Downforce (Flaps Closed),195.3,67.3
+LAMBO-ALA-3287,146.8,-0.31,High Downforce (Flaps Closed),97.4,46.3
+LAMBO-ALA-3288,327.5,-0.99,Low Drag (Flaps Open),155.0,32.8
+LAMBO-ALA-3289,321.6,1.35,Aero-Vectoring Left,335.6,68.6
+LAMBO-ALA-3290,292.6,-1.47,High Downforce (Flaps Closed),378.3,28.0
+LAMBO-ALA-3291,154.8,-0.11,Aero-Vectoring Left,74.6,47.3
+LAMBO-ALA-3292,319.5,1.07,Aero-Vectoring Left,334.5,62.5
+LAMBO-ALA-3293,184.1,0.83,Aero-Vectoring Right,90.9,57.8
+LAMBO-ALA-3294,296.7,-0.0,Low Drag (Flaps Open),110.8,48.0
+LAMBO-ALA-3295,237.3,-0.97,Low Drag (Flaps Open),85.6,37.5
+LAMBO-ALA-3296,131.7,1.28,Aero-Vectoring Right,56.2,71.6
+LAMBO-ALA-3297,269.4,0.77,Low Drag (Flaps Open),98.9,58.9
+LAMBO-ALA-3298,139.2,1.47,Aero-Vectoring Right,57.6,71.6
+LAMBO-ALA-3299,304.4,0.02,High Downforce (Flaps Closed),423.5,51.3
+LAMBO-ALA-3300,183.8,-1.0,High Downforce (Flaps Closed),161.8,36.1
+LAMBO-ALA-3301,157.7,0.04,High Downforce (Flaps Closed),115.6,50.2
+LAMBO-ALA-3302,228.5,0.93,Low Drag (Flaps Open),75.4,66.4
+LAMBO-ALA-3303,311.3,-0.62,Low Drag (Flaps Open),130.3,42.8
+LAMBO-ALA-3304,173.4,-0.49,High Downforce (Flaps Closed),146.7,44.3
+LAMBO-ALA-3305,125.5,0.53,High Downforce (Flaps Closed),74.5,55.3
+LAMBO-ALA-3306,144.5,0.28,Aero-Vectoring Right,73.2,53.5
+LAMBO-ALA-3307,136.3,0.7,Aero-Vectoring Right,54.1,63.4
+LAMBO-ALA-3308,144.8,-0.75,High Downforce (Flaps Closed),84.4,40.0
+LAMBO-ALA-3309,309.0,1.21,Aero-Vectoring Right,308.7,65.5
+LAMBO-ALA-3310,195.3,0.77,Aero-Vectoring Left,121.6,61.6
+LAMBO-ALA-3311,214.6,-0.86,Low Drag (Flaps Open),60.3,40.0
+LAMBO-ALA-3312,187.3,0.04,Aero-Vectoring Right,102.7,52.3
+LAMBO-ALA-3313,225.0,1.17,Aero-Vectoring Left,169.2,65.8
+LAMBO-ALA-3314,324.8,-0.98,High Downforce (Flaps Closed),470.1,39.3
+LAMBO-ALA-3315,313.7,-0.37,Low Drag (Flaps Open),138.1,45.4
+LAMBO-ALA-3316,211.9,0.32,High Downforce (Flaps Closed),205.6,58.2
+LAMBO-ALA-3317,253.6,-1.49,Aero-Vectoring Right,205.3,29.4
+LAMBO-ALA-3318,213.5,0.61,Aero-Vectoring Right,167.6,57.5
+LAMBO-ALA-3319,263.8,0.27,Low Drag (Flaps Open),106.0,56.0
+LAMBO-ALA-3320,267.4,-0.94,Low Drag (Flaps Open),103.7,36.1
+LAMBO-ALA-3321,261.2,1.28,High Downforce (Flaps Closed),305.5,68.6
+LAMBO-ALA-3322,151.5,-0.9,High Downforce (Flaps Closed),94.2,39.8
+LAMBO-ALA-3323,240.2,-0.4,Aero-Vectoring Left,196.8,44.4
+LAMBO-ALA-3324,139.8,-0.48,High Downforce (Flaps Closed),92.1,43.3
+LAMBO-ALA-3325,305.3,1.15,Low Drag (Flaps Open),137.4,61.5
+LAMBO-ALA-3326,283.0,-0.67,Low Drag (Flaps Open),116.2,42.4
+LAMBO-ALA-3327,249.1,0.15,Low Drag (Flaps Open),94.1,54.3
+LAMBO-ALA-3328,160.3,-0.48,High Downforce (Flaps Closed),131.4,43.5
+LAMBO-ALA-3329,223.1,-0.02,Low Drag (Flaps Open),61.7,50.7
+LAMBO-ALA-3330,179.5,-0.14,Low Drag (Flaps Open),47.3,46.4
+LAMBO-ALA-3331,197.8,0.94,High Downforce (Flaps Closed),189.1,61.3
+LAMBO-ALA-3332,251.9,0.09,Aero-Vectoring Left,215.9,54.1
+LAMBO-ALA-3333,274.1,1.15,High Downforce (Flaps Closed),341.4,64.9
+LAMBO-ALA-3334,255.3,-1.13,Aero-Vectoring Right,210.4,33.0
+LAMBO-ALA-3335,207.0,0.22,High Downforce (Flaps Closed),195.1,51.7
+LAMBO-ALA-3336,232.7,0.92,Aero-Vectoring Left,181.9,62.4
+LAMBO-ALA-3337,129.0,1.22,Aero-Vectoring Left,48.5,70.4
+LAMBO-ALA-3338,224.0,0.27,High Downforce (Flaps Closed),229.6,53.7
+LAMBO-ALA-3339,122.9,1.15,Low Drag (Flaps Open),26.3,68.9
+LAMBO-ALA-3340,304.8,-0.13,Low Drag (Flaps Open),127.8,48.5
+LAMBO-ALA-3341,315.4,-0.45,Low Drag (Flaps Open),134.3,41.0
+LAMBO-ALA-3342,170.5,0.8,Low Drag (Flaps Open),42.6,57.5
+LAMBO-ALA-3343,264.7,-0.74,High Downforce (Flaps Closed),325.3,37.7
+LAMBO-ALA-3344,277.3,0.33,High Downforce (Flaps Closed),347.7,53.6
+LAMBO-ALA-3345,221.3,-0.06,Aero-Vectoring Left,155.6,46.9
+LAMBO-ALA-3346,312.5,-1.26,Aero-Vectoring Right,293.2,28.6
+LAMBO-ALA-3347,249.2,-0.2,Aero-Vectoring Right,193.1,50.4
+LAMBO-ALA-3348,277.3,0.59,Aero-Vectoring Right,255.4,59.5
+LAMBO-ALA-3349,312.5,1.35,High Downforce (Flaps Closed),437.4,67.7
+LAMBO-ALA-3350,323.1,0.01,High Downforce (Flaps Closed),471.2,53.6
+LAMBO-ALA-3351,226.0,1.22,Aero-Vectoring Right,173.0,65.3
+LAMBO-ALA-3352,234.0,0.01,Low Drag (Flaps Open),76.9,48.5
+LAMBO-ALA-3353,275.5,-1.06,Aero-Vectoring Left,233.6,40.1
+LAMBO-ALA-3354,130.1,-0.0,Aero-Vectoring Left,61.9,45.3
+LAMBO-ALA-3355,208.6,0.97,High Downforce (Flaps Closed),193.0,59.6
+LAMBO-ALA-3356,157.0,-0.75,Low Drag (Flaps Open),34.7,40.5
+LAMBO-ALA-3357,208.5,0.21,High Downforce (Flaps Closed),190.5,55.2
+LAMBO-ALA-3358,154.4,0.85,Aero-Vectoring Left,66.6,60.0
+LAMBO-ALA-3359,315.5,0.64,Aero-Vectoring Right,312.9,56.6
+LAMBO-ALA-3360,300.4,-0.95,Aero-Vectoring Right,301.8,33.0
+LAMBO-ALA-3361,335.8,-1.22,Low Drag (Flaps Open),159.3,30.3
+LAMBO-ALA-3362,131.0,0.13,Low Drag (Flaps Open),25.4,54.5
+LAMBO-ALA-3363,135.5,1.39,High Downforce (Flaps Closed),98.1,66.3
+LAMBO-ALA-3364,124.3,0.86,Aero-Vectoring Right,46.9,59.9
+LAMBO-ALA-3365,258.2,-0.54,Aero-Vectoring Left,204.3,42.1
+LAMBO-ALA-3366,190.7,0.43,High Downforce (Flaps Closed),169.1,54.9
+LAMBO-ALA-3367,336.7,0.21,Aero-Vectoring Left,366.7,52.3
+LAMBO-ALA-3368,178.9,0.73,Aero-Vectoring Left,98.0,61.0
+LAMBO-ALA-3369,216.4,0.69,Low Drag (Flaps Open),60.2,61.0
+LAMBO-ALA-3370,193.1,-0.51,Aero-Vectoring Left,128.4,41.6
+LAMBO-ALA-3371,309.8,0.25,Low Drag (Flaps Open),130.4,52.1
+LAMBO-ALA-3372,181.8,-1.0,High Downforce (Flaps Closed),151.3,35.1
+LAMBO-ALA-3373,263.9,-0.69,Aero-Vectoring Right,216.3,43.0
+LAMBO-ALA-3374,293.9,-1.19,Aero-Vectoring Left,286.3,37.3
+LAMBO-ALA-3375,135.9,-1.01,High Downforce (Flaps Closed),91.6,34.5
+LAMBO-ALA-3376,339.3,-0.32,Aero-Vectoring Right,354.2,45.5
+LAMBO-ALA-3377,231.0,-0.44,High Downforce (Flaps Closed),245.0,46.6
+LAMBO-ALA-3378,258.8,0.41,High Downforce (Flaps Closed),296.4,57.9
+LAMBO-ALA-3379,158.6,0.74,Low Drag (Flaps Open),40.2,61.5
+LAMBO-ALA-3380,278.6,-0.6,High Downforce (Flaps Closed),331.6,40.7
+LAMBO-ALA-3381,307.9,-1.34,High Downforce (Flaps Closed),431.2,31.8
+LAMBO-ALA-3382,167.5,0.21,Low Drag (Flaps Open),41.3,50.4
+LAMBO-ALA-3383,310.1,1.33,Aero-Vectoring Right,312.2,68.7
+LAMBO-ALA-3384,288.2,-1.18,Aero-Vectoring Right,269.6,32.4
+LAMBO-ALA-3385,145.3,-0.88,High Downforce (Flaps Closed),82.5,36.9
+LAMBO-ALA-3386,275.6,-1.12,High Downforce (Flaps Closed),357.3,35.1
+LAMBO-ALA-3387,219.1,1.49,Low Drag (Flaps Open),74.0,71.7
+LAMBO-ALA-3388,333.1,0.62,Aero-Vectoring Right,346.7,56.1
+LAMBO-ALA-3389,317.3,1.26,Low Drag (Flaps Open),143.0,68.7
+LAMBO-ALA-3390,243.5,0.22,High Downforce (Flaps Closed),273.3,56.2
+LAMBO-ALA-3391,246.8,-0.6,Low Drag (Flaps Open),81.4,40.2
+LAMBO-ALA-3392,128.9,-0.28,Aero-Vectoring Right,47.6,44.6
+LAMBO-ALA-3393,338.7,0.0,High Downforce (Flaps Closed),524.1,51.4
+LAMBO-ALA-3394,153.6,-0.13,Low Drag (Flaps Open),26.2,48.2
+LAMBO-ALA-3395,129.9,1.25,High Downforce (Flaps Closed),85.5,65.2
+LAMBO-ALA-3396,271.6,0.91,High Downforce (Flaps Closed),325.4,62.5
+LAMBO-ALA-3397,169.6,0.15,High Downforce (Flaps Closed),134.0,51.2
+LAMBO-ALA-3398,153.1,0.96,Low Drag (Flaps Open),32.4,64.8
+LAMBO-ALA-3399,217.9,1.35,Aero-Vectoring Right,151.9,68.6
+LAMBO-ALA-3400,176.3,-1.23,High Downforce (Flaps Closed),139.6,33.9
+LAMBO-ALA-3401,148.1,1.38,Aero-Vectoring Right,79.7,69.3
+LAMBO-ALA-3402,325.2,-0.84,Low Drag (Flaps Open),152.3,42.4
+LAMBO-ALA-3403,295.7,-0.57,High Downforce (Flaps Closed),392.6,42.3
+LAMBO-ALA-3404,182.2,0.38,High Downforce (Flaps Closed),162.2,54.7
+LAMBO-ALA-3405,304.2,-1.32,Aero-Vectoring Right,300.7,29.8
+LAMBO-ALA-3406,202.3,-0.23,Aero-Vectoring Right,123.6,46.7
+LAMBO-ALA-3407,175.8,1.04,Aero-Vectoring Right,86.4,65.1
+LAMBO-ALA-3408,223.8,-0.37,High Downforce (Flaps Closed),224.3,42.5
+LAMBO-ALA-3409,293.3,0.56,Low Drag (Flaps Open),124.8,55.9
+LAMBO-ALA-3410,235.1,-0.05,High Downforce (Flaps Closed),244.7,48.9
+LAMBO-ALA-3411,157.8,-0.98,Low Drag (Flaps Open),33.2,35.5
+LAMBO-ALA-3412,238.8,0.94,Aero-Vectoring Left,195.0,66.3
+LAMBO-ALA-3413,264.5,-1.34,Low Drag (Flaps Open),96.8,29.8
+LAMBO-ALA-3414,187.5,-0.76,Aero-Vectoring Right,121.1,39.7
+LAMBO-ALA-3415,251.1,-0.22,High Downforce (Flaps Closed),283.6,48.2
+LAMBO-ALA-3416,289.5,-0.43,Aero-Vectoring Right,259.2,43.6
+LAMBO-ALA-3417,164.1,1.35,Aero-Vectoring Right,84.1,70.6
+LAMBO-ALA-3418,164.5,-0.95,Aero-Vectoring Left,77.8,36.0
+LAMBO-ALA-3419,209.6,1.02,High Downforce (Flaps Closed),180.3,62.8
+LAMBO-ALA-3420,276.3,-0.58,Aero-Vectoring Right,237.8,41.3
+LAMBO-ALA-3421,295.8,0.16,High Downforce (Flaps Closed),405.1,51.6
+LAMBO-ALA-3422,260.1,0.47,High Downforce (Flaps Closed),307.4,54.2
+LAMBO-ALA-3423,288.9,-0.85,Aero-Vectoring Right,273.8,38.0
+LAMBO-ALA-3424,287.1,-1.16,Low Drag (Flaps Open),125.7,36.1
+LAMBO-ALA-3425,200.0,-1.17,Low Drag (Flaps Open),51.6,32.9
+LAMBO-ALA-3426,215.5,0.77,Aero-Vectoring Right,136.2,62.8
+LAMBO-ALA-3427,168.6,1.47,Low Drag (Flaps Open),42.4,68.0
+LAMBO-ALA-3428,198.1,-0.48,Low Drag (Flaps Open),55.2,45.7
+LAMBO-ALA-3429,160.2,1.04,Aero-Vectoring Right,84.5,66.3
+LAMBO-ALA-3430,277.2,0.8,High Downforce (Flaps Closed),343.5,60.6
+LAMBO-ALA-3431,193.1,1.46,High Downforce (Flaps Closed),162.2,67.5
+LAMBO-ALA-3432,168.4,-0.14,Aero-Vectoring Right,86.2,49.1
+LAMBO-ALA-3433,270.0,-1.49,High Downforce (Flaps Closed),326.3,28.3
+LAMBO-ALA-3434,286.3,0.0,Aero-Vectoring Right,257.1,49.9
+LAMBO-ALA-3435,237.7,-1.24,Aero-Vectoring Left,181.9,35.0
+LAMBO-ALA-3436,297.6,0.88,High Downforce (Flaps Closed),378.9,62.5
+LAMBO-ALA-3437,238.1,-0.22,Aero-Vectoring Left,158.9,46.5
+LAMBO-ALA-3438,236.6,-0.58,High Downforce (Flaps Closed),246.7,42.7
+LAMBO-ALA-3439,315.6,-1.44,High Downforce (Flaps Closed),451.1,28.9
+LAMBO-ALA-3440,273.7,0.43,Aero-Vectoring Left,220.9,59.3
+LAMBO-ALA-3441,160.5,0.43,Aero-Vectoring Right,87.9,54.9
+LAMBO-ALA-3442,183.3,-0.41,Low Drag (Flaps Open),47.0,46.2
+LAMBO-ALA-3443,125.0,-0.3,Aero-Vectoring Left,65.7,47.1
+LAMBO-ALA-3444,121.4,-0.02,High Downforce (Flaps Closed),78.1,50.7
+LAMBO-ALA-3445,212.6,-1.1,High Downforce (Flaps Closed),205.3,35.8
+LAMBO-ALA-3446,257.5,-1.38,Aero-Vectoring Left,199.4,31.0
+LAMBO-ALA-3447,330.5,-1.34,High Downforce (Flaps Closed),501.3,34.7
+LAMBO-ALA-3448,143.2,0.69,Aero-Vectoring Right,68.8,61.0
+LAMBO-ALA-3449,182.1,-1.32,Aero-Vectoring Right,101.9,29.4
+LAMBO-ALA-3450,154.1,0.43,Aero-Vectoring Left,74.8,57.6
+LAMBO-ALA-3451,252.3,-0.29,Aero-Vectoring Left,205.5,46.0
+LAMBO-ALA-3452,240.7,-0.98,Aero-Vectoring Right,185.5,37.0
+LAMBO-ALA-3453,238.6,-0.43,Low Drag (Flaps Open),89.7,42.9
+LAMBO-ALA-3454,303.3,0.12,Low Drag (Flaps Open),132.3,49.0
+LAMBO-ALA-3455,192.3,-0.5,Aero-Vectoring Right,107.5,46.9
+LAMBO-ALA-3456,215.1,-1.05,Aero-Vectoring Left,151.4,35.1
+LAMBO-ALA-3457,129.6,-0.39,Aero-Vectoring Right,55.3,42.9
+LAMBO-ALA-3458,159.9,-1.43,High Downforce (Flaps Closed),113.5,29.2
+LAMBO-ALA-3459,276.4,0.19,Aero-Vectoring Left,246.2,52.3
+LAMBO-ALA-3460,220.4,0.59,Aero-Vectoring Right,158.4,55.5
+LAMBO-ALA-3461,245.6,-0.9,Aero-Vectoring Left,204.2,37.1
+LAMBO-ALA-3462,319.2,0.58,Low Drag (Flaps Open),141.4,55.7
+LAMBO-ALA-3463,140.2,-0.94,High Downforce (Flaps Closed),92.0,38.6
+LAMBO-ALA-3464,123.4,0.32,Aero-Vectoring Right,51.9,57.8
+LAMBO-ALA-3465,151.0,0.63,Aero-Vectoring Left,69.6,59.2
+LAMBO-ALA-3466,279.1,0.81,Aero-Vectoring Right,251.2,58.0
+LAMBO-ALA-3467,338.6,0.1,Aero-Vectoring Left,364.3,50.2
+LAMBO-ALA-3468,234.3,0.78,Aero-Vectoring Right,170.0,62.7
+LAMBO-ALA-3469,152.5,0.57,Aero-Vectoring Right,82.0,59.9
+LAMBO-ALA-3470,161.4,0.1,High Downforce (Flaps Closed),127.0,52.7
+LAMBO-ALA-3471,237.4,0.18,High Downforce (Flaps Closed),251.6,51.5
+LAMBO-ALA-3472,148.0,0.12,High Downforce (Flaps Closed),108.9,48.5
+LAMBO-ALA-3473,223.0,0.38,Aero-Vectoring Right,149.7,54.4
+LAMBO-ALA-3474,324.1,-1.23,High Downforce (Flaps Closed),463.6,33.7
+LAMBO-ALA-3475,269.3,-0.61,Aero-Vectoring Left,242.8,39.4
+LAMBO-ALA-3476,126.6,-0.0,High Downforce (Flaps Closed),68.5,50.6
+LAMBO-ALA-3477,170.5,-0.99,Low Drag (Flaps Open),47.5,33.3
+LAMBO-ALA-3478,266.0,1.15,Low Drag (Flaps Open),96.1,68.6
+LAMBO-ALA-3479,179.6,0.92,High Downforce (Flaps Closed),143.5,61.9
+LAMBO-ALA-3480,314.9,-0.59,Low Drag (Flaps Open),139.8,43.0
+LAMBO-ALA-3481,260.5,1.1,High Downforce (Flaps Closed),314.5,65.3
+LAMBO-ALA-3482,232.7,0.59,Aero-Vectoring Right,177.0,60.5
+LAMBO-ALA-3483,263.0,0.7,Aero-Vectoring Right,208.5,57.0
+LAMBO-ALA-3484,134.0,0.86,High Downforce (Flaps Closed),65.9,64.6
+LAMBO-ALA-3485,297.2,0.72,High Downforce (Flaps Closed),388.8,63.9
+LAMBO-ALA-3486,166.5,-0.88,Aero-Vectoring Right,93.2,36.6
+LAMBO-ALA-3487,165.7,0.65,High Downforce (Flaps Closed),120.0,55.3
+LAMBO-ALA-3488,320.3,0.63,Aero-Vectoring Left,329.3,57.0
+LAMBO-ALA-3489,183.4,-1.36,High Downforce (Flaps Closed),140.7,31.5
+LAMBO-ALA-3490,312.5,-0.69,High Downforce (Flaps Closed),448.4,41.6
+LAMBO-ALA-3491,154.2,-0.5,High Downforce (Flaps Closed),86.1,43.7
+LAMBO-ALA-3492,219.7,1.35,Low Drag (Flaps Open),79.0,69.9
+LAMBO-ALA-3493,183.8,0.98,Aero-Vectoring Left,121.6,65.3
+LAMBO-ALA-3494,192.4,0.43,High Downforce (Flaps Closed),178.2,55.4
+LAMBO-ALA-3495,288.6,0.74,Aero-Vectoring Right,265.6,60.7
+LAMBO-ALA-3496,196.9,-1.5,Aero-Vectoring Left,128.1,28.2
+LAMBO-ALA-3497,125.6,1.23,Aero-Vectoring Right,45.2,67.3
+LAMBO-ALA-3498,303.5,0.14,High Downforce (Flaps Closed),419.0,52.6
+LAMBO-ALA-3499,183.8,-0.25,Aero-Vectoring Left,128.0,46.5
+LAMBO-ALA-3500,296.0,-1.38,Aero-Vectoring Left,287.2,29.9
+LAMBO-ALA-3501,240.1,0.59,High Downforce (Flaps Closed),254.8,62.0
+LAMBO-ALA-3502,295.9,0.98,High Downforce (Flaps Closed),386.6,61.8
+LAMBO-ALA-3503,242.9,1.31,High Downforce (Flaps Closed),263.8,68.4
+LAMBO-ALA-3504,326.8,-1.03,High Downforce (Flaps Closed),486.0,37.4
+LAMBO-ALA-3505,291.1,0.39,Aero-Vectoring Left,275.1,55.2
+LAMBO-ALA-3506,285.4,-0.95,Aero-Vectoring Left,263.0,36.0
+LAMBO-ALA-3507,185.1,-0.24,High Downforce (Flaps Closed),146.3,47.1
+LAMBO-ALA-3508,236.8,-1.43,High Downforce (Flaps Closed),264.1,33.3
+LAMBO-ALA-3509,328.2,-0.56,High Downforce (Flaps Closed),486.4,42.9
+LAMBO-ALA-3510,131.0,0.1,Aero-Vectoring Right,58.9,49.4
+LAMBO-ALA-3511,182.2,0.02,High Downforce (Flaps Closed),154.2,48.7
+LAMBO-ALA-3512,304.1,1.09,Aero-Vectoring Left,291.9,63.1
+LAMBO-ALA-3513,249.7,-0.53,Low Drag (Flaps Open),88.5,43.4
+LAMBO-ALA-3514,275.3,-0.66,Aero-Vectoring Left,246.6,40.1
+LAMBO-ALA-3515,206.0,-0.16,Low Drag (Flaps Open),51.5,49.9
+LAMBO-ALA-3516,289.4,0.17,High Downforce (Flaps Closed),376.2,51.8
+LAMBO-ALA-3517,194.9,-0.5,High Downforce (Flaps Closed),193.0,42.9
+LAMBO-ALA-3518,271.0,-0.1,Aero-Vectoring Right,239.0,48.0
+LAMBO-ALA-3519,270.5,-0.08,High Downforce (Flaps Closed),325.4,49.8
+LAMBO-ALA-3520,126.8,-0.21,Low Drag (Flaps Open),19.4,48.3
+LAMBO-ALA-3521,268.8,0.86,High Downforce (Flaps Closed),340.9,61.8
+LAMBO-ALA-3522,222.3,1.49,Aero-Vectoring Right,159.7,69.8
+LAMBO-ALA-3523,229.9,1.22,High Downforce (Flaps Closed),233.2,68.5
+LAMBO-ALA-3524,268.1,1.27,Aero-Vectoring Left,231.7,65.4
+LAMBO-ALA-3525,326.5,-0.78,Aero-Vectoring Left,329.9,35.9
+LAMBO-ALA-3526,288.2,1.17,Low Drag (Flaps Open),110.4,66.8
+LAMBO-ALA-3527,122.7,1.31,Aero-Vectoring Right,47.1,67.2
+LAMBO-ALA-3528,233.3,-1.18,Aero-Vectoring Right,181.3,31.9
+LAMBO-ALA-3529,315.6,-0.59,High Downforce (Flaps Closed),435.0,39.6
+LAMBO-ALA-3530,151.2,0.62,High Downforce (Flaps Closed),107.6,58.7
+LAMBO-ALA-3531,229.2,0.25,High Downforce (Flaps Closed),222.4,52.6
+LAMBO-ALA-3532,316.7,-0.84,High Downforce (Flaps Closed),444.0,37.6
+LAMBO-ALA-3533,333.7,-1.4,High Downforce (Flaps Closed),490.1,30.2
+LAMBO-ALA-3534,273.0,-0.44,High Downforce (Flaps Closed),335.8,42.3
+LAMBO-ALA-3535,131.0,0.52,Aero-Vectoring Left,68.7,57.5
+LAMBO-ALA-3536,227.5,-0.89,High Downforce (Flaps Closed),230.2,38.3
+LAMBO-ALA-3537,128.5,-0.69,Aero-Vectoring Right,55.0,39.9
+LAMBO-ALA-3538,249.3,0.73,Low Drag (Flaps Open),92.3,58.1
+LAMBO-ALA-3539,244.7,-0.36,High Downforce (Flaps Closed),285.2,47.6
+LAMBO-ALA-3540,179.4,1.33,Aero-Vectoring Left,100.5,72.0
+LAMBO-ALA-3541,323.5,0.11,Aero-Vectoring Left,346.4,56.0
+LAMBO-ALA-3542,170.5,-0.46,Aero-Vectoring Right,107.0,43.5
+LAMBO-ALA-3543,168.2,-0.46,Aero-Vectoring Left,89.4,46.6
+LAMBO-ALA-3544,332.4,0.53,High Downforce (Flaps Closed),482.5,60.6
+LAMBO-ALA-3545,255.4,-0.59,Aero-Vectoring Right,202.0,41.5
+LAMBO-ALA-3546,120.1,0.17,Aero-Vectoring Right,51.5,52.2
+LAMBO-ALA-3547,297.5,-1.02,Low Drag (Flaps Open),128.0,34.6
+LAMBO-ALA-3548,223.5,0.35,High Downforce (Flaps Closed),216.2,53.5
+LAMBO-ALA-3549,165.6,-1.07,Aero-Vectoring Left,96.6,35.9
+LAMBO-ALA-3550,239.4,1.02,High Downforce (Flaps Closed),273.4,63.0
+LAMBO-ALA-3551,221.5,-0.22,Low Drag (Flaps Open),69.2,48.8
+LAMBO-ALA-3552,219.4,0.41,Low Drag (Flaps Open),67.4,57.6
+LAMBO-ALA-3553,243.2,-1.41,Low Drag (Flaps Open),77.4,33.0
+LAMBO-ALA-3554,185.4,-1.28,High Downforce (Flaps Closed),153.3,30.0
+LAMBO-ALA-3555,162.7,-1.26,High Downforce (Flaps Closed),115.9,30.8
+LAMBO-ALA-3556,241.3,1.44,Aero-Vectoring Left,181.8,67.5
+LAMBO-ALA-3557,205.7,-0.65,Aero-Vectoring Right,125.6,39.8
+LAMBO-ALA-3558,177.1,-0.56,High Downforce (Flaps Closed),166.6,42.4
+LAMBO-ALA-3559,284.9,-0.63,Low Drag (Flaps Open),115.7,39.9
+LAMBO-ALA-3560,221.2,-0.46,High Downforce (Flaps Closed),217.2,41.5
+LAMBO-ALA-3561,195.9,-0.44,High Downforce (Flaps Closed),175.8,45.0
+LAMBO-ALA-3562,251.0,0.68,Low Drag (Flaps Open),90.4,58.2
+LAMBO-ALA-3563,248.8,0.97,High Downforce (Flaps Closed),280.2,63.8
+LAMBO-ALA-3564,281.3,-1.17,High Downforce (Flaps Closed),352.9,31.2
+LAMBO-ALA-3565,150.8,0.73,High Downforce (Flaps Closed),90.7,58.6
+LAMBO-ALA-3566,155.1,0.21,High Downforce (Flaps Closed),115.1,53.9
+LAMBO-ALA-3567,204.9,-0.11,Aero-Vectoring Right,139.9,50.5
+LAMBO-ALA-3568,259.9,0.48,Aero-Vectoring Right,217.6,57.8
+LAMBO-ALA-3569,232.5,-1.09,High Downforce (Flaps Closed),237.0,36.1
+LAMBO-ALA-3570,189.4,1.15,Low Drag (Flaps Open),50.4,66.5
+LAMBO-ALA-3571,305.3,0.43,High Downforce (Flaps Closed),429.0,57.0
+LAMBO-ALA-3572,250.7,-0.4,Aero-Vectoring Right,192.2,43.2
+LAMBO-ALA-3573,156.4,0.7,High Downforce (Flaps Closed),106.8,59.1
+LAMBO-ALA-3574,181.6,-1.11,High Downforce (Flaps Closed),137.7,33.1
+LAMBO-ALA-3575,313.7,-0.21,Aero-Vectoring Right,315.4,43.7
+LAMBO-ALA-3576,195.0,0.72,Aero-Vectoring Left,127.0,62.0
+LAMBO-ALA-3577,311.5,-1.36,Aero-Vectoring Right,305.8,31.4
+LAMBO-ALA-3578,211.3,0.61,Low Drag (Flaps Open),57.0,58.5
+LAMBO-ALA-3579,294.7,-1.23,Aero-Vectoring Right,291.8,33.1
+LAMBO-ALA-3580,186.7,0.6,High Downforce (Flaps Closed),156.0,58.7
+LAMBO-ALA-3581,232.7,0.95,High Downforce (Flaps Closed),234.2,66.9
+LAMBO-ALA-3582,206.5,0.18,High Downforce (Flaps Closed),174.4,49.9
+LAMBO-ALA-3583,215.8,-0.47,Aero-Vectoring Left,142.4,46.8
+LAMBO-ALA-3584,288.1,0.76,Aero-Vectoring Right,268.9,61.3
+LAMBO-ALA-3585,263.4,-0.72,High Downforce (Flaps Closed),300.0,39.6
+LAMBO-ALA-3586,293.7,0.09,High Downforce (Flaps Closed),378.5,54.0
+LAMBO-ALA-3587,168.7,-1.26,Aero-Vectoring Right,84.9,33.3
+LAMBO-ALA-3588,187.9,-1.28,High Downforce (Flaps Closed),151.9,28.0
+LAMBO-ALA-3589,152.6,0.48,High Downforce (Flaps Closed),108.4,59.4
+LAMBO-ALA-3590,314.5,-0.22,High Downforce (Flaps Closed),447.1,45.9
+LAMBO-ALA-3591,322.1,0.2,Aero-Vectoring Right,331.0,50.6
+LAMBO-ALA-3592,223.4,1.02,Aero-Vectoring Right,161.0,67.6
+LAMBO-ALA-3593,148.5,-0.0,Low Drag (Flaps Open),34.3,50.3
+LAMBO-ALA-3594,278.3,-0.88,High Downforce (Flaps Closed),350.4,36.1
+LAMBO-ALA-3595,162.3,-0.04,High Downforce (Flaps Closed),117.6,48.3
+LAMBO-ALA-3596,272.7,0.77,Aero-Vectoring Right,246.3,58.4
+LAMBO-ALA-3597,329.1,1.26,High Downforce (Flaps Closed),494.2,69.1
+LAMBO-ALA-3598,182.4,0.3,Low Drag (Flaps Open),40.8,53.7
+LAMBO-ALA-3599,291.1,-0.35,High Downforce (Flaps Closed),384.0,43.3

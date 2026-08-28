@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis: Preview-ECS Front Camera Pothole Pre-Damping ML | Automotive Management & Analytics Suite</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-body: #f8fafc;
+            --bg-surface: #ffffff;
+            --border-card: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --brand-primary: #0284c7;
+            --brand-hover: #0369a1;
+            --success-text: #059669;
+            --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar-custom {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+        }
+
+        .header-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .clean-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            box-shadow: var(--shadow-subtle);
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .clean-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: var(--shadow-card);
+        }
+
+        .kpi-card {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            line-height: 1.2;
+            margin: 0.35rem 0;
+        }
+
+        .badge-category {
+            background: #f0f9ff;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .badge-id {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .tech-pill {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .chart-box {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.2rem;
+            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            padding: 0.35rem;
+        }
+
+        .diagnostics-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #0284c7;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .strategy-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #059669;
+            border-radius: 8px;
+            padding: 1rem 1.15rem;
+        }
+
+        .playbook-pillar {
+            background: #ffffff;
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 1.4rem;
+            box-shadow: var(--shadow-subtle);
+            height: 100%;
+        }
+
+        .table-custom {
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0;
+        }
+        .table-custom th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.65rem 0.6rem;
+            white-space: nowrap;
+        }
+        .table-custom td {
+            border-bottom: 1px solid #f1f5f9;
+            padding: 0.65rem 0.6rem;
+            vertical-align: middle;
+        }
+        .table-custom tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .benchmark-table {
+            font-size: 0.86rem;
+        }
+        .benchmark-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .btn-brand {
+            background: var(--brand-primary);
+            color: #ffffff;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.2s ease;
+        }
+        .btn-brand:hover {
+            background: var(--brand-hover);
+            color: #ffffff;
+        }
+
+        .btn-outline-custom {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: #ffffff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s ease;
+        }
+        .btn-outline-custom:hover {
+            background: #f8fafc;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        .badge-status-pass {
+            background-color: #dcfce7;
+            color: #15803d;
+            border: 1px solid #bbf7d0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-alert {
+            background-color: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fecaca;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+        .badge-status-warn {
+            background-color: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom py-2">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center gap-2 text-dark fw-bold" href="../index.html">
+                <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary">
+                    <i class="bi bi-speedometer2 fs-5"></i>
+                </div>
+                <span class="fs-6 text-uppercase tracking-wider text-slate-900 fw-bold">Automotive Management & Analytics Hub</span>
+            </a>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-custom dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-grid-3x3-gap"></i> Jump to Project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="max-height: 420px; overflow-y: auto; border: 1px solid #e2e8f0;">
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../01_predictive_maintenance/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#01 Fleet Predictive Maintenance</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../02_battery_health_degradation/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#02 EV Battery Lifespan & Health</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../03_connected_vehicle_telemetry/report.html">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>#03 Driver Safety & Eco-Driving</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../04_supply_chain_route_optimization/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#04 Assembly Plant Parts Routing</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../05_assembly_line_defect_detection/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#05 Assembly Line Defect Inspection</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../06_used_car_price_forecasting/report.html">
+                                <i class="bi bi-currency-dollar"></i>
+                                <span>#06 Used Vehicle Market Valuation</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../07_fleet_fuel_efficiency/report.html">
+                                <i class="bi bi-fuel-pump"></i>
+                                <span>#07 Heavy Commercial Fuel Economy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../08_av_sensor_fusion/report.html">
+                                <i class="bi bi-radar"></i>
+                                <span>#08 Multi-Sensor Navigation Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../09_warranty_fraud_detection/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#09 Warranty Claim Anomaly Audit</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../10_ev_charging_demand_forecast/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#10 EV Charging Grid & Queue Forecast</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../11_bmw_nvh_acoustic_diagnostics/report.html">
+                                <i class="bi bi-soundwave"></i>
+                                <span>#11 BMW Cabin NVH Acoustics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../12_mercedes_drive_pilot_handover/report.html">
+                                <i class="bi bi-person-bounding-box"></i>
+                                <span>#12 Mercedes Level 3 Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../13_vw_meb_lithium_plating/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#13 VW Fast-Charge Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../14_porsche_track_dynamics_aero/report.html">
+                                <i class="bi bi-speedometer"></i>
+                                <span>#14 Porsche Track Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../15_bosch_esp_abs_hydraulic_wear/report.html">
+                                <i class="bi bi-shield-check"></i>
+                                <span>#15 Bosch ABS Hydraulics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../16_continental_smart_tire_aquaplaning/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#16 Continental Smart Tire</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../17_volvo_vision_zero_vru_safety/report.html">
+                                <i class="bi bi-person-walking"></i>
+                                <span>#17 Volvo Vision-Zero Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../18_zf_transmission_clutch_wear/report.html">
+                                <i class="bi bi-gear-wide-connected"></i>
+                                <span>#18 ZF Transmission Diagnostics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../19_stellantis_euro7_emissions/report.html">
+                                <i class="bi bi-cloud-slash"></i>
+                                <span>#19 Stellantis Euro 7 RDE</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../20_scania_heavy_truck_platooning/report.html">
+                                <i class="bi bi-truck"></i>
+                                <span>#20 Scania Truck Platooning</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../21_toyota_stamping_press_vibration/report.html">
+                                <i class="bi bi-hammer"></i>
+                                <span>#21 Toyota Lean Stamping AI</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../22_tesla_fsd_shadow_disengagement/report.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>#22 Tesla Vision Autonomy</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../23_hyundai_800v_sic_inverter/report.html">
+                                <i class="bi bi-cpu"></i>
+                                <span>#23 Hyundai 800V Inverter</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../24_gm_ultium_wireless_bms/report.html">
+                                <i class="bi bi-wifi"></i>
+                                <span>#24 GM Wireless BMS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../25_honda_ehev_dual_motor_split/report.html">
+                                <i class="bi bi-arrow-left-right"></i>
+                                <span>#25 Honda e:HEV Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../26_denso_ev_heatpump_subcooling/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#26 Denso EV Heat Pump</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../27_byd_blade_thermal_propagation/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#27 BYD Blade Battery Safety</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../28_ford_v2g_inverter_balancing/report.html">
+                                <i class="bi bi-house-gear"></i>
+                                <span>#28 Ford V2G Smart Power</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../29_magna_smart_eaxle_vectoring/report.html">
+                                <i class="bi bi-gear"></i>
+                                <span>#29 Magna Smart eAxle</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../30_aptiv_zonal_ethernet_gateway/report.html">
+                                <i class="bi bi-diagram-3"></i>
+                                <span>#30 Aptiv Zonal E/E Network</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../31_ferrari_mguk_hybrid_deployment/report.html">
+                                <i class="bi bi-lightning-charge"></i>
+                                <span>#31 Ferrari Hybrid MGU-K</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../32_lamborghini_ala_active_aerodynamics/report.html">
+                                <i class="bi bi-wind"></i>
+                                <span>#32 Lamborghini ALA Aero</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../33_maserati_nettuno_twin_spark_knock/report.html">
+                                <i class="bi bi-fire"></i>
+                                <span>#33 Maserati Nettuno Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../34_brembo_carbon_ceramic_rotor_wear/report.html">
+                                <i class="bi bi-disc"></i>
+                                <span>#34 Brembo Carbon Brakes</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../35_pirelli_cyber_tyre_grip_sensing/report.html">
+                                <i class="bi bi-circle"></i>
+                                <span>#35 Pirelli Cyber Tyre</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../36_ducati_motogp_imu_lean_control/report.html">
+                                <i class="bi bi-activity"></i>
+                                <span>#36 Ducati Lean Dynamics</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../37_alfa_romeo_giorgio_driveshaft_vibe/report.html">
+                                <i class="bi bi-gear-wide"></i>
+                                <span>#37 Alfa Romeo Drivetrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../38_marelli_smart_corner_matrix_headlight/report.html">
+                                <i class="bi bi-brightness-high"></i>
+                                <span>#38 Marelli Matrix Lighting</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../39_pagani_carbotitanium_composite_scan/report.html">
+                                <i class="bi bi-gem"></i>
+                                <span>#39 Pagani Carbo-Titanium</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../40_iveco_hydrogen_fuelcell_freight/report.html">
+                                <i class="bi bi-fuel-pump-fill"></i>
+                                <span>#40 Iveco Hydrogen Freight</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../41_koenigsegg_kdd_freevalve_slip/report.html">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>#41 Koenigsegg Direct-Drive</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../42_bugatti_rimac_rawtv_torque_vectoring/report.html">
+                                <i class="bi bi-lightning-fill"></i>
+                                <span>#42 Rimac 4-Motor Vectoring</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../43_mclaren_pcc2_hydraulic_damper_roll/report.html">
+                                <i class="bi bi-bezier2"></i>
+                                <span>#43 McLaren Proactive Chassis</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../44_lucid_wunderbox_motor_stator_loss/report.html">
+                                <i class="bi bi-battery-charging"></i>
+                                <span>#44 Lucid 900V Powertrain</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../45_nio_battery_swap_robotic_alignment/report.html">
+                                <i class="bi bi-robot"></i>
+                                <span>#45 NIO Power Swap 4.0</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../46_tata_jlr_terrain_response_atpc_grip/report.html">
+                                <i class="bi bi-compass-fill"></i>
+                                <span>#46 JLR Terrain Response</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../47_subaru_sawd_clutch_xmode_snow/report.html">
+                                <i class="bi bi-snow2"></i>
+                                <span>#47 Subaru S-AWD X-Mode</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 active bg-primary text-white fw-bold" href="../48_genesis_preview_ecs_suspension/report.html">
+                                <i class="bi bi-camera-video-fill"></i>
+                                <span>#48 Genesis Preview-ECS</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../49_stellantis_south_america_e100_bioethanol/report.html">
+                                <i class="bi bi-droplet-half"></i>
+                                <span>#49 Bio-Ethanol E100 Engine</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2 py-2 " href="../50_catl_qilin_ctp3_cooling_4c_charge/report.html">
+                                <i class="bi bi-shield-shaded"></i>
+                                <span>#50 CATL Qilin CTP 3.0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand d-flex align-items-center gap-2">
+                    <i class="bi bi-arrow-left"></i> Executive Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container-fluid px-4 py-4">
+        
+        <!-- Header Banner -->
+        <div class="header-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge-category"><i class="bi bi-camera-video-fill me-1"></i> Luxury Ride Comfort</span>
+                        <span class="badge-id">Project 48</span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small fw-semibold">Production Ready</span>
+                        <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small fw-bold"><i class="bi bi-currency-dollar"></i> Estimated Annual Value: $2.8M / yr</span>
+                    </div>
+                    <h1 class="h3 fw-bold text-slate-900 mb-2">Genesis: Preview-ECS Front Camera Pothole Pre-Damping ML</h1>
+                    <p class="text-slate-700 mb-0 fs-6">Scans road surface imperfections 15 meters ahead using windshield stereo cameras, softening shock absorbers milliseconds before wheels strike potholes.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <div class="d-inline-flex flex-column align-items-lg-end">
+                        <div class="text-slate-600 small fw-bold mb-1"><i class="bi bi-cpu-fill text-primary me-1"></i> Analytics & Diagnostic Methods</div>
+                        <div class="tech-pill">Forward ADAS Camera Pothole Scanning, Pre-Damping Solenoid ML</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Metrics Ribbon -->
+        <div class="row g-3 mb-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Bump Shock Isolation</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-shield-check fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">94.5%</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-arrow-up"></i> Preview-ECS Technology
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Camera Vision Lead Time</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-camera-video-fill fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">540 ms</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-success-subtle text-success fw-bold">
+                            <i class="bi bi-eye"></i> 15m Forward Stereo Scan
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Solenoid Valve Response</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-lightning-charge fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">10 ms</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-warning-subtle text-warning fw-bold">
+                            <i class="bi bi-stopwatch"></i> Multi-Chamber Air Springs
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="kpi-card">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <span class="text-slate-600 small fw-bold text-uppercase tracking-wider">Road Anomalies Logged</span>
+                        <div class="p-2 rounded-circle bg-light text-primary">
+                            <i class="bi bi-pin-map fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="kpi-value text-slate-900">2,600 Events</div>
+                    <div class="small mt-1 d-flex align-items-center gap-1">
+                        <span class="badge bg-primary-subtle text-primary fw-bold">
+                            <i class="bi bi-check-all"></i> Namyang R&D Proving Ground
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Visualizations Grid -->
+        <div class="row g-4 mb-4">
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Cabin Vertical Impact (G) vs Pothole Depth (mm)
+                            </h5>
+                            <small class="text-slate-600">Demonstrates road preview pre-damping keeping cabin vibrations below 0.25 G over severe 80 mm potholes</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Pothole Pre-Damping</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.5.0.min.js" integrity="sha256-fHbNLP+GlIXN+efbQec78UkemUz3NJp7UmfGxC1tNxs=" crossorigin="anonymous"></script>                <div id="b96a75ab-6be8-4d88-b25c-13a4d49f1ee1" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b96a75ab-6be8-4d88-b25c-13a4d49f1ee1")) {                    Plotly.newPlot(                        "b96a75ab-6be8-4d88-b25c-13a4d49f1ee1",                        [{"hovertemplate":"Suspension_Action=Nominal Magic Carpet Luxury Ride\u003cbr\u003eRoad Pothole Depth (mm)=%{x}\u003cbr\u003eCabin Vertical Vibration (G)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Nominal Magic Carpet Luxury Ride","marker":{"color":"#0284c7","symbol":"circle"},"mode":"markers","name":"Nominal Magic Carpet Luxury Ride","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"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"},"xaxis":"x","y":{"dtype":"f8","bdata":"6SYxCKwcuj9QjZduEoPAP2q8dJMYBMY\u002fH4XrUbgexT+q8dJNYhDIP28Sg8DKocU\u002f7FG4HoXrwT8CK4cW2c7HP1CNl24Sg8A\u002fTmIQWDm0yD8fhetRuB7FP7pJDAIrh7Y\u002fmpmZmZmZuT8xCKwcWmTLP4\u002fC9Shcj8I\u002fke18PzVeyj9zaJHtfD\u002fFP+58PzVeusk\u002fc2iR7Xw\u002fxT+F61G4HoXLP3sUrkfherQ\u002fAiuHFtnOxz97FK5H4Xq0P8dLN4lBYMU\u002fQmDl0CLbyT\u002fb+X5qvHTDP3Noke18P7U\u002fd76fGi\u002fdxD9qvHSTGATGP76fGi\u002fdJMY\u002fpHA9CtejwD\u002fJdr6fGi+9PwRWDi2ync8\u002fukkMAiuHxj\u002ffT42XbhLDPylcj8L1KLw\u002fXrpJDAIrxz9MN4lBYOXAP6jGSzeJQcA\u002fUrgehetRyD\u002f+1HjpJjHIP5zEILByaME\u002ff2q8dJMYxD8GgZVDi2zHP5MYBFYOLcI\u002fPQrXo3A9yj8rhxbZzvfDPwIrhxbZzsc\u002f7FG4HoXrwT+HFtnO91PDP8uhRbbz\u002fcQ\u002fDi2yne+nxj\u002f8qfHSTWLAPz0K16NwPco\u002fSOF6FK5HwT\u002f4U+Olm8TAPy\u002fdJAaBlcM\u002fmpmZmZmZuT\u002fjpZvEILDCPzMzMzMzM8M\u002fGQRWDi2yvT8rhxbZzvfDPxBYObTIdr4\u002f8KfGSzeJwT\u002fRItv5fmq8P3Noke18P8U\u002fL90kBoGVwz\u002f4U+Olm8TAP8dLN4lBYMU\u002f6SYxCKwcyj+WQ4ts5\u002fvJPycxCKwcWsQ\u002f2c73U+Olyz9vEoPAyqHFP9ejcD0K18M\u002fsp3vp8ZLxz9I4XoUrkfBP39qvHSTGMQ\u002fvp8aL90kxj+uR+F6FK7HP8\u002f3U+Olm8Q\u002fQmDl0CLbyT9QjZduEoPAP3sUrkfhesQ\u002f7nw\u002fNV66yT\u002fByqFFtvO9P+F6FK5H4co\u002fO99PjZduwj+sHFpkO9\u002fPPw4tsp3vp8Y\u002feekmMQisvD9QjZduEoPAP3sUrkfherQ\u002fvp8aL90kxj8GgZVDi2zHPx+F61G4HsU\u002fYhBYObTItj93vp8aL93EP7x0kxgEVs4\u002feekmMQiszD83iUFg5dDCP6jGSzeJQcA\u002f2c73U+Oluz\u002fn+6nx0k3CP\u002fCnxks3icE\u002fpHA9CtejwD\u002f8qfHSTWLAP2Q730+Nl84\u002fK4cW2c73wz\u002fsUbgehevRP\u002f7UeOkmMcg\u002fd76fGi\u002fdxD\u002fsUbgehevBPycxCKwcWsQ\u002fVOOlm8Qg0D\u002fRItv5fmq8P+kmMQisHMo\u002fkxgEVg4twj\u002f4U+Olm8TAPx+F61G4HsU\u002fVg4tsp3vxz8Sg8DKoUXGP+xRuB6F68E\u002f+FPjpZvEwD+HFtnO91PDP28Sg8DKocU\u002faJHtfD81vj8xCKwcWmTLP\u002fhT46WbxMA\u002f7FG4HoXrwT8ZBFYOLbK9P3E9CtejcL0\u002fTmIQWDm0yD+6SQwCK4fGPzvfT42XbsI\u002fvp8aL90kxj+R7Xw\u002fNV7KPz81XrpJDMI\u002fGy\u002fdJAaBtT+TGARWDi3CP5zEILByaME\u002fwcqhRbbzvT+WQ4ts5\u002fvJP+kmMQisHLo\u002fvp8aL90kxj9iEFg5tMjGP4cW2c73U8M\u002fTmIQWDm0yD+JQWDl0CK7PwaBlUOLbMc\u002f\u002ftR46SYxyD8pXI\u002fC9SjMP8uhRbbz\u002fcQ\u002fVg4tsp3vxz8bL90kBoHFP1g5tMh2vr8\u002farx0kxgExj\u002fLoUW28\u002f3EPycxCKwcWsQ\u002fw\u002fUoXI\u002fCtT+q8dJNYhC4P2ZmZmZmZsY\u002fpHA9CtejwD8fhetRuB7FPwIrhxbZzsc\u002fKVyPwvUovD97FK5H4XrEP1pkO99Pjcc\u002fx0s3iUFgxT+8dJMYBFbOP\u002fLSTWIQWMk\u002fppvEILByyD+uR+F6FK7HP1pkO99Pjcc\u002fIbByaJHtvD9aZDvfT43HP7gehetRuL4\u002ftvP91Hjpxj+HFtnO91PDP5zEILByaME\u002f\u002ftR46SYx0D\u002fP91PjpZvEP1CNl24Sg8A\u002f9P3UeOkmwT\u002fsUbgehevBP6AaL90kBsE\u002fqMZLN4lBwD8X2c73U+PFP8l2vp8aL70\u002fGy\u002fdJAaBxT8xCKwcWmS7P9V46SYxCMw\u002f\u002ftR46SYxyD8nMQisHFrEPxkEVg4tsr0\u002f30+Nl24Swz8rhxbZzvfDP3e+nxov3cQ\u002fmG4Sg8DKwT+iRbbz\u002fdS4PwrXo3A9Csc\u002ff2q8dJMYxD\u002fb+X5qvHTDP1pkO99Pjcc\u002f5dAi2\u002fl+yj+LbOf7qfHCPxkEVg4tss0\u002fF9nO91PjxT9xPQrXo3C9P6rx0k1iEMg\u002fEFg5tMh2vj+uR+F6FK7HP30\u002fNV66Scw\u002fsp3vp8ZLxz+q8dJNYhC4P2iR7Xw\u002fNb4\u002fI9v5fmq8xD\u002fufD81XrrJP4GVQ4ts58s\u002fRIts5\u002fupwT\u002fy0k1iEFjJP7TIdr6fGs8\u002fJQaBlUOLzD9SuB6F61HIP8P1KFyPwsU\u002fJzEIrBxaxD\u002fpJjEIrBy6P4cW2c73U8M\u002fppvEILByyD9g5dAi2\u002fm+P5zEILByaME\u002fK4cW2c73wz\u002fhehSuR+HKP1K4HoXrUbg\u002f001iEFg5xD+TGARWDi3CP\u002f7UeOkmMcg\u002fTDeJQWDlwD+kcD0K16PAPwIrhxbZzsc\u002f+n5qvHSTyD\u002f+1HjpJjHIPylcj8L1KLw\u002fHVpkO99PzT9SuB6F61G4PyPb+X5qvMQ\u002fRrbz\u002fdR4yT97FK5H4Xq0P2iR7Xw\u002fNc4\u002fuB6F61G4vj\u002fByqFFtvO9P6rx0k1iELg\u002f7nw\u002fNV66yT8lBoGVQ4vMP30\u002fNV66Scw\u002fRrbz\u002fdR4yT\u002fufD81XrrJPzeJQWDl0MI\u002f2\u002fl+arx0wz83iUFg5dDCP8P1KFyPwsU\u002fke18PzVeyj9MN4lBYOXAP+xRuB6F68E\u002fTmIQWDm0yD+WQ4ts5\u002fvJP9v5fmq8dMM\u002f2c73U+Oluz9oke18PzW+P7pJDAIrh7Y\u002fEFg5tMh2vj9zaJHtfD+1PyGwcmiR7cw\u002frkfhehSuxz\u002fLoUW28\u002f3EPyPb+X5qvMQ\u002flkOLbOf7yT+TGARWDi3CP23n+6nx0s0\u002fGy\u002fdJAaBtT956SYxCKy8P7ByaJHtfL8\u002fIbByaJHtzD9Ei2zn+6nBP76fGi\u002fdJMY\u002fsp3vp8ZLtz+q8dJNYhDIP6jGSzeJQdA\u002fN4lBYOXQwj8CK4cW2c63P2ZmZmZmZsY\u002fIbByaJHtzD+q8dJNYhC4P76fGi\u002fdJMY\u002fN4lBYOXQwj9zaJHtfD\u002fFPz0K16NwPco\u002f2\u002fl+arx0wz\u002fJdr6fGi+9P7bz\u002fdR46cY\u002foBov3SQGwT+F61G4HoXLP8\u002f3U+Olm8Q\u002fRrbz\u002fdR4yT8K16NwPQrHP8P1KFyPwsU\u002fGy\u002fdJAaBxT8CK4cW2c7HP4PAyqFFtsM\u002fw\u002fUoXI\u002fCxT+amZmZmZnJPzeJQWDl0MI\u002f\u002fKnx0k1iwD8hsHJoke3MP28Sg8DKocU\u002fEoPAyqFFxj8IrBxaZDu\u002fPxfZzvdT48U\u002fPQrXo3A9yj9xPQrXo3C9P3sUrkfherQ\u002f8KfGSzeJwT8ZBFYOLbK9Pz81XrpJDMI\u002fpHA9CtejwD\u002fByqFFtvPNP6AaL90kBsE\u002fXI\u002fC9Shczz\u002f8qfHSTWLAP3Noke18P8U\u002fK4cW2c73wz8Sg8DKoUW2P05iEFg5tMg\u002fgZVDi2znyz8bL90kBoHFP+58PzVeusk\u002f001iEFg5xD+q8dJNYhDIP57vp8ZLN9E\u002fPzVeukkMwj+Nl24Sg8DKPz0K16NwPco\u002f4XoUrkfhuj+BlUOLbOfLP+xRuB6F68E\u002fGy\u002fdJAaBxT9g5dAi2\u002fm+P+f7qfHSTcI\u002fO99PjZduwj\u002fZzvdT46W7PxfZzvdT48U\u002fRrbz\u002fdR4yT8X2c73U+PFP0w3iUFg5cA\u002fK4cW2c73wz93vp8aL93EP6rx0k1iEMg\u002f0SLb+X5qvD8hsHJoke3MP8uhRbbz\u002fcQ\u002fYhBYObTIxj+28\u002f3UeOnGP1K4HoXrUcg\u002fSgwCK4cWyT+amZmZmZm5Pylcj8L1KLw\u002fwcqhRbbzzT\u002ffT42XbhLDPxfZzvdT48U\u002farx0kxgExj9SuB6F61HIP9nO91Pjpcs\u002fc2iR7Xw\u002fxT8730+Nl27CP5MYBFYOLcI\u002f9P3UeOkmwT8X2c73U+PFP7gehetRuL4\u002fL90kBoGVwz+iRbbz\u002fdTIPzVeukkMAss\u002ftMh2vp8azz+yne+nxkvHP4GVQ4ts57s\u002f9P3UeOkm0T956SYxCKy8P8dLN4lBYMU\u002fqMZLN4lBwD9WDi2yne\u002fHPxsv3SQGgcU\u002fqvHSTWIQ0D91kxgEVg7NP1K4HoXrUdA\u002fN4lBYOXQwj\u002f2KFyPwvXIPzm0yHa+n8o\u002fL90kBoGVwz+HFtnO91PDP9ejcD0K18M\u002fYhBYObTIxj9xPQrXo3C9Pw4tsp3vp8Y\u002fIbByaJHtzD+JQWDl0CK7P1pkO99Pjbc\u002feekmMQisvD\u002fLoUW28\u002f3EP0oMAiuHFsk\u002fexSuR+F6xD+YbhKDwMrBP9ejcD0K18M\u002ff2q8dJMYxD9zaJHtfD\u002fFP05iEFg5tMg\u002f\u002ftR46SYxyD\u002fXo3A9CtfDP166SQwCK8c\u002f9ihcj8L1yD\u002fy0k1iEFjRP9nO91Pjpbs\u002fSOF6FK5H0T93vp8aL93EP0SLbOf7qcE\u002fEoPAyqFFxj+F61G4HoXLP3e+nxov3cQ\u002fIbByaJHtzD8j2\u002fl+arzEP39qvHSTGMQ\u002fnMQgsHJowT9iEFg5tMjGP2ZmZmZmZsY\u002f2\u002fl+arx0wz+TGARWDi3CPwIrhxbZzsc\u002fIbByaJHtzD\u002fdJAaBlUPLP2q8dJMYBMY\u002f9ihcj8L1yD83iUFg5dDCP4\u002fC9Shcj8I\u002f7FG4HoXrwT8xCKwcWmS7P8\u002f3U+Olm8Q\u002fIbByaJHtzD\u002fLoUW28\u002f3EP2iR7Xw\u002fNc4\u002flkOLbOf7yT\u002fJdr6fGi+9P1K4HoXrUcg\u002fF9nO91PjxT+WQ4ts5\u002fvJP2IQWDm0yMY\u002f9ihcj8L1yD+8dJMYBFbOPylcj8L1KLw\u002f6SYxCKwcyj8zMzMzMzPDPylcj8L1KLw\u002fKVyPwvUovD+yne+nxku3P1TjpZvEIMA\u002fnMQgsHJowT89CtejcD3KPx+F61G4HsU\u002fUI2XbhKDwD+TGARWDi3CP3sUrkfhesQ\u002fc2iR7Xw\u002fxT\u002f2KFyPwvXQPxsv3SQGgcU\u002fTmIQWDm0yD+iRbbz\u002fdTIPwaBlUOLbMc\u002fMzMzMzMzwz+gGi\u002fdJAbBP2IQWDm0yMY\u002fVg4tsp3vxz+4HoXrUbi+P6rx0k1iEMg\u002fqvHSTWIQyD\u002fJdr6fGi\u002fNP166SQwCK8c\u002fokW28\u002f3UuD8j2\u002fl+arzEPxBYObTIdr4\u002fJzEIrBxaxD\u002ffT42XbhLDP1K4HoXrUcg\u002fUI2XbhKDwD9eukkMAivHP2q8dJMYBLY\u002fukkMAiuHxj+PwvUoXI\u002fCP\u002fhT46WbxMA\u002fO99PjZduwj8tsp3vp8bLP9Ei2\u002fl+asw\u002fUI2XbhKD0D9Ei2zn+6nBP5HtfD81Xso\u002fYOXQItv5vj9qvHSTGATGPylcj8L1KLw\u002fwcqhRbbzvT8Sg8DKoUXGP1K4HoXrUcg\u002f5\u002fup8dJNwj+6SQwCK4fGPz0K16NwPco\u002fukkMAiuHxj\u002ffT42XbhLDP6rx0k1iEMg\u002fDAIrhxbZzj+q8dJNYhDIP5zEILByaME\u002farx0kxgExj\u002fpJjEIrBy6P3Noke18P8U\u002fc2iR7Xw\u002fxT\u002fJdr6fGi\u002fNP7Kd76fGS8c\u002fpHA9CtejwD9KDAIrhxbJP4ts5\u002fup8cI\u002f30+Nl24Swz9QjZduEoPQP76fGi\u002fdJMY\u002f4XoUrkfhyj\u002fhehSuR+HKP1K4HoXrUcg\u002fsHJoke18vz\u002fXo3A9CtfDP3sUrkfherQ\u002f3SQGgZVDyz9QjZduEoPQPxkEVg4tsr0\u002fYhBYObTIxj+mm8QgsHLIP1K4HoXrUcg\u002fAAAAAAAA0D\u002fhehSuR+G6PwisHFpkO78\u002fUI2XbhKDwD8hsHJoke3MP7Kd76fGS8c\u002farx0kxgExj+gGi\u002fdJAbBP+kmMQisHMo\u002fH4XrUbgexT91kxgEVg7NPyGwcmiR7bw\u002fZmZmZmZmxj83iUFg5dDCP\u002fYoXI\u002fC9cg\u002fqMZLN4lBwD97FK5H4XrEP7pJDAIrh8Y\u002fbxKDwMqhxT9qvHSTGATGPxSuR+F6FM4\u002fTmIQWDm0yD+DwMqhRbbDP6RwPQrXo8A\u002fAAAAAAAAwD\u002fLoUW28\u002f3EP+f7qfHSTcI\u002fGy\u002fdJAaBxT+gGi\u002fdJAbBP\u002fCnxks3icE\u002fAiuHFtnOxz8v3SQGgZXDP4\u002fC9Shcj8I\u002fi2zn+6nxwj\u002fwp8ZLN4nBP8uhRbbz\u002fcQ\u002fGy\u002fdJAaBxT+q8dJNYhC4P3Noke18P8U\u002fWmQ730+Nxz+28\u002f3UeOnGP0jhehSuR8E\u002fZmZmZmZmxj9g5dAi2\u002fm+P99PjZduEsM\u002ftvP91Hjpxj+BlUOLbOfLP5ZDi2zn+8k\u002fgZVDi2znuz8EVg4tsp3PP0jhehSuR8E\u002fPQrXo3A9yj+amZmZmZm5P8\u002f3U+Olm8Q\u002f5\u002fup8dJNwj\u002fpJjEIrBzKP4ts5\u002fup8cI\u002fyXa+nxovvT\u002fwp8ZLN4nBPy\u002fdJAaBlcM\u002f16NwPQrXwz8j2\u002fl+arzEPzeJQWDl0MI\u002fvp8aL90kxj9Ei2zn+6nBP\u002fT91HjpJsE\u002fJzEIrBxaxD+q8dJNYhDIPycxCKwcWsQ\u002fUrgehetRyD\u002fsUbgehevBP2iR7Xw\u002fNb4\u002f4XoUrkfhuj8j2\u002fl+arzEP2q8dJMYBMY\u002fAiuHFtnOxz9YObTIdr7PPwAAAAAAAMA\u002fmpmZmZmZyT8bL90kBoG1P9NNYhBYOcQ\u002fj8L1KFyPwj+LbOf7qfHCP1K4HoXrUcg\u002f16NwPQrX0z\u002fD9Shcj8LFP6AaL90kBsE\u002fukkMAiuHtj9Ei2zn+6nBPwAAAAAAAMA\u002fIbByaJHtvD8Sg8DKoUXGP9NNYhBYOcQ\u002fke18PzVeyj8730+Nl27CP4ts5\u002fup8cI\u002fcT0K16NwvT9KDAIrhxbJP23n+6nx0s0\u002f001iEFg5xD\u002f+1HjpJjHIP6RwPQrXo8A\u002fDi2yne+nxj+4HoXrUbi+P4PAyqFFtsM\u002fbef7qfHSzT\u002fTTWIQWDnEP9Ei2\u002fl+asw\u002f"},"yaxis":"y","type":"scatter"},{"hovertemplate":"Suspension_Action=Pothole Pre-Damping Softening Active\u003cbr\u003eRoad Pothole Depth (mm)=%{x}\u003cbr\u003eCabin Vertical Vibration (G)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Pothole Pre-Damping Softening Active","marker":{"color":"#059669","symbol":"circle"},"mode":"markers","name":"Pothole Pre-Damping Softening Active","orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"MzMzMzMTUEBmZmZmZmZFQAAAAAAAQFFAZmZmZmYmRkAzMzMzMxNQQGZmZmZm5khAZmZmZmYmRUAzMzMzM7NGQM3MzMzM7FVAMzMzMzMzSEAAAAAAAMBXQM3MzMzMTFFAzczMzMzMSUAAAAAAAMBXQJqZmZmZ+VVAmpmZmZmZSUCamZmZmVlJQJqZmZmZmURAmpmZmZmZRkAzMzMzMzNJQDMzMzMzs1VAmpmZmZmZR0AzMzMzM7NFQDMzMzMz80ZAmpmZmZlZR0DNzMzMzMxFQAAAAAAAwFdAAAAAAACAUkCamZmZmdlLQAAAAAAAwFdAzczMzMwMRkAAAAAAAMBXQAAAAAAAwFdAZmZmZmZmSEAAAAAAAMBXQAAAAAAAAEhAzczMzMwsVUDNzMzMzKxVQJqZmZmZuVVAAAAAAABARUDNzMzMzAxEQAAAAAAAAFJAAAAAAADAV0AzMzMzM3NVQJqZmZmZ2U9AmpmZmZnZRUAzMzMzMzNQQM3MzMzMDE1AZmZmZmbGUkAAAAAAAMBXQDMzMzMzs0RAMzMzMzNTVEAzMzMzMzNEQGZmZmZmJk1AmpmZmZkZRkBmZmZmZmZPQAAAAAAAgEVAAAAAAABAUUBmZmZmZqZOQJqZmZmZ2UpAMzMzMzNzRUBmZmZmZqZEQGZmZmZmhlVAZmZmZmaGUkDNzMzMzIxEQJqZmZmZWUVAZmZmZmYmSEDNzMzMzIxNQJqZmZmZGU5AzczMzMyMRECamZmZmRlHQDMzMzMzM05AZmZmZmamSUBmZmZmZiZRQAAAAAAAwFdAMzMzMzNzTkDNzMzMzExLQAAAAAAAwFdAAAAAAADAV0AAAAAAAMBXQJqZmZmZ2UhAZmZmZmbmRUBmZmZmZuZHQJqZmZmZ2UVAmpmZmZlZREDNzMzMzExRQGZmZmZmJkRAzczMzMxsUECamZmZmXlTQGZmZmZmJkRAAAAAAADATEAAAAAAAABGQAAAAAAAwFNAMzMzMzNTU0DNzMzMzIxJQAAAAAAAwFdAMzMzMzPzUUBmZmZmZqZLQAAAAAAAwFdAmpmZmZnZT0CamZmZmVlIQJqZmZmZOVBAzczMzMwMRkAAAAAAAMBXQM3MzMzMzElAzczMzMzMSUAAAAAAAMBXQDMzMzMzM0hAmpmZmZlZRUAAAAAAAEBUQAAAAAAAwE9AzczMzMwMSECamZmZmXlSQM3MzMzMDFVAAAAAAADAV0AAAAAAAMBXQDMzMzMzM0hAAAAAAADgUECamZmZmdlOQGZmZmZmZk1AmpmZmZk5VUCamZmZmZlPQM3MzMzMzEpAMzMzMzMzSUAAAAAAAIBJQGZmZmZmpk1AZmZmZmamTUAAAAAAAIBMQAAAAAAAYFVAMzMzMzNzTUAzMzMzM5NTQJqZmZmZWU5AzczMzMwMSkAAAAAAAIBHQJqZmZmZ2VRAAAAAAADgUEAAAAAAAIBSQAAAAAAAgFdAAAAAAADAV0AzMzMzM3NHQAAAAAAAwFdAmpmZmZkZUUBmZmZmZiZSQM3MzMzMDEtAmpmZmZlZR0CamZmZmdlKQAAAAAAAQElAzczMzMyMV0AAAAAAAMBXQAAAAAAAwFdAmpmZmZkZRUDNzMzMzMxLQA=="},"xaxis":"x","y":{"dtype":"f8","bdata":"bef7qfHS1T+TGARWDi3SP4lBYOXQItM\u002f16NwPQrX0z+R7Xw\u002fNV7SP2iR7Xw\u002fNc4\u002fppvEILByyD\u002fufD81XrrJP5ZDi2zn+9k\u002ffT81XrpJzD9mZmZmZmbWP9NNYhBYOdQ\u002f6SYxCKwcyj9SuB6F61HYP1pkO99Pjdc\u002fSOF6FK5H0T+mm8QgsHLQP1g5tMh2vs8\u002fsHJoke18zz9QjZduEoPQP7Kd76fGS9c\u002fqMZLN4lB0D+amZmZmZnRP5qZmZmZmck\u002f7nw\u002fNV660T9KDAIrhxbJP4ts5\u002fup8do\u002fEoPAyqFF1j\u002fl0CLb+X7SP6JFtvP91Ng\u002fVOOlm8Qg0D8v3SQGgZXbP5qZmZmZmdk\u002fokW28\u002f3U0D9YObTIdr7XP\u002fT91HjpJtE\u002f001iEFg51D9g5dAi2\u002fnWPw4tsp3vp9Y\u002fJQaBlUOLzD\u002fZzvdT46XTPx+F61G4HtU\u002f46WbxCCw2j\u002f2KFyPwvXYP30\u002fNV66SdQ\u002fObTIdr6fyj+TGARWDi3SP83MzMzMzNQ\u002fHVpkO99P1T+YbhKDwMrZP0w3iUFg5dA\u002fF9nO91Pj1T+iRbbz\u002fdTIP+58PzVeutE\u002f8tJNYhBY0T+R7Xw\u002fNV7SP8UgsHJokc0\u002fxSCwcmiR1T9GtvP91HjRP4ts5\u002fup8dI\u002fUrgehetRyD8hsHJoke3MPxkEVg4tstU\u002ftMh2vp8a1z9U46WbxCDQP7Kd76fGS8c\u002f+n5qvHST0D\u002f4U+Olm8TQP4cW2c73U9M\u002foBov3SQG0T8EVg4tsp3PP9V46SYxCNQ\u002faJHtfD81zj+4HoXrUbjWP0Jg5dAi29k\u002fJQaBlUOL1D9Ei2zn+6nRP6jGSzeJQdg\u002fwcqhRbbz1T+WQ4ts5\u002fvZP57vp8ZLN9E\u002f6SYxCKwc0j\u002fByqFFtvPNP6JFtvP91NA\u002fL90kBoGV0z89CtejcD3SP4lBYOXQIss\u002fnMQgsHJo0T9mZmZmZmbWP+F6FK5H4co\u002f\u002ftR46SYx0D\u002f4U+Olm8TQP3E9CtejcNU\u002fx0s3iUFg1T+amZmZmZnRP6jGSzeJQdg\u002fi2zn+6nx0j9xPQrXo3DVP6abxCCwctg\u002fgZVDi2zn0z9QjZduEoPQP05iEFg5tNA\u002fTDeJQWDl0D9I4XoUrkfZP3WTGARWDs0\u002f8KfGSzeJ0T+LbOf7qfHaP05iEFg5tNA\u002fEFg5tMh2zj9kO99PjZfWPzEIrBxaZNM\u002ftMh2vp8azz\u002fD9Shcj8LVP8dLN4lBYNU\u002faJHtfD811j\u002f6fmq8dJPYPz0K16NwPdI\u002fiUFg5dAi0z8hsHJoke3UP57vp8ZLN9E\u002fZmZmZmZm1j+mm8QgsHLQP3Noke18P9U\u002fokW28\u002f3U0D+YbhKDwMrRPwwCK4cW2c4\u002fPzVeukkM0j+F61G4HoXTP6AaL90kBtk\u002ffT81XrpJ1D+8dJMYBFbWP5zEILByaNE\u002fqvHSTWIQyD9oke18PzXOPyPb+X5qvNQ\u002fUrgehetR0D\u002fb+X5qvHTTP65H4XoUrtc\u002fUrgehetR2D8tsp3vp8bLP2Dl0CLb+dY\u002fUrgehetR0D9xPQrXo3DVP+F6FK5H4dI\u002f8tJNYhBY0T+Nl24Sg8DKP\u002fYoXI\u002fC9dA\u002fw\u002fUoXI\u002fC1T+TGARWDi3aP1YOLbKd79c\u002fuB6F61G4zj+gGi\u002fdJAbRPw=="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Road Pothole Depth (mm)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Cabin Vertical Vibration (G)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Suspension_Action"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"shapes":[{"line":{"color":"#d97706","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":0.25,"y1":0.25,"yref":"y"}],"annotations":[{"showarrow":false,"text":"Comfort Threshold (0.25 G)","x":1,"xanchor":"right","xref":"x domain","y":0.25,"yanchor":"bottom","yref":"y"}],"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Genesis Preview Electronically Controlled Suspension (Preview-ECS) scans road surfaces 15 meters ahead using front ADAS cameras and navigation data. Detecting a pothole 540 ms before impact, it softens damper solenoid valves in 10 ms to glide over bumps with zero cabin jolt.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Combine front camera road scanning with rear wheel preview algorithms to pre-condition rear shock absorbers before rear tires hit the obstacle.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Damper Force (N) vs Camera Lookahead Lead Time (ms)
+                            </h5>
+                            <small class="text-slate-600">Shows proactive damper pre-softening from 3,800 N down to 1,600 N before wheel impact</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Lead Time Sizing</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="ae8c501f-358d-4c15-af53-a448bc87b48f" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ae8c501f-358d-4c15-af53-a448bc87b48f")) {                    Plotly.newPlot(                        "ae8c501f-358d-4c15-af53-a448bc87b48f",                        [{"hovertemplate":"Suspension_Action=Nominal Magic Carpet Luxury Ride\u003cbr\u003eVision Lookahead Lead Time (ms)=%{x}\u003cbr\u003eShock Absorber Force (N)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Nominal Magic Carpet Luxury Ride","marker":{"color":"rgb(136, 204, 238)","symbol":"circle"},"mode":"markers","name":"Nominal Magic Carpet Luxury Ride","orientation":"v","showlegend":true,"x":{"dtype":"i2","bdata":"HwRuBZ0CnQIVAtgCFgRBA14CSgInAuEDAAPtAf0EDASFAogEZQM2A10C+AYpA4ECSgMtAs4CgwMsAiACBgPXAi8CbATuAbwD6ANwA6sCwwIKAkMCmwIRBPsFYAWBAkEDqgaOBvAFagKkA9cDcQNBAgwCSwP0AqkCKgWoBhQCVAL+AfwBgwLZBh8FeAMNA2MCjwX\u002fAe8BXAI8BVAD0wRzAh0CmwRXAukC3gOPApIC2wNqA\u002fMCiQNTAqEEsgaRA4sDQgPKA1MC7QNyA48CAgIrAmoCNQM+BZsGZAJOBf4C8wH3ARcDDgN4Az0E3gK\u002fBHwCwAKuA+0B8QEvBVUD1QK6ApcDVgIzAowGvQMTBdgDegIpA+QDOgP6AnsDRATfAosCowL8A8oC0QJEAgsDgAI0A60CnwX2Ac8CBQVcA28CBQJlBSsCoQNmAm0CzQVZBKwDmwJLAnQCNQbiBfsF4wJ3Al4C8wGXBDUC0gNGArkCVgLuA\u002f0CGAIbBhkCGwNrArsC1QIrApIClgIiAi4CVgZUAiwCLQUyAu8CNAOpAkQDPgIVBMkDIgKKAoMCggPQAhYDWwSVA0QCmwLxAvwBUgKJA\u002fwBnQN\u002fA4ECLgJJAnID3QR8Bs0FuQOiBDIFtwK9BPMBWgK5BmUEtgT9AVgCqQKIAiMC6AIqAgQDDgPiAywCfwIVAksFIAZ5A5AEGANMAikCPAMkAoYEUwMfAhcGLwIGBnMC8AGFBkoCRAJeAx8DhwMcAzkCewJCBv0BKALuAS0DJgNqA6AC2gM9A\u002fYBRwRWAvwBmQNnAk4CIwKtBAAGVwQJAxgCbwY+A90EogVUAgIHPgJ3AiQCMgQKAsAE2QJiAtYE8QEDBMkCYAKVBRcGBAIuAqsF+QIeApkDbgL4A50C8wFXAmcCXwULAj4ChAOtAwICZAXyAfYDHQUuAiMCfwIiAm0CvAQWBQkCUAOUAvwDDgaaA10F\u002fwEtA70EWAPmAu4BRwQMAusEBQYjAjYEIQKFAhwC9wEhAqIClgPzAjsDpgKlBGsGOgK5Bf8B\u002fwLGAiUGugWJBAIC9gEtBgoCCATTAsIFtAOpAuwBuAIlAhMCQAIjAhUCYgOtAv4BxgJkBQMCPASmBP4C7wEZBisD9QF4BA4DtAP8AfkC7AG9Ar4CgwOQAqQChALmAqgCHAR8Bt0EGwM1BKIDKwO5AtACnwL5AR4DWANRAlAEpQLbBIICoALdA4wCegIYBHACXALkAvAELAJjAqsCZQJMBhYCRAIgBHUDfgKDAkAFZgb6AYkEvgLYApAC3wL9AQsCdQI="},"xaxis":"x","y":{"dtype":"i2","bdata":"kw4lDZIMeQ1KDhUNrg1fDBEONwx9DMIN5Q1sCkMObQuFCxYM2QyxC8gOzAyPD1wOZg0pDtIOfgywC5kOyQ3VDZQK2A1nDS0NqAzfDW0MVAyHDAcO5g6UDPwOXAwADVwO\u002fAw7DXMOMA0ADz8MfA3pDdQNDg+ADowNYg5aDFUNFg56Ds4MxwzJDTANAwzlC8QN2Ax1DToNJgwyDgYNBA4YDEcNuAqwDgINFQvfDZwNbA7JCocNbA4qDsoOnQwxC\u002fANzA11DUAKNQupDaYMKw0DDeMOAA46DuAMXQ6JCvEKUAzHDnULpAttDtIM7QwIDicOSQvSDcYN3g0jDZgOyAwpDNwNCw5PDRwPuw2lDcsMcgxRDJcNlQ0gDeENqg1KDHUO4wuMDZQMRAxWDm8MmAt7CjkNHQpiDr8Now23DvYNfQ3iDfANrg6lDjAMjg7cDGMMTg2nC2oOnwvACwUNGQ+sDbIOyQ7ADWwO9Ql7DoENiw1VDz4ODA5VDtkOLw4kDr8MwQ67DmwMWQyFDCQOhg2eDdUNIAxzCrAM1wzHDakMOA6lDHUNWw7HDWILCA2ODn4OgQ6rDKMLDg0+C38LjAsZDPAN4w6UDu8OiAz8DVsOjw1ACr4MRQ4ID2INzA6aDsAMcA7xDaQN4graDZ4OHA6vDjsMcg5MDQUPbwuiDGMMjQvGDe0N8A7WC1kO2Av4DU0LRAvPDaMNdA7WDZcO6A3RDVIMZg2MDRQNcgt9DvsLug6nDtsNdApiDWENLQ7tDMcMbgxMDqQNQwvaDdcMSA1VDgMNMw0lDvUJ3AziDY4Nsg1DDVYNHA6zDmEO5A5xDccMXg0ADKkMxQ0ADiYOAA2nDpUNGw59DlgOTw1sDAwNOApYDLsNYg7pDVUNHguZDZwMHA00DaILygvNC7ELGQ75C80NSQuXDVINwgvhDfQNiAxdDGsM\u002fwxHDcQLhQ7AC4gOiA2+DR0OLwwSDuINDAwBD9oNVw7iDP8KXw30DgUNbQ1zDcINYw0sDCAMgwycDFoNWAzbDWcN7A2ZDV8KRwqoC7kLxw1KDS0M1A3jDBALQQ4DDl4NIAt\u002fDaYNFw4XDQINGw3oDiMOWg1lDskNmgurDmIKwwwdCoIOwAkMDEYOuQykDUIMRQwyDUELQAz7CysNlg7TDlkMjQzQCbcMzg0XDf4Mrg3BDUEO0go\u002fDrcKrQ3QDYQOvQ2kC9oObg6gDPEMAgqVDoIOew5DDnIO2w3cDJwOYg5kDpcN3AwQDCkMegs7DUoLLQ0tDowMsg3ZDfUL1womDGsNLg4ODZYMDQ0="},"yaxis":"y","type":"scatter"},{"hovertemplate":"Suspension_Action=Pothole Pre-Damping Softening Active\u003cbr\u003eVision Lookahead Lead Time (ms)=%{x}\u003cbr\u003eShock Absorber Force (N)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Pothole Pre-Damping Softening Active","marker":{"color":"rgb(204, 102, 119)","symbol":"circle"},"mode":"markers","name":"Pothole Pre-Damping Softening Active","orientation":"v","showlegend":true,"x":{"dtype":"i2","bdata":"0wJBBm8CUwUDAh0CnARDAv4BKQNeApUDkQKiApgCBgNTBA0EgAKDAh8DHQLrAssCyALdBHUCEgJBBnACdQR4A8sF7AMqAjMClwLsBoECSAJxBAYC+QEjBM0CHgK8Bp8FbAKdBFECwwLaA68CrwIEBQACYgOoBvkBZgM1Ax4CxQL0ATkCUQU5ApUErQIcAjkCYQLXAtICtAVPArECWgImBEUDJwK6BI8CDwYSBCsCmwXvAYACqANmAgoEZgKIBEYDVQOZAi0CcQLtAfIBjwMKBAIDSQJMAoQCGgMvBJgC8gaWBQ=="},"xaxis":"x","y":{"dtype":"i2","bdata":"wQfzCfAHgQqKB\u002fkJsgljCsQF9wmwBMYHEwmwBL0FdAnOCAcJawlwCS0FzAl3CioKFgrsCbYEWQZsCC8FGQqwBLsEMgmwBCUJxgUzBcoFJAoICzYHsASjBZMHiApXBy8IegewBLMJnQYKClEIDAoECDQK5AZiCCgJVQqMCrQFRAYuCl4Kzgn1B+4HKQrUCCcILggpCOIE9QeJCLAEsASwBJwISgpBCdQKdwoHB7cK7Ac\u002fBtUKRwnoCY0GQAbZCbAEqgd2CLAESQlNCn4HIgqwBL0IYAmwBJkJZgkzBksHpgmSBg=="},"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Vision Lookahead Lead Time (ms)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Shock Absorber Force (N)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Suspension_Action"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Longer vision lead times (400-800 ms) provide ample margin for pneumatic air springs and electronic dampers to transition into plush isolation mode.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Incorporate multi-chamber air suspension on Genesis G90 and GV80 flagship models, creating a whisper-quiet luxury cabin experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Cabin Vertical Impact Vibration Spread (G)
+                            </h5>
+                            <small class="text-slate-600">Shows 97.2% of road impacts maintain smooth luxury ride comfort under 0.22 G</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Vibration Spread</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="f9b89185-4ca9-427a-b76d-7537577a98fa" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f9b89185-4ca9-427a-b76d-7537577a98fa")) {                    Plotly.newPlot(                        "f9b89185-4ca9-427a-b76d-7537577a98fa",                        [{"bingroup":"x","hovertemplate":"Suspension_Action=Nominal Magic Carpet Luxury Ride\u003cbr\u003eVertical Vibration (G)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Nominal Magic Carpet Luxury Ride","marker":{"color":"#0284c7","pattern":{"shape":""}},"name":"Nominal Magic Carpet Luxury Ride","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"g8DKoUW2wz9aZDvfT43HP+F6FK5H4bo\u002f7FG4HoXrwT8Sg8DKoUXGP9Ei2\u002fl+arw\u002f2\u002fl+arx00z+HFtnO91PDPxKDwMqhRcY\u002fWDm0yHa+vz99PzVeuknMP2IQWDm0yMY\u002fz\u002fdT46WbxD9vEoPAyqHFP0oMAiuHFrk\u002fnMQgsHJowT\u002fRItv5fmrMP\u002fhT46WbxMA\u002fmpmZmZmZuT8UrkfhehTOP3sUrkfherQ\u002fNV66SQwCyz8730+Nl27CPwrXo3A9Csc\u002faJHtfD81vj81XrpJDALLPxBYObTIdr4\u002f7nw\u002fNV66yT\u002f0\u002fdR46SbBP5ZDi2zn+8k\u002fkxgEVg4twj8nMQisHFrEP3npJjEIrLw\u002fexSuR+F6xD9MN4lBYOXAP8l2vp8aL70\u002fokW28\u002f3UyD+iRbbz\u002fdTQP2ZmZmZmZsY\u002fexSuR+F6xD+6SQwCK4e2Pz81XrpJDMI\u002f4XoUrkfhuj8hsHJoke3MP3e+nxov3cQ\u002fqvHSTWIQyD\u002fsUbgehevBP\u002f7UeOkmMcg\u002fPzVeukkMwj+cxCCwcmjBP3e+nxov3cQ\u002fTDeJQWDlwD+DwMqhRbbDP4XrUbgehcs\u002fPQrXo3A9yj9vEoPAyqHFP+kmMQisHMo\u002fhxbZzvdTwz\u002fHSzeJQWDFP9nO91Pjpcs\u002fPQrXo3A9yj+HFtnO91PDPw4tsp3vp8Y\u002fAiuHFtnOxz9U46WbxCDAP2IQWDm0yMY\u002fK4cW2c73wz\u002fpJjEIrBzKP0oMAiuHFrk\u002f16NwPQrXwz\u002fD9Shcj8LFP0oMAiuHFsk\u002fYhBYObTIxj83iUFg5dDCP1CNl24Sg8A\u002fWDm0yHa+zz+6SQwCK4fGP\u002fCnxks3idE\u002fEoPAyqFFxj9Ei2zn+6nBP\u002fyp8dJNYsA\u002fyXa+nxovvT+JQWDl0CLLP6wcWmQ7388\u002f7FG4HoXrwT83iUFg5dDCP5zEILByaME\u002fN4lBYOXQwj9MN4lBYOXAP5ZDi2zn+8k\u002fmpmZmZmZyT8QWDm0yHa+P9nO91Pjpbs\u002fuB6F61G4zj+28\u002f3UeOnGP5HtfD81Xso\u002fvHSTGARWzj+sHFpkO9\u002fPP+Olm8QgsMI\u002fc2iR7Xw\u002fxT\u002f2KFyPwvXIP2iR7Xw\u002fNb4\u002fgZVDi2znyz\u002f4U+Olm8TAPzMzMzMzM8M\u002fx0s3iUFgxT8rhxbZzvfDP2IQWDm0yMY\u002fokW28\u002f3UuD8IrBxaZDu\u002fPxKDwMqhRcY\u002f7FG4HoXrwT+BlUOLbOe7P8dLN4lBYMU\u002f\u002fKnx0k1iwD8xCKwcWmTLPzeJQWDl0MI\u002fWDm0yHa+vz9WDi2yne\u002fHPycxCKwcWsQ\u002fqvHSTWIQyD+e76fGSzfJP76fGi\u002fdJMY\u002fAAAAAAAAwD8730+Nl27CPzvfT42XbsI\u002fIbByaJHtvD+q8dJNYhDIP4ts5\u002fup8cI\u002fWDm0yHa+vz9OYhBYObTIP0a28\u002f3UeMk\u002fF9nO91PjxT9g5dAi2\u002fm+P9V46SYxCMw\u002fEoPAyqFFxj81XrpJDALLPwIrhxbZzsc\u002fLbKd76fGyz8fhetRuB7FP4lBYOXQIss\u002fvp8aL90kxj9KDAIrhxbJP5qZmZmZmbk\u002f9P3UeOkmwT8ZBFYOLbK9PzeJQWDl0MI\u002fhetRuB6Fyz\u002fpJjEIrBzKP76fGi\u002fdJMY\u002fj8L1KFyPwj\u002fhehSuR+G6P9NNYhBYOcQ\u002fCKwcWmQ7vz8nMQisHFrEPwRWDi2ync8\u002fI9v5fmq8tD8CK4cW2c7HP+58PzVeusk\u002fpHA9CtejwD9SuB6F61HIP2IQWDm0yMY\u002fK4cW2c73wz+kcD0K16PAPyGwcmiR7cw\u002foBov3SQGwT\u002fD9Shcj8LFPxsv3SQGgbU\u002foBov3SQGwT+HFtnO91PDP7pJDAIrh8Y\u002f46WbxCCwwj9xPQrXo3DNPzvfT42XbsI\u002foBov3SQGwT\u002fy0k1iEFjJP7pJDAIrh8Y\u002f5\u002fup8dJNwj\u002f2KFyPwvXQP2q8dJMYBMY\u002fqvHSTWIQuD9\u002farx0kxjEPxBYObTIdr4\u002fUrgehetRyD9U46WbxCDAPwrXo3A9Crc\u002fexSuR+F6xD\u002fTTWIQWDnEPxsv3SQGgcU\u002fiUFg5dAiuz\u002fLoUW28\u002f3EP9ejcD0K18M\u002fokW28\u002f3UyD+4HoXrUbi+P8dLN4lBYMU\u002f2\u002fl+arx0wz9eukkMAivHP5HtfD81Xso\u002fK4cW2c73wz83iUFg5dDCP2q8dJMYBMY\u002foBov3SQGwT8rhxbZzvfDP5huEoPAysE\u002fgZVDi2znyz8rhxbZzvfDP3Noke18P7U\u002fi2zn+6nxwj\u002f0\u002fdR46SbBPzEIrBxaZMs\u002fKVyPwvUovD+DwMqhRbbDP9v5fmq8dMM\u002fBoGVQ4tsxz+Nl24Sg8DKP+kmMQisHMo\u002fGy\u002fdJAaBxT+4HoXrUbi+P9ejcD0K18M\u002fy6FFtvP9xD+e76fGSzfJPx+F61G4HsU\u002foBov3SQGwT\u002fLoUW28\u002f3EP4PAyqFFtsM\u002fCtejcD0Kxz9eukkMAivHP6rx0k1iENA\u002fexSuR+F6xD\u002f4U+Olm8TAPy\u002fdJAaBlcM\u002fZmZmZmZmxj+28\u002f3UeOnGP7bz\u002fdR46cY\u002fUrgehetRyD+q8dJNYhDIP5qZmZmZmck\u002fdZMYBFYOzT9WDi2yne\u002fHP5zEILByaME\u002f8KfGSzeJwT9mZmZmZmbGP1K4HoXrUcg\u002fqvHSTWIQuD9zaJHtfD\u002fFP9NNYhBYOcQ\u002fF9nO91PjxT97FK5H4Xq0Pz0K16NwPco\u002fSgwCK4cWyT97FK5H4Xq0P9ejcD0K18M\u002f001iEFg5xD93vp8aL93EP9nO91Pjpcs\u002fbef7qfHSzT\u002fD9Shcj8LFP7Kd76fGS8c\u002fF9nO91PjxT+yne+nxkvHP39qvHSTGMQ\u002f\u002fKnx0k1iwD83iUFg5dDCP9nO91Pjpbs\u002fvp8aL90kxj8v3SQGgZXDPyPb+X5qvMQ\u002fO99PjZduwj9KDAIrhxbJPz81XrpJDMI\u002fzczMzMzMzD\u002fRItv5fmq8P1K4HoXrUcg\u002fUI2XbhKDwD+TGARWDi3CP+F6FK5H4co\u002fj8L1KFyPwj+TGARWDi3CP6JFtvP91Mg\u002fqvHSTWIQyD\u002fsUbgehevBP30\u002fNV66Scw\u002f\u002fKnx0k1iwD\u002fsUbgehevBPxKDwMqhRcY\u002fz\u002fdT46WbxD\u002fTTWIQWDnEP4ts5\u002fup8cI\u002fYOXQItv5vj+WQ4ts5\u002fvJP0a28\u002f3UeMk\u002fsHJoke18vz+wcmiR7Xy\u002fPxfZzvdT48U\u002fqvHSTWIQuD+TGARWDi3CP4cW2c73U8M\u002fEoPAyqFFxj+DwMqhRbbDP9NNYhBYOcQ\u002fbef7qfHSzT\u002fXo3A9CtfDP+f7qfHSTcI\u002fMzMzMzMzwz8rhxbZzvfDPycxCKwcWsQ\u002f7nw\u002fNV66yT9KDAIrhxbJP\u002fCnxks3icE\u002fXI\u002fC9Shczz8GgZVDi2zHP+kmMQisHLo\u002fqMZLN4lBwD9oke18PzW+P9Ei2\u002fl+asw\u002fL90kBoGVwz8\u002fNV66SQzCPz0K16NwPco\u002frkfhehSuxz8nMQisHFrEP2IQWDm0yLY\u002f6SYxCKwcyj9OYhBYObTIPxfZzvdT48U\u002farx0kxgExj8\u002fNV66SQzCP3sUrkfherQ\u002fcT0K16NwvT9U46WbxCDAP7Kd76fGS7c\u002fhxbZzvdTwz9xPQrXo3C9P1g5tMh2vr8\u002fHVpkO99PzT9SuB6F61HIP6AaL90kBsE\u002fwcqhRbbzvT9eukkMAivHP42XbhKDwMo\u002fuB6F61G4zj9eukkMAivHP6jGSzeJQdA\u002fSOF6FK5HwT8730+Nl27CP2IQWDm0yMY\u002ftvP91Hjpxj9cj8L1KFzPP9v5fmq8dMM\u002f7FG4HoXrwT89CtejcD3KP0SLbOf7qcE\u002fnMQgsHJowT8X2c73U+PFP3sUrkfhesQ\u002fSOF6FK5H0T8OLbKd76fGP4ts5\u002fup8cI\u002fwcqhRbbzzT\u002fTTWIQWDnEP3Noke18P8U\u002f6SYxCKwcuj+sHFpkO9\u002fPP\u002f7UeOkmMcg\u002fVOOlm8QgwD\u002fTTWIQWDnEPx+F61G4HsU\u002fvp8aL90kxj9zaJHtfD+1PzvfT42XbsI\u002fUrgehetRyD+sHFpkO9\u002fPP5MYBFYOLcI\u002fwcqhRbbzvT8IrBxaZDu\u002fP39qvHSTGMQ\u002fcT0K16NwvT\u002fpJjEIrBzKP3sUrkfherQ\u002f2c73U+Oluz8hsHJoke28P3Noke18P8U\u002fokW28\u002f3UuD8ZBFYOLbK9P4XrUbgehcs\u002fUrgehetRyD8730+Nl27CP4GVQ4ts57s\u002fwcqhRbbzvT\u002fXo3A9CtfDP9ejcD0K18M\u002fH4XrUbgexT\u002fRItv5fmq8P9nO91Pjpbs\u002fbxKDwMqhxT\u002fXo3A9CtfDP3sUrkfhesQ\u002f6SYxCKwcyj8lBoGVQ4vMP0jhehSuR9E\u002fXrpJDAIrxz97FK5H4Xq0P+F6FK5H4co\u002feekmMQisvD9xPQrXo3C9Px+F61G4HsU\u002fbxKDwMqhxT+WQ4ts5\u002fvJP23n+6nx0s0\u002fgZVDi2znuz9Ei2zn+6nBPwaBlUOLbMc\u002fUrgehetRuD9qvHSTGATGP8P1KFyPwsU\u002flkOLbOf7yT+6SQwCK4fGP166SQwCK8c\u002fuB6F61G4vj9CYOXQItu5PyPb+X5qvMQ\u002fCKwcWmQ7zz9eukkMAivHPxsv3SQGgbU\u002fqvHSTWIQuD\u002fb+X5qvHTDP0Jg5dAi28k\u002fexSuR+F6tD8CK4cW2c7HP05iEFg5tMg\u002fCtejcD0Kxz9WDi2yne\u002fHP\u002f7UeOkmMcg\u002ffT81XrpJzD8dWmQ730\u002fNP5MYBFYOLcI\u002fMzMzMzMzwz\u002fXo3A9CtfDP4ts5\u002fup8cI\u002f30+Nl24Swz9mZmZmZmbGP8uhRbbz\u002fcQ\u002fNV66SQwCyz+amZmZmZnJP9Ei2\u002fl+asw\u002fJzEIrBxaxD8GgZVDi2zHP4PAyqFFtsM\u002fTDeJQWDlwD+DwMqhRbbDPyuHFtnO98M\u002fAAAAAAAAwD+JQWDl0CK7P+Olm8QgsMI\u002f3SQGgZVDyz+q8dJNYhDQPwaBlUOLbMc\u002faJHtfD81vj+TGARWDi3CP0jhehSuR8E\u002fMQisHFpkyz+TGARWDi3CP3npJjEIrMw\u002f7FG4HoXrwT\u002fRItv5fmq8P+F6FK5H4bo\u002fPzVeukkMwj81XrpJDALLP4\u002fC9Shcj8I\u002fy6FFtvP9xD9g5dAi2\u002fm+PwisHFpkO78\u002fAiuHFtnOtz9SuB6F61HIPxsv3SQGgcU\u002fexSuR+F6tD+cxCCwcmjBPwAAAAAAAMA\u002feekmMQisvD+HFtnO91PDPyUGgZVDi8w\u002fK4cW2c73wz9zaJHtfD\u002fFPwrXo3A9Csc\u002fj8L1KFyPwj+PwvUoXI\u002fCP\u002fhT46WbxMA\u002fg8DKoUW2wz97FK5H4XrEP+Olm8QgsMI\u002fF9nO91PjxT\u002fn+6nx0k3CP8\u002f3U+Olm8Q\u002fc2iR7Xw\u002fxT9U46WbxCDAP7x0kxgEVs4\u002fRIts5\u002fupwT9zaJHtfD\u002fFP3sUrkfhesQ\u002fqvHSTWIQyD+q8dJNYhDIPylcj8L1KLw\u002f+n5qvHSTyD8Sg8DKoUW2PzvfT42XbsI\u002f9P3UeOkmwT9qvHSTGATGP0w3iUFg5cA\u002f001iEFg5xD\u002fb+X5qvHTDP5MYBFYOLcI\u002fJzEIrBxaxD+gGi\u002fdJAbBP0jhehSuR8E\u002fi2zn+6nxwj+PwvUoXI\u002fCPy\u002fdJAaBlcM\u002fVOOlm8QgwD+kcD0K16PAP5qZmZmZmck\u002fexSuR+F6tD9MN4lBYOXAP2q8dJMYBMY\u002f8KfGSzeJwT+4HoXrUbi+P\u002fYoXI\u002fC9cg\u002fppvEILByyD+YbhKDwMrBPwrXo3A9Crc\u002fJzEIrBxaxD\u002fRItv5fmq8Px+F61G4HsU\u002fw\u002fUoXI\u002fCxT9WDi2yne\u002fHP2ZmZmZmZsY\u002fsp3vp8ZLxz9vEoPAyqHFPycxCKwcWsQ\u002f7FG4HoXrwT+DwMqhRbbDP2IQWDm0yMY\u002f2c73U+Oluz8rhxbZzvfDP99PjZduEsM\u002fc2iR7Xw\u002fxT+BlUOLbOe7Pylcj8L1KMw\u002fEFg5tMh2vj\u002fpJjEIrBzKP4ts5\u002fup8cI\u002fhetRuB6Fyz8dWmQ730\u002fNP+F6FK5H4bo\u002fXrpJDAIrxz8nMQisHFrEP\u002fYoXI\u002fC9cg\u002fDi2yne+nxj+TGARWDi3CPy\u002fdJAaBlcM\u002fnMQgsHJowT9mZmZmZmbGP57vp8ZLN8k\u002fMzMzMzMzwz+kcD0K16PAP8dLN4lBYMU\u002fF9nO91PjxT8rhxbZzvfDP1pkO99Pjcc\u002f1XjpJjEIzD9oke18PzXOP0Jg5dAi28k\u002fMQisHFpkyz+oxks3iUHAPxfZzvdT48U\u002f9ihcj8L10D83iUFg5dDCP2iR7Xw\u002fNb4\u002fO99PjZduwj8ZBFYOLbLNP8l2vp8aL80\u002fqvHSTWIQyD+TGARWDi3CP99PjZduEsM\u002fPzVeukkMwj\u002fdJAaBlUPLP8\u002f3U+Olm8Q\u002fObTIdr6fuj8\u002fNV66SQzCPw4tsp3vp8Y\u002fWmQ730+Ntz\u002fXo3A9CtfDP\u002fYoXI\u002fC9cg\u002farx0kxgExj\u002fLoUW28\u002f3EP7Kd76fGS8c\u002fL90kBoGVwz9aZDvfT43HPwIrhxbZzsc\u002fEFg5tMh2vj+6SQwCK4fGP8l2vp8aL70\u002fK4cW2c73wz9GtvP91HjJP+F6FK5H4bo\u002fke18PzVeyj+oxks3iUHAP3e+nxov3cQ\u002fy6FFtvP9xD8lBoGVQ4vMP28Sg8DKocU\u002fL90kBoGVwz8AAAAAAADAP6AaL90kBsE\u002flkOLbOf7yT+iRbbz\u002fdS4P3E9CtejcL0\u002fVg4tsp3vxz8zMzMzMzPDPzeJQWDl0MI\u002fRrbz\u002fdR40T8nMQisHFrEP42XbhKDwMo\u002fw\u002fUoXI\u002fCxT\u002f6fmq8dJPIP5ZDi2zn+8k\u002fj8L1KFyPwj+0yHa+nxrPP0w3iUFg5dA\u002f0SLb+X5qvD\u002f8qfHSTWLAPylcj8L1KLw\u002ftMh2vp8azz\u002fJdr6fGi+9P99PjZduEsM\u002fokW28\u002f3UyD+mm8QgsHLIP7TIdr6fGs8\u002fqvHSTWIQyD9CYOXQItu5P90kBoGVQ8s\u002fnMQgsHJowT+sHFpkO9\u002fPP9Ei2\u002fl+asw\u002fCtejcD0Kxz\u002fsUbgehevRP+XQItv5fso\u002f7FG4HoXrwT8fhetRuB7FPz81XrpJDMI\u002fUI2XbhKDwD9\u002farx0kxjEP76fGi\u002fdJMY\u002f8KfGSzeJwT\u002fTTWIQWDnEP6JFtvP91Mg\u002fukkMAiuHxj9t5\u002fup8dLNP+f7qfHSTcI\u002fWDm0yHa+vz+cxCCwcmjBP5ZDi2zn+8k\u002fRrbz\u002fdR4yT8nMQisHFrEPzEIrBxaZMs\u002fPQrXo3A9yj8QWDm0yHa+P65H4XoUrsc\u002fUI2XbhKDwD+PwvUoXI\u002fCP2q8dJMYBMY\u002f\u002ftR46SYxyD9zaJHtfD\u002fFPxBYObTIdr4\u002fI9v5fmq8xD\u002f0\u002fdR46SbBP6RwPQrXo8A\u002f16NwPQrXwz8IrBxaZDu\u002fP0oMAiuHFsk\u002fVg4tsp3vxz9qvHSTGATGPxkEVg4tss0\u002fexSuR+F6xD9g5dAi2\u002fm+P\u002f7UeOkmMcg\u002fEFg5tMh2zj\u002fhehSuR+HKP3Noke18P7U\u002f9P3UeOkmwT8hsHJoke3MP9Ei2\u002fl+arw\u002fqvHSTWIQuD85tMh2vp\u002fKPwIrhxbZzrc\u002fQmDl0CLbuT\u002fP91PjpZvEP2ZmZmZmZsY\u002fvp8aL90kxj+6SQwCK4fGP6AaL90kBtE\u002fObTIdr6fyj\u002fXo3A9CtfDPw4tsp3vp8Y\u002f2c73U+Oluz\u002f0\u002fdR46SbBP166SQwCK8c\u002ftvP91Hjpxj9oke18PzW+P1pkO99Pjcc\u002f7nw\u002fNV66yT+yne+nxku3P6AaL90kBsE\u002feekmMQisvD+DwMqhRbbDPw4tsp3vp8Y\u002flkOLbOf7yT9\u002farx0kxjEP1pkO99Pjcc\u002fsp3vp8ZLxz9GtvP91HjJP2IQWDm0yLY\u002f5dAi2\u002fl+yj8730+Nl27CPy\u002fdJAaBlcM\u002fj8L1KFyPwj\u002fdJAaBlUPLP\u002fYoXI\u002fC9dA\u002fppvEILByyD8730+Nl27CP4GVQ4ts58s\u002fYhBYObTIxj9eukkMAivHP6AaL90kBsE\u002fSgwCK4cWuT+q8dJNYhDIP\u002fT91HjpJsE\u002fRrbz\u002fdR4yT+LbOf7qfHCP+kmMQisHLo\u002f30+Nl24Swz\u002f4U+Olm8TAP1K4HoXrUbg\u002fj8L1KFyPwj+28\u002f3UeOnGP6JFtvP91Mg\u002fSgwCK4cWuT8nMQisHFrEP1CNl24Sg9A\u002fy6FFtvP9xD956SYxCKy8P+58PzVeutE\u002fWmQ730+Ntz91kxgEVg7NP+Olm8QgsMI\u002fMQisHFpkyz\u002fP91PjpZvEP\u002fp+arx0k8g\u002fwcqhRbbzvT9vEoPAyqHFPyUGgZVDi8w\u002fPzVeukkMwj+R7Xw\u002fNV7KP5zEILByaME\u002fVOOlm8Qg0D+PwvUoXI\u002fCP28Sg8DKocU\u002fCKwcWmQ7zz9KDAIrhxbJP0a28\u002f3UeMk\u002faJHtfD81vj+R7Xw\u002fNV7KP76fGi\u002fdJMY\u002fhetRuB6Fyz9zaJHtfD\u002fFP+58PzVeusk\u002fsp3vp8ZLxz8OLbKd76fGP6JFtvP91Mg\u002fObTIdr6fyj9KDAIrhxbJP4GVQ4ts57s\u002fH4XrUbgexT956SYxCKy8P39qvHSTGMQ\u002fUrgehetR0D\u002fVeOkmMQjMP1g5tMh2vr8\u002fUrgehetRuD8X2c73U+PFP4cW2c73U8M\u002f2\u002fl+arx0wz9\u002farx0kxjEP0jhehSuR8E\u002fiUFg5dAiyz\u002fXo3A9CtfDP0Jg5dAi28k\u002fgZVDi2znyz8j2\u002fl+arzEP76fGi\u002fdJMY\u002fXI\u002fC9Shczz8v3SQGgZXDP05iEFg5tMg\u002ff2q8dJMYxD9mZmZmZmbGPwisHFpkO88\u002fhxbZzvdTwz8Sg8DKoUW2P8HKoUW2870\u002fI9v5fmq8xD\u002f+1HjpJjHIP\u002fCnxks3icE\u002fuB6F61G4vj+R7Xw\u002fNV7KP6rx0k1iEMg\u002fsHJoke18vz9zaJHtfD\u002fFP90kBoGVQ8s\u002farx0kxgExj+cxCCwcmjBP2q8dJMYBMY\u002fjZduEoPAyj\u002fb+X5qvHTDP3Noke18P8U\u002fCtejcD0Kxz9aZDvfT43HP1K4HoXrUcg\u002fGQRWDi2yzT+HFtnO91PDP9v5fmq8dMM\u002fDi2yne+nxj8EVg4tsp3PPxkEVg4tsr0\u002f30+Nl24Swz8dWmQ730\u002fNP8UgsHJokc0\u002farx0kxgExj8v3SQGgZXDP+f7qfHSTcI\u002f+n5qvHSTyD9YObTIdr6\u002fP76fGi\u002fdJMY\u002fN4lBYOXQwj+iRbbz\u002fdS4Px+F61G4HsU\u002fukkMAiuHxj\u002fRItv5fmq8P5huEoPAysE\u002f5dAi2\u002fl+yj+q8dJNYhDIP\u002fhT46WbxMA\u002fnMQgsHJowT8X2c73U+PFP\u002fyp8dJNYsA\u002fkxgEVg4twj9iEFg5tMjGP6RwPQrXo8A\u002fRrbz\u002fdR4yT9QjZduEoPAP1CNl24Sg9A\u002fmpmZmZmZuT8730+Nl27CP99PjZduEsM\u002fKVyPwvUozD+YbhKDwMrBP6RwPQrXo8A\u002fYhBYObTIxj8GgZVDi2zHP1pkO99Pjcc\u002fvHSTGARWzj+kcD0K16PQP3E9CtejcL0\u002fVOOlm8QgwD8j2\u002fl+arzEP1TjpZvEIMA\u002f9ihcj8L1yD9qvHSTGATGP6rx0k1iELg\u002fi2zn+6nxwj+cxCCwcmjRP3sUrkfhesQ\u002fppvEILByyD\u002ffT42XbhLDP1CNl24Sg8A\u002fsHJoke18vz+DwMqhRbbDP8l2vp8aL80\u002fYOXQItv5vj9mZmZmZmbGP+f7qfHSTcI\u002fJQaBlUOLzD+0yHa+nxrPP2iR7Xw\u002fNb4\u002fWDm0yHa+zz8Sg8DKoUW2P1K4HoXrUcg\u002f46WbxCCwwj\u002f+1HjpJjHIPyGwcmiR7cw\u002fMQisHFpkyz\u002f6fmq8dJPIP\u002fCnxks3icE\u002fYhBYObTIxj+amZmZmZnJP1CNl24Sg8A\u002fHVpkO99PzT+WQ4ts5\u002fvJP8dLN4lBYMU\u002fmpmZmZmZuT9OYhBYObTIP3Noke18P8U\u002fVOOlm8QgwD9WDi2yne\u002fHP8P1KFyPwsU\u002f8tJNYhBYyT\u002fJdr6fGi+9P0oMAiuHFsk\u002fTmIQWDm0yD+kcD0K16PAP+kmMQisHLo\u002fke18PzVeyj8rhxbZzvfDP8HKoUW2870\u002fsHJoke18vz+gGi\u002fdJAbRP1TjpZvEIMA\u002fCtejcD0Kxz+WQ4ts5\u002fvJP8\u002f3U+Olm8Q\u002fxSCwcmiRzT9Ei2zn+6nBP9Ei2\u002fl+arw\u002f+FPjpZvEwD9mZmZmZmbGP\u002fT91HjpJsE\u002fmpmZmZmZyT9QjZduEoPAP4PAyqFFtsM\u002fSgwCK4cWuT\u002fD9Shcj8K1P6JFtvP91Lg\u002fPzVeukkMwj\u002f+1HjpJjHIP6rx0k1iELg\u002f9P3UeOkmwT9Ei2zn+6nBPxsv3SQGgbU\u002fsHJoke18vz9MN4lBYOXQPzVeukkMAss\u002fbxKDwMqhxT8nMQisHFrEP4ts5\u002fup8cI\u002fiUFg5dAiyz9vEoPAyqHFP3sUrkfhesQ\u002f3SQGgZVDyz89CtejcD3KP3sUrkfherQ\u002f9ihcj8L1yD956SYxCKzMPxSuR+F6FM4\u002f+FPjpZvEwD8X2c73U+PFPxKDwMqhRcY\u002f0SLb+X5qvD\u002fb+X5qvHTDP\u002fYoXI\u002fC9cg\u002fsp3vp8ZLxz\u002f0\u002fdR46SbBP+XQItv5fso\u002fqMZLN4lBwD\u002f+1HjpJjHIPyuHFtnO98M\u002f0SLb+X5qzD\u002f4U+Olm8TAPx1aZDvfT80\u002foBov3SQGwT97FK5H4XrEP8uhRbbz\u002fbQ\u002fN4lBYOXQwj\u002fP91PjpZvEP3E9CtejcL0\u002f0SLb+X5qvD9qvHSTGATGP6AaL90kBsE\u002fTmIQWDm0yD8MAiuHFtnOP4\u002fC9Shcj8I\u002fUrgehetRyD9CYOXQItu5P4cW2c73U8M\u002fmpmZmZmZuT+JQWDl0CLLP2IQWDm0yMY\u002fhxbZzvdTwz+iRbbz\u002fdTQP1TjpZvEINA\u002fyXa+nxovvT\u002f0\u002fdR46SbBP5MYBFYOLcI\u002fKVyPwvUovD9\u002farx0kxjEP+kmMQisHMo\u002fIbByaJHtvD9zaJHtfD\u002fFP0oMAiuHFrk\u002fexSuR+F6xD97FK5H4Xq0P0jhehSuR8E\u002fw\u002fUoXI\u002fCxT\u002f6fmq8dJO4P76fGi\u002fdJMY\u002fSgwCK4cWyT9vEoPAyqHFPz81XrpJDMI\u002foBov3SQGwT9U46WbxCDAP6AaL90kBsE\u002fnu+nxks3yT8v3SQGgZXDPwIrhxbZzsc\u002feekmMQiszD+WQ4ts5\u002fvJP3e+nxov3cQ\u002fYhBYObTIxj\u002fn+6nx0k3CP76fGi\u002fdJMY\u002fukkMAiuHxj\u002f0\u002fdR46SbBPzEIrBxaZLs\u002fy6FFtvP9tD+amZmZmZnJP65H4XoUrsc\u002f9ihcj8L1yD9KDAIrhxbJP4ts5\u002fup8cI\u002fAAAAAAAAwD\u002fZzvdT46XLPy\u002fdJAaBlcM\u002flkOLbOf70T8\u002fNV66SQzCPyUGgZVDi8w\u002fKVyPwvUozD\u002fLoUW28\u002f3EPx+F61G4HsU\u002fpHA9CtejwD\u002fwp8ZLN4nBP3Noke18P7U\u002f7nw\u002fNV66yT+8dJMYBFbOP1K4HoXrUcg\u002fEFg5tMh2vj9qvHSTGATGP4GVQ4ts57s\u002fAiuHFtnOxz+DwMqhRbbDP90kBoGVQ8s\u002fkxgEVg4twj\u002fJdr6fGi+9PwIrhxbZzrc\u002f8KfGSzeJwT\u002f4U+Olm8TAPw4tsp3vp8Y\u002fQmDl0CLbuT9eukkMAivHPx+F61G4HsU\u002fhetRuB6Fyz9QjZduEoPQPxkEVg4tsr0\u002fexSuR+F6xD8pXI\u002fC9Si8P+xRuB6F68E\u002f0SLb+X5qzD+DwMqhRbbDPyGwcmiR7bw\u002fhetRuB6Fyz8j2\u002fl+arzEP05iEFg5tMg\u002fWmQ730+Ntz9\u002farx0kxjEP1CNl24Sg8A\u002fWmQ730+Nxz\u002fRItv5fmq8P2Dl0CLb+b4\u002f8tJNYhBYyT8rhxbZzvfDP6rx0k1iELg\u002fTDeJQWDlwD9CYOXQItvJP\u002fLSTWIQWMk\u002fd76fGi\u002fdxD9eukkMAivHP2q8dJMYBMY\u002fCtejcD0Ktz8Sg8DKoUXGP4PAyqFFtsM\u002fy6FFtvP9xD9iEFg5tMjGPyuHFtnO98M\u002fmG4Sg8DKwT9MN4lBYOXAPxKDwMqhRbY\u002fUrgehetRuD9iEFg5tMjGPycxCKwcWsQ\u002f2\u002fl+arx0wz+YbhKDwMrBP05iEFg5tMg\u002f2c73U+Olyz\u002fJdr6fGi+9P8uhRbbz\u002fcQ\u002fyXa+nxovzT+F61G4HoXLP6AaL90kBsE\u002f4XoUrkfhuj8GgZVDi2zHP5ZDi2zn+8k\u002fAAAAAAAAwD+gGi\u002fdJAbBP5HtfD81Xro\u002fUrgehetR0D\u002fdJAaBlUPLPwaBlUOLbMc\u002fVg4tsp3vxz89CtejcD3KPzEIrBxaZMs\u002fppvEILBy0D8X2c73U+PFP+xRuB6F68E\u002f\u002fKnx0k1iwD\u002f+1HjpJjHIPxsv3SQGgcU\u002fGy\u002fdJAaBxT\u002f+1HjpJjHIP6JFtvP91Mg\u002fGQRWDi2yvT9g5dAi2\u002fm+P1pkO99Pjcc\u002fqvHSTWIQyD+wcmiR7Xy\u002fP+kmMQisHLo\u002fZmZmZmZmxj\u002fufD81XrrJPzEIrBxaZLs\u002f001iEFg5xD\u002fByqFFtvPNPxsv3SQGgcU\u002fMzMzMzMzwz8IrBxaZDu\u002fP3E9CtejcL0\u002fXrpJDAIrxz\u002fb+X5qvHTDPz81XrpJDMI\u002fZmZmZmZmxj+mm8QgsHLIP3e+nxov3cQ\u002f7FG4HoXrwT+kcD0K16PAPw4tsp3vp8Y\u002fuB6F61G4vj++nxov3STGP6rx0k1iEMg\u002fj8L1KFyPwj\u002fn+6nx0k3CP3sUrkfherQ\u002fqMZLN4lBwD\u002fhehSuR+G6P+f7qfHSTcI\u002f30+Nl24Swz+WQ4ts5\u002fvJP\u002fCnxks3icE\u002fsHJoke18vz9iEFg5tMjGP+f7qfHSTcI\u002fEoPAyqFFxj+e76fGSzfJP2Dl0CLb+b4\u002fGQRWDi2yvT9GtvP91HjJP5zEILByaME\u002fd76fGi\u002fdxD+PwvUoXI\u002fCP4PAyqFFtsM\u002fy6FFtvP9xD\u002fb+X5qvHTDP\u002fLSTWIQWLk\u002fhxbZzvdTwz8Sg8DKoUXGP9nO91Pjpbs\u002fqvHSTWIQyD8ZBFYOLbK9P6RwPQrXo8A\u002f\u002fKnx0k1i0D9aZDvfT43HP2q8dJMYBLY\u002fQmDl0CLbyT\u002fP91PjpZvEPzEIrBxaZMs\u002f\u002fKnx0k1i0D9WDi2yne\u002fHP2ZmZmZmZsY\u002f+n5qvHST0D8X2c73U+PFPz0K16NwPco\u002f\u002fKnx0k1iwD+amZmZmZm5Pw4tsp3vp8Y\u002f+n5qvHSTyD89CtejcD3KP\u002fp+arx0k7g\u002fUrgehetRyD8K16NwPQrHP0w3iUFg5cA\u002ff2q8dJMYxD\u002f4U+Olm8TAP76fGi\u002fdJMY\u002f001iEFg5xD+gGi\u002fdJAbBP0Jg5dAi28k\u002flkOLbOf7yT\u002fXo3A9CtfDP0w3iUFg5cA\u002f2\u002fl+arx0wz\u002f0\u002fdR46SbRP1CNl24Sg8A\u002ftvP91Hjpxj9KDAIrhxbJPzeJQWDl0MI\u002f2\u002fl+arx0wz956SYxCKy8P7pJDAIrh7Y\u002fiUFg5dAiyz8730+Nl27SP\u002fyp8dJNYtA\u002fObTIdr6fyj\u002fD9Shcj8LFP9ejcD0K19M\u002fppvEILByyD85tMh2vp\u002fKP9NNYhBYOcQ\u002f16NwPQrXwz\u002fZzvdT46W7P9v5fmq8dMM\u002fAAAAAAAA0D+oxks3iUHAP42XbhKDwMo\u002fx0s3iUFgxT956SYxCKy8P0SLbOf7qcE\u002f001iEFg5xD8nMQisHFrEP\u002f7UeOkmMdA\u002fyXa+nxovzT+JQWDl0CK7P6JFtvP91Mg\u002fVg4tsp3vxz+uR+F6FK7HP1TjpZvEIMA\u002f6SYxCKwcyj+PwvUoXI\u002fSP166SQwCK8c\u002f7FG4HoXrwT\u002f4U+Olm8TAP3Noke18P8U\u002fYOXQItv5zj9aZDvfT423P6RwPQrXo8A\u002fGy\u002fdJAaBxT+6SQwCK4e2PwIrhxbZzsc\u002fDi2yne+nxj8IrBxaZDu\u002fP1pkO99Pjcc\u002fBoGVQ4tsxz8fhetRuB7FP9ejcD0K18M\u002fBoGVQ4tsxz\u002fXo3A9CtfDP\u002f7UeOkmMcg\u002fw\u002fUoXI\u002fCxT9QjZduEoPQP1pkO99Pjcc\u002fEFg5tMh2vj8j2\u002fl+ary0P4\u002fC9Shcj8I\u002fUrgehetRyD9qvHSTGATGPyGwcmiR7bw\u002fwcqhRbbzvT+28\u002f3UeOnGP+kmMQisHLo\u002fBoGVQ4tsxz+PwvUoXI\u002fCP3Noke18P8U\u002fKVyPwvUozD+e76fGSzfRP8P1KFyPwsU\u002fi2zn+6nxwj\u002fHSzeJQWDFP2Dl0CLb+b4\u002foBov3SQGwT9mZmZmZmbGP+F6FK5H4co\u002f2\u002fl+arx0wz\u002fJdr6fGi+9P4cW2c73U8M\u002fj8L1KFyPwj8v3SQGgZXDP+f7qfHSTcI\u002fkxgEVg4twj9Ei2zn+6nBP4\u002fC9Shcj8I\u002f8KfGSzeJwT8OLbKd76fGP28Sg8DKocU\u002fKVyPwvUovD++nxov3STGP2IQWDm0yLY\u002fexSuR+F6tD9U46WbxCDQP7Kd76fGS8c\u002fvp8aL90kxj\u002fufD81XrrJP\u002fCnxks3icE\u002fN4lBYOXQwj8Sg8DKoUW2P76fGi\u002fdJMY\u002fqvHSTWIQyD\u002f0\u002fdR46SbBPwaBlUOLbMc\u002ff2q8dJMYxD8rhxbZzvfDP9V46SYxCMw\u002fL90kBoGVwz\u002fLoUW28\u002f3EPycxCKwcWsQ\u002f001iEFg5xD+uR+F6FK7HPzeJQWDl0MI\u002f\u002ftR46SYxyD+iRbbz\u002fdS4PwrXo3A9Csc\u002fYhBYObTIxj\u002ffT42XbhLDP8HKoUW2870\u002fqvHSTWIQyD9YObTIdr7PP0w3iUFg5cA\u002fGQRWDi2yvT\u002fByqFFtvO9P6AaL90kBsE\u002fmG4Sg8DKwT++nxov3STGP\u002fCnxks3icE\u002fbxKDwMqhxT8Sg8DKoUXGP2Dl0CLb+b4\u002fjZduEoPAyj8zMzMzMzPDPxsv3SQGgcU\u002fc2iR7Xw\u002fxT+iRbbz\u002fdS4PxfZzvdT48U\u002fkxgEVg4twj\u002fhehSuR+HKPylcj8L1KLw\u002fTDeJQWDlwD\u002fXo3A9CtfDP3Noke18P8U\u002fIbByaJHtvD\u002fNzMzMzMzMP4lBYOXQIrs\u002fppvEILByyD+TGARWDi3CP+f7qfHSTcI\u002fH4XrUbgexT\u002fRItv5fmrMP3npJjEIrLw\u002fO99PjZduwj8OLbKd76fGP2iR7Xw\u002fNb4\u002fCKwcWmQ7vz8QWDm0yHa+P9Ei2\u002fl+arw\u002fMzMzMzMzwz8j2\u002fl+arzEP4GVQ4ts58s\u002fZmZmZmZmxj8dWmQ730\u002fNP6RwPQrXo8A\u002fw\u002fUoXI\u002fCxT8xCKwcWmTLPwIrhxbZzrc\u002fYhBYObTIxj\u002fHSzeJQWDFP3E9CtejcL0\u002fRIts5\u002fupwT+0yHa+nxrPP3E9CtejcM0\u002fd76fGi\u002fdxD8hsHJoke3MP8uhRbbz\u002fcQ\u002fGy\u002fdJAaBxT+gGi\u002fdJAbBPz81XrpJDMI\u002fpHA9CtejwD\u002fP91PjpZvEP99PjZduEsM\u002fJQaBlUOLzD9KDAIrhxa5P5HtfD81Xso\u002fQmDl0CLbuT8bL90kBoHFP30\u002fNV66Scw\u002f9ihcj8L1yD\u002fJdr6fGi+9P7gehetRuL4\u002fH4XrUbgexT8zMzMzMzPDPyPb+X5qvMQ\u002fppvEILByyD8\u002fNV66SQzCP6RwPQrXo8A\u002fF9nO91PjxT8hsHJoke28PzeJQWDl0MI\u002fSgwCK4cWyT\u002fP91PjpZvEP7TIdr6fGs8\u002fRIts5\u002fupwT+BlUOLbOfLPyPb+X5qvMQ\u002f6SYxCKwcyj97FK5H4XrEP8l2vp8aL80\u002fexSuR+F6tD8hsHJoke3MP0SLbOf7qcE\u002fCKwcWmQ7vz9vEoPAyqHFPxBYObTIdr4\u002fxSCwcmiRzT9Ei2zn+6nBP4ts5\u002fup8cI\u002f0SLb+X5qzD8fhetRuB7FPxfZzvdT48U\u002fexSuR+F6xD+q8dJNYhDQP2q8dJMYBMY\u002ftvP91Hjpxj\u002fy0k1iEFjJP4\u002fC9Shcj8I\u002fjZduEoPAyj8Sg8DKoUXGP7pJDAIrh7Y\u002fUI2XbhKDwD9QjZduEoPAPylcj8L1KLw\u002farx0kxgExj\u002fP91PjpZvEP2Q730+Nl84\u002fi2zn+6nxwj8fhetRuB7FP57vp8ZLN8k\u002f\u002ftR46SYxyD+cxCCwcmjBPyPb+X5qvMQ\u002fg8DKoUW2wz97FK5H4Xq0P0a28\u002f3UeMk\u002fGy\u002fdJAaBxT8rhxbZzvfDP7pJDAIrh8Y\u002fqvHSTWIQyD9oke18PzW+P1CNl24Sg8A\u002fAiuHFtnOxz8IrBxaZDu\u002fPwrXo3A9Csc\u002fqvHSTWIQuD8fhetRuB7FPxKDwMqhRcY\u002fy6FFtvP9xD\u002fD9Shcj8LFP99PjZduEsM\u002fRrbz\u002fdR4yT9iEFg5tMjGP9NNYhBYOcQ\u002fpHA9CtejwD\u002fn+6nx0k3CP7pJDAIrh8Y\u002f7nw\u002fNV66yT+q8dJNYhDIP5zEILByaME\u002fF9nO91PjxT8hsHJoke28P5MYBFYOLcI\u002fMQisHFpkyz9qvHSTGATGP1g5tMh2vr8\u002fnu+nxks3yT9g5dAi2\u002fm+PwisHFpkO78\u002fbef7qfHSzT\u002fRItv5fmq8P1K4HoXrUbg\u002fIbByaJHtzD\u002fRItv5fmq8P+58PzVeusk\u002fTmIQWDm0yD8v3SQGgZXDP0a28\u002f3UeMk\u002fEoPAyqFFxj8AAAAAAADQP5huEoPAysE\u002fqMZLN4lBwD\u002fufD81XrrJPw4tsp3vp8Y\u002f8KfGSzeJwT97FK5H4XrEP1TjpZvEINA\u002fYOXQItv5zj++nxov3STGPz81XrpJDMI\u002fukkMAiuHxj9QjZduEoPAP8UgsHJokc0\u002fdZMYBFYOzT\u002f+1HjpJjHIP+58PzVeusk\u002fI9v5fmq8xD+LbOf7qfHCP5HtfD81Xso\u002fRIts5\u002fupwT+cxCCwcmjBP8dLN4lBYMU\u002f+FPjpZvEwD8zMzMzMzPDP9NNYhBYOcQ\u002fd76fGi\u002fdxD9g5dAi2\u002fm+P3sUrkfhesQ\u002fj8L1KFyPwj9OYhBYObTIP9v5fmq8dMM\u002fIbByaJHtzD+TGARWDi3CP6rx0k1iEMg\u002fTDeJQWDlwD\u002fLoUW28\u002f3EP9ejcD0K18M\u002fUrgehetRyD97FK5H4Xq0P\u002fCnxks3icE\u002farx0kxgExj\u002fJdr6fGi+9P6jGSzeJQcA\u002fRIts5\u002fupwT81XrpJDALLP39qvHSTGMQ\u002fRIts5\u002fupwT9Ei2zn+6nBPx+F61G4HsU\u002fg8DKoUW2wz\u002fwp8ZLN4nBP6RwPQrXo8A\u002fiUFg5dAiyz9Ei2zn+6nBPxSuR+F6FM4\u002fy6FFtvP9xD+iRbbz\u002fdTIP4lBYOXQIrs\u002f+FPjpZvEwD8pXI\u002fC9Si8PyuHFtnO98M\u002fgZVDi2znyz\u002fNzMzMzMzMP6AaL90kBsE\u002fUrgehetRyD\u002fFILByaJHNPyuHFtnO98M\u002fObTIdr6fyj8v3SQGgZXDP8l2vp8aL80\u002fz\u002fdT46WbxD89CtejcD3KP9Ei2\u002fl+asw\u002fWmQ730+Nxz85tMh2vp+6Pw4tsp3vp8Y\u002fIbByaJHtvD8zMzMzMzPDP83MzMzMzMw\u002f6SYxCKwcuj+F61G4HoXLP5MYBFYOLcI\u002fPQrXo3A9yj+HFtnO91PDP5ZDi2zn+8k\u002fLbKd76fGyz+iRbbz\u002fdTIP\u002fT91HjpJsE\u002fYhBYObTIxj+iRbbz\u002fdS4P0Jg5dAi28k\u002fWDm0yHa+vz8QWDm0yHa+P99PjZduEsM\u002fI9v5fmq8xD+q8dJNYhC4P76fGi\u002fdJMY\u002farx0kxgExj8OLbKd76fGP8dLN4lBYMU\u002fKVyPwvUovD93vp8aL93EPzvfT42XbsI\u002fppvEILByyD+JQWDl0CLLP39qvHSTGMQ\u002f+FPjpZvEwD8730+Nl27CPzvfT42XbsI\u002fZmZmZmZmxj\u002f4U+Olm8TAP8l2vp8aL70\u002farx0kxgExj8tsp3vp8bLPwaBlUOLbMc\u002f3SQGgZVDyz+q8dJNYhDIP7Kd76fGS8c\u002fAAAAAAAAwD+8dJMYBFbOP4ts5\u002fup8cI\u002f30+Nl24Swz\u002fpJjEIrBy6PzMzMzMzM8M\u002fJzEIrBxaxD\u002f6fmq8dJPIPyPb+X5qvMQ\u002f7FG4HoXrwT\u002fD9Shcj8K1P6jGSzeJQcA\u002fTmIQWDm0yD9CYOXQItu5P6rx0k1iELg\u002fmG4Sg8DKwT9MN4lBYOXAP42XbhKDwMo\u002fsp3vp8ZLxz\u002fTTWIQWDnEP65H4XoUrsc\u002f8tJNYhBYuT9OYhBYObTIP+xRuB6F68E\u002fRrbz\u002fdR4yT+0yHa+nxrPP9ejcD0K18M\u002fAAAAAAAAwD8X2c73U+PFP\u002fhT46WbxMA\u002f7nw\u002fNV66yT\u002fByqFFtvO9P\u002fYoXI\u002fC9cg\u002flkOLbOf7yT\u002fRItv5fmq8Px+F61G4HsU\u002fSOF6FK5HwT9oke18PzXOP9v5fmq8dMM\u002fnMQgsHJowT\u002fn+6nx0k3CPw4tsp3vp8Y\u002fg8DKoUW2wz83iUFg5dDCP30\u002fNV66Scw\u002fc2iR7Xw\u002fxT\u002fhehSuR+HKPwIrhxbZzsc\u002fKVyPwvUovD8CK4cW2c7HP6jGSzeJQcA\u002fmpmZmZmZyT8rhxbZzvfDP2Q730+Nl84\u002f+n5qvHSTyD9aZDvfT43HP4cW2c73U8M\u002fGy\u002fdJAaBtT9QjZduEoPAP\u002f7UeOkmMcg\u002fx0s3iUFgxT9aZDvfT43HPzeJQWDl0MI\u002fVOOlm8QgwD8ZBFYOLbK9P7gehetRuL4\u002fObTIdr6fyj9xPQrXo3C9P\u002fLSTWIQWLk\u002fd76fGi\u002fdxD+amZmZmZnJP6rx0k1iELg\u002flkOLbOf7yT\u002fufD81XrrJP1CNl24Sg8A\u002fWmQ730+Ntz\u002fn+6nx0k3CP6jGSzeJQcA\u002feekmMQisvD+mm8QgsHLIP9v5fmq8dMM\u002fd76fGi\u002fdxD+R7Xw\u002fNV7KP8HKoUW2870\u002fvHSTGARWzj\u002fhehSuR+HKP3sUrkfhesQ\u002fH4XrUbgexT+oxks3iUHAP7gehetRuL4\u002frkfhehSuxz9QjZduEoPAPxsv3SQGgcU\u002fRrbz\u002fdR4yT8bL90kBoHFP57vp8ZLN9E\u002fpHA9Ctej0D+gGi\u002fdJAbRP4cW2c73U8M\u002f8KfGSzeJwT83iUFg5dDCP1K4HoXrUcg\u002fukkMAiuHxj9xPQrXo3C9PzEIrBxaZLs\u002f5dAi2\u002fl+yj9mZmZmZmbGPyPb+X5qvMQ\u002f\u002fKnx0k1iwD\u002fjpZvEILDCPxsv3SQGgcU\u002fQmDl0CLbyT\u002fZzvdT46XLP\u002fCnxks3icE\u002f4XoUrkfhyj\u002fP91PjpZvEP4ts5\u002fup8cI\u002fJzEIrBxaxD+TGARWDi3CP6JFtvP91NA\u002fObTIdr6fuj\u002fwp8ZLN4nBP\u002fp+arx0k8g\u002fnu+nxks3yT+iRbbz\u002fdS4P0a28\u002f3UeMk\u002fc2iR7Xw\u002fxT8K16NwPQrHP2iR7Xw\u002fNc4\u002fWmQ730+Nxz83iUFg5dDCPwaBlUOLbMc\u002fexSuR+F6xD8GgZVDi2zHP\u002fYoXI\u002fC9cg\u002fc2iR7Xw\u002fxT\u002fVeOkmMQjMP5HtfD81Xro\u002fPQrXo3A9yj8Sg8DKoUXGPzeJQWDl0MI\u002fSOF6FK5HwT9iEFg5tMjGP4GVQ4ts57s\u002fw\u002fUoXI\u002fCxT9CYOXQItvJPylcj8L1KLw\u002fexSuR+F6tD9Ei2zn+6nBPx+F61G4HsU\u002fyXa+nxovvT9YObTIdr6\u002fP4lBYOXQIss\u002fi2zn+6nxwj9mZmZmZmbGPyPb+X5qvMQ\u002fbxKDwMqhxT\u002f4U+Olm8TAP5ZDi2zn+8k\u002fy6FFtvP9xD+kcD0K16PAP8P1KFyPwrU\u002fAAAAAAAAwD9I4XoUrkfBP5zEILByaME\u002fXI\u002fC9Shczz9iEFg5tMjGP8dLN4lBYMU\u002fGy\u002fdJAaBxT9oke18PzW+P7ByaJHtfL8\u002fWmQ730+Ntz99PzVeuknMP5qZmZmZmck\u002frkfhehSuxz9g5dAi2\u002fm+P5zEILByaME\u002f8tJNYhBYuT\u002f0\u002fdR46SbRPwisHFpkO78\u002f+n5qvHSTyD8rhxbZzvfDP6abxCCwctA\u002fUI2XbhKDwD+28\u002f3UeOnGP39qvHSTGMQ\u002fbxKDwMqhxT9U46WbxCDAP4GVQ4ts58s\u002f0SLb+X5qvD93vp8aL93EP9NNYhBYOcQ\u002fTDeJQWDlwD+TGARWDi3CPzm0yHa+n8o\u002fmpmZmZmZyT9OYhBYObTIP5HtfD81Xso\u002f4XoUrkfhyj8xCKwcWmS7P7ByaJHtfM8\u002f5\u002fup8dJNwj\u002fwp8ZLN4nBPxkEVg4tsr0\u002fIbByaJHtzD9mZmZmZmbGP5ZDi2zn+8k\u002fRIts5\u002fupwT8bL90kBoG1P7x0kxgEVs4\u002fy6FFtvP9xD8OLbKd76fGP0Jg5dAi28k\u002fsp3vp8ZLxz8CK4cW2c7HP\u002fyp8dJNYsA\u002fGy\u002fdJAaBtT8pXI\u002fC9Si8P57vp8ZLN8k\u002f7nw\u002fNV66yT+JQWDl0CK7P\u002fLSTWIQWNE\u002fbxKDwMqhxT9mZmZmZmbGP5huEoPAysE\u002fd76fGi\u002fdxD\u002fLoUW28\u002f3EP3sUrkfhesQ\u002fnu+nxks3yT+oxks3iUHQPzEIrBxaZLs\u002fc2iR7Xw\u002fxT\u002f8qfHSTWLAP\u002fyp8dJNYsA\u002fexSuR+F6tD+kcD0K16PAP3E9CtejcL0\u002fK4cW2c73wz\u002f4U+Olm8TAP76fGi\u002fdJMY\u002fhxbZzvdTwz83iUFg5dDCP28Sg8DKocU\u002fnu+nxks3yT8v3SQGgZXDP+XQItv5fso\u002fUrgehetRyD\u002f8qfHSTWLAP9v5fmq8dMM\u002fukkMAiuHxj\u002ffT42XbhLDP1YOLbKd78c\u002fvp8aL90kxj8fhetRuB7FP0w3iUFg5cA\u002fGQRWDi2yvT\u002fZzvdT46W7P7Kd76fGS8c\u002fbef7qfHSzT8v3SQGgZXDP0jhehSuR8E\u002f5dAi2\u002fl+yj8hsHJoke28P1CNl24Sg8A\u002fJzEIrBxaxD9g5dAi2\u002fm+P4ts5\u002fup8cI\u002f+FPjpZvEwD+PwvUoXI\u002fCP6RwPQrXo9A\u002fNV66SQwCyz9eukkMAivHP4PAyqFFtsM\u002f8tJNYhBYyT\u002fsUbgehevBP3e+nxov3cQ\u002flkOLbOf7yT9QjZduEoPAP6RwPQrXo8A\u002fTDeJQWDlwD+R7Xw\u002fNV7KP9nO91Pjpcs\u002fwcqhRbbzvT8pXI\u002fC9Si8PyPb+X5qvMQ\u002fAiuHFtnOxz\u002fLoUW28\u002f3EP\u002fCnxks3icE\u002fke18PzVeyj89CtejcD3KPwaBlUOLbMc\u002fIbByaJHtzD+yne+nxkvHPylcj8L1KLw\u002fUrgehetRyD+JQWDl0CK7P05iEFg5tMg\u002f0SLb+X5qvD97FK5H4Xq0P1YOLbKd78c\u002fhxbZzvdTwz9iEFg5tMjGPycxCKwcWsQ\u002f\u002fKnx0k1iwD+28\u002f3UeOnGP39qvHSTGMQ\u002f\u002fKnx0k1iwD+oxks3iUHAPwaBlUOLbMc\u002f+n5qvHSTyD+HFtnO91PDP2q8dJMYBLY\u002fGy\u002fdJAaBxT8730+Nl27CP3npJjEIrMw\u002fz\u002fdT46WbxD9SuB6F61HIPxsv3SQGgcU\u002fuB6F61G4vj8pXI\u002fC9SjMPzVeukkMAss\u002fy6FFtvP9xD8rhxbZzvfDP5HtfD81Xso\u002fObTIdr6fyj8UrkfhehTOP83MzMzMzMw\u002frkfhehSuxz8fhetRuB7FP99PjZduEsM\u002fXrpJDAIrxz85tMh2vp\u002fSP+kmMQisHMo\u002farx0kxgExj+iRbbz\u002fdTIPyPb+X5qvMQ\u002fF9nO91PjxT+HFtnO91PDP99PjZduEsM\u002fbxKDwMqhxT9qvHSTGATGP0SLbOf7qcE\u002fTmIQWDm0yD+PwvUoXI\u002fCPwIrhxbZzsc\u002frkfhehSuxz\u002fNzMzMzMzMP4GVQ4ts58s\u002fUI2XbhKDwD956SYxCKzMP2q8dJMYBMY\u002fmpmZmZmZuT93vp8aL93EP+kmMQisHLo\u002fGQRWDi2yvT\u002fP91PjpZvEP6rx0k1iEMg\u002f7FG4HoXrwT91kxgEVg7NP1K4HoXrUbg\u002fexSuR+F6tD9eukkMAivHP+kmMQisHMo\u002fpHA9CtejwD\u002f2KFyPwvXIP5MYBFYOLcI\u002fYOXQItv5vj89CtejcD3KP1TjpZvEINA\u002fObTIdr6fuj+uR+F6FK7HP6rx0k1iEMg\u002fexSuR+F6tD\u002fZzvdT46XLP4cW2c73U8M\u002f5\u002fup8dJNwj8xCKwcWmTLP57vp8ZLN8k\u002fy6FFtvP9xD9WDi2yne\u002fHP+kmMQisHMo\u002fSgwCK4cWyT85tMh2vp+6P3Noke18P8U\u002f46WbxCCwwj++nxov3STGP6AaL90kBsE\u002fd76fGi\u002fdxD+0yHa+nxrPP0a28\u002f3UeMk\u002fL90kBoGVwz8QWDm0yHa+P6jGSzeJQcA\u002fWDm0yHa+vz9QjZduEoPAP8P1KFyPwsU\u002fTmIQWDm0yD\u002fhehSuR+HKP\u002fp+arx0k8g\u002fexSuR+F6tD9GtvP91HjJP6jGSzeJQcA\u002f7nw\u002fNV66yT\u002ffT42XbhLDP23n+6nx0s0\u002fxSCwcmiRzT\u002fjpZvEILDCP8dLN4lBYMU\u002fdZMYBFYOzT\u002f4U+Olm8TQP1pkO99Pjcc\u002f30+Nl24Swz\u002fwp8ZLN4nBP9NNYhBYOcQ\u002fppvEILByyD\u002fD9Shcj8K1P65H4XoUrsc\u002f8KfGSzeJwT\u002f+1HjpJjHIPxBYObTIdr4\u002fsp3vp8ZLxz\u002fXo3A9CtfDPyGwcmiR7cw\u002f6SYxCKwcyj8OLbKd76fGP6jGSzeJQcA\u002f001iEFg5xD+uR+F6FK7HP3E9CtejcM0\u002ff2q8dJMYxD9WDi2yne\u002fHP90kBoGVQ8s\u002f1XjpJjEIzD9vEoPAyqHFP0Jg5dAi28k\u002fCtejcD0Kxz8rhxbZzvfDP28Sg8DKocU\u002fPQrXo3A9yj8rhxbZzvfDP3sUrkfherQ\u002fN4lBYOXQwj9oke18PzXOP2Dl0CLb+b4\u002f2c73U+Olyz9mZmZmZmbGP6AaL90kBsE\u002f0SLb+X5qzD9OYhBYObTIP3sUrkfherQ\u002fx0s3iUFgxT8Sg8DKoUXGP4cW2c73U8M\u002fUrgehetRyD85tMh2vp\u002fKP4PAyqFFtsM\u002fnMQgsHJowT+28\u002f3UeOnGP39qvHSTGMQ\u002fc2iR7Xw\u002fxT+WQ4ts5\u002fvJPw=="},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"Suspension_Action=Pothole Pre-Damping Softening Active\u003cbr\u003eVertical Vibration (G)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Pothole Pre-Damping Softening Active","marker":{"color":"#059669","pattern":{"shape":""}},"name":"Pothole Pre-Damping Softening Active","nbinsx":30,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"1XjpJjEIzD+oxks3iUHYP7Kd76fGS8c\u002fCtejcD0Kxz8hsHJoke3UP5MYBFYOLdo\u002fiUFg5dAi0z9\u002farx0kxjUP3npJjEIrMw\u002frBxaZDvfzz\u002f8qfHSTWLYP5zEILByaNE\u002fCKwcWmQ7zz8Sg8DKoUXWP83MzMzMzNQ\u002f\u002ftR46SYx2D8j2\u002fl+arzUP6JFtvP91Mg\u002fnMQgsHJo0T+iRbbz\u002fdTQP4\u002fC9Shcj9I\u002fppvEILBy0D+8dJMYBFbWP5ZDi2zn+9k\u002f4XoUrkfh2j+R7Xw\u002fNV7SP6AaL90kBtE\u002f\u002ftR46SYx0D\u002f2KFyPwvXQP9v5fmq8dNM\u002fppvEILBy0D9CYOXQItvJPylcj8L1KNQ\u002f6SYxCKwcyj9t5\u002fup8dLVPyUGgZVDi8w\u002fMQisHFpk0z9U46WbxCDQPxBYObTIds4\u002f+n5qvHST0D\u002f0\u002fdR46SbRP6RwPQrXo9A\u002fCKwcWmQ71z+TGARWDi3SP05iEFg5tNA\u002fGQRWDi2y1T89CtejcD3SP6rx0k1iENA\u002fkxgEVg4t0j8ZBFYOLbLNP9Ei2\u002fl+atQ\u002fObTIdr6fyj8dWmQ730\u002fNP90kBoGVQ8s\u002fhetRuB6Fyz+cxCCwcmjZP0w3iUFg5dA\u002f+n5qvHST0D8v3SQGgZXTPxfZzvdT49U\u002frkfhehSu1z9g5dAi2\u002fnOPwAAAAAAANg\u002fH4XrUbgexT\u002fsUbgehevRP7ByaJHtfM8\u002fYOXQItv5zj8OLbKd76fWP0w3iUFg5dA\u002f001iEFg51D9zaJHtfD\u002fVP3E9CtejcNU\u002ffT81XrpJzD+JQWDl0CLTPzEIrBxaZNs\u002fxSCwcmiR1T8nMQisHFrUP5HtfD81XtI\u002fgZVDi2znyz8IrBxaZDvPP1g5tMh2vs8\u002fvHSTGARW1j9zaJHtfD\u002fVPwwCK4cW2dY\u002fnu+nxks30T+JQWDl0CLLP7ByaJHtfM8\u002fgZVDi2znyz956SYxCKzMPz81XrpJDNI\u002fjZduEoPAyj8X2c73U+PVP1K4HoXrUcg\u002fRrbz\u002fdR40T\u002fl0CLb+X7SP+XQItv5ftI\u002fCKwcWmQ7zz8AAAAAAADQP0SLbOf7qdE\u002fcT0K16NwzT+gGi\u002fdJAbRP05iEFg5tNA\u002fF9nO91Pj1T9xPQrXo3DVP9ejcD0K19M\u002fke18PzVe0j85tMh2vp\u002fSP7x0kxgEVtY\u002fmpmZmZmZ0T9SuB6F61HYP+F6FK5H4co\u002f4XoUrkfh0j+4HoXrUbjOPzMzMzMzM9M\u002foBov3SQG0T\u002fdJAaBlUPLP6wcWmQ739c\u002fuB6F61G4zj8dWmQ730\u002fNPyGwcmiR7cw\u002ff2q8dJMY1D9U46WbxCDYPxKDwMqhRdY\u002fokW28\u002f3U2D+PwvUoXI\u002fSP0a28\u002f3UeNE\u002f8KfGSzeJ0T8bL90kBoHVP4XrUbgehdM\u002feekmMQiszD+JQWDl0CLTP6rx0k1iENg\u002fI9v5fmq81D9\u002farx0kxjUP6abxCCwctA\u002fH4XrUbge3T+0yHa+nxrXP1TjpZvEINA\u002fFK5H4XoUzj9aZDvfT43XP5zEILByaNk\u002fnu+nxks30T\u002f4U+Olm8TQP9NNYhBYOdQ\u002fppvEILByyD81XrpJDALLPzvfT42XbtI\u002fiUFg5dAi0z9KDAIrhxbZPwisHFpkO88\u002f5dAi2\u002fl+0j9WDi2yne\u002fXPz0K16NwPdI\u002fKVyPwvUo1D+iRbbz\u002fdTQPyPb+X5qvNQ\u002fMzMzMzMz0z\u002fByqFFtvPNP+58PzVeutE\u002fi2zn+6nx2j+LbOf7qfHaP4XrUbgehdM\u002f8tJNYhBY0T\u002fwp8ZLN4nRP9v5fmq8dNM\u002f2\u002fl+arx00z9xPQrXo3DVP3WTGARWDs0\u002fw\u002fUoXI\u002fC1T9KDAIrhxbJP2iR7Xw\u002fNdY\u002fSOF6FK5H2T9t5\u002fup8dLNPzMzMzMzM9M\u002fK4cW2c730z\u002fD9Shcj8LVPxkEVg4tstU\u002fg8DKoUW22z9aZDvfT43XP0oMAiuHFtE\u002fmpmZmZmZ0T8\u002fNV66SQzaPwaBlUOLbNc\u002fc2iR7Xw\u002f1T+YbhKDwMrRPxSuR+F6FNY\u002fDAIrhxbZzj9vEoPAyqHVP5qZmZmZmdk\u002fmG4Sg8DK0T9WDi2yne\u002fXP+XQItv5ftI\u002fPQrXo3A92j\u002fufD81XrrRP1g5tMh2vtc\u002fUrgehetR0D8v3SQGgZXbP1g5tMh2vtc\u002fi2zn+6nx0j\u002fTTWIQWDnUPyGwcmiR7cw\u002fiUFg5dAi0z8dWmQ730\u002fVPwaBlUOLbNc\u002ffT81XrpJ1D+sHFpkO9\u002fXPzm0yHa+n8o\u002f5dAi2\u002fl+2j\u002fHSzeJQWDVP4lBYOXQIts\u002fNV66SQwC0z\u002fhehSuR+HSP5zEILByaNk\u002fnMQgsHJo0T8bL90kBoHVP5MYBFYOLdI\u002frkfhehSu1z8MAiuHFtnWP2iR7Xw\u002fNc4\u002fQmDl0CLbyT9KDAIrhxbRP7TIdr6fGs8\u002fSgwCK4cWyT+JQWDl0CLLP4XrUbgehdM\u002fkxgEVg4t2j9oke18PzXOP\u002fLSTWIQWNE\u002fzczMzMzM1D+cxCCwcmjRP\u002fp+arx0k9g\u002ftMh2vp8azz\u002fy0k1iEFjRP2Q730+Nl9Y\u002fCKwcWmQ71z+oxks3iUHQP5MYBFYOLdo\u002fzczMzMzM1D\u002fVeOkmMQjMP8l2vp8aL9U\u002fexSuR+F61D9oke18PzXOP1TjpZvEINA\u002fxSCwcmiR1T8\u002fNV66SQzSPyPb+X5qvNQ\u002f9P3UeOkm0T+mm8QgsHLQP7pJDAIrh9Y\u002fppvEILBy2D\u002fVeOkmMQjUP+58PzVeusk\u002fYOXQItv51j9GtvP91HjRP6rx0k1iENA\u002fIbByaJHt1D9I4XoUrkfRP5ZDi2zn+9E\u002foBov3SQG0T9QjZduEoPQP5ZDi2zn+8k\u002fpHA9Ctej0D81XrpJDALTP0w3iUFg5dA\u002f9ihcj8L12D89CtejcD3SP\u002fhT46WbxNA\u002fAAAAAAAA2D8GgZVDi2zXP2Q730+Nl9Y\u002fsp3vp8ZL1z+28\u002f3UeOnWP5qZmZmZmdE\u002fmG4Sg8DK0T+LbOf7qfHSPzVeukkMAtM\u002fWDm0yHa+zz+q8dJNYhDQP6JFtvP91Ng\u002f4XoUrkfh0j+DwMqhRbbTP6AaL90kBtk\u002fJQaBlUOL1D+e76fGSzfZP9v5fmq8dNM\u002fObTIdr6fyj9MN4lBYOXQP1yPwvUoXNc\u002fkxgEVg4t0j9YObTIdr7XPxSuR+F6FNY\u002fUrgehetR0D9CYOXQItvZP4PAyqFFttM\u002fw\u002fUoXI\u002fC1T9SuB6F61HQP\u002f7UeOkmMdg\u002f9P3UeOkm0T9Ei2zn+6nRP9ejcD0K19M\u002fL90kBoGV0z8QWDm0yHbOP1CNl24Sg9g\u002fPQrXo3A9yj\u002fP91PjpZvUPylcj8L1KMw\u002fLbKd76fG2z\u002fjpZvEILDSP1K4HoXrUdg\u002f5dAi2\u002fl+0j\u002f4U+Olm8TQP3E9CtejcM0\u002f+n5qvHST0D+JQWDl0CLLPwwCK4cW2c4\u002fLbKd76fGyz+uR+F6FK7XP0Jg5dAi28k\u002fYOXQItv5zj\u002f2KFyPwvXQPxkEVg4tss0\u002fYOXQItv51j+mm8QgsHLQP5qZmZmZmck\u002fEoPAyqFF1j\u002fZzvdT46XTP9Ei2\u002fl+atQ\u002flkOLbOf72T\u002fpJjEIrBzSPwaBlUOLbNc\u002fmG4Sg8DK2T9YObTIdr7XP7x0kxgEVs4\u002fcT0K16Nw1T\u002f2KFyPwvXQP0a28\u002f3UeNE\u002fke18PzVe0j9U46WbxCDQP57vp8ZLN9E\u002f001iEFg51D8UrkfhehTOP8\u002f3U+Olm9Q\u002frBxaZDvfzz9cj8L1KFzPP6rx0k1iEMg\u002fd76fGi\u002fd1D+4HoXrUbjWP\u002fYoXI\u002fC9dA\u002fokW28\u002f3U0D9mZmZmZmbWP0w3iUFg5dg\u002fQmDl0CLb0T8xCKwcWmTTP76fGi\u002fdJNY\u002fKVyPwvUo1D\u002fjpZvEILDaP3WTGARWDtU\u002fhetRuB6Fyz8\u002fNV66SQzaPxSuR+F6FNY\u002fqMZLN4lB2D8IrBxaZDvPP2ZmZmZmZtY\u002f8tJNYhBY0T\u002fdJAaBlUPTP9ejcD0K19M\u002fLbKd76fG0z+28\u002f3UeOnWP6rx0k1iENA\u002fbxKDwMqh1T9xPQrXo3DVP\u002fCnxks3idE\u002fCtejcD0K1z8MAiuHFtnWP\u002fLSTWIQWNE\u002f9ihcj8L10D\u002fRItv5fmrUP0jhehSuR9E\u002f+n5qvHST2D+BlUOLbOfTP6rx0k1iENg\u002fZDvfT42X1j\u002fhehSuR+HSP6rx0k1iENg\u002fXI\u002fC9Shc1z8\u002fNV66SQzSP8HKoUW289U\u002fqMZLN4lB0D+F61G4HoXTPz81XrpJDNI\u002f2c73U+Olyz9mZmZmZmbWP2iR7Xw\u002fNc4\u002fCKwcWmQ7zz+iRbbz\u002fdTYPwisHFpkO88\u002fxSCwcmiRzT8hsHJoke3MP7TIdr6fGtc\u002fexSuR+F63D9cj8L1KFzXP8UgsHJokc0\u002fokW28\u002f3UyD+8dJMYBFbOP\u002fyp8dJNYtA\u002f30+Nl24S0z+gGi\u002fdJAbRP\u002fYoXI\u002fC9dg\u002fke18PzVe0j9mZmZmZmbWP4cW2c73U9M\u002fjZduEoPAyj8MAiuHFtnWPwRWDi2ync8\u002fokW28\u002f3UyD85tMh2vp\u002fKPz0K16NwPdI\u002fhetRuB6Fyz8tsp3vp8bLPx+F61G4HtU\u002fwcqhRbbz1T9oke18PzXOP90kBoGVQ9M\u002fjZduEoPAyj8X2c73U+PVP4lBYOXQItM\u002fNV66SQwCyz+mm8QgsHLQP30\u002fNV66SdQ\u002fqMZLN4lB2D99PzVeuknUP1yPwvUoXM8\u002fqvHSTWIQ0D\u002fJdr6fGi\u002fNPwAAAAAAANA\u002fhxbZzvdT0z\u002fhehSuR+HaP30\u002fNV66Scw\u002fUI2XbhKD0D\u002fRItv5fmrUP7x0kxgEVs4\u002fVg4tsp3v1z9xPQrXo3DVP7ByaJHtfM8\u002fDi2yne+n1j8lBoGVQ4vUP6rx0k1iENA\u002fzczMzMzMzD9xPQrXo3DNPy2yne+nxss\u002fi2zn+6nx0j9OYhBYObTQP8HKoUW2880\u002foBov3SQG2T89CtejcD3SP4lBYOXQIss\u002fmpmZmZmZ0T+PwvUoXI\u002fSP3npJjEIrMw\u002fj8L1KFyP0j\u002fJdr6fGi\u002fNPz81XrpJDNI\u002flkOLbOf70T81XrpJDALTP6rx0k1iENA\u002fnu+nxks30T+4HoXrUbjOP6JFtvP91NA\u002fXI\u002fC9Shczz9cj8L1KFzPP7x0kxgEVtY\u002f\u002ftR46SYx0D\u002fjpZvEILDaP7ByaJHtfNc\u002fF9nO91Pj1T\u002fpJjEIrBzSP4lBYOXQIss\u002fnu+nxks30T\u002fVeOkmMQjUP\u002fT91HjpJtE\u002foBov3SQG0T+kcD0K16PQP6AaL90kBtE\u002fexSuR+F61D9U46WbxCDQP2Q730+Nl9Y\u002f+FPjpZvE0D9KDAIrhxbRP5zEILByaNE\u002fmG4Sg8DK2T+YbhKDwMrRP0Jg5dAi28k\u002fx0s3iUFg1T8IrBxaZDvPP1YOLbKd78c\u002f46WbxCCw0j9mZmZmZmbWP83MzMzMzNQ\u002fWDm0yHa+1z\u002fhehSuR+HaP7x0kxgEVs4\u002fwcqhRbbzzT8QWDm0yHbOP3npJjEIrNQ\u002f0SLb+X5q1D+oxks3iUHQP5ZDi2zn+9E\u002f"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Vertical Vibration (G)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Suspension_Action"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Median vertical vibration settles at a low 0.16 G, matching the ride comfort of the world's most prestigious luxury flagships.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Apply Preview-ECS suspension across all Genesis luxury sedan and SUV models, generating $2.8M in premium sales value.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <!-- Card Top Header -->
+                    <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-slate-100">
+                        <div>
+                            <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                                <i class="bi bi-graph-up text-primary"></i> Average Ride Isolation Score Across Pothole Brackets
+                            </h5>
+                            <small class="text-slate-600">Proves 92%+ shock isolation even across severe deep potholes exceeding 60 mm</small>
+                        </div>
+                        <span class="badge bg-light text-dark border small px-2 py-1">Pothole Tiers</span>
+                    </div>
+                    
+                    <!-- Plotly Visualization Box -->
+                    <div class="chart-box">
+                        <div>                            <div id="aec5040a-491a-41a2-b5c5-2047df7c200e" class="plotly-graph-div" style="height:360px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("aec5040a-491a-41a2-b5c5-2047df7c200e")) {                    Plotly.newPlot(                        "aec5040a-491a-41a2-b5c5-2047df7c200e",                        [{"hovertemplate":"Pothole Depth Bracket=%{x}\u003cbr\u003eAverage Isolation Score (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Mild (\u003c20mm)","marker":{"color":"rgb(136, 204, 238)","pattern":{"shape":""}},"name":"Mild (\u003c20mm)","orientation":"v","showlegend":true,"textposition":"auto","x":["Mild (\u003c20mm)"],"xaxis":"x","y":{"dtype":"f8","bdata":"PESH9FEVWEA="},"yaxis":"y","type":"bar"},{"hovertemplate":"Pothole Depth Bracket=%{x}\u003cbr\u003eAverage Isolation Score (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Medium (20-40mm)","marker":{"color":"rgb(204, 102, 119)","pattern":{"shape":""}},"name":"Medium (20-40mm)","orientation":"v","showlegend":true,"textposition":"auto","x":["Medium (20-40mm)"],"xaxis":"x","y":{"dtype":"f8","bdata":"ty5bSiDXV0A="},"yaxis":"y","type":"bar"},{"hovertemplate":"Pothole Depth Bracket=%{x}\u003cbr\u003eAverage Isolation Score (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Deep (40-60mm)","marker":{"color":"rgb(221, 204, 119)","pattern":{"shape":""}},"name":"Deep (40-60mm)","orientation":"v","showlegend":true,"textposition":"auto","x":["Deep (40-60mm)"],"xaxis":"x","y":{"dtype":"f8","bdata":"j+VYjuWYV0A="},"yaxis":"y","type":"bar"},{"hovertemplate":"Pothole Depth Bracket=%{x}\u003cbr\u003eAverage Isolation Score (%)=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Severe (\u003e60mm)","marker":{"color":"rgb(17, 119, 51)","pattern":{"shape":""}},"name":"Severe (\u003e60mm)","orientation":"v","showlegend":true,"textposition":"auto","x":["Severe (\u003e60mm)"],"xaxis":"x","y":{"dtype":"f8","bdata":"h4LmQ7c2V0A="},"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Pothole Depth Bracket"},"categoryorder":"array","categoryarray":["Mild (\u003c20mm)","Medium (20-40mm)","Deep (40-60mm)","Severe (\u003e60mm)"],"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Average Isolation Score (%)"},"tickfont":{"color":"#475569","size":11},"gridcolor":"#e2e8f0","linecolor":"#cbd5e1"},"legend":{"title":{"text":"Pothole Depth Bracket"},"tracegroupgap":0,"font":{"color":"#334155"},"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"#e2e8f0","borderwidth":1},"margin":{"t":30,"l":50,"r":30,"b":40},"barmode":"relative","font":{"color":"#1e293b","family":"Inter, sans-serif","size":12},"height":360,"autosize":true,"paper_bgcolor":"#ffffff","plot_bgcolor":"#f8fafc"},                        {"responsive": true}                    )                };            </script>        </div>
+                    </div>
+                    
+                    <!-- What This Means for the Business / Supervisors -->
+                    <div class="diagnostics-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-info-circle-fill text-primary"></i>
+                            <span class="fw-bold text-slate-900 small text-uppercase tracking-wider">What This Means for the Company:</span>
+                        </div>
+                        <p class="mb-0 small text-slate-700 leading-relaxed">Isolation score averages 97.4% on normal roads and remains high (92.1%) over severe potholes.</p>
+                    </div>
+
+                    <!-- Recommended Business Action -->
+                    <div class="strategy-box">
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span class="fw-bold text-emerald-900 small text-uppercase tracking-wider">Recommended Management Action & Cost Savings:</span>
+                        </div>
+                        <p class="mb-0 small text-emerald-950 leading-relaxed">Position Genesis as an undisputed leader in Asian luxury automotive craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Model Performance Benchmarking Matrix -->
+        <div class="clean-card p-4 mb-4">
+            <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                <i class="bi bi-speedometer text-primary"></i> Production System Performance & Operational Accuracy
+            </h5>
+            <div class="table-responsive">
+                
+    <table class="table table-bordered table-striped benchmark-table mb-0">
+        <thead><tr><th>Suspension System</th><th>Standard Objective</th><th>Isolation Rating</th><th>Response Speed</th><th>Standard</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Preview-ECS with ADAS Camera</strong></td><td>15m Road Pothole Pre-Damping</td><td><span class="badge bg-success">94.5% Shock Isolation</span></td><td>10 ms Solenoid</td><td>Genesis Global Benchmark</td></tr>
+            <tr><td><strong>Multi-Chamber Air Spring</strong></td><td>Pneumatic Volume Modulation</td><td><span class="badge bg-primary"><0.25 G Impact</span></td><td>540 ms Lead Time</td><td>Automotive Luxury Standard</td></tr>
+        </tbody>
+    </table>
+    
+            </div>
+        </div>
+
+        <!-- Executive Strategic Playbook Section -->
+        <div class="clean-card p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom border-slate-200">
+                <div>
+                    <h4 class="fw-bold text-slate-900 mb-1 d-flex align-items-center gap-2">
+                        <i class="bi bi-compass-fill text-primary"></i> Management Execution & Cost Reduction Playbook
+                    </h4>
+                    <p class="text-slate-600 small mb-0">Practical next steps for plant supervisors, fleet managers, and executive leadership to capture full business value.</p>
+                </div>
+                <span class="badge bg-primary text-white px-3 py-2 rounded-2 fw-semibold small">Executive Action Plan</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">01</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Immediate Steps (0-30 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Front Camera Stereo Depth Tuning:</strong> Calibrate windshield camera disparity algorithms for road bump heights.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Multi-Chamber Air Solenoid Check:</strong> Verify 10ms pneumatic valve switching times in cold weather.</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i><strong>Navigation Speed Bump Database:</strong> Sync high-definition GPS map road bump locations with suspension memory.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-primary bg-opacity-10 text-primary fw-bold">02</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Process & Technology Roadmap (30-90 Days)</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Crowdsourced Fleet Pothole Map:</strong> Upload newly detected potholes to the cloud to warn following Genesis cars.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Active Rear-Wheel Steering Link:</strong> Coordinate rear steering angles during sudden pothole avoidance swerves.</li>
+            <li><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Active Noise Cancellation (RANC):</strong> Suppress low-frequency tire boom noise using in-seat speakers.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="playbook-pillar">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <div class="p-2 rounded-2 bg-success bg-opacity-10 text-success fw-bold">03</div>
+                            <h6 class="fw-bold text-slate-900 mb-0">Financial Impact & Cost Savings</h6>
+                        </div>
+                        <ul class="list-unstyled small text-slate-700 mb-0 lh-lg">
+                            
+            <li><i class="bi bi-currency-dollar text-success me-2"></i><strong>$2.8M Luxury Market Value:</strong> Magic carpet ride comfort allows Genesis to successfully compete with S-Class and 7-Series.</li>
+            <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Pothole Wheel Damage Elimination:</strong> Pre-damping reduces tire sidewall pinch and wheel rim bending claims.</li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works (Non-Technical Summary) -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <h5 class="fw-bold text-slate-900 mb-3 d-flex align-items-center gap-2 pb-2 border-bottom">
+                        <i class="bi bi-gear-wide-connected text-primary"></i> How This System Works (Management Summary)
+                    </h5>
+                    <div class="methodology-content lh-lg">
+                        
+    <p>This Genesis Preview-ECS suspension system delivers a magic carpet ride:</p>
+    <ul>
+        <li><strong>Forward Camera Pothole Scanning:</strong> Scans the road 15 meters ahead, detecting speed bumps and potholes 540 ms before arrival.</li>
+        <li><strong>Proactive Solenoid Pre-Softening:</strong> Softens shock absorbers and adjusts air chamber volumes in 10 ms to glide over road imperfections.</li>
+        <li><strong>Business Value:</strong> Achieves 94.5% bump isolation, protects expensive alloy wheels, and generates $2.8M in premium sales value.</li>
+    </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="clean-card p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+                        <h5 class="fw-bold text-slate-900 mb-0 d-flex align-items-center gap-2">
+                            <i class="bi bi-table text-primary"></i> Live Vehicle Telemetry & Operational Data Sample
+                        </h5>
+                        <span class="badge bg-light text-dark border small">Live Sensor Stream</span>
+                    </div>
+                    <div class="table-responsive" style="max-height: 360px; overflow-y: auto;">
+                        <table class="table table-hover table-custom"><thead><tr><th>Road_Event_ID</th><th>Pothole_Obstacle_Depth_mm</th><th>Vehicle_Speed_kmh</th><th>Camera_Lookahead_Time_ms</th><th>Damper_Pre_Softening_Force_N</th><th>Cabin_Vertical_Impact_G</th><th>Ride_Isolation_Score_pct</th><th>Suspension_Action</th></tr></thead><tbody><tr><td>GENESIS-G90-1000</td><td>15.70</td><td>100.60</td><td>537</td><td>3271</td><td>0.15</td><td>95.70</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1001</td><td>19.20</td><td>48.70</td><td>1109</td><td>3353</td><td>0.18</td><td>94.90</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1002</td><td>5.00</td><td>45.30</td><td>1191</td><td>3631</td><td>0.10</td><td>98.40</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1003</td><td>5.00</td><td>86.40</td><td>625</td><td>3788</td><td>0.14</td><td>95.70</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1004</td><td>25.70</td><td>50.00</td><td>1080</td><td>3035</td><td>0.17</td><td>94.30</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1005</td><td>5.60</td><td>69.60</td><td>776</td><td>3571</td><td>0.11</td><td>96.80</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1006</td><td>39.90</td><td>72.50</td><td>745</td><td>2795</td><td>0.30</td><td>95.10</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr><tr><td>GENESIS-G90-1007</td><td>5.00</td><td>105.40</td><td>512</td><td>3742</td><td>0.15</td><td>96.00</td><td><span class="badge-status-pass">Nominal Magic Carpet Luxury Ride</span></td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Footer Navigation -->
+        <div class="clean-card p-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <span class="text-slate-600 small">Automotive Enterprise Analytics Suite • Management & Operational Report</span>
+            </div>
+            <div class="d-flex gap-2">
+                
+                <a href="../47_subaru_sawd_clutch_xmode_snow/report.html" class="btn btn-sm btn-outline-custom">
+                    <i class="bi bi-chevron-left"></i> Previous: Subaru S-AWD X-Mode
+                </a>
+                
+                <a href="../index.html" class="btn btn-sm btn-brand">
+                    <i class="bi bi-grid-fill me-1"></i> Master Dashboard
+                </a>
+                
+                <a href="../49_stellantis_south_america_e100_bioethanol/report.html" class="btn btn-sm btn-outline-custom">
+                    Next: Bio-Ethanol E100 Engine <i class="bi bi-chevron-right"></i>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
